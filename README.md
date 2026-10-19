@@ -69,7 +69,7 @@ Sin los secretos de Telegram los avisos solo se imprimen en el registro del work
 
 ### 3. Activar la página y los workflows
 
-- **Settings → Pages**: *Deploy from a branch*, rama `main`, carpeta `/docs`. La página queda en `https://diegoesteve.github.io/prediccioninundaciones/`.
+- **Settings → Pages**: *Deploy from a branch*, rama `main`, carpeta `/docs`. La página queda en `https://diegoesteve.github.io/predinun/`.
 - **Settings → Actions → General → Workflow permissions**: *Read and write permissions* (los workflows guardan los JSON en el repo).
 - En la pestaña **Actions**, corré cada workflow una vez con *Run workflow* para tener datos enseguida.
 
