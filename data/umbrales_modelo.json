@@ -1,0 +1,58 @@
+{
+ "SierrasChicas": {
+  "ECMWF": {
+   "umbral_mm": 12.3,
+   "fuente": "24 h antes"
+  },
+  "ICON": {
+   "umbral_mm": 14.0,
+   "fuente": "24 h antes"
+  },
+  "GFS": {
+   "umbral_mm": 9.9,
+   "fuente": "24 h antes"
+  }
+ },
+ "Cosquin": {
+  "ECMWF": {
+   "umbral_mm": 10.6,
+   "fuente": "24 h antes"
+  },
+  "ICON": {
+   "umbral_mm": 12.3,
+   "fuente": "24 h antes"
+  },
+  "GFS": {
+   "umbral_mm": 13.0,
+   "fuente": "24 h antes"
+  }
+ },
+ "SanAntonio_CPaz": {
+  "ECMWF": {
+   "umbral_mm": 8.8,
+   "fuente": "24 h antes"
+  },
+  "ICON": {
+   "umbral_mm": 9.7,
+   "fuente": "24 h antes"
+  },
+  "GFS": {
+   "umbral_mm": 10.1,
+   "fuente": "24 h antes"
+  }
+ },
+ "Capital": {
+  "ECMWF": {
+   "umbral_mm": 12.1,
+   "fuente": "24 h antes"
+  },
+  "ICON": {
+   "umbral_mm": 11.4,
+   "fuente": "24 h antes"
+  },
+  "GFS": {
+   "umbral_mm": 7.7,
+   "fuente": "24 h antes"
+  }
+ }
+}
