@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crecidas Sierras de Córdoba</title>
+<meta name="description" content="Monitor experimental de lluvias y crecidas en Sierras Chicas y Punilla. No oficial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="barra">
+  <div class="marca">
+    <span class="titulo">Crecidas · Sierras de Córdoba</span>
+    <span class="sub">Monitor experimental, no oficial</span>
+  </div>
+  <nav class="pestanas" role="tablist">
+    <button role="tab" data-p="ahora" aria-selected="true">Ahora</button>
+    <button role="tab" data-p="pronostico" aria-selected="false">Pronóstico</button>
+    <button role="tab" data-p="riesgo" aria-selected="false">Mapa de riesgo</button>
+  </nav>
+</header>
+
+<main>
+  <aside class="aviso" role="note">
+    <div class="aviso-titulo">Solo con fines informativos</div>
+    <div>Estos datos son experimentales y no reemplazan ni anticipan los avisos oficiales. No los uses para decidir si evacuar o volver a tu casa. Los canales oficiales son <strong>Defensa Civil de la Provincia de Córdoba</strong>, el <strong>Servicio Meteorológico Nacional</strong> y tu municipio.</div>
+    <div>Ante una emergencia llamá al <strong>103 (Defensa Civil)</strong> o al <strong>911</strong>.</div>
+  </aside>
+
+  <section id="p-ahora" class="pagina">
+    <p class="meta" id="ahora-meta">Cargando…</p>
+    <div class="tarjetas" id="ahora-cuencas"></div>
+    <h2>Estaciones de la Provincia</h2>
+    <p class="nota">Lluvia y nivel de los ríos de la red pública de la Provincia, consultada cada 15 minutos. Los umbrales son provisorios.</p>
+    <div id="mapa-estaciones" class="mapa"></div>
+    <div class="tabla-envoltura"><table id="tabla-estaciones"></table></div>
+  </section>
+
+  <section id="p-pronostico" class="pagina" hidden>
+    <p class="meta" id="pron-meta">Cargando…</p>
+    <h2>Próximas 48 horas</h2>
+    <div class="tabla-envoltura"><table id="tabla-48h"></table></div>
+    <h2>Perspectiva a 10 días</h2>
+    <p class="nota">Probabilidad, según los ensambles, de que en algún momento del día llueva en 3 horas lo que en el pasado alcanzó para una crecida. Con el suelo saturado se cuenta la mitad de esa lluvia. Más allá de 5 días es solo una tendencia.</p>
+    <div class="tabla-envoltura"><table id="tabla-10d"></table></div>
+    <h2>Humedad del suelo</h2>
+    <div class="tarjetas" id="suelo"></div>
+  </section>
+
+  <section id="p-riesgo" class="pagina" hidden>
+    <p class="nota">Lugares con daños verificados en imágenes satelitales y de Google Earth (crecidas de 2014–2016), tramos de río inestables y microcuencas prioritarias. Es un orden para saber dónde mirar, no un mapa oficial de riesgo.</p>
+    <div class="capas" id="capas"></div>
+    <div id="mapa-riesgo" class="mapa alto"></div>
+  </section>
+</main>
+
+<footer>
+  Proyecto personal sin fines comerciales. Datos: Provincia de Córdoba (estaciones), Open-Meteo, NASA SMAP, Copernicus, Google Earth.
+  Código en <a href="https://github.com/diegoesteve/prediccioninundaciones">GitHub</a>.
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

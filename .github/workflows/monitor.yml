@@ -1,0 +1,50 @@
+name: Monitor de estaciones
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # GitHub puede demorar estas corridas varios minutos
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      # La historia del día en curso vive en la caché (no se commitea cada 15 min);
+      # los días cerrados se guardan comprimidos en data/historia/.
+      - uses: actions/cache/restore@v4
+        with:
+          path: data/monitor/historia_*.csv
+          key: historia-${{ github.run_id }}
+          restore-keys: historia-
+      - name: Correr el monitor
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/correr_monitor.py
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: data/monitor/historia_*.csv
+          key: historia-${{ github.run_id }}
+      - name: Guardar resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/ahora.json docs/data/estaciones.json data/monitor/estado_zonas.json data/historia
+          git diff --cached --quiet && exit 0
+          git commit -m "monitor: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
+          git pull --rebase -X theirs && git push

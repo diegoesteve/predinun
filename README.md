@@ -1,0 +1,101 @@
+# Predicción de crecidas · Sierras de Córdoba
+
+Monitor experimental y personal de lluvias y crecidas en **Sierras Chicas** y **Punilla** (Córdoba, Argentina), sin fines comerciales.
+
+> **Solo con fines informativos.** Estos datos son experimentales y no reemplazan ni anticipan los avisos oficiales. No los uses para decidir si evacuar o volver a tu casa. Los canales oficiales son **Defensa Civil de la Provincia de Córdoba**, el **Servicio Meteorológico Nacional** y tu municipio. Ante una emergencia llamá al **103 (Defensa Civil)** o al **911**.
+
+## Qué hace
+
+| Parte | Cada cuánto | Qué produce |
+|---|---|---|
+| **Monitor de estaciones** (`scripts/correr_monitor.py`) | 15 min | Lee la red pública de estaciones de la Provincia (lluvia y nivel de ríos), clasifica cada zona y avisa por Telegram solo cuando una zona sube de nivel o vuelve a normal. Guarda una historia propia, porque la Provincia publica solo las últimas horas. |
+| **Boletín** (`scripts/correr_boletin.py`) | 6 h | Pronóstico a 48 h por cuenca (GFS, ICON, ECMWF y sus ensambles, vía Open-Meteo), humedad del suelo (NASA SMAP más el cambio que da el modelo desde la fecha de SMAP) y perspectiva a 10 días. |
+| **Página** (`docs/`) | estática | Tres pestañas: *Ahora*, *Pronóstico* y *Mapa de riesgo*. Se publica con GitHub Pages. |
+| **Mapa de riesgo** (`scripts/armar_riesgo.py`) | a mano | Daños verificados con imágenes (2014–2016), tramos de río inestables y microcuencas prioritarias. |
+
+El análisis que da origen a los umbrales y al mapa está en las notebooks de Colab (pasos 1 a 8): umbrales de lluvia, susceptibilidad por microcuenca, inventario satelital de daños, crecida del Paraná y monitor de estaciones.
+
+### Reglas (provisorias)
+
+- **Estaciones**: amarillo, naranja o rojo con 8/15/25 mm en 20 min, 15/30/50 mm en 1 h o 25/50/80 mm en 3 h, o con una subida del río de 0,25/0,5/1 m en 1 h. Una estación sin datos hace más de 2 h queda como "sin datos".
+- **Pronóstico 48 h**: amarillo si un modelo supera el umbral de 3 h de la cuenca o un ensamble da ≥ 30 %; naranja si lo superan dos modelos o un ensamble da ≥ 60 %.
+- **Suelo**: si el suelo está por encima del percentil 80 y algún modelo pronostica al menos la mitad del umbral, se sube un nivel.
+- **Estado combinado**: por cuenca manda el peor entre estaciones y pronóstico.
+
+## Estructura
+
+```
+alerta/
+  config.py              cuencas, umbrales, modelos y rutas
+  monitor_estaciones.py  lectura de la red de la Provincia (mismo código que el paso 8)
+  boletin.py             pronóstico, suelo y perspectiva (mismo cálculo que el paso 4)
+scripts/                 lo que corren los workflows
+data/                    insumos copiados de Drive, inventario y historia del monitor
+docs/                    la página (GitHub Pages) y docs/data/*.json que actualizan los workflows
+.github/workflows/       monitor.yml (cada 15 min) y boletin.yml (cada 6 h)
+```
+
+## Puesta en marcha
+
+### 1. Copiar los insumos desde Drive
+
+Desde `inundaciones_cba/` en Drive, copiá a `data/` los que tengas (todo es opcional; si falta algo se usa un valor por defecto):
+
+| Archivo | Lo genera | Si falta |
+|---|---|---|
+| `puntos_cuencas.json` | paso 4 | se pronostica solo en el punto de salida de cada cuenca |
+| `umbrales_modelo.json` | paso 4 | se usan los umbrales de IMERG del paso 3 (sin calibrar por modelo) |
+| `modelos_open_meteo.json` | paso 4 | GFS, ICON y ECMWF por defecto |
+| `cuencas.geojson` | paso 4 | el suelo se promedia en un círculo de 10 km en la salida |
+| `smap_normal_mesMM.json` | paso 4 | se calcula la primera vez (tarda unos minutos) |
+| `susceptibilidad/tramos_rios.csv`, `susceptibilidad/microcuencas.csv` | paso 5 | el mapa muestra solo los daños confirmados |
+
+Después de copiar los archivos del paso 5, corré `python scripts/armar_riesgo.py` y subí `docs/data/riesgo.geojson`.
+
+### 2. Secretos del repositorio
+
+En **Settings → Secrets and variables → Actions → New repository secret**:
+
+| Secreto | Para qué | Cómo se consigue |
+|---|---|---|
+| `TELEGRAM_TOKEN` | avisos | hablale a @BotFather en Telegram, `/newbot`, y copiá el token |
+| `TELEGRAM_CHAT_ID` | avisos | mandale un mensaje a tu bot y abrí `https://api.telegram.org/bot<TOKEN>/getUpdates`: el número de `chat.id` |
+| `EE_SERVICE_ACCOUNT_JSON` | humedad del suelo (SMAP) | en Google Cloud, proyecto `the-byway-494216-n2`: IAM → Cuentas de servicio → crear, darle el rol *Earth Engine Resource Viewer* (y *Service Usage Consumer*), crear una clave JSON y pegar el archivo completo. Registrá el proyecto para uso no comercial en Earth Engine si no lo hiciste. |
+| `EE_PROJECT` | idem | `the-byway-494216-n2` |
+
+Sin los secretos de Telegram los avisos solo se imprimen en el registro del workflow. Sin los de Earth Engine el boletín sale sin el dato de suelo.
+
+**Nunca subas la clave JSON al repositorio**: va solo como secreto. El `.gitignore` ya excluye `*service-account*.json`.
+
+### 3. Activar la página y los workflows
+
+- **Settings → Pages**: *Deploy from a branch*, rama `main`, carpeta `/docs`. La página queda en `https://diegoesteve.github.io/prediccioninundaciones/`.
+- **Settings → Actions → General → Workflow permissions**: *Read and write permissions* (los workflows guardan los JSON en el repo).
+- En la pestaña **Actions**, corré cada workflow una vez con *Run workflow* para tener datos enseguida.
+
+GitHub puede atrasar las corridas programadas varios minutos cuando hay mucha demanda, así que el monitor no es en tiempo real estricto. Si el repositorio pasa 60 días sin actividad, GitHub pausa los workflows programados y hay que reactivarlos desde Actions.
+
+## Correr en tu computadora
+
+```bash
+pip install -r requirements.txt
+python scripts/correr_boletin.py      # docs/data/boletin.json
+python scripts/correr_monitor.py      # docs/data/ahora.json y estaciones.json
+python -m http.server -d docs         # abrir http://localhost:8000
+```
+
+`AVISAR=0` evita los mensajes de Telegram mientras probás.
+
+## Fuentes de datos
+
+- Red de estaciones hidrometeorológicas de la Provincia de Córdoba (servicios ArcGIS públicos).
+- [Open-Meteo](https://open-meteo.com): pronósticos, ensambles y humedad del suelo de los modelos (CC BY 4.0).
+- NASA SMAP L4 (`NASA/SMAP/SPL4SMGP`) vía Google Earth Engine.
+- Inventario de daños: Sentinel-2, Landsat, Sentinel-1 y revisión con imágenes históricas de Google Earth.
+- Mapa base © colaboradores de OpenStreetMap.
+
+## Pendiente
+
+- Imágenes SAOCOM (CONAE), si se consiguen.
+- Calibrar los umbrales de las estaciones con la historia que va juntando el monitor.
+- Capa de población temporaria (campings, balnearios, eventos), que quedó expuesta en la crecida de Cosquín del 17/10/2026.

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+# historia del día en curso (va en la caché de Actions)
+data/monitor/historia_*.csv
+# nunca subir claves
+*.key
+*service-account*.json
+.env
