@@ -1,0 +1,107 @@
+{
+ "actualizado": "2026-10-19 15:31",
+ "boletin_generado": null,
+ "zonas": [
+  {
+   "zona": "Córdoba / La Calera",
+   "estado": "normal"
+  },
+  {
+   "zona": "Punilla norte",
+   "estado": "normal"
+  },
+  {
+   "zona": "Punilla sur / San Antonio",
+   "estado": "normal"
+  },
+  {
+   "zona": "Sierras Chicas",
+   "estado": "normal"
+  }
+ ],
+ "cuencas": [
+  {
+   "cuenca": "SierrasChicas",
+   "nombre": "Sierras Chicas",
+   "zona_estaciones": "Sierras Chicas",
+   "nivel": "verde",
+   "estaciones": "verde",
+   "pronostico": "verde",
+   "motivo": "sin lluvias fuertes ni crecidas",
+   "suelo": null
+  },
+  {
+   "cuenca": "Cosquin",
+   "nombre": "Cosquín",
+   "zona_estaciones": "Punilla norte",
+   "nivel": "verde",
+   "estaciones": "verde",
+   "pronostico": "verde",
+   "motivo": "sin lluvias fuertes ni crecidas",
+   "suelo": null
+  },
+  {
+   "cuenca": "SanAntonio_CPaz",
+   "nombre": "San Antonio / Carlos Paz",
+   "zona_estaciones": "Punilla sur / San Antonio",
+   "nivel": "verde",
+   "estaciones": "verde",
+   "pronostico": "verde",
+   "motivo": "sin lluvias fuertes ni crecidas",
+   "suelo": null
+  },
+  {
+   "cuenca": "Capital",
+   "nombre": "Capital (experimental)",
+   "zona_estaciones": "Córdoba / La Calera",
+   "nivel": "verde",
+   "estaciones": "verde",
+   "pronostico": "verde",
+   "motivo": "sin lluvias fuertes ni crecidas",
+   "suelo": null
+  }
+ ],
+ "umbrales": {
+  "lluvia": [
+   [
+    "rojo",
+    {
+     "Lluvia_mm_20min": 25,
+     "Lluvia_mm_1hs": 50,
+     "Lluvia_mm_3hs": 80
+    }
+   ],
+   [
+    "naranja",
+    {
+     "Lluvia_mm_20min": 15,
+     "Lluvia_mm_1hs": 30,
+     "Lluvia_mm_3hs": 50
+    }
+   ],
+   [
+    "amarillo",
+    {
+     "Lluvia_mm_20min": 8,
+     "Lluvia_mm_1hs": 15,
+     "Lluvia_mm_3hs": 25
+    }
+   ]
+  ],
+  "rio_subida_1h_m": [
+   [
+    "rojo",
+    1.0
+   ],
+   [
+    "naranja",
+    0.5
+   ],
+   [
+    "amarillo",
+    0.25
+   ]
+  ],
+  "provisorios": true
+ }
+}
