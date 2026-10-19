@@ -98,16 +98,28 @@ CAPAS_SUELO = {'soil_moisture_0_to_1cm': 1, 'soil_moisture_1_to_3cm': 2, 'soil_m
 
 
 def iniciar_ee():
-    """Earth Engine con una cuenta de servicio (secreto EE_SERVICE_ACCOUNT_JSON). Devuelve el módulo o None."""
-    clave = os.environ.get('EE_SERVICE_ACCOUNT_JSON')
-    if not clave:
-        print('Sin EE_SERVICE_ACCOUNT_JSON: el boletín sale sin el dato de suelo de SMAP.')
-        return None
+    """Earth Engine. Devuelve el módulo o None si no hay credenciales.
+
+    1) Sin clave (recomendado): GitHub Actions se autentica con Workload Identity Federation y deja
+       GOOGLE_APPLICATION_CREDENTIALS apuntando a credenciales temporales.
+    2) Con clave: secreto EE_SERVICE_ACCOUNT_JSON (solo si la organización permite crear claves).
+    """
     import ee
-    info = json.loads(clave)
-    cred = ee.ServiceAccountCredentials(info['client_email'], key_data=clave)
-    ee.Initialize(cred, project=os.environ.get('EE_PROJECT') or info.get('project_id'))
-    return ee
+    proyecto = os.environ.get('EE_PROJECT') or None
+    clave = (os.environ.get('EE_SERVICE_ACCOUNT_JSON') or '').strip()
+    if clave.startswith('{'):
+        info = json.loads(clave)
+        cred = ee.ServiceAccountCredentials(info['client_email'], key_data=clave)
+        ee.Initialize(cred, project=proyecto or info.get('project_id'))
+        return ee
+    if os.environ.get('GOOGLE_APPLICATION_CREDENTIALS'):
+        import google.auth
+        cred, proyecto_cred = google.auth.default(scopes=['https://www.googleapis.com/auth/earthengine',
+                                                          'https://www.googleapis.com/auth/cloud-platform'])
+        ee.Initialize(cred, project=proyecto or proyecto_cred)
+        return ee
+    print('Sin credenciales de Earth Engine: el boletín sale sin el dato de suelo de SMAP.')
+    return None
 
 
 def geometrias(ee):

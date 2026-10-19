@@ -60,12 +60,14 @@ En **Settings → Secrets and variables → Actions → New repository secret**:
 |---|---|---|
 | `TELEGRAM_TOKEN` | avisos | hablale a @BotFather en Telegram, `/newbot`, y copiá el token |
 | `TELEGRAM_CHAT_ID` | avisos | mandale un mensaje a tu bot y abrí `https://api.telegram.org/bot<TOKEN>/getUpdates`: el número de `chat.id` |
-| `EE_SERVICE_ACCOUNT_JSON` | humedad del suelo (SMAP) | en Google Cloud, proyecto `the-byway-494216-n2`: IAM → Cuentas de servicio → crear, darle el rol *Earth Engine Resource Viewer* (y *Service Usage Consumer*), crear una clave JSON y pegar el archivo completo. Registrá el proyecto para uso no comercial en Earth Engine si no lo hiciste. |
+| `GCP_WIF_PROVIDER` | humedad del suelo (SMAP) | lo imprime `scripts/configurar_google.sh` (ver abajo) |
+| `GCP_SERVICE_ACCOUNT` | idem | idem |
 | `EE_PROJECT` | idem | `the-byway-494216-n2` |
 
-Sin los secretos de Telegram los avisos solo se imprimen en el registro del workflow. Sin los de Earth Engine el boletín sale sin el dato de suelo.
+Sin los secretos de Telegram los avisos solo se imprimen en el registro del workflow. Sin los de Google el boletín sale sin el dato de suelo.
 
-**Nunca subas la clave JSON al repositorio**: va solo como secreto. El `.gitignore` ya excluye `*service-account*.json`.
+**Acceso a Earth Engine sin clave.** GitHub Actions se autentica en Google con *Workload Identity Federation*: no hay ninguna clave guardada, y solo los workflows de este repositorio pueden usar la cuenta de servicio. Para configurarlo, abrí Google Cloud Shell (en console.cloud.google.com, el ícono `>_`), subí `scripts/configurar_google.sh` y corré `bash configurar_google.sh`. Al final imprime los valores de los tres secretos. Si la organización permitiera claves, también funciona pegar la clave JSON en `EE_SERVICE_ACCOUNT_JSON`.
+
 
 ### 3. Activar la página y los workflows
 
