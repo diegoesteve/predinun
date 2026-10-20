@@ -256,6 +256,71 @@ def perspectiva(PUNTOS, ENSAMBLES, SUELO):
     return out
 
 
+# ---------------------------------------------------------------------------------------------
+# Secado: evaporación potencial reciente y próxima comparada con lo normal para la época
+# ---------------------------------------------------------------------------------------------
+URL_ARCHIVO = 'https://archive-api.open-meteo.com/v1/archive'
+VARS_SECADO = 'et0_fao_evapotranspiration,shortwave_radiation_sum,cloud_cover_mean'
+DIAS_ATRAS, DIAS_ADELANTE = 10, 7
+
+
+def normal_secado(c, lat, lon):
+    """Promedio diario por día del año (ventana de ±7 días) de ERA5, 2001-2025. Se guarda en data/."""
+    archivo = os.path.join(cfg.DATA, 'clima_secado.json')
+    clima = json.load(open(archivo)) if os.path.exists(archivo) else {}
+    if c not in clima:
+        j = pedir(URL_ARCHIVO, {'latitude': lat, 'longitude': lon, 'start_date': '2001-01-01', 'end_date': '2025-12-31',
+                                'daily': VARS_SECADO, 'timezone': cfg.TZ})
+        d = pd.DataFrame({k: v for k, v in j['daily'].items() if k != 'time'}, index=pd.to_datetime(j['daily']['time']), dtype=float)
+        doy = np.minimum(d.index.dayofyear, 365)
+        por_dia = d.groupby(doy).mean()
+        # ventana circular de ±7 días para suavizar
+        ext = pd.concat([por_dia.iloc[-7:], por_dia, por_dia.iloc[:7]])
+        suave = ext.rolling(15, center=True).mean().iloc[7:-7]
+        clima[c] = {str(int(k)): [round(float(x), 3) for x in fila] for k, fila in suave.iterrows()}
+        clima['_variables'] = list(d.columns)
+        cfg.escribir_json(archivo, clima)
+    cols = clima['_variables']
+    return pd.DataFrame.from_dict({int(k): v for k, v in clima[c].items()}, orient='index', columns=cols)
+
+
+def secado(PUNTOS):
+    """Cuánto evaporó en los últimos 10 días y cuánto se espera en los próximos 7, contra lo normal."""
+    out = {}
+    hoy = pd.Timestamp.now(tz=cfg.TZ).tz_localize(None).normalize()
+    for c in PUNTOS:
+        lat, lon = cfg.SALIDAS[c]
+        try:
+            normal = normal_secado(c, lat, lon)
+            j = pedir(URL_PRONOSTICO, {'latitude': lat, 'longitude': lon, 'daily': VARS_SECADO, 'timezone': cfg.TZ,
+                                       'past_days': DIAS_ATRAS, 'forecast_days': DIAS_ADELANTE + 1})
+            d = pd.DataFrame({k: v for k, v in j['daily'].items() if k != 'time'}, index=pd.to_datetime(j['daily']['time']), dtype=float)
+        except Exception as e:
+            print(f'{c}: sin datos de evaporación ({str(e)[:80]})')
+            continue
+        d = d.join(normal.add_suffix("_normal"), on=np.minimum(d.index.dayofyear, 365))
+        antes = d[(d.index >= hoy - pd.Timedelta(days=DIAS_ATRAS)) & (d.index < hoy)]
+        despues = d[(d.index > hoy) & (d.index <= hoy + pd.Timedelta(days=DIAS_ADELANTE))]
+
+        def pct(df, var):
+            n = df[f'{var}_normal'].sum()
+            return int(round(100 * df[var].sum() / n)) if n > 0 and df[var].notna().any() else None
+
+        out[c] = {
+            'dias_atras': DIAS_ATRAS, 'dias_adelante': DIAS_ADELANTE,
+            'et0_ult_mm': round(float(antes['et0_fao_evapotranspiration'].sum()), 1),
+            'et0_ult_normal_mm': round(float(antes['et0_fao_evapotranspiration_normal'].sum()), 1),
+            'et0_ult_pct': pct(antes, 'et0_fao_evapotranspiration'),
+            'radiacion_ult_pct': pct(antes, 'shortwave_radiation_sum'),
+            'nubosidad_ult_media': None if antes['cloud_cover_mean'].isna().all() else int(round(antes['cloud_cover_mean'].mean())),
+            'nubosidad_ult_normal': int(round(antes['cloud_cover_mean_normal'].mean())),
+            'dias_nublados_ult': int((antes['cloud_cover_mean'] >= 70).sum()),
+            'et0_prox_mm': round(float(despues['et0_fao_evapotranspiration'].sum()), 1),
+            'et0_prox_pct': pct(despues, 'et0_fao_evapotranspiration'),
+        }
+    return out
+
+
 def generar():
     PUNTOS = cfg.puntos()
     MODELOS, ENSAMBLES = cfg.modelos()
@@ -268,5 +333,12 @@ def generar():
         SUELO, atraso = {}, None
     filas = ajustar_por_suelo(filas, SUELO)
     persp = perspectiva(PUNTOS, ENSAMBLES, SUELO)
+    try:
+        SECADO = secado(PUNTOS)
+    except Exception as e:
+        print('Evaporación no disponible:', e)
+        SECADO = {}
+    for f in filas:
+        f['secado'] = SECADO.get(f['cuenca'])
     return {'generado': ahora.strftime('%Y-%m-%d %H:%M'), 'horas': cfg.HORAS_ALERTA, 'smap_atraso_dias': atraso,
             'cuencas': filas, 'perspectiva': persp}

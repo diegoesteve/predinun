@@ -100,14 +100,23 @@ async function pronostico() {
     Object.values(p.cuencas).map(c => `<tr><td>${esc(c.nombre)}${c.suelo_saturado ? ' 💧' : ''}</td>` +
       c.prob.map((x, i) => `<td class="prob" style="background:${colorProb(x)}" title="${c.mm[i] ?? '–'} mm en el día (mediana)">${x == null ? '–' : Math.round(100 * x) + '%'}<br><small>${c.mm[i] ?? '–'} mm</small></td>`).join('') + '</tr>').join('');
 
+  const textoSecado = x => {
+    if (!x || x.et0_ult_pct == null) return '';
+    const antes = x.et0_ult_pct < 75 ? `<b>evaporó poco</b>: ${x.et0_ult_pct} % de lo normal` :
+      x.et0_ult_pct > 125 ? `evaporó más que lo normal (${x.et0_ult_pct} %)` : `evaporación normal (${x.et0_ult_pct} %)`;
+    const nubes = x.nubosidad_ult_media != null ? `, ${x.dias_nublados_ult} de ${x.dias_atras} días nublados (nubosidad media ${x.nubosidad_ult_media} %, lo normal es ${x.nubosidad_ult_normal} %)` : '';
+    const prox = x.et0_prox_pct != null ? `<div class="det">Próximos ${x.dias_adelante} días: se espera ${x.et0_prox_pct} % de la evaporación normal (${x.et0_prox_mm} mm).</div>` : '';
+    return `<div class="det">Últimos ${x.dias_atras} días: ${antes}${nubes}.</div>${prox}`;
+  };
   document.getElementById('suelo').innerHTML = b.cuencas.map(c => {
     const s = c.suelo;
-    if (!s) return `<article class="tarjeta n-sin-datos"><div class="franja"></div><div class="cuerpo"><div class="nombre">${esc(c.nombre)}</div><div class="det">Sin dato de SMAP.</div></div></article>`;
+    if (!s) return `<article class="tarjeta n-sin-datos"><div class="franja"></div><div class="cuerpo"><div class="nombre">${esc(c.nombre)}</div><div class="det">Sin dato de SMAP.</div>${textoSecado(c.secado)}</div></article>`;
     const n = s.estado === 'saturado' ? 'naranja' : s.estado === 'seco' ? 'amarillo' : 'verde';
     return `<article class="tarjeta ${clase(n)}"><div class="franja"></div><div class="cuerpo">
       <div class="nombre">${esc(c.nombre)}</div>
       <div class="nivel">${esc(s.estado)} · percentil ${s.percentil}${s.es_estimado ? ' (estimado hoy)' : ''}</div>
       <div class="det">SMAP p${s.smap_percentil} del ${esc(String(s.smap_fecha).slice(0, 10))}${s.estimado_hoy_percentil != null ? ` · estimado hoy p${s.estimado_hoy_percentil}` : ''}</div>
+      ${textoSecado(c.secado)}
     </div></article>`;
   }).join('');
 }
