@@ -63,6 +63,20 @@ def recortar(t, n=240):
     return t if len(t) <= n else t[:n].rsplit(' ', 1)[0].rstrip(';,') + '…'
 
 
+def leer_aportes():
+    import glob
+    out = []
+    for ruta in sorted(glob.glob(os.path.join(cfg.DATA, 'aportes', '*.json'))):
+        try:
+            a = json.load(open(ruta, encoding='utf-8'))
+        except Exception as e:
+            print('aporte ilegible', ruta, e)
+            continue
+        a['fotos'] = [u for u in a.get('fotos', []) if str(u).startswith('https://')]
+        out.append(a)
+    return out
+
+
 def km(lat1, lon1, lat2, lon2):
     return math.hypot((lat1 - lat2) * 111.3, (lon1 - lon2) * 111.3 * math.cos(math.radians(lat1)))
 
@@ -118,6 +132,25 @@ def localidades():
         s = s.dropna(subset=['lat', 'lon'])   # confirmados con imágenes y reportados con testimonio o prensa
         for f in filas.values():
             f['danos_registrados'] = int(sum(km(f['lat'], f['lon'], la, lo) <= 4 for la, lo in zip(s['lat'], s['lon'])))
+    for a in leer_aportes():
+        k = clave(a.get('localidad', ''))
+        if k not in filas and a.get('lat') is not None:
+            cerca = min(filas.values(), key=lambda f: km(f['lat'], f['lon'], a['lat'], a['lon']), default=None)
+            if cerca and km(cerca['lat'], cerca['lon'], a['lat'], a['lon']) <= 5:
+                k = clave(cerca['localidad'])
+        if k in filas:
+            filas[k].setdefault('relatos', []).append({
+                'id': a['id'], 'fecha_evento': a.get('fecha_evento', ''), 'relato': recortar(a.get('relato', ''), 600),
+                'altura_agua': a.get('altura_agua', ''), 'fotos': a['fotos']})
+    camp = cfg.leer_json('campings.json')
+    if camp:
+        bajos = [c for c in camp['lugares'] if c['bajo_junto_a_rio']]
+        for f in filas.values():
+            cerca = [c for c in bajos if km(f['lat'], f['lon'], c['lat'], c['lon']) <= 5]
+            if cerca:
+                f['campings_bajos'] = [{'tipo': c['tipo'], 'nombre': c['nombre'] or f"{c['tipo']} sin nombre",
+                                        'altura_m': c['altura_sobre_cauce_m'], 'lat': c['lat'], 'lon': c['lon']}
+                                       for c in cerca][:12]
     out = []
     for f in filas.values():
         f.setdefault('banderas', ''); f.setdefault('max_banderas', 0); f.setdefault('personas_expuestas', 0)
@@ -161,6 +194,19 @@ def main():
         feats += puntos(a, 'comunidad análoga', campos=['localidad', 'arroyo', 'banderas', 'tipo_peligro', 'area_km2',
                                                          'desnivel_m', 'puentes', 'personas_expuestas', 'personas_llano', 'personas_bajo',
                                                          'estaciones_arriba', 'margen_aprox_min', 'parecido_scm'])
+    for a in leer_aportes():
+        if a.get('lat') is None or a.get('lon') is None:
+            continue
+        feats.append({'type': 'Feature', 'geometry': {'type': 'Point', 'coordinates': [a['lon'], a['lat']]},
+                      'properties': {'capa': 'aporte', 'localidad': a.get('localidad', ''),
+                                     'fecha_evento': a.get('fecha_evento', ''), 'relato': recortar(a.get('relato', ''), 500),
+                                     'altura_agua': a.get('altura_agua', ''), 'fotos': a['fotos']}})
+    camp = cfg.leer_json('campings.json')
+    if camp:
+        bajos = pd.DataFrame([c for c in camp['lugares'] if c['bajo_junto_a_rio']])
+        if not bajos.empty:
+            feats += puntos(bajos, 'camping o balneario bajo', campos=['tipo', 'nombre', 'altura_sobre_cauce_m',
+                                                                        'cuenca_rio_cercano_km2'])
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'riesgo.geojson'), {'type': 'FeatureCollection', 'features': feats})
     print(f'riesgo.geojson: {len(feats)} elementos')
     localidades()

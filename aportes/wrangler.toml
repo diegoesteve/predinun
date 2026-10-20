@@ -1,0 +1,13 @@
+# Worker que recibe los aportes del formulario de la página. Lo despliega .github/workflows/aportes.yml
+name = "predinun-aportes"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+[vars]
+ORIGEN = "https://diegoesteve.github.io"   # la página que puede enviar aportes
+REPO = "diegoesteve/predinun"              # dónde se publican los aportes aprobados
+RAMA = "main"
+
+[[r2_buckets]]
+binding = "APORTES"
+bucket_name = "predinun-aportes"

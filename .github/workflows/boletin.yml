@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '20 */6 * * *'   # cada 6 h, cuando ya salieron las corridas nuevas de los modelos
   workflow_dispatch:
+  push:                        # un aporte aprobado aparece en el mapa enseguida
+    branches: [main]
+    paths: ['data/aportes/**']
 
 permissions:
   contents: write
@@ -39,6 +42,11 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/correr_boletin.py
+      - name: Campings y balnearios junto al río (una vez por mes)
+        continue-on-error: true
+        env:
+          EE_PROJECT: ${{ secrets.EE_PROJECT }}
+        run: python scripts/armar_campings.py
       - name: Actualizar el mapa de riesgo con lo que haya en data/
         run: python scripts/armar_riesgo.py
       - name: Guardar resultados

@@ -22,6 +22,7 @@ function mapaBase(id, zoom = 10) {
 
 // ---------------------------------------------------------------- pestañas
 const mapas = {};
+const PESTANAS = ['ahora', 'pronostico', 'riesgo', 'rio', 'aporta'];
 document.querySelectorAll('.pestanas button').forEach(b => b.addEventListener('click', () => mostrar(b.dataset.p)));
 function mostrar(p) {
   document.querySelectorAll('.pestanas button').forEach(b => b.setAttribute('aria-selected', b.dataset.p === p));
@@ -29,6 +30,7 @@ function mostrar(p) {
   try { history.replaceState(null, '', '#' + p); } catch (e) {}
   Object.values(mapas).forEach(m => m.invalidateSize());
   if (p === 'riesgo' && !mapas.riesgo) riesgo();
+  if (p === 'aporta' && !mapas.aporte) aporta();
 }
 
 // ---------------------------------------------------------------- ahora
@@ -131,12 +133,14 @@ async function riesgo() {
     'tramo de río': { color: '#0E5E5A', radio: 5, titulo: 'Tramos de río inestables o con casas cerca' },
     'microcuenca': { color: '#E07B20', radio: 5, titulo: 'Microcuencas prioritarias' },
     'comunidad análoga': { color: '#5B2A86', radio: 7, titulo: 'Pueblos en la salida de un arroyo serrano (parecidos a San Carlos Minas)' },
+    'camping o balneario bajo': { color: '#1F6FB2', radio: 5, titulo: 'Campings y balnearios a menos de 5 m sobre un río' },
+    'aporte': { color: '#B8860B', radio: 7, titulo: 'Relatos de vecinos y visitantes' },
   };
   const capas = {};
   g.features.forEach(f => {
     const p = f.properties, e = estilos[p.capa] || { color: '#555', radio: 5, titulo: p.capa };
     const [lon, lat] = f.geometry.coordinates;
-    const det = Object.entries(p).filter(([k, v]) => k !== 'capa' && v != null && v !== '')
+    const det = p.capa === 'aporte' ? popupAporte(p) : Object.entries(p).filter(([k, v]) => k !== 'capa' && v != null && v !== '')
       .map(([k, v]) => `<b>${esc(k.replace(/_/g, ' '))}:</b> ${esc(v)}`).join('<br>');
     (capas[p.capa] ||= L.layerGroup()).addLayer(
       L.circleMarker([lat, lon], { radius: e.radio, color: '#fff', weight: 1.5, fillColor: e.color, fillOpacity: .85 })
@@ -231,15 +235,152 @@ function elegirLocalidad(f) {
     ${f.tipos && f.tipos.length ? `<div>Tipo de peligro: ${esc(f.tipos.join(', '))}${f.parecido_scm != null && f.parecido_scm < 1.5 ? ' · <b>muy parecido a San Carlos Minas</b>' : ''}</div>` : ''}
     <div>Estación que da aviso: ${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : 'sin datos'}${f.danos_registrados ? ` · ${f.danos_registrados} daños verificados en imágenes a menos de 4 km` : ''}</div>
     ${arroyos ? `<div><b>Arroyos que entran al pueblo</b><ul>${arroyos}</ul></div>` : '<div>No se encontraron arroyos serranos que entren a esta localidad.</div>'}
-    <div><b>Crecidas registradas</b>${eventos ? `<ul>${eventos}</ul>` : ' ninguna en el inventario todavía.'}</div>`;
+    <div><b>Crecidas registradas</b>${eventos ? `<ul>${eventos}</ul>` : ' ninguna en el inventario todavía.'}</div>
+    ${f.campings_bajos ? `<div><b>Campings y balnearios a menos de 5 m sobre un río</b> (según el relieve satelital; no es una evaluación del lugar)<ul>${f.campings_bajos.map(c => `<li>${esc(c.nombre)} (${esc(c.tipo)}${c.altura_m != null ? `, ~${c.altura_m} m sobre el cauce` : ''})</li>`).join('')}</ul></div>` : ''}
+    ${relatosDe(f)}`;
   caja.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 ahora();
 pronostico();
 const inicial = location.hash.slice(1);
-if (['ahora', 'pronostico', 'riesgo'].includes(inicial)) mostrar(inicial);
+if (PESTANAS.includes(inicial)) mostrar(inicial);
 window.addEventListener('hashchange', () => {
   const p = location.hash.slice(1);
-  if (['ahora', 'pronostico', 'riesgo'].includes(p)) mostrar(p);
+  if (PESTANAS.includes(p)) mostrar(p);
 });
+
+
+// ---------------------------------------------------------------- relatos aprobados
+const httpsSeguro = u => /^https:\/\//.test(String(u || '')) ? u : '';
+
+function fotosHtml(fotos, clase = 'fotos-relato') {
+  const ok = (fotos || []).map(httpsSeguro).filter(Boolean);
+  return ok.length ? `<div class="${clase}">${ok.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener"><img src="${esc(u)}" alt="Foto del aporte" loading="lazy"></a>`).join('')}</div>` : '';
+}
+
+function popupAporte(p) {
+  return `<b>${esc(p.localidad)}</b> · ${esc(p.fecha_evento || '')}<br>${esc(p.relato || '')}` +
+    (p.altura_agua ? `<br><i>Hasta dónde llegó el agua:</i> ${esc(p.altura_agua)}` : '') + fotosHtml(p.fotos);
+}
+
+function relatosDe(f) {
+  if (!f.relatos || !f.relatos.length) return '';
+  return `<div><b>Relatos de vecinos y visitantes</b><div class="relatos">${f.relatos.map(r => `<div class="relato">
+    <b>${esc(r.fecha_evento || 'sin fecha')}</b>: ${esc(r.relato)}${r.altura_agua ? ` <i>(hasta dónde llegó el agua: ${esc(r.altura_agua)})</i>` : ''}
+    ${fotosHtml(r.fotos)}</div>`).join('')}</div></div>`;
+}
+
+// ---------------------------------------------------------------- formulario de aportes
+const MAX_FOTOS = 3, LADO_MAX = 1600;
+let fotosListas = [], puntoAporte = null, marcaAporte = null, widgetTurnstile = null;
+
+async function aporta() {
+  const cfgA = window.PREDINUN || {};
+  const activo = cfgA.aportesUrl && cfgA.turnstileSitekey;
+  const form = document.getElementById('form-aporte');
+  if (!activo) {
+    document.getElementById('aporta-inactivo').hidden = false;
+    form.querySelectorAll('input, textarea, button').forEach(el => el.disabled = true);
+  }
+  mapas.aporte = mapaBase('mapa-aporte', 9);
+  mapas.aporte.on('click', e => marcar(e.latlng.lat, e.latlng.lng));
+  document.getElementById('usar-ubicacion').addEventListener('click', () => {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      pos => { marcar(pos.coords.latitude, pos.coords.longitude); mapas.aporte.setView([pos.coords.latitude, pos.coords.longitude], 15); },
+      () => { document.getElementById('punto-elegido').textContent = 'No se pudo obtener tu ubicación.'; },
+      { enableHighAccuracy: true, timeout: 15000 });
+  });
+  document.getElementById('borrar-punto').addEventListener('click', () => marcar(null));
+  const d = await leer('localidades.json');
+  if (d) document.getElementById('lista-localidades').innerHTML =
+    d.localidades.map(f => `<option value="${esc(f.localidad)}">`).join('');
+  document.getElementById('fotos').addEventListener('change', prepararFotos);
+  form.addEventListener('submit', enviarAporte);
+  if (activo) cargarTurnstile(cfgA.turnstileSitekey);
+}
+
+function marcar(lat, lon) {
+  if (marcaAporte) { marcaAporte.remove(); marcaAporte = null; }
+  puntoAporte = lat == null ? null : { lat, lon };
+  document.getElementById('borrar-punto').hidden = !puntoAporte;
+  document.getElementById('punto-elegido').textContent = puntoAporte ? `Punto: ${lat.toFixed(4)}, ${lon.toFixed(4)}` : '';
+  if (puntoAporte) marcaAporte = L.marker([lat, lon]).addTo(mapas.aporte);
+}
+
+function cargarTurnstile(sitekey) {
+  window.onTurnstileListo = () => {
+    widgetTurnstile = window.turnstile.render('#turnstile', { sitekey, language: 'es' });
+  };
+  const s = document.createElement('script');
+  s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileListo&render=explicit';
+  s.async = true;
+  document.head.appendChild(s);
+}
+
+// Achica cada foto en el navegador y la vuelve a codificar como JPEG: así pesa poco y pierde los datos EXIF (GPS)
+function achicar(archivo) {
+  return new Promise((ok, mal) => {
+    const url = URL.createObjectURL(archivo);
+    const img = new Image();
+    img.onload = () => {
+      const k = Math.min(1, LADO_MAX / Math.max(img.naturalWidth, img.naturalHeight));
+      const c = document.createElement('canvas');
+      c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url);
+      c.toBlob(b => b ? ok(b) : mal(new Error('no se pudo procesar')), 'image/jpeg', 0.82);
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); mal(new Error('formato no soportado')); };
+    img.src = url;
+  });
+}
+
+async function prepararFotos(ev) {
+  const estado = document.getElementById('estado-aporte');
+  const archivos = [...ev.target.files].slice(0, MAX_FOTOS);
+  if (ev.target.files.length > MAX_FOTOS) estado.textContent = `Se usan solo las primeras ${MAX_FOTOS} fotos.`;
+  fotosListas = [];
+  const vista = document.getElementById('vista-fotos');
+  vista.innerHTML = '';
+  for (const a of archivos) {
+    try {
+      const b = await achicar(a);
+      fotosListas.push(b);
+      const img = document.createElement('img');
+      img.src = URL.createObjectURL(b); img.alt = 'Foto elegida';
+      vista.appendChild(img);
+    } catch (e) {
+      estado.textContent = `No se pudo usar la foto «${a.name}» (${e.message}). Probá con otra.`;
+    }
+  }
+}
+
+async function enviarAporte(ev) {
+  ev.preventDefault();
+  const form = ev.target, estado = document.getElementById('estado-aporte'), boton = document.getElementById('enviar-aporte');
+  const cfgA = window.PREDINUN || {};
+  if (!form.reportValidity()) return;
+  const fd = new FormData(form);
+  if (String(fd.get('relato') || '').trim().length < 20) { estado.textContent = 'Contanos un poco más: el relato es muy corto.'; return; }
+  const token = widgetTurnstile != null && window.turnstile ? window.turnstile.getResponse(widgetTurnstile) : '';
+  if (!token) { estado.textContent = 'Esperá a que termine la verificación antispam y probá de nuevo.'; return; }
+  fd.set('cf-turnstile-response', token);
+  fd.delete('fotos');
+  fotosListas.forEach((b, i) => fd.append('fotos', b, `foto-${i + 1}.jpg`));
+  if (puntoAporte) { fd.set('lat', puntoAporte.lat); fd.set('lon', puntoAporte.lon); }
+  boton.disabled = true; estado.textContent = 'Enviando…';
+  try {
+    const r = await fetch(cfgA.aportesUrl.replace(/\/$/, '') + '/aportes', { method: 'POST', body: fd });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok || !j.ok) throw new Error(j.error || `error ${r.status}`);
+    form.reset(); fotosListas = []; document.getElementById('vista-fotos').innerHTML = ''; marcar(null);
+    estado.innerHTML = '<b>¡Gracias!</b> Recibimos tu aporte. Lo vamos a revisar y, si está todo bien, va a aparecer en el mapa en unos días.';
+  } catch (e) {
+    estado.textContent = `No se pudo enviar: ${e.message}`;
+  } finally {
+    boton.disabled = false;
+    if (window.turnstile && widgetTurnstile != null) window.turnstile.reset(widgetTurnstile);
+  }
+}
