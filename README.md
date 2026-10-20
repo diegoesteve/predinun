@@ -94,6 +94,7 @@ python -m http.server -d docs         # abrir http://localhost:8000
 - [Open-Meteo](https://open-meteo.com): pronósticos, ensambles y humedad del suelo de los modelos (CC BY 4.0).
 - NASA SMAP L4 (`NASA/SMAP/SPL4SMGP`) vía Google Earth Engine.
 - Inventario de daños: Sentinel-2, Landsat, Sentinel-1 y revisión con imágenes históricas de Google Earth.
+- Límites urbanos, ríos y arroyos con nombre y puentes de las localidades serranas (`data/geoportal/`): GeoPortal de la Provincia de Córdoba (2008–2010), vía [OpenDataCordoba/mapas-de-cordoba](https://github.com/OpenDataCordoba/mapas-de-cordoba) (dominio público). Se extraen con `scripts/importar_geoportal.py`.
 - Mapa base © colaboradores de OpenStreetMap.
 
 ## Pendiente
