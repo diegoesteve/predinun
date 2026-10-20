@@ -275,8 +275,15 @@ async function aprobar(req, env, url) {
                            content: aBase64(JSON.stringify(publico, null, 1) + '\n') }),
   });
   if (!r.ok && r.status !== 422) {
-    console.log('github', r.status, await r.text());
-    return texto(`No se pudo publicar en GitHub (HTTP ${r.status}). El aporte sigue pendiente; revisá el token GH_TOKEN.`, 502);
+    const detalle = await r.text();
+    console.log('github', r.status, detalle);
+    let mensaje = '';
+    try { mensaje = JSON.parse(detalle).message || ''; } catch (e) { mensaje = detalle.slice(0, 300); }
+    return texto(`No se pudo publicar en GitHub (HTTP ${r.status}). El aporte sigue pendiente.\n\n` +
+                 `GitHub dice: ${mensaje}\n\n` +
+                 'Revisá el token GH_TOKEN_APORTES: tiene que ser un fine-grained token con acceso solo a ' +
+                 `${env.REPO} y el permiso Contents en "Read and write". Después de cambiarlo, volvé a correr ` +
+                 'el workflow "Desplegar el receptor de aportes" y aprobá de nuevo.', 502);
   }
   await env.APORTES.put(`revisados/${id}/aporte.json`, JSON.stringify({ ...publico, estado: 'aprobado' }));
   const c = await env.APORTES.get(`pendientes/${id}/contacto.json`);
