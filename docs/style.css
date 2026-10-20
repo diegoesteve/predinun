@@ -54,3 +54,19 @@ td.prob { text-align: center; font-family: 'IBM Plex Mono', monospace; }
 .capas label { display: flex; gap: 6px; align-items: center; }
 footer { max-width: 1100px; margin: 0 auto; padding: 16px; color: var(--suave); font-size: 13px; }
 @media (max-width: 600px) { .mapa { height: 300px; } .mapa.alto { height: 420px; } }
+
+.buscador { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin-bottom: 10px; }
+.buscador input[type="search"] { font: inherit; padding: 8px 12px; border: 1px solid var(--borde); border-radius: 8px;
+  background: var(--blanco); color: var(--tinta); min-width: 0; flex: 1 1 220px; max-width: 360px; }
+.buscador label { display: flex; gap: 6px; align-items: center; font-size: 14px; }
+.tabla-alta { max-height: 520px; overflow-y: auto; }
+.tabla-alta th { position: sticky; top: 0; background: var(--blanco); cursor: pointer; user-select: none; }
+#tabla-loc tbody tr { cursor: pointer; }
+#tabla-loc tbody tr:hover, #tabla-loc tbody tr.elegida { background: color-mix(in srgb, var(--acento) 12%, transparent); }
+.detalle { background: var(--blanco); border: 1px solid var(--borde); border-left: 6px solid var(--acento); border-radius: 10px;
+  padding: 12px 16px; margin-bottom: 12px; display: grid; gap: 8px; }
+.detalle h3 { margin: 0; font-size: 17px; }
+.detalle ul { margin: 0; padding-left: 18px; }
+.detalle li { margin: 2px 0; }
+.aviso-si { color: var(--verde); font-weight: 600; } .aviso-no { color: var(--rojo); font-weight: 600; } .aviso-parcial { color: var(--naranja); font-weight: 600; }
+.detalle[hidden] { display: none; }

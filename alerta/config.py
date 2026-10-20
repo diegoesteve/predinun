@@ -44,10 +44,20 @@ def leer_json(nombre, defecto=None):
     return defecto
 
 
+def _sin_nan(o):
+    if isinstance(o, float) and o != o:
+        return None
+    if isinstance(o, dict):
+        return {k: _sin_nan(v) for k, v in o.items()}
+    if isinstance(o, (list, tuple)):
+        return [_sin_nan(v) for v in o]
+    return o
+
+
 def escribir_json(ruta, obj):
     os.makedirs(os.path.dirname(ruta), exist_ok=True)
     with open(ruta, 'w', encoding='utf-8') as f:
-        json.dump(obj, f, ensure_ascii=False, indent=1, default=str)
+        json.dump(_sin_nan(obj), f, ensure_ascii=False, indent=1, default=str, allow_nan=False)
 
 
 def modelos():

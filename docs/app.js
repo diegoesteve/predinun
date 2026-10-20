@@ -153,6 +153,86 @@ async function riesgo() {
   });
   const todos = Object.values(capas).flatMap(c => c.getLayers().map(x => x.getLatLng()));
   if (todos.length) mapas.riesgo.fitBounds(L.latLngBounds(todos).pad(0.1));
+  tablaLocalidades();
+}
+
+// ---------------------------------------------------------------- tabla por localidad
+const TEXTO_AVISO = { 'sí': 'sí', 'parcial': 'en parte', 'no': 'no' };
+const CLASE_AVISO = { 'sí': 'si', 'parcial': 'parcial', 'no': 'no' };
+const sinTildes = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+let LOCS = [], ordenLoc = { campo: null, asc: false }, marcaLoc = null;
+
+async function tablaLocalidades() {
+  const d = await leer('localidades.json');
+  if (!d) return;
+  LOCS = d.localidades;
+  ['buscar-loc', 'solo-eventos', 'sin-aviso'].forEach(id =>
+    document.getElementById(id).addEventListener('input', dibujarLocalidades));
+  dibujarLocalidades();
+  const pedida = new URLSearchParams(location.search).get('localidad');
+  if (pedida) {
+    const f = LOCS.find(x => sinTildes(x.localidad) === sinTildes(pedida));
+    if (f) setTimeout(() => elegirLocalidad(f), 400);   // después de que el mapa termine de encuadrar
+  }
+}
+
+const COLUMNAS = [
+  ['localidad', 'Localidad'], ['banderas', 'Banderas', 'max_banderas'], ['personas_expuestas', 'Personas cerca del cauce'],
+  ['aviso', 'Estación que da aviso'], ['n_eventos', 'Crecidas registradas'], ['danos_registrados', 'Daños en imágenes'],
+];
+
+function dibujarLocalidades() {
+  const q = sinTildes(document.getElementById('buscar-loc').value);
+  const soloEv = document.getElementById('solo-eventos').checked;
+  const sinAviso = document.getElementById('sin-aviso').checked;
+  let filas = LOCS.filter(f => (!q || sinTildes(f.localidad).includes(q))
+    && (!soloEv || f.n_eventos > 0) && (!sinAviso || f.aviso === 'no'));
+  if (ordenLoc.campo) {
+    const k = ordenLoc.campo, sgn = ordenLoc.asc ? 1 : -1;
+    filas = [...filas].sort((a, b) => {
+      const x = a[k] ?? -1, y = b[k] ?? -1;
+      return (typeof x === 'string' ? x.localeCompare(y) : x - y) * sgn;
+    });
+  }
+  const t = document.getElementById('tabla-loc');
+  t.innerHTML = '<thead><tr>' + COLUMNAS.map(([k, n, ko]) =>
+      `<th data-k="${ko || k}">${n}${ordenLoc.campo === (ko || k) ? (ordenLoc.asc ? ' ▲' : ' ▼') : ''}</th>`).join('') + '</tr></thead><tbody>' +
+    filas.map(f => `<tr data-loc="${esc(f.localidad)}">
+      <td>${esc(f.localidad)}</td><td>${esc(f.banderas || '–')}</td>
+      <td class="num">${f.personas_expuestas || '–'}</td>
+      <td>${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : '–'}</td>
+      <td class="num">${f.n_eventos || '–'}</td><td class="num">${f.danos_registrados || '–'}</td></tr>`).join('') + '</tbody>';
+  t.querySelectorAll('th').forEach(th => th.addEventListener('click', () => {
+    const k = th.dataset.k;
+    ordenLoc = { campo: k, asc: ordenLoc.campo === k ? !ordenLoc.asc : k === 'localidad' };
+    dibujarLocalidades();
+  }));
+  t.querySelectorAll('tbody tr').forEach(tr => tr.addEventListener('click', () =>
+    elegirLocalidad(LOCS.find(f => f.localidad === tr.dataset.loc))));
+  if (!filas.length) t.innerHTML += '<tbody><tr><td colspan="6">No hay localidades con ese filtro.</td></tr></tbody>';
+}
+
+function elegirLocalidad(f) {
+  if (!f) return;
+  document.querySelectorAll('#tabla-loc tbody tr').forEach(tr => tr.classList.toggle('elegida', tr.dataset.loc === f.localidad));
+  try { history.replaceState(null, '', `?localidad=${encodeURIComponent(f.localidad)}#riesgo`); } catch (e) {}
+  mapas.riesgo.invalidateSize();
+  setTimeout(() => mapas.riesgo.setView([f.lat, f.lon], 13), 50);
+  if (marcaLoc) marcaLoc.remove();
+  marcaLoc = L.layerGroup().addTo(mapas.riesgo);
+  (f.arroyos || []).forEach(a => L.circleMarker([a.lat, a.lon], { radius: 9, color: '#5B2A86', weight: 3, fill: false })
+    .bindTooltip(`${a.arroyo} ${a.banderas || ''}`).addTo(marcaLoc));
+  const arroyos = (f.arroyos || []).map(a => `<li><b>${esc(a.arroyo)}</b> ${esc(a.banderas || '')} · cuenca ${a.area_km2} km² · ~${a.personas} personas cerca del cauce · ${a.margen_min != null ? `estación aguas arriba con ~${Math.round(a.margen_min / 60 * 10) / 10} h de margen` : 'sin estación aguas arriba'}</li>`).join('');
+  const eventos = (f.eventos || []).sort((a, b) => String(b.fecha).localeCompare(a.fecha)).map(e =>
+    `<li><b>${esc(String(e.fecha).slice(0, 10))}</b>${e.severidad ? ` (${esc(e.severidad)})` : ''}: ${esc(e.impacto || 'sin detalle')}${e.url ? ` <a href="${esc(e.url)}" target="_blank" rel="noopener">fuente</a>` : ''}</li>`).join('');
+  const caja = document.getElementById('detalle-loc');
+  caja.hidden = false;
+  caja.innerHTML = `<h3>${esc(f.localidad)} ${esc(f.banderas || '')}</h3>
+    ${f.tipos && f.tipos.length ? `<div>Tipo de peligro: ${esc(f.tipos.join(', '))}${f.parecido_scm != null && f.parecido_scm < 1.5 ? ' · <b>muy parecido a San Carlos Minas</b>' : ''}</div>` : ''}
+    <div>Estación que da aviso: ${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : 'sin datos'}${f.danos_registrados ? ` · ${f.danos_registrados} daños verificados en imágenes a menos de 4 km` : ''}</div>
+    ${arroyos ? `<div><b>Arroyos que entran al pueblo</b><ul>${arroyos}</ul></div>` : '<div>No se encontraron arroyos serranos que entren a esta localidad.</div>'}
+    <div><b>Crecidas registradas</b>${eventos ? `<ul>${eventos}</ul>` : ' ninguna en el inventario todavía.'}</div>`;
+  caja.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 ahora();

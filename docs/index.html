@@ -55,6 +55,15 @@
     <p class="nota">Lugares con daños verificados en imágenes satelitales y de Google Earth (crecidas de 2014–2016), tramos de río inestables, microcuencas prioritarias y pueblos en la salida de un arroyo serrano con condiciones parecidas a San Carlos Minas en 1992 (3 o más banderas). Es un orden para saber dónde mirar, no un mapa oficial de riesgo.</p>
     <div class="capas" id="capas"></div>
     <div id="mapa-riesgo" class="mapa alto"></div>
+    <h2>Por localidad</h2>
+    <p class="nota">Elegí una localidad para centrar el mapa y ver sus arroyos, las crecidas registradas y si tiene estaciones que den tiempo de avisar. Las banderas son del análisis de arroyos serranos (paso 9): ⛰️ cuenca serrana peligrosa, 🚪 salida de sierra, ↪️ curva o angostamiento, 🌉 puentes, 🏠 casas bajas junto al cauce, 🟫 pueblo en un llano junto al cauce.</p>
+    <div class="buscador">
+      <input id="buscar-loc" type="search" placeholder="Buscar localidad…" aria-label="Buscar localidad" autocomplete="off">
+      <label><input id="solo-eventos" type="checkbox"> Solo con crecidas registradas</label>
+      <label><input id="sin-aviso" type="checkbox"> Solo sin estación que dé aviso</label>
+    </div>
+    <div id="detalle-loc" class="detalle" hidden></div>
+    <div class="tabla-envoltura tabla-alta"><table id="tabla-loc"></table></div>
   </section>
 </main>
 
