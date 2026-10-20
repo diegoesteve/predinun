@@ -62,7 +62,7 @@ En **Settings → Secrets and variables → Actions → New repository secret**:
 | `TELEGRAM_CHAT_ID` | avisos | mandale un mensaje a tu bot y abrí `https://api.telegram.org/bot<TOKEN>/getUpdates`: el número de `chat.id` |
 | `GCP_WIF_PROVIDER` | humedad del suelo (SMAP) | lo imprime `scripts/configurar_google.sh` (ver abajo) |
 | `GCP_SERVICE_ACCOUNT` | idem | idem |
-| `EE_PROJECT` | idem | `the-byway-494216-n2` |
+| `EE_PROJECT` | idem | |
 
 Sin los secretos de Telegram los avisos solo se imprimen en el registro del workflow. Sin los de Google el boletín sale sin el dato de suelo.
 
