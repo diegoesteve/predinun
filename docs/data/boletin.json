@@ -1,7 +1,7 @@
 {
- "generado": "2026-10-20 15:00",
+ "generado": "2026-10-20 17:00",
  "horas": 48,
- "smap_atraso_dias": 3.8,
+ "smap_atraso_dias": 2.9,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
@@ -20,7 +20,7 @@
      "cuando": "2026-10-22 10:00"
     },
     "ECMWF": {
-     "max_3h_mm": 1.8,
+     "max_3h_mm": 1.5,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-22 15:00"
@@ -34,10 +34,10 @@
    "nivel": "verde",
    "nivel_por_lluvia": "verde",
    "suelo": {
-    "smap_m3m3": 0.112,
-    "smap_percentil": 82,
-    "smap_fecha": "2026-10-16 22:30 UTC",
-    "percentil": 82,
+    "smap_m3m3": 0.121,
+    "smap_percentil": 90,
+    "smap_fecha": "2026-10-17 22:30 UTC",
+    "percentil": 90,
     "es_estimado": false,
     "estado": "saturado"
    },
@@ -60,10 +60,10 @@
      "cuando": "2026-10-22 09:00"
     },
     "ECMWF": {
-     "max_3h_mm": 1.4,
+     "max_3h_mm": 1.2,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 08:00"
+     "cuando": "2026-10-22 13:00"
     }
    },
    "ensambles": {
@@ -74,39 +74,33 @@
    "nivel": "verde",
    "nivel_por_lluvia": "verde",
    "suelo": {
-    "smap_m3m3": 0.12,
-    "smap_percentil": 85,
-    "smap_fecha": "2026-10-16 22:30 UTC",
-    "estimado_hoy_m3m3": 0.129,
-    "estimado_hoy_percentil": 98,
-    "percentil": 98,
-    "es_estimado": true,
+    "smap_m3m3": 0.132,
+    "smap_percentil": 99,
+    "smap_fecha": "2026-10-17 22:30 UTC",
+    "estimado_hoy_m3m3": 0.122,
+    "estimado_hoy_percentil": 88,
+    "percentil": 99,
+    "es_estimado": false,
     "estado": "saturado"
    },
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
-    "et0_ult_mm": 19.1,
+    "et0_ult_mm": 18.9,
     "et0_ult_normal_mm": 42.5,
     "et0_ult_pct": 45,
     "radiacion_ult_pct": 57,
     "nubosidad_ult_media": 92,
     "nubosidad_ult_normal": 42,
     "dias_nublados_ult": 10,
-    "et0_prox_mm": 19.7,
-    "et0_prox_pct": 63
+    "et0_prox_mm": 20.9,
+    "et0_prox_pct": 67
    }
   },
   {
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
-    "GFS": {
-     "max_3h_mm": 2.2,
-     "umbral_mm": 10.1,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 14:00"
-    },
     "ICON": {
      "max_3h_mm": 1.2,
      "umbral_mm": 9.7,
@@ -128,13 +122,13 @@
    "nivel": "verde",
    "nivel_por_lluvia": "verde",
    "suelo": {
-    "smap_m3m3": 0.147,
-    "smap_percentil": 94,
-    "smap_fecha": "2026-10-16 22:30 UTC",
-    "estimado_hoy_m3m3": 0.152,
-    "estimado_hoy_percentil": 98,
-    "percentil": 98,
-    "es_estimado": true,
+    "smap_m3m3": 0.153,
+    "smap_percentil": 99,
+    "smap_fecha": "2026-10-17 22:30 UTC",
+    "estimado_hoy_m3m3": 0.149,
+    "estimado_hoy_percentil": 96,
+    "percentil": 99,
+    "es_estimado": false,
     "estado": "saturado"
    },
    "secado": {
@@ -147,8 +141,8 @@
     "nubosidad_ult_media": 92,
     "nubosidad_ult_normal": 43,
     "dias_nublados_ult": 10,
-    "et0_prox_mm": 20.5,
-    "et0_prox_pct": 66
+    "et0_prox_mm": 22.1,
+    "et0_prox_pct": 71
    }
   },
   {
@@ -168,7 +162,7 @@
      "cuando": "2026-10-22 10:00"
     },
     "ECMWF": {
-     "max_3h_mm": 0.3,
+     "max_3h_mm": 1.1,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-22 01:00"
@@ -182,14 +176,14 @@
    "nivel": "verde",
    "nivel_por_lluvia": "verde",
    "suelo": {
-    "smap_m3m3": 0.174,
-    "smap_percentil": 84,
-    "smap_fecha": "2026-10-16 22:30 UTC",
-    "estimado_hoy_m3m3": 0.165,
-    "estimado_hoy_percentil": 77,
-    "percentil": 77,
-    "es_estimado": true,
-    "estado": "normal"
+    "smap_m3m3": 0.177,
+    "smap_percentil": 87,
+    "smap_fecha": "2026-10-17 22:30 UTC",
+    "estimado_hoy_m3m3": 0.157,
+    "estimado_hoy_percentil": 68,
+    "percentil": 87,
+    "es_estimado": false,
+    "estado": "saturado"
    },
    "secado": {
     "dias_atras": 10,
@@ -306,18 +300,18 @@
    },
    "Capital": {
     "nombre": "Capital (experimental)",
-    "suelo_saturado": false,
+    "suelo_saturado": true,
     "prob": [
      0.0,
      0.0,
-     0.0,
-     0.01,
      0.02,
-     0.01,
-     0.0,
-     0.0,
+     0.04,
+     0.11,
      0.05,
-     0.0
+     0.0,
+     0.04,
+     0.1,
+     0.02
     ],
     "mm": [
      0.2,
