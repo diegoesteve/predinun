@@ -63,7 +63,7 @@ def main():
         a = pd.read_csv(ruta)
         a = a[(a['localidad'] != 'zona rural') & (a['n_banderas'] >= 3)]
         feats += puntos(a, 'comunidad análoga', campos=['localidad', 'arroyo', 'banderas', 'tipo_peligro', 'area_km2',
-                                                         'desnivel_m', 'puentes', 'personas_expuestas', 'personas_bajo',
+                                                         'desnivel_m', 'puentes', 'personas_expuestas', 'personas_llano', 'personas_bajo',
                                                          'estaciones_arriba', 'margen_aprox_min', 'parecido_scm'])
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'riesgo.geojson'), {'type': 'FeatureCollection', 'features': feats})
     print(f'riesgo.geojson: {len(feats)} elementos')
