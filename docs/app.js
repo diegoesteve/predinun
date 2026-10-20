@@ -130,6 +130,7 @@ async function riesgo() {
     'daño confirmado': { color: '#C0362C', radio: 7, titulo: 'Daños confirmados (2014–2016)' },
     'tramo de río': { color: '#0E5E5A', radio: 5, titulo: 'Tramos de río inestables o con casas cerca' },
     'microcuenca': { color: '#E07B20', radio: 5, titulo: 'Microcuencas prioritarias' },
+    'comunidad análoga': { color: '#5B2A86', radio: 7, titulo: 'Pueblos en la salida de un arroyo serrano (parecidos a San Carlos Minas)' },
   };
   const capas = {};
   g.features.forEach(f => {

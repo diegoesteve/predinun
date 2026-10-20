@@ -4,6 +4,7 @@ Capas (cada una se agrega solo si está su archivo en data/):
   - sitios_confirmados.csv   daños verificados con imágenes (paso 6)
   - tramos_rios.csv          tramos de río con su índice de corredor (paso 5, sección 4b)
   - microcuencas.csv         prioridad por microcuenca (paso 5), como puntos en el centroide
+  - comunidades_analogas.csv arroyos serranos que entran a pueblos, parecidos a San Carlos Minas (paso 9)
 Se corre a mano cuando cambian esos archivos; no hace falta en cada pasada.
 """
 import os
@@ -57,6 +58,13 @@ def main():
             if 'expuesto_ha' in m:
                 m = m[m['expuesto_ha'] > 0]
             feats += puntos(m, 'microcuenca', la, lo, ['localidad_cercana', 'tipo', 'expuesto_ha', 'banderas', 'n_banderas'])
+    ruta = os.path.join(cfg.DATA, 'comunidades_analogas.csv')
+    if os.path.exists(ruta):
+        a = pd.read_csv(ruta)
+        a = a[(a['localidad'] != 'zona rural') & (a['n_banderas'] >= 3)]
+        feats += puntos(a, 'comunidad análoga', campos=['localidad', 'banderas', 'area_km2', 'desnivel_m', 'puentes',
+                                                         'construido_bajo_ha', 'personas_bajo', 'estaciones_arriba',
+                                                         'margen_aprox_min', 'parecido_scm'])
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'riesgo.geojson'), {'type': 'FeatureCollection', 'features': feats})
     print(f'riesgo.geojson: {len(feats)} elementos')
 
