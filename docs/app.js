@@ -17,7 +17,32 @@ function mapaBase(id, zoom = 10) {
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 17, attribution: '&copy; OpenStreetMap'
   }).addTo(m);
+  zoomConCtrl(m);
   return m;
+}
+
+// La rueda sola sigue bajando la página; con Ctrl (o Cmd en Mac, o pellizcando el trackpad) acerca y aleja el mapa.
+function zoomConCtrl(m) {
+  const cont = m.getContainer();
+  const aviso = L.DomUtil.create('div', 'aviso-zoom', cont);
+  aviso.dataset.texto = /Mac|iPhone|iPad/.test(navigator.platform) ? 'Usá ⌘ + rueda para acercar o alejar el mapa' : 'Usá Ctrl + rueda para acercar o alejar el mapa';
+  let acumulado = 0, ultimo = 0, temporizador;
+  cont.addEventListener('wheel', e => {
+    if (!(e.ctrlKey || e.metaKey)) {
+      aviso.classList.add('visible');
+      clearTimeout(temporizador);
+      temporizador = setTimeout(() => aviso.classList.remove('visible'), 1200);
+      return;
+    }
+    e.preventDefault();
+    aviso.classList.remove('visible');
+    acumulado += e.deltaY * (e.deltaMode === 1 ? 33 : 1);
+    const ahora = Date.now();
+    if (Math.abs(acumulado) < 60 || ahora - ultimo < 120) return;
+    const paso = acumulado < 0 ? 1 : -1;
+    acumulado = 0; ultimo = ahora;
+    m.setZoomAround(m.mouseEventToContainerPoint(e), m.getZoom() + paso);
+  }, { passive: false });
 }
 
 // ---------------------------------------------------------------- pestañas

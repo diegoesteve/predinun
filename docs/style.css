@@ -137,3 +137,8 @@ footer { max-width: 1100px; margin: 0 auto; padding: 16px; color: var(--suave); 
 }
 #tabla-estaciones tr.con-mapa { cursor: pointer; }
 #tabla-estaciones tr.con-mapa:hover, #tabla-estaciones tr.elegida { background: color-mix(in srgb, var(--acento) 12%, transparent); }
+.aviso-zoom { position: absolute; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; text-align: center;
+  padding: 16px; background: rgba(0,0,0,.35); pointer-events: none; opacity: 0; transition: opacity .2s; }
+.aviso-zoom::before { content: attr(data-texto); background: rgba(22,32,28,.88); color: #fff; font-weight: 600; font-size: 16px;
+  padding: 10px 16px; border-radius: 999px; }
+.aviso-zoom.visible { opacity: 1; }
