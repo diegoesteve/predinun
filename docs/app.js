@@ -13,7 +13,8 @@ async function leer(nombre) {
 }
 
 function mapaBase(id, zoom = 10) {
-  const m = L.map(id, { scrollWheelZoom: false }).setView(CENTRO, zoom);
+  // En pantallas táctiles, un dedo baja la página y dos dedos mueven y acercan el mapa.
+  const m = L.map(id, { scrollWheelZoom: false, dragging: !TACTIL }).setView(CENTRO, zoom);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 17, attribution: '&copy; OpenStreetMap'
   }).addTo(m);
@@ -21,19 +22,32 @@ function mapaBase(id, zoom = 10) {
   return m;
 }
 
+const TACTIL = window.matchMedia('(pointer: coarse)').matches;
+
 // La rueda sola sigue bajando la página; con Ctrl (o Cmd en Mac, o pellizcando el trackpad) acerca y aleja el mapa.
 function zoomConCtrl(m) {
   const cont = m.getContainer();
   const aviso = L.DomUtil.create('div', 'aviso-zoom', cont);
   aviso.dataset.texto = /Mac|iPhone|iPad/.test(navigator.platform) ? 'Usá ⌘ + rueda para acercar o alejar el mapa' : 'Usá Ctrl + rueda para acercar o alejar el mapa';
   let acumulado = 0, ultimo = 0, temporizador;
+  const mostrar = texto => {
+    aviso.dataset.texto = texto;
+    aviso.classList.add('visible');
+    clearTimeout(temporizador);
+    temporizador = setTimeout(() => aviso.classList.remove('visible'), 1200);
+  };
+  if (TACTIL) {
+    // Con un dedo se baja la página; si lo arrastra sobre el mapa, se recuerda cómo moverlo
+    let inicio = null;
+    cont.addEventListener('touchstart', e => { inicio = e.touches.length === 1 ? e.touches[0].clientY : null; }, { passive: true });
+    cont.addEventListener('touchmove', e => {
+      if (e.touches.length === 1 && inicio != null && Math.abs(e.touches[0].clientY - inicio) > 10) mostrar('Usá dos dedos para mover el mapa');
+      if (e.touches.length > 1) aviso.classList.remove('visible');
+    }, { passive: true });
+    return;
+  }
   cont.addEventListener('wheel', e => {
-    if (!(e.ctrlKey || e.metaKey)) {
-      aviso.classList.add('visible');
-      clearTimeout(temporizador);
-      temporizador = setTimeout(() => aviso.classList.remove('visible'), 1200);
-      return;
-    }
+    if (!(e.ctrlKey || e.metaKey)) { mostrar(/Mac|iPhone|iPad/.test(navigator.platform) ? 'Usá ⌘ + rueda para acercar o alejar el mapa' : 'Usá Ctrl + rueda para acercar o alejar el mapa'); return; }
     e.preventDefault();
     aviso.classList.remove('visible');
     acumulado += e.deltaY * (e.deltaMode === 1 ? 33 : 1);
