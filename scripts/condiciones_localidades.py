@@ -67,6 +67,18 @@ def pedir(params, reintentos=4):
     r.raise_for_status()
 
 
+def semaforo(condicion, maximo, umbral, exposicion):
+    """Semáforo «Ahora» de la página (la misma regla que muestra la leyenda):
+    alerta   = se espera lluvia fuerte en un lugar expuesto o muy expuesto;
+    atención = lluvia fuerte en un lugar poco expuesto, o lluvia de al menos el 75 % del umbral en uno muy expuesto;
+    normal   = el resto."""
+    if condicion == 'lluvia fuerte':
+        return 'alerta' if exposicion in ('muy expuesta', 'expuesta') else 'atención'
+    if exposicion == 'muy expuesta' and umbral and maximo >= 0.75 * umbral:
+        return 'atención'
+    return 'normal'
+
+
 def main():
     locs = (cfg.leer_json(os.path.join('..', 'docs', 'data', 'localidades.json')) or {}).get('localidades', [])
     if not locs:
@@ -108,7 +120,7 @@ def main():
             maximo = float(r3.max()) if len(r3) else 0.0
             condicion = 'lluvia fuerte' if maximo >= efectivo else 'atención' if maximo >= efectivo / 2 else 'normal'
             salida[f['localidad']] = {
-                'condicion': condicion, 'max_3h_mm': round(maximo, 1),
+                'condicion': condicion, 'ahora': semaforo(condicion, maximo, efectivo, f.get('exposicion')), 'max_3h_mm': round(maximo, 1),
                 'cuando': r3.idxmax().strftime('%Y-%m-%d %H:00') if maximo > 0 else None,
                 'umbral_mm': round(efectivo, 1), 'suelo_humedo': bool(humedo), 'suelo': suelo,
                 'lluvia_7d_mm': round(lluvia_7d, 1),
@@ -117,7 +129,7 @@ def main():
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'condiciones_localidades.json'),
                       {'generado': ahora.strftime('%Y-%m-%d %H:%M'), 'horas': HORAS, 'localidades': salida})
     from collections import Counter
-    print(f'condiciones_localidades.json: {len(salida)} localidades', dict(Counter(v['condicion'] for v in salida.values())))
+    print(f'condiciones_localidades.json: {len(salida)} localidades', dict(Counter(v['ahora'] for v in salida.values())))
 
 
 if __name__ == '__main__':

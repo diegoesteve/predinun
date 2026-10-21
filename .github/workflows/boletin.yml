@@ -52,11 +52,14 @@ jobs:
       - name: Lluvia pronosticada y suelo por localidad
         continue-on-error: true
         run: python scripts/condiciones_localidades.py
+      - name: Páginas para compartir cada localidad (vista previa en WhatsApp)
+        continue-on-error: true
+        run: python scripts/paginas_compartir.py
       - name: Guardar resultados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/*.json docs/data/*.geojson data/*.json
+          git add docs/data/*.json docs/data/*.geojson data/*.json docs/l
           git diff --cached --quiet && exit 0
           git commit -m "boletín: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push

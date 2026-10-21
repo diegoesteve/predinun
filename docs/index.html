@@ -4,7 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crecidas Sierras de Córdoba</title>
-<meta name="description" content="Monitor experimental de lluvias y crecidas en Sierras Chicas y Punilla. No oficial.">
+<meta name="description" content="¿Hay riesgo de crecida esta semana? Semáforo por localidad, ríos en vivo y pronóstico para las sierras de Córdoba, con datos de la Provincia, NASA y Open-Meteo. Monitor experimental, no oficial.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crecidas · Sierras de Córdoba">
+<meta property="og:title" content="¿Hay riesgo de crecida esta semana? · Sierras de Córdoba">
+<meta property="og:description" content="Semáforo por localidad, ríos en vivo y pronóstico, con datos de la Provincia de Córdoba, NASA y Open-Meteo. Monitor experimental, no oficial.">
+<meta property="og:url" content="https://diegoesteve.github.io/predinun/">
+<meta property="og:image" content="https://diegoesteve.github.io/predinun/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -12,12 +22,13 @@
 </head>
 <body>
 <header class="barra">
-  <div class="marca">
+  <div class="marca" role="button" tabindex="0" data-p="inicio" title="Ir al inicio">
     <span class="titulo">Crecidas · Sierras de Córdoba</span>
     <span class="sub">Monitor experimental, no oficial</span>
   </div>
   <nav class="pestanas" role="tablist">
-    <button role="tab" data-p="ahora" aria-selected="true">Ahora</button>
+    <button role="tab" data-p="inicio" aria-selected="true">Inicio</button>
+    <button role="tab" data-p="ahora" aria-selected="false">Ahora</button>
     <button role="tab" data-p="pronostico" aria-selected="false">Pronóstico</button>
     <button role="tab" data-p="riesgo" aria-selected="false">Mapa de riesgo</button>
     <button role="tab" data-p="aporta" aria-selected="false">Aportá</button>
@@ -31,7 +42,44 @@
     <div>Ante una emergencia llamá al <strong>103 (Defensa Civil)</strong> o al <strong>911</strong>.</div>
   </aside>
 
-  <section id="p-ahora" class="pagina">
+  <section id="p-inicio" class="pagina">
+    <div class="portada">
+      <p class="antetitulo">Sierras de Córdoba · datos públicos</p>
+      <h1>¿Hay riesgo de crecida esta semana?</h1>
+      <p class="bajada">Lluvia, ríos y humedad del suelo en las sierras, con los datos de la Provincia de Córdoba, la NASA y los principales modelos de pronóstico, puestos para que cualquiera los pueda mirar.</p>
+    </div>
+    <div id="estado-hoy" class="estado-hoy">Cargando…</div>
+    <div class="buscar-portada">
+      <label for="buscar-portada"><b>¿Cómo está tu localidad?</b></label>
+      <div class="buscar-caja">
+        <input id="buscar-portada" type="search" placeholder="Escribí el nombre, por ejemplo Cosquín" autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="sugerencias-portada" aria-autocomplete="list">
+        <ul id="sugerencias-portada" class="sugerencias" role="listbox" hidden></ul>
+      </div>
+    </div>
+    <div class="accesos">
+      <button class="acceso" data-ir="ahora"><b>Ríos y lluvia en vivo</b><span>Las estaciones de la Provincia, cada 15 minutos.</span></button>
+      <button class="acceso" data-ir="pronostico"><b>Pronóstico a 10 días</b><span>Cuánta lluvia esperan los modelos y cómo está el suelo.</span></button>
+      <button class="acceso" data-ir="riesgo"><b>Mapa de riesgo</b><span>Qué tan expuesta está cada localidad, y por qué.</span></button>
+      <button class="acceso acceso-aporte" data-ir="aporta"><b>¿Viviste una crecida? Contala</b><span>Tu relato y tus fotos ayudan a saber dónde es peligroso.</span></button>
+    </div>
+
+    <h2>De dónde salen los datos</h2>
+    <p class="nota">Todo viene de fuentes públicas y se actualiza solo. El código y los datos están <a href="https://github.com/diegoesteve/predinun">abiertos en GitHub</a>, para que cualquiera pueda revisar cómo se calcula.</p>
+    <div class="fuentes">
+      <div><b>Red de estaciones de la Provincia de Córdoba</b><span>Lluvia y nivel de los ríos. Se consulta cada 15 minutos.</span><span class="act" id="act-estaciones"></span></div>
+      <div><b>Modelos de pronóstico GFS (EE.UU.), ICON (Alemania) y ECMWF (Europa)</b><span>Lluvia de los próximos días, con sus ensambles, vía Open-Meteo. Cada 6 horas.</span><span class="act" id="act-pronostico"></span></div>
+      <div><b>Satélite SMAP de la NASA</b><span>Humedad del suelo. Llega con dos o tres días de atraso.</span><span class="act" id="act-smap"></span></div>
+      <div><b>Inventario de crecidas</b><span>Eventos desde 1671, armado con notas de prensa, archivos y relatos, con la fuente de cada uno.</span><span class="act" id="act-inventario"></span></div>
+      <div><b>Imágenes satelitales Sentinel, Landsat y Google Earth</b><span>Daños verificados en las crecidas de 2014 a 2016.</span></div>
+      <div><b>Relieve, población y mapas</b><span>MERIT Hydro (relieve y cauces), GHSL (población), OpenStreetMap y el GeoPortal de la Provincia (pueblos, puentes, campings).</span></div>
+    </div>
+
+    <h2>Quiénes hacemos esto</h2>
+    <p>Es un proyecto personal y sin fines comerciales de vecinos de Córdoba que estudian las crecidas de las sierras. No es un servicio oficial: ante una emergencia, los avisos que valen son los de Defensa Civil, el Servicio Meteorológico Nacional y tu municipio.</p>
+  </section>
+
+  <section id="p-ahora" class="pagina" hidden>
     <p class="meta" id="ahora-meta">Cargando…</p>
     <div class="tarjetas" id="ahora-cuencas"></div>
     <h2>Estaciones de la Provincia</h2>

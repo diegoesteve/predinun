@@ -61,13 +61,20 @@ function zoomConCtrl(m) {
 
 // ---------------------------------------------------------------- pestañas
 const mapas = {};
-const PESTANAS = ['ahora', 'pronostico', 'riesgo', 'aporta'];
-document.querySelectorAll('.pestanas button').forEach(b => b.addEventListener('click', () => mostrar(b.dataset.p)));
+const PESTANAS = ['inicio', 'ahora', 'pronostico', 'riesgo', 'aporta'];
+document.querySelectorAll('.pestanas button, .acceso').forEach(b => b.addEventListener('click', () => {
+  mostrar(b.dataset.p || b.dataset.ir);
+  if (b.dataset.ir) window.scrollTo(0, 0);
+}));
+const marca = document.querySelector('.marca');
+marca.addEventListener('click', () => mostrar('inicio'));
+marca.addEventListener('keydown', e => { if (e.key === 'Enter') mostrar('inicio'); });
 function mostrar(p) {
   document.querySelectorAll('.pestanas button').forEach(b => b.setAttribute('aria-selected', b.dataset.p === p));
   document.querySelectorAll('.pagina').forEach(s => s.hidden = s.id !== 'p-' + p);
   try { history.replaceState(null, '', '#' + p); } catch (e) {}
   Object.values(mapas).forEach(m => m.invalidateSize());
+  if (p === 'ahora' && !mapas.estaciones) ahora();
   if (p === 'riesgo' && !mapas.riesgo) riesgo();
   if (p === 'aporta' && !mapas.aporte) aporta();
 }
@@ -239,7 +246,7 @@ function semaforo(c, expo) {
 
 function combinar(f) {
   const c = CONDICIONES && CONDICIONES.localidades[f.localidad];
-  const a = semaforo(c, f.exposicion);
+  const a = c && c.ahora ? c.ahora : semaforo(c, f.exposicion);   // el boletín ya lo calcula; si no, la misma regla acá
   return { ...f, ahora: a, condiciones: c || null, orden_ahora: (ORDEN_AHORA[a] || 0) * 10 + (ORDEN_EXPO[f.exposicion] || 0),
            orden_expo: ORDEN_EXPO[f.exposicion] || 0 };
 }
@@ -270,12 +277,21 @@ function dibujarCapaAhora() {
     : `Ahora: todas las localidades en ${chipAhora('normal')}. No se espera lluvia fuerte en los próximos 3 días.`;
 }
 
+let cargaLocs = null;
+function cargarLocs() {
+  cargaLocs ||= Promise.all([leer('localidades.json'), leer('condiciones_localidades.json')]).then(([d, c]) => {
+    CONDICIONES = c;
+    LOCS = d ? d.localidades.map(combinar) : [];
+    return LOCS;
+  });
+  return cargaLocs;
+}
+
 async function tablaLocalidades() {
-  const [d, c] = await Promise.all([leer('localidades.json'), leer('condiciones_localidades.json')]);
-  if (!d) return;
-  CONDICIONES = c;
+  await cargarLocs();
+  if (!LOCS.length) return;
+  const c = CONDICIONES;
   if (c) document.getElementById('condiciones-meta').textContent = `Última actualización del pronóstico por localidad: ${c.generado}.`;
-  LOCS = d.localidades.map(combinar);
   dibujarCapaAhora();
   ['buscar-loc', 'solo-eventos', 'sin-aviso'].forEach(id =>
     document.getElementById(id).addEventListener('input', dibujarLocalidades));
@@ -325,10 +341,9 @@ function dibujarLocalidades() {
 }
 
 // ---------------------------------------------------------------- buscador con sugerencias
-let sugeridas = [], marcada = -1;
-
-function prepararSugerencias() {
-  const input = document.getElementById('buscar-loc'), lista = document.getElementById('sugerencias-loc');
+function prepararSugerencias(idInput = 'buscar-loc', idLista = 'sugerencias-loc', alElegir = null) {
+  const input = document.getElementById(idInput), lista = document.getElementById(idLista);
+  let sugeridas = [], marcada = -1;
   const cerrar = () => { lista.hidden = true; input.setAttribute('aria-expanded', 'false'); marcada = -1; };
   const pintar = () => {
     const q = sinTildes(input.value.trim());
@@ -341,14 +356,15 @@ function prepararSugerencias() {
     lista.innerHTML = sugeridas.length ? sugeridas.map((f, i) => {
       const n = sinTildes(f.localidad), k = n.indexOf(q);
       const nombre = esc(f.localidad.slice(0, k)) + '<mark>' + esc(f.localidad.slice(k, k + q.length)) + '</mark>' + esc(f.localidad.slice(k + q.length));
-      return `<li role="option" id="sug-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${nombre}</span><span>${f.ahora === 'alerta' || f.ahora === 'atención' ? chipAhora(f.ahora) + ' ' : ''}${chipExpo(f.exposicion)}</span></li>`;
+      return `<li role="option" id="${idLista}-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${nombre}</span><span>${f.ahora === 'alerta' || f.ahora === 'atención' ? chipAhora(f.ahora) + ' ' : ''}${chipExpo(f.exposicion)}</span></li>`;
     }).join('') : '<li class="vacio">No hay localidades con ese nombre.</li>';
     lista.hidden = false; input.setAttribute('aria-expanded', 'true');
   };
   const elegir = i => {
     const f = sugeridas[i];
     if (!f) return;
-    input.value = f.localidad; cerrar(); dibujarLocalidades(); elegirLocalidad(f);
+    input.value = f.localidad; cerrar();
+    if (alElegir) alElegir(f); else { dibujarLocalidades(); elegirLocalidad(f); }
   };
   input.addEventListener('input', () => { marcada = -1; pintar(); });
   input.addEventListener('focus', pintar);
@@ -393,7 +409,11 @@ function elegirLocalidad(f) {
     `<li><b>${esc(String(e.fecha).slice(0, 10))}</b>${e.severidad ? ` (${esc(e.severidad)})` : ''}: ${esc(e.impacto || 'sin detalle')}${e.url ? ` <a href="${esc(e.url)}" target="_blank" rel="noopener">fuente</a>` : ''}</li>`).join('');
   const caja = document.getElementById('detalle-loc');
   caja.hidden = false;
+  const enlace = new URL(`l/${slug(f.localidad)}/`, location.href.split(/[?#]/)[0]).href;
+  const textoCompartir = `${f.localidad}: ${f.ahora ? `${f.ahora} para los próximos 3 días` : 'crecidas en las sierras'}`;
   caja.innerHTML = `<h3>${esc(f.localidad)}</h3>
+    <div class="compartir"><button type="button" class="boton-sec" id="compartir-loc">Compartir</button>
+      <a class="boton-sec" href="https://wa.me/?text=${encodeURIComponent(`${textoCompartir} ${enlace}`)}" target="_blank" rel="noopener">Enviar por WhatsApp</a></div>
     <div><b>Ahora</b> ${chipAhora(f.ahora)} · <b>Exposición</b> ${chipExpo(f.exposicion)}</div>
     ${textoCondiciones(f.condiciones)}
     ${f.razones && f.razones.length ? `<div><b>Por qué está ${esc(f.exposicion || 'en la lista')}</b><ul class="razones">${f.razones.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
@@ -403,13 +423,19 @@ function elegirLocalidad(f) {
     <div><b>Crecidas registradas</b>${eventos ? `<ul>${eventos}</ul>` : ' ninguna en el inventario todavía.'}</div>
     ${f.campings_bajos ? `<div><b>Campings y balnearios a menos de 5 m sobre un río</b> (según el relieve satelital; no es una evaluación del lugar)<ul>${f.campings_bajos.map(c => `<li>${esc(c.nombre)} (${esc(c.tipo)}${c.altura_m != null ? `, ~${c.altura_m} m sobre el cauce` : ''})</li>`).join('')}</ul></div>` : ''}
     ${relatosDe(f)}`;
+  document.getElementById('compartir-loc').addEventListener('click', async ev => {
+    try {
+      if (navigator.share) await navigator.share({ title: textoCompartir, text: textoCompartir, url: enlace });
+      else { await navigator.clipboard.writeText(enlace); ev.target.textContent = 'Link copiado'; }
+    } catch (e) { /* la persona canceló */ }
+  });
   caja.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
-ahora();
 pronostico();
+portada();
 const inicial = location.hash.slice(1);
-if (PESTANAS.includes(inicial)) mostrar(inicial);
+mostrar(PESTANAS.includes(inicial) ? inicial : 'inicio');
 window.addEventListener('hashchange', () => {
   const p = location.hash.slice(1);
   if (PESTANAS.includes(p)) mostrar(p);
@@ -555,4 +581,47 @@ async function enviarAporte(ev) {
     boton.disabled = false;
     if (window.turnstile && widgetTurnstile != null) window.turnstile.reset(widgetTurnstile);
   }
+}
+
+// ---------------------------------------------------------------- inicio
+// Igual que slug() en scripts/paginas_compartir.py: las páginas docs/l/<slug>/ dan la vista previa al compartir.
+const slug = n => sinTildes(n).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+function irALocalidad(nombre) {
+  try { history.replaceState(null, '', `?localidad=${encodeURIComponent(nombre)}#riesgo`); } catch (e) {}
+  const yaEstaba = !!mapas.riesgo;
+  mostrar('riesgo');
+  if (yaEstaba) elegirLocalidad(LOCS.find(f => f.localidad === nombre));
+}
+
+async function portada() {
+  const [locs, a, b] = await Promise.all([cargarLocs(), leer('ahora.json'), leer('boletin.json')]);
+  prepararSugerencias('buscar-portada', 'sugerencias-portada', f => irALocalidad(f.localidad));
+  const alerta = locs.filter(f => f.ahora === 'alerta'), atencion = locs.filter(f => f.ahora === 'atención');
+  const lista = fs => `<div class="locs">${fs.map(f => `<button type="button" class="loc-link" data-loc="${esc(f.localidad)}">${esc(f.localidad)}</button>`).join('')}</div>`;
+  const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
+  let h;
+  if (!CONDICIONES) h = '<p>Todavía no hay pronóstico por localidad.</p>';
+  else if (!alerta.length && !atencion.length) {
+    h = `<div class="estado-titulo n-verde"><span class="punto"></span>No se espera lluvia fuerte en las sierras en los próximos 3 días.</div>`;
+  } else {
+    h = (alerta.length ? `<div class="estado-titulo n-rojo"><span class="punto"></span>${plural(alerta.length, 'localidad en alerta', 'localidades en alerta')}: se espera lluvia fuerte</div>${lista(alerta)}` : '') +
+        (atencion.length ? `<div class="estado-titulo n-amarillo"><span class="punto"></span>${plural(atencion.length, 'localidad en atención', 'localidades en atención')}</div>${lista(atencion)}` : '') +
+        `<div class="estado-titulo n-verde"><span class="punto"></span>El resto, normal</div>`;
+  }
+  const altas = a ? a.cuencas.filter(c => c.nivel === 'rojo' || c.nivel === 'naranja') : [];
+  if (altas.length) h += `<p class="nota">Ahora mismo, las estaciones marcan valores altos en ${altas.map(c => esc(c.nombre)).join(', ')}. <button type="button" class="loc-link" data-ir="ahora">Ver estaciones</button></p>`;
+  if (CONDICIONES) h += `<p class="nota">Para los próximos 3 días, según el pronóstico del ${esc(CONDICIONES.generado)}. Tocá una localidad para ver el detalle.</p>`;
+  const caja = document.getElementById('estado-hoy');
+  caja.innerHTML = h;
+  caja.querySelectorAll('[data-loc]').forEach(x => x.addEventListener('click', () => irALocalidad(x.dataset.loc)));
+  caja.querySelectorAll('[data-ir]').forEach(x => x.addEventListener('click', () => { mostrar(x.dataset.ir); window.scrollTo(0, 0); }));
+
+  const poner = (id, t) => { if (t) document.getElementById(id).textContent = t; };
+  poner('act-estaciones', a && a.actualizado && `Último dato: ${a.actualizado}`);
+  poner('act-pronostico', b && b.generado && `Último pronóstico: ${b.generado}`);
+  const smap = b && (b.cuencas || []).map(c => c.suelo && c.suelo.smap_fecha).find(Boolean);
+  poner('act-smap', smap && `Último dato: ${smap.slice(0, 10)}`);
+  const eventos = new Set(locs.flatMap(f => (f.eventos || []).map(e => `${e.fecha}|${e.impacto}`))).size;
+  poner('act-inventario', eventos && `${eventos} eventos ubicados en localidades del mapa`);
 }
