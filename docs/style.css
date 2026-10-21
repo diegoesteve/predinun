@@ -142,3 +142,4 @@ footer { max-width: 1100px; margin: 0 auto; padding: 16px; color: var(--suave); 
 .aviso-zoom::before { content: attr(data-texto); background: rgba(22,32,28,.88); color: #fff; font-weight: 600; font-size: 16px;
   padding: 10px 16px; border-radius: 999px; }
 .aviso-zoom.visible { opacity: 1; }
+#tabla-loc + .detalle, .tabla-alta + .detalle { margin-top: 12px; }
