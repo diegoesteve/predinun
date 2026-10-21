@@ -234,13 +234,14 @@ let LOCS = [], ordenLoc = { campo: null, asc: false }, marcaLoc = null;
 
 let CONDICIONES = null, capaAhora = null;
 
-// Semáforo «Ahora»: rojo solo si se espera lluvia fuerte donde hay exposición; amarillo si se espera lluvia
-// fuerte en un lugar poco expuesto o lluvia cerca de ese nivel en uno muy expuesto; verde en el resto.
+// Semáforo «Ahora» (misma regla que scripts/condiciones_localidades.py, que es el que manda): rojo si se espera lluvia
+// fuerte en un lugar muy expuesto, o una vez y media el umbral en uno expuesto; amarillo si se espera lluvia fuerte en
+// otro lugar, o cerca del umbral en uno muy expuesto; verde en el resto.
 function semaforo(c, expo) {
   if (!c) return null;
-  const expuesta = expo === 'muy expuesta' || expo === 'expuesta';
-  if (c.condicion === 'lluvia fuerte') return expuesta ? 'alerta' : 'atención';
-  if (expo === 'muy expuesta' && c.umbral_mm && c.max_3h_mm >= 0.75 * c.umbral_mm) return 'atención';   // cerca del umbral
+  const muy = expo === 'muy expuesta', expuesta = expo === 'expuesta', u = c.umbral_mm || 0;
+  if (c.condicion === 'lluvia fuerte') return muy || (expuesta && c.max_3h_mm >= 1.5 * u) ? 'alerta' : 'atención';
+  if (muy && u && c.max_3h_mm >= 0.75 * u) return 'atención';
   return 'normal';
 }
 

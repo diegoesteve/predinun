@@ -69,12 +69,13 @@ def pedir(params, reintentos=4):
 
 def semaforo(condicion, maximo, umbral, exposicion):
     """Semáforo «Ahora» de la página (la misma regla que muestra la leyenda):
-    alerta   = se espera lluvia fuerte en un lugar expuesto o muy expuesto;
-    atención = lluvia fuerte en un lugar poco expuesto, o lluvia de al menos el 75 % del umbral en uno muy expuesto;
+    alerta   = lluvia fuerte en un lugar muy expuesto, o lluvia de al menos 1,5 veces el umbral en uno expuesto;
+    atención = lluvia fuerte en cualquier otro lugar, o al menos el 75 % del umbral en uno muy expuesto;
     normal   = el resto."""
+    muy, expuesta = exposicion == 'muy expuesta', exposicion == 'expuesta'
     if condicion == 'lluvia fuerte':
-        return 'alerta' if exposicion in ('muy expuesta', 'expuesta') else 'atención'
-    if exposicion == 'muy expuesta' and umbral and maximo >= 0.75 * umbral:
+        return 'alerta' if muy or (expuesta and umbral and maximo >= 1.5 * umbral) else 'atención'
+    if muy and umbral and maximo >= 0.75 * umbral:
         return 'atención'
     return 'normal'
 
