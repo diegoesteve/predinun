@@ -1,10 +1,10 @@
 {
- "actualizado": "2026-10-21 10:07",
- "boletin_generado": "2026-10-21 08:00",
+ "actualizado": "2026-10-21 15:05",
+ "boletin_generado": "2026-10-21 14:00",
  "zonas": [
   {
    "zona": "Córdoba / La Calera",
-   "estado": "rojo"
+   "estado": "amarillo"
   },
   {
    "zona": "Punilla norte",
@@ -12,7 +12,7 @@
   },
   {
    "zona": "Punilla sur / San Antonio",
-   "estado": "normal"
+   "estado": "amarillo"
   },
   {
    "zona": "Sierras Chicas",
@@ -34,30 +34,30 @@
    "cuenca": "Cosquin",
    "nombre": "Cosquín",
    "zona_estaciones": "Punilla norte",
-   "nivel": "verde",
+   "nivel": "amarillo",
    "estaciones": "verde",
-   "pronostico": "verde",
-   "motivo": "sin lluvias fuertes ni crecidas",
+   "pronostico": "amarillo",
+   "motivo": "pronóstico 48 h: amarillo",
    "suelo": "saturado"
   },
   {
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "zona_estaciones": "Punilla sur / San Antonio",
-   "nivel": "verde",
-   "estaciones": "verde",
+   "nivel": "amarillo",
+   "estaciones": "amarillo",
    "pronostico": "verde",
-   "motivo": "sin lluvias fuertes ni crecidas",
+   "motivo": "estaciones: amarillo",
    "suelo": "saturado"
   },
   {
    "cuenca": "Capital",
    "nombre": "Capital (experimental)",
    "zona_estaciones": "Córdoba / La Calera",
-   "nivel": "rojo",
-   "estaciones": "rojo",
+   "nivel": "amarillo",
+   "estaciones": "amarillo",
    "pronostico": "verde",
-   "motivo": "estaciones: rojo",
+   "motivo": "estaciones: amarillo",
    "suelo": "saturado"
   }
  ],
