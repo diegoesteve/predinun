@@ -132,14 +132,14 @@ async function riesgo() {
     'daño confirmado': { color: '#C0362C', radio: 7, titulo: 'Daños confirmados (2014–2016)' },
     'tramo de río': { color: '#0E5E5A', radio: 5, titulo: 'Tramos de río inestables o con casas cerca' },
     'microcuenca': { color: '#E07B20', radio: 5, titulo: 'Microcuencas prioritarias' },
-    'comunidad análoga': { color: '#C0362C', radio: 7, titulo: 'Arroyos serranos que entran a un pueblo (color según prioridad)' },
+    'comunidad análoga': { color: '#5B2A86', radio: 7, titulo: 'Arroyos serranos que entran a un pueblo (más oscuro, más expuesto)' },
     'camping o balneario bajo': { color: '#1F6FB2', radio: 5, titulo: 'Campings y balnearios a menos de 5 m sobre un río' },
     'aporte': { color: '#B8860B', radio: 7, titulo: 'Relatos de vecinos y visitantes' },
   };
   const capas = {};
   g.features.forEach(f => {
     const p = f.properties, e0 = estilos[p.capa] || { color: '#555', radio: 5, titulo: p.capa };
-    const e = p.capa === 'comunidad análoga' && p.prioridad ? { ...e0, color: COLOR_PRIORIDAD[p.prioridad] } : e0;
+    const e = p.capa === 'comunidad análoga' && p.exposicion ? { ...e0, color: COLOR_EXPO[p.exposicion] } : e0;
     const [lon, lat] = f.geometry.coordinates;
     const det = p.capa === 'aporte' ? popupAporte(p) : p.capa === 'comunidad análoga' ? popupComunidad(p) : Object.entries(p).filter(([k, v]) => k !== 'capa' && v != null && v !== '')
       .map(([k, v]) => `<b>${esc(k.replace(/_/g, ' '))}:</b> ${esc(v)}`).join('<br>');
@@ -162,24 +162,53 @@ async function riesgo() {
 }
 
 // ---------------------------------------------------------------- tabla por localidad
-const COLOR_PRIORIDAD = { alta: '#C0362C', media: '#F2C230', baja: '#1F7A4D' };
-const CLASE_PRIORIDAD = { alta: 'n-rojo', media: 'n-amarillo', baja: 'n-verde' };
-const ORDEN_PRIORIDAD = { alta: 3, media: 2, baja: 1 };
-const chipPrioridad = p => p ? `<span class="chip ${CLASE_PRIORIDAD[p]}"><span class="punto"></span>${esc(p)}</span>` : '<span class="nota">sin análisis</span>';
+// Dos escalas separadas: el semáforo «Ahora» (pronóstico de 3 días cruzado con la exposición) y la exposición
+// permanente (historial y terreno), en violetas para que no se lea como una alarma.
+const COLOR_AHORA = { alerta: '#C0362C', 'atención': '#F2C230', normal: '#1F7A4D' };
+const CLASE_AHORA = { alerta: 'n-rojo', 'atención': 'n-amarillo', normal: 'n-verde' };
+const ORDEN_AHORA = { alerta: 3, 'atención': 2, normal: 1 };
+const COLOR_EXPO = { 'muy expuesta': '#5B2A86', 'expuesta': '#9B7BC0', 'poco expuesta': '#D9CCE8' };
+const ORDEN_EXPO = { 'muy expuesta': 3, 'expuesta': 2, 'poco expuesta': 1 };
+const chipAhora = a => a ? `<span class="chip ${CLASE_AHORA[a]}"><span class="punto"></span>${esc(a)}</span>` : '<span class="nota">sin dato</span>';
+const chipExpo = x => x ? `<span class="chip expo"><span class="cuadro" style="--c:${COLOR_EXPO[x]}"></span>${esc(x)}</span>` : '<span class="nota">sin análisis</span>';
 const TEXTO_AVISO = { 'sí': 'sí', 'parcial': 'en parte', 'no': 'no' };
 const CLASE_AVISO = { 'sí': 'si', 'parcial': 'parcial', 'no': 'no' };
 const sinTildes = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 let LOCS = [], ordenLoc = { campo: null, asc: false }, marcaLoc = null;
 
-const SUBIR = { baja: 'media', media: 'alta', alta: 'alta' };
-let CONDICIONES = null;
+let CONDICIONES = null, capaAhora = null;
+
+// Semáforo «Ahora»: rojo solo si se espera lluvia fuerte donde hay exposición; amarillo si se espera lluvia
+// fuerte en un lugar poco expuesto o lluvia cerca de ese nivel en uno muy expuesto; verde en el resto.
+function semaforo(c, expo) {
+  if (!c) return null;
+  const expuesta = expo === 'muy expuesta' || expo === 'expuesta';
+  if (c.condicion === 'lluvia fuerte') return expuesta ? 'alerta' : 'atención';
+  if (expo === 'muy expuesta' && c.umbral_mm && c.max_3h_mm >= 0.75 * c.umbral_mm) return 'atención';   // cerca del umbral
+  return 'normal';
+}
 
 function combinar(f) {
   const c = CONDICIONES && CONDICIONES.localidades[f.localidad];
-  const base = f.prioridad;
-  let final = base;
-  if (c && c.condicion === 'lluvia fuerte') final = base ? SUBIR[base] : 'media';
-  return { ...f, prioridad_base: base, prioridad: final, condiciones: c || null, orden_prioridad: ORDEN_PRIORIDAD[final] || 0 };
+  const a = semaforo(c, f.exposicion);
+  return { ...f, ahora: a, condiciones: c || null, orden_ahora: (ORDEN_AHORA[a] || 0) * 10 + (ORDEN_EXPO[f.exposicion] || 0),
+           orden_expo: ORDEN_EXPO[f.exposicion] || 0 };
+}
+
+function dibujarCapaAhora() {
+  const con = LOCS.filter(f => f.ahora === 'alerta' || f.ahora === 'atención');
+  capaAhora = L.layerGroup(con.map(f => L.circleMarker([f.lat, f.lon], { radius: f.ahora === 'alerta' ? 12 : 9, color: '#fff', weight: 2,
+    fillColor: COLOR_AHORA[f.ahora], fillOpacity: .95 }).bindPopup(`<b>${esc(f.localidad)}</b> ${chipAhora(f.ahora)}<br>` +
+    `Hasta ${f.condiciones.max_3h_mm} mm en 3 horas en los próximos 3 días.<br><a href="?localidad=${encodeURIComponent(f.localidad)}#riesgo">Ver detalle</a>`)));
+  capaAhora.addTo(mapas.riesgo);
+  const l = document.createElement('label');
+  l.innerHTML = `<input type="checkbox" checked><span class="punto" style="--c:${COLOR_AHORA.alerta}"></span>Alerta o atención por lluvia, próximos 3 días (${con.length})`;
+  l.querySelector('input').addEventListener('change', ev => ev.target.checked ? capaAhora.addTo(mapas.riesgo) : capaAhora.remove());
+  document.getElementById('capas').prepend(l);
+  const n = { alerta: con.filter(f => f.ahora === 'alerta').length, 'atención': con.filter(f => f.ahora === 'atención').length };
+  document.getElementById('resumen-ahora').innerHTML = !CONDICIONES ? 'Todavía no hay pronóstico por localidad.'
+    : n.alerta || n['atención'] ? `Ahora: ${n.alerta ? `<b>${n.alerta}</b> localidad${n.alerta > 1 ? 'es' : ''} en ${chipAhora('alerta')}` : ''}${n.alerta && n['atención'] ? ' y ' : ''}${n['atención'] ? `<b>${n['atención']}</b> en ${chipAhora('atención')}` : ''}. El resto, ${chipAhora('normal')}.`
+    : `Ahora: todas las localidades en ${chipAhora('normal')}. No se espera lluvia fuerte en los próximos 3 días.`;
 }
 
 async function tablaLocalidades() {
@@ -188,6 +217,7 @@ async function tablaLocalidades() {
   CONDICIONES = c;
   if (c) document.getElementById('condiciones-meta').textContent = `Última actualización del pronóstico por localidad: ${c.generado}.`;
   LOCS = d.localidades.map(combinar);
+  dibujarCapaAhora();
   ['buscar-loc', 'solo-eventos', 'sin-aviso'].forEach(id =>
     document.getElementById(id).addEventListener('input', dibujarLocalidades));
   prepararSugerencias();
@@ -200,7 +230,7 @@ async function tablaLocalidades() {
 }
 
 const COLUMNAS = [
-  ['localidad', 'Localidad'], ['prioridad', 'Prioridad', 'orden_prioridad'],
+  ['localidad', 'Localidad'], ['ahora', 'Ahora', 'orden_ahora'], ['exposicion', 'Exposición', 'orden_expo'],
   ['aviso', 'Aviso'], ['n_eventos', 'Crecidas'],
 ];
 
@@ -210,7 +240,8 @@ function dibujarLocalidades() {
   const sinAviso = document.getElementById('sin-aviso').checked;
   let filas = LOCS.filter(f => (!q || sinTildes(f.localidad).includes(q))
     && (!soloEv || f.n_eventos > 0) && (!sinAviso || f.aviso === 'no'));
-  if (ordenLoc.campo) {
+  if (!ordenLoc.campo) filas = [...filas].sort((a, b) => b.orden_ahora - a.orden_ahora);   // primero las que están en alerta
+  else {
     const k = ordenLoc.campo, sgn = ordenLoc.asc ? 1 : -1;
     filas = [...filas].sort((a, b) => {
       const x = a[k] ?? -1, y = b[k] ?? -1;
@@ -221,7 +252,7 @@ function dibujarLocalidades() {
   t.innerHTML = '<thead><tr>' + COLUMNAS.map(([k, n, ko]) =>
       `<th data-k="${ko || k}">${n}${ordenLoc.campo === (ko || k) ? (ordenLoc.asc ? ' ▲' : ' ▼') : ''}</th>`).join('') + '</tr></thead><tbody>' +
     filas.map(f => `<tr data-loc="${esc(f.localidad)}">
-      <td>${esc(f.localidad)}</td><td>${chipPrioridad(f.prioridad)}</td>
+      <td>${esc(f.localidad)}</td><td>${chipAhora(f.ahora)}</td><td>${chipExpo(f.exposicion)}</td>
       <td>${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : '–'}</td>
       <td class="num">${f.n_eventos || '–'}</td></tr>`).join('') + '</tbody>';
   t.querySelectorAll('th').forEach(th => th.addEventListener('click', () => {
@@ -231,7 +262,7 @@ function dibujarLocalidades() {
   }));
   t.querySelectorAll('tbody tr').forEach(tr => tr.addEventListener('click', () =>
     elegirLocalidad(LOCS.find(f => f.localidad === tr.dataset.loc))));
-  if (!filas.length) t.innerHTML += '<tbody><tr><td colspan="4">No hay localidades con ese filtro.</td></tr></tbody>';
+  if (!filas.length) t.innerHTML += '<tbody><tr><td colspan="6">No hay localidades con ese filtro.</td></tr></tbody>';
 }
 
 // ---------------------------------------------------------------- buscador con sugerencias
@@ -251,7 +282,7 @@ function prepararSugerencias() {
     lista.innerHTML = sugeridas.length ? sugeridas.map((f, i) => {
       const n = sinTildes(f.localidad), k = n.indexOf(q);
       const nombre = esc(f.localidad.slice(0, k)) + '<mark>' + esc(f.localidad.slice(k, k + q.length)) + '</mark>' + esc(f.localidad.slice(k + q.length));
-      return `<li role="option" id="sug-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${nombre}</span>${chipPrioridad(f.prioridad)}</li>`;
+      return `<li role="option" id="sug-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${nombre}</span><span>${f.ahora === 'alerta' || f.ahora === 'atención' ? chipAhora(f.ahora) + ' ' : ''}${chipExpo(f.exposicion)}</span></li>`;
     }).join('') : '<li class="vacio">No hay localidades con ese nombre.</li>';
     lista.hidden = false; input.setAttribute('aria-expanded', 'true');
   };
@@ -296,17 +327,17 @@ function elegirLocalidad(f) {
   setTimeout(() => mapas.riesgo.setView([f.lat, f.lon], 13), 50);
   if (marcaLoc) marcaLoc.remove();
   marcaLoc = L.layerGroup().addTo(mapas.riesgo);
-  (f.arroyos || []).forEach(a => L.circleMarker([a.lat, a.lon], { radius: 9, color: '#5B2A86', weight: 3, fill: false })
+  (f.arroyos || []).forEach(a => L.circleMarker([a.lat, a.lon], { radius: 9, color: '#0E5E5A', weight: 3, fill: false })
     .bindTooltip(esc(a.arroyo)).addTo(marcaLoc));
-  const arroyos = (f.arroyos || []).map(a => `<li><b>${esc(a.arroyo)}</b> ${chipPrioridad(a.prioridad)} · cuenca de ${Math.round(a.area_km2)} km² · unas ${a.personas} personas cerca del cauce · ${a.margen_min != null && a.margen_min >= 30 ? `hay una estación río arriba que da unas ${Math.round(a.margen_min / 60 * 10) / 10} h de aviso` : 'ninguna estación río arriba da tiempo de avisar'}${a.razones && a.razones.length ? `<br><span class="nota">${esc(a.razones.join('; '))}.</span>` : ''}</li>`).join('');
+  const arroyos = (f.arroyos || []).map(a => `<li><b>${esc(a.arroyo)}</b> ${chipExpo(a.exposicion)} · cuenca de ${Math.round(a.area_km2)} km² · unas ${a.personas} personas cerca del cauce · ${a.margen_min != null && a.margen_min >= 30 ? `hay una estación río arriba que da unas ${Math.round(a.margen_min / 60 * 10) / 10} h de aviso` : 'ninguna estación río arriba da tiempo de avisar'}${a.razones && a.razones.length ? `<br><span class="nota">${esc(a.razones.join('; '))}.</span>` : ''}</li>`).join('');
   const eventos = (f.eventos || []).sort((a, b) => String(b.fecha).localeCompare(a.fecha)).map(e =>
     `<li><b>${esc(String(e.fecha).slice(0, 10))}</b>${e.severidad ? ` (${esc(e.severidad)})` : ''}: ${esc(e.impacto || 'sin detalle')}${e.url ? ` <a href="${esc(e.url)}" target="_blank" rel="noopener">fuente</a>` : ''}</li>`).join('');
   const caja = document.getElementById('detalle-loc');
   caja.hidden = false;
-  caja.innerHTML = `<h3>${esc(f.localidad)} · prioridad ${chipPrioridad(f.prioridad)}</h3>
-    ${f.prioridad !== f.prioridad_base ? `<div class="lluvia-fuerte">Subió de prioridad ${esc(f.prioridad_base || 'sin análisis')} a ${esc(f.prioridad)} por la lluvia pronosticada.</div>` : ''}
+  caja.innerHTML = `<h3>${esc(f.localidad)}</h3>
+    <div><b>Ahora</b> ${chipAhora(f.ahora)} · <b>Exposición</b> ${chipExpo(f.exposicion)}</div>
     ${textoCondiciones(f.condiciones)}
-    ${f.razones && f.razones.length ? `<div><b>Por qué</b><ul class="razones">${f.razones.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
+    ${f.razones && f.razones.length ? `<div><b>Por qué está ${esc(f.exposicion || 'en la lista')}</b><ul class="razones">${f.razones.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
     ${f.parecido_scm != null && f.parecido_scm < 1.5 ? '<div>Sus condiciones se parecen mucho a las de <b>San Carlos Minas en 1992</b>.</div>' : ''}
     <div>Estación que avisa: ${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : 'sin datos'}${f.danos_registrados ? ` · ${f.danos_registrados} daños verificados en imágenes a menos de 4 km` : ''}</div>
     ${arroyos ? `<div><b>Arroyos que entran al pueblo</b><ul>${arroyos}</ul></div>` : '<div>No se encontraron arroyos serranos que entren a esta localidad.</div>'}
@@ -327,7 +358,7 @@ window.addEventListener('hashchange', () => {
 
 
 function popupComunidad(p) {
-  return `<b>${esc(p.localidad)}</b>${p.arroyo ? ` · ${esc(p.arroyo)}` : ''}<br>Prioridad ${chipPrioridad(p.prioridad)}` +
+  return `<b>${esc(p.localidad)}</b>${p.arroyo ? ` · ${esc(p.arroyo)}` : ''}<br>Exposición ${chipExpo(p.exposicion)}` +
     (p.razones ? `<br>${esc(p.razones)}.` : '') +
     `<br>Unas ${p.personas_expuestas ?? '?'} personas cerca del cauce.` +
     `<br>${p.margen_aprox_min >= 30 ? `Una estación río arriba da unas ${Math.round(p.margen_aprox_min / 6) / 10} h de aviso.` : 'Ninguna estación río arriba da tiempo de avisar.'}`;

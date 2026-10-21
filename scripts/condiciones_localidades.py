@@ -8,7 +8,7 @@ Para cada localidad de docs/data/localidades.json:
 
 Con eso arma una condición: 'lluvia fuerte' (se espera lluvia que en el pasado alcanzó para una crecida),
 'atención' (la mitad de esa lluvia) o 'normal'. Con el suelo húmedo cuenta la mitad de la lluvia, como en el boletín.
-La página la combina con la prioridad de cada localidad (historial y condiciones del lugar).
+La página lo cruza con la exposición de cada localidad (historial y terreno) para el semáforo «Ahora».
 
 Escribe docs/data/condiciones_localidades.json. Corre en el workflow del boletín, cada 6 horas.
 """

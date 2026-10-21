@@ -57,13 +57,20 @@
     <div class="capas" id="capas"></div>
     <div id="mapa-riesgo" class="mapa alto"></div>
     <h2>Por localidad</h2>
-    <p class="destacado">La prioridad de cada localidad combina su <b>historial</b> (crecidas registradas), las <b>condiciones del lugar</b> (cómo son sus arroyos y cuánta gente vive cerca del cauce) y las <b>condiciones de los próximos 3 días</b> (lluvia pronosticada y humedad del suelo). Si se espera lluvia fuerte, la prioridad sube un nivel. Se actualiza cada 6 horas. <span id="condiciones-meta" class="nota"></span></p>
-    <p class="nota">Buscá o elegí una localidad para centrar el mapa y ver el detalle. La columna <b>Aviso</b> dice si alguna estación río arriba da al menos media hora de margen.</p>
+    <p class="destacado" id="resumen-ahora">Cargando el pronóstico por localidad…</p>
     <div class="leyenda">
-      <span class="n-rojo"><span class="punto"></span><b>Prioridad alta</b>: tuvo crecidas graves, o tiene varias condiciones peligrosas y gente viviendo junto al cauce, o se espera lluvia fuerte donde ya hay prioridad media.</span>
-      <span class="n-amarillo"><span class="punto"></span><b>Prioridad media</b>: tuvo crecidas, o tiene algunas condiciones peligrosas.</span>
-      <span class="n-verde"><span class="punto"></span><b>Prioridad baja</b>: pocas condiciones detectadas. <i>No quiere decir que no haya riesgo.</i></span>
+      <div><b>Ahora</b>: lo que se espera para los <b>próximos 3 días</b>. Cruza la lluvia pronosticada y la humedad del suelo con la exposición de cada lugar. Se actualiza cada 6 horas. <span id="condiciones-meta" class="nota"></span></div>
+      <span class="n-rojo"><span class="punto"></span><b>Alerta</b>: se espera lluvia fuerte, de la que en el pasado alcanzó para una crecida, en un lugar expuesto.</span>
+      <span class="n-amarillo"><span class="punto"></span><b>Atención</b>: se espera lluvia fuerte en un lugar poco expuesto, o lluvia cerca de ese nivel en uno muy expuesto.</span>
+      <span class="n-verde"><span class="punto"></span><b>Normal</b>: no se espera lluvia fuerte.</span>
     </div>
+    <div class="leyenda">
+      <div><b>Exposición</b>: no cambia con el tiempo. Sale del <b>historial</b> (crecidas registradas) y de las <b>condiciones del lugar</b> (cómo son sus arroyos y cuánta gente vive cerca del cauce). Sirve para saber dónde mirar, no dice que haya peligro hoy.</div>
+      <span><span class="cuadro" style="--c:#5B2A86"></span><b>Muy expuesta</b>: tuvo varias crecidas graves, o una grave y un terreno peligroso, o un terreno muy peligroso con mucha gente junto al cauce.</span>
+      <span><span class="cuadro" style="--c:#9B7BC0"></span><b>Expuesta</b>: tuvo crecidas, o tiene algunas condiciones peligrosas.</span>
+      <span><span class="cuadro" style="--c:#D9CCE8"></span><b>Poco expuesta</b>: pocas condiciones detectadas. <i>No quiere decir que no haya riesgo.</i></span>
+    </div>
+    <p class="nota">Buscá o elegí una localidad para centrar el mapa y ver el detalle. La columna <b>Aviso</b> dice si alguna estación río arriba da al menos media hora de margen.</p>
     <div class="buscador">
       <div class="buscar-caja">
         <input id="buscar-loc" type="search" placeholder="Buscar localidad…" aria-label="Buscar localidad" autocomplete="off"
