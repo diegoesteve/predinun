@@ -614,14 +614,14 @@ async function portada() {
   const alerta = locs.filter(f => f.ahora === 'alerta'), atencion = locs.filter(f => f.ahora === 'atención');
   const lista = fs => `<div class="locs">${fs.map(f => `<button type="button" class="loc-link" data-loc="${esc(f.localidad)}">${esc(f.localidad)}</button>`).join('')}</div>`;
   const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
+  // Siempre las tres cantidades, aunque sean cero: sirven para comparar
+  const normales = locs.filter(f => f.ahora === 'normal');
   let h;
   if (!CONDICIONES) h = '<p>Todavía no hay pronóstico por localidad.</p>';
-  else if (!alerta.length && !atencion.length) {
-    h = `<div class="estado-titulo n-verde"><span class="punto"></span>No se espera lluvia fuerte en las sierras en los próximos 3 días.</div>`;
-  } else {
-    h = (alerta.length ? `<div class="estado-titulo n-rojo"><span class="punto"></span>${plural(alerta.length, 'localidad en alerta', 'localidades en alerta')}: se espera lluvia fuerte</div>${lista(alerta)}` : '') +
-        (atencion.length ? `<div class="estado-titulo n-amarillo"><span class="punto"></span>${plural(atencion.length, 'localidad en atención', 'localidades en atención')}</div>${lista(atencion)}` : '') +
-        `<div class="estado-titulo n-verde"><span class="punto"></span>El resto, normal</div>`;
+  else {
+    h = `<div class="estado-titulo n-rojo"><span class="punto"></span>${plural(alerta.length, 'localidad en alerta', 'localidades en alerta')}${alerta.length ? ': se espera lluvia fuerte' : ''}</div>${alerta.length ? lista(alerta) : ''}` +
+        `<div class="estado-titulo n-amarillo"><span class="punto"></span>${plural(atencion.length, 'localidad en atención', 'localidades en atención')}</div>${atencion.length ? lista(atencion) : ''}` +
+        `<div class="estado-titulo n-verde"><span class="punto"></span>${plural(normales.length, 'localidad normal', 'localidades normales')}${!alerta.length && !atencion.length ? ': no se espera lluvia fuerte en los próximos 3 días' : ''}</div>`;
   }
   const altas = a ? a.cuencas.filter(c => c.nivel === 'rojo' || c.nivel === 'naranja') : [];
   if (altas.length) h += `<p class="nota">Ahora mismo, las estaciones marcan valores altos en ${altas.map(c => esc(c.nombre)).join(', ')}. <button type="button" class="loc-link" data-ir="ahora">Ver estaciones</button></p>`;
