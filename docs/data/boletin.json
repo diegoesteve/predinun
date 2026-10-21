@@ -1,7 +1,7 @@
 {
- "generado": "2026-10-21 08:00",
+ "generado": "2026-10-21 11:00",
  "horas": 48,
- "smap_atraso_dias": 2.5,
+ "smap_atraso_dias": 2.6,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
@@ -20,10 +20,10 @@
      "cuando": "2026-10-22 09:00"
     },
     "ECMWF": {
-     "max_3h_mm": 4.8,
+     "max_3h_mm": 5.0,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 15:00"
+     "cuando": "2026-10-22 08:00"
     }
    },
    "ensambles": {
@@ -51,8 +51,8 @@
     "nubosidad_ult_media": 80,
     "nubosidad_ult_normal": 42,
     "dias_nublados_ult": 7,
-    "et0_prox_mm": 18.8,
-    "et0_prox_pct": 57
+    "et0_prox_mm": 19.6,
+    "et0_prox_pct": 59
    }
   },
   {
@@ -72,10 +72,10 @@
      "cuando": "2026-10-22 09:00"
     },
     "ECMWF": {
-     "max_3h_mm": 2.7,
+     "max_3h_mm": 5.8,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 14:00"
+     "cuando": "2026-10-22 08:00"
     }
    },
    "ensambles": {
@@ -83,18 +83,19 @@
     "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
-   "nivel": "verde",
+   "nivel": "amarillo",
    "nivel_por_lluvia": "verde",
    "suelo": {
     "smap_m3m3": 0.13,
     "smap_percentil": 98,
     "smap_fecha": "2026-10-18 22:30 UTC",
-    "estimado_hoy_m3m3": 0.119,
-    "estimado_hoy_percentil": 84,
+    "estimado_hoy_m3m3": 0.118,
+    "estimado_hoy_percentil": 83,
     "percentil": 98,
     "es_estimado": false,
     "estado": "saturado"
    },
+   "agravado_por_suelo": true,
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
@@ -105,25 +106,25 @@
     "nubosidad_ult_media": 91,
     "nubosidad_ult_normal": 42,
     "dias_nublados_ult": 10,
-    "et0_prox_mm": 17.1,
-    "et0_prox_pct": 54
+    "et0_prox_mm": 17.3,
+    "et0_prox_pct": 55
    }
   },
   {
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
-    "ICON": {
-     "max_3h_mm": 1.2,
-     "umbral_mm": 9.7,
+    "GFS": {
+     "max_3h_mm": 2.0,
+     "umbral_mm": 10.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 08:00"
+     "cuando": "2026-10-22 13:00"
     },
     "ECMWF": {
-     "max_3h_mm": 2.7,
+     "max_3h_mm": 3.7,
      "umbral_mm": 8.8,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 10:00"
+     "cuando": "2026-10-22 09:00"
     }
    },
    "ensambles": {
@@ -137,7 +138,7 @@
     "smap_m3m3": 0.152,
     "smap_percentil": 98,
     "smap_fecha": "2026-10-18 22:30 UTC",
-    "estimado_hoy_m3m3": 0.147,
+    "estimado_hoy_m3m3": 0.146,
     "estimado_hoy_percentil": 94,
     "percentil": 98,
     "es_estimado": false,
@@ -153,8 +154,8 @@
     "nubosidad_ult_media": 91,
     "nubosidad_ult_normal": 44,
     "dias_nublados_ult": 10,
-    "et0_prox_mm": 18.0,
-    "et0_prox_pct": 58
+    "et0_prox_mm": 18.6,
+    "et0_prox_pct": 60
    }
   },
   {
@@ -174,10 +175,10 @@
      "cuando": "2026-10-22 11:00"
     },
     "ECMWF": {
-     "max_3h_mm": 3.9,
+     "max_3h_mm": 2.1,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 14:00"
+     "cuando": "2026-10-22 10:00"
     }
    },
    "ensambles": {
@@ -191,6 +192,8 @@
     "smap_m3m3": 0.175,
     "smap_percentil": 85,
     "smap_fecha": "2026-10-18 22:30 UTC",
+    "estimado_hoy_m3m3": 0.15,
+    "estimado_hoy_percentil": 55,
     "percentil": 85,
     "es_estimado": false,
     "estado": "saturado"
@@ -205,8 +208,8 @@
     "nubosidad_ult_media": 83,
     "nubosidad_ult_normal": 42,
     "dias_nublados_ult": 8,
-    "et0_prox_mm": 19.6,
-    "et0_prox_pct": 58
+    "et0_prox_mm": 21.0,
+    "et0_prox_pct": 62
    }
   }
  ],
@@ -313,27 +316,27 @@
     "suelo_saturado": true,
     "prob": [
      0.0,
-     0.05,
-     0.0,
      0.14,
-     0.1,
+     0.04,
+     0.06,
      0.0,
-     0.02,
      0.0,
-     0.03,
-     0.03
+     0.0,
+     0.0,
+     0.01,
+     0.0
     ],
     "mm": [
-     0.0,
-     3.2,
-     0.5,
-     2.5,
-     2.0,
-     0.0,
-     0.0,
-     0.2,
      0.1,
-     0.4
+     6.8,
+     3.6,
+     3.1,
+     0.4,
+     0.1,
+     2.0,
+     1.2,
+     0.7,
+     0.2
     ]
    }
   }
