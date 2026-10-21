@@ -15,6 +15,10 @@ const MAX_FOTOS = 3;
 const MAX_BYTES_FOTO = 5 * 1024 * 1024;
 const TIPOS_FOTO = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp' };
 const LARGOS = { tipo: 40, fecha_evento: 80, localidad: 80, relato: 4000, altura_agua: 300, contacto: 120 };
+// Límites contra abusos: aportes aceptados por conexión (IP) y aportes sin revisar en total
+const MAX_POR_HORA = 3;
+const MAX_POR_DIA = 10;
+const MAX_PENDIENTES = 200;
 
 export default {
   async fetch(req, env) {
@@ -106,10 +110,48 @@ async function leerJSON(env, clave) {
   return o ? JSON.parse(await o.text()) : null;
 }
 
+// ------------------------------------------------------------------ límites
+// La IP no se guarda: se guarda un resumen (hash) con sal secreta, que no permite recuperarla.
+async function claveIP(req, env) {
+  const ip = req.headers.get('CF-Connecting-IP');
+  if (!ip) return null;
+  const datos = new TextEncoder().encode(`${env.TURNSTILE_SECRET || ''}|${ip}`);
+  const h = new Uint8Array(await crypto.subtle.digest('SHA-256', datos));
+  return 'limites/' + [...h.slice(0, 16)].map(b => b.toString(16).padStart(2, '0')).join('') + '.json';
+}
+
+async function enviosRecientes(env, clave) {
+  if (!clave) return [];
+  const d = await leerJSON(env, clave).catch(() => null);
+  const desde = Date.now() - 24 * 3600e3;
+  return (d && Array.isArray(d.t) ? d.t : []).filter(t => t > desde);
+}
+
+async function contarPendientes(env) {
+  let n = 0, cursor;
+  do {
+    const r = await env.APORTES.list({ prefix: 'pendientes/', cursor, limit: 1000 });
+    n += r.objects.filter(o => o.key.endsWith('/aporte.json')).length;
+    cursor = r.truncated ? r.cursor : undefined;
+  } while (cursor && n < MAX_PENDIENTES);
+  return n;
+}
+
 // ------------------------------------------------------------------ recibir un aporte
 async function recibir(req, env, url) {
   const largo = Number(req.headers.get('Content-Length') || 0);
   if (largo > (MAX_FOTOS * MAX_BYTES_FOTO + 200000)) return json({ ok: false, error: 'El envío es demasiado grande.' }, 413);
+
+  // Límites (antes de todo lo demás, para no gastar recursos en envíos de más)
+  const claveLimite = await claveIP(req, env);
+  const recientes = await enviosRecientes(env, claveLimite);
+  if (recientes.filter(t => t > Date.now() - 3600e3).length >= MAX_POR_HORA || recientes.length >= MAX_POR_DIA) {
+    return json({ ok: false, error: 'Recibimos varios aportes desde tu conexión en poco tiempo. Probá de nuevo en unas horas. ¡Gracias!' }, 429);
+  }
+  const pendientes = await contarPendientes(env);
+  if (pendientes >= MAX_PENDIENTES) {
+    return json({ ok: false, error: 'Tenemos muchos aportes sin revisar. Volvé en unos días, por favor. ¡Gracias!' }, 503);
+  }
   let form;
   try { form = await req.formData(); } catch (e) { return json({ ok: false, error: 'Formulario inválido.' }, 400); }
 
@@ -158,8 +200,10 @@ async function recibir(req, env, url) {
   await env.APORTES.put(`pendientes/${id}/aporte.json`, JSON.stringify(aporte));
   const contacto = campo('contacto');
   if (contacto) await env.APORTES.put(`pendientes/${id}/contacto.json`, JSON.stringify({ contacto }));
+  if (claveLimite) await env.APORTES.put(claveLimite, JSON.stringify({ t: [...recientes, Date.now()] }));
+  const lleno = pendientes + 1 >= MAX_PENDIENTES ? `\nSe llenó la bandeja (${MAX_PENDIENTES}): el formulario no acepta más hasta que se revise.` : '';
   await avisar(env, `Nuevo aporte para revisar: ${aporte.localidad} (${aporte.fecha_evento || 'sin fecha'}), ` +
-                    `${fotos.length} foto(s).\n${url.origin}/revisar`);
+                    `${fotos.length} foto(s).\n${url.origin}/revisar${lleno}`);
   return json({ ok: true, id });
 }
 
