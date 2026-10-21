@@ -256,8 +256,13 @@ function dibujarCapaAhora() {
   const con = LOCS.filter(f => f.ahora === 'alerta' || f.ahora === 'atención');
   capaAhora = L.layerGroup(con.map(f => L.circleMarker([f.lat, f.lon], { radius: f.ahora === 'alerta' ? 12 : 9, color: '#fff', weight: 2,
     fillColor: COLOR_AHORA[f.ahora], fillOpacity: .95 }).bindPopup(`<b>${esc(f.localidad)}</b> ${chipAhora(f.ahora)}<br>` +
-    `Hasta ${f.condiciones.max_3h_mm} mm en 3 horas en los próximos 3 días.<br><a href="?localidad=${encodeURIComponent(f.localidad)}#riesgo">Ver detalle</a>`)));
+    `Hasta ${f.condiciones.max_3h_mm} mm en 3 horas en los próximos 3 días.<br><button type="button" class="loc-link" data-ficha="${esc(f.localidad)}">Ver detalle</button>`)));
   capaAhora.addTo(mapas.riesgo);
+  if (!mapas.riesgo._fichaEnPopup) {
+    mapas.riesgo._fichaEnPopup = true;
+    mapas.riesgo.on('popupopen', ev => ev.popup.getElement().querySelectorAll('[data-ficha]').forEach(b =>
+      b.addEventListener('click', () => { mapas.riesgo.closePopup(); elegirLocalidad(LOCS.find(x => x.localidad === b.dataset.ficha)); })));
+  }
   // El mapa arranca mostrando las localidades en alerta o atención (si hay); si no, todo el mapa
   if (con.length && !new URLSearchParams(location.search).get('localidad')) {
     const zona = L.latLngBounds(con.map(f => [f.lat, f.lon]));
@@ -399,12 +404,16 @@ function elegirLocalidad(f) {
   document.querySelectorAll('#tabla-loc tbody tr').forEach(tr => tr.classList.toggle('elegida', tr.dataset.loc === f.localidad));
   try { history.replaceState(null, '', `?localidad=${encodeURIComponent(f.localidad)}#riesgo`); } catch (e) {}
   mapas.riesgo.invalidateSize();
-  setTimeout(() => mapas.riesgo.setView([f.lat, f.lon], 13), 50);
+  // Encuadrar la localidad y los puntos donde sus arroyos entran al pueblo (pueden estar a varios km del centro)
+  const puntos = [[f.lat, f.lon], ...(f.arroyos || []).map(a => [a.lat, a.lon])];
+  setTimeout(() => puntos.length > 1
+    ? mapas.riesgo.fitBounds(L.latLngBounds(puntos).pad(0.25), { maxZoom: 13 })
+    : mapas.riesgo.setView([f.lat, f.lon], 13), 50);
   if (marcaLoc) marcaLoc.remove();
   marcaLoc = L.layerGroup().addTo(mapas.riesgo);
-  (f.arroyos || []).forEach(a => L.circleMarker([a.lat, a.lon], { radius: 9, color: '#0E5E5A', weight: 3, fill: false })
-    .bindTooltip(esc(a.arroyo)).addTo(marcaLoc));
-  const arroyos = (f.arroyos || []).map(a => `<li><b>${esc(a.arroyo)}</b> ${chipExpo(a.exposicion)} · cuenca de ${Math.round(a.area_km2)} km² · unas ${a.personas} personas cerca del cauce · ${a.margen_min != null && a.margen_min >= 30 ? `hay una estación río arriba que da unas ${Math.round(a.margen_min / 60 * 10) / 10} h de aviso` : 'ninguna estación río arriba da tiempo de avisar'}${a.razones && a.razones.length ? `<br><span class="nota">${esc(a.razones.join('; '))}.</span>` : ''}</li>`).join('');
+  (f.arroyos || []).forEach((a, i) => L.circleMarker([a.lat, a.lon], { radius: 11, color: '#0E5E5A', weight: 4, fillColor: '#fff', fillOpacity: .6 })
+    .bindTooltip(`${i + 1}. ${esc(a.arroyo)}`, { permanent: true, direction: 'top', offset: [0, -10] }).addTo(marcaLoc));
+  const arroyos = (f.arroyos || []).map((a, i) => `<li><button type="button" class="loc-link ver-arroyo" data-i="${i}">${i + 1}. Ver en el mapa</button> <b>${esc(a.arroyo)}</b> ${chipExpo(a.exposicion)} · cuenca de ${Math.round(a.area_km2)} km² · unas ${a.personas} personas cerca del cauce · ${a.margen_min != null && a.margen_min >= 30 ? `hay una estación río arriba que da unas ${Math.round(a.margen_min / 60 * 10) / 10} h de aviso` : 'ninguna estación río arriba da tiempo de avisar'}${a.razones && a.razones.length ? `<br><span class="nota">${esc(a.razones.join('; '))}.</span>` : ''}</li>`).join('');
   const eventos = (f.eventos || []).sort((a, b) => String(b.fecha).localeCompare(a.fecha)).map(e =>
     `<li><b>${esc(String(e.fecha).slice(0, 10))}</b>${e.severidad ? ` (${esc(e.severidad)})` : ''}: ${esc(e.impacto || 'sin detalle')}${e.url ? ` <a href="${esc(e.url)}" target="_blank" rel="noopener">fuente</a>` : ''}</li>`).join('');
   const caja = document.getElementById('detalle-loc');
@@ -429,6 +438,11 @@ function elegirLocalidad(f) {
       else { await navigator.clipboard.writeText(enlace); ev.target.textContent = 'Link copiado'; }
     } catch (e) { /* la persona canceló */ }
   });
+  caja.querySelectorAll('.ver-arroyo').forEach(b => b.addEventListener('click', () => {
+    const a = f.arroyos[Number(b.dataset.i)];
+    document.getElementById('mapa-riesgo').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    mapas.riesgo.setView([a.lat, a.lon], 15);
+  }));
   caja.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
