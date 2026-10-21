@@ -389,9 +389,8 @@ function textoCondiciones(c) {
   const estado = c.condicion === 'lluvia fuerte' ? '<span class="lluvia-fuerte">se espera lluvia fuerte</span>'
     : c.condicion === 'atención' ? '<span class="lluvia-atencion">se espera lluvia moderada</span>' : 'sin lluvia fuerte a la vista';
   const lluvia = c.max_3h_mm > 0 ? `Hasta ${c.max_3h_mm} mm en 3 horas${dia ? ` (${dia})` : ''}` : 'No se pronostica lluvia';
-  return `<div><b>Próximos 3 días</b>: ${estado}. ${lluvia}; ` +
-    `en el pasado alcanzaron unos ${c.umbral_mm} mm para una crecida${c.suelo_humedo ? ' con el suelo así de húmedo' : ''}. ` +
-    `Suelo: ${esc(c.suelo)}.</div>`;
+  return `<div><b>Próximos 3 días</b>: ${estado}. ${lluvia}. ` +
+    `Suelo ${esc(c.suelo)}${c.suelo_humedo ? ', así que cuenta como lluvia fuerte desde menos milímetros' : ''}.</div>`;
 }
 
 function elegirLocalidad(f) {
