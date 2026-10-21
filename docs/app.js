@@ -22,7 +22,7 @@ function mapaBase(id, zoom = 10) {
 
 // ---------------------------------------------------------------- pestañas
 const mapas = {};
-const PESTANAS = ['ahora', 'pronostico', 'riesgo', 'rio', 'aporta'];
+const PESTANAS = ['ahora', 'pronostico', 'riesgo', 'aporta'];
 document.querySelectorAll('.pestanas button').forEach(b => b.addEventListener('click', () => mostrar(b.dataset.p)));
 function mostrar(p) {
   document.querySelectorAll('.pestanas button').forEach(b => b.setAttribute('aria-selected', b.dataset.p === p));
@@ -62,11 +62,11 @@ async function ahora() {
   const orden = { rojo: 0, naranja: 1, amarillo: 2, normal: 3, 'sin datos': 4 };
   const filas = est.filter(s => s.tipo !== 'otra').sort((x, y) => (orden[x.estado] - orden[y.estado]) || String(x.zona).localeCompare(y.zona));
   document.getElementById('tabla-estaciones').innerHTML =
-    '<tr><th>Estación</th><th>Zona</th><th>Tipo</th><th>Hora</th><th>1 h mm</th><th>3 h mm</th><th>24 h mm</th><th>Nivel m</th><th>Sube 1 h</th><th>Estado</th></tr>' +
-    filas.map(s => `<tr class="${clase(s.estado)}"><td>${esc(s.nombre)}</td><td>${esc(s.zona)}</td><td>${s.tipo === 'rio' ? 'río' : 'lluvia'}</td>
+    '<tr><th>Estado</th><th>Estación</th><th>Zona</th><th>Tipo</th><th>Hora</th><th>1 h mm</th><th>3 h mm</th><th>24 h mm</th><th>Nivel m</th><th>Sube 1 h</th></tr>' +
+    filas.map(s => `<tr class="${clase(s.estado)}"><td><span class="punto"></span>${esc(TEXTO[s.estado])}</td>
+      <td>${esc(s.nombre)}</td><td>${esc(s.zona)}</td><td>${s.tipo === 'rio' ? 'río' : 'lluvia'}</td>
       <td>${esc(s.hora)}</td><td class="num">${s.lluvia_1h ?? ''}</td><td class="num">${s.lluvia_3h ?? ''}</td><td class="num">${s.lluvia_24h ?? ''}</td>
-      <td class="num">${s.nivel_m ?? ''}</td><td class="num">${s.subida_1h_m ?? ''}</td>
-      <td><span class="punto"></span>${esc(TEXTO[s.estado])}</td></tr>`).join('');
+      <td class="num">${s.nivel_m ?? ''}</td><td class="num">${s.subida_1h_m ?? ''}</td></tr>`).join('');
 }
 
 // ---------------------------------------------------------------- pronóstico
@@ -132,15 +132,16 @@ async function riesgo() {
     'daño confirmado': { color: '#C0362C', radio: 7, titulo: 'Daños confirmados (2014–2016)' },
     'tramo de río': { color: '#0E5E5A', radio: 5, titulo: 'Tramos de río inestables o con casas cerca' },
     'microcuenca': { color: '#E07B20', radio: 5, titulo: 'Microcuencas prioritarias' },
-    'comunidad análoga': { color: '#5B2A86', radio: 7, titulo: 'Pueblos en la salida de un arroyo serrano (parecidos a San Carlos Minas)' },
+    'comunidad análoga': { color: '#C0362C', radio: 7, titulo: 'Arroyos serranos que entran a un pueblo (color según prioridad)' },
     'camping o balneario bajo': { color: '#1F6FB2', radio: 5, titulo: 'Campings y balnearios a menos de 5 m sobre un río' },
     'aporte': { color: '#B8860B', radio: 7, titulo: 'Relatos de vecinos y visitantes' },
   };
   const capas = {};
   g.features.forEach(f => {
-    const p = f.properties, e = estilos[p.capa] || { color: '#555', radio: 5, titulo: p.capa };
+    const p = f.properties, e0 = estilos[p.capa] || { color: '#555', radio: 5, titulo: p.capa };
+    const e = p.capa === 'comunidad análoga' && p.prioridad ? { ...e0, color: COLOR_PRIORIDAD[p.prioridad] } : e0;
     const [lon, lat] = f.geometry.coordinates;
-    const det = p.capa === 'aporte' ? popupAporte(p) : Object.entries(p).filter(([k, v]) => k !== 'capa' && v != null && v !== '')
+    const det = p.capa === 'aporte' ? popupAporte(p) : p.capa === 'comunidad análoga' ? popupComunidad(p) : Object.entries(p).filter(([k, v]) => k !== 'capa' && v != null && v !== '')
       .map(([k, v]) => `<b>${esc(k.replace(/_/g, ' '))}:</b> ${esc(v)}`).join('<br>');
     (capas[p.capa] ||= L.layerGroup()).addLayer(
       L.circleMarker([lat, lon], { radius: e.radio, color: '#fff', weight: 1.5, fillColor: e.color, fillOpacity: .85 })
@@ -161,6 +162,10 @@ async function riesgo() {
 }
 
 // ---------------------------------------------------------------- tabla por localidad
+const COLOR_PRIORIDAD = { alta: '#C0362C', media: '#F2C230', baja: '#1F7A4D' };
+const CLASE_PRIORIDAD = { alta: 'n-rojo', media: 'n-amarillo', baja: 'n-verde' };
+const ORDEN_PRIORIDAD = { alta: 3, media: 2, baja: 1 };
+const chipPrioridad = p => p ? `<span class="chip ${CLASE_PRIORIDAD[p]}"><span class="punto"></span>${esc(p)}</span>` : '<span class="nota">sin análisis</span>';
 const TEXTO_AVISO = { 'sí': 'sí', 'parcial': 'en parte', 'no': 'no' };
 const CLASE_AVISO = { 'sí': 'si', 'parcial': 'parcial', 'no': 'no' };
 const sinTildes = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -169,7 +174,7 @@ let LOCS = [], ordenLoc = { campo: null, asc: false }, marcaLoc = null;
 async function tablaLocalidades() {
   const d = await leer('localidades.json');
   if (!d) return;
-  LOCS = d.localidades;
+  LOCS = d.localidades.map(f => ({ ...f, orden_prioridad: ORDEN_PRIORIDAD[f.prioridad] || 0 }));
   ['buscar-loc', 'solo-eventos', 'sin-aviso'].forEach(id =>
     document.getElementById(id).addEventListener('input', dibujarLocalidades));
   dibujarLocalidades();
@@ -181,8 +186,8 @@ async function tablaLocalidades() {
 }
 
 const COLUMNAS = [
-  ['localidad', 'Localidad'], ['banderas', 'Banderas', 'max_banderas'], ['personas_expuestas', 'Personas cerca del cauce'],
-  ['aviso', 'Estación que da aviso'], ['n_eventos', 'Crecidas registradas'], ['danos_registrados', 'Daños en imágenes'],
+  ['localidad', 'Localidad'], ['prioridad', 'Prioridad', 'orden_prioridad'],
+  ['aviso', 'Aviso'], ['n_eventos', 'Crecidas'],
 ];
 
 function dibujarLocalidades() {
@@ -202,10 +207,9 @@ function dibujarLocalidades() {
   t.innerHTML = '<thead><tr>' + COLUMNAS.map(([k, n, ko]) =>
       `<th data-k="${ko || k}">${n}${ordenLoc.campo === (ko || k) ? (ordenLoc.asc ? ' ▲' : ' ▼') : ''}</th>`).join('') + '</tr></thead><tbody>' +
     filas.map(f => `<tr data-loc="${esc(f.localidad)}">
-      <td>${esc(f.localidad)}</td><td>${esc(f.banderas || '–')}</td>
-      <td class="num">${f.personas_expuestas || '–'}</td>
+      <td>${esc(f.localidad)}</td><td>${chipPrioridad(f.prioridad)}</td>
       <td>${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : '–'}</td>
-      <td class="num">${f.n_eventos || '–'}</td><td class="num">${f.danos_registrados || '–'}</td></tr>`).join('') + '</tbody>';
+      <td class="num">${f.n_eventos || '–'}</td></tr>`).join('') + '</tbody>';
   t.querySelectorAll('th').forEach(th => th.addEventListener('click', () => {
     const k = th.dataset.k;
     ordenLoc = { campo: k, asc: ordenLoc.campo === k ? !ordenLoc.asc : k === 'localidad' };
@@ -213,7 +217,7 @@ function dibujarLocalidades() {
   }));
   t.querySelectorAll('tbody tr').forEach(tr => tr.addEventListener('click', () =>
     elegirLocalidad(LOCS.find(f => f.localidad === tr.dataset.loc))));
-  if (!filas.length) t.innerHTML += '<tbody><tr><td colspan="6">No hay localidades con ese filtro.</td></tr></tbody>';
+  if (!filas.length) t.innerHTML += '<tbody><tr><td colspan="4">No hay localidades con ese filtro.</td></tr></tbody>';
 }
 
 function elegirLocalidad(f) {
@@ -225,15 +229,16 @@ function elegirLocalidad(f) {
   if (marcaLoc) marcaLoc.remove();
   marcaLoc = L.layerGroup().addTo(mapas.riesgo);
   (f.arroyos || []).forEach(a => L.circleMarker([a.lat, a.lon], { radius: 9, color: '#5B2A86', weight: 3, fill: false })
-    .bindTooltip(`${a.arroyo} ${a.banderas || ''}`).addTo(marcaLoc));
-  const arroyos = (f.arroyos || []).map(a => `<li><b>${esc(a.arroyo)}</b> ${esc(a.banderas || '')} · cuenca ${a.area_km2} km² · ~${a.personas} personas cerca del cauce · ${a.margen_min != null ? `estación aguas arriba con ~${Math.round(a.margen_min / 60 * 10) / 10} h de margen` : 'sin estación aguas arriba'}</li>`).join('');
+    .bindTooltip(esc(a.arroyo)).addTo(marcaLoc));
+  const arroyos = (f.arroyos || []).map(a => `<li><b>${esc(a.arroyo)}</b> ${chipPrioridad(a.prioridad)} · cuenca de ${Math.round(a.area_km2)} km² · unas ${a.personas} personas cerca del cauce · ${a.margen_min != null && a.margen_min >= 30 ? `hay una estación río arriba que da unas ${Math.round(a.margen_min / 60 * 10) / 10} h de aviso` : 'ninguna estación río arriba da tiempo de avisar'}${a.razones && a.razones.length ? `<br><span class="nota">${esc(a.razones.join('; '))}.</span>` : ''}</li>`).join('');
   const eventos = (f.eventos || []).sort((a, b) => String(b.fecha).localeCompare(a.fecha)).map(e =>
     `<li><b>${esc(String(e.fecha).slice(0, 10))}</b>${e.severidad ? ` (${esc(e.severidad)})` : ''}: ${esc(e.impacto || 'sin detalle')}${e.url ? ` <a href="${esc(e.url)}" target="_blank" rel="noopener">fuente</a>` : ''}</li>`).join('');
   const caja = document.getElementById('detalle-loc');
   caja.hidden = false;
-  caja.innerHTML = `<h3>${esc(f.localidad)} ${esc(f.banderas || '')}</h3>
-    ${f.tipos && f.tipos.length ? `<div>Tipo de peligro: ${esc(f.tipos.join(', '))}${f.parecido_scm != null && f.parecido_scm < 1.5 ? ' · <b>muy parecido a San Carlos Minas</b>' : ''}</div>` : ''}
-    <div>Estación que da aviso: ${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : 'sin datos'}${f.danos_registrados ? ` · ${f.danos_registrados} daños verificados en imágenes a menos de 4 km` : ''}</div>
+  caja.innerHTML = `<h3>${esc(f.localidad)} · prioridad ${chipPrioridad(f.prioridad)}</h3>
+    ${f.razones && f.razones.length ? `<div><b>Por qué</b><ul class="razones">${f.razones.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
+    ${f.parecido_scm != null && f.parecido_scm < 1.5 ? '<div>Sus condiciones se parecen mucho a las de <b>San Carlos Minas en 1992</b>.</div>' : ''}
+    <div>Estación que avisa: ${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : 'sin datos'}${f.danos_registrados ? ` · ${f.danos_registrados} daños verificados en imágenes a menos de 4 km` : ''}</div>
     ${arroyos ? `<div><b>Arroyos que entran al pueblo</b><ul>${arroyos}</ul></div>` : '<div>No se encontraron arroyos serranos que entren a esta localidad.</div>'}
     <div><b>Crecidas registradas</b>${eventos ? `<ul>${eventos}</ul>` : ' ninguna en el inventario todavía.'}</div>
     ${f.campings_bajos ? `<div><b>Campings y balnearios a menos de 5 m sobre un río</b> (según el relieve satelital; no es una evaluación del lugar)<ul>${f.campings_bajos.map(c => `<li>${esc(c.nombre)} (${esc(c.tipo)}${c.altura_m != null ? `, ~${c.altura_m} m sobre el cauce` : ''})</li>`).join('')}</ul></div>` : ''}
@@ -250,6 +255,13 @@ window.addEventListener('hashchange', () => {
   if (PESTANAS.includes(p)) mostrar(p);
 });
 
+
+function popupComunidad(p) {
+  return `<b>${esc(p.localidad)}</b>${p.arroyo ? ` · ${esc(p.arroyo)}` : ''}<br>Prioridad ${chipPrioridad(p.prioridad)}` +
+    (p.razones ? `<br>${esc(p.razones)}.` : '') +
+    `<br>Unas ${p.personas_expuestas ?? '?'} personas cerca del cauce.` +
+    `<br>${p.margen_aprox_min >= 30 ? `Una estación río arriba da unas ${Math.round(p.margen_aprox_min / 6) / 10} h de aviso.` : 'Ninguna estación río arriba da tiempo de avisar.'}`;
+}
 
 // ---------------------------------------------------------------- relatos aprobados
 const httpsSeguro = u => /^https:\/\//.test(String(u || '')) ? u : '';

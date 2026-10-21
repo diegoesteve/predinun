@@ -20,7 +20,6 @@
     <button role="tab" data-p="ahora" aria-selected="true">Ahora</button>
     <button role="tab" data-p="pronostico" aria-selected="false">Pronóstico</button>
     <button role="tab" data-p="riesgo" aria-selected="false">Mapa de riesgo</button>
-    <button role="tab" data-p="rio" aria-selected="false">Antes de ir al río</button>
     <button role="tab" data-p="aporta" aria-selected="false">Aportá</button>
   </nav>
 </header>
@@ -54,11 +53,16 @@
   </section>
 
   <section id="p-riesgo" class="pagina" hidden>
-    <p class="nota">Lugares con daños verificados en imágenes satelitales y de Google Earth (crecidas de 2014–2016), tramos de río inestables, microcuencas prioritarias y pueblos en la salida de un arroyo serrano con condiciones parecidas a San Carlos Minas en 1992 (3 o más banderas). Es un orden para saber dónde mirar, no un mapa oficial de riesgo.</p>
+    <p class="nota">Lugares con daños verificados en imágenes satelitales y de Google Earth (crecidas de 2014–2016), tramos de río inestables, microcuencas prioritarias y pueblos donde un arroyo serrano entra al pueblo con condiciones parecidas a San Carlos Minas en 1992. Es un orden para saber dónde mirar primero, no un mapa oficial de riesgo.</p>
     <div class="capas" id="capas"></div>
     <div id="mapa-riesgo" class="mapa alto"></div>
     <h2>Por localidad</h2>
-    <p class="nota">Elegí una localidad para centrar el mapa y ver sus arroyos, las crecidas registradas y si tiene estaciones que den tiempo de avisar. Las banderas son del análisis de arroyos serranos (paso 9): ⛰️ cuenca serrana peligrosa, 🚪 salida de sierra, ↪️ curva o angostamiento, 🌉 puentes, 🏠 casas bajas junto al cauce, 🟫 pueblo en un llano junto al cauce.</p>
+    <p class="nota">Elegí una localidad para centrar el mapa y ver por qué tiene esa prioridad, sus arroyos, las crecidas registradas y si hay estaciones que den tiempo de avisar. La columna <b>Aviso</b> dice si alguna estación río arriba da al menos media hora de margen.</p>
+    <div class="leyenda">
+      <span class="n-rojo"><span class="punto"></span><b>Prioridad alta</b>: tuvo crecidas graves, o tiene varias condiciones peligrosas y gente viviendo junto al cauce.</span>
+      <span class="n-amarillo"><span class="punto"></span><b>Prioridad media</b>: tuvo crecidas, o tiene algunas condiciones peligrosas.</span>
+      <span class="n-verde"><span class="punto"></span><b>Prioridad baja</b>: pocas condiciones detectadas. <i>No quiere decir que no haya riesgo.</i></span>
+    </div>
     <div class="buscador">
       <input id="buscar-loc" type="search" placeholder="Buscar localidad…" aria-label="Buscar localidad" autocomplete="off">
       <label><input id="solo-eventos" type="checkbox"> Solo con crecidas registradas</label>
@@ -68,59 +72,6 @@
     <div class="tabla-envoltura tabla-alta"><table id="tabla-loc"></table></div>
   </section>
 
-  <section id="p-rio" class="pagina guia" hidden>
-    <h2>Antes de acampar o meterte al río</h2>
-    <p class="destacado"><b>Una creciente puede llegar con sol.</b> Llueve en las sierras, río arriba, y el agua baja minutos u horas después hasta donde estás vos. En San Carlos Minas, en 1992, la lluvia terminó de madrugada y la crecida llegó al pueblo pasadas las 9 de la mañana.</p>
-
-    <h3>Señales de que viene una creciente</h3>
-    <ul>
-      <li>El agua se pone <b>turbia o marrón</b> de golpe, o cambia de color.</li>
-      <li>Sube el nivel o la corriente se hace más fuerte.</li>
-      <li>Bajan <b>ramas, hojas, espuma</b> o basura.</li>
-      <li>Se escucha un <b>ruido fuerte o un rugido</b> río arriba.</li>
-      <li>Hay tormenta o nubes muy oscuras sobre las sierras, aunque donde estás no llueva.</li>
-      <li>Bomberos, guardavidas o la policía avisan, o suenan sirenas.</li>
-    </ul>
-    <p class="destacado alerta-roja"><b>Ante cualquiera de estas señales, salí del agua y alejate del cauce hacia lo alto. Ya.</b> No esperes a ver la crecida: cuando se ve, ya está encima.</p>
-
-    <h3>Dónde armar la carpa</h3>
-    <ul>
-      <li><b>Nunca</b> en la playa, en bancos de arena, en islas, en el cauce seco de un arroyo ni al pie de una barranca junto al agua.</li>
-      <li>Buscá un lugar <b>alto</b>, por encima de las marcas que dejaron crecidas anteriores: ramas, troncos o basura enganchada en los árboles y alambrados.</li>
-      <li>Asegurate de poder salir <b>a pie hacia terreno alto sin cruzar el río</b>.</li>
-      <li>Preguntá en el camping o a los vecinos hasta dónde llegó el agua otras veces.</li>
-    </ul>
-
-    <h3>De noche</h3>
-    <ul>
-      <li>No duermas en la orilla. Las crecidas de madrugada son las más peligrosas.</li>
-      <li>Dejá el auto fuera del cauce y mirando hacia la salida.</li>
-      <li>Tené a mano linterna y el celular cargado.</li>
-    </ul>
-
-    <h3>Vados y puentes</h3>
-    <ul>
-      <li>No cruces un vado con agua corriendo, ni a pie ni en auto: unos pocos centímetros de agua en movimiento pueden voltear a una persona, y unos 30 cm pueden arrastrar un auto.</li>
-      <li>No te quedes sobre puentes bajos ni pasarelas durante una crecida: el agua puede pasar por encima o llevárselos.</li>
-    </ul>
-
-    <h3>Si te piden que salgas, salí</h3>
-    <p>Bomberos, guardavidas y policía recorren los balnearios cuando hay riesgo. Muchas veces avisan antes de que se note algo en el lugar: hacé caso aunque el río parezca tranquilo.</p>
-
-    <h3>Antes de salir</h3>
-    <ul>
-      <li>Mirá la pestaña <a href="#ahora">Ahora</a> para ver el estado de las estaciones de tu zona y el <a href="#pronostico">Pronóstico</a> de los próximos días.</li>
-      <li>Revisá los avisos oficiales del <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">Servicio Meteorológico Nacional</a> y de Defensa Civil de la Provincia.</li>
-      <li>En el <a href="#riesgo">Mapa de riesgo</a> podés buscar la localidad adonde vas y ver si tuvo crecidas.</li>
-    </ul>
-
-    <div class="telefonos">
-      <div><b>103</b><span>Defensa Civil</span></div>
-      <div><b>100</b><span>Bomberos</span></div>
-      <div><b>911</b><span>Emergencias</span></div>
-      <div><b>107</b><span>Emergencias médicas</span></div>
-    </div>
-  </section>
 
   <section id="p-aporta" class="pagina guia" hidden>
     <h2>Contanos lo que viviste</h2>

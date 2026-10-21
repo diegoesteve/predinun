@@ -41,6 +41,14 @@ def puntos(df, capa, lat='lat', lon='lon', campos=None):
 
 ORDEN_ICONOS = ['⛰️', '🚪', '↪️', '🌉', '🏠', '🟫']
 ALIAS = {'cordoba capital': 'cordoba', 'cordoba sur': 'cordoba', 'sistema rio ceballos saldan': 'rio ceballos'}
+RAZONES = {
+    '⛰️': 'el arroyo baja de una cuenca serrana grande o muy empinada',
+    '🚪': 'el pueblo está en la salida de la sierra, donde el agua se abre y desborda',
+    '↪️': 'hay una curva cerrada o un angostamiento del cauce río arriba',
+    '🌉': 'hay puentes que se pueden tapar con ramas y troncos',
+    '🏠': 'hay casas bajas junto al cauce',
+    '🟫': 'el pueblo está en un llano apenas más alto que el arroyo',
+}
 MARGEN_MIN_AVISO = 30   # minutos: una estación en el mismo pueblo no da tiempo de avisar
 
 
@@ -75,6 +83,21 @@ def leer_aportes():
         a['fotos'] = [u for u in a.get('fotos', []) if str(u).startswith('https://')]
         out.append(a)
     return out
+
+
+def razones_de(iconos):
+    return [t for i, t in RAZONES.items() if i in str(iconos or '')]
+
+
+def prioridad(max_banderas, personas, n_eventos=0, graves=0):
+    """Semáforo de prioridad para mirar primero (no es un nivel de riesgo oficial)."""
+    if graves or (max_banderas >= 4 and personas >= 100):
+        return 'alta'
+    if max_banderas >= 3 or n_eventos or personas >= 200:
+        return 'media'
+    if max_banderas >= 1 or personas > 0:
+        return 'baja'
+    return None
 
 
 def km(lat1, lon1, lat2, lon2):
@@ -113,6 +136,8 @@ def localidades():
                 'margen_max_min': None if g['margen_aprox_min'].isna().all() else int(g['margen_aprox_min'].max()),
                 'parecido_scm': None if g['parecido_scm'].isna().all() else round(float(g['parecido_scm'].min()), 2),
                 'arroyos': [{'arroyo': (r.arroyo if isinstance(r.arroyo, str) else 'sin nombre'), 'banderas': r.banderas if isinstance(r.banderas, str) else '',
+                             'razones': razones_de(r.banderas),
+                             'prioridad': prioridad(int(r.n_banderas), int(r.personas_expuestas)),
                              'area_km2': r.area_km2, 'personas': int(r.personas_expuestas),
                              'margen_min': None if pd.isna(r.margen_aprox_min) else int(r.margen_aprox_min),
                              'lat': r.lat, 'lon': r.lon} for r in g.itertuples()][:8],
@@ -156,8 +181,16 @@ def localidades():
         f.setdefault('banderas', ''); f.setdefault('max_banderas', 0); f.setdefault('personas_expuestas', 0)
         f.setdefault('aviso', None); f.setdefault('eventos', [])
         f['n_eventos'] = len({e['fecha'] for e in f['eventos']})
+        graves = sum(1 for e in f['eventos'] if str(e.get('severidad', '')).lower() in ('grave', 'catastrófica', 'catastrofica'))
+        f['prioridad'] = prioridad(f['max_banderas'], f['personas_expuestas'], f['n_eventos'], graves)
+        f['razones'] = razones_de(f['banderas'])
+        if graves:
+            f['razones'].insert(0, f'tuvo {graves} crecida{"s" if graves > 1 else ""} grave{"s" if graves > 1 else ""} registrada{"s" if graves > 1 else ""}')
+        elif f['n_eventos']:
+            f['razones'].insert(0, f'tuvo {f["n_eventos"]} crecida{"s" if f["n_eventos"] > 1 else ""} registrada{"s" if f["n_eventos"] > 1 else ""}')
         out.append(f)
-    out.sort(key=lambda f: (-f['max_banderas'], -f['n_eventos'], -f['personas_expuestas']))
+    orden = {'alta': 0, 'media': 1, 'baja': 2, None: 3}
+    out.sort(key=lambda f: (orden[f['prioridad']], -f['n_eventos'], -f['max_banderas'], -f['personas_expuestas']))
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'localidades.json'), {'localidades': out})
     print(f'localidades.json: {len(out)} localidades, {sum(1 for f in out if f["n_eventos"])} con eventos registrados')
 
@@ -190,8 +223,10 @@ def main():
     ruta = os.path.join(cfg.DATA, 'comunidades_analogas.csv')
     if os.path.exists(ruta):
         a = pd.read_csv(ruta)
-        a = a[(a['localidad'] != 'zona rural') & (a['n_banderas'] >= 3)]
-        feats += puntos(a, 'comunidad análoga', campos=['localidad', 'arroyo', 'banderas', 'tipo_peligro', 'area_km2',
+        a = a[(a['localidad'] != 'zona rural') & (a['n_banderas'] >= 3)].copy()
+        a['prioridad'] = [prioridad(int(n), int(p)) for n, p in zip(a['n_banderas'], a['personas_expuestas'])]
+        a['razones'] = ['; '.join(razones_de(b)) for b in a['banderas']]
+        feats += puntos(a, 'comunidad análoga', campos=['prioridad', 'razones', 'localidad', 'arroyo', 'banderas', 'tipo_peligro', 'area_km2',
                                                          'desnivel_m', 'puentes', 'personas_expuestas', 'personas_llano', 'personas_bajo',
                                                          'estaciones_arriba', 'margen_aprox_min', 'parecido_scm'])
     for a in leer_aportes():
