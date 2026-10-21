@@ -148,6 +148,7 @@ para cualquier fin no comercial, pero no vender ni usar en productos o servicios
 
 ## Pendiente
 
+- Inventario: marcar la severidad por localidad, no solo por evento. Hoy todas las localidades de un evento heredan su severidad (por ejemplo, «grave» del 15-F de 2015), y eso puede inflar la exposición de las que tuvieron daños menores.
 - Imágenes SAOCOM (CONAE), si se consiguen.
 - Calibrar los umbrales de las estaciones con la historia que va juntando el monitor.
 - Capa de población temporaria (campings, balnearios, eventos), que quedó expuesta en la crecida de Cosquín del 17/10/2026.
