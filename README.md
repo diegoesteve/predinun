@@ -90,7 +90,7 @@ La pestaña **Aportá** recibe relatos de crecidas con hasta 3 fotos. El flujo e
 **Privacidad:**
 - El contacto (mail o teléfono, opcional) nunca se publica y queda solo en el depósito privado.
 - Nada se ve en la página ni en el repositorio antes de aprobarse.
-- Las fotos aprobadas se publican con licencia CC BY 4.0, que la persona acepta al enviar.
+- Los relatos y fotos aprobados se publican con licencia CC BY-NC 4.0 (sin uso comercial), que la persona acepta al enviar.
 
 ### Puesta en marcha (una sola vez)
 
@@ -138,6 +138,13 @@ python -m http.server -d docs         # abrir http://localhost:8000
 - Inventario de daños: Sentinel-2, Landsat, Sentinel-1 y revisión con imágenes históricas de Google Earth.
 - Límites urbanos, ríos y arroyos con nombre y puentes de las localidades serranas (`data/geoportal/`): GeoPortal de la Provincia de Córdoba (2008–2010), vía [OpenDataCordoba/mapas-de-cordoba](https://github.com/OpenDataCordoba/mapas-de-cordoba) (dominio público). Se extraen con `scripts/importar_geoportal.py`.
 - Mapa base © colaboradores de OpenStreetMap.
+
+## Licencia
+
+Proyecto sin fines comerciales. El código tiene licencia [PolyForm Noncommercial 1.0.0](LICENSE) y los datos y textos
+propios, [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.es): se pueden usar, modificar y compartir
+para cualquier fin no comercial, pero no vender ni usar en productos o servicios pagos. Los datos de terceros
+(OpenStreetMap, Open-Meteo, NASA, Copernicus, la Provincia) conservan su licencia. Detalle en [LICENCIAS.md](LICENCIAS.md).
 
 ## Pendiente
 

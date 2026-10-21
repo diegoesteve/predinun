@@ -309,7 +309,7 @@ async function aprobar(req, env, url) {
     lat: a.lat, lon: a.lon,
     relato: String(form.get('relato') || a.relato).slice(0, LARGOS.relato),
     altura_agua: String(form.get('altura_agua') ?? a.altura_agua).slice(0, LARGOS.altura_agua),
-    fotos: publicas, licencia: 'CC BY 4.0', aprobado: new Date().toISOString(),
+    fotos: publicas, licencia: 'CC BY-NC 4.0', aprobado: new Date().toISOString(),
   };
   const r = await fetch(`https://api.github.com/repos/${env.REPO}/contents/data/aportes/${id}.json`, {
     method: 'PUT',
