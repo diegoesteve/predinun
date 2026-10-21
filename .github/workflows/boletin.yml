@@ -49,11 +49,14 @@ jobs:
         run: python scripts/armar_campings.py
       - name: Actualizar el mapa de riesgo con lo que haya en data/
         run: python scripts/armar_riesgo.py
+      - name: Lluvia pronosticada y suelo por localidad
+        continue-on-error: true
+        run: python scripts/condiciones_localidades.py
       - name: Guardar resultados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/boletin.json docs/data/riesgo.geojson docs/data/localidades.json data/*.json
+          git add docs/data/*.json docs/data/*.geojson data/*.json
           git diff --cached --quiet && exit 0
           git commit -m "boletín: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push

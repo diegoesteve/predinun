@@ -171,12 +171,26 @@ const CLASE_AVISO = { 'sí': 'si', 'parcial': 'parcial', 'no': 'no' };
 const sinTildes = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 let LOCS = [], ordenLoc = { campo: null, asc: false }, marcaLoc = null;
 
+const SUBIR = { baja: 'media', media: 'alta', alta: 'alta' };
+let CONDICIONES = null;
+
+function combinar(f) {
+  const c = CONDICIONES && CONDICIONES.localidades[f.localidad];
+  const base = f.prioridad;
+  let final = base;
+  if (c && c.condicion === 'lluvia fuerte') final = base ? SUBIR[base] : 'media';
+  return { ...f, prioridad_base: base, prioridad: final, condiciones: c || null, orden_prioridad: ORDEN_PRIORIDAD[final] || 0 };
+}
+
 async function tablaLocalidades() {
-  const d = await leer('localidades.json');
+  const [d, c] = await Promise.all([leer('localidades.json'), leer('condiciones_localidades.json')]);
   if (!d) return;
-  LOCS = d.localidades.map(f => ({ ...f, orden_prioridad: ORDEN_PRIORIDAD[f.prioridad] || 0 }));
+  CONDICIONES = c;
+  if (c) document.getElementById('condiciones-meta').textContent = `Última actualización del pronóstico por localidad: ${c.generado}.`;
+  LOCS = d.localidades.map(combinar);
   ['buscar-loc', 'solo-eventos', 'sin-aviso'].forEach(id =>
     document.getElementById(id).addEventListener('input', dibujarLocalidades));
+  prepararSugerencias();
   dibujarLocalidades();
   const pedida = new URLSearchParams(location.search).get('localidad');
   if (pedida) {
@@ -220,6 +234,60 @@ function dibujarLocalidades() {
   if (!filas.length) t.innerHTML += '<tbody><tr><td colspan="4">No hay localidades con ese filtro.</td></tr></tbody>';
 }
 
+// ---------------------------------------------------------------- buscador con sugerencias
+let sugeridas = [], marcada = -1;
+
+function prepararSugerencias() {
+  const input = document.getElementById('buscar-loc'), lista = document.getElementById('sugerencias-loc');
+  const cerrar = () => { lista.hidden = true; input.setAttribute('aria-expanded', 'false'); marcada = -1; };
+  const pintar = () => {
+    const q = sinTildes(input.value.trim());
+    if (!q) { cerrar(); return; }
+    // primero las que empiezan así, después las que tienen una palabra que empieza así («car» → Villa Carlos Paz)
+    const rango = f => { const n = sinTildes(f.localidad); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
+    sugeridas = LOCS.filter(f => sinTildes(f.localidad).includes(q))
+      .sort((a, b) => rango(a) - rango(b) || a.localidad.localeCompare(b.localidad))
+      .slice(0, 8);
+    lista.innerHTML = sugeridas.length ? sugeridas.map((f, i) => {
+      const n = sinTildes(f.localidad), k = n.indexOf(q);
+      const nombre = esc(f.localidad.slice(0, k)) + '<mark>' + esc(f.localidad.slice(k, k + q.length)) + '</mark>' + esc(f.localidad.slice(k + q.length));
+      return `<li role="option" id="sug-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${nombre}</span>${chipPrioridad(f.prioridad)}</li>`;
+    }).join('') : '<li class="vacio">No hay localidades con ese nombre.</li>';
+    lista.hidden = false; input.setAttribute('aria-expanded', 'true');
+  };
+  const elegir = i => {
+    const f = sugeridas[i];
+    if (!f) return;
+    input.value = f.localidad; cerrar(); dibujarLocalidades(); elegirLocalidad(f);
+  };
+  input.addEventListener('input', () => { marcada = -1; pintar(); });
+  input.addEventListener('focus', pintar);
+  input.addEventListener('keydown', e => {
+    if (lista.hidden) return;
+    if (e.key === 'ArrowDown') { marcada = Math.min(marcada + 1, sugeridas.length - 1); pintar(); e.preventDefault(); }
+    else if (e.key === 'ArrowUp') { marcada = Math.max(marcada - 1, 0); pintar(); e.preventDefault(); }
+    else if (e.key === 'Enter') { elegir(marcada >= 0 ? marcada : 0); e.preventDefault(); }
+    else if (e.key === 'Escape') cerrar();
+  });
+  lista.addEventListener('mousedown', e => {           // mousedown: antes de que el input pierda el foco
+    const li = e.target.closest('li[data-i]');
+    if (li) { e.preventDefault(); elegir(Number(li.dataset.i)); }
+  });
+  input.addEventListener('blur', () => setTimeout(cerrar, 150));
+}
+
+function textoCondiciones(c) {
+  if (!c) return '<div><b>Próximos 3 días</b>: sin pronóstico por ahora.</div>';
+  const cuando = c.cuando ? new Date(c.cuando.replace(' ', 'T')) : null;
+  const dia = cuando ? `${DIAS[cuando.getDay()]} ${cuando.getDate()}/${cuando.getMonth() + 1} a las ${cuando.getHours()} h` : '';
+  const estado = c.condicion === 'lluvia fuerte' ? '<span class="lluvia-fuerte">se espera lluvia fuerte</span>'
+    : c.condicion === 'atención' ? '<span class="lluvia-atencion">se espera lluvia moderada</span>' : 'sin lluvia fuerte a la vista';
+  const lluvia = c.max_3h_mm > 0 ? `Hasta ${c.max_3h_mm} mm en 3 horas${dia ? ` (${dia})` : ''}` : 'No se pronostica lluvia';
+  return `<div><b>Próximos 3 días</b>: ${estado}. ${lluvia}; ` +
+    `en el pasado alcanzaron unos ${c.umbral_mm} mm para una crecida${c.suelo_humedo ? ' con el suelo así de húmedo' : ''}. ` +
+    `Suelo: ${esc(c.suelo)}.</div>`;
+}
+
 function elegirLocalidad(f) {
   if (!f) return;
   document.querySelectorAll('#tabla-loc tbody tr').forEach(tr => tr.classList.toggle('elegida', tr.dataset.loc === f.localidad));
@@ -236,6 +304,8 @@ function elegirLocalidad(f) {
   const caja = document.getElementById('detalle-loc');
   caja.hidden = false;
   caja.innerHTML = `<h3>${esc(f.localidad)} · prioridad ${chipPrioridad(f.prioridad)}</h3>
+    ${f.prioridad !== f.prioridad_base ? `<div class="lluvia-fuerte">Subió de prioridad ${esc(f.prioridad_base || 'sin análisis')} a ${esc(f.prioridad)} por la lluvia pronosticada.</div>` : ''}
+    ${textoCondiciones(f.condiciones)}
     ${f.razones && f.razones.length ? `<div><b>Por qué</b><ul class="razones">${f.razones.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
     ${f.parecido_scm != null && f.parecido_scm < 1.5 ? '<div>Sus condiciones se parecen mucho a las de <b>San Carlos Minas en 1992</b>.</div>' : ''}
     <div>Estación que avisa: ${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : 'sin datos'}${f.danos_registrados ? ` · ${f.danos_registrados} daños verificados en imágenes a menos de 4 km` : ''}</div>

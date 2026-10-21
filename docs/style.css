@@ -114,3 +114,14 @@ footer { max-width: 1100px; margin: 0 auto; padding: 16px; color: var(--suave); 
 .razones { margin: 0; padding-left: 18px; }
 #tabla-loc td:first-child { white-space: normal; min-width: 120px; }
 @media (max-width: 600px) { #tabla-loc th, #tabla-loc td { padding: 8px 6px; } }
+
+.buscar-caja { position: relative; flex: 1 1 220px; max-width: 360px; }
+.buscar-caja input[type="search"] { width: 100%; max-width: none; }
+.sugerencias { position: absolute; z-index: 1200; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px 0;
+  list-style: none; background: var(--blanco); border: 1px solid var(--borde); border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.12); max-height: 300px; overflow-y: auto; }
+.sugerencias li { padding: 8px 12px; cursor: pointer; display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.sugerencias li[aria-selected="true"], .sugerencias li:hover { background: color-mix(in srgb, var(--acento) 12%, transparent); }
+.sugerencias mark { background: none; color: inherit; font-weight: 700; text-decoration: underline; }
+.sugerencias .vacio { color: var(--suave); cursor: default; }
+.lluvia-fuerte { color: var(--rojo); font-weight: 600; } .lluvia-atencion { color: var(--naranja); font-weight: 600; }

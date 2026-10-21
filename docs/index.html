@@ -57,14 +57,19 @@
     <div class="capas" id="capas"></div>
     <div id="mapa-riesgo" class="mapa alto"></div>
     <h2>Por localidad</h2>
-    <p class="nota">Elegí una localidad para centrar el mapa y ver por qué tiene esa prioridad, sus arroyos, las crecidas registradas y si hay estaciones que den tiempo de avisar. La columna <b>Aviso</b> dice si alguna estación río arriba da al menos media hora de margen.</p>
+    <p class="destacado">La prioridad de cada localidad combina su <b>historial</b> (crecidas registradas), las <b>condiciones del lugar</b> (cómo son sus arroyos y cuánta gente vive cerca del cauce) y las <b>condiciones de los próximos 3 días</b> (lluvia pronosticada y humedad del suelo). Si se espera lluvia fuerte, la prioridad sube un nivel. Se actualiza cada 6 horas. <span id="condiciones-meta" class="nota"></span></p>
+    <p class="nota">Buscá o elegí una localidad para centrar el mapa y ver el detalle. La columna <b>Aviso</b> dice si alguna estación río arriba da al menos media hora de margen.</p>
     <div class="leyenda">
-      <span class="n-rojo"><span class="punto"></span><b>Prioridad alta</b>: tuvo crecidas graves, o tiene varias condiciones peligrosas y gente viviendo junto al cauce.</span>
+      <span class="n-rojo"><span class="punto"></span><b>Prioridad alta</b>: tuvo crecidas graves, o tiene varias condiciones peligrosas y gente viviendo junto al cauce, o se espera lluvia fuerte donde ya hay prioridad media.</span>
       <span class="n-amarillo"><span class="punto"></span><b>Prioridad media</b>: tuvo crecidas, o tiene algunas condiciones peligrosas.</span>
       <span class="n-verde"><span class="punto"></span><b>Prioridad baja</b>: pocas condiciones detectadas. <i>No quiere decir que no haya riesgo.</i></span>
     </div>
     <div class="buscador">
-      <input id="buscar-loc" type="search" placeholder="Buscar localidad…" aria-label="Buscar localidad" autocomplete="off">
+      <div class="buscar-caja">
+        <input id="buscar-loc" type="search" placeholder="Buscar localidad…" aria-label="Buscar localidad" autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="sugerencias-loc" aria-autocomplete="list">
+        <ul id="sugerencias-loc" class="sugerencias" role="listbox" hidden></ul>
+      </div>
       <label><input id="solo-eventos" type="checkbox"> Solo con crecidas registradas</label>
       <label><input id="sin-aviso" type="checkbox"> Solo sin estación que dé aviso</label>
     </div>
