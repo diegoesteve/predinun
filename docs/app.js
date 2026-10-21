@@ -206,7 +206,7 @@ async function riesgo() {
     caja.appendChild(l);
   });
   const todos = Object.values(capas).flatMap(c => c.getLayers().map(x => x.getLatLng()));
-  if (todos.length) mapas.riesgo.fitBounds(L.latLngBounds(todos).pad(0.1));
+  if (todos.length) mapas.riesgo.fitBounds(L.latLngBounds(todos).pad(0.1), { animate: false });
   tablaLocalidades();
 }
 
@@ -250,6 +250,16 @@ function dibujarCapaAhora() {
     fillColor: COLOR_AHORA[f.ahora], fillOpacity: .95 }).bindPopup(`<b>${esc(f.localidad)}</b> ${chipAhora(f.ahora)}<br>` +
     `Hasta ${f.condiciones.max_3h_mm} mm en 3 horas en los próximos 3 días.<br><a href="?localidad=${encodeURIComponent(f.localidad)}#riesgo">Ver detalle</a>`)));
   capaAhora.addTo(mapas.riesgo);
+  // El mapa arranca mostrando las localidades en alerta o atención (si hay); si no, todo el mapa
+  if (con.length && !new URLSearchParams(location.search).get('localidad')) {
+    const zona = L.latLngBounds(con.map(f => [f.lat, f.lon]));
+    const encuadrar = () => mapas.riesgo.fitBounds(zona.pad(0.1), { maxZoom: 11, animate: false });
+    encuadrar();
+    if (document.getElementById('p-riesgo').hidden) {    // el mapa oculto no sabe su tamaño: encuadrar al mostrarlo
+      const obs = new ResizeObserver(() => { if (mapas.riesgo.getContainer().offsetWidth) { mapas.riesgo.invalidateSize(); encuadrar(); obs.disconnect(); } });
+      obs.observe(mapas.riesgo.getContainer());
+    }
+  }
   const l = document.createElement('label');
   l.innerHTML = `<input type="checkbox" checked><span class="punto" style="--c:${COLOR_AHORA.alerta}"></span>Alerta o atención por lluvia, próximos 3 días (${con.length})`;
   l.querySelector('input').addEventListener('change', ev => ev.target.checked ? capaAhora.addTo(mapas.riesgo) : capaAhora.remove());
