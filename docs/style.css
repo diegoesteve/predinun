@@ -135,3 +135,5 @@ footer { max-width: 1100px; margin: 0 auto; padding: 16px; color: var(--suave); 
   #tabla-loc .chip.expo { white-space: normal; align-items: flex-start; }
   #tabla-loc .chip.expo .cuadro { margin-top: 5px; flex: none; }
 }
+#tabla-estaciones tr.con-mapa { cursor: pointer; }
+#tabla-estaciones tr.con-mapa:hover, #tabla-estaciones tr.elegida { background: color-mix(in srgb, var(--acento) 12%, transparent); }

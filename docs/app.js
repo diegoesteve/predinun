@@ -49,24 +49,34 @@ async function ahora() {
 
   const est = (e && e.estaciones) || [];
   mapas.estaciones = mapaBase('mapa-estaciones');
+  const marcas = new Map();
   est.filter(s => s.lat && s.lon && s.tipo !== 'otra').forEach(s => {
     const txt = s.tipo === 'rio'
       ? `Nivel ${s.nivel_m} m · subió ${s.subida_1h_m ?? '–'} m en 1 h`
       : `Lluvia 1 h: ${s.lluvia_1h ?? '–'} mm · 3 h: ${s.lluvia_3h ?? '–'} mm · 24 h: ${s.lluvia_24h ?? '–'} mm`;
-    L.circleMarker([s.lat, s.lon], {
+    marcas.set(s, L.circleMarker([s.lat, s.lon], {
       radius: s.tipo === 'rio' ? 8 : 6, color: s.tipo === 'rio' ? '#0E5E5A' : '#fff', weight: 2,
       fillColor: COLOR[s.estado] || COLOR['sin datos'], fillOpacity: .9
     }).bindPopup(`<b>${esc(s.nombre)}</b> (${s.tipo === 'rio' ? 'río' : 'lluvia'})<br>${esc(txt)}<br>${esc(s.hora)} · ${esc(TEXTO[s.estado])}`)
-      .addTo(mapas.estaciones);
+      .addTo(mapas.estaciones));
   });
   const orden = { rojo: 0, naranja: 1, amarillo: 2, normal: 3, 'sin datos': 4 };
   const filas = est.filter(s => s.tipo !== 'otra').sort((x, y) => (orden[x.estado] - orden[y.estado]) || String(x.zona).localeCompare(y.zona));
   document.getElementById('tabla-estaciones').innerHTML =
     '<tr><th>Estado</th><th>Estación</th><th>Zona</th><th>Tipo</th><th>Hora</th><th>1 h mm</th><th>3 h mm</th><th>24 h mm</th><th>Nivel m</th><th>Sube 1 h</th></tr>' +
-    filas.map(s => `<tr class="${clase(s.estado)}"><td><span class="punto"></span>${esc(TEXTO[s.estado])}</td>
+    filas.map((s, i) => `<tr class="${clase(s.estado)}${marcas.has(s) ? ' con-mapa' : ''}" data-i="${i}"><td><span class="punto"></span>${esc(TEXTO[s.estado])}</td>
       <td>${esc(s.nombre)}</td><td>${esc(s.zona)}</td><td>${s.tipo === 'rio' ? 'río' : 'lluvia'}</td>
       <td>${esc(s.hora)}</td><td class="num">${s.lluvia_1h ?? ''}</td><td class="num">${s.lluvia_3h ?? ''}</td><td class="num">${s.lluvia_24h ?? ''}</td>
       <td class="num">${s.nivel_m ?? ''}</td><td class="num">${s.subida_1h_m ?? ''}</td></tr>`).join('');
+  // Tocar una fila centra el mapa en esa estación y abre su ficha
+  document.querySelectorAll('#tabla-estaciones tr.con-mapa').forEach(tr => tr.addEventListener('click', () => {
+    const m = marcas.get(filas[Number(tr.dataset.i)]);
+    document.querySelectorAll('#tabla-estaciones tr.elegida').forEach(x => x.classList.remove('elegida'));
+    tr.classList.add('elegida');
+    document.getElementById('mapa-estaciones').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    mapas.estaciones.setView(m.getLatLng(), 13);
+    m.openPopup();
+  }));
 }
 
 // ---------------------------------------------------------------- pronóstico
