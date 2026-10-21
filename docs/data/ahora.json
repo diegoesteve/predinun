@@ -1,10 +1,10 @@
 {
- "actualizado": "2026-10-21 15:05",
+ "actualizado": "2026-10-21 18:45",
  "boletin_generado": "2026-10-21 14:00",
  "zonas": [
   {
    "zona": "Córdoba / La Calera",
-   "estado": "amarillo"
+   "estado": "normal"
   },
   {
    "zona": "Punilla norte",
@@ -12,7 +12,7 @@
   },
   {
    "zona": "Punilla sur / San Antonio",
-   "estado": "amarillo"
+   "estado": "normal"
   },
   {
    "zona": "Sierras Chicas",
@@ -44,20 +44,20 @@
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "zona_estaciones": "Punilla sur / San Antonio",
-   "nivel": "amarillo",
-   "estaciones": "amarillo",
+   "nivel": "verde",
+   "estaciones": "verde",
    "pronostico": "verde",
-   "motivo": "estaciones: amarillo",
+   "motivo": "sin lluvias fuertes ni crecidas",
    "suelo": "saturado"
   },
   {
    "cuenca": "Capital",
    "nombre": "Capital (experimental)",
    "zona_estaciones": "Córdoba / La Calera",
-   "nivel": "amarillo",
-   "estaciones": "amarillo",
+   "nivel": "verde",
+   "estaciones": "verde",
    "pronostico": "verde",
-   "motivo": "estaciones: amarillo",
+   "motivo": "sin lluvias fuertes ni crecidas",
    "suelo": "saturado"
   }
  ],
