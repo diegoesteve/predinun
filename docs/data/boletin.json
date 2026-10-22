@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-22 08:00",
+ "generado": "2026-10-22 09:00",
  "horas": 48,
  "smap_atraso_dias": 2.6,
  "cuencas": [
@@ -20,10 +20,10 @@
      "cuando": "2026-10-22 10:00"
     },
     "ECMWF": {
-     "max_3h_mm": 5.2,
+     "max_3h_mm": 5.3,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-24 07:00"
+     "cuando": "2026-10-24 09:00"
     }
    },
    "ensambles": {
@@ -42,7 +42,19 @@
     "estado": "saturado"
    },
    "agravado_por_suelo": true,
-   "secado": null
+   "secado": {
+    "dias_atras": 10,
+    "dias_adelante": 7,
+    "et0_ult_mm": 27.6,
+    "et0_ult_normal_mm": 45.1,
+    "et0_ult_pct": 61,
+    "radiacion_ult_pct": 75,
+    "nubosidad_ult_media": 73,
+    "nubosidad_ult_normal": 42,
+    "dias_nublados_ult": 6,
+    "et0_prox_mm": 20.6,
+    "et0_prox_pct": 62
+   }
   },
   {
    "cuenca": "Cosquin",
@@ -61,10 +73,10 @@
      "cuando": "2026-10-22 11:00"
     },
     "ECMWF": {
-     "max_3h_mm": 4.1,
+     "max_3h_mm": 4.2,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 08:00"
+     "cuando": "2026-10-24 09:00"
     }
    },
    "ensambles": {
@@ -102,12 +114,6 @@
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
-    "GFS": {
-     "max_3h_mm": 3.5,
-     "umbral_mm": 10.1,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 13:00"
-    },
     "ICON": {
      "max_3h_mm": 1.1,
      "umbral_mm": 9.7,
@@ -115,10 +121,10 @@
      "cuando": "2026-10-24 02:00"
     },
     "ECMWF": {
-     "max_3h_mm": 5.6,
+     "max_3h_mm": 3.9,
      "umbral_mm": 8.8,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-22 08:00"
+     "cuando": "2026-10-22 09:00"
     }
    },
    "ensambles": {
@@ -126,7 +132,7 @@
     "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
-   "nivel": "amarillo",
+   "nivel": "verde",
    "nivel_por_lluvia": "verde",
    "suelo": {
     "smap_m3m3": 0.151,
@@ -138,7 +144,6 @@
     "es_estimado": false,
     "estado": "saturado"
    },
-   "agravado_por_suelo": true,
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
@@ -157,6 +162,12 @@
    "cuenca": "Capital",
    "nombre": "Capital (experimental)",
    "modelos": {
+    "GFS": {
+     "max_3h_mm": 3.9,
+     "umbral_mm": 7.7,
+     "fuente_umbral": "24 h antes",
+     "cuando": "2026-10-22 14:00"
+    },
     "ICON": {
      "max_3h_mm": 1.6,
      "umbral_mm": 11.4,
@@ -164,10 +175,10 @@
      "cuando": "2026-10-22 10:00"
     },
     "ECMWF": {
-     "max_3h_mm": 3.2,
+     "max_3h_mm": 4.5,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-24 08:00"
+     "cuando": "2026-10-24 09:00"
     }
    },
    "ensambles": {
@@ -175,7 +186,7 @@
     "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
-   "nivel": "verde",
+   "nivel": "amarillo",
    "nivel_por_lluvia": "verde",
    "suelo": {
     "smap_m3m3": 0.174,
@@ -187,6 +198,7 @@
     "es_estimado": false,
     "estado": "saturado"
    },
+   "agravado_por_suelo": true,
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
@@ -304,28 +316,28 @@
     "nombre": "Capital (experimental)",
     "suelo_saturado": true,
     "prob": [
-     0.18,
-     0.01,
-     0.07,
+     0.03,
+     0.0,
+     0.0,
+     0.0,
      0.0,
      0.0,
      0.05,
-     0.05,
-     0.04,
-     0.01,
-     0.08
+     0.06,
+     0.0,
+     0.1
     ],
     "mm": [
-     7.1,
-     2.6,
-     5.0,
+     3.6,
+     0.6,
+     0.9,
      0.3,
      0.0,
-     1.8,
-     2.0,
+     0.0,
+     0.9,
      1.4,
-     0.3,
-     1.1
+     0.1,
+     0.4
     ]
    }
   }
