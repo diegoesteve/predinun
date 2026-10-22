@@ -459,7 +459,7 @@ function elegirLocalidad(f) {
   leerRadar().then(r => {
     const v = r && r.localidades && r.localidades[f.localidad], edad = edadRadar(r), el = document.getElementById('radar-loc');
     if (!el || edad == null || edad > 90) return;
-    el.innerHTML = v ? `<span class="lluvia-fuerte">En este momento: tormenta ${esc(v.nivel)} ${v.subcuenca ? `sobre la ${esc(v.subcuenca)}, ` : ''}a ${v.km} km, según el radar (hace ${edad} min).</span>`
+    el.innerHTML = v ? `<span class="lluvia-fuerte">En este momento: tormenta ${esc(v.nivel)} ${v.cuenca_de ? `sobre la cuenca del ${esc(v.cuenca_de)}, ` : v.subcuenca ? `sobre la ${esc(v.subcuenca)}, ` : ''}a ${v.km} km, según el radar (hace ${edad} min).</span>`
       : `<b>En este momento</b>: el radar no ve tormentas intensas cerca (hace ${edad} min).`;
   });
   caja.querySelectorAll('.ver-arroyo').forEach(b => b.addEventListener('click', () => {

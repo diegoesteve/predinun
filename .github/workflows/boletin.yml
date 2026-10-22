@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '20 */6 * * *'   # cada 6 h, cuando ya salieron las corridas nuevas de los modelos
   workflow_dispatch:
+    inputs:
+      cuencas:
+        description: Recalcular la cuenca de cada arroyo (MERIT Hydro, tarda unos minutos)
+        type: boolean
+        default: false
   push:                        # un aporte aprobado aparece en el mapa enseguida
     branches: [main]
     paths: ['data/aportes/**']
@@ -49,6 +54,15 @@ jobs:
         run: python scripts/armar_campings.py
       - name: Actualizar el mapa de riesgo con lo que haya en data/
         run: python scripts/armar_riesgo.py
+      - name: Cuenca de cada arroyo (solo si se pide o si falta)
+        if: ${{ inputs.cuencas || hashFiles('data/cuencas_arroyos.geojson') == '' }}
+        continue-on-error: true
+        env:
+          EE_SERVICE_ACCOUNT_JSON: ${{ secrets.EE_SERVICE_ACCOUNT_JSON }}
+          EE_PROJECT: ${{ secrets.EE_PROJECT }}
+        run: |
+          pip install rasterio shapely
+          python scripts/cuencas_arroyos.py
       - name: Lluvia pronosticada y suelo por localidad
         continue-on-error: true
         run: python scripts/condiciones_localidades.py
@@ -60,6 +74,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data/*.json docs/data/*.geojson data/*.json docs/l
+          git add data/cuencas_arroyos.geojson 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -m "boletín: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push
