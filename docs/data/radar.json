@@ -1,93 +1,87 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 16:31",
+ "consultado": "2026-10-22 16:33",
  "radar": "RMA1",
- "observacion": "2026-10-22 16:12",
+ "observacion": "2026-10-22 16:21",
  "nucleos": [
   {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 47,
-   "max_dbz": 53,
-   "tope_km": 1.2
-  },
-  {
-   "lat": -31.423,
-   "lon": -64.8051,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 11.4
-  },
-  {
-   "lat": -32.8447,
-   "lon": -64.8159,
-   "dbz": 45,
-   "max_dbz": 52,
+   "lat": -32.8358,
+   "lon": -64.7406,
+   "dbz": 46,
+   "max_dbz": 46,
    "tope_km": 7.2
-  },
-  {
-   "lat": -32.7293,
-   "lon": -64.9127,
-   "dbz": 44,
-   "max_dbz": 48,
-   "tope_km": 5.4
   },
   {
    "lat": -31.5131,
    "lon": -64.7621,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 6.6
+  },
+  {
+   "lat": -31.441,
+   "lon": -64.8159,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 5.4
+  },
+  {
+   "lat": -31.2697,
+   "lon": -64.7083,
    "dbz": 44,
    "max_dbz": 44,
-   "tope_km": 5.4
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.387,
+   "lon": -64.4178,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 1.2
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 1,
+   "nucleos": 2,
    "max_dbz": 45
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 29.5,
+   "km": 27.9,
    "max_dbz": 45,
-   "tope_km": 11.4,
+   "tope_km": 6.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Cuesta Blanca": {
-   "km": 21.5,
+   "km": 16.9,
    "max_dbz": 45,
-   "tope_km": 11.4,
+   "tope_km": 6.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Mayu Sumaj": {
-   "km": 24.8,
+   "km": 21.1,
    "max_dbz": 45,
-   "tope_km": 11.4,
+   "tope_km": 6.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 23.0,
+   "km": 18.7,
    "max_dbz": 45,
-   "tope_km": 11.4,
+   "tope_km": 6.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "San Roque": {
-   "km": 4.0,
-   "max_dbz": 53,
-   "tope_km": 1.2,
-   "nivel": "intensa"
-  },
   "Santa Rita": {
-   "km": 29.5,
-   "max_dbz": 52,
+   "km": 23.2,
+   "max_dbz": 46,
    "tope_km": 7.2,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
   }
  },
- "minutos": 19
+ "minutos": 12
 }
