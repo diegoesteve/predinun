@@ -1,176 +1,121 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 12:41",
+ "consultado": "2026-10-22 13:52",
  "radar": "RMA1",
- "observacion": "2026-10-22 12:27",
+ "observacion": "2026-10-22 13:30",
  "nucleos": [
   {
-   "lat": -32.159,
-   "lon": -64.2887,
-   "dbz": 50,
-   "max_dbz": 67,
-   "tope_km": 13.2
+   "lat": -32.6404,
+   "lon": -63.9122,
+   "dbz": 49,
+   "max_dbz": 62,
+   "tope_km": 9.6
   },
   {
-   "lat": -31.6121,
-   "lon": -64.4394,
+   "lat": -31.45,
+   "lon": -64.7944,
    "dbz": 47,
-   "max_dbz": 56,
-   "tope_km": 4.2
-  },
-  {
-   "lat": -33.0485,
-   "lon": -63.8584,
-   "dbz": 46,
-   "max_dbz": 58,
-   "tope_km": 10.2
-  },
-  {
-   "lat": -32.9245,
-   "lon": -64.6653,
-   "dbz": 46,
-   "max_dbz": 52,
-   "tope_km": 9.6
-  },
-  {
-   "lat": -32.8979,
-   "lon": -64.1059,
-   "dbz": 46,
-   "max_dbz": 56,
-   "tope_km": 9.0
-  },
-  {
-   "lat": -33.0042,
-   "lon": -64.1166,
-   "dbz": 46,
-   "max_dbz": 51,
-   "tope_km": 9.6
-  },
-  {
-   "lat": -32.7737,
-   "lon": -64.2565,
-   "dbz": 45,
-   "max_dbz": 53,
-   "tope_km": 10.2
-  },
-  {
-   "lat": -31.5131,
-   "lon": -64.7621,
-   "dbz": 44,
-   "max_dbz": 49,
+   "max_dbz": 47,
    "tope_km": 5.4
   },
   {
-   "lat": -32.9865,
-   "lon": -64.6222,
+   "lat": -31.5221,
+   "lon": -64.7621,
+   "dbz": 45,
+   "max_dbz": 56,
+   "tope_km": 5.4
+  },
+  {
+   "lat": -33.243,
+   "lon": -65.1063,
    "dbz": 44,
-   "max_dbz": 52,
-   "tope_km": 10.2
+   "max_dbz": 46,
+   "tope_km": 9.0
   },
   {
-   "lat": -31.3509,
-   "lon": -64.4286,
+   "lat": -31.387,
+   "lon": -64.4178,
    "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 1.8
+   "max_dbz": 48,
+   "tope_km": 1.2
   },
   {
-   "lat": -32.9599,
-   "lon": -64.009,
+   "lat": -33.1458,
+   "lon": -65.3107,
    "dbz": 42,
-   "max_dbz": 42,
-   "tope_km": 9.6
-  },
-  {
-   "lat": -33.1016,
-   "lon": -64.235,
-   "dbz": 42,
-   "max_dbz": 42,
+   "max_dbz": 45,
    "tope_km": 8.4
   },
   {
-   "lat": -32.4624,
-   "lon": -64.2134,
-   "dbz": 42,
-   "max_dbz": 44,
-   "tope_km": 7.8
-  },
-  {
-   "lat": -33.1635,
-   "lon": -65.5797,
+   "lat": -31.2968,
+   "lon": -64.7191,
    "dbz": 41,
-   "max_dbz": 42,
-   "tope_km": 9.6
+   "max_dbz": 41,
+   "tope_km": 2.4
   },
   {
-   "lat": -32.8181,
-   "lon": -64.235,
+   "lat": -31.432,
+   "lon": -64.4286,
+   "dbz": 41,
+   "max_dbz": 44,
+   "tope_km": 0.6
+  },
+  {
+   "lat": -33.1281,
+   "lon": -65.5582,
    "dbz": 40,
-   "max_dbz": 40,
-   "tope_km": 10.8
+   "max_dbz": 41,
+   "tope_km": 9.0
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 49
+   "nucleos": 2,
+   "max_dbz": 56
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 27.9,
-   "max_dbz": 49,
+   "km": 28.4,
+   "max_dbz": 56,
    "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Cuesta Blanca": {
-   "km": 16.9,
-   "max_dbz": 49,
+   "km": 17.1,
+   "max_dbz": 56,
    "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Alta Gracia": {
-   "km": 4.8,
-   "max_dbz": 56,
-   "tope_km": 4.2,
    "nivel": "muy intensa"
+  },
+  "La Calera": {
+   "km": 4.2,
+   "max_dbz": 48,
+   "tope_km": 1.2,
+   "cuenca_de": "Rio Suquia",
+   "nivel": "intensa"
   },
   "Mayu Sumaj": {
-   "km": 21.1,
-   "max_dbz": 49,
+   "km": 21.4,
+   "max_dbz": 56,
    "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Santa Catalina": {
-   "km": 29.1,
-   "max_dbz": 52,
-   "tope_km": 10.2,
-   "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Tala Huasi": {
-   "km": 18.7,
-   "max_dbz": 49,
+   "km": 18.9,
+   "max_dbz": 56,
    "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Santa Rita": {
-   "km": 14.2,
-   "max_dbz": 52,
-   "tope_km": 9.6,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "intensa"
-  },
-  "Villa del Prado": {
-   "km": 4.9,
-   "max_dbz": 56,
-   "tope_km": 4.2,
    "nivel": "muy intensa"
+  },
+  "San Roque": {
+   "km": 4.0,
+   "max_dbz": 48,
+   "tope_km": 1.2,
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 22
 }
