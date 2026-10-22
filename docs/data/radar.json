@@ -1,52 +1,119 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 17:31",
+ "consultado": "2026-10-22 17:46",
  "radar": "RMA1",
- "observacion": "2026-10-22 17:15",
+ "observacion": "2026-10-22 17:33",
  "nucleos": [
   {
-   "lat": -31.3509,
+   "lat": -31.3329,
+   "lon": -64.4178,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 0.6
+  },
+  {
+   "lat": -31.405,
    "lon": -64.4286,
-   "dbz": 46,
-   "max_dbz": 52,
+   "dbz": 44,
+   "max_dbz": 47,
+   "tope_km": 0.6
+  },
+  {
+   "lat": -31.4771,
+   "lon": -64.5039,
+   "dbz": 44,
+   "max_dbz": 51,
    "tope_km": 1.2
   },
   {
-   "lat": -31.5221,
-   "lon": -64.7513,
+   "lat": -31.5131,
+   "lon": -64.7621,
    "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 5.4
+   "max_dbz": 47,
+   "tope_km": 6.6
   },
   {
-   "lat": -31.2787,
-   "lon": -64.7083,
+   "lat": -31.423,
+   "lon": -64.8051,
+   "dbz": 44,
+   "max_dbz": 47,
+   "tope_km": 9.0
+  },
+  {
+   "lat": -31.4771,
+   "lon": -64.7944,
    "dbz": 43,
    "max_dbz": 43,
-   "tope_km": 2.4
-  },
-  {
-   "lat": -31.45,
-   "lon": -64.7944,
-   "dbz": 42,
-   "max_dbz": 42,
-   "tope_km": 7.2
+   "tope_km": 5.4
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "SanAntonio_CPaz": {
+   "nucleos": 3,
+   "max_dbz": 51
+  }
+ },
  "localidades": {
-  "San Roque": {
-   "km": 1.9,
-   "max_dbz": 52,
+  "Cordoba": {
+   "km": 22.2,
+   "max_dbz": 51,
+   "tope_km": 1.2,
+   "cuenca_de": "Arroyo La Cañada",
+   "nivel": "intensa"
+  },
+  "Villa Carlos Paz": {
+   "km": 27.9,
+   "max_dbz": 47,
+   "tope_km": 6.6,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 16.9,
+   "max_dbz": 47,
+   "tope_km": 6.6,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "La Calera": {
+   "km": 9.9,
+   "max_dbz": 47,
+   "tope_km": 0.6,
+   "cuenca_de": "Arroyo Canada De Molina",
+   "nivel": "intensa"
+  },
+  "San Antonio de Arredondo": {
+   "km": 2.5,
+   "max_dbz": 51,
    "tope_km": 1.2,
    "nivel": "intensa"
   },
-  "Villa Parque Siquiman": {
-   "km": 4.8,
-   "max_dbz": 52,
+  "Barrio Sierras de Oro": {
+   "km": 7.1,
+   "max_dbz": 51,
    "tope_km": 1.2,
+   "cuenca_de": "Arroyo Seco",
+   "nivel": "intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 3.8,
+   "max_dbz": 51,
+   "tope_km": 1.2,
+   "nivel": "intensa"
+  },
+  "Tala Huasi": {
+   "km": 18.7,
+   "max_dbz": 47,
+   "tope_km": 6.6,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 4.0,
+   "max_dbz": 47,
+   "tope_km": 0.6,
    "nivel": "intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
