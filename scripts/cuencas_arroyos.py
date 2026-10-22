@@ -12,15 +12,12 @@ propia de cada salida, y la cuenca completa es la suya más las de las salidas q
 
 Escribe data/cuencas_arroyos.geojson. Corre a mano (workflow del boletín con «cuencas» tildado) o si falta el archivo.
 """
-import io
 import json
 import os
 import sys
 import time
-import zipfile
 
 import numpy as np
-import requests
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from alerta import config as cfg   # noqa: E402
@@ -34,40 +31,35 @@ AREA_MAX_KM2 = 6000                # más grande que esto es un río troncal: no
 D8 = {1: (0, 1), 2: (1, 1), 4: (1, 0), 8: (1, -1), 16: (0, -1), 32: (-1, -1), 64: (-1, 0), 128: (-1, 1)}
 
 
-def bajar(ee, banda, tipo, sur, norte):
-    img = ee.Image('MERIT/Hydro/v1_0_1').select(banda)
-    img = img.toUint8() if tipo == 'uint8' else img.min(65000).max(0).toUint16()
-    region = ee.Geometry.Rectangle([OESTE, sur, ESTE, norte], 'EPSG:4326', False)
-    url = img.getDownloadURL({'region': region, 'crs': 'EPSG:4326', 'format': 'GEO_TIFF',
-                              'crsTransform': [RES, 0, -180, 0, -RES, 90]})
-    for intento in range(4):
-        try:
-            r = requests.get(url, timeout=600)
-            r.raise_for_status()
-            break
-        except Exception:
-            if intento == 3:
-                raise
-            time.sleep(15)
-    datos = r.content
-    if datos[:2] == b'PK':
-        with zipfile.ZipFile(io.BytesIO(datos)) as z:
-            datos = z.read([n for n in z.namelist() if n.endswith('.tif')][0])
+def bajar_todo(ee, banda, tipo, lado=1500):
+    """Baja una banda de MERIT en la grilla original, por bloques, con computePixels (no necesita permiso para crear
+    enlaces de descarga, que la cuenta de servicio del proyecto no tiene)."""
     import rasterio
-    with rasterio.open(io.BytesIO(datos)) as src:
-        return src.read(1), src.transform
-
-
-def bajar_todo(ee, banda, tipo):
-    """En franjas, para no pasar el límite de tamaño de las descargas de Earth Engine."""
-    cortes = np.linspace(SUR, NORTE, 4)
-    partes, transf = [], None
-    for sur, norte in reversed(list(zip(cortes[:-1], cortes[1:]))):   # de norte a sur, como las filas
-        a, t = bajar(ee, banda, tipo, sur, norte)
-        partes.append(a)
-        transf = transf or t
-    ancho = min(p.shape[1] for p in partes)
-    return np.vstack([p[:, :ancho] for p in partes]), transf
+    col0 = int(np.floor((OESTE + 180) / RES))
+    fila0 = int(np.floor((90 - NORTE) / RES))
+    ancho = int(np.ceil((ESTE - OESTE) / RES))
+    alto = int(np.ceil((NORTE - SUR) / RES))
+    x0, y0 = -180 + col0 * RES, 90 - fila0 * RES
+    img = ee.Image('MERIT/Hydro/v1_0_1').select(banda)
+    img = img.unmask(0).toUint8() if tipo == 'uint8' else img.unmask(0).min(65000).max(0).toUint16()
+    salida = np.zeros((alto, ancho), dtype=np.uint8 if tipo == 'uint8' else np.uint16)
+    for f in range(0, alto, lado):
+        for c in range(0, ancho, lado):
+            h, w = min(lado, alto - f), min(lado, ancho - c)
+            pedido = {'expression': img, 'fileFormat': 'NUMPY_NDARRAY',
+                      'grid': {'dimensions': {'width': w, 'height': h}, 'crsCode': 'EPSG:4326',
+                               'affineTransform': {'scaleX': RES, 'shearX': 0, 'translateX': x0 + c * RES,
+                                                   'shearY': 0, 'scaleY': -RES, 'translateY': y0 - f * RES}}}
+            for intento in range(4):
+                try:
+                    bloque = ee.data.computePixels(pedido)
+                    break
+                except Exception:
+                    if intento == 3:
+                        raise
+                    time.sleep(15)
+            salida[f:f + h, c:c + w] = bloque[banda] if bloque.dtype.names else bloque
+    return salida, rasterio.Affine(RES, 0, x0, 0, -RES, y0)
 
 
 def primera_salida(dirs, salidas):
