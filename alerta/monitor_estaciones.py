@@ -44,10 +44,18 @@ NIVELES_LLUVIA = [   # de mayor a menor
 # Subida del río en la última hora (m). El 17/10/2026 el Cosquín creció ~1,5 m y hubo evacuados en la costa
 NIVELES_RIO = [('rojo', 1.0), ('naranja', 0.5), ('amarillo', 0.25)]
 HORAS_SIN_DATOS = 2           # una estación sin datos hace más de esto se marca "sin datos"
+# Lecturas de nivel que no se usan para el semáforo:
+#  - canales y diques: el nivel de un embalse o de un canal de riego no es una crecida (y algunos se miden contra otra
+#    referencia: «Canal Los Molinos» marca ~140 m);
+#  - picos aislados: una lectura que se aparta más de SALTO_MAX_M de la mediana de sus vecinas es un error del sensor
+#    (el 22/10/2026 «El Diquecito» pasó de 0,5 a 56 m). Una crecida real sigue alta en las lecturas siguientes.
+REFERENCIA = ('canal', 'dique', 'embalse')
+SALTO_MAX_M = 1.0
+RANGO_RIO_M = (-2.0, 15.0)
 
 ORDEN = {'normal': 0, 'amarillo': 1, 'naranja': 2, 'rojo': 3}
 ULTIMAS_ESTACIONES = None   # la última tabla leída por ciclo(), para el mapa
-ICONO = {'normal': '🟢', 'amarillo': '🟡', 'naranja': '🟠', 'rojo': '🔴', 'sin datos': '⚪'}
+ICONO = {'normal': '🟢', 'amarillo': '🟡', 'naranja': '🟠', 'rojo': '🔴', 'sin datos': '⚪', 'dato dudoso': '⚪', 'referencia': '⚪'}
 
 
 def zona_de(lat, lon):
@@ -124,11 +132,47 @@ def nivel_lluvia(fila):
     return 'normal', ''
 
 
+def es_referencia(nombre):
+    n = str(nombre).lower()
+    return any(p in n for p in REFERENCIA)
+
+
+def sin_picos(g):
+    """Saca lecturas fuera de rango y picos aislados (se apartan de la mediana de las vecinas). La última lectura se
+    compara con las dos anteriores: si sube de golpe y la siguiente lo confirma, deja de ser un pico."""
+    v = g['nivel_m']
+    med = v.rolling(5, center=True, min_periods=3).median()
+    ultimas = v.rolling(3, min_periods=3).median()          # para las últimas lecturas, que no tienen vecinas después
+    ref = med.where(med.notna(), ultimas)
+    bueno = v.between(*RANGO_RIO_M) & ((v - ref).abs() <= SALTO_MAX_M) | ref.isna()
+    return g[bueno & v.between(*RANGO_RIO_M)], int((~bueno).sum())
+
+
 def subida_rios(niveles, ahora):
     # Subida en la última hora y respecto del mínimo de las últimas 24 h, por estación de nivel
     filas = []
     for cod, g in niveles.groupby('codigo'):
         g = g.sort_values('fecha')
+        nombre = g['nombre_estacion'].iloc[-1]
+        if es_referencia(nombre):
+            ult = g.iloc[-1]
+            filas.append({'codigo': cod, 'estacion': nombre, 'lat': ult['latitud'], 'lon': ult['longitud'],
+                          'zona': zona_de(ult['latitud'], ult['longitud']), 'hora': ult['fecha'].strftime('%d/%m %H:%M'),
+                          'nivel_m': round(ult['nivel_m'], 2), 'subida_1h_m': None, 'sobre_minimo_24h_m': None,
+                          'estado': 'referencia', 'nota': 'canal o dique: no se usa para el semáforo'})
+            continue
+        crudo_ult = g.iloc[-1]
+        g, descartadas = sin_picos(g)
+        # Si la que se descartó es la última y es una subida, puede ser el comienzo de una crecida: no se esconde
+        a_confirmar = (not g.empty and crudo_ult['fecha'] > g['fecha'].iloc[-1]
+                       and RANGO_RIO_M[0] <= crudo_ult['nivel_m'] <= RANGO_RIO_M[1]
+                       and crudo_ult['nivel_m'] - g['nivel_m'].iloc[-1] > SALTO_MAX_M)
+        if g.empty:
+            filas.append({'codigo': cod, 'estacion': nombre, 'lat': crudo_ult['latitud'], 'lon': crudo_ult['longitud'],
+                          'zona': zona_de(crudo_ult['latitud'], crudo_ult['longitud']),
+                          'hora': crudo_ult['fecha'].strftime('%d/%m %H:%M'), 'nivel_m': None, 'subida_1h_m': None,
+                          'sobre_minimo_24h_m': None, 'estado': 'dato dudoso', 'nota': 'todas las lecturas fuera de rango'})
+            continue
         ult = g.iloc[-1]
         hace_1h = g[g['fecha'] <= ult['fecha'] - pd.Timedelta(minutes=60)]
         sube_1h = ult['nivel_m'] - hace_1h.iloc[-1]['nivel_m'] if not hace_1h.empty else np.nan
@@ -142,7 +186,10 @@ def subida_rios(niveles, ahora):
                       'zona': zona_de(ult['latitud'], ult['longitud']), 'hora': ult['fecha'].strftime('%d/%m %H:%M'),
                       'nivel_m': round(ult['nivel_m'], 2), 'subida_1h_m': None if pd.isna(sube_1h) else round(sube_1h, 2),
                       'sobre_minimo_24h_m': round(ult['nivel_m'] - g['nivel_m'].min(), 2),
-                      'estado': 'sin datos' if atraso_h > HORAS_SIN_DATOS else nivel})
+                      'estado': 'sin datos' if atraso_h > HORAS_SIN_DATOS else (max(nivel, 'amarillo', key=lambda x: ORDEN[x]) if a_confirmar else nivel),
+                      **({'nota': f"subida brusca de {crudo_ult['nivel_m'] - ult['nivel_m']:.1f} m en la última lectura, a confirmar"} if a_confirmar else
+                         {'nota': f'{descartadas} lectura{"s" if descartadas > 1 else ""} descartada{"s" if descartadas > 1 else ""} por error del sensor'}
+                         if descartadas else {})})
     return pd.DataFrame(filas)
 
 
@@ -206,7 +253,7 @@ def ciclo(ruta, avisar=True):
         if df is None or df.empty:
             continue
         for zona, g in df.groupby('zona'):
-            validos = g[g['estado'] != 'sin datos']['estado']
+            validos = g[g['estado'].isin(list(ORDEN))]['estado']   # sin «sin datos», «dato dudoso» ni «referencia»
             peor = max(validos, key=lambda s: ORDEN[s]) if not validos.empty else 'normal'
             if ORDEN[peor] > ORDEN.get(estados.get(zona, 'normal'), 0):
                 estados[zona] = peor

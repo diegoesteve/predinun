@@ -1,7 +1,9 @@
 // Página estática: lee docs/data/*.json, que actualizan los workflows de GitHub Actions.
-const COLOR = { verde: '#1F7A4D', normal: '#1F7A4D', amarillo: '#F2C230', naranja: '#E07B20', rojo: '#C0362C', 'sin datos': '#9AA5A0' };
-const TEXTO = { verde: 'normal', normal: 'normal', amarillo: 'amarillo', naranja: 'naranja', rojo: 'rojo', 'sin datos': 'sin datos' };
-const clase = n => 'n-' + String(n || 'sin datos').replace(' ', '-');
+const COLOR = { verde: '#1F7A4D', normal: '#1F7A4D', amarillo: '#F2C230', naranja: '#E07B20', rojo: '#C0362C', 'sin datos': '#9AA5A0',
+  'dato dudoso': '#9AA5A0', referencia: '#9AA5A0' };
+const TEXTO = { verde: 'normal', normal: 'normal', amarillo: 'amarillo', naranja: 'naranja', rojo: 'rojo', 'sin datos': 'sin datos',
+  'dato dudoso': 'dato dudoso', referencia: 'referencia' };
+const clase = n => 'n-' + String(n || 'sin datos').replace(/ /g, '-');
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const CENTRO = [-31.25, -64.38];
 
@@ -104,14 +106,14 @@ async function ahora() {
     marcas.set(s, L.circleMarker([s.lat, s.lon], {
       radius: s.tipo === 'rio' ? 8 : 6, color: s.tipo === 'rio' ? '#0E5E5A' : '#fff', weight: 2,
       fillColor: COLOR[s.estado] || COLOR['sin datos'], fillOpacity: .9
-    }).bindPopup(`<b>${esc(s.nombre)}</b> (${s.tipo === 'rio' ? 'río' : 'lluvia'})<br>${esc(txt)}<br>${esc(s.hora)} · ${esc(TEXTO[s.estado])}`)
+    }).bindPopup(`<b>${esc(s.nombre)}</b> (${s.tipo === 'rio' ? 'río' : 'lluvia'})<br>${esc(txt)}<br>${esc(s.hora)} · ${esc(TEXTO[s.estado] || s.estado)}${s.nota ? `<br><i>${esc(s.nota)}</i>` : ''}`)
       .addTo(mapas.estaciones));
   });
-  const orden = { rojo: 0, naranja: 1, amarillo: 2, normal: 3, 'sin datos': 4 };
+  const orden = { rojo: 0, naranja: 1, amarillo: 2, normal: 3, 'sin datos': 4, 'dato dudoso': 5, referencia: 6 };
   const filas = est.filter(s => s.tipo !== 'otra').sort((x, y) => (orden[x.estado] - orden[y.estado]) || String(x.zona).localeCompare(y.zona));
   document.getElementById('tabla-estaciones').innerHTML =
     '<tr><th>Estado</th><th>Estación</th><th>Zona</th><th>Tipo</th><th>Hora</th><th>1 h mm</th><th>3 h mm</th><th>24 h mm</th><th>Nivel m</th><th>Sube 1 h</th></tr>' +
-    filas.map((s, i) => `<tr class="${clase(s.estado)}${marcas.has(s) ? ' con-mapa' : ''}" data-i="${i}"><td><span class="punto"></span>${esc(TEXTO[s.estado])}</td>
+    filas.map((s, i) => `<tr class="${clase(s.estado)}${marcas.has(s) ? ' con-mapa' : ''}" data-i="${i}"><td title="${esc(s.nota || '')}"><span class="punto"></span>${esc(TEXTO[s.estado] || s.estado)}${s.nota ? ' *' : ''}</td>
       <td>${esc(s.nombre)}</td><td>${esc(s.zona)}</td><td>${s.tipo === 'rio' ? 'río' : 'lluvia'}</td>
       <td>${esc(s.hora)}</td><td class="num">${s.lluvia_1h ?? ''}</td><td class="num">${s.lluvia_3h ?? ''}</td><td class="num">${s.lluvia_24h ?? ''}</td>
       <td class="num">${s.nivel_m ?? ''}</td><td class="num">${s.subida_1h_m ?? ''}</td></tr>`).join('');
@@ -472,6 +474,7 @@ function elegirLocalidad(f) {
 
 pronostico();
 portada();
+avisoDatosViejos();
 const inicial = location.hash.slice(1);
 mostrar(PESTANAS.includes(inicial) ? inicial : 'inicio');
 window.addEventListener('hashchange', () => {
@@ -707,4 +710,19 @@ async function radarEnAhora() {
     fillColor: COLOR_DBZ(n.max_dbz || n.dbz), fillOpacity: .75 })
     .bindPopup(`<b>Núcleo de tormenta</b><br>Intensidad máxima: ${n.max_dbz} dBZ${n.tope_km ? `<br>Tope: ${n.tope_km} km de altura` : ''}<br>Radar de Córdoba (OHMC), ${esc(r.observacion.slice(11))}`)
     .addTo(mapas.estaciones));
+}
+
+// ---------------------------------------------------------------- datos viejos
+// Si el monitor dejó de correr (GitHub Actions caído, por ejemplo), la página lo dice en vez de mostrar datos viejos como actuales.
+async function avisoDatosViejos() {
+  const a = await leer('ahora.json');
+  const caja = document.getElementById('datos-viejos');
+  if (!caja) return;
+  const min = a && a.actualizado ? Math.round((Date.now() - new Date(a.actualizado.replace(' ', 'T') + ':00-03:00')) / 60000) : null;
+  if (min != null && min <= 45) return;
+  caja.hidden = false;
+  caja.innerHTML = min == null
+    ? '<b>No se pudieron cargar los datos de las estaciones.</b> Revisá tu conexión, o consultá los canales oficiales.'
+    : `<b>Atención: los datos tienen ${min >= 120 ? `${Math.floor(min / 60)} horas` : `${min} minutos`} de antigüedad</b> (último: ${esc(a.actualizado)}). ` +
+      'El monitor se actualiza cada 15 minutos; puede haber un problema. No tomes lo que ves como la situación actual: consultá los canales oficiales.';
 }
