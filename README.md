@@ -137,6 +137,8 @@ python -m http.server -d docs         # abrir http://localhost:8000
 - NASA SMAP L4 (`NASA/SMAP/SPL4SMGP`) vía Google Earth Engine.
 - Inventario de daños: Sentinel-2, Landsat, Sentinel-1 y revisión con imágenes históricas de Google Earth.
 - Límites urbanos, ríos y arroyos con nombre y puentes de las localidades serranas (`data/geoportal/`): GeoPortal de la Provincia de Córdoba (2008–2010), vía [OpenDataCordoba/mapas-de-cordoba](https://github.com/OpenDataCordoba/mapas-de-cordoba) (dominio público). Se extraen con `scripts/importar_geoportal.py`.
+- Radar meteorológico de Córdoba (RMA1): núcleos de tormenta del [OHMC](https://webmet.ohmc.ar/), cada 15 minutos (`scripts/radar_ohmc.py`).
+- Subcuencas, cursos de agua con nombre oficial, líneas de ribera y puntos de nivel: [APRHI, Portal de Información Hídrica](https://portal-aprhi.opendata.arcgis.com/) (`scripts/importar_aprhi.py`, una vez por mes).
 - Mapa base © colaboradores de OpenStreetMap.
 
 ## Licencia

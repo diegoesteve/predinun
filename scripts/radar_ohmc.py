@@ -2,7 +2,8 @@
 
 Lee la API pública del visor WebMet (https://webmet.ohmc.ar): la última detección de «topes y núcleos» del radar,
 cada ~10 minutos. Cada núcleo es un punto con su intensidad en dBZ; alrededor hay un polígono («blob») con la
-intensidad máxima. Este script marca qué localidades y cuencas tienen un núcleo intenso cerca en este momento.
+intensidad máxima. Este script marca qué localidades y cuencas tienen un núcleo intenso cerca en este momento, usando
+las subcuencas oficiales de la APRHI (data/aprhi/subcuencas_embalses.geojson) donde las hay.
 
 Solo lectura y pocas consultas (dos cada 15 minutos, desde el workflow del monitor). No se muestran las imágenes
 del radar en la página: eso cargaría el servidor del OHMC con cada visita.
@@ -113,19 +114,34 @@ def main():
         dentro_c = [n for n in intensos if any(dentro(n['lon'], n['lat'], a) for a in anillos)]
         if dentro_c:
             salida['cuencas'][c['properties']['nombre']] = {'nucleos': len(dentro_c), 'max_dbz': max(n['max_dbz'] for n in dentro_c)}
-    # Localidades: núcleo intenso a menos del largo aproximado de la cuenca de alguno de sus arroyos, o a 5 km del centro
+    # Localidades: núcleo intenso dentro de la subcuenca oficial (APRHI) donde están el pueblo o sus arroyos, o a menos
+    # del largo aproximado de la cuenca de alguno de sus arroyos (donde no hay subcuenca oficial), o a 5 km del centro.
+    subcuencas = []
+    for sc in (cfg.leer_json(os.path.join('aprhi', 'subcuencas_embalses.geojson')) or {}).get('features', []):
+        g = sc['geometry']
+        anillos = [g['coordinates'][0]] if g['type'] == 'Polygon' else [p[0] for p in g['coordinates']]
+        subcuencas.append((sc['properties'].get('Nombre_nuevo') or sc['properties'].get('RIO_PRINCI') or 'subcuenca', anillos))
+    en_subcuenca = lambda lo, la: [n for n, anillos in subcuencas if any(dentro(lo, la, a) for a in anillos)]   # noqa: E731
+    for n in intensos:
+        n['subcuencas'] = en_subcuenca(n['lon'], n['lat'])
     locs = (cfg.leer_json(os.path.join('..', 'docs', 'data', 'localidades.json')) or {}).get('localidades', [])
     for f in locs:
         puntos = [(f['lat'], f['lon'], 5.0)] + [(a['lat'], a['lon'], radio_km(a.get('area_km2'))) for a in f.get('arroyos', [])]
+        propias = {s for la, lo, _ in puntos for s in en_subcuenca(lo, la)}
         mejor = None
         for n in intensos:
             for la, lo, r in puntos:
                 d = km(la, lo, n['lat'], n['lon'])
-                if d <= r and (mejor is None or n['max_dbz'] > mejor['max_dbz'] or (n['max_dbz'] == mejor['max_dbz'] and d < mejor['km'])):
+                comun = propias.intersection(n['subcuencas'])
+                if (d <= r or comun) and (mejor is None or n['max_dbz'] > mejor['max_dbz'] or (n['max_dbz'] == mejor['max_dbz'] and d < mejor['km'])):
                     mejor = {'km': round(d, 1), 'max_dbz': n['max_dbz'], 'tope_km': n['tope_km']}
+                    if comun:
+                        mejor['subcuenca'] = sorted(comun)[0]
         if mejor:
             mejor['nivel'] = 'muy intensa' if mejor['max_dbz'] >= DBZ_MUY_INTENSA else 'intensa'
             salida['localidades'][f['localidad']] = mejor
+    for n in salida['nucleos']:
+        n.pop('subcuencas', None)
     with open(os.path.join(cfg.DOCS_DATA, 'radar.json'), 'w', encoding='utf-8') as fh:
         json.dump(salida, fh, ensure_ascii=False, indent=1)
     print(f"radar.json: {salida['radar']} {salida['observacion']}, {len(salida['nucleos'])} núcleos en las sierras, "

@@ -25,6 +25,8 @@ respetar esas condiciones y citar la fuente:
 - **Copernicus** (Sentinel-1, Sentinel-2, ERA5, GHSL): licencias abiertas de Copernicus y de la Comisión Europea, con atribución.
 - **MERIT Hydro** (relieve y red de drenaje): CC BY-NC 4.0 u ODbL, a elección (Yamazaki y otros, 2019).
 - **Red de estaciones de la Provincia de Córdoba**: datos públicos de la Provincia.
+- **APRHI, Portal de Información Hídrica de Córdoba** (`data/aprhi/`: subcuencas, cursos de agua, líneas de ribera): datos públicos de la Provincia.
+- **Radar del OHMC** (Observatorio Hidro-Meteorológico de Córdoba): núcleos de tormenta leídos de su visor público.
 - **GeoPortal de la Provincia de Córdoba**, vía OpenDataCordoba/mapas-de-cordoba: dominio público.
 - **Notas de prensa** citadas en el inventario: pertenecen a cada medio; el inventario solo resume el hecho y enlaza la fuente.
 

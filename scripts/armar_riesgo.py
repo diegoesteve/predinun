@@ -116,6 +116,53 @@ def km(lat1, lon1, lat2, lon2):
     return math.hypot((lat1 - lat2) * 111.3, (lon1 - lon2) * 111.3 * math.cos(math.radians(lat1)))
 
 
+GENERICOS = {'', 'sin nombre', 'rio', 'río', 'arroyo', 'canal', 'cañada', 'canada'}
+
+
+def limpiar_curso(n):
+    """«A. Cachirla*» -> «Arroyo Cachirla» (el asterisco de la APRHI marca nombres asignados)."""
+    n = n.replace('*', '').strip()
+    for corto, largo in (('A. ', 'Arroyo '), ('R. ', 'Río '), ('C. ', 'Cañada '), ('Ao. ', 'Arroyo ')):
+        if n.startswith(corto):
+            n = largo + n[len(corto):]
+    return n
+
+
+def cursos_con_nombre():
+    """Tramos de los cursos de agua de la APRHI que tienen nombre: lista de (nombre, [(lat, lon), ...], bbox)."""
+    d = cfg.leer_json(os.path.join('aprhi', 'cursos_agua.geojson')) or {}
+    out = []
+    for f in d.get('features', []):
+        nombre = (f['properties'].get('NOMBRE_COMPLETO') or '').strip()
+        if not nombre:
+            continue
+        g = f['geometry']
+        lineas = [g['coordinates']] if g['type'] == 'LineString' else g['coordinates']
+        for ln in lineas:
+            pts = [(c[1], c[0]) for c in ln]
+            la, lo = [p[0] for p in pts], [p[1] for p in pts]
+            out.append((limpiar_curso(nombre), pts, (min(la), max(la), min(lo), max(lo))))
+    return out
+
+
+def nombre_oficial(lat, lon, cursos, max_m=300):
+    """Nombre del curso de agua de la APRHI más cercano al punto, si está a menos de max_m metros."""
+    margen = max_m / 111000 * 1.5
+    mejor, dmin = None, max_m / 1000
+    kx = math.cos(math.radians(lat))
+    for nombre, pts, (la0, la1, lo0, lo1) in cursos:
+        if not (la0 - margen <= lat <= la1 + margen and lo0 - margen <= lon <= lo1 + margen):
+            continue
+        for (ya, xa), (yb, xb) in zip(pts, pts[1:]):
+            ax, ay, bx, by = (xa - lon) * kx * 111.3, (ya - lat) * 111.3, (xb - lon) * kx * 111.3, (yb - lat) * 111.3
+            dx, dy = bx - ax, by - ay
+            t = max(0.0, min(1.0, -(ax * dx + ay * dy) / (dx * dx + dy * dy))) if dx or dy else 0.0
+            d = math.hypot(ax + t * dx, ay + t * dy)
+            if d < dmin:
+                mejor, dmin = nombre, d
+    return mejor
+
+
 def localidades():
     """Una fila por localidad, para elegir dónde enfocarse en el mapa."""
     filas = {}
@@ -154,6 +201,17 @@ def localidades():
                              'margen_min': None if pd.isna(r.margen_aprox_min) else int(r.margen_aprox_min),
                              'lat': r.lat, 'lon': r.lon} for r in g.itertuples()][:8],
             })
+    # Nombres oficiales de los arroyos (APRHI) donde el análisis no tenía nombre o tenía uno genérico
+    cursos = cursos_con_nombre()
+    if cursos:
+        n = 0
+        for f in filas.values():
+            for a in f.get('arroyos', []):
+                if a['arroyo'].strip().lower() in GENERICOS:
+                    oficial = nombre_oficial(a['lat'], a['lon'], cursos)
+                    if oficial:
+                        a['arroyo'], n = oficial, n + 1
+        print(f'arroyos con nombre oficial de la APRHI: {n}')
     ruta = os.path.join(cfg.DATA, 'inventario_inundaciones_cordoba.csv')
     if os.path.exists(ruta):
         inv = pd.read_csv(ruta, dtype=str).fillna('')
