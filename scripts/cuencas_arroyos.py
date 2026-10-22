@@ -1,7 +1,7 @@
 """Cuenca de aporte de cada arroyo que entra a cada localidad, calculada con las direcciones de flujo de MERIT Hydro.
 
 Para cada punto donde un arroyo entra a un pueblo (docs/data/localidades.json, que sale del paso 9) se toma la celda
-de MERIT Hydro (90 m) con más área de aporte a menos de ~300 m, y se marcan todas las celdas cuyo camino del agua
+de MERIT Hydro (90 m) a menos de ~300 m cuya área de aporte se parece más a la que calculó el paso 9, y se marcan todas las celdas cuyo camino del agua
 pasa por ahí. El resultado es el contorno de la cuenca de ese arroyo: si una tormenta cae adentro, el agua llega al
 pueblo. Lo usa scripts/radar_ohmc.py.
 
@@ -122,7 +122,14 @@ def main():
             if not (SNAP_CELDAS <= r < dirs.shape[0] - SNAP_CELDAS and SNAP_CELDAS <= c < dirs.shape[1] - SNAP_CELDAS):
                 continue
             ventana = upa[r - SNAP_CELDAS:r + SNAP_CELDAS + 1, c - SNAP_CELDAS:c + SNAP_CELDAS + 1]
-            dr, dc = np.unravel_index(np.argmax(ventana), ventana.shape)
+            # La celda cuya área de aporte se parece más a la del análisis del paso 9: así no se «salta» a un río
+            # más grande que pasa al lado (si no hay dato, la de mayor área).
+            esperada = a.get('area_km2')
+            if esperada:
+                dif = np.abs(np.log(np.maximum(ventana.astype(float), 0.5) / esperada))
+                dr, dc = np.unravel_index(np.argmin(dif), ventana.shape)
+            else:
+                dr, dc = np.unravel_index(np.argmax(ventana), ventana.shape)
             celda = (r - SNAP_CELDAS + dr) * dirs.shape[1] + (c - SNAP_CELDAS + dc)
             if int(upa.flat[celda]) > AREA_MAX_KM2:
                 continue
