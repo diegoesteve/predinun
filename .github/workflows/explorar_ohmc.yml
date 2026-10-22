@@ -1,0 +1,36 @@
+name: Explorar API del radar OHMC (muestras)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  muestras:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Bajar muestras
+        run: |
+          set -x
+          mkdir m && cd m
+          B=https://webmet.ohmc.ar/api/v1
+          DESDE=$(date -u -d '-3 hours' +%Y-%m-%dT%H:%M:%S.000Z); HASTA=$(date -u +%Y-%m-%dT%H:%M:%S.000Z)
+          curl -sS -m 30 "$B/cogs/latest?radar_code=RMA1&product_key=COLMAX&vol_nr=01&vol_nr=02&strategy=0315" -o cog_latest_rma1.json || true
+          curl -sS -m 30 "$B/tops-cores?time_from=$DESDE&time_to=$HASTA&radar_codes=RMA1" -o tops_rma1.json || true
+          curl -sS -m 30 "$B/tops-cores?time_from=$DESDE&time_to=$HASTA&radar_codes=RMA1&radar_codes=RMA2&radar_codes=RMA3&radar_codes=RMA4&radar_codes=RMA5&radar_codes=RMA6&radar_codes=RMA16&radar_codes=RMA17" -o tops_todos.json || true
+          for id in $(python3 -c "import json;d=json.load(open('tops_todos.json'));d=d.get('items',d) if isinstance(d,dict) else d;print(' '.join(str(x['id']) for x in d[:3]))" 2>/dev/null); do
+            curl -sS -m 30 "$B/tops-cores/$id/features" -o "features_$id.json" || true
+          done
+          curl -sS -m 30 "$B/radars" -o radars.json || true
+          curl -sS -m 30 "$B/products" -o products.json || true
+          curl -sS -m 30 -o /dev/null -w '%{http_code}\n' https://webmet.ohmc.ar/openapi.json > openapi_status.txt || true
+          curl -sS -m 30 https://webmet.ohmc.ar/api/v1/openapi.json -o api_openapi.json || true
+          ls -la; head -c 600 *.json
+      - name: Guardar en la rama muestras-ohmc
+        run: |
+          cd m
+          git init -q -b muestras-ohmc && git config user.name "github-actions[bot]" && git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add . && git commit -qm "muestras API OHMC $(date -u)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" muestras-ohmc
