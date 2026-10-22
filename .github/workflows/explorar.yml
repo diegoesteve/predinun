@@ -1,0 +1,35 @@
+name: Explorar fuentes de datos (muestras)
+
+# Baja las direcciones que se le pasan y guarda las respuestas en la rama «muestras», para revisarlas.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: Direcciones separadas por espacios
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  muestras:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Bajar
+        env:
+          URLS: ${{ inputs.urls }}
+        run: |
+          mkdir m && cd m
+          i=0
+          for u in $URLS; do
+            i=$((i+1))
+            code=$(curl -sSL -m 60 -A "predinun (proyecto sin fines comerciales)" -o "r$i.dat" -w '%{http_code} %{content_type} %{size_download}' "$u" || echo error)
+            echo "r$i $code $u" >> indice.txt
+          done
+          cat indice.txt
+      - name: Guardar en la rama muestras
+        run: |
+          cd m
+          git init -q -b muestras && git config user.name "github-actions[bot]" && git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add . && git commit -qm "muestras $(date -u)" && git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" muestras
