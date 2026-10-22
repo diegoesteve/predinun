@@ -1,42 +1,56 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 18:01",
+ "consultado": "2026-10-22 18:16",
  "radar": "RMA1",
- "observacion": "2026-10-22 17:51",
+ "observacion": "2026-10-22 18:00",
  "nucleos": [
   {
    "lat": -31.3509,
    "lon": -64.4394,
    "dbz": 46,
-   "max_dbz": 55,
+   "max_dbz": 56,
+   "tope_km": 0.6
+  },
+  {
+   "lat": -31.432,
+   "lon": -64.8159,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 6.0
+  },
+  {
+   "lat": -31.4861,
+   "lon": -64.5039,
+   "dbz": 42,
+   "max_dbz": 44,
    "tope_km": 2.4
   }
  ],
  "cuencas": {
   "Cosquin": {
    "nucleos": 1,
-   "max_dbz": 55
+   "max_dbz": 56
   }
  },
  "localidades": {
   "San Roque": {
    "km": 1.1,
-   "max_dbz": 55,
-   "tope_km": 2.4,
+   "max_dbz": 56,
+   "tope_km": 0.6,
    "nivel": "muy intensa"
   },
   "Bialet Masse": {
    "km": 4.8,
-   "max_dbz": 55,
-   "tope_km": 2.4,
+   "max_dbz": 56,
+   "tope_km": 0.6,
    "nivel": "muy intensa"
   },
   "Villa Parque Siquiman": {
    "km": 3.8,
-   "max_dbz": 55,
-   "tope_km": 2.4,
+   "max_dbz": 56,
+   "tope_km": 0.6,
    "nivel": "muy intensa"
   }
  },
- "minutos": 10
+ "minutos": 16
 }
