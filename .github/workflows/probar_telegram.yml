@@ -1,0 +1,20 @@
+name: Probar aviso por Telegram
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Mandar un mensaje de prueba
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "$TELEGRAM_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then echo "Faltan los secretos TELEGRAM_TOKEN o TELEGRAM_CHAT_ID"; exit 1; fi
+          r=$(curl -sS -m 20 "https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage" \
+              --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+              --data-urlencode "text=✅ Prueba de avisos: Crecidas Sierras de Córdoba. Si ves esto, las alarmas están conectadas.")
+          echo "$r" | grep -q '"ok":true' && echo "Enviado" || { echo "Telegram respondió: $(echo "$r" | sed 's/"token[^,]*//')"; exit 1; }
