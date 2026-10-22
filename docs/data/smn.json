@@ -1,20 +1,244 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-10-22 18:46",
+ "consultado": "2026-10-22 19:01",
  "alertas": [
   {
-   "id": "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6",
+   "id": "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23",
    "tipo": "alerta",
    "evento": "Tormentas",
-   "nivel": "naranja",
+   "nivel": "amarillo",
    "titulo": "Tormentas",
-   "desde": "2026-10-22T15:00:00-03:00",
+   "desde": "2026-10-22T20:59:37-03:00",
    "hasta": "2026-10-22T20:59:59-03:00",
-   "descripcion": "El área será afectada por lluvias y tormentas fuertes, algunas localmente severas. Las mismas podrían estar acompañadas principalmente por abundantes precipitaciones en cortos períodos, caída de granizo de diversos tamaños, frecuente actividad eléctrica y ráfagas intensas que podrían alcanzar los 90 km/h. Se esperan valores de precipitación acumulada entre 60 y 100 mm, donde podrían ser superados de forma puntual.",
-   "instruccion": "1- Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. 2- Salí solo si es necesario. 3- Permanecé en construcciones cerradas como casas, escuelas, edificios públicos. 4- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. 5- Cerrá y aléjate de puertas y ventanas. 6- Alejate de zonas inundables y no ingreses en calles anegadas. 7- Retirá o asegurá objetos que puedan ser volados por el viento. 8- Prepará un kit de emergencia con agua potable, alimentos, botiquín de primeros auxilios, radio a pilas y linterna. Cargá los c",
+   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
+   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
    "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6.xml",
-   "desde_local": "22/10 15:00",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23.xml",
+   "desde_local": "22/10 20:59",
+   "hasta_local": "22/10 20:59",
+   "localidades": 47,
+   "poligonos": [
+    [
+     [
+      -64.68,
+      -30.98
+     ],
+     [
+      -64.68,
+      -31.02
+     ],
+     [
+      -64.64,
+      -31.02
+     ],
+     [
+      -64.66,
+      -31.04
+     ],
+     [
+      -64.66,
+      -31.06
+     ],
+     [
+      -64.68,
+      -31.06
+     ],
+     [
+      -64.68,
+      -31.14
+     ],
+     [
+      -64.72,
+      -31.18
+     ],
+     [
+      -64.7,
+      -31.24
+     ],
+     [
+      -64.74,
+      -31.34
+     ],
+     [
+      -64.76,
+      -31.36
+     ],
+     [
+      -64.76,
+      -31.42
+     ],
+     [
+      -64.8,
+      -31.42
+     ],
+     [
+      -64.8,
+      -31.46
+     ],
+     [
+      -64.78,
+      -31.52
+     ],
+     [
+      -64.76,
+      -31.52
+     ],
+     [
+      -64.78,
+      -31.56
+     ],
+     [
+      -64.74,
+      -31.68
+     ],
+     [
+      -64.72,
+      -31.68
+     ],
+     [
+      -64.74,
+      -31.74
+     ],
+     [
+      -64.76,
+      -31.74
+     ],
+     [
+      -64.78,
+      -31.82
+     ],
+     [
+      -64.86,
+      -31.82
+     ],
+     [
+      -64.9,
+      -31.88
+     ],
+     [
+      -64.92,
+      -31.9
+     ],
+     [
+      -64.94,
+      -31.92
+     ],
+     [
+      -64.94,
+      -32.08
+     ],
+     [
+      -64.96,
+      -32.14
+     ],
+     [
+      -64.96,
+      -32.26
+     ],
+     [
+      -64.94,
+      -32.32
+     ],
+     [
+      -65.06,
+      -32.32
+     ],
+     [
+      -65.06,
+      -32.3
+     ],
+     [
+      -65.08,
+      -32.1
+     ],
+     [
+      -65.08,
+      -31.98
+     ],
+     [
+      -65.14,
+      -31.82
+     ],
+     [
+      -65.18,
+      -31.76
+     ],
+     [
+      -65.32,
+      -31.6
+     ],
+     [
+      -65.36,
+      -31.52
+     ],
+     [
+      -65.42,
+      -31.42
+     ],
+     [
+      -65.4,
+      -31.28
+     ],
+     [
+      -65.38,
+      -31.04
+     ],
+     [
+      -65.36,
+      -30.9
+     ],
+     [
+      -65.26,
+      -30.96
+     ],
+     [
+      -65.2,
+      -31.1
+     ],
+     [
+      -65.1,
+      -31.14
+     ],
+     [
+      -65.06,
+      -31.08
+     ],
+     [
+      -65.02,
+      -31.04
+     ],
+     [
+      -64.9,
+      -30.98
+     ],
+     [
+      -64.86,
+      -30.9
+     ],
+     [
+      -64.82,
+      -30.94
+     ],
+     [
+      -64.68,
+      -30.98
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24",
+   "tipo": "alerta",
+   "evento": "Tormentas",
+   "nivel": "amarillo",
+   "titulo": "Tormentas",
+   "desde": "2026-10-22T20:59:37-03:00",
+   "hasta": "2026-10-22T20:59:59-03:00",
+   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
+   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
+   "zona": "",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24.xml",
+   "desde_local": "22/10 20:59",
    "hasta_local": "22/10 20:59",
    "localidades": 14,
    "poligonos": [
@@ -407,18 +631,862 @@
    ]
   },
   {
-   "id": "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_7",
+   "id": "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21",
    "tipo": "alerta",
    "evento": "Tormentas",
-   "nivel": "naranja",
+   "nivel": "amarillo",
    "titulo": "Tormentas",
-   "desde": "2026-10-22T15:00:00-03:00",
+   "desde": "2026-10-22T20:59:37-03:00",
    "hasta": "2026-10-22T20:59:59-03:00",
-   "descripcion": "El área será afectada por lluvias y tormentas fuertes, algunas localmente severas. Las mismas podrían estar acompañadas principalmente por abundantes precipitaciones en cortos períodos, caída de granizo de diversos tamaños, frecuente actividad eléctrica y ráfagas intensas que podrían alcanzar los 90 km/h. Se esperan valores de precipitación acumulada entre 60 y 100 mm, donde podrían ser superados de forma puntual.",
-   "instruccion": "1- Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. 2- Salí solo si es necesario. 3- Permanecé en construcciones cerradas como casas, escuelas, edificios públicos. 4- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. 5- Cerrá y aléjate de puertas y ventanas. 6- Alejate de zonas inundables y no ingreses en calles anegadas. 7- Retirá o asegurá objetos que puedan ser volados por el viento. 8- Prepará un kit de emergencia con agua potable, alimentos, botiquín de primeros auxilios, radio a pilas y linterna. Cargá los c",
+   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
+   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
    "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132656_Tormenta_Llanura_alertas_alertas_7.xml",
-   "desde_local": "22/10 15:00",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21.xml",
+   "desde_local": "22/10 20:59",
+   "hasta_local": "22/10 20:59",
+   "localidades": 10,
+   "poligonos": [
+    [
+     [
+      -64.68,
+      -31.9
+     ],
+     [
+      -64.64,
+      -31.9
+     ],
+     [
+      -64.68,
+      -31.94
+     ],
+     [
+      -64.6,
+      -31.96
+     ],
+     [
+      -64.64,
+      -32.02
+     ],
+     [
+      -64.72,
+      -32.02
+     ],
+     [
+      -64.7,
+      -32.06
+     ],
+     [
+      -64.66,
+      -32.1
+     ],
+     [
+      -64.72,
+      -32.2
+     ],
+     [
+      -64.66,
+      -32.3
+     ],
+     [
+      -64.7,
+      -32.38
+     ],
+     [
+      -64.64,
+      -32.42
+     ],
+     [
+      -64.66,
+      -32.48
+     ],
+     [
+      -64.7,
+      -32.54
+     ],
+     [
+      -64.64,
+      -32.6
+     ],
+     [
+      -64.66,
+      -32.64
+     ],
+     [
+      -64.72,
+      -32.7
+     ],
+     [
+      -64.78,
+      -32.74
+     ],
+     [
+      -64.84,
+      -32.94
+     ],
+     [
+      -64.88,
+      -33.04
+     ],
+     [
+      -64.9,
+      -33.1
+     ],
+     [
+      -65.0,
+      -33.18
+     ],
+     [
+      -65.06,
+      -33.18
+     ],
+     [
+      -65.1,
+      -33.16
+     ],
+     [
+      -65.06,
+      -33.1
+     ],
+     [
+      -65.04,
+      -33.06
+     ],
+     [
+      -65.0,
+      -33.02
+     ],
+     [
+      -65.0,
+      -33.0
+     ],
+     [
+      -65.02,
+      -32.98
+     ],
+     [
+      -65.0,
+      -32.96
+     ],
+     [
+      -65.0,
+      -32.92
+     ],
+     [
+      -64.96,
+      -32.86
+     ],
+     [
+      -64.98,
+      -32.8
+     ],
+     [
+      -64.96,
+      -32.78
+     ],
+     [
+      -64.96,
+      -32.72
+     ],
+     [
+      -64.92,
+      -32.68
+     ],
+     [
+      -64.92,
+      -32.62
+     ],
+     [
+      -64.88,
+      -32.58
+     ],
+     [
+      -64.9,
+      -32.52
+     ],
+     [
+      -64.9,
+      -32.48
+     ],
+     [
+      -64.92,
+      -32.48
+     ],
+     [
+      -64.92,
+      -32.36
+     ],
+     [
+      -64.94,
+      -32.32
+     ],
+     [
+      -64.96,
+      -32.26
+     ],
+     [
+      -64.96,
+      -32.14
+     ],
+     [
+      -64.94,
+      -32.08
+     ],
+     [
+      -64.94,
+      -31.92
+     ],
+     [
+      -64.92,
+      -31.9
+     ],
+     [
+      -64.78,
+      -31.88
+     ],
+     [
+      -64.68,
+      -31.9
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20",
+   "tipo": "alerta",
+   "evento": "Tormentas",
+   "nivel": "amarillo",
+   "titulo": "Tormentas",
+   "desde": "2026-10-22T20:59:37-03:00",
+   "hasta": "2026-10-22T20:59:59-03:00",
+   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
+   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
+   "zona": "",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20.xml",
+   "desde_local": "22/10 20:59",
+   "hasta_local": "22/10 20:59",
+   "localidades": 25,
+   "poligonos": [
+    [
+     [
+      -63.56,
+      -30.54
+     ],
+     [
+      -63.58,
+      -30.56
+     ],
+     [
+      -63.6,
+      -30.66
+     ],
+     [
+      -63.62,
+      -30.68
+     ],
+     [
+      -63.66,
+      -30.66
+     ],
+     [
+      -63.7,
+      -30.82
+     ],
+     [
+      -63.72,
+      -30.88
+     ],
+     [
+      -63.72,
+      -30.86
+     ],
+     [
+      -63.74,
+      -30.94
+     ],
+     [
+      -63.76,
+      -30.92
+     ],
+     [
+      -63.76,
+      -30.98
+     ],
+     [
+      -63.82,
+      -30.98
+     ],
+     [
+      -63.82,
+      -31.08
+     ],
+     [
+      -63.84,
+      -31.06
+     ],
+     [
+      -63.84,
+      -31.1
+     ],
+     [
+      -63.86,
+      -31.12
+     ],
+     [
+      -63.86,
+      -31.22
+     ],
+     [
+      -63.9,
+      -31.22
+     ],
+     [
+      -63.9,
+      -31.24
+     ],
+     [
+      -63.92,
+      -31.24
+     ],
+     [
+      -63.92,
+      -31.28
+     ],
+     [
+      -63.96,
+      -31.28
+     ],
+     [
+      -63.96,
+      -31.32
+     ],
+     [
+      -63.98,
+      -31.32
+     ],
+     [
+      -63.96,
+      -31.38
+     ],
+     [
+      -63.96,
+      -31.44
+     ],
+     [
+      -64.0,
+      -31.44
+     ],
+     [
+      -64.06,
+      -31.42
+     ],
+     [
+      -64.06,
+      -31.3
+     ],
+     [
+      -64.3,
+      -31.3
+     ],
+     [
+      -64.32,
+      -31.32
+     ],
+     [
+      -64.32,
+      -31.36
+     ],
+     [
+      -64.36,
+      -31.38
+     ],
+     [
+      -64.4,
+      -31.36
+     ],
+     [
+      -64.42,
+      -31.36
+     ],
+     [
+      -64.38,
+      -31.26
+     ],
+     [
+      -64.36,
+      -31.12
+     ],
+     [
+      -64.34,
+      -31.0
+     ],
+     [
+      -64.3,
+      -30.9
+     ],
+     [
+      -64.3,
+      -30.82
+     ],
+     [
+      -64.24,
+      -30.82
+     ],
+     [
+      -64.24,
+      -30.8
+     ],
+     [
+      -64.18,
+      -30.8
+     ],
+     [
+      -64.14,
+      -30.78
+     ],
+     [
+      -64.1,
+      -30.8
+     ],
+     [
+      -64.12,
+      -30.74
+     ],
+     [
+      -64.16,
+      -30.68
+     ],
+     [
+      -64.18,
+      -30.66
+     ],
+     [
+      -64.2,
+      -30.6
+     ],
+     [
+      -64.24,
+      -30.52
+     ],
+     [
+      -64.3,
+      -30.46
+     ],
+     [
+      -64.08,
+      -30.46
+     ],
+     [
+      -64.0,
+      -30.48
+     ],
+     [
+      -63.98,
+      -30.46
+     ],
+     [
+      -63.98,
+      -30.42
+     ],
+     [
+      -63.84,
+      -30.42
+     ],
+     [
+      -63.84,
+      -30.5
+     ],
+     [
+      -63.8,
+      -30.5
+     ],
+     [
+      -63.8,
+      -30.56
+     ],
+     [
+      -63.66,
+      -30.56
+     ],
+     [
+      -63.62,
+      -30.58
+     ],
+     [
+      -63.6,
+      -30.52
+     ],
+     [
+      -63.56,
+      -30.54
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18",
+   "tipo": "alerta",
+   "evento": "Tormentas",
+   "nivel": "amarillo",
+   "titulo": "Tormentas",
+   "desde": "2026-10-22T20:59:37-03:00",
+   "hasta": "2026-10-22T20:59:59-03:00",
+   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
+   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
+   "zona": "",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18.xml",
+   "desde_local": "22/10 20:59",
+   "hasta_local": "22/10 20:59",
+   "localidades": 49,
+   "poligonos": [
+    [
+     [
+      -64.06,
+      -31.42
+     ],
+     [
+      -64.0,
+      -31.44
+     ],
+     [
+      -63.96,
+      -31.44
+     ],
+     [
+      -63.96,
+      -31.46
+     ],
+     [
+      -63.94,
+      -31.56
+     ],
+     [
+      -64.02,
+      -31.62
+     ],
+     [
+      -63.98,
+      -31.66
+     ],
+     [
+      -64.02,
+      -31.66
+     ],
+     [
+      -64.04,
+      -31.68
+     ],
+     [
+      -64.06,
+      -31.78
+     ],
+     [
+      -64.02,
+      -31.76
+     ],
+     [
+      -64.0,
+      -31.74
+     ],
+     [
+      -63.96,
+      -31.76
+     ],
+     [
+      -63.94,
+      -31.88
+     ],
+     [
+      -63.92,
+      -31.88
+     ],
+     [
+      -63.92,
+      -32.0
+     ],
+     [
+      -63.98,
+      -32.0
+     ],
+     [
+      -63.98,
+      -31.96
+     ],
+     [
+      -64.08,
+      -31.96
+     ],
+     [
+      -64.08,
+      -32.0
+     ],
+     [
+      -64.24,
+      -32.0
+     ],
+     [
+      -64.28,
+      -32.14
+     ],
+     [
+      -64.26,
+      -32.18
+     ],
+     [
+      -64.3,
+      -32.2
+     ],
+     [
+      -64.3,
+      -32.3
+     ],
+     [
+      -64.26,
+      -32.32
+     ],
+     [
+      -64.26,
+      -32.34
+     ],
+     [
+      -64.28,
+      -32.38
+     ],
+     [
+      -64.32,
+      -32.38
+     ],
+     [
+      -64.32,
+      -32.4
+     ],
+     [
+      -64.44,
+      -32.38
+     ],
+     [
+      -64.44,
+      -32.48
+     ],
+     [
+      -64.48,
+      -32.48
+     ],
+     [
+      -64.5,
+      -32.54
+     ],
+     [
+      -64.52,
+      -32.56
+     ],
+     [
+      -64.54,
+      -32.62
+     ],
+     [
+      -64.58,
+      -32.64
+     ],
+     [
+      -64.6,
+      -32.62
+     ],
+     [
+      -64.64,
+      -32.62
+     ],
+     [
+      -64.66,
+      -32.64
+     ],
+     [
+      -64.64,
+      -32.6
+     ],
+     [
+      -64.7,
+      -32.54
+     ],
+     [
+      -64.66,
+      -32.48
+     ],
+     [
+      -64.64,
+      -32.42
+     ],
+     [
+      -64.7,
+      -32.38
+     ],
+     [
+      -64.66,
+      -32.3
+     ],
+     [
+      -64.72,
+      -32.2
+     ],
+     [
+      -64.66,
+      -32.1
+     ],
+     [
+      -64.7,
+      -32.06
+     ],
+     [
+      -64.72,
+      -32.02
+     ],
+     [
+      -64.64,
+      -32.02
+     ],
+     [
+      -64.6,
+      -31.96
+     ],
+     [
+      -64.68,
+      -31.94
+     ],
+     [
+      -64.64,
+      -31.9
+     ],
+     [
+      -64.68,
+      -31.9
+     ],
+     [
+      -64.62,
+      -31.86
+     ],
+     [
+      -64.66,
+      -31.82
+     ],
+     [
+      -64.6,
+      -31.76
+     ],
+     [
+      -64.52,
+      -31.7
+     ],
+     [
+      -64.5,
+      -31.62
+     ],
+     [
+      -64.52,
+      -31.56
+     ],
+     [
+      -64.52,
+      -31.52
+     ],
+     [
+      -64.5,
+      -31.48
+     ],
+     [
+      -64.42,
+      -31.44
+     ],
+     [
+      -64.44,
+      -31.36
+     ],
+     [
+      -64.4,
+      -31.36
+     ],
+     [
+      -64.36,
+      -31.38
+     ],
+     [
+      -64.32,
+      -31.36
+     ],
+     [
+      -64.32,
+      -31.52
+     ],
+     [
+      -64.06,
+      -31.52
+     ],
+     [
+      -64.06,
+      -31.42
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_19",
+   "tipo": "alerta",
+   "evento": "Tormentas",
+   "nivel": "amarillo",
+   "titulo": "Tormentas",
+   "desde": "2026-10-22T20:59:37-03:00",
+   "hasta": "2026-10-22T20:59:59-03:00",
+   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
+   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
+   "zona": "",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022205954_Tormenta_Llanura_alertas_alertas_19.xml",
+   "desde_local": "22/10 20:59",
+   "hasta_local": "22/10 20:59",
+   "localidades": 3,
+   "poligonos": [
+    [
+     [
+      -64.06,
+      -31.42
+     ],
+     [
+      -64.06,
+      -31.52
+     ],
+     [
+      -64.32,
+      -31.52
+     ],
+     [
+      -64.32,
+      -31.32
+     ],
+     [
+      -64.3,
+      -31.3
+     ],
+     [
+      -64.06,
+      -31.3
+     ],
+     [
+      -64.06,
+      -31.42
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_25",
+   "tipo": "alerta",
+   "evento": "Tormentas",
+   "nivel": "amarillo",
+   "titulo": "Tormentas",
+   "desde": "2026-10-22T20:59:37-03:00",
+   "hasta": "2026-10-22T20:59:59-03:00",
+   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
+   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
+   "zona": "",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022205954_Tormenta_Llanura_alertas_alertas_25.xml",
+   "desde_local": "22/10 20:59",
    "hasta_local": "22/10 20:59",
    "localidades": 2,
    "poligonos": [
@@ -1039,242 +2107,18 @@
    ]
   },
   {
-   "id": "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58",
+   "id": "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26",
    "tipo": "alerta",
    "evento": "Tormentas",
    "nivel": "amarillo",
    "titulo": "Tormentas",
-   "desde": "2026-10-22T13:26:39-03:00",
+   "desde": "2026-10-22T20:59:37-03:00",
    "hasta": "2026-10-22T20:59:59-03:00",
    "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
    "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
    "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58.xml",
-   "desde_local": "22/10 13:26",
-   "hasta_local": "22/10 20:59",
-   "localidades": 47,
-   "poligonos": [
-    [
-     [
-      -64.68,
-      -30.98
-     ],
-     [
-      -64.68,
-      -31.02
-     ],
-     [
-      -64.64,
-      -31.02
-     ],
-     [
-      -64.66,
-      -31.04
-     ],
-     [
-      -64.66,
-      -31.06
-     ],
-     [
-      -64.68,
-      -31.06
-     ],
-     [
-      -64.68,
-      -31.14
-     ],
-     [
-      -64.72,
-      -31.18
-     ],
-     [
-      -64.7,
-      -31.24
-     ],
-     [
-      -64.74,
-      -31.34
-     ],
-     [
-      -64.76,
-      -31.36
-     ],
-     [
-      -64.76,
-      -31.42
-     ],
-     [
-      -64.8,
-      -31.42
-     ],
-     [
-      -64.8,
-      -31.46
-     ],
-     [
-      -64.78,
-      -31.52
-     ],
-     [
-      -64.76,
-      -31.52
-     ],
-     [
-      -64.78,
-      -31.56
-     ],
-     [
-      -64.74,
-      -31.68
-     ],
-     [
-      -64.72,
-      -31.68
-     ],
-     [
-      -64.74,
-      -31.74
-     ],
-     [
-      -64.76,
-      -31.74
-     ],
-     [
-      -64.78,
-      -31.82
-     ],
-     [
-      -64.86,
-      -31.82
-     ],
-     [
-      -64.9,
-      -31.88
-     ],
-     [
-      -64.92,
-      -31.9
-     ],
-     [
-      -64.94,
-      -31.92
-     ],
-     [
-      -64.94,
-      -32.08
-     ],
-     [
-      -64.96,
-      -32.14
-     ],
-     [
-      -64.96,
-      -32.26
-     ],
-     [
-      -64.94,
-      -32.32
-     ],
-     [
-      -65.06,
-      -32.32
-     ],
-     [
-      -65.06,
-      -32.3
-     ],
-     [
-      -65.08,
-      -32.1
-     ],
-     [
-      -65.08,
-      -31.98
-     ],
-     [
-      -65.14,
-      -31.82
-     ],
-     [
-      -65.18,
-      -31.76
-     ],
-     [
-      -65.32,
-      -31.6
-     ],
-     [
-      -65.36,
-      -31.52
-     ],
-     [
-      -65.42,
-      -31.42
-     ],
-     [
-      -65.4,
-      -31.28
-     ],
-     [
-      -65.38,
-      -31.04
-     ],
-     [
-      -65.36,
-      -30.9
-     ],
-     [
-      -65.26,
-      -30.96
-     ],
-     [
-      -65.2,
-      -31.1
-     ],
-     [
-      -65.1,
-      -31.14
-     ],
-     [
-      -65.06,
-      -31.08
-     ],
-     [
-      -65.02,
-      -31.04
-     ],
-     [
-      -64.9,
-      -30.98
-     ],
-     [
-      -64.86,
-      -30.9
-     ],
-     [
-      -64.82,
-      -30.94
-     ],
-     [
-      -64.68,
-      -30.98
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59",
-   "tipo": "alerta",
-   "evento": "Tormentas",
-   "nivel": "amarillo",
-   "titulo": "Tormentas",
-   "desde": "2026-10-22T13:26:39-03:00",
-   "hasta": "2026-10-22T20:59:59-03:00",
-   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
-   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
-   "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59.xml",
-   "desde_local": "22/10 13:26",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26.xml",
+   "desde_local": "22/10 20:59",
    "hasta_local": "22/10 20:59",
    "localidades": 36,
    "poligonos": [
@@ -1511,862 +2355,18 @@
    ]
   },
   {
-   "id": "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57",
+   "id": "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31",
    "tipo": "alerta",
    "evento": "Tormentas",
    "nivel": "amarillo",
    "titulo": "Tormentas",
-   "desde": "2026-10-22T13:26:39-03:00",
+   "desde": "2026-10-22T20:59:37-03:00",
    "hasta": "2026-10-22T20:59:59-03:00",
    "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
    "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
    "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57.xml",
-   "desde_local": "22/10 13:26",
-   "hasta_local": "22/10 20:59",
-   "localidades": 10,
-   "poligonos": [
-    [
-     [
-      -64.68,
-      -31.9
-     ],
-     [
-      -64.64,
-      -31.9
-     ],
-     [
-      -64.68,
-      -31.94
-     ],
-     [
-      -64.6,
-      -31.96
-     ],
-     [
-      -64.64,
-      -32.02
-     ],
-     [
-      -64.72,
-      -32.02
-     ],
-     [
-      -64.7,
-      -32.06
-     ],
-     [
-      -64.66,
-      -32.1
-     ],
-     [
-      -64.72,
-      -32.2
-     ],
-     [
-      -64.66,
-      -32.3
-     ],
-     [
-      -64.7,
-      -32.38
-     ],
-     [
-      -64.64,
-      -32.42
-     ],
-     [
-      -64.66,
-      -32.48
-     ],
-     [
-      -64.7,
-      -32.54
-     ],
-     [
-      -64.64,
-      -32.6
-     ],
-     [
-      -64.66,
-      -32.64
-     ],
-     [
-      -64.72,
-      -32.7
-     ],
-     [
-      -64.78,
-      -32.74
-     ],
-     [
-      -64.84,
-      -32.94
-     ],
-     [
-      -64.88,
-      -33.04
-     ],
-     [
-      -64.9,
-      -33.1
-     ],
-     [
-      -65.0,
-      -33.18
-     ],
-     [
-      -65.06,
-      -33.18
-     ],
-     [
-      -65.1,
-      -33.16
-     ],
-     [
-      -65.06,
-      -33.1
-     ],
-     [
-      -65.04,
-      -33.06
-     ],
-     [
-      -65.0,
-      -33.02
-     ],
-     [
-      -65.0,
-      -33.0
-     ],
-     [
-      -65.02,
-      -32.98
-     ],
-     [
-      -65.0,
-      -32.96
-     ],
-     [
-      -65.0,
-      -32.92
-     ],
-     [
-      -64.96,
-      -32.86
-     ],
-     [
-      -64.98,
-      -32.8
-     ],
-     [
-      -64.96,
-      -32.78
-     ],
-     [
-      -64.96,
-      -32.72
-     ],
-     [
-      -64.92,
-      -32.68
-     ],
-     [
-      -64.92,
-      -32.62
-     ],
-     [
-      -64.88,
-      -32.58
-     ],
-     [
-      -64.9,
-      -32.52
-     ],
-     [
-      -64.9,
-      -32.48
-     ],
-     [
-      -64.92,
-      -32.48
-     ],
-     [
-      -64.92,
-      -32.36
-     ],
-     [
-      -64.94,
-      -32.32
-     ],
-     [
-      -64.96,
-      -32.26
-     ],
-     [
-      -64.96,
-      -32.14
-     ],
-     [
-      -64.94,
-      -32.08
-     ],
-     [
-      -64.94,
-      -31.92
-     ],
-     [
-      -64.92,
-      -31.9
-     ],
-     [
-      -64.78,
-      -31.88
-     ],
-     [
-      -64.68,
-      -31.9
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_55",
-   "tipo": "alerta",
-   "evento": "Tormentas",
-   "nivel": "amarillo",
-   "titulo": "Tormentas",
-   "desde": "2026-10-22T13:26:39-03:00",
-   "hasta": "2026-10-22T20:59:59-03:00",
-   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
-   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
-   "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132656_Tormenta_Llanura_alertas_alertas_55.xml",
-   "desde_local": "22/10 13:26",
-   "hasta_local": "22/10 20:59",
-   "localidades": 3,
-   "poligonos": [
-    [
-     [
-      -64.06,
-      -31.42
-     ],
-     [
-      -64.06,
-      -31.52
-     ],
-     [
-      -64.32,
-      -31.52
-     ],
-     [
-      -64.32,
-      -31.32
-     ],
-     [
-      -64.3,
-      -31.3
-     ],
-     [
-      -64.06,
-      -31.3
-     ],
-     [
-      -64.06,
-      -31.42
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54",
-   "tipo": "alerta",
-   "evento": "Tormentas",
-   "nivel": "amarillo",
-   "titulo": "Tormentas",
-   "desde": "2026-10-22T13:26:39-03:00",
-   "hasta": "2026-10-22T20:59:59-03:00",
-   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
-   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
-   "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54.xml",
-   "desde_local": "22/10 13:26",
-   "hasta_local": "22/10 20:59",
-   "localidades": 49,
-   "poligonos": [
-    [
-     [
-      -64.06,
-      -31.42
-     ],
-     [
-      -64.0,
-      -31.44
-     ],
-     [
-      -63.96,
-      -31.44
-     ],
-     [
-      -63.96,
-      -31.46
-     ],
-     [
-      -63.94,
-      -31.56
-     ],
-     [
-      -64.02,
-      -31.62
-     ],
-     [
-      -63.98,
-      -31.66
-     ],
-     [
-      -64.02,
-      -31.66
-     ],
-     [
-      -64.04,
-      -31.68
-     ],
-     [
-      -64.06,
-      -31.78
-     ],
-     [
-      -64.02,
-      -31.76
-     ],
-     [
-      -64.0,
-      -31.74
-     ],
-     [
-      -63.96,
-      -31.76
-     ],
-     [
-      -63.94,
-      -31.88
-     ],
-     [
-      -63.92,
-      -31.88
-     ],
-     [
-      -63.92,
-      -32.0
-     ],
-     [
-      -63.98,
-      -32.0
-     ],
-     [
-      -63.98,
-      -31.96
-     ],
-     [
-      -64.08,
-      -31.96
-     ],
-     [
-      -64.08,
-      -32.0
-     ],
-     [
-      -64.24,
-      -32.0
-     ],
-     [
-      -64.28,
-      -32.14
-     ],
-     [
-      -64.26,
-      -32.18
-     ],
-     [
-      -64.3,
-      -32.2
-     ],
-     [
-      -64.3,
-      -32.3
-     ],
-     [
-      -64.26,
-      -32.32
-     ],
-     [
-      -64.26,
-      -32.34
-     ],
-     [
-      -64.28,
-      -32.38
-     ],
-     [
-      -64.32,
-      -32.38
-     ],
-     [
-      -64.32,
-      -32.4
-     ],
-     [
-      -64.44,
-      -32.38
-     ],
-     [
-      -64.44,
-      -32.48
-     ],
-     [
-      -64.48,
-      -32.48
-     ],
-     [
-      -64.5,
-      -32.54
-     ],
-     [
-      -64.52,
-      -32.56
-     ],
-     [
-      -64.54,
-      -32.62
-     ],
-     [
-      -64.58,
-      -32.64
-     ],
-     [
-      -64.6,
-      -32.62
-     ],
-     [
-      -64.64,
-      -32.62
-     ],
-     [
-      -64.66,
-      -32.64
-     ],
-     [
-      -64.64,
-      -32.6
-     ],
-     [
-      -64.7,
-      -32.54
-     ],
-     [
-      -64.66,
-      -32.48
-     ],
-     [
-      -64.64,
-      -32.42
-     ],
-     [
-      -64.7,
-      -32.38
-     ],
-     [
-      -64.66,
-      -32.3
-     ],
-     [
-      -64.72,
-      -32.2
-     ],
-     [
-      -64.66,
-      -32.1
-     ],
-     [
-      -64.7,
-      -32.06
-     ],
-     [
-      -64.72,
-      -32.02
-     ],
-     [
-      -64.64,
-      -32.02
-     ],
-     [
-      -64.6,
-      -31.96
-     ],
-     [
-      -64.68,
-      -31.94
-     ],
-     [
-      -64.64,
-      -31.9
-     ],
-     [
-      -64.68,
-      -31.9
-     ],
-     [
-      -64.62,
-      -31.86
-     ],
-     [
-      -64.66,
-      -31.82
-     ],
-     [
-      -64.6,
-      -31.76
-     ],
-     [
-      -64.52,
-      -31.7
-     ],
-     [
-      -64.5,
-      -31.62
-     ],
-     [
-      -64.52,
-      -31.56
-     ],
-     [
-      -64.52,
-      -31.52
-     ],
-     [
-      -64.5,
-      -31.48
-     ],
-     [
-      -64.42,
-      -31.44
-     ],
-     [
-      -64.44,
-      -31.36
-     ],
-     [
-      -64.4,
-      -31.36
-     ],
-     [
-      -64.36,
-      -31.38
-     ],
-     [
-      -64.32,
-      -31.36
-     ],
-     [
-      -64.32,
-      -31.52
-     ],
-     [
-      -64.06,
-      -31.52
-     ],
-     [
-      -64.06,
-      -31.42
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56",
-   "tipo": "alerta",
-   "evento": "Tormentas",
-   "nivel": "amarillo",
-   "titulo": "Tormentas",
-   "desde": "2026-10-22T13:26:39-03:00",
-   "hasta": "2026-10-22T20:59:59-03:00",
-   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
-   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
-   "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56.xml",
-   "desde_local": "22/10 13:26",
-   "hasta_local": "22/10 20:59",
-   "localidades": 25,
-   "poligonos": [
-    [
-     [
-      -63.56,
-      -30.54
-     ],
-     [
-      -63.58,
-      -30.56
-     ],
-     [
-      -63.6,
-      -30.66
-     ],
-     [
-      -63.62,
-      -30.68
-     ],
-     [
-      -63.66,
-      -30.66
-     ],
-     [
-      -63.7,
-      -30.82
-     ],
-     [
-      -63.72,
-      -30.88
-     ],
-     [
-      -63.72,
-      -30.86
-     ],
-     [
-      -63.74,
-      -30.94
-     ],
-     [
-      -63.76,
-      -30.92
-     ],
-     [
-      -63.76,
-      -30.98
-     ],
-     [
-      -63.82,
-      -30.98
-     ],
-     [
-      -63.82,
-      -31.08
-     ],
-     [
-      -63.84,
-      -31.06
-     ],
-     [
-      -63.84,
-      -31.1
-     ],
-     [
-      -63.86,
-      -31.12
-     ],
-     [
-      -63.86,
-      -31.22
-     ],
-     [
-      -63.9,
-      -31.22
-     ],
-     [
-      -63.9,
-      -31.24
-     ],
-     [
-      -63.92,
-      -31.24
-     ],
-     [
-      -63.92,
-      -31.28
-     ],
-     [
-      -63.96,
-      -31.28
-     ],
-     [
-      -63.96,
-      -31.32
-     ],
-     [
-      -63.98,
-      -31.32
-     ],
-     [
-      -63.96,
-      -31.38
-     ],
-     [
-      -63.96,
-      -31.44
-     ],
-     [
-      -64.0,
-      -31.44
-     ],
-     [
-      -64.06,
-      -31.42
-     ],
-     [
-      -64.06,
-      -31.3
-     ],
-     [
-      -64.3,
-      -31.3
-     ],
-     [
-      -64.32,
-      -31.32
-     ],
-     [
-      -64.32,
-      -31.36
-     ],
-     [
-      -64.36,
-      -31.38
-     ],
-     [
-      -64.4,
-      -31.36
-     ],
-     [
-      -64.42,
-      -31.36
-     ],
-     [
-      -64.38,
-      -31.26
-     ],
-     [
-      -64.36,
-      -31.12
-     ],
-     [
-      -64.34,
-      -31.0
-     ],
-     [
-      -64.3,
-      -30.9
-     ],
-     [
-      -64.3,
-      -30.82
-     ],
-     [
-      -64.24,
-      -30.82
-     ],
-     [
-      -64.24,
-      -30.8
-     ],
-     [
-      -64.18,
-      -30.8
-     ],
-     [
-      -64.14,
-      -30.78
-     ],
-     [
-      -64.1,
-      -30.8
-     ],
-     [
-      -64.12,
-      -30.74
-     ],
-     [
-      -64.16,
-      -30.68
-     ],
-     [
-      -64.18,
-      -30.66
-     ],
-     [
-      -64.2,
-      -30.6
-     ],
-     [
-      -64.24,
-      -30.52
-     ],
-     [
-      -64.3,
-      -30.46
-     ],
-     [
-      -64.08,
-      -30.46
-     ],
-     [
-      -64.0,
-      -30.48
-     ],
-     [
-      -63.98,
-      -30.46
-     ],
-     [
-      -63.98,
-      -30.42
-     ],
-     [
-      -63.84,
-      -30.42
-     ],
-     [
-      -63.84,
-      -30.5
-     ],
-     [
-      -63.8,
-      -30.5
-     ],
-     [
-      -63.8,
-      -30.56
-     ],
-     [
-      -63.66,
-      -30.56
-     ],
-     [
-      -63.62,
-      -30.58
-     ],
-     [
-      -63.6,
-      -30.52
-     ],
-     [
-      -63.56,
-      -30.54
-     ]
-    ]
-   ]
-  },
-  {
-   "id": "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63",
-   "tipo": "alerta",
-   "evento": "Tormentas",
-   "nivel": "amarillo",
-   "titulo": "Tormentas",
-   "desde": "2026-10-22T13:26:39-03:00",
-   "hasta": "2026-10-22T20:59:59-03:00",
-   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes o puntualmente severas. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, granizo, ráfagas intensas de hasta 90 km/h y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 40 y 70 mm, que pueden ser superados de manera puntual.",
-   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
-   "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63.xml",
-   "desde_local": "22/10 13:26",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31.xml",
+   "desde_local": "22/10 20:59",
    "hasta_local": "22/10 20:59",
    "localidades": 10,
    "poligonos": [
@@ -2525,818 +2525,596 @@
      ]
     ]
    ]
-  },
-  {
-   "id": "CAP_20261022132655_Tormenta_Cordillera_alertas_alertas_11",
-   "tipo": "alerta",
-   "evento": "Tormentas",
-   "nivel": "amarillo",
-   "titulo": "Tormentas",
-   "desde": "2026-10-22T13:26:39-03:00",
-   "hasta": "2026-10-22T20:59:59-03:00",
-   "descripcion": "El área será afectada por tormentas aisladas de variada intensidad, algunas fuertes. Estas podrían estar acompañadas por abundantes precipitaciones en cortos períodos, granizo ocasional, actividad eléctrica frecuente y ráfagas. Se prevén valores de precipitación acumulada entre 20 y 40 mm, que pueden ser superados de forma local.",
-   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
-   "zona": "",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261022132655_Tormenta_Cordillera_alertas_alertas_11.xml",
-   "desde_local": "22/10 13:26",
-   "hasta_local": "22/10 20:59",
-   "localidades": 6,
-   "poligonos": [
-    [
-     [
-      -65.06,
-      -32.32
-     ],
-     [
-      -65.06,
-      -32.42
-     ],
-     [
-      -65.04,
-      -32.48
-     ],
-     [
-      -65.04,
-      -32.58
-     ],
-     [
-      -65.06,
-      -32.76
-     ],
-     [
-      -65.04,
-      -32.84
-     ],
-     [
-      -65.12,
-      -32.96
-     ],
-     [
-      -65.14,
-      -32.96
-     ],
-     [
-      -65.18,
-      -32.92
-     ],
-     [
-      -65.24,
-      -32.92
-     ],
-     [
-      -65.28,
-      -32.9
-     ],
-     [
-      -65.28,
-      -32.92
-     ],
-     [
-      -65.36,
-      -32.9
-     ],
-     [
-      -65.38,
-      -32.96
-     ],
-     [
-      -65.44,
-      -32.98
-     ],
-     [
-      -65.44,
-      -32.96
-     ],
-     [
-      -65.48,
-      -32.96
-     ],
-     [
-      -65.58,
-      -33.0
-     ],
-     [
-      -65.58,
-      -32.98
-     ],
-     [
-      -65.56,
-      -32.98
-     ],
-     [
-      -65.56,
-      -32.94
-     ],
-     [
-      -65.54,
-      -32.94
-     ],
-     [
-      -65.52,
-      -32.9
-     ],
-     [
-      -65.6,
-      -32.88
-     ],
-     [
-      -65.56,
-      -32.78
-     ],
-     [
-      -65.52,
-      -32.62
-     ],
-     [
-      -65.68,
-      -32.34
-     ],
-     [
-      -65.82,
-      -32.32
-     ],
-     [
-      -65.8,
-      -32.3
-     ],
-     [
-      -65.76,
-      -32.24
-     ],
-     [
-      -65.78,
-      -32.24
-     ],
-     [
-      -65.72,
-      -32.2
-     ],
-     [
-      -65.68,
-      -32.06
-     ],
-     [
-      -65.82,
-      -32.06
-     ],
-     [
-      -65.82,
-      -31.9
-     ],
-     [
-      -65.78,
-      -31.88
-     ],
-     [
-      -65.64,
-      -31.9
-     ],
-     [
-      -65.34,
-      -32.04
-     ],
-     [
-      -65.3,
-      -32.06
-     ],
-     [
-      -65.28,
-      -32.06
-     ],
-     [
-      -65.24,
-      -32.1
-     ],
-     [
-      -65.24,
-      -32.14
-     ],
-     [
-      -65.22,
-      -32.16
-     ],
-     [
-      -65.22,
-      -32.34
-     ],
-     [
-      -65.1,
-      -32.32
-     ],
-     [
-      -65.06,
-      -32.32
-     ]
-    ]
-   ]
   }
  ],
  "localidades": {
   "San Carlos Minas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Salsacate": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Cruz de Caña": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "San Lorenzo": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Panaholma": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "La Paz": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Ambul": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Nono": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "La Ramada": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Las Rabonas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Mina Clavero": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Las Calles": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "La Travesía": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Tala Cañada": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Las Chacras Norte": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Luyaba": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Taninga": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Las Cañadas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "San Javier Y Yacanto": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "La Playa": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Villa de las Rosas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Characato": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Los Talares": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Villa Benegas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "La Poblacion": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Sauce de los Quevedos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "La Argentina": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Mussi": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Pueblito": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Piedras Anchas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Guasapampa": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "San Geronimo": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Paraje las Chacras": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "San Javier": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Loma Bola": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Talaini": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Alto Grande": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Los Hornillos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Cañada de Salas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Cienaga del Coro": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Dos Arroyos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "El Pantanillo": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Estancia de Guadalupe": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Quebrada de los Pozos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Tosno": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Villa Cura Brochero": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Villa de Pocho": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_58"
-  ],
-  "Villa Carlos Paz": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Cosquin": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Cuesta Blanca": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Cabalango": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Tanti": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "La Falda": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Villa Giardino": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "San Antonio de Arredondo": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Santa María de Punilla": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Huerta Grande": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Valle Hermoso": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Capilla del Monte": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Casa Grande": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Mayu Sumaj": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Tala Huasi": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "San Esteban": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Santa Isabel": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "San Roque": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Paso de la Pampa": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "La Cumbre": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Estancia Vieja": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Quebrada de Luna": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Copacabana": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "San Clemente": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Villa Flor Serrana": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "San Vicente": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Cañada Martel": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Las Jarillas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Charbonier": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Bialet Masse": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Ischilín Viejo": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "El Rincon": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Los Cocos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Villa Parque Siquiman": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Villa Rio Icho Cruz": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Villa Santa Cruz del Lago": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_59"
-  ],
-  "Alpa Corral": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "Villa Berna": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "La Cumbrecita": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "Intiyaco": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "El Durazno": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "Villa el Chacay": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "San Miguel de los Ríos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "Unión de los Rios": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "Pueblo Escondido": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "Villa Yacanto": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_57"
-  ],
-  "Cordoba": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_55"
-  ],
-  "Saldan": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_55"
-  ],
-  "El Gateado": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_55"
-  ],
-  "La Cruz": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Rio de los Sauces": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Alta Gracia": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Santa Rosa de Calamuchita": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa General Belgrano": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Los Reartes": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Embalse": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa del Dique": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa Quillinzo": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "San Agustin": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Potrero de Garay": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Barrio Sierras de Oro": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Anisacate": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Cañada del Sauce": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Amboy": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "El Corcovado el Torreon": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa los Aromos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Santa Mónica": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "La Serranita": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Paso Cabral": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa la Rivera": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Los Molinos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Dique Chico": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "El Corcovado": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa San Antonio": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Falda del Carmen": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Pozo del Tala": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa San Isidro": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Parque Calmayo": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Capilla Vieja": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Las Bajadas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "La Paisanita": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa Parque Santa Ana": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa la Rancherita": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa Amancay": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "La Perla": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Jose de la Quintana": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "La Boca del Río": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa la Merced": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa Ciudad de America": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Costa Azul": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Despeñaderos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Las Caleras": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Los Condores": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Malagueño": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Rafael Garcia": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa Ciudad Parque los Reartes": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa del Prado": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Villa Rumipal": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_54"
-  ],
-  "Rio Ceballos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Villa Allende": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Unquillo": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Mendiolaza": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "La Calera": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Salsipuedes": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "La Granja": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Jesús María": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Malvinas Argentinas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Ascochinga": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Colonia Caroya": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Villa del Totoral": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Estación Juárez Celman": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Colonia Hogar": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "El Sauce": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Villa Cerro Azul": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "General Paz": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "La Pampa": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Agua de Oro": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Canteras el Sauce": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "El Manzano": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Villa los Llanos Juarez Celman": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Parque Norte": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Sinsacate": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Villa Gutierrez": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_56"
-  ],
-  "Carpintería": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "Los Molles": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "Cortaderas": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "Villa de Merlo": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "Villa Larca": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "Papagayos": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "Villa Elena": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "San José del Morro": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "Cerro de Oro": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "Villa del Carmen": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_63"
-  ],
-  "Tilisarao": [
-   "CAP_20261022132655_Tormenta_Cordillera_alertas_alertas_11"
-  ],
-  "Naschel": [
-   "CAP_20261022132655_Tormenta_Cordillera_alertas_alertas_11"
-  ],
-  "El Tala": [
-   "CAP_20261022132655_Tormenta_Cordillera_alertas_alertas_11"
-  ],
-  "Santa Rosa del Conlara": [
-   "CAP_20261022132655_Tormenta_Cordillera_alertas_alertas_11"
-  ],
-  "Concarán": [
-   "CAP_20261022132655_Tormenta_Cordillera_alertas_alertas_11"
-  ],
-  "Los Cajones": [
-   "CAP_20261022132655_Tormenta_Cordillera_alertas_alertas_11"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_23"
   ],
   "Rio Cuarto": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Santa Catalina": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Paso del Río Seco": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "La Carolina el Potosí": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Santa Rita": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Achiras": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Alcira Gigena": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Berrotaran": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Chucul": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Coronel Baigorria": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Elena": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Las Higueras": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Las Vertientes": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
   ],
   "Las Peñas Sud": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_6"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_24"
+  ],
+  "Alpa Corral": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "Villa Berna": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "La Cumbrecita": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "Intiyaco": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "El Durazno": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "Villa el Chacay": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "San Miguel de los Ríos": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "Unión de los Rios": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "Pueblo Escondido": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "Villa Yacanto": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_21"
+  ],
+  "Rio Ceballos": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Villa Allende": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Unquillo": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Mendiolaza": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "La Calera": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Salsipuedes": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "La Granja": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Jesús María": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Malvinas Argentinas": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Ascochinga": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Colonia Caroya": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Villa del Totoral": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Estación Juárez Celman": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Colonia Hogar": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "El Sauce": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Villa Cerro Azul": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "General Paz": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "La Pampa": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Agua de Oro": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Canteras el Sauce": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "El Manzano": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Villa los Llanos Juarez Celman": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Parque Norte": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Sinsacate": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "Villa Gutierrez": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_20"
+  ],
+  "La Cruz": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Rio de los Sauces": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Alta Gracia": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Santa Rosa de Calamuchita": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa General Belgrano": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Los Reartes": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Embalse": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa del Dique": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa Quillinzo": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "San Agustin": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Potrero de Garay": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Barrio Sierras de Oro": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Anisacate": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Cañada del Sauce": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Amboy": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "El Corcovado el Torreon": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa los Aromos": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Santa Mónica": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "La Serranita": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Paso Cabral": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa la Rivera": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Los Molinos": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Dique Chico": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "El Corcovado": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa San Antonio": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Falda del Carmen": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Pozo del Tala": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa San Isidro": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Parque Calmayo": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Capilla Vieja": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Las Bajadas": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "La Paisanita": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa Parque Santa Ana": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa la Rancherita": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa Amancay": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "La Perla": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Jose de la Quintana": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "La Boca del Río": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa la Merced": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa Ciudad de America": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Costa Azul": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Despeñaderos": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Las Caleras": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Los Condores": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Malagueño": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Rafael Garcia": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa Ciudad Parque los Reartes": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa del Prado": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Villa Rumipal": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_18"
+  ],
+  "Cordoba": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_19"
+  ],
+  "Saldan": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_19"
+  ],
+  "El Gateado": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_19"
   ],
   "Almafuerte": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_7"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_25"
   ],
   "Rio Tercero": [
-   "CAP_20261022132656_Tormenta_Llanura_alertas_alertas_7"
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_25"
+  ],
+  "Villa Carlos Paz": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Cosquin": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Cuesta Blanca": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Cabalango": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Tanti": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "La Falda": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Villa Giardino": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "San Antonio de Arredondo": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Santa María de Punilla": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Huerta Grande": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Valle Hermoso": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Capilla del Monte": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Casa Grande": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Mayu Sumaj": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Tala Huasi": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "San Esteban": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Santa Isabel": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "San Roque": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Paso de la Pampa": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "La Cumbre": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Estancia Vieja": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Quebrada de Luna": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Copacabana": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "San Clemente": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Villa Flor Serrana": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "San Vicente": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Cañada Martel": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Las Jarillas": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Charbonier": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Bialet Masse": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Ischilín Viejo": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "El Rincon": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Los Cocos": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Villa Parque Siquiman": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Villa Rio Icho Cruz": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Villa Santa Cruz del Lago": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_26"
+  ],
+  "Carpintería": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Los Molles": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Cortaderas": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Villa de Merlo": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Villa Larca": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Papagayos": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Villa Elena": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "San José del Morro": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Cerro de Oro": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Villa del Carmen": [
+   "CAP_20261022205954_Tormenta_Llanura_alertas_alertas_31"
   ]
  }
 }
