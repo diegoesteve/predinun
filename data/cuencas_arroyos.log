@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/ee/data.py", line 361, in _execute_cloud_call
+    return call.execute(num_retries=num_retries)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/googleapiclient/http.py", line 1018, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 403 when requesting https://earthengine.googleapis.com/v1/projects/the-byway-494216-n2/thumbnails?fields=name&alt=json returned "Permission 'earthengine.thumbnails.create' denied on resource 'projects/the-byway-494216-n2' (or it may not exist).". Details: "Permission 'earthengine.thumbnails.create' denied on resource 'projects/the-byway-494216-n2' (or it may not exist).">
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/predinun/predinun/scripts/cuencas_arroyos.py", line 209, in <module>
+    main()
+  File "/home/runner/work/predinun/predinun/scripts/cuencas_arroyos.py", line 117, in main
+    dirs, transf = bajar_todo(ee, 'dir', 'uint8')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/predinun/predinun/scripts/cuencas_arroyos.py", line 66, in bajar_todo
+    a, t = bajar(ee, banda, tipo, sur, norte)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/predinun/predinun/scripts/cuencas_arroyos.py", line 41, in bajar
+    url = img.getDownloadURL({'region': region, 'crs': 'EPSG:4326', 'format': 'GEO_TIFF',
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/ee/image.py", line 513, in getDownloadURL
+    return data.makeDownloadUrl(data.getDownloadId(request))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/ee/data.py", line 1336, in getDownloadId
+    result = _execute_cloud_call(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/ee/data.py", line 363, in _execute_cloud_call
+    raise _translate_cloud_exception(e)  # pylint: disable=raise-missing-from
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ee.ee_exception.EEException: Permission 'earthengine.thumbnails.create' denied on resource 'projects/the-byway-494216-n2' (or it may not exist).

@@ -1,7 +1,7 @@
 {
- "generado": "2026-10-22T12:56:09+00:00",
+ "generado": "2026-10-22T13:13:30+00:00",
  "criterio": "a menos de 5 m sobre un cauce, con un río de más de 20 km² de cuenca a menos de 150 m (MERIT Hydro, 90 m)",
- "bloques_sin_bajar": 18,
+ "bloques_sin_bajar": 17,
  "lugares": [
   {
    "osm": "node/12604545143",
@@ -64,6 +64,46 @@
    "bajo_junto_a_rio": false
   },
   {
+   "osm": "node/11330177269",
+   "tipo": "camping",
+   "nombre": "Reserva Natural Privada Alto Lindo",
+   "lat": -32.86084,
+   "lon": -64.82681,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 1.1,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/12207322943",
+   "tipo": "playa",
+   "nombre": "",
+   "lat": -32.89283,
+   "lon": -64.86762,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 10.4,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/12351792119",
+   "tipo": "camping",
+   "nombre": "Camping Municipal",
+   "lat": -32.90035,
+   "lon": -64.84094,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 11.2,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/1512667887",
+   "tipo": "playa",
+   "nombre": "Balneario Baño de los Dioses",
+   "lat": -32.90252,
+   "lon": -64.84235,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 115.6,
+   "bajo_junto_a_rio": true
+  },
+  {
    "osm": "node/1877489538",
    "tipo": "camping",
    "nombre": "Camping Municipal",
@@ -74,43 +114,243 @@
    "bajo_junto_a_rio": false
   },
   {
-   "osm": "node/6177284024",
+   "osm": "node/1666789156",
    "tipo": "camping",
-   "nombre": "Camping del Complejo Río Conlara",
-   "lat": -32.343,
-   "lon": -65.2148,
+   "nombre": "Camping El Pelicano",
+   "lat": -32.69196,
+   "lon": -64.71558,
    "altura_sobre_cauce_m": 0,
-   "cuenca_rio_cercano_km2": 5302.4,
+   "cuenca_rio_cercano_km2": 191.8,
    "bajo_junto_a_rio": true
   },
   {
-   "osm": "node/11837622897",
+   "osm": "node/1997549536",
    "tipo": "camping",
    "nombre": "",
-   "lat": -32.56504,
-   "lon": -65.25647,
+   "lat": -32.42438,
+   "lon": -64.87299,
    "altura_sobre_cauce_m": 0,
-   "cuenca_rio_cercano_km2": 2984.4,
+   "cuenca_rio_cercano_km2": 24.9,
    "bajo_junto_a_rio": true
   },
   {
-   "osm": "node/12610848209",
-   "tipo": "camping",
-   "nombre": "Camping Municipal",
-   "lat": -32.77218,
-   "lon": -65.36935,
-   "altura_sobre_cauce_m": 0,
-   "cuenca_rio_cercano_km2": 1259.0,
-   "bajo_junto_a_rio": true
-  },
-  {
-   "osm": "node/12980419105",
+   "osm": "node/1997580907",
    "tipo": "camping",
    "nombre": "",
-   "lat": -32.31018,
-   "lon": -65.0008,
-   "altura_sobre_cauce_m": 52.2,
+   "lat": -32.49993,
+   "lon": -64.76256,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 98.5,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/2077031586",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -32.47496,
+   "lon": -64.80002,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 38.4,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/2705965573",
+   "tipo": "camping",
+   "nombre": "Complejo Las Violetas",
+   "lat": -32.33998,
+   "lon": -64.99392,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 2.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/5400325158",
+   "tipo": "camping",
+   "nombre": "Camping La Paz",
+   "lat": -32.65978,
+   "lon": -64.74472,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 105.4,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/5455168505",
+   "tipo": "camping",
+   "nombre": "Camping Calaguala",
+   "lat": -32.36963,
+   "lon": -64.98454,
+   "altura_sobre_cauce_m": 4.5,
+   "cuenca_rio_cercano_km2": 0.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/5455168507",
+   "tipo": "camping",
+   "nombre": "Cerro de Oro",
+   "lat": -32.3726,
+   "lon": -64.99005,
+   "altura_sobre_cauce_m": 23.8,
+   "cuenca_rio_cercano_km2": 0.1,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/5455169432",
+   "tipo": "camping",
+   "nombre": "Camping Municipal de Merlo",
+   "lat": -32.35313,
+   "lon": -64.96922,
+   "altura_sobre_cauce_m": 11.5,
+   "cuenca_rio_cercano_km2": 0.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/5682076430",
+   "tipo": "camping",
+   "nombre": "Camping municipal San Ignacio",
+   "lat": -32.63695,
+   "lon": -64.96102,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 3.5,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/5682076901",
+   "tipo": "camping",
+   "nombre": "Camping municipal",
+   "lat": -32.50833,
+   "lon": -64.9828,
+   "altura_sobre_cauce_m": 29.6,
    "cuenca_rio_cercano_km2": 0.3,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/6219680899",
+   "tipo": "camping",
+   "nombre": "Camping Aguas Buenas",
+   "lat": -32.58486,
+   "lon": -64.94979,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 14.9,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/9506881211",
+   "tipo": "camping",
+   "nombre": "Camping",
+   "lat": -32.53038,
+   "lon": -64.5843,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 211.9,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/9604319633",
+   "tipo": "camping",
+   "nombre": "Camping Los Sauces",
+   "lat": -32.52992,
+   "lon": -64.5891,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 211.7,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/10559512210",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -32.69666,
+   "lon": -64.70267,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 0.6,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/12598990562",
+   "tipo": "camping",
+   "nombre": "Don Benito",
+   "lat": -32.68139,
+   "lon": -64.96765,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 17.2,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/12599085307",
+   "tipo": "camping",
+   "nombre": "Camping Mantiales",
+   "lat": -32.67935,
+   "lon": -64.73023,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 183.0,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/12610667073",
+   "tipo": "camping",
+   "nombre": "Camping Municipal de Carpinteria",
+   "lat": -32.41217,
+   "lon": -64.97868,
+   "altura_sobre_cauce_m": 26.3,
+   "cuenca_rio_cercano_km2": 0.1,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/352321887",
+   "tipo": "camping",
+   "nombre": "Camping Lyon",
+   "lat": -32.34901,
+   "lon": -64.96658,
+   "altura_sobre_cauce_m": 4.5,
+   "cuenca_rio_cercano_km2": 0.5,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/496475970",
+   "tipo": "camping",
+   "nombre": "Camping Municipal de Papagayos",
+   "lat": -32.67628,
+   "lon": -64.97999,
+   "altura_sobre_cauce_m": 0.8,
+   "cuenca_rio_cercano_km2": 0.2,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/1315821233",
+   "tipo": "camping",
+   "nombre": "Los Vallecitos Parque Natural",
+   "lat": -32.35911,
+   "lon": -64.85764,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 29.1,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "way/1349694992",
+   "tipo": "camping",
+   "nombre": "Camping Luis María",
+   "lat": -32.41747,
+   "lon": -64.73033,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 322.5,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "way/1349782285",
+   "tipo": "camping",
+   "nombre": "Los Prados Puesto Rural",
+   "lat": -32.31416,
+   "lon": -64.77977,
+   "altura_sobre_cauce_m": 145.9,
+   "cuenca_rio_cercano_km2": 0.1,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/1416221829",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -32.63656,
+   "lon": -64.95852,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 3.3,
    "bajo_junto_a_rio": false
   }
  ]
