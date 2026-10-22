@@ -1,6 +1,6 @@
 name: Probar el permiso del despertador
 
-# Usa el mismo token que el Worker (GH_TOKEN_APORTES) para pedir una corrida del radar de predgra.
+# Usa el mismo token que el Worker (GH_TOKEN_APORTES) para pedir una corrida del radar de piedrazon.
 on:
   workflow_dispatch:
 
@@ -13,7 +13,7 @@ jobs:
         env:
           TOKEN: ${{ secrets.GH_TOKEN_APORTES }}
         run: |
-          for item in diegoesteve/predgra:radar.yml diegoesteve/predinun:monitor.yml; do
+          for item in diegoesteve/piedrazon:radar.yml diegoesteve/predinun:monitor.yml; do
             code=$(curl -sS -o resp.txt -w '%{http_code}' -X POST \
               -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
               "https://api.github.com/repos/${item%%:*}/actions/workflows/${item##*:}/dispatches" -d '{"ref":"main"}')

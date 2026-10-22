@@ -55,9 +55,9 @@ export default {
 
 // Qué correr con cada horario de wrangler.toml: «repo:workflow» separados por coma
 const DESPERTAR = {
-  '*/15 * * * *': 'diegoesteve/predinun:monitor.yml,diegoesteve/predgra:radar.yml',
+  '*/15 * * * *': 'diegoesteve/predinun:monitor.yml,diegoesteve/piedrazon:radar.yml',
   '20 */6 * * *': 'diegoesteve/predinun:boletin.yml',
-  '35 */6 * * *': 'diegoesteve/predgra:pronostico.yml',
+  '35 */6 * * *': 'diegoesteve/piedrazon:pronostico.yml',
 };
 
 async function despertar(env, cron) {

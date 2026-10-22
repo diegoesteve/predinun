@@ -28,7 +28,7 @@ SITIO = 'https://diegoesteve.github.io/predinun/'
 FENOMENOS = ('TORMENT', 'LLUVI', 'GRANIZ', 'PRECIPIT')     # los que interesan a este proyecto (mayúsculas, sin tildes)
 # ----
 LISTA = 'https://ssl.smn.gob.ar/CAP/AR.php'
-CABECERA = {'User-Agent': 'predinun/predgra (proyectos sin fines comerciales; github.com/diegoesteve)'}
+CABECERA = {'User-Agent': 'predinun/piedrazon (proyectos sin fines comerciales; github.com/diegoesteve)'}
 CORDOBA = {'lat': (-35.2, -29.4), 'lon': (-65.9, -61.7)}
 ARG = timezone(timedelta(hours=-3))
 NIVEL_POR_SEVERIDAD = {'Minor': 'amarillo', 'Moderate': 'amarillo', 'Severe': 'naranja', 'Extreme': 'rojo'}
