@@ -443,6 +443,7 @@ function elegirLocalidad(f) {
       <a class="boton-sec" href="https://wa.me/?text=${encodeURIComponent(`${textoCompartir} ${enlace}`)}" target="_blank" rel="noopener">Enviar por WhatsApp</a></div>
     <div><b>Ahora</b> ${chipAhora(f.ahora)} · <b>Exposición</b> ${chipExpo(f.exposicion)}</div>
     ${f.ahora_por === 'tormenta' ? `<div class="lluvia-fuerte">Está en ${esc(f.ahora)} por la tormenta que ve el radar en este momento${f.ahora_pronostico ? `; por el pronóstico de 3 días estaría en ${esc(f.ahora_pronostico)}` : ''}.</div>` : ''}
+    <div id="smn-loc"></div>
     <div id="radar-loc"></div>
     ${textoCondiciones(f.condiciones)}
     ${f.razones && f.razones.length ? `<div><b>Por qué está ${esc(f.exposicion || 'en la lista')}</b><ul class="razones">${f.razones.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
@@ -458,6 +459,7 @@ function elegirLocalidad(f) {
       else { await navigator.clipboard.writeText(enlace); ev.target.textContent = 'Link copiado'; }
     } catch (e) { /* la persona canceló */ }
   });
+  bloqueSMNLocalidad(f.localidad).then(h => { const el = document.getElementById('smn-loc'); if (el) el.innerHTML = h; });
   leerRadar().then(r => {
     const v = r && r.localidades && r.localidades[f.localidad], edad = edadRadar(r), el = document.getElementById('radar-loc');
     if (!el || edad == null || edad > 90) return;
@@ -657,6 +659,8 @@ async function portada() {
   const edad = edadRadar(r);
   if (r && edad != null && edad <= 90 && Object.keys(r.localidades || {}).length) h = `<div class="radar-ahora">${textoRadar(r, 8)}</div>` + h;
   if (r && r.observacion) document.getElementById('act-radar').textContent = `Último dato: ${r.observacion}`;
+  leerSMN().then(d => { if (d) document.getElementById('act-smn').textContent = `Última consulta: ${d.consultado}`; });
+  h = (await bloqueSMNInicio()) + h;
   const caja = document.getElementById('estado-hoy');
   caja.innerHTML = h;
   caja.querySelectorAll('[data-loc]').forEach(x => x.addEventListener('click', () => irALocalidad(x.dataset.loc)));
@@ -725,4 +729,47 @@ async function avisoDatosViejos() {
     ? '<b>No se pudieron cargar los datos de las estaciones.</b> Revisá tu conexión, o consultá los canales oficiales.'
     : `<b>Atención: los datos tienen ${min >= 120 ? `${Math.floor(min / 60)} horas` : `${min} minutos`} de antigüedad</b> (último: ${esc(a.actualizado)}). ` +
       'El monitor se actualiza cada 15 minutos; puede haber un problema. No tomes lo que ves como la situación actual: consultá los canales oficiales.';
+}
+
+// ---------------------------------------------------------------- alertas oficiales del SMN
+// docs/data/smn.json lo escribe scripts/smn_alertas.py cada 15 minutos (feed CAP del Servicio Meteorológico Nacional).
+function leerSMN() {
+  leerSMN.carga ||= leer('smn.json');
+  return leerSMN.carga;
+}
+const ICONO_SMN = { rojo: '🔴', naranja: '🟠', amarillo: '🟡' };
+const CLASE_SMN = { rojo: 'n-rojo', naranja: 'n-naranja', amarillo: 'n-amarillo' };
+
+function agruparSMN(alertas) {
+  const g = new Map();
+  for (const a of alertas) {
+    const k = [a.tipo, a.titulo, a.nivel, a.hasta_local].join('|');
+    if (!g.has(k)) g.set(k, { ...a, ids: [] });
+    g.get(k).ids.push(a.id);
+  }
+  return [...g.values()];
+}
+
+function textoSMN(a, cuantas) {
+  return `${ICONO_SMN[a.nivel]} <b>${a.tipo === 'aviso a corto plazo' ? 'Aviso a corto plazo' : 'Alerta'} oficial del SMN</b>: ` +
+    `${esc(a.titulo)} (nivel ${esc(a.nivel)}), hasta ${esc(a.hasta_local)} h${cuantas != null ? ` · ${cuantas} localidad${cuantas === 1 ? '' : 'es'}` : ''}.`;
+}
+
+async function bloqueSMNInicio() {
+  const d = await leerSMN();
+  if (!d || !d.alertas.length) return '';
+  const grupos = agruparSMN(d.alertas);
+  return `<div class="smn">${grupos.map(a => {
+      const n = Object.values(d.localidades).filter(v => v.some(i => a.ids.includes(i))).length;
+      return `<div class="estado-titulo ${CLASE_SMN[a.nivel]}" style="font-weight:400">${textoSMN(a, n)}</div>`;
+    }).join('')}<p class="nota">Avisos oficiales del <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">Servicio Meteorológico Nacional</a>. Buscá tu localidad para ver si te toca.</p></div>`;
+}
+
+async function bloqueSMNLocalidad(nombre) {
+  const d = await leerSMN();
+  const ids = d && d.localidades[nombre];
+  if (!ids || !ids.length) return '';
+  const propias = agruparSMN(d.alertas.filter(a => ids.includes(a.id)));
+  return propias.map(a => `<div class="smn-loc ${CLASE_SMN[a.nivel]}">${textoSMN(a)}` +
+    (a.instruccion ? `<details><summary>Qué recomienda el SMN</summary><p>${esc(a.instruccion)}</p></details>` : '') + '</div>').join('');
 }

@@ -35,6 +35,12 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/correr_monitor.py
+      - name: Alertas oficiales del SMN
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/smn_alertas.py
       - name: Núcleos de tormenta del radar de Córdoba (OHMC)
         continue-on-error: true
         env:
@@ -51,7 +57,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data/ahora.json docs/data/estaciones.json data/monitor/estado_zonas.json data/historia
-          for f in docs/data/radar.json data/monitor/radar_avisados.json; do [ -f "$f" ] && git add "$f"; done; true
+          for f in docs/data/radar.json data/monitor/radar_avisados.json docs/data/smn.json data/smn_cache.json data/smn_avisados.json; do [ -f "$f" ] && git add "$f"; done; true
           git diff --cached --quiet && exit 0
           git commit -m "monitor: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push
