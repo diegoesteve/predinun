@@ -1,121 +1,113 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 13:52",
+ "consultado": "2026-10-22 15:36",
  "radar": "RMA1",
- "observacion": "2026-10-22 13:30",
+ "observacion": "2026-10-22 15:18",
  "nucleos": [
   {
-   "lat": -32.6404,
-   "lon": -63.9122,
-   "dbz": 49,
-   "max_dbz": 62,
-   "tope_km": 9.6
-  },
-  {
-   "lat": -31.45,
-   "lon": -64.7944,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 5.4
-  },
-  {
-   "lat": -31.5221,
-   "lon": -64.7621,
-   "dbz": 45,
-   "max_dbz": 56,
-   "tope_km": 5.4
-  },
-  {
-   "lat": -33.243,
-   "lon": -65.1063,
-   "dbz": 44,
-   "max_dbz": 46,
-   "tope_km": 9.0
-  },
-  {
-   "lat": -31.387,
-   "lon": -64.4178,
-   "dbz": 43,
-   "max_dbz": 48,
-   "tope_km": 1.2
-  },
-  {
-   "lat": -33.1458,
+   "lat": -32.7914,
    "lon": -65.3107,
-   "dbz": 42,
-   "max_dbz": 45,
-   "tope_km": 8.4
+   "dbz": 48,
+   "max_dbz": 60,
+   "tope_km": 10.2
   },
   {
-   "lat": -31.2968,
-   "lon": -64.7191,
-   "dbz": 41,
-   "max_dbz": 41,
+   "lat": -31.3509,
+   "lon": -64.4286,
+   "dbz": 46,
+   "max_dbz": 52,
+   "tope_km": 1.8
+  },
+  {
+   "lat": -31.4771,
+   "lon": -64.7944,
+   "dbz": 44,
+   "max_dbz": 51,
+   "tope_km": 4.2
+  },
+  {
+   "lat": -31.441,
+   "lon": -64.4286,
+   "dbz": 44,
+   "max_dbz": 44,
+   "tope_km": 1.8
+  },
+  {
+   "lat": -31.2787,
+   "lon": -64.7083,
+   "dbz": 43,
+   "max_dbz": 43,
    "tope_km": 2.4
   },
   {
-   "lat": -31.432,
-   "lon": -64.4286,
-   "dbz": 41,
-   "max_dbz": 44,
-   "tope_km": 0.6
+   "lat": -31.5131,
+   "lon": -64.7513,
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 6.6
   },
   {
-   "lat": -33.1281,
-   "lon": -65.5582,
+   "lat": -32.7737,
+   "lon": -65.2247,
    "dbz": 40,
    "max_dbz": 41,
-   "tope_km": 9.0
+   "tope_km": 10.2
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 2,
-   "max_dbz": 56
+   "nucleos": 1,
+   "max_dbz": 51
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 28.4,
-   "max_dbz": 56,
-   "tope_km": 5.4,
+   "km": 29.5,
+   "max_dbz": 51,
+   "tope_km": 4.2,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 17.1,
-   "max_dbz": 56,
-   "tope_km": 5.4,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "La Calera": {
-   "km": 4.2,
-   "max_dbz": 48,
-   "tope_km": 1.2,
-   "cuenca_de": "Rio Suquia",
    "nivel": "intensa"
   },
-  "Mayu Sumaj": {
-   "km": 21.4,
-   "max_dbz": 56,
-   "tope_km": 5.4,
+  "Cuesta Blanca": {
+   "km": 19.5,
+   "max_dbz": 51,
+   "tope_km": 4.2,
    "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Tilisarao": {
+   "km": 5.0,
+   "max_dbz": 60,
+   "tope_km": 10.2,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 23.5,
+   "max_dbz": 51,
+   "tope_km": 4.2,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 18.9,
-   "max_dbz": 56,
-   "tope_km": 5.4,
+   "km": 21.3,
+   "max_dbz": 51,
+   "tope_km": 4.2,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "San Roque": {
-   "km": 4.0,
-   "max_dbz": 48,
-   "tope_km": 1.2,
+   "km": 1.9,
+   "max_dbz": 52,
+   "tope_km": 1.8,
+   "nivel": "intensa"
+  },
+  "Villa Parque Siquiman": {
+   "km": 4.8,
+   "max_dbz": 52,
+   "tope_km": 1.8,
    "nivel": "intensa"
   }
  },
- "minutos": 22
+ "minutos": 18
 }
