@@ -1,103 +1,91 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 16:22",
+ "consultado": "2026-10-22 16:31",
  "radar": "RMA1",
- "observacion": "2026-10-22 16:03",
+ "observacion": "2026-10-22 16:12",
  "nucleos": [
   {
-   "lat": -32.8269,
-   "lon": -64.9019,
-   "dbz": 48,
-   "max_dbz": 63,
-   "tope_km": 9.0
+   "lat": -31.3329,
+   "lon": -64.4178,
+   "dbz": 47,
+   "max_dbz": 53,
+   "tope_km": 1.2
   },
   {
-   "lat": -31.3509,
-   "lon": -64.4286,
-   "dbz": 46,
-   "max_dbz": 46,
-   "tope_km": 0.6
+   "lat": -31.423,
+   "lon": -64.8051,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 11.4
   },
   {
-   "lat": -32.7115,
-   "lon": -64.9772,
+   "lat": -32.8447,
+   "lon": -64.8159,
    "dbz": 45,
    "max_dbz": 52,
    "tope_km": 7.2
   },
   {
-   "lat": -31.45,
-   "lon": -64.8051,
-   "dbz": 45,
-   "max_dbz": 49,
-   "tope_km": 9.0
+   "lat": -32.7293,
+   "lon": -64.9127,
+   "dbz": 44,
+   "max_dbz": 48,
+   "tope_km": 5.4
   },
   {
    "lat": -31.5131,
-   "lon": -64.7513,
-   "dbz": 42,
-   "max_dbz": 47,
+   "lon": -64.7621,
+   "dbz": 44,
+   "max_dbz": 44,
    "tope_km": 5.4
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 2,
-   "max_dbz": 49
+   "nucleos": 1,
+   "max_dbz": 45
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 29.8,
-   "max_dbz": 49,
-   "tope_km": 9.0,
+   "km": 29.5,
+   "max_dbz": 45,
+   "tope_km": 11.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Cuesta Blanca": {
-   "km": 20.8,
-   "max_dbz": 49,
-   "tope_km": 9.0,
+   "km": 21.5,
+   "max_dbz": 45,
+   "tope_km": 11.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Mayu Sumaj": {
-   "km": 24.4,
-   "max_dbz": 49,
-   "tope_km": 9.0,
+   "km": 24.8,
+   "max_dbz": 45,
+   "tope_km": 11.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 22.4,
-   "max_dbz": 49,
-   "tope_km": 9.0,
+   "km": 23.0,
+   "max_dbz": 45,
+   "tope_km": 11.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "Papagayos": {
-   "km": 3.7,
-   "max_dbz": 52,
-   "tope_km": 7.2,
-   "nivel": "intensa"
-  },
   "San Roque": {
-   "km": 1.9,
-   "max_dbz": 46,
-   "tope_km": 0.6,
+   "km": 4.0,
+   "max_dbz": 53,
+   "tope_km": 1.2,
    "nivel": "intensa"
   },
   "Santa Rita": {
-   "km": 37.8,
-   "max_dbz": 63,
-   "tope_km": 9.0,
+   "km": 29.5,
+   "max_dbz": 52,
+   "tope_km": 7.2,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
-  },
-  "Villa Parque Siquiman": {
-   "km": 4.8,
-   "max_dbz": 46,
-   "tope_km": 0.6,
    "nivel": "intensa"
   }
  },
