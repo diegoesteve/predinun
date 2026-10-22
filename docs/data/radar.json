@@ -1,90 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 20:31",
+ "consultado": "2026-10-22 20:46",
  "radar": "RMA1",
- "observacion": "2026-10-22 20:15",
+ "observacion": "2026-10-22 20:24",
  "nucleos": [
   {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 45,
-   "max_dbz": 53,
-   "tope_km": 1.8
-  },
-  {
-   "lat": -31.2878,
-   "lon": -64.7191,
+   "lat": -31.396,
+   "lon": -64.3963,
    "dbz": 44,
-   "max_dbz": 46,
+   "max_dbz": 44,
    "tope_km": 3.0
   },
   {
-   "lat": -31.4861,
-   "lon": -64.7944,
-   "dbz": 43,
-   "max_dbz": 46,
-   "tope_km": 5.4
+   "lat": -31.5221,
+   "lon": -64.7621,
+   "dbz": 44,
+   "max_dbz": 48,
+   "tope_km": 6.6
   },
   {
-   "lat": -31.378,
+   "lat": -31.3329,
    "lon": -64.4178,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 2.4
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 3.0
+  },
+  {
+   "lat": -31.4771,
+   "lon": -64.7836,
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 5.4
   }
  ],
  "cuencas": {
-  "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 46
-  },
   "SanAntonio_CPaz": {
    "nucleos": 1,
-   "max_dbz": 46
+   "max_dbz": 48
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 29.7,
-   "max_dbz": 46,
-   "tope_km": 5.4,
+   "km": 28.4,
+   "max_dbz": 48,
+   "tope_km": 6.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Cuesta Blanca": {
-   "km": 19.5,
-   "max_dbz": 46,
-   "tope_km": 5.4,
+   "km": 17.1,
+   "max_dbz": 48,
+   "tope_km": 6.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "Santa María de Punilla": {
-   "km": 25.1,
-   "max_dbz": 46,
-   "tope_km": 3.0,
-   "cuenca_de": "Río Cosquín",
-   "nivel": "intensa"
-  },
   "Mayu Sumaj": {
-   "km": 23.6,
-   "max_dbz": 46,
-   "tope_km": 5.4,
+   "km": 21.4,
+   "max_dbz": 48,
+   "tope_km": 6.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 21.3,
-   "max_dbz": 46,
-   "tope_km": 5.4,
+   "km": 18.9,
+   "max_dbz": 48,
+   "tope_km": 6.6,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "San Roque": {
-   "km": 4.0,
-   "max_dbz": 53,
-   "tope_km": 1.8,
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 21
 }
