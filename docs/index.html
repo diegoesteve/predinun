@@ -72,6 +72,7 @@
       <div><b>Satélite SMAP de la NASA</b><span>Humedad del suelo. Llega con dos o tres días de atraso.</span><span class="act" id="act-smap"></span></div>
       <div><b>Inventario de crecidas</b><span>Eventos desde 1671, armado con notas de prensa, archivos y relatos, con la fuente de cada uno.</span><span class="act" id="act-inventario"></span></div>
       <div><b>Imágenes satelitales Sentinel, Landsat y Google Earth</b><span>Daños verificados en las crecidas de 2014 a 2016.</span></div>
+      <div><b>Radar meteorológico de Córdoba (OHMC)</b><span>Núcleos de tormenta detectados por el radar del Observatorio Hidro-Meteorológico de Córdoba, cada 10 minutos. Se consulta cada 15 minutos.</span><span class="act" id="act-radar"></span></div>
       <div><b>Relieve, población y mapas</b><span>MERIT Hydro (relieve y cauces), GHSL (población), OpenStreetMap y el GeoPortal de la Provincia (pueblos, puentes, campings).</span></div>
     </div>
 
@@ -82,6 +83,8 @@
   <section id="p-ahora" class="pagina" hidden>
     <p class="meta" id="ahora-meta">Cargando…</p>
     <div class="tarjetas" id="ahora-cuencas"></div>
+    <h2>Radar: tormentas ahora</h2>
+    <div id="radar-ahora" class="estado-hoy">Cargando…</div>
     <h2>Estaciones de la Provincia</h2>
     <p class="nota">Lluvia y nivel de los ríos de la red pública de la Provincia, consultada cada 15 minutos. Los umbrales son provisorios. Tocá una estación de la tabla para verla en el mapa.</p>
     <div id="mapa-estaciones" class="mapa"></div>
@@ -194,7 +197,7 @@
 </main>
 
 <footer>
-  Proyecto personal sin fines comerciales. Datos: Provincia de Córdoba (estaciones), Open-Meteo, NASA SMAP, Copernicus, Google Earth.
+  Proyecto personal sin fines comerciales. Datos: Provincia de Córdoba (estaciones), OHMC (radar), Open-Meteo, NASA SMAP, Copernicus, Google Earth.
   Código en <a href="https://github.com/diegoesteve/predinun">GitHub</a>, para uso no comercial (<a href="https://github.com/diegoesteve/predinun/blob/main/LICENCIAS.md">licencias</a>).
 </footer>
 

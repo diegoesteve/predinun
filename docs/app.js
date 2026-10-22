@@ -95,6 +95,7 @@ async function ahora() {
 
   const est = (e && e.estaciones) || [];
   mapas.estaciones = mapaBase('mapa-estaciones');
+  radarEnAhora();
   const marcas = new Map();
   est.filter(s => s.lat && s.lon && s.tipo !== 'otra').forEach(s => {
     const txt = s.tipo === 'rio'
@@ -424,6 +425,7 @@ function elegirLocalidad(f) {
     <div class="compartir"><button type="button" class="boton-sec" id="compartir-loc">Compartir</button>
       <a class="boton-sec" href="https://wa.me/?text=${encodeURIComponent(`${textoCompartir} ${enlace}`)}" target="_blank" rel="noopener">Enviar por WhatsApp</a></div>
     <div><b>Ahora</b> ${chipAhora(f.ahora)} · <b>Exposición</b> ${chipExpo(f.exposicion)}</div>
+    <div id="radar-loc"></div>
     ${textoCondiciones(f.condiciones)}
     ${f.razones && f.razones.length ? `<div><b>Por qué está ${esc(f.exposicion || 'en la lista')}</b><ul class="razones">${f.razones.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
     ${f.parecido_scm != null && f.parecido_scm < 1.5 ? '<div>Sus condiciones se parecen mucho a las de <b>San Carlos Minas en 1992</b>.</div>' : ''}
@@ -437,6 +439,12 @@ function elegirLocalidad(f) {
       if (navigator.share) await navigator.share({ title: textoCompartir, text: textoCompartir, url: enlace });
       else { await navigator.clipboard.writeText(enlace); ev.target.textContent = 'Link copiado'; }
     } catch (e) { /* la persona canceló */ }
+  });
+  leerRadar().then(r => {
+    const v = r && r.localidades && r.localidades[f.localidad], edad = edadRadar(r), el = document.getElementById('radar-loc');
+    if (!el || edad == null || edad > 90) return;
+    el.innerHTML = v ? `<span class="lluvia-fuerte">En este momento: tormenta ${esc(v.nivel)} a ${v.km} km, según el radar (hace ${edad} min).</span>`
+      : `<b>En este momento</b>: el radar no ve tormentas intensas cerca (hace ${edad} min).`;
   });
   caja.querySelectorAll('.ver-arroyo').forEach(b => b.addEventListener('click', () => {
     const a = f.arroyos[Number(b.dataset.i)];
@@ -626,6 +634,10 @@ async function portada() {
   const altas = a ? a.cuencas.filter(c => c.nivel === 'rojo' || c.nivel === 'naranja') : [];
   if (altas.length) h += `<p class="nota">Ahora mismo, las estaciones marcan valores altos en ${altas.map(c => esc(c.nombre)).join(', ')}. <button type="button" class="loc-link" data-ir="ahora">Ver estaciones</button></p>`;
   if (CONDICIONES) h += `<p class="nota">Para los próximos 3 días, según el pronóstico del ${esc(CONDICIONES.generado)}. Tocá una localidad para ver el detalle.</p>`;
+  const r = await leerRadar();
+  const edad = edadRadar(r);
+  if (r && edad != null && edad <= 90 && Object.keys(r.localidades || {}).length) h = `<div class="radar-ahora">${textoRadar(r, 8)}</div>` + h;
+  if (r && r.observacion) document.getElementById('act-radar').textContent = `Último dato: ${r.observacion}`;
   const caja = document.getElementById('estado-hoy');
   caja.innerHTML = h;
   caja.querySelectorAll('[data-loc]').forEach(x => x.addEventListener('click', () => irALocalidad(x.dataset.loc)));
@@ -638,4 +650,43 @@ async function portada() {
   poner('act-smap', smap && `Último dato: ${smap.slice(0, 10)}`);
   const eventos = new Set(locs.flatMap(f => (f.eventos || []).map(e => `${e.fecha}|${e.impacto}`))).size;
   poner('act-inventario', eventos && `${eventos} eventos ubicados en localidades del mapa`);
+}
+
+// ---------------------------------------------------------------- radar (OHMC)
+// docs/data/radar.json lo escribe scripts/radar_ohmc.py cada 15 minutos con los núcleos de tormenta del radar de Córdoba.
+let cargaRadar = null;
+const leerRadar = () => (cargaRadar ||= leer('radar.json'));
+const COLOR_DBZ = d => d >= 60 ? '#FF2A98' : d >= 50 ? '#FF2A0C' : d >= 40 ? '#f7a600' : '#7BB661';
+
+function edadRadar(r) {
+  if (!r || !r.observacion) return null;
+  return Math.round((Date.now() - new Date(r.observacion.replace(' ', 'T') + ':00-03:00')) / 60000);
+}
+
+function textoRadar(r, lim = 20) {
+  const edad = edadRadar(r);
+  if (edad == null) return 'Sin datos del radar por ahora.';
+  if (edad > 90) return `El último dato del radar es de hace más de una hora (${esc(r.observacion)}): puede estar fuera de servicio.`;
+  const locs = Object.entries(r.localidades || {}).sort((a, b) => b[1].max_dbz - a[1].max_dbz || a[1].km - b[1].km);
+  const hace = `hace ${edad} min`;
+  if (!locs.length) {
+    return `<div class="estado-titulo n-verde"><span class="punto"></span>Sin tormentas intensas cerca de las localidades serranas</div>` +
+      `<p class="nota">Radar de Córdoba, ${hace}${r.nucleos.length ? ` · ${r.nucleos.length} núcleos débiles o lejanos en la zona` : ''}.</p>`;
+  }
+  const muy = locs.filter(([, v]) => v.nivel === 'muy intensa').length;
+  return `<div class="estado-titulo ${muy ? 'n-rojo' : 'n-naranja'}"><span class="punto"></span>Tormenta ${muy ? 'muy intensa' : 'intensa'} cerca de ${locs.length} localidad${locs.length > 1 ? 'es' : ''} ahora</div>` +
+    (lim ? `<div class="locs">${locs.slice(0, lim).map(([n, v]) => `<button type="button" class="loc-link" data-loc="${esc(n)}" title="${esc(v.nivel)}, a ${v.km} km">${esc(n)}</button>`).join('')}${locs.length > lim ? `<span class="nota">y ${locs.length - lim} más</span>` : ''}</div>` : '') +
+    `<p class="nota">Radar de Córdoba, ${hace}. Una tormenta sobre la cuenca puede hacer crecer el arroyo en minutos, aunque en el pueblo todavía no llueva. Esto es lo que ve el radar, no un aviso oficial.</p>`;
+}
+
+async function radarEnAhora() {
+  const r = await leerRadar();
+  const caja = document.getElementById('radar-ahora');
+  caja.innerHTML = textoRadar(r) + `<p class="nota">Fuente: radar del <a href="https://webmet.ohmc.ar/" target="_blank" rel="noopener">Observatorio Hidro-Meteorológico de Córdoba (OHMC)</a>. Los puntos en el mapa son los núcleos de tormenta detectados.</p>`;
+  caja.querySelectorAll('[data-loc]').forEach(x => x.addEventListener('click', () => irALocalidad(x.dataset.loc)));
+  if (!r || edadRadar(r) == null || edadRadar(r) > 90) return;
+  r.nucleos.forEach(n => L.circleMarker([n.lat, n.lon], { radius: n.max_dbz >= 55 ? 9 : 6, color: '#16201C', weight: 1, dashArray: '2 2',
+    fillColor: COLOR_DBZ(n.max_dbz || n.dbz), fillOpacity: .75 })
+    .bindPopup(`<b>Núcleo de tormenta</b><br>Intensidad máxima: ${n.max_dbz} dBZ${n.tope_km ? `<br>Tope: ${n.tope_km} km de altura` : ''}<br>Radar de Córdoba (OHMC), ${esc(r.observacion.slice(11))}`)
+    .addTo(mapas.estaciones));
 }
