@@ -1,0 +1,35 @@
+name: Explorar visor MapasCórdoba (muestras)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  muestras:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Bajar el visor y buscar su API
+        run: |
+          mkdir m && cd m
+          curl -sSL -m 30 https://mapascordoba.gob.ar/viewer/mapa/398 -o visor.html || true
+          for js in $(grep -oE '(src|href)="[^"]+\.js"' visor.html | sed -E 's/.*="([^"]+)"/\1/' | head -10); do
+            u=$js; case $u in http*) ;; /*) u="https://mapascordoba.gob.ar$u";; *) u="https://mapascordoba.gob.ar/viewer/$u";; esac
+            curl -sSL -m 30 "$u" -o "js_$(basename $u)" || true
+          done
+          cat js_*.js 2>/dev/null | grep -oE '"(https?:)?//[^"]*"|"/[a-zA-Z0-9_./-]*(api|geoserver|wms|wfs|mapa|capa|layer)[a-zA-Z0-9_./{}-]*"' | sort -u > urls_en_js.txt || true
+          for id in 398 388 395; do
+            for p in "api/mapas/$id" "api/mapa/$id" "viewer/api/mapa/$id" "viewer/api/mapas/$id" "api/v1/mapas/$id" "api/visor/mapa/$id"; do
+              code=$(curl -sS -m 20 -o "try_${id}_$(echo $p | tr '/' '_').json" -w '%{http_code}' "https://mapascordoba.gob.ar/$p" || echo err)
+              echo "$code $p" >> intentos.txt
+            done
+          done
+          find . -name 'try_*' -size -200c -delete
+          ls -la; cat intentos.txt; head -50 urls_en_js.txt
+      - name: Guardar en la rama muestras-mapas
+        run: |
+          cd m && rm -f js_*.js
+          git init -q -b muestras-mapas && git config user.name "github-actions[bot]" && git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add . && git commit -qm "muestras MapasCórdoba" && git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" muestras-mapas
