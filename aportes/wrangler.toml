@@ -11,3 +11,7 @@ RAMA = "main"
 [[r2_buckets]]
 binding = "APORTES"
 bucket_name = "predinun-aportes"
+
+# Despertador de los workflows de GitHub (ver scheduled() en worker.js)
+[triggers]
+crons = ["*/15 * * * *", "20 */6 * * *", "35 */6 * * *"]

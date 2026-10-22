@@ -45,7 +45,35 @@ export default {
       return url.pathname === '/aportes' ? cors(env, r) : r;
     }
   },
+
+  // Despertador: GitHub no respeta los horarios de las tareas programadas en cuentas gratuitas (el monitor «cada
+  // 15 minutos» corría cada 3 a 5 horas). Cloudflare sí: en cada disparo le pide a GitHub que corra los workflows.
+  async scheduled(evento, env, ctx) {
+    ctx.waitUntil(despertar(env, evento.cron));
+  },
 };
+
+// Qué correr con cada horario de wrangler.toml: «repo:workflow» separados por coma
+const DESPERTAR = {
+  '*/15 * * * *': 'diegoesteve/predinun:monitor.yml,diegoesteve/predgra:radar.yml',
+  '20 */6 * * *': 'diegoesteve/predinun:boletin.yml',
+  '35 */6 * * *': 'diegoesteve/predgra:pronostico.yml',
+};
+
+async function despertar(env, cron) {
+  const lista = (DESPERTAR[cron] || '').split(',').filter(Boolean);
+  for (const item of lista) {
+    const [repo, workflow] = item.split(':');
+    try {
+      const r = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/${workflow}/dispatches`, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${env.GH_TOKEN}`, Accept: 'application/vnd.github+json',
+                   'User-Agent': 'predinun-despertador', 'X-GitHub-Api-Version': '2022-11-28' },
+        body: JSON.stringify({ ref: 'main' }) });
+      if (r.status !== 204) console.log('despertar', item, r.status, (await r.text()).slice(0, 200));
+    } catch (e) { console.log('despertar', item, e); }
+  }
+}
 
 // ------------------------------------------------------------------ utilidades
 const texto = (t, status = 200) => new Response(t, { status, headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
