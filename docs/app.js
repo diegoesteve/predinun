@@ -246,10 +246,24 @@ function semaforo(c, expo) {
   return 'normal';
 }
 
+// Tormenta que ve el radar en este momento: alerta si es muy intensa en un lugar expuesto o muy expuesto, o intensa
+// en uno muy expuesto; atención en el resto de los casos.
+function semaforoRadar(v, expo) {
+  if (!v) return null;
+  if (expo === 'muy expuesta' || (expo === 'expuesta' && v.nivel === 'muy intensa')) return 'alerta';
+  return 'atención';
+}
+
+let RADAR = null;
 function combinar(f) {
   const c = CONDICIONES && CONDICIONES.localidades[f.localidad];
-  const a = c && c.ahora ? c.ahora : semaforo(c, f.exposicion);   // el boletín ya lo calcula; si no, la misma regla acá
-  return { ...f, ahora: a, condiciones: c || null, orden_ahora: (ORDEN_AHORA[a] || 0) * 10 + (ORDEN_EXPO[f.exposicion] || 0),
+  const pron = c && c.ahora ? c.ahora : semaforo(c, f.exposicion);   // el boletín ya lo calcula; si no, la misma regla acá
+  const fresco = RADAR && edadRadar(RADAR) != null && edadRadar(RADAR) <= 60;
+  const tormenta = fresco ? (RADAR.localidades || {})[f.localidad] || null : null;
+  const rad = semaforoRadar(tormenta, f.exposicion);
+  const a = (ORDEN_AHORA[rad] || 0) > (ORDEN_AHORA[pron] || 0) ? rad : (pron || (fresco ? 'normal' : null));
+  return { ...f, ahora: a, ahora_por: a && a === rad && rad !== pron ? 'tormenta' : 'pronóstico', ahora_pronostico: pron, tormenta,
+           condiciones: c || null, orden_ahora: (ORDEN_AHORA[a] || 0) * 10 + (ORDEN_EXPO[f.exposicion] || 0),
            orden_expo: ORDEN_EXPO[f.exposicion] || 0 };
 }
 
@@ -257,7 +271,8 @@ function dibujarCapaAhora() {
   const con = LOCS.filter(f => f.ahora === 'alerta' || f.ahora === 'atención');
   capaAhora = L.layerGroup(con.map(f => L.circleMarker([f.lat, f.lon], { radius: f.ahora === 'alerta' ? 12 : 9, color: '#fff', weight: 2,
     fillColor: COLOR_AHORA[f.ahora], fillOpacity: .95 }).bindPopup(`<b>${esc(f.localidad)}</b> ${chipAhora(f.ahora)}<br>` +
-    `Hasta ${f.condiciones.max_3h_mm} mm en 3 horas en los próximos 3 días.<br><button type="button" class="loc-link" data-ficha="${esc(f.localidad)}">Ver detalle</button>`)));
+    (f.ahora_por === 'tormenta' ? `Tormenta ${esc(f.tormenta.nivel)} a ${f.tormenta.km} km en este momento (radar).<br>` : '') +
+    (f.condiciones ? `Hasta ${f.condiciones.max_3h_mm} mm en 3 horas en los próximos 3 días.<br>` : '') + `<button type="button" class="loc-link" data-ficha="${esc(f.localidad)}">Ver detalle</button>`)));
   capaAhora.addTo(mapas.riesgo);
   if (!mapas.riesgo._fichaEnPopup) {
     mapas.riesgo._fichaEnPopup = true;
@@ -275,7 +290,7 @@ function dibujarCapaAhora() {
     }
   }
   const l = document.createElement('label');
-  l.innerHTML = `<input type="checkbox" checked><span class="punto" style="--c:${COLOR_AHORA.alerta}"></span>Alerta o atención por lluvia, próximos 3 días (${con.length})`;
+  l.innerHTML = `<input type="checkbox" checked><span class="punto" style="--c:${COLOR_AHORA.alerta}"></span>Alerta o atención: tormenta ahora o lluvia pronosticada (${con.length})`;
   l.querySelector('input').addEventListener('change', ev => ev.target.checked ? capaAhora.addTo(mapas.riesgo) : capaAhora.remove());
   document.getElementById('capas').prepend(l);
   const n = { alerta: con.filter(f => f.ahora === 'alerta').length, 'atención': con.filter(f => f.ahora === 'atención').length };
@@ -286,8 +301,8 @@ function dibujarCapaAhora() {
 
 let cargaLocs = null;
 function cargarLocs() {
-  cargaLocs ||= Promise.all([leer('localidades.json'), leer('condiciones_localidades.json')]).then(([d, c]) => {
-    CONDICIONES = c;
+  cargaLocs ||= Promise.all([leer('localidades.json'), leer('condiciones_localidades.json'), leerRadar()]).then(([d, c, r]) => {
+    CONDICIONES = c; RADAR = r;
     LOCS = d ? d.localidades.map(combinar) : [];
     return LOCS;
   });
@@ -425,6 +440,7 @@ function elegirLocalidad(f) {
     <div class="compartir"><button type="button" class="boton-sec" id="compartir-loc">Compartir</button>
       <a class="boton-sec" href="https://wa.me/?text=${encodeURIComponent(`${textoCompartir} ${enlace}`)}" target="_blank" rel="noopener">Enviar por WhatsApp</a></div>
     <div><b>Ahora</b> ${chipAhora(f.ahora)} · <b>Exposición</b> ${chipExpo(f.exposicion)}</div>
+    ${f.ahora_por === 'tormenta' ? `<div class="lluvia-fuerte">Está en ${esc(f.ahora)} por la tormenta que ve el radar en este momento${f.ahora_pronostico ? `; por el pronóstico de 3 días estaría en ${esc(f.ahora_pronostico)}` : ''}.</div>` : ''}
     <div id="radar-loc"></div>
     ${textoCondiciones(f.condiciones)}
     ${f.razones && f.razones.length ? `<div><b>Por qué está ${esc(f.exposicion || 'en la lista')}</b><ul class="razones">${f.razones.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
@@ -627,13 +643,13 @@ async function portada() {
   let h;
   if (!CONDICIONES) h = '<p>Todavía no hay pronóstico por localidad.</p>';
   else {
-    h = `<div class="estado-titulo n-rojo"><span class="punto"></span>${plural(alerta.length, 'localidad en alerta', 'localidades en alerta')}${alerta.length ? ': se espera lluvia fuerte' : ''}</div>${alerta.length ? lista(alerta) : ''}` +
+    h = `<div class="estado-titulo n-rojo"><span class="punto"></span>${plural(alerta.length, 'localidad en alerta', 'localidades en alerta')}</div>${alerta.length ? lista(alerta) : ''}` +
         `<div class="estado-titulo n-amarillo"><span class="punto"></span>${plural(atencion.length, 'localidad en atención', 'localidades en atención')}</div>${atencion.length ? lista(atencion) : ''}` +
         `<div class="estado-titulo n-verde"><span class="punto"></span>${plural(normales.length, 'localidad normal', 'localidades normales')}${!alerta.length && !atencion.length ? ': no se espera lluvia fuerte en los próximos 3 días' : ''}</div>`;
   }
   const altas = a ? a.cuencas.filter(c => c.nivel === 'rojo' || c.nivel === 'naranja') : [];
   if (altas.length) h += `<p class="nota">Ahora mismo, las estaciones marcan valores altos en ${altas.map(c => esc(c.nombre)).join(', ')}. <button type="button" class="loc-link" data-ir="ahora">Ver estaciones</button></p>`;
-  if (CONDICIONES) h += `<p class="nota">Para los próximos 3 días, según el pronóstico del ${esc(CONDICIONES.generado)}. Tocá una localidad para ver el detalle.</p>`;
+  if (CONDICIONES) h += `<p class="nota">El semáforo combina el pronóstico de los próximos 3 días (del ${esc(CONDICIONES.generado)}) con las tormentas que ve el radar en este momento. Tocá una localidad para ver el detalle.</p>`;
   const r = await leerRadar();
   const edad = edadRadar(r);
   if (r && edad != null && edad <= 90 && Object.keys(r.localidades || {}).length) h = `<div class="radar-ahora">${textoRadar(r, 8)}</div>` + h;
@@ -654,8 +670,10 @@ async function portada() {
 
 // ---------------------------------------------------------------- radar (OHMC)
 // docs/data/radar.json lo escribe scripts/radar_ohmc.py cada 15 minutos con los núcleos de tormenta del radar de Córdoba.
-let cargaRadar = null;
-const leerRadar = () => (cargaRadar ||= leer('radar.json'));
+function leerRadar() {   // declarada como función para poder usarla antes de esta línea
+  leerRadar.carga ||= leer('radar.json');
+  return leerRadar.carga;
+}
 const COLOR_DBZ = d => d >= 60 ? '#FF2A98' : d >= 50 ? '#FF2A0C' : d >= 40 ? '#f7a600' : '#7BB661';
 
 function edadRadar(r) {
