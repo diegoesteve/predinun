@@ -37,6 +37,9 @@ jobs:
         run: python scripts/correr_monitor.py
       - name: Núcleos de tormenta del radar de Córdoba (OHMC)
         continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/radar_ohmc.py
       - uses: actions/cache/save@v4
         if: always()
@@ -48,7 +51,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data/ahora.json docs/data/estaciones.json data/monitor/estado_zonas.json data/historia
-          git add docs/data/radar.json 2>/dev/null || true
+          for f in docs/data/radar.json data/monitor/radar_avisados.json; do [ -f "$f" ] && git add "$f"; done; true
           git diff --cached --quiet && exit 0
           git commit -m "monitor: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push

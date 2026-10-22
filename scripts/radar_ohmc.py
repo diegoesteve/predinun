@@ -167,6 +167,54 @@ def main():
         json.dump(salida, fh, ensure_ascii=False, indent=1)
     print(f"radar.json: {salida['radar']} {salida['observacion']}, {len(salida['nucleos'])} núcleos en las sierras, "
           f"{len(intensos)} intensos, {len(salida['localidades'])} localidades con tormenta intensa cerca")
+    avisar_alertas(salida, locs, ahora)
+
+
+SITIO = os.environ.get('SITIO_URL', 'https://diegoesteve.github.io/predinun/')
+REAVISO_H = 3          # no repetir el aviso de una misma localidad antes de 3 horas
+VIGENCIA_AVISO_MIN = 30
+
+
+def slug(nombre):
+    import re
+    import unicodedata
+    s = ''.join(c for c in unicodedata.normalize('NFD', nombre) if not unicodedata.combining(c)).lower()
+    return re.sub(r'[^a-z0-9]+', '-', s).strip('-')
+
+
+def avisar_alertas(salida, locs, ahora):
+    """Telegram: localidades que pasan a alerta por una tormenta sobre su cuenca (misma regla que el semáforo de la
+    página: tormenta intensa en un lugar muy expuesto, o muy intensa en uno expuesto). Una vez por localidad cada 3 h."""
+    token, chat = os.environ.get('TELEGRAM_TOKEN'), os.environ.get('TELEGRAM_CHAT_ID')
+    if salida.get('minutos') is None or salida['minutos'] > VIGENCIA_AVISO_MIN:
+        return
+    expo = {f['localidad']: f.get('exposicion') for f in locs}
+    alerta = {n: v for n, v in salida['localidades'].items()
+              if expo.get(n) == 'muy expuesta' or (expo.get(n) == 'expuesta' and v['nivel'] == 'muy intensa')}
+    ruta = os.path.join(cfg.DATA, 'monitor', 'radar_avisados.json')
+    avisados = cfg.leer_json(os.path.join('monitor', 'radar_avisados.json')) or {}
+    limite = (ahora - timedelta(hours=REAVISO_H)).isoformat()
+    avisados = {k: t for k, t in avisados.items() if t > limite}
+    nuevas = {n: v for n, v in alerta.items() if n not in avisados}
+    if nuevas:
+        lineas = []
+        for n, v in sorted(nuevas.items(), key=lambda x: (-x[1]['max_dbz'], x[1]['km'])):
+            donde = f"sobre la cuenca del {v['cuenca_de']}" if v.get('cuenca_de') else (f"sobre la {v['subcuenca']}" if v.get('subcuenca') else f"a {v['km']} km")
+            lineas.append(f"• {n}: tormenta {v['nivel']} {donde} ({v['max_dbz']} dBZ). {SITIO}l/{slug(n)}/")
+        texto = (f"🔴 Alerta por tormenta (radar de Córdoba, {salida['observacion'][11:]} h)\n" + '\n'.join(lineas) +
+                 '\n\nUna tormenta sobre la cuenca puede hacer crecer el arroyo en minutos. Monitor experimental, no oficial.')
+        print(texto)
+        if token and chat:
+            try:
+                requests.post(f'https://api.telegram.org/bot{token}/sendMessage',
+                              data={'chat_id': chat, 'text': texto, 'disable_web_page_preview': 'true'}, timeout=20)
+            except Exception as e:
+                print('No se pudo enviar a Telegram:', e)
+        for n in nuevas:
+            avisados[n] = ahora.isoformat()
+    os.makedirs(os.path.dirname(ruta), exist_ok=True)
+    with open(ruta, 'w', encoding='utf-8') as fh:
+        json.dump(avisados, fh, ensure_ascii=False, indent=1)
 
 
 if __name__ == '__main__':
