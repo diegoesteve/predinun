@@ -1,108 +1,141 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 11:16",
+ "consultado": "2026-10-23 11:31",
  "radar": "RMA1",
- "observacion": "2026-10-23 10:59",
+ "observacion": "2026-10-23 11:18",
  "nucleos": [
   {
-   "lat": -31.3148,
-   "lon": -64.4178,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 2.4
+   "lat": -31.3419,
+   "lon": -64.3748,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 1.2
   },
   {
    "lat": -31.405,
    "lon": -64.4178,
-   "dbz": 44,
-   "max_dbz": 51,
+   "dbz": 46,
+   "max_dbz": 46,
    "tope_km": 1.2
   },
   {
-   "lat": -31.5581,
-   "lon": -64.676,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 1.8
+   "lat": -31.5401,
+   "lon": -64.7406,
+   "dbz": 45,
+   "max_dbz": 47,
+   "tope_km": 6.6
+  },
+  {
+   "lat": -31.5761,
+   "lon": -64.5469,
+   "dbz": 45,
+   "max_dbz": 48,
+   "tope_km": 1.2
   },
   {
    "lat": -31.4951,
    "lon": -64.7836,
    "dbz": 44,
-   "max_dbz": 47,
-   "tope_km": 7.2
+   "max_dbz": 50,
+   "tope_km": 5.4
   },
   {
-   "lat": -31.6121,
-   "lon": -64.7191,
-   "dbz": 42,
-   "max_dbz": 47,
+   "lat": -31.4771,
+   "lon": -64.5039,
+   "dbz": 44,
+   "max_dbz": 44,
    "tope_km": 2.4
+  },
+  {
+   "lat": -31.2246,
+   "lon": -64.7298,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.2787,
+   "lon": -64.7083,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.2878,
+   "lon": -64.4071,
+   "dbz": 42,
+   "max_dbz": 43,
+   "tope_km": 1.2
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 47
+   "nucleos": 2,
+   "max_dbz": 50
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
    "km": 29.1,
-   "max_dbz": 47,
-   "tope_km": 7.2,
+   "max_dbz": 50,
+   "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Cuesta Blanca": {
    "km": 18.6,
-   "max_dbz": 47,
-   "tope_km": 7.2,
+   "max_dbz": 50,
+   "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "La Calera": {
-   "km": 9.0,
-   "max_dbz": 51,
+   "km": 3.0,
+   "max_dbz": 50,
    "tope_km": 1.2,
-   "cuenca_de": "Arroyo Canada De Molina",
-   "nivel": "intensa"
-  },
-  "Anisacate": {
-   "km": 31.0,
-   "max_dbz": 47,
-   "tope_km": 2.4,
-   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
   "Mayu Sumaj": {
    "km": 22.7,
-   "max_dbz": 47,
-   "tope_km": 7.2,
+   "max_dbz": 50,
+   "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Tala Huasi": {
    "km": 20.4,
-   "max_dbz": 47,
-   "tope_km": 7.2,
+   "max_dbz": 50,
+   "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "La Serranita": {
-   "km": 28.1,
-   "max_dbz": 47,
-   "tope_km": 2.4,
-   "cuenca_de": "Río Anizacate",
+  "Dique Chico": {
+   "km": 27.6,
+   "max_dbz": 48,
+   "tope_km": 1.2,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "La Paisanita": {
-   "km": 25.4,
-   "max_dbz": 47,
-   "tope_km": 2.4,
-   "cuenca_de": "Río Anizacate",
+  "Falda del Carmen": {
+   "km": 8.5,
+   "max_dbz": 48,
+   "tope_km": 1.2,
+   "cuenca_de": "Arroyo Almacuna",
+   "nivel": "intensa"
+  },
+  "Villa Parque Santa Ana": {
+   "km": 17.4,
+   "max_dbz": 48,
+   "tope_km": 1.2,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Las Jarillas": {
+   "km": 4.7,
+   "max_dbz": 48,
+   "tope_km": 1.2,
    "nivel": "intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
