@@ -87,13 +87,21 @@ async function ahora() {
   const meta = document.getElementById('ahora-meta');
   if (!a) { meta.textContent = 'Todavía no hay datos: el monitor no corrió.'; return; }
   meta.textContent = `Estaciones: ${a.actualizado} · Pronóstico: ${a.boletin_generado || 'sin boletín'}`;
-  document.getElementById('ahora-cuencas').innerHTML = a.cuencas.map(c => `
-    <article class="tarjeta ${clase(c.nivel)}"><div class="franja"></div><div class="cuerpo">
+  // Las tarjetas salen de las estaciones y el pronóstico; si el radar ve una tormenta sobre la cuenca, se suma acá
+  // para que no diga «normal» mientras más abajo el radar avisa por los pueblos de esa misma cuenca.
+  const r = await leerRadar(), radarFresco = r && edadRadar(r) != null && edadRadar(r) <= 60;
+  document.getElementById('ahora-cuencas').innerHTML = a.cuencas.map(c => {
+    const t = radarFresco && r.cuencas && r.cuencas[c.cuenca];
+    const sube = t && (c.nivel === 'verde' || c.nivel === 'normal');
+    return `
+    <article class="tarjeta ${clase(sube ? 'amarillo' : c.nivel)}"><div class="franja"></div><div class="cuerpo">
       <div class="nombre">${esc(c.nombre)}</div>
-      <div class="nivel"><span class="punto"></span>${esc(TEXTO[c.nivel])}</div>
-      <div class="det">${esc(c.motivo)}</div>
+      <div class="nivel"><span class="punto"></span>${sube ? 'atención' : esc(TEXTO[c.nivel])}</div>
+      ${t ? `<div class="det"><b>Radar: tormenta intensa sobre la cuenca ahora</b> (${t.max_dbz} dBZ).${sube ? ' Las estaciones todavía no miden lluvia fuerte ni crecida.' : ''}</div>` : `<div class="det">${esc(c.motivo)}</div>`}
+      ${t && !sube ? `<div class="det">${esc(c.motivo)}</div>` : ''}
       ${c.suelo ? `<div class="det">Suelo: ${esc(c.suelo)}</div>` : ''}
-    </div></article>`).join('');
+    </div></article>`;
+  }).join('');
 
   const est = (e && e.estaciones) || [];
   mapas.estaciones = mapaBase('mapa-estaciones');
