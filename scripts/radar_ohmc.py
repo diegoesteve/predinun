@@ -105,7 +105,9 @@ def main():
             salida['nucleos'].append({'lat': round(lat, 4), 'lon': round(lon, 4), 'dbz': p.get('intensity_dbz'),
                                       'max_dbz': maximo, 'tope_km': tope})
 
-    intensos = [n for n in salida['nucleos'] if (n['max_dbz'] or 0) >= DBZ_INTENSA]
+    from alerta.ecos import filtrar   # saca ecos fijos del terreno y núcleos de tope bajo (ver alerta/ecos.py)
+    validos = filtrar(salida['nucleos'])
+    intensos = [n for n in validos if (n['max_dbz'] or 0) >= DBZ_INTENSA]
     # Cuencas del boletín
     cuencas = (cfg.leer_json('cuencas.geojson') or {}).get('features', [])
     for c in cuencas:
