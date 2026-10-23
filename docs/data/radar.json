@@ -1,94 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 11:46",
+ "consultado": "2026-10-23 12:01",
  "radar": "RMA1",
- "observacion": "2026-10-23 11:27",
+ "observacion": "2026-10-23 11:45",
  "nucleos": [
   {
-   "lat": -31.405,
+   "lat": -31.3329,
    "lon": -64.4178,
-   "dbz": 45,
-   "max_dbz": 50,
-   "tope_km": 0.6
-  },
-  {
-   "lat": -31.3148,
-   "lon": -64.4178,
-   "dbz": 45,
-   "max_dbz": 48,
+   "dbz": 44,
+   "max_dbz": 44,
    "tope_km": 2.4
   },
   {
    "lat": -31.4861,
    "lon": -64.7836,
    "dbz": 44,
-   "max_dbz": 51,
-   "tope_km": 7.2
+   "max_dbz": 44,
+   "tope_km": 5.4
   },
   {
-   "lat": -31.4771,
-   "lon": -64.5039,
+   "lat": -31.405,
+   "lon": -64.4286,
    "dbz": 43,
    "max_dbz": 43,
-   "tope_km": 2.4
+   "tope_km": 0.6
   },
   {
-   "lat": -31.2787,
-   "lon": -64.7083,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 4.8
+   "lat": -31.4951,
+   "lon": -64.7298,
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 3.0
   },
   {
-   "lat": -31.6031,
-   "lon": -64.6868,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 2.4
+   "lat": -31.5401,
+   "lon": -64.7406,
+   "dbz": 41,
+   "max_dbz": 41,
+   "tope_km": 6.6
   }
  ],
- "cuencas": {
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 51
-  }
- },
- "localidades": {
-  "Villa Carlos Paz": {
-   "km": 28.8,
-   "max_dbz": 51,
-   "tope_km": 7.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 18.5,
-   "max_dbz": 51,
-   "tope_km": 7.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "La Calera": {
-   "km": 9.0,
-   "max_dbz": 50,
-   "tope_km": 0.6,
-   "cuenca_de": "Arroyo Canada De Molina",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 22.5,
-   "max_dbz": 51,
-   "tope_km": 7.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Tala Huasi": {
-   "km": 20.3,
-   "max_dbz": 51,
-   "tope_km": 7.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  }
- },
- "minutos": 19
+ "cuencas": {},
+ "localidades": {},
+ "minutos": 16
 }
