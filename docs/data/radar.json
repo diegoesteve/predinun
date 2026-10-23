@@ -1,19 +1,19 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 00:01",
+ "consultado": "2026-10-23 00:16",
  "radar": "RMA1",
- "observacion": "2026-10-22 23:45",
+ "observacion": "2026-10-23 00:03",
  "nucleos": [
   {
-   "lat": -31.3148,
+   "lat": -31.3329,
    "lon": -64.4178,
    "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 2.4
+   "max_dbz": 51,
+   "tope_km": 3.0
   },
   {
-   "lat": -31.4861,
-   "lon": -64.7836,
+   "lat": -31.45,
+   "lon": -64.7944,
    "dbz": 42,
    "max_dbz": 42,
    "tope_km": 5.4
@@ -21,13 +21,12 @@
  ],
  "cuencas": {},
  "localidades": {
-  "La Calera": {
-   "km": 6.5,
-   "max_dbz": 45,
-   "tope_km": 2.4,
-   "cuenca_de": "Arroyo La Cascada",
+  "San Roque": {
+   "km": 4.0,
+   "max_dbz": 51,
+   "tope_km": 3.0,
    "nivel": "intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
