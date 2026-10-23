@@ -1,36 +1,29 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 05:46",
+ "consultado": "2026-10-23 06:01",
  "radar": "RMA1",
- "observacion": "2026-10-23 05:31",
+ "observacion": "2026-10-23 05:49",
  "nucleos": [
   {
-   "lat": -30.7629,
-   "lon": -64.0521,
+   "lat": -31.1613,
+   "lon": -64.235,
    "dbz": 50,
-   "max_dbz": 64,
+   "max_dbz": 63,
    "tope_km": 9.6
   },
   {
-   "lat": -31.1433,
-   "lon": -64.4071,
-   "dbz": 50,
-   "max_dbz": 63,
-   "tope_km": 12.0
+   "lat": -31.1704,
+   "lon": -64.5039,
+   "dbz": 46,
+   "max_dbz": 56,
+   "tope_km": 7.8
   },
   {
-   "lat": -31.1162,
-   "lon": -64.6545,
-   "dbz": 47,
-   "max_dbz": 59,
-   "tope_km": 8.4
-  },
-  {
-   "lat": -31.08,
-   "lon": -64.8266,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 5.4
+   "lat": -31.3329,
+   "lon": -64.4178,
+   "dbz": 46,
+   "max_dbz": 46,
+   "tope_km": 4.2
   },
   {
    "lat": -31.2787,
@@ -40,119 +33,61 @@
    "tope_km": 2.4
   },
   {
-   "lat": -31.2246,
-   "lon": -64.7298,
+   "lat": -30.8174,
+   "lon": -63.9015,
    "dbz": 45,
-   "max_dbz": 45,
+   "max_dbz": 54,
+   "tope_km": 6.0
+  },
+  {
+   "lat": -31.5041,
+   "lon": -64.7728,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 6.6
+  },
+  {
+   "lat": -31.2336,
+   "lon": -64.7191,
+   "dbz": 42,
+   "max_dbz": 42,
    "tope_km": 2.4
   },
   {
-   "lat": -31.5581,
-   "lon": -64.1919,
-   "dbz": 44,
+   "lat": -31.396,
+   "lon": -64.4286,
+   "dbz": 42,
    "max_dbz": 44,
    "tope_km": 1.8
-  },
-  {
-   "lat": -31.2065,
-   "lon": -64.9665,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 3.6
-  },
-  {
-   "lat": -31.5131,
-   "lon": -64.7621,
-   "dbz": 43,
-   "max_dbz": 46,
-   "tope_km": 4.2
-  },
-  {
-   "lat": -31.0528,
-   "lon": -65.4506,
-   "dbz": 42,
-   "max_dbz": 42,
-   "tope_km": 5.4
-  },
-  {
-   "lat": -30.8355,
-   "lon": -64.2457,
-   "dbz": 42,
-   "max_dbz": 42,
-   "tope_km": 3.0
   }
  ],
  "cuencas": {
-  "SierrasChicas": {
-   "nucleos": 1,
-   "max_dbz": 63
-  },
   "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 46
-  },
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 46
+   "nucleos": 2,
+   "max_dbz": 56
   }
  },
  "localidades": {
-  "Rio Ceballos": {
-   "km": 4.2,
-   "max_dbz": 63,
-   "tope_km": 12.0,
-   "cuenca_de": "Arroyo Los Condores",
-   "nivel": "muy intensa"
-  },
-  "Villa Carlos Paz": {
-   "km": 27.9,
-   "max_dbz": 46,
-   "tope_km": 4.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Unquillo": {
-   "km": 12.8,
-   "max_dbz": 63,
-   "tope_km": 12.0,
-   "cuenca_de": "Rio Ceballos",
-   "nivel": "muy intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 16.9,
-   "max_dbz": 46,
-   "tope_km": 4.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
   "Santa María de Punilla": {
-   "km": 24.0,
-   "max_dbz": 46,
-   "tope_km": 2.4,
+   "km": 11.1,
+   "max_dbz": 56,
+   "tope_km": 7.8,
    "cuenca_de": "Río Cosquín",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
-  "Mayu Sumaj": {
-   "km": 21.1,
-   "max_dbz": 46,
-   "tope_km": 4.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Tala Huasi": {
-   "km": 18.7,
-   "max_dbz": 46,
-   "tope_km": 4.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+  "Casa Grande": {
+   "km": 2.9,
+   "max_dbz": 56,
+   "tope_km": 7.8,
+   "nivel": "muy intensa"
   },
   "San Roque": {
-   "km": 24.0,
-   "max_dbz": 46,
-   "tope_km": 2.4,
+   "km": 18.7,
+   "max_dbz": 56,
+   "tope_km": 7.8,
    "cuenca_de": "Lago San Roque",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
