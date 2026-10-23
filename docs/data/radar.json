@@ -1,59 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 07:31",
+ "consultado": "2026-10-23 07:46",
  "radar": "RMA1",
- "observacion": "2026-10-23 07:11",
+ "observacion": "2026-10-23 07:29",
  "nucleos": [
   {
-   "lat": -31.5041,
-   "lon": -64.7621,
-   "dbz": 46,
-   "max_dbz": 46,
-   "tope_km": 5.4
+   "lat": -31.3148,
+   "lon": -64.4178,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 3.0
   },
   {
-   "lat": -31.378,
+   "lat": -31.3689,
    "lon": -64.4071,
-   "dbz": 42,
-   "max_dbz": 42,
+   "dbz": 45,
+   "max_dbz": 50,
    "tope_km": 2.4
+  },
+  {
+   "lat": -31.5041,
+   "lon": -64.7728,
+   "dbz": 44,
+   "max_dbz": 44,
+   "tope_km": 6.6
   }
  ],
- "cuencas": {
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 46
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 27.5,
-   "max_dbz": 46,
-   "tope_km": 5.4,
-   "cuenca_de": "Rio San Antonio",
+  "La Calera": {
+   "km": 2.3,
+   "max_dbz": 50,
+   "tope_km": 2.4,
+   "cuenca_de": "Rio Suquia",
    "nivel": "intensa"
   },
-  "Cuesta Blanca": {
-   "km": 16.7,
-   "max_dbz": 46,
-   "tope_km": 5.4,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 20.9,
-   "max_dbz": 46,
-   "tope_km": 5.4,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Tala Huasi": {
-   "km": 18.5,
-   "max_dbz": 46,
-   "tope_km": 5.4,
-   "cuenca_de": "Rio San Antonio",
+  "San Roque": {
+   "km": 3.8,
+   "max_dbz": 50,
+   "tope_km": 2.4,
    "nivel": "intensa"
   }
  },
- "minutos": 20
+ "minutos": 16
 }
