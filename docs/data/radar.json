@@ -1,46 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 12:01",
+ "consultado": "2026-10-23 12:16",
  "radar": "RMA1",
- "observacion": "2026-10-23 11:45",
+ "observacion": "2026-10-23 12:03",
  "nucleos": [
   {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 44,
-   "max_dbz": 44,
+   "lat": -31.3689,
+   "lon": -64.4071,
+   "dbz": 45,
+   "max_dbz": 45,
    "tope_km": 2.4
   },
   {
-   "lat": -31.4861,
-   "lon": -64.7836,
+   "lat": -31.4771,
+   "lon": -64.7944,
    "dbz": 44,
    "max_dbz": 44,
    "tope_km": 5.4
   },
   {
-   "lat": -31.405,
-   "lon": -64.4286,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 0.6
-  },
-  {
-   "lat": -31.4951,
-   "lon": -64.7298,
+   "lat": -31.63,
+   "lon": -64.6975,
    "dbz": 42,
    "max_dbz": 42,
-   "tope_km": 3.0
-  },
-  {
-   "lat": -31.5401,
-   "lon": -64.7406,
-   "dbz": 41,
-   "max_dbz": 41,
-   "tope_km": 6.6
+   "tope_km": 3.6
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 16
+ "localidades": {
+  "La Calera": {
+   "km": 2.3,
+   "max_dbz": 45,
+   "tope_km": 2.4,
+   "cuenca_de": "Rio Suquia",
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 3.8,
+   "max_dbz": 45,
+   "tope_km": 2.4,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 13
 }
