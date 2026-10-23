@@ -1,86 +1,100 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 21:46",
+ "consultado": "2026-10-22 22:01",
  "radar": "RMA1",
- "observacion": "2026-10-22 21:28",
+ "observacion": "2026-10-22 21:46",
  "nucleos": [
   {
    "lat": -31.378,
    "lon": -64.4071,
-   "dbz": 48,
-   "max_dbz": 48,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 1.8
+  },
+  {
+   "lat": -31.2787,
+   "lon": -64.7083,
+   "dbz": 44,
+   "max_dbz": 44,
    "tope_km": 2.4
   },
   {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 3.0
+   "lat": -31.4591,
+   "lon": -64.7944,
+   "dbz": 43,
+   "max_dbz": 50,
+   "tope_km": 5.4
   },
   {
-   "lat": -31.2246,
-   "lon": -64.7298,
+   "lat": -31.2336,
+   "lon": -64.3533,
    "dbz": 43,
    "max_dbz": 43,
    "tope_km": 2.4
   },
   {
-   "lat": -31.2787,
-   "lon": -64.7083,
+   "lat": -31.5131,
+   "lon": -64.7513,
    "dbz": 42,
    "max_dbz": 42,
-   "tope_km": 2.4
+   "tope_km": 5.4
   },
   {
-   "lat": -31.2697,
-   "lon": -64.2565,
-   "dbz": 42,
-   "max_dbz": 46,
-   "tope_km": 3.0
+   "lat": -31.2155,
+   "lon": -64.7298,
+   "dbz": 40,
+   "max_dbz": 40,
+   "tope_km": 2.4
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "SanAntonio_CPaz": {
+   "nucleos": 1,
+   "max_dbz": 50
+  }
+ },
  "localidades": {
-  "Cordoba": {
-   "km": 11.5,
-   "max_dbz": 46,
-   "tope_km": 3.0,
-   "cuenca_de": "Canal",
+  "Villa Carlos Paz": {
+   "km": 29.0,
+   "max_dbz": 50,
+   "tope_km": 5.4,
+   "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "Villa Allende": {
-   "km": 4.4,
-   "max_dbz": 46,
-   "tope_km": 3.0,
-   "nivel": "intensa"
-  },
-  "Mendiolaza": {
-   "km": 3.4,
-   "max_dbz": 46,
-   "tope_km": 3.0,
+  "Cuesta Blanca": {
+   "km": 19.6,
+   "max_dbz": 50,
+   "tope_km": 5.4,
+   "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "La Calera": {
    "km": 2.8,
-   "max_dbz": 48,
-   "tope_km": 2.4,
+   "max_dbz": 45,
+   "tope_km": 1.8,
    "cuenca_de": "Rio Suquia",
+   "nivel": "intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 23.4,
+   "max_dbz": 50,
+   "tope_km": 5.4,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Tala Huasi": {
+   "km": 21.3,
+   "max_dbz": 50,
+   "tope_km": 5.4,
+   "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "San Roque": {
    "km": 4.2,
-   "max_dbz": 48,
-   "tope_km": 2.4,
-   "nivel": "intensa"
-  },
-  "El Gateado": {
-   "km": 15.3,
-   "max_dbz": 46,
-   "tope_km": 3.0,
-   "cuenca_de": "sin nombre",
+   "max_dbz": 45,
+   "tope_km": 1.8,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
