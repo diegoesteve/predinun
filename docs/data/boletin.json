@@ -1,7 +1,7 @@
 {
- "generado": "2026-10-23 08:00",
+ "generado": "2026-10-23 09:00",
  "horas": 48,
- "smap_atraso_dias": 2.5,
+ "smap_atraso_dias": 2.6,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
@@ -20,10 +20,10 @@
      "cuando": "2026-10-23 23:00"
     },
     "ECMWF": {
-     "max_3h_mm": 10.8,
+     "max_3h_mm": 5.8,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-24 06:00"
+     "cuando": "2026-10-24 10:00"
     }
    },
    "ensambles": {
@@ -31,7 +31,7 @@
     "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
-   "nivel": "amarillo",
+   "nivel": "verde",
    "nivel_por_lluvia": "verde",
    "suelo": {
     "smap_m3m3": 0.118,
@@ -41,7 +41,6 @@
     "es_estimado": false,
     "estado": "saturado"
    },
-   "agravado_por_suelo": true,
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
@@ -52,33 +51,14 @@
     "nubosidad_ult_media": 71,
     "nubosidad_ult_normal": 42,
     "dias_nublados_ult": 6,
-    "et0_prox_mm": 26.2,
-    "et0_prox_pct": 78
+    "et0_prox_mm": 25.8,
+    "et0_prox_pct": 77
    }
   },
   {
    "cuenca": "Cosquin",
    "nombre": "Cosquín",
-   "modelos": {
-    "GFS": {
-     "max_3h_mm": 0.6,
-     "umbral_mm": 13.0,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-24 11:00"
-    },
-    "ICON": {
-     "max_3h_mm": 0.5,
-     "umbral_mm": 12.3,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-24 00:00"
-    },
-    "ECMWF": {
-     "max_3h_mm": 4.1,
-     "umbral_mm": 10.6,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-24 07:00"
-    }
-   },
+   "modelos": {},
    "ensambles": {
     "ECMWF ENS": 0.0,
     "GFS ENS": 0.0,
@@ -90,7 +70,7 @@
     "smap_m3m3": 0.129,
     "smap_percentil": 97,
     "smap_fecha": "2026-10-20 22:30 UTC",
-    "estimado_hoy_m3m3": 0.135,
+    "estimado_hoy_m3m3": 0.136,
     "estimado_hoy_percentil": 99,
     "percentil": 97,
     "es_estimado": false,
@@ -119,16 +99,9 @@
      "umbral_mm": 10.1,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-24 14:00"
-    },
-    "ICON": {
-     "max_3h_mm": 3.2,
-     "umbral_mm": 9.7,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-24 00:00"
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.0,
     "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
@@ -154,8 +127,8 @@
     "nubosidad_ult_media": 82,
     "nubosidad_ult_normal": 44,
     "dias_nublados_ult": 9,
-    "et0_prox_mm": 23.1,
-    "et0_prox_pct": 74
+    "et0_prox_mm": 23.5,
+    "et0_prox_pct": 75
    }
   },
   {
@@ -175,7 +148,7 @@
      "cuando": "2026-10-24 00:00"
     },
     "ECMWF": {
-     "max_3h_mm": 1.2,
+     "max_3h_mm": 3.0,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-24 06:00"
@@ -192,6 +165,8 @@
     "smap_m3m3": 0.175,
     "smap_percentil": 85,
     "smap_fecha": "2026-10-20 22:30 UTC",
+    "estimado_hoy_m3m3": 0.178,
+    "estimado_hoy_percentil": 89,
     "percentil": 85,
     "es_estimado": false,
     "estado": "saturado"
@@ -206,8 +181,8 @@
     "nubosidad_ult_media": 73,
     "nubosidad_ult_normal": 42,
     "dias_nublados_ult": 7,
-    "et0_prox_mm": 28.8,
-    "et0_prox_pct": 85
+    "et0_prox_mm": 27.5,
+    "et0_prox_pct": 81
    }
   }
  ],
@@ -317,24 +292,24 @@
      0.0,
      0.0,
      0.0,
+     0.03,
+     0.03,
+     0.08,
      0.02,
-     0.02,
-     0.05,
-     0.01,
-     0.02,
-     0.07
+     0.03,
+     0.11
     ],
     "mm": [
-     0.7,
-     3.1,
+     1.0,
+     3.8,
      0.1,
      0.1,
-     1.7,
-     0.5,
+     2.3,
      0.8,
-     0.1,
-     0.6,
-     2.5
+     1.2,
+     0.2,
+     0.8,
+     3.7
     ]
    }
   }
