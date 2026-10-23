@@ -1,14 +1,28 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 21:01",
+ "consultado": "2026-10-22 21:16",
  "radar": "RMA1",
- "observacion": "2026-10-22 20:43",
+ "observacion": "2026-10-22 21:01",
  "nucleos": [
   {
-   "lat": -31.3509,
-   "lon": -64.4394,
-   "dbz": 45,
-   "max_dbz": 53,
+   "lat": -31.3689,
+   "lon": -64.3963,
+   "dbz": 44,
+   "max_dbz": 44,
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.6929,
+   "lon": -64.6975,
+   "dbz": 43,
+   "max_dbz": 48,
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.2246,
+   "lon": -64.7298,
+   "dbz": 42,
+   "max_dbz": 42,
    "tope_km": 3.0
   },
   {
@@ -19,31 +33,29 @@
    "tope_km": 5.4
   }
  ],
- "cuencas": {
-  "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 53
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "San Roque": {
-   "km": 1.1,
-   "max_dbz": 53,
-   "tope_km": 3.0,
+  "Anisacate": {
+   "km": 26.6,
+   "max_dbz": 48,
+   "tope_km": 2.4,
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "Bialet Masse": {
-   "km": 4.8,
-   "max_dbz": 53,
-   "tope_km": 3.0,
+  "La Serranita": {
+   "km": 23.1,
+   "max_dbz": 48,
+   "tope_km": 2.4,
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "Villa Parque Siquiman": {
-   "km": 3.8,
-   "max_dbz": 53,
-   "tope_km": 3.0,
+  "La Paisanita": {
+   "km": 20.5,
+   "max_dbz": 48,
+   "tope_km": 2.4,
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
