@@ -1,32 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 03:24",
+ "consultado": "2026-10-23 03:31",
  "radar": "RMA1",
- "observacion": "2026-10-23 03:05",
+ "observacion": "2026-10-23 03:14",
  "nucleos": [
   {
-   "lat": -30.2261,
-   "lon": -64.7836,
+   "lat": -31.3329,
+   "lon": -64.4178,
+   "dbz": 48,
+   "max_dbz": 54,
+   "tope_km": 1.8
+  },
+  {
+   "lat": -30.2626,
+   "lon": -64.6975,
    "dbz": 46,
-   "max_dbz": 51,
-   "tope_km": 6.0
+   "max_dbz": 46,
+   "tope_km": 7.2
   },
   {
-   "lat": -31.2787,
-   "lon": -64.7083,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 4.8
-  },
-  {
-   "lat": -30.3355,
-   "lon": -64.7944,
-   "dbz": 42,
-   "max_dbz": 42,
+   "lat": -31.4861,
+   "lon": -64.7836,
+   "dbz": 44,
+   "max_dbz": 44,
    "tope_km": 5.4
+  },
+  {
+   "lat": -31.2336,
+   "lon": -64.7298,
+   "dbz": 42,
+   "max_dbz": 43,
+   "tope_km": 2.4
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 19
+ "localidades": {
+  "San Roque": {
+   "km": 4.0,
+   "max_dbz": 54,
+   "tope_km": 1.8,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 17
 }
