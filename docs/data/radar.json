@@ -1,26 +1,132 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 17:18",
+ "consultado": "2026-10-23 20:23",
  "radar": "RMA1",
- "observacion": "2026-10-23 17:04",
+ "observacion": "2026-10-23 20:06",
  "nucleos": [
   {
-   "lat": -31.387,
-   "lon": -64.4178,
+   "lat": -31.5311,
+   "lon": -64.1596,
+   "dbz": 47,
+   "max_dbz": 60,
+   "tope_km": 6.6
+  },
+  {
+   "lat": -31.45,
+   "lon": -64.8051,
    "dbz": 45,
-   "max_dbz": 45,
+   "max_dbz": 49,
+   "tope_km": 7.2
+  },
+  {
+   "lat": -31.4951,
+   "lon": -64.7836,
+   "dbz": 45,
+   "max_dbz": 50,
+   "tope_km": 9.0
+  },
+  {
+   "lat": -31.621,
+   "lon": -64.7083,
+   "dbz": 45,
+   "max_dbz": 46,
+   "tope_km": 4.8,
+   "descartado": "tope bajo (4.8 km)"
+  },
+  {
+   "lat": -30.9805,
+   "lon": -63.9552,
+   "dbz": 44,
+   "max_dbz": 58,
+   "tope_km": 9.0
+  },
+  {
+   "lat": -30.3811,
+   "lon": -63.8154,
+   "dbz": 44,
+   "max_dbz": 51,
+   "tope_km": 7.8
+  },
+  {
+   "lat": -31.3329,
+   "lon": -64.4178,
+   "dbz": 44,
+   "max_dbz": 44,
+   "tope_km": 1.2,
+   "descartado": "tope bajo (1.2 km)"
+  },
+  {
+   "lat": -31.2787,
+   "lon": -64.7083,
+   "dbz": 44,
+   "max_dbz": 44,
    "tope_km": 2.4,
    "descartado": "tope bajo (2.4 km)"
   },
   {
-   "lat": -31.45,
-   "lon": -64.7944,
+   "lat": -31.378,
+   "lon": -64.4071,
    "dbz": 44,
    "max_dbz": 44,
-   "tope_km": 6.6
+   "tope_km": 0.6,
+   "descartado": "tope bajo (0.6 km)"
+  },
+  {
+   "lat": -30.7811,
+   "lon": -64.278,
+   "dbz": 43,
+   "max_dbz": 49,
+   "tope_km": 7.2
   }
  ],
- "cuencas": {},
- "localidades": {},
- "minutos": 15
+ "cuencas": {
+  "SanAntonio_CPaz": {
+   "nucleos": 2,
+   "max_dbz": 50
+  }
+ },
+ "localidades": {
+  "Villa Carlos Paz": {
+   "km": 29.1,
+   "max_dbz": 50,
+   "tope_km": 9.0,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 18.6,
+   "max_dbz": 50,
+   "tope_km": 9.0,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Villa del Totoral": {
+   "km": 19.5,
+   "max_dbz": 49,
+   "tope_km": 7.2,
+   "cuenca_de": "Rio Totoral",
+   "nivel": "intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 22.7,
+   "max_dbz": 50,
+   "tope_km": 9.0,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Tala Huasi": {
+   "km": 20.4,
+   "max_dbz": 50,
+   "tope_km": 9.0,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Paraje San Pellegrino": {
+   "km": 3.1,
+   "max_dbz": 49,
+   "tope_km": 7.2,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 17
 }
