@@ -1,25 +1,84 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 01:16",
+ "consultado": "2026-10-23 01:31",
  "radar": "RMA1",
- "observacion": "2026-10-23 00:57",
+ "observacion": "2026-10-23 01:16",
  "nucleos": [
   {
    "lat": -31.2787,
    "lon": -64.7083,
-   "dbz": 43,
-   "max_dbz": 43,
+   "dbz": 45,
+   "max_dbz": 45,
    "tope_km": 2.4
+  },
+  {
+   "lat": -31.4861,
+   "lon": -64.7836,
+   "dbz": 45,
+   "max_dbz": 51,
+   "tope_km": 5.4
   },
   {
    "lat": -31.3329,
    "lon": -64.4178,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 1.8
+   "dbz": 44,
+   "max_dbz": 44,
+   "tope_km": 3.0
   }
  ],
- "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 45
+  },
+  "SanAntonio_CPaz": {
+   "nucleos": 1,
+   "max_dbz": 51
+  }
+ },
+ "localidades": {
+  "Villa Carlos Paz": {
+   "km": 28.8,
+   "max_dbz": 51,
+   "tope_km": 5.4,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 18.5,
+   "max_dbz": 51,
+   "tope_km": 5.4,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Santa María de Punilla": {
+   "km": 24.0,
+   "max_dbz": 45,
+   "tope_km": 2.4,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 22.5,
+   "max_dbz": 51,
+   "tope_km": 5.4,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Tala Huasi": {
+   "km": 20.3,
+   "max_dbz": 51,
+   "tope_km": 5.4,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 24.0,
+   "max_dbz": 45,
+   "tope_km": 2.4,
+   "cuenca_de": "Lago San Roque",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 15
 }
