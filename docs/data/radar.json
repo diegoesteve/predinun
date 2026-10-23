@@ -1,79 +1,94 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 04:31",
+ "consultado": "2026-10-23 04:46",
  "radar": "RMA1",
- "observacion": "2026-10-23 04:18",
+ "observacion": "2026-10-23 04:27",
  "nucleos": [
   {
-   "lat": -30.4721,
-   "lon": -64.7298,
-   "dbz": 45,
-   "max_dbz": 49,
+   "lat": -30.5085,
+   "lon": -64.6653,
+   "dbz": 49,
+   "max_dbz": 57,
    "tope_km": 6.0
   },
   {
-   "lat": -31.1252,
-   "lon": -64.1704,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 2.4
+   "lat": -30.8536,
+   "lon": -65.1494,
+   "dbz": 47,
+   "max_dbz": 54,
+   "tope_km": 6.0
   },
   {
-   "lat": -31.3419,
-   "lon": -64.3856,
-   "dbz": 45,
-   "max_dbz": 51,
-   "tope_km": 3.6
+   "lat": -30.9352,
+   "lon": -65.0203,
+   "dbz": 47,
+   "max_dbz": 59,
+   "tope_km": 7.8
   },
   {
-   "lat": -31.5041,
-   "lon": -64.7621,
-   "dbz": 44,
-   "max_dbz": 44,
+   "lat": -30.5631,
+   "lon": -64.5684,
+   "dbz": 47,
+   "max_dbz": 53,
    "tope_km": 6.6
   },
   {
-   "lat": -30.8989,
-   "lon": -65.0956,
-   "dbz": 44,
-   "max_dbz": 46,
+   "lat": -31.3329,
+   "lon": -64.4178,
+   "dbz": 45,
+   "max_dbz": 55,
+   "tope_km": 4.8
+  },
+  {
+   "lat": -32.159,
+   "lon": -64.9019,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 4.2
+  },
+  {
+   "lat": -31.432,
+   "lon": -64.3425,
+   "dbz": 43,
+   "max_dbz": 43,
    "tope_km": 5.4
   },
   {
-   "lat": -31.2246,
-   "lon": -64.7298,
-   "dbz": 42,
-   "max_dbz": 48,
-   "tope_km": 2.4
-  },
-  {
-   "lat": -30.5267,
-   "lon": -64.6222,
+   "lat": -31.423,
+   "lon": -64.8051,
    "dbz": 42,
    "max_dbz": 42,
-   "tope_km": 6.6
+   "tope_km": 7.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Calera": {
+  "Santa Ana": {
    "km": 4.0,
-   "max_dbz": 51,
-   "tope_km": 3.6,
+   "max_dbz": 54,
+   "tope_km": 6.0,
    "nivel": "intensa"
   },
-  "General Paz": {
-   "km": 2.8,
+  "San Roque": {
+   "km": 4.0,
+   "max_dbz": 55,
+   "tope_km": 4.8,
+   "nivel": "muy intensa"
+  },
+  "El Durazno": {
+   "km": 11.1,
    "max_dbz": 45,
-   "tope_km": 2.4,
+   "tope_km": 4.2,
+   "cuenca_de": "Arroyo Sombra de Toro",
    "nivel": "intensa"
   },
   "Tres Árboles": {
-   "km": 2.5,
-   "max_dbz": 46,
-   "tope_km": 5.4,
-   "nivel": "intensa"
+   "km": 4.2,
+   "max_dbz": 59,
+   "tope_km": 7.8,
+   "cuenca_de": "Arroyo Orcoyana",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 19
 }
