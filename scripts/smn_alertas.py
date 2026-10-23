@@ -24,6 +24,7 @@ import requests
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # ---- configuración de cada proyecto
 LOCALIDADES = os.path.join(RAIZ, 'docs', 'data', 'localidades.json')
+PROYECTO = 'crecidas'
 SITIO = 'https://diegoesteve.github.io/predinun/'
 FENOMENOS = ('TORMENT', 'LLUVI', 'GRANIZ', 'PRECIPIT')     # los que interesan a este proyecto (mayúsculas, sin tildes)
 # ----
@@ -172,10 +173,20 @@ def avisar(alertas, por_loc):
     # El SMN parte una misma alerta en varias zonas: se juntan por tipo, título, nivel y vencimiento, un mensaje cada una
     grupos = {}
     for a in alertas:
-        if a['id'] not in avisados and ORDEN[a['nivel']] >= ORDEN[AVISO_MINIMO]:
+        if a['id'] not in avisados:
             grupos.setdefault((a['tipo'], a['titulo'], a['nivel'], a['hasta_local']), []).append(a['id'])
     for (tipo, titulo, nivel, hasta), ids in grupos.items():
         nombres = sorted({n for n, v in por_loc.items() if set(v) & set(ids)})
+        fuerte = ORDEN[nivel] >= ORDEN[AVISO_MINIMO]
+        try:   # historial de alarmas (todas; por Telegram solo las fuertes)
+            sys.path.insert(0, RAIZ)
+            from alerta.historial import registrar
+            registrar(PROYECTO, 'SMN ' + tipo, [(', '.join(nombres[:40]) + ('…' if len(nombres) > 40 else ''), nivel, f'{titulo}, hasta {hasta} h')], fuerte)
+        except Exception as e:
+            print('historial:', e)
+        if not fuerte:
+            avisados.update(ids)
+            continue
         icono = {'rojo': '🔴', 'naranja': '🟠', 'amarillo': '🟡'}[nivel]
         texto = (f"{icono} {'Aviso a corto plazo' if tipo == 'aviso a corto plazo' else 'Alerta'} oficial del SMN: "
                  f"{titulo} (nivel {nivel}), hasta {hasta} h.\n"

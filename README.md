@@ -142,6 +142,13 @@ python -m http.server -d docs         # abrir http://localhost:8000
 - Subcuencas, cursos de agua con nombre oficial, líneas de ribera y puntos de nivel: [APRHI, Portal de Información Hídrica](https://portal-aprhi.opendata.arcgis.com/) (`scripts/importar_aprhi.py`, una vez por mes).
 - Mapa base © colaboradores de OpenStreetMap.
 
+## Historial de alarmas
+
+Cada alarma queda en `data/historial_alarmas.csv` (las del pronóstico, en `data/historial_alarmas_pronostico.csv`): fecha,
+hora, fuente (estaciones, radar, pronóstico, SMN), lugar, nivel, detalle y si salió por Telegram. Las columnas `que_paso`
+y `fuente_medios` se completan a mano con lo que informaron los medios, para medir aciertos, falsas alarmas y eventos que
+se escaparon. Las primeras filas (22 y 23/10/2026) se reconstruyeron de la historia del repo.
+
 ## Licencia
 
 Proyecto sin fines comerciales. El código tiene licencia [PolyForm Noncommercial 1.0.0](LICENSE) y los datos y textos

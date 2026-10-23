@@ -447,7 +447,7 @@ function elegirLocalidad(f) {
     <div id="radar-loc"></div>
     ${textoCondiciones(f.condiciones)}
     ${f.razones && f.razones.length ? `<div><b>Por qué está ${esc(f.exposicion || 'en la lista')}</b><ul class="razones">${f.razones.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>` : ''}
-    ${f.parecido_scm != null && f.parecido_scm < 1.5 ? '<div>Sus condiciones se parecen mucho a las de <b>San Carlos Minas en 1992</b>.</div>' : ''}
+    ${f.parecido_scm != null && f.parecido_scm < 1.5 ? '<div>El terreno tiene rasgos de los que agravan las crecidas repentinas: cuenca empinada, cauce que se angosta o puentes que se pueden tapar.</div>' : ''}
     <div>Estación que avisa: ${f.aviso ? `<span class="aviso-${CLASE_AVISO[f.aviso]}">${TEXTO_AVISO[f.aviso]}</span>` : 'sin datos'}${f.danos_registrados ? ` · ${f.danos_registrados} daños verificados en imágenes a menos de 4 km` : ''}</div>
     ${arroyos ? `<div><b>Arroyos que entran al pueblo</b><ul>${arroyos}</ul></div>` : '<div>No se encontraron arroyos serranos que entren a esta localidad.</div>'}
     <div><b>Crecidas registradas</b>${eventos ? `<ul>${eventos}</ul>` : ' ninguna en el inventario todavía.'}</div>

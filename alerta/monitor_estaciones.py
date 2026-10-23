@@ -266,6 +266,9 @@ def ciclo(ruta, avisar=True):
     previo = json.load(open(archivo_estado)) if os.path.exists(archivo_estado) else {}
     for zona, estado in estados.items():
         antes = previo.get(zona, 'normal')
+        if avisar and ORDEN[estado] > ORDEN[antes]:
+            from alerta.historial import registrar
+            registrar('crecidas', 'estaciones', [(zona, estado, f'subió de {antes} a {estado}')], ORDEN[estado] >= ORDEN[AVISO_MINIMO])
         if avisar and ORDEN[estado] > ORDEN[antes] and ORDEN[estado] >= ORDEN[AVISO_MINIMO]:
             detalle = []
             if not lluvia.empty:

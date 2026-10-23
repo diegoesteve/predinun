@@ -210,6 +210,11 @@ def avisar_alertas(salida, locs, ahora):
                               data={'chat_id': chat, 'text': texto, 'disable_web_page_preview': 'true'}, timeout=20)
             except Exception as e:
                 print('No se pudo enviar a Telegram:', e)
+        from alerta.historial import registrar
+        registrar('crecidas', 'radar OHMC', [(n, 'alerta', f"tormenta {v['nivel']}, {v['max_dbz']} dBZ, a {v['km']} km"
+                                            + (f", tope {v['tope_km']} km" if v.get('tope_km') else '')
+                                            + (f", cuenca del {v['cuenca_de']}" if v.get('cuenca_de') else ''))
+                                           for n, v in nuevas.items()], True)
         for n in nuevas:
             avisados[n] = ahora.isoformat()
     os.makedirs(os.path.dirname(ruta), exist_ok=True)

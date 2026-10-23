@@ -28,6 +28,10 @@ def main():
         print(f"{ICONO[f['nivel']]} {f['nombre']}: {f['nivel']}"
               f"{' (agravado por suelo)' if f.get('agravado_por_suelo') else ''}"
               f" | suelo p{s.get('percentil', '?')}")
+        if os.environ.get('AVISAR', '1') == '1' and ORDEN[f['nivel']] > ORDEN.get(antes.get(f['cuenca'], 'verde'), 0):
+            from alerta.historial import registrar
+            registrar('crecidas', 'pronóstico 48 h', [(f['nombre'], f['nivel'], ', '.join(f"{m} {v['max_3h_mm']} mm" for m, v in f['modelos'].items()))],
+                      ORDEN[f['nivel']] >= ORDEN['naranja'])
         if os.environ.get('AVISAR', '1') == '1' and ORDEN[f['nivel']] > ORDEN.get(antes.get(f['cuenca'], 'verde'), 0) \
                 and ORDEN[f['nivel']] >= ORDEN['naranja']:   # por Telegram solo naranja o rojo
             modelos = ', '.join(f"{m} {v['max_3h_mm']} mm" for m, v in f['modelos'].items())
