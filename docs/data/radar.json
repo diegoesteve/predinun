@@ -1,103 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 03:46",
+ "consultado": "2026-10-23 04:01",
  "radar": "RMA1",
- "observacion": "2026-10-23 03:23",
+ "observacion": "2026-10-23 03:50",
  "nucleos": [
   {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 47,
-   "max_dbz": 54,
-   "tope_km": 2.4
-  },
-  {
-   "lat": -31.2787,
-   "lon": -64.7083,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 2.4
-  },
-  {
-   "lat": -30.2991,
-   "lon": -64.6653,
+   "lat": -30.3902,
+   "lon": -64.8804,
    "dbz": 46,
-   "max_dbz": 54,
+   "max_dbz": 50,
    "tope_km": 7.2
   },
   {
-   "lat": -30.3902,
-   "lon": -64.8374,
-   "dbz": 44,
-   "max_dbz": 49,
-   "tope_km": 5.4
-  },
-  {
-   "lat": -31.4861,
-   "lon": -64.7836,
-   "dbz": 44,
-   "max_dbz": 53,
-   "tope_km": 4.2
+   "lat": -31.2878,
+   "lon": -64.4071,
+   "dbz": 46,
+   "max_dbz": 46,
+   "tope_km": 4.8
   }
  ],
- "cuencas": {
-  "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 47
-  },
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 53
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 28.8,
-   "max_dbz": 53,
-   "tope_km": 4.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 18.5,
-   "max_dbz": 53,
-   "tope_km": 4.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Santa María de Punilla": {
-   "km": 24.0,
-   "max_dbz": 47,
-   "tope_km": 2.4,
-   "cuenca_de": "Río Cosquín",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 22.5,
-   "max_dbz": 53,
-   "tope_km": 4.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Tala Huasi": {
-   "km": 20.3,
-   "max_dbz": 53,
-   "tope_km": 4.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "San Roque": {
-   "km": 4.0,
-   "max_dbz": 54,
-   "tope_km": 2.4,
+  "La Calera": {
+   "km": 7.3,
+   "max_dbz": 46,
+   "tope_km": 4.8,
+   "cuenca_de": "Arroyo La Cascada",
    "nivel": "intensa"
   },
   "Las Palmas": {
-   "km": 4.0,
-   "max_dbz": 49,
-   "tope_km": 5.4,
+   "km": 0.2,
+   "max_dbz": 50,
+   "tope_km": 7.2,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   }
  },
- "minutos": 23
+ "minutos": 10
 }
