@@ -1,40 +1,156 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 04:01",
+ "consultado": "2026-10-23 04:16",
  "radar": "RMA1",
- "observacion": "2026-10-23 03:50",
+ "observacion": "2026-10-23 03:59",
  "nucleos": [
   {
-   "lat": -30.3902,
-   "lon": -64.8804,
-   "dbz": 46,
-   "max_dbz": 50,
-   "tope_km": 7.2
+   "lat": -31.3329,
+   "lon": -64.4178,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 4.2
   },
   {
-   "lat": -31.2878,
-   "lon": -64.4071,
-   "dbz": 46,
-   "max_dbz": 46,
+   "lat": -31.0619,
+   "lon": -64.278,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 5.4
+  },
+  {
+   "lat": -31.4861,
+   "lon": -64.7836,
+   "dbz": 45,
+   "max_dbz": 45,
    "tope_km": 4.8
+  },
+  {
+   "lat": -30.4266,
+   "lon": -64.8266,
+   "dbz": 44,
+   "max_dbz": 47,
+   "tope_km": 6.6
+  },
+  {
+   "lat": -31.4861,
+   "lon": -64.5039,
+   "dbz": 42,
+   "max_dbz": 45,
+   "tope_km": 1.8
+  },
+  {
+   "lat": -31.405,
+   "lon": -64.8159,
+   "dbz": 41,
+   "max_dbz": 41,
+   "tope_km": 5.4
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "SanAntonio_CPaz": {
+   "nucleos": 1,
+   "max_dbz": 45
+  }
+ },
  "localidades": {
-  "La Calera": {
-   "km": 7.3,
-   "max_dbz": 46,
-   "tope_km": 4.8,
-   "cuenca_de": "Arroyo La Cascada",
+  "Cordoba": {
+   "km": 22.2,
+   "max_dbz": 45,
+   "tope_km": 1.8,
+   "cuenca_de": "Arroyo La Cañada",
    "nivel": "intensa"
   },
-  "Las Palmas": {
-   "km": 0.2,
-   "max_dbz": 50,
-   "tope_km": 7.2,
-   "cuenca_de": "sin nombre",
+  "Villa Carlos Paz": {
+   "km": 28.8,
+   "max_dbz": 45,
+   "tope_km": 4.8,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 18.5,
+   "max_dbz": 45,
+   "tope_km": 4.8,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "San Antonio de Arredondo": {
+   "km": 3.1,
+   "max_dbz": 45,
+   "tope_km": 1.8,
+   "nivel": "intensa"
+  },
+  "La Granja": {
+   "km": 4.9,
+   "max_dbz": 45,
+   "tope_km": 5.4,
+   "nivel": "intensa"
+  },
+  "Barrio Sierras de Oro": {
+   "km": 7.2,
+   "max_dbz": 45,
+   "tope_km": 1.8,
+   "cuenca_de": "Arroyo Seco",
+   "nivel": "intensa"
+  },
+  "Los Molles": {
+   "km": 4.6,
+   "max_dbz": 45,
+   "tope_km": 5.4,
+   "cuenca_de": "Río San Cristóbal",
+   "nivel": "intensa"
+  },
+  "Colonia Caroya": {
+   "km": 16.6,
+   "max_dbz": 45,
+   "tope_km": 5.4,
+   "cuenca_de": "Río Carnero",
+   "nivel": "intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 4.1,
+   "max_dbz": 45,
+   "tope_km": 1.8,
+   "nivel": "intensa"
+  },
+  "Tala Huasi": {
+   "km": 20.3,
+   "max_dbz": 45,
+   "tope_km": 4.8,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 4.0,
+   "max_dbz": 45,
+   "tope_km": 4.2,
+   "nivel": "intensa"
+  },
+  "Villa Cerro Azul": {
+   "km": 4.5,
+   "max_dbz": 45,
+   "tope_km": 5.4,
+   "nivel": "intensa"
+  },
+  "Agua de Oro": {
+   "km": 1.7,
+   "max_dbz": 45,
+   "tope_km": 5.4,
+   "nivel": "intensa"
+  },
+  "Canteras el Sauce": {
+   "km": 4.8,
+   "max_dbz": 45,
+   "tope_km": 5.4,
+   "nivel": "intensa"
+  },
+  "El Manzano": {
+   "km": 3.1,
+   "max_dbz": 45,
+   "tope_km": 5.4,
    "nivel": "intensa"
   }
  },
- "minutos": 10
+ "minutos": 17
 }
