@@ -33,6 +33,7 @@ CORDOBA = {'lat': (-35.2, -29.4), 'lon': (-65.9, -61.7)}
 ARG = timezone(timedelta(hours=-3))
 NIVEL_POR_SEVERIDAD = {'Minor': 'amarillo', 'Moderate': 'amarillo', 'Severe': 'naranja', 'Extreme': 'rojo'}
 ORDEN = {'amarillo': 1, 'naranja': 2, 'rojo': 3}
+AVISO_MINIMO = 'naranja'   # por Telegram solo naranja o rojo; los amarillos se ven en la página
 
 
 def leer(ruta, defecto=None):
@@ -171,7 +172,7 @@ def avisar(alertas, por_loc):
     # El SMN parte una misma alerta en varias zonas: se juntan por tipo, título, nivel y vencimiento, un mensaje cada una
     grupos = {}
     for a in alertas:
-        if a['id'] not in avisados:
+        if a['id'] not in avisados and ORDEN[a['nivel']] >= ORDEN[AVISO_MINIMO]:
             grupos.setdefault((a['tipo'], a['titulo'], a['nivel'], a['hasta_local']), []).append(a['id'])
     for (tipo, titulo, nivel, hasta), ids in grupos.items():
         nombres = sorted({n for n, v in por_loc.items() if set(v) & set(ids)})

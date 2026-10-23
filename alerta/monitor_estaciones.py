@@ -43,6 +43,7 @@ NIVELES_LLUVIA = [   # de mayor a menor
 ]
 # Subida del río en la última hora (m). El 17/10/2026 el Cosquín creció ~1,5 m y hubo evacuados en la costa
 NIVELES_RIO = [('rojo', 1.0), ('naranja', 0.5), ('amarillo', 0.25)]
+AVISO_MINIMO = 'naranja'      # por Telegram solo naranja o rojo (los amarillos se ven en la página)
 HORAS_SIN_DATOS = 2           # una estación sin datos hace más de esto se marca "sin datos"
 # Lecturas de nivel que no se usan para el semáforo:
 #  - canales y diques: el nivel de un embalse o de un canal de riego no es una crecida (y algunos se miden contra otra
@@ -265,7 +266,7 @@ def ciclo(ruta, avisar=True):
     previo = json.load(open(archivo_estado)) if os.path.exists(archivo_estado) else {}
     for zona, estado in estados.items():
         antes = previo.get(zona, 'normal')
-        if avisar and ORDEN[estado] > ORDEN[antes]:
+        if avisar and ORDEN[estado] > ORDEN[antes] and ORDEN[estado] >= ORDEN[AVISO_MINIMO]:
             detalle = []
             if not lluvia.empty:
                 for _, f in lluvia[(lluvia['zona'] == zona) & (lluvia['estado'].map(ORDEN.get).fillna(0) >= ORDEN[estado])].iterrows():
@@ -275,7 +276,7 @@ def ciclo(ruta, avisar=True):
                     detalle.append(f"  · {f['estacion']}: el río subió {f['subida_1h_m']} m en 1 h")
             enviar(f"{ICONO[estado]} {zona}: nivel {estado.upper()} ({ahora:%d/%m %H:%M})\n" + '\n'.join(detalle) +
                    '\nUmbrales provisorios. Para decidir, seguir a Defensa Civil y al SMN.')
-        elif avisar and estado == 'normal' and antes != 'normal':
+        elif avisar and estado == 'normal' and ORDEN.get(antes, 0) >= ORDEN[AVISO_MINIMO]:
             enviar(f"🟢 {zona}: volvió a normal ({ahora:%d/%m %H:%M})")
     json.dump(estados, open(archivo_estado, 'w'), ensure_ascii=False)
     return ahora, lluvia, rios, estados
