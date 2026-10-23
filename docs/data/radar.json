@@ -1,18 +1,86 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-22 21:31",
+ "consultado": "2026-10-22 21:46",
  "radar": "RMA1",
- "observacion": "2026-10-22 21:10",
+ "observacion": "2026-10-22 21:28",
  "nucleos": [
   {
-   "lat": -31.414,
-   "lon": -64.8051,
-   "dbz": 41,
-   "max_dbz": 41,
-   "tope_km": 6.6
+   "lat": -31.378,
+   "lon": -64.4071,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.3329,
+   "lon": -64.4178,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 3.0
+  },
+  {
+   "lat": -31.2246,
+   "lon": -64.7298,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.2787,
+   "lon": -64.7083,
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.2697,
+   "lon": -64.2565,
+   "dbz": 42,
+   "max_dbz": 46,
+   "tope_km": 3.0
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 21
+ "localidades": {
+  "Cordoba": {
+   "km": 11.5,
+   "max_dbz": 46,
+   "tope_km": 3.0,
+   "cuenca_de": "Canal",
+   "nivel": "intensa"
+  },
+  "Villa Allende": {
+   "km": 4.4,
+   "max_dbz": 46,
+   "tope_km": 3.0,
+   "nivel": "intensa"
+  },
+  "Mendiolaza": {
+   "km": 3.4,
+   "max_dbz": 46,
+   "tope_km": 3.0,
+   "nivel": "intensa"
+  },
+  "La Calera": {
+   "km": 2.8,
+   "max_dbz": 48,
+   "tope_km": 2.4,
+   "cuenca_de": "Rio Suquia",
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 4.2,
+   "max_dbz": 48,
+   "tope_km": 2.4,
+   "nivel": "intensa"
+  },
+  "El Gateado": {
+   "km": 15.3,
+   "max_dbz": 46,
+   "tope_km": 3.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 17
 }
