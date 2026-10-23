@@ -1,70 +1,18 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 02:16",
+ "consultado": "2026-10-23 02:31",
  "radar": "RMA1",
- "observacion": "2026-10-23 02:01",
+ "observacion": "2026-10-23 02:19",
  "nucleos": [
-  {
-   "lat": -31.4771,
-   "lon": -64.5039,
-   "dbz": 44,
-   "max_dbz": 47,
-   "tope_km": 2.4
-  },
   {
    "lat": -31.3329,
    "lon": -64.4178,
    "dbz": 44,
-   "max_dbz": 50,
+   "max_dbz": 44,
    "tope_km": 3.0
-  },
-  {
-   "lat": -31.2787,
-   "lon": -64.7083,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 2.4
   }
  ],
- "cuencas": {
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 47
-  }
- },
- "localidades": {
-  "Cordoba": {
-   "km": 22.2,
-   "max_dbz": 47,
-   "tope_km": 2.4,
-   "cuenca_de": "Arroyo La Cañada",
-   "nivel": "intensa"
-  },
-  "San Antonio de Arredondo": {
-   "km": 2.5,
-   "max_dbz": 47,
-   "tope_km": 2.4,
-   "nivel": "intensa"
-  },
-  "Barrio Sierras de Oro": {
-   "km": 7.1,
-   "max_dbz": 47,
-   "tope_km": 2.4,
-   "cuenca_de": "Arroyo Seco",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 3.8,
-   "max_dbz": 47,
-   "tope_km": 2.4,
-   "nivel": "intensa"
-  },
-  "San Roque": {
-   "km": 4.0,
-   "max_dbz": 50,
-   "tope_km": 3.0,
-   "nivel": "intensa"
-  }
- },
- "minutos": 15
+ "cuencas": {},
+ "localidades": {},
+ "minutos": 12
 }
