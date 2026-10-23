@@ -1,181 +1,154 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 05:16",
+ "consultado": "2026-10-23 05:31",
  "radar": "RMA1",
- "observacion": "2026-10-23 05:03",
+ "observacion": "2026-10-23 05:12",
  "nucleos": [
   {
-   "lat": -31.08,
-   "lon": -64.6868,
+   "lat": -31.0438,
+   "lon": -64.8051,
    "dbz": 50,
-   "max_dbz": 65,
-   "tope_km": 9.6
+   "max_dbz": 60,
+   "tope_km": 7.2
   },
   {
-   "lat": -30.6722,
-   "lon": -64.2995,
+   "lat": -31.0981,
+   "lon": -64.59,
+   "dbz": 50,
+   "max_dbz": 63,
+   "tope_km": 10.2
+  },
+  {
+   "lat": -30.6903,
+   "lon": -64.2242,
    "dbz": 49,
-   "max_dbz": 59,
-   "tope_km": 9.0
+   "max_dbz": 60,
+   "tope_km": 8.4
   },
   {
-   "lat": -31.0076,
-   "lon": -64.8804,
-   "dbz": 49,
-   "max_dbz": 59,
-   "tope_km": 7.8
-  },
-  {
-   "lat": -31.2246,
-   "lon": -64.7621,
-   "dbz": 48,
-   "max_dbz": 55,
+   "lat": -31.4681,
+   "lon": -64.3425,
+   "dbz": 47,
+   "max_dbz": 58,
    "tope_km": 6.0
   },
   {
-   "lat": -31.432,
-   "lon": -64.4071,
-   "dbz": 47,
-   "max_dbz": 66,
-   "tope_km": 6.6
-  },
-  {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 46,
-   "max_dbz": 46,
-   "tope_km": 1.8
-  },
-  {
-   "lat": -31.5131,
-   "lon": -64.7621,
+   "lat": -30.9171,
+   "lon": -65.3538,
    "dbz": 45,
-   "max_dbz": 50,
+   "max_dbz": 45,
    "tope_km": 6.6
   },
   {
-   "lat": -31.2878,
-   "lon": -64.7083,
+   "lat": -31.2336,
+   "lon": -64.7191,
    "dbz": 44,
    "max_dbz": 44,
-   "tope_km": 3.6
+   "tope_km": 5.4
   },
   {
-   "lat": -31.5851,
+   "lat": -31.2787,
    "lon": -64.7083,
    "dbz": 44,
-   "max_dbz": 44,
+   "max_dbz": 50,
    "tope_km": 2.4
   },
   {
-   "lat": -31.387,
-   "lon": -64.4501,
-   "dbz": 44,
-   "max_dbz": 47,
-   "tope_km": 6.0
+   "lat": -31.5311,
+   "lon": -64.235,
+   "dbz": 43,
+   "max_dbz": 46,
+   "tope_km": 6.6
   },
   {
-   "lat": -31.2155,
-   "lon": -64.5254,
+   "lat": -30.7357,
+   "lon": -64.3748,
    "dbz": 43,
-   "max_dbz": 50,
-   "tope_km": 6.0
+   "max_dbz": 49,
+   "tope_km": 4.8
+  },
+  {
+   "lat": -31.5041,
+   "lon": -64.7728,
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 4.2
+  },
+  {
+   "lat": -31.1523,
+   "lon": -64.5577,
+   "dbz": 41,
+   "max_dbz": 41,
+   "tope_km": 9.0
   }
  ],
  "cuencas": {
   "Cosquin": {
    "nucleos": 1,
    "max_dbz": 50
-  },
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 50
   }
  },
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 27.9,
-   "max_dbz": 50,
-   "tope_km": 6.6,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 16.9,
-   "max_dbz": 50,
-   "tope_km": 6.6,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Villa de Soto": {
-   "km": 19.3,
-   "max_dbz": 59,
-   "tope_km": 7.8,
-   "cuenca_de": "Río Soto",
+  "La Falda": {
+   "km": 5.8,
+   "max_dbz": 63,
+   "tope_km": 10.2,
+   "cuenca_de": "Arroyo Piedras Grandes",
    "nivel": "muy intensa"
   },
   "Santa María de Punilla": {
-   "km": 8.3,
-   "max_dbz": 50,
-   "tope_km": 6.0,
+   "km": 22.2,
+   "max_dbz": 63,
+   "tope_km": 10.2,
    "cuenca_de": "Río Cosquín",
-   "nivel": "intensa"
-  },
-  "Bañado de Soto": {
-   "km": 25.4,
-   "max_dbz": 59,
-   "tope_km": 7.8,
-   "cuenca_de": "San Guillermo De Soto",
    "nivel": "muy intensa"
   },
-  "Mayu Sumaj": {
-   "km": 21.1,
-   "max_dbz": 50,
-   "tope_km": 6.6,
-   "cuenca_de": "Rio San Antonio",
+  "Villa del Totoral": {
+   "km": 25.2,
+   "max_dbz": 49,
+   "tope_km": 4.8,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Tala Huasi": {
-   "km": 18.7,
-   "max_dbz": 50,
-   "tope_km": 6.6,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+  "Casa Grande": {
+   "km": 12.7,
+   "max_dbz": 63,
+   "tope_km": 10.2,
+   "cuenca_de": "Rio Grande De Punilla",
+   "nivel": "muy intensa"
   },
   "San Roque": {
-   "km": 14.5,
-   "max_dbz": 50,
-   "tope_km": 6.0,
+   "km": 29.0,
+   "max_dbz": 63,
+   "tope_km": 10.2,
    "cuenca_de": "Lago San Roque",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
-  "Characato": {
-   "km": 10.6,
-   "max_dbz": 55,
-   "tope_km": 6.0,
-   "cuenca_de": "Río Ávalos",
+  "Las Cañadas": {
+   "km": 7.2,
+   "max_dbz": 60,
+   "tope_km": 7.2,
+   "cuenca_de": "Arroyo Cañada Honda",
    "nivel": "muy intensa"
   },
   "La Perla": {
-   "km": 8.3,
-   "max_dbz": 66,
-   "tope_km": 6.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Villa Albertina": {
-   "km": 1.9,
-   "max_dbz": 59,
-   "tope_km": 9.0,
-   "cuenca_de": "Río Grande",
-   "nivel": "muy intensa"
-  },
-  "Villa Parque Siquiman": {
-   "km": 4.9,
-   "max_dbz": 47,
+   "km": 2.7,
+   "max_dbz": 58,
    "tope_km": 6.0,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "Las Manzanas": {
+   "km": 3.0,
+   "max_dbz": 60,
+   "tope_km": 8.4,
+   "nivel": "muy intensa"
+  },
+  "Malagueño": {
+   "km": 1.9,
+   "max_dbz": 58,
+   "tope_km": 6.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 12
+ "minutos": 18
 }
