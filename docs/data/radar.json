@@ -1,77 +1,45 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 00:46",
+ "consultado": "2026-10-23 01:01",
  "radar": "RMA1",
- "observacion": "2026-10-23 00:30",
+ "observacion": "2026-10-23 00:48",
  "nucleos": [
   {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 3.0
+   "lat": -31.2878,
+   "lon": -64.7083,
+   "dbz": 46,
+   "max_dbz": 46,
+   "tope_km": 2.4
   },
   {
-   "lat": -31.4771,
-   "lon": -64.5039,
-   "dbz": 45,
-   "max_dbz": 48,
-   "tope_km": 3.0
-  },
-  {
-   "lat": -31.2968,
-   "lon": -64.7191,
+   "lat": -31.4861,
+   "lon": -64.7836,
    "dbz": 44,
    "max_dbz": 44,
-   "tope_km": 3.0
-  },
-  {
-   "lat": -31.405,
-   "lon": -64.4286,
-   "dbz": 42,
-   "max_dbz": 42,
-   "tope_km": 2.4
+   "tope_km": 5.4
   }
  ],
  "cuencas": {
-  "SanAntonio_CPaz": {
+  "Cosquin": {
    "nucleos": 1,
-   "max_dbz": 48
+   "max_dbz": 46
   }
  },
  "localidades": {
-  "Cordoba": {
-   "km": 22.2,
-   "max_dbz": 48,
-   "tope_km": 3.0,
-   "cuenca_de": "Arroyo La Cañada",
-   "nivel": "intensa"
-  },
-  "San Antonio de Arredondo": {
-   "km": 2.5,
-   "max_dbz": 48,
-   "tope_km": 3.0,
-   "nivel": "intensa"
-  },
-  "Barrio Sierras de Oro": {
-   "km": 7.1,
-   "max_dbz": 48,
-   "tope_km": 3.0,
-   "cuenca_de": "Arroyo Seco",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 3.8,
-   "max_dbz": 48,
-   "tope_km": 3.0,
+  "Santa María de Punilla": {
+   "km": 24.1,
+   "max_dbz": 46,
+   "tope_km": 2.4,
+   "cuenca_de": "Río Cosquín",
    "nivel": "intensa"
   },
   "San Roque": {
-   "km": 4.0,
-   "max_dbz": 45,
-   "tope_km": 3.0,
+   "km": 23.8,
+   "max_dbz": 46,
+   "tope_km": 2.4,
+   "cuenca_de": "Lago San Roque",
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
