@@ -1,44 +1,38 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 01:46",
+ "consultado": "2026-10-23 02:01",
  "radar": "RMA1",
- "observacion": "2026-10-23 01:34",
+ "observacion": "2026-10-23 01:43",
  "nucleos": [
   {
-   "lat": -31.2878,
+   "lat": -31.2787,
    "lon": -64.7083,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 2.4
-  },
-  {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 3.0
+   "dbz": 46,
+   "max_dbz": 46,
+   "tope_km": 4.8
   }
  ],
  "cuencas": {
   "Cosquin": {
    "nucleos": 1,
-   "max_dbz": 45
+   "max_dbz": 46
   }
  },
  "localidades": {
   "Santa María de Punilla": {
-   "km": 24.1,
-   "max_dbz": 45,
-   "tope_km": 2.4,
+   "km": 24.0,
+   "max_dbz": 46,
+   "tope_km": 4.8,
    "cuenca_de": "Río Cosquín",
    "nivel": "intensa"
   },
   "San Roque": {
-   "km": 4.0,
-   "max_dbz": 45,
-   "tope_km": 3.0,
+   "km": 24.0,
+   "max_dbz": 46,
+   "tope_km": 4.8,
+   "cuenca_de": "Lago San Roque",
    "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 18
 }
