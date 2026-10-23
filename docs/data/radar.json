@@ -1,100 +1,94 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 09:01",
+ "consultado": "2026-10-23 09:16",
  "radar": "RMA1",
- "observacion": "2026-10-23 08:42",
+ "observacion": "2026-10-23 09:01",
  "nucleos": [
   {
-   "lat": -31.3329,
+   "lat": -31.3148,
    "lon": -64.4178,
-   "dbz": 46,
-   "max_dbz": 49,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 1.2
+  },
+  {
+   "lat": -31.4681,
+   "lon": -64.4931,
+   "dbz": 43,
+   "max_dbz": 43,
    "tope_km": 1.8
   },
   {
-   "lat": -31.5131,
-   "lon": -64.7728,
+   "lat": -31.4591,
+   "lon": -64.7944,
    "dbz": 43,
-   "max_dbz": 46,
+   "max_dbz": 49,
    "tope_km": 5.4
-  },
-  {
-   "lat": -31.4771,
-   "lon": -64.5039,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 1.2
   },
   {
    "lat": -31.5851,
    "lon": -64.7083,
    "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 7.8
+  },
+  {
+   "lat": -31.5041,
+   "lon": -64.7728,
+   "dbz": 42,
    "max_dbz": 46,
-   "tope_km": 10.2
+   "tope_km": 6.6
+  },
+  {
+   "lat": -31.414,
+   "lon": -64.4178,
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 1.8
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 46
+   "nucleos": 2,
+   "max_dbz": 49
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 28.9,
-   "max_dbz": 46,
+   "km": 29.0,
+   "max_dbz": 49,
    "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Cuesta Blanca": {
-   "km": 17.9,
-   "max_dbz": 46,
+   "km": 19.6,
+   "max_dbz": 49,
    "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "Anisacate": {
-   "km": 31.3,
-   "max_dbz": 46,
-   "tope_km": 10.2,
-   "cuenca_de": "Río Anizacate",
+  "La Calera": {
+   "km": 6.5,
+   "max_dbz": 45,
+   "tope_km": 1.2,
+   "cuenca_de": "Arroyo La Cascada",
    "nivel": "intensa"
   },
   "Mayu Sumaj": {
-   "km": 22.1,
-   "max_dbz": 46,
+   "km": 23.4,
+   "max_dbz": 49,
    "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 19.7,
-   "max_dbz": 46,
+   "km": 21.3,
+   "max_dbz": 49,
    "tope_km": 5.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
-  },
-  "La Serranita": {
-   "km": 28.7,
-   "max_dbz": 46,
-   "tope_km": 10.2,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "San Roque": {
-   "km": 4.0,
-   "max_dbz": 49,
-   "tope_km": 1.8,
-   "nivel": "intensa"
-  },
-  "La Paisanita": {
-   "km": 26.2,
-   "max_dbz": 46,
-   "tope_km": 10.2,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
   }
  },
- "minutos": 19
+ "minutos": 15
 }
