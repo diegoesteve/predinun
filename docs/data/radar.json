@@ -1,98 +1,123 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 10:16",
+ "consultado": "2026-10-23 10:31",
  "radar": "RMA1",
- "observacion": "2026-10-23 10:04",
+ "observacion": "2026-10-23 10:14",
  "nucleos": [
   {
-   "lat": -31.3419,
-   "lon": -64.3856,
-   "dbz": 48,
-   "max_dbz": 55,
-   "tope_km": 4.2
-  },
-  {
-   "lat": -31.2697,
+   "lat": -31.2787,
    "lon": -64.7083,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 4.8
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 2.4
   },
   {
-   "lat": -31.4861,
+   "lat": -31.4771,
    "lon": -64.5039,
-   "dbz": 44,
-   "max_dbz": 46,
-   "tope_km": 1.8
+   "dbz": 43,
+   "max_dbz": 49,
+   "tope_km": 3.0
+  },
+  {
+   "lat": -31.387,
+   "lon": -64.4178,
+   "dbz": 43,
+   "max_dbz": 55,
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.5761,
+   "lon": -64.5469,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 3.0
   },
   {
    "lat": -31.5041,
    "lon": -64.7728,
    "dbz": 43,
-   "max_dbz": 45,
-   "tope_km": 6.6
+   "max_dbz": 49,
+   "tope_km": 7.2
   }
  ],
  "cuencas": {
-  "SanAntonio_CPaz": {
+  "Cosquin": {
    "nucleos": 1,
    "max_dbz": 45
+  },
+  "SanAntonio_CPaz": {
+   "nucleos": 2,
+   "max_dbz": 49
   }
  },
  "localidades": {
   "Cordoba": {
    "km": 22.2,
-   "max_dbz": 46,
-   "tope_km": 1.8,
+   "max_dbz": 49,
+   "tope_km": 3.0,
    "cuenca_de": "Arroyo La Cañada",
    "nivel": "intensa"
   },
   "Villa Carlos Paz": {
    "km": 28.5,
-   "max_dbz": 45,
-   "tope_km": 6.6,
+   "max_dbz": 49,
+   "tope_km": 7.2,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Cuesta Blanca": {
    "km": 17.7,
-   "max_dbz": 45,
-   "tope_km": 6.6,
+   "max_dbz": 49,
+   "tope_km": 7.2,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "La Calera": {
-   "km": 4.0,
+   "km": 4.2,
    "max_dbz": 55,
-   "tope_km": 4.2,
+   "tope_km": 2.4,
+   "cuenca_de": "Rio Suquia",
    "nivel": "muy intensa"
   },
   "San Antonio de Arredondo": {
-   "km": 3.1,
-   "max_dbz": 46,
-   "tope_km": 1.8,
+   "km": 2.5,
+   "max_dbz": 49,
+   "tope_km": 3.0,
+   "nivel": "intensa"
+  },
+  "Santa María de Punilla": {
+   "km": 24.0,
+   "max_dbz": 45,
+   "tope_km": 2.4,
+   "cuenca_de": "Río Cosquín",
    "nivel": "intensa"
   },
   "Barrio Sierras de Oro": {
-   "km": 7.2,
-   "max_dbz": 46,
-   "tope_km": 1.8,
+   "km": 7.1,
+   "max_dbz": 49,
+   "tope_km": 3.0,
    "cuenca_de": "Arroyo Seco",
    "nivel": "intensa"
   },
   "Mayu Sumaj": {
-   "km": 4.1,
-   "max_dbz": 46,
-   "tope_km": 1.8,
+   "km": 3.8,
+   "max_dbz": 49,
+   "tope_km": 3.0,
    "nivel": "intensa"
   },
   "Tala Huasi": {
    "km": 19.5,
-   "max_dbz": 45,
-   "tope_km": 6.6,
+   "max_dbz": 49,
+   "tope_km": 7.2,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 4.0,
+   "max_dbz": 55,
+   "tope_km": 2.4,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 18
 }
