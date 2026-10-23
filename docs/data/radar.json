@@ -1,94 +1,109 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 04:46",
+ "consultado": "2026-10-23 05:01",
  "radar": "RMA1",
- "observacion": "2026-10-23 04:27",
+ "observacion": "2026-10-23 04:45",
  "nucleos": [
   {
-   "lat": -30.5085,
-   "lon": -64.6653,
+   "lat": -31.0167,
+   "lon": -64.8697,
    "dbz": 49,
-   "max_dbz": 57,
-   "tope_km": 6.0
+   "max_dbz": 61,
+   "tope_km": 9.0
   },
   {
-   "lat": -30.8536,
-   "lon": -65.1494,
-   "dbz": 47,
+   "lat": -31.1433,
+   "lon": -64.9235,
+   "dbz": 48,
    "max_dbz": 54,
    "tope_km": 6.0
   },
   {
-   "lat": -30.9352,
-   "lon": -65.0203,
-   "dbz": 47,
-   "max_dbz": 59,
+   "lat": -30.6086,
+   "lon": -64.4394,
+   "dbz": 46,
+   "max_dbz": 56,
    "tope_km": 7.8
   },
   {
-   "lat": -30.5631,
-   "lon": -64.5684,
-   "dbz": 47,
-   "max_dbz": 53,
-   "tope_km": 6.6
+   "lat": -30.5722,
+   "lon": -64.5469,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 4.8
   },
   {
    "lat": -31.3329,
    "lon": -64.4178,
-   "dbz": 45,
-   "max_dbz": 55,
-   "tope_km": 4.8
+   "dbz": 44,
+   "max_dbz": 44,
+   "tope_km": 2.4
   },
   {
-   "lat": -32.159,
-   "lon": -64.9019,
-   "dbz": 45,
-   "max_dbz": 45,
+   "lat": -30.9261,
+   "lon": -65.031,
+   "dbz": 43,
+   "max_dbz": 47,
+   "tope_km": 6.0
+  },
+  {
+   "lat": -31.5041,
+   "lon": -64.7621,
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 2.4
+  },
+  {
+   "lat": -31.2336,
+   "lon": -64.7191,
+   "dbz": 42,
+   "max_dbz": 42,
    "tope_km": 4.2
   },
   {
-   "lat": -31.432,
-   "lon": -64.3425,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 5.4
-  },
-  {
-   "lat": -31.423,
-   "lon": -64.8051,
+   "lat": -31.1162,
+   "lon": -64.6975,
    "dbz": 42,
    "max_dbz": 42,
-   "tope_km": 7.2
+   "tope_km": 4.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Ana": {
-   "km": 4.0,
-   "max_dbz": 54,
-   "tope_km": 6.0,
-   "nivel": "intensa"
-  },
-  "San Roque": {
-   "km": 4.0,
-   "max_dbz": 55,
-   "tope_km": 4.8,
+  "Villa de Soto": {
+   "km": 20.7,
+   "max_dbz": 61,
+   "tope_km": 9.0,
+   "cuenca_de": "Río Soto",
    "nivel": "muy intensa"
   },
-  "El Durazno": {
-   "km": 11.1,
-   "max_dbz": 45,
-   "tope_km": 4.2,
-   "cuenca_de": "Arroyo Sombra de Toro",
+  "Cruz de Caña": {
+   "km": 7.2,
+   "max_dbz": 54,
+   "tope_km": 6.0,
+   "cuenca_de": "Río San Guillermo",
    "nivel": "intensa"
   },
+  "Bañado de Soto": {
+   "km": 26.8,
+   "max_dbz": 61,
+   "tope_km": 9.0,
+   "cuenca_de": "San Guillermo De Soto",
+   "nivel": "muy intensa"
+  },
   "Tres Árboles": {
-   "km": 4.2,
-   "max_dbz": 59,
-   "tope_km": 7.8,
+   "km": 2.9,
+   "max_dbz": 47,
+   "tope_km": 6.0,
    "cuenca_de": "Arroyo Orcoyana",
+   "nivel": "intensa"
+  },
+  "Ischilín Viejo": {
+   "km": 5.0,
+   "max_dbz": 56,
+   "tope_km": 7.8,
    "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
