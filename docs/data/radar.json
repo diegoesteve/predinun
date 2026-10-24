@@ -1,132 +1,109 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 20:23",
+ "consultado": "2026-10-23 22:53",
  "radar": "RMA1",
- "observacion": "2026-10-23 20:06",
+ "observacion": "2026-10-23 22:40",
  "nucleos": [
   {
-   "lat": -31.5311,
-   "lon": -64.1596,
+   "lat": -31.5221,
+   "lon": -64.3318,
+   "dbz": 48,
+   "max_dbz": 59,
+   "tope_km": 10.2
+  },
+  {
+   "lat": -31.8007,
+   "lon": -64.1381,
+   "dbz": 48,
+   "max_dbz": 59,
+   "tope_km": 6.0
+  },
+  {
+   "lat": -30.0892,
+   "lon": -64.8804,
    "dbz": 47,
-   "max_dbz": 60,
+   "max_dbz": 55,
+   "tope_km": 11.4
+  },
+  {
+   "lat": -31.2607,
+   "lon": -64.6115,
+   "dbz": 47,
+   "max_dbz": 63,
+   "tope_km": 8.4
+  },
+  {
+   "lat": -30.372,
+   "lon": -64.7083,
+   "dbz": 46,
+   "max_dbz": 53,
    "tope_km": 6.6
   },
   {
-   "lat": -31.45,
-   "lon": -64.8051,
+   "lat": -30.4903,
+   "lon": -64.5577,
    "dbz": 45,
-   "max_dbz": 49,
-   "tope_km": 7.2
-  },
-  {
-   "lat": -31.4951,
-   "lon": -64.7836,
-   "dbz": 45,
-   "max_dbz": 50,
+   "max_dbz": 52,
    "tope_km": 9.0
   },
   {
-   "lat": -31.621,
-   "lon": -64.7083,
+   "lat": -31.9979,
+   "lon": -63.9983,
    "dbz": 45,
-   "max_dbz": 46,
-   "tope_km": 4.8,
-   "descartado": "tope bajo (4.8 km)"
+   "max_dbz": 52,
+   "tope_km": 4.2,
+   "descartado": "tope bajo (4.2 km)"
   },
   {
-   "lat": -30.9805,
-   "lon": -63.9552,
-   "dbz": 44,
-   "max_dbz": 58,
+   "lat": -30.29,
+   "lon": -63.9875,
+   "dbz": 45,
+   "max_dbz": 53,
    "tope_km": 9.0
-  },
-  {
-   "lat": -30.3811,
-   "lon": -63.8154,
-   "dbz": 44,
-   "max_dbz": 51,
-   "tope_km": 7.8
-  },
-  {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 1.2,
-   "descartado": "tope bajo (1.2 km)"
   },
   {
    "lat": -31.2787,
    "lon": -64.7083,
    "dbz": 44,
    "max_dbz": 44,
-   "tope_km": 2.4,
-   "descartado": "tope bajo (2.4 km)"
+   "tope_km": 8.4
   },
   {
-   "lat": -31.378,
-   "lon": -64.4071,
+   "lat": -31.7109,
+   "lon": -64.1489,
    "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 0.6,
-   "descartado": "tope bajo (0.6 km)"
-  },
-  {
-   "lat": -30.7811,
-   "lon": -64.278,
-   "dbz": 43,
-   "max_dbz": 49,
-   "tope_km": 7.2
+   "max_dbz": 53,
+   "tope_km": 6.0
   }
  ],
  "cuencas": {
-  "SanAntonio_CPaz": {
-   "nucleos": 2,
-   "max_dbz": 50
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 63
   }
  },
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 29.1,
-   "max_dbz": 50,
-   "tope_km": 9.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+  "Cordoba": {
+   "km": 8.1,
+   "max_dbz": 59,
+   "tope_km": 10.2,
+   "cuenca_de": "Arroyo La Cañada",
+   "nivel": "muy intensa"
   },
-  "Cuesta Blanca": {
-   "km": 18.6,
-   "max_dbz": 50,
-   "tope_km": 9.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+  "Santa María de Punilla": {
+   "km": 14.7,
+   "max_dbz": 63,
+   "tope_km": 8.4,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "muy intensa"
   },
-  "Villa del Totoral": {
-   "km": 19.5,
-   "max_dbz": 49,
-   "tope_km": 7.2,
-   "cuenca_de": "Rio Totoral",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 22.7,
-   "max_dbz": 50,
-   "tope_km": 9.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Tala Huasi": {
-   "km": 20.4,
-   "max_dbz": 50,
-   "tope_km": 9.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Paraje San Pellegrino": {
-   "km": 3.1,
-   "max_dbz": 49,
-   "tope_km": 7.2,
-   "nivel": "intensa"
+  "San Roque": {
+   "km": 16.3,
+   "max_dbz": 63,
+   "tope_km": 8.4,
+   "cuenca_de": "Lago San Roque",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 12
 }
