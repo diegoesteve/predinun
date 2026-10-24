@@ -1,109 +1,254 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-23 22:53",
+ "consultado": "2026-10-24 04:04",
  "radar": "RMA1",
- "observacion": "2026-10-23 22:40",
+ "observacion": "2026-10-24 03:50",
  "nucleos": [
   {
-   "lat": -31.5221,
-   "lon": -64.3318,
+   "lat": -31.387,
+   "lon": -64.278,
    "dbz": 48,
-   "max_dbz": 59,
-   "tope_km": 10.2
-  },
-  {
-   "lat": -31.8007,
-   "lon": -64.1381,
-   "dbz": 48,
-   "max_dbz": 59,
+   "max_dbz": 61,
    "tope_km": 6.0
   },
   {
-   "lat": -30.0892,
-   "lon": -64.8804,
+   "lat": -30.9805,
+   "lon": -64.4501,
    "dbz": 47,
-   "max_dbz": 55,
-   "tope_km": 11.4
-  },
-  {
-   "lat": -31.2607,
-   "lon": -64.6115,
-   "dbz": 47,
-   "max_dbz": 63,
-   "tope_km": 8.4
-  },
-  {
-   "lat": -30.372,
-   "lon": -64.7083,
-   "dbz": 46,
-   "max_dbz": 53,
-   "tope_km": 6.6
-  },
-  {
-   "lat": -30.4903,
-   "lon": -64.5577,
-   "dbz": 45,
-   "max_dbz": 52,
-   "tope_km": 9.0
-  },
-  {
-   "lat": -31.9979,
-   "lon": -63.9983,
-   "dbz": 45,
-   "max_dbz": 52,
+   "max_dbz": 56,
    "tope_km": 4.2,
    "descartado": "tope bajo (4.2 km)"
   },
   {
-   "lat": -30.29,
-   "lon": -63.9875,
-   "dbz": 45,
-   "max_dbz": 53,
-   "tope_km": 9.0
+   "lat": -32.4713,
+   "lon": -64.9665,
+   "dbz": 47,
+   "max_dbz": 56,
+   "tope_km": 9.6
+  },
+  {
+   "lat": -31.1433,
+   "lon": -64.2887,
+   "dbz": 46,
+   "max_dbz": 58,
+   "tope_km": 5.4,
+   "descartado": "tope bajo (5.4 km)"
   },
   {
    "lat": -31.2787,
    "lon": -64.7083,
+   "dbz": 46,
+   "max_dbz": 46,
+   "tope_km": 2.4,
+   "descartado": "tope bajo (2.4 km)"
+  },
+  {
+   "lat": -31.7558,
+   "lon": -64.1704,
+   "dbz": 46,
+   "max_dbz": 55,
+   "tope_km": 4.2,
+   "descartado": "tope bajo (4.2 km)"
+  },
+  {
+   "lat": -31.7289,
+   "lon": -64.3103,
+   "dbz": 45,
+   "max_dbz": 51,
+   "tope_km": 4.2,
+   "descartado": "tope bajo (4.2 km)"
+  },
+  {
+   "lat": -31.2697,
+   "lon": -64.5469,
+   "dbz": 45,
+   "max_dbz": 55,
+   "tope_km": 3.6,
+   "descartado": "tope bajo (3.6 km)"
+  },
+  {
+   "lat": -30.8083,
+   "lon": -65.1279,
+   "dbz": 44,
+   "max_dbz": 46,
+   "tope_km": 7.2
+  },
+  {
+   "lat": -31.45,
+   "lon": -64.7944,
    "dbz": 44,
    "max_dbz": 44,
+   "tope_km": 7.2
+  },
+  {
+   "lat": -31.3419,
+   "lon": -64.3748,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 7.8
+  },
+  {
+   "lat": -31.387,
+   "lon": -64.4178,
+   "dbz": 43,
+   "max_dbz": 51,
+   "tope_km": 7.2
+  },
+  {
+   "lat": -31.5581,
+   "lon": -64.5254,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 2.4,
+   "descartado": "tope bajo (2.4 km)"
+  },
+  {
+   "lat": -32.2215,
+   "lon": -64.9235,
+   "dbz": 43,
+   "max_dbz": 48,
+   "tope_km": 5.4,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
+   "lat": -32.293,
+   "lon": -64.8266,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 7.2
+  },
+  {
+   "lat": -31.2968,
+   "lon": -63.8046,
+   "dbz": 43,
+   "max_dbz": 47,
+   "tope_km": 3.0,
+   "descartado": "tope bajo (3.0 km)"
+  },
+  {
+   "lat": -31.5131,
+   "lon": -64.7621,
+   "dbz": 42,
+   "max_dbz": 46,
+   "tope_km": 6.6
+  },
+  {
+   "lat": -31.9173,
+   "lon": -64.1059,
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 5.4,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
+   "lat": -30.8899,
+   "lon": -65.0525,
+   "dbz": 42,
+   "max_dbz": 44,
+   "tope_km": 6.6
+  },
+  {
+   "lat": -32.3465,
+   "lon": -64.945,
+   "dbz": 42,
+   "max_dbz": 43,
+   "tope_km": 6.6
+  },
+  {
+   "lat": -30.772,
+   "lon": -65.343,
+   "dbz": 42,
+   "max_dbz": 43,
    "tope_km": 8.4
   },
   {
-   "lat": -31.7109,
-   "lon": -64.1489,
-   "dbz": 44,
-   "max_dbz": 53,
+   "lat": -31.9711,
+   "lon": -64.0306,
+   "dbz": 42,
+   "max_dbz": 42,
    "tope_km": 6.0
+  },
+  {
+   "lat": -31.3509,
+   "lon": -64.5147,
+   "dbz": 42,
+   "max_dbz": 44,
+   "tope_km": 6.0
+  },
+  {
+   "lat": -31.8007,
+   "lon": -63.9983,
+   "dbz": 41,
+   "max_dbz": 41,
+   "tope_km": 7.2
+  },
+  {
+   "lat": -31.3419,
+   "lon": -63.7293,
+   "dbz": 41,
+   "max_dbz": 41,
+   "tope_km": 5.4,
+   "descartado": "tope bajo (5.4 km)"
   }
  ],
  "cuencas": {
-  "Cosquin": {
+  "SanAntonio_CPaz": {
    "nucleos": 1,
-   "max_dbz": 63
+   "max_dbz": 46
+  },
+  "Capital": {
+   "nucleos": 1,
+   "max_dbz": 61
   }
  },
  "localidades": {
-  "Cordoba": {
-   "km": 8.1,
-   "max_dbz": 59,
-   "tope_km": 10.2,
-   "cuenca_de": "Arroyo La Cañada",
+  "Villa Carlos Paz": {
+   "km": 27.9,
+   "max_dbz": 46,
+   "tope_km": 6.6,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 16.9,
+   "max_dbz": 46,
+   "tope_km": 6.6,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "La Calera": {
+   "km": 4.2,
+   "max_dbz": 51,
+   "tope_km": 7.2,
+   "cuenca_de": "Rio Suquia",
+   "nivel": "intensa"
+  },
+  "Cortaderas": {
+   "km": 2.9,
+   "max_dbz": 56,
+   "tope_km": 9.6,
    "nivel": "muy intensa"
   },
-  "Santa María de Punilla": {
-   "km": 14.7,
-   "max_dbz": 63,
-   "tope_km": 8.4,
-   "cuenca_de": "Río Cosquín",
-   "nivel": "muy intensa"
+  "Mayu Sumaj": {
+   "km": 21.1,
+   "max_dbz": 46,
+   "tope_km": 6.6,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Tala Huasi": {
+   "km": 18.7,
+   "max_dbz": 46,
+   "tope_km": 6.6,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
   },
   "San Roque": {
-   "km": 16.3,
-   "max_dbz": 63,
-   "tope_km": 8.4,
-   "cuenca_de": "Lago San Roque",
-   "nivel": "muy intensa"
+   "km": 4.0,
+   "max_dbz": 51,
+   "tope_km": 7.2,
+   "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 13
 }
