@@ -9,7 +9,7 @@ del Instituto Nacional del Agua):
      - la última pasada del radar Sentinel-1 de los últimos 14 días (el agua se ve oscura en el radar).
   2. Con una altura h del río, el agua llega a la cota «cero + h». Quedan bajo el agua los lugares más bajos que esa
      cota Y conectados al río (una laguna aislada detrás de un albardón no se llena). Se repite para alturas cada
-     25 cm, desde 2 m hasta un poco más que el récord de la escala.
+     10 cm, desde 2 m hasta un poco más que el récord de la escala.
   3. Ajuste: el relieve satelital y el cero de la escala no usan exactamente la misma referencia, y el relieve tiene
      error. Se prueba correr toda la simulación entre -2 y +2 m y se elige el corrimiento con el que el agua simulada
      para la altura del día de la pasada del radar se parece más al agua que vio el radar.
@@ -39,7 +39,7 @@ CAB = {'User-Agent': 'predinun (proyecto sin fines comerciales)'}
 ESCALAS = [24, 30, 33, 34, 35]          # Reconquista, Santa Fe, San Lorenzo, Rosario, Villa Constitución
 RES = 1 / 3600                          # 1 segundo de arco (~30 m)
 MEDIO_LAT, MEDIO_LON = 0.18, 0.21       # medio lado del cuadrado: ~20 km
-PASO = 0.25
+PASO = 0.10
 SEMILLA_KM = 3                          # el río «de la escala»: el agua permanente a menos de 3 km
 UMBRAL_VV_DB = -16                      # agua en Sentinel-1 (VV): más oscuro que esto
 SALIDA = os.path.join(cfg.DOCS_DATA, 'simulacion')
