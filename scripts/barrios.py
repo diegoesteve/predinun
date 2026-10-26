@@ -64,9 +64,18 @@ def main():
         with open(sys.argv[1], encoding='utf-8') as f:
             osm = json.load(f)
     else:
-        r = requests.post(OVERPASS, data={'data': CONSULTA}, headers={'User-Agent': 'predinun (sin fines comerciales)'}, timeout=300)
-        r.raise_for_status()
-        osm = r.json()
+        osm = None
+        for url in (OVERPASS, 'https://overpass.kumi.systems/api/interpreter', OVERPASS):
+            try:
+                r = requests.get(url, params={'data': CONSULTA}, headers={'User-Agent': 'predinun/1.0 (proyecto sin fines comerciales)'}, timeout=300)
+                r.raise_for_status()
+                osm = r.json()
+                break
+            except Exception as e:
+                print('Overpass:', url, str(e)[:120])
+                time.sleep(30)
+        if osm is None:
+            sys.exit('Overpass no respondió')
     with open(os.path.join(cfg.DOCS_DATA, 'app.json'), encoding='utf-8') as f:
         lugares = json.load(f)['lugares']
     elementos = []
