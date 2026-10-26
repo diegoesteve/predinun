@@ -32,8 +32,11 @@ ALTO_M = {'cba': 8.0, 'sf': 4.0}     # sierras: arroyos encajonados; llanura: el
 TIPOS = {'school': 'escuela', 'college': 'instituto', 'university': 'facultad', 'hospital': 'hospital',
          'clinic': 'centro de salud', 'community_centre': 'centro vecinal', 'townhall': 'municipalidad',
          'police': 'comisaría', 'fire_station': 'bomberos', 'place_of_worship': 'iglesia o templo'}
-CONSULTA = ('[out:json][timeout:180];(area["name"="Córdoba"]["admin_level"="4"];area["name"="Santa Fe"]["admin_level"="4"];)->.p;'
-            '(nwr["amenity"~"^(' + '|'.join(TIPOS) + ')$"]["name"](area.p););out center tags;')
+FILTRO = 'nwr["amenity"~"^(' + '|'.join(TIPOS) + ')$"]["name"]'
+CAJA = (-35.0, -66.0, -22.0, -58.5)    # Córdoba y Santa Fe; se pide de a cuadrados de PASO grados para no saturar Overpass
+PASO = 1.5
+SERVIDORES = ('https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter',
+              'https://overpass.private.coffee/api/interpreter')
 RUMBOS = ['norte', 'noreste', 'este', 'sureste', 'sur', 'suroeste', 'oeste', 'noroeste']
 
 
@@ -47,15 +50,32 @@ def rumbo(la0, lo0, la1, lo1):
 
 
 def overpass():
-    for url in ('https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'):
-        try:
-            r = requests.get(url, params={'data': CONSULTA}, headers={'User-Agent': 'predinun/1.0 (sin fines comerciales)'}, timeout=300)
-            r.raise_for_status()
-            return r.json()['elements']
-        except Exception as e:
-            print('Overpass:', url, str(e)[:120])
-            time.sleep(20)
-    raise RuntimeError('Overpass no respondió')
+    s0, w0, n0, e0 = CAJA
+    vistos, salida = set(), []
+    la = s0
+    while la < n0:
+        lo = w0
+        while lo < e0:
+            q = f'[out:json][timeout:90];{FILTRO}({la},{lo},{min(la + PASO, n0)},{min(lo + PASO, e0)});out center tags;'
+            for intento in range(6):
+                url = SERVIDORES[intento % len(SERVIDORES)]
+                try:
+                    r = requests.get(url, params={'data': q}, headers={'User-Agent': 'predinun/1.0 (sin fines comerciales)'}, timeout=120)
+                    r.raise_for_status()
+                    for el in r.json()['elements']:
+                        if (el['type'], el['id']) not in vistos:
+                            vistos.add((el['type'], el['id']))
+                            salida.append(el)
+                    break
+                except Exception as e:
+                    print('Overpass:', url, la, lo, str(e)[:100])
+                    time.sleep(15)
+            else:
+                raise RuntimeError(f'Overpass no respondió para el cuadrado {la},{lo}')
+            time.sleep(2)
+            lo += PASO
+        la += PASO
+    return salida
 
 
 def hand(ee, puntos):
