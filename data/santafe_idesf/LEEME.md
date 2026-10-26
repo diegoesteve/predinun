@@ -11,3 +11,6 @@ responde desde fuera de Argentina. Cada imagen está recortada igual que la simu
 
 Para sumar otra escala, pedir el GetMap con el `bbox` de sus `limites` (oeste,sur,este,norte), `width=1512&height=1296`,
 `format=image/png` (y `transparent=true` para las defensas).
+
+La capa de defensas solo tiene datos para Santa Fe y alrededores: para Reconquista, San Lorenzo, Rosario y Villa
+Constitución el GetMap sale en blanco (revisado el 26/10/2026).

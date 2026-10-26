@@ -972,7 +972,7 @@ async function simulacion() {
       ? `Calibrado con el agua que vieron los satélites Landsat en las crecidas de ${anios.join(' y ')}: la simulación coincide en un ${Math.round(e.coincidencia_radar * 100)} % con lo que se inundó de verdad.`
       : 'Sin calibrar con crecidas anteriores.')
       + (e.validacion && e.validacion.coincidencia != null ? ` Comparada con el agua que relevó la Provincia el 19/01/1998 (río en ${metros(e.validacion.altura_m)}): coincide en un ${Math.round(e.validacion.coincidencia * 100)} %.` : '')
-      + (e.defensas ? ' Incluye las defensas de la Provincia como paredes (se supone que el agua no las sobrepasa).' : ' No incluye las defensas de esta zona.');
+      + (e.defensas ? ' Incluye las defensas de la Provincia como paredes (se supone que el agua no las sobrepasa).' : ' No incluye defensas: la capa de la Provincia solo las tiene cargadas para Santa Fe y alrededores. Si hay defensas en esta zona, la simulación muestra agua donde quizás no llegue.');
     rango.max = e.niveles.length - 1;
     // atajos: hoy, alerta, evacuación, pronóstico, récord
     const cerca = h => e.niveles.reduce((mej, v, i) => Math.abs(v - h) < Math.abs(e.niveles[mej] - h) ? i : mej, 0);
