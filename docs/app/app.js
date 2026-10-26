@@ -13,8 +13,13 @@ const PREF = {
   set(k, v) { try { v == null ? localStorage.removeItem('crecidas.' + k) : localStorage.setItem('crecidas.' + k, JSON.stringify(v)); } catch (e) { /* sin guardar */ } },
 };
 
-// Servicio de avisos al celular (Cloudflare). Vacío = todavía no está publicado y no se ofrecen avisos.
-const AVISOS = { url: '', clave: '' };
+// Servicio de avisos al celular: el mismo de Piedrazón (Cloudflare), con el lugar como «crecidas:<zona>:<lugar>».
+// Los avisos los manda piedrazon-codigo/scripts/notificar_crecidas.py cada 15 minutos. Vacío = no se ofrecen avisos.
+const AVISOS = {
+  url: 'https://piedrazon-avisos.predinun.workers.dev',
+  clave: 'BBM77Qa6Tgc4JkqqKM4pPobW34_W4_DwOrYRXpxnI3ZTu12EQDAic8ETYQoSHoEne89qZFc-2pxLSkzptzSTcdU',   // clave pública VAPID
+};
+const claveAviso = sel => `crecidas:${sel.z}:${sel.n}`;
 
 let DATOS = null;
 const lugarDe = sel => sel && DATOS && DATOS.lugares.find(x => x.n === sel.n && x.z === sel.z);
@@ -213,8 +218,8 @@ async function activarAvisos() {
   if (await Notification.requestPermission() !== 'granted') throw new Error('permiso');
   const reg = await navigator.serviceWorker.ready;
   const sub = (await reg.pushManager.getSubscription()) || await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: bytesDeClave(AVISOS.clave) });
-  await alServicio('/suscribir', { subscription: sub.toJSON(), localidad: `${sel.z}:${sel.n}`, umbral: 'alerta' });
-  PREF.set('push', `${sel.z}:${sel.n}`);
+  await alServicio('/suscribir', { subscription: sub.toJSON(), localidad: claveAviso(sel), umbral: 'enojado' });
+  PREF.set('push', claveAviso(sel));
 }
 async function apagarAvisos() {
   PREF.set('push', null);
@@ -227,7 +232,7 @@ async function apagarAvisos() {
 async function sincronizarAvisos() {
   const p = PREF.get('push', null), sel = PREF.get('lugar', null);
   if (!p || !sel || !AVISOS.url || !avisosPosibles() || Notification.permission !== 'granted') return;
-  if (p !== `${sel.z}:${sel.n}`) { try { await activarAvisos(); } catch (e) { /* se reintenta */ } }
+  if (p !== claveAviso(sel)) { try { await activarAvisos(); } catch (e) { /* se reintenta */ } }
 }
 function pintarAvisos() {
   const caja = $('#l-avisos');
