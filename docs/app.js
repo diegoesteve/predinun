@@ -839,7 +839,7 @@ async function santaFe() {
   const fuertes = lluvia.filter(f => f.condicion === 'lluvia fuerte');
   document.getElementById('sf-resumen').innerHTML =
     `<div class="estado-titulo ${CLASE_RIO[peor || 'normal']}"><span class="punto"></span>${enAlerta.length
-      ? `Ríos: ${enAlerta.map(r => `${esc(r.rio)} en ${esc(r.nombre)}`).join(', ')} por encima del nivel de alerta`
+      ? ['rojo', 'naranja'].map(n => { const l = enAlerta.filter(r => r.nivel === n); return l.length ? `${n === 'rojo' ? 'sobre el nivel de evacuación' : 'sobre el nivel de alerta'} en ${l.map(r => `${esc(r.nombre)}${r.rio !== 'Paraná' ? ` (${esc(r.rio)})` : ''}`).join(', ')}` : ''; }).filter(Boolean).join('; ').replace(/^/, 'Río Paraná: ')
       : peor === 'amarillo' ? 'Ríos: alguno se acerca al nivel de alerta' : 'Ríos: todos por debajo del nivel de alerta'}</div>` +
     `<div class="estado-titulo ${fuertes.length ? 'n-rojo' : lluvia.length ? 'n-naranja' : 'n-verde'}"><span class="punto"></span>${fuertes.length
       ? `Lluvia fuerte prevista en ${fuertes.length} localidad${fuertes.length > 1 ? 'es' : ''} en los próximos 3 días`
