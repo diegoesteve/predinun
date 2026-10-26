@@ -11,9 +11,8 @@ del Instituto Nacional del Agua):
      cota Y conectados al río (una laguna aislada detrás de un albardón no se llena). Se repite para alturas cada
      10 cm, desde 2 m hasta un poco más que el récord de la escala.
   3. Ajuste: el relieve satelital y el cero de la escala no usan exactamente la misma referencia, y el relieve tiene
-     error. En los días de agua más alta desde 2015 con pasada del radar, se prueba correr la simulación entre -3 y +3 m
-     y se elige el corrimiento con el que el agua simulada se parece más a la que vio el radar (la mediana de esas
-     crecidas).
+     error. En los meses de agua más alta (1984-2021) se compara la simulación con el agua que vio Landsat ese mes
+     (JRC Monthly Water History), probando corrimientos entre -3 y +3 m; se usa la mediana de esas crecidas.
 
 No ve defensas, terraplenes, bombeos ni desagües, y supone el río horizontal en los 20 km alrededor de la escala.
 Es una orientación, no un mapa oficial.
@@ -177,42 +176,46 @@ def main():
         except Exception as e:
             print('  sin pasada reciente de Sentinel-1:', str(e)[:120])
         try:
-            # los días más altos desde 2015, uno por crecida (separados al menos 60 días)
+            # Ajuste con el agua que vio Landsat mes a mes (JRC Monthly Water History, 1984-2021): en los meses de la
+            # escala con el río más alto (uno por crecida), el agua del mes contra la simulación con la altura máxima
+            # de ese mes. Landsat ve bien el agua abierta y cubre las grandes crecidas (1992, 1998, 2016...).
+            max_mes = {}
+            for f, v in obs:
+                if '1984-03' <= f[:7] <= '2021-12':
+                    max_mes[f[:7]] = max(max_mes.get(f[:7], -99), v)
             altos = []
-            for f, v in sorted(((f, v) for f, v in obs if f >= '2015-01-01'), key=lambda x: -x[1]):
-                if all(abs((datetime.fromisoformat(f) - datetime.fromisoformat(g)).days) > 60 for g, _ in altos):
-                    altos.append((f, v))
-                if len(altos) == 4:
+            for mes, v in sorted(max_mes.items(), key=lambda x: -x[1]):
+                if all(abs((int(mes[:4]) * 12 + int(mes[5:])) - (int(g[:4]) * 12 + int(g[5:]))) > 3 for g, _ in altos):
+                    altos.append((mes, v))
+                if len(altos) == 5:
                     break
-            for f, _ in altos:
-                d0 = datetime.fromisoformat(f)
-                cerca = pasadas((d0 - timedelta(days=3)).strftime('%Y-%m-%d'), (d0 + timedelta(days=4)).strftime('%Y-%m-%d'))
-                if not cerca:
+            mensual = ee.ImageCollection('JRC/GSW1_4/MonthlyHistory')
+            for mes, h_mes in altos:
+                img = mensual.filter(ee.Filter.eq('system:index', mes.replace('-', '_'))).first()
+                w = bajar(ee, ee.Image(img).select(['water'], ['b']).unmask(0).toFloat(), 'b', oeste, norte, ancho, alto)
+                agua, hay = w == 2, w > 0
+                zona = hay & rec_zona & ~permanente
+                if zona.sum() < 0.2 * rec_zona.sum():       # mes muy nublado: no sirve
+                    print(f'  Landsat {mes}: muy nublado')
                     continue
-                fecha = min(cerca, key=lambda x: abs((datetime.fromisoformat(x) - d0).days))
-                h_dia = altura_cerca(fecha)
-                agua, hay = radar(fecha)
-                if h_dia is None or hay.mean() < .3:
-                    continue
-                zona = hay & rec_zona & ~permanente       # se compara fuera del cauce de siempre
                 mejor = (-1, 0.0)
                 for k in np.arange(-3.0, 3.01, 0.1):
-                    sim = inundado(dem, permanente, semillas, cero + h_dia + k)
+                    sim = inundado(dem, permanente, semillas, cero + h_mes + k)
                     union = ((sim | agua) & zona).sum()
                     v = (sim & agua & zona).sum() / union if union else 0
                     if v > mejor[0]:
                         mejor = (v, round(float(k), 1))
-                calibracion.append({'fecha': fecha, 'altura_m': h_dia, 'ajuste_m': mejor[1], 'coincidencia': round(float(mejor[0]), 3)})
-                print(f'  ajuste con el radar del {fecha} (río en {h_dia} m): {mejor[1]:+.1f} m, coincidencia {mejor[0]:.0%}')
-            buenas = [c for c in calibracion if c['coincidencia'] >= 0.3] or calibracion
+                calibracion.append({'mes': mes, 'altura_max_m': h_mes, 'ajuste_m': mejor[1], 'coincidencia': round(float(mejor[0]), 3)})
+                print(f'  ajuste con Landsat {mes} (río hasta {h_mes} m): {mejor[1]:+.1f} m, coincidencia {mejor[0]:.0%}')
+            buenas = [c for c in calibracion if c['coincidencia'] >= 0.4] or calibracion
             if buenas:
                 ajuste = round(float(np.median([c['ajuste_m'] for c in buenas])), 1)
                 iou = round(float(np.mean([c['coincidencia'] for c in buenas])), 3)
-                print(f'  ajuste final {ajuste:+.1f} m (coincidencia media {iou:.0%})')
+                print(f'  ajuste final {ajuste:+.1f} m (coincidencia media {iou:.0%}, {len(buenas)} crecidas)')
             else:
-                print('  sin pasadas del radar en crecidas: sin ajuste')
+                print('  sin meses de crecida con Landsat: sin ajuste')
         except Exception as e:
-            print('  sin ajuste con Sentinel-1:', str(e)[:120])
+            print('  sin ajuste con Landsat:', str(e)[:150])
 
         # alturas a simular
         alerta, evac = est.get('nivel_alerta'), est.get('nivel_evacuacion')
@@ -240,7 +243,7 @@ def main():
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'simulacion.json'), {
         'generado': datetime.now(timezone(timedelta(hours=-3))).strftime('%Y-%m-%d %H:%M'),
         'fuentes': 'Relieve FABDEM (Hawker y otros, 2022; CC BY-NC-SA 4.0) o Copernicus GLO-30; agua permanente JRC Global Surface Water; '
-                   'radar Sentinel-1 (Copernicus); alturas y cero de las escalas: INA / Prefectura Naval',
+                   'radar Sentinel-1 (Copernicus); ajuste con JRC Monthly Water History (Landsat); alturas y cero de las escalas: INA / Prefectura Naval',
         'escalas': resultado})
     print(f'simulacion.json: {len(resultado)} escalas')
 
