@@ -34,7 +34,7 @@ TIPOS = {'school': 'escuela', 'college': 'instituto', 'university': 'facultad', 
          'police': 'comisaría', 'fire_station': 'bomberos', 'place_of_worship': 'iglesia o templo'}
 FILTRO = 'nwr["amenity"~"^(' + '|'.join(TIPOS) + ')$"]["name"]'
 CAJA = (-35.0, -66.0, -22.0, -58.5)    # Córdoba y Santa Fe; se pide de a cuadrados de PASO grados para no saturar Overpass
-PASO = 1.5
+PASO = 0.5
 SERVIDORES = ('https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter',
               'https://overpass.private.coffee/api/interpreter')
 RUMBOS = ['norte', 'noreste', 'este', 'sureste', 'sur', 'suroeste', 'oeste', 'noroeste']
@@ -49,32 +49,46 @@ def rumbo(la0, lo0, la1, lo1):
     return RUMBOS[int((ang + 22.5) // 45) % 8]
 
 
-def overpass():
+CACHE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'lugares_publicos.json')
+
+
+def overpass(objetivos):
+    """Lugares públicos con nombre, solo en los cuadrados donde hay barrios o pueblos. Guarda una copia en data/ y la
+    reusa si tiene menos de 60 días (los lugares no cambian seguido y Overpass a veces no responde)."""
+    try:
+        c = json.load(open(CACHE, encoding='utf-8'))
+        if time.time() - c['t'] < 60 * 86400:
+            print(f"Lugares públicos de la copia guardada ({len(c['elementos'])})")
+            return c['elementos']
+    except Exception:
+        pass
     s0, w0, n0, e0 = CAJA
+    cuadrados = sorted({(s0 + int((la - s0) // PASO) * PASO, w0 + int((lo - w0) // PASO) * PASO)
+                        for (_, _, la, lo) in objetivos if s0 <= la < n0 and w0 <= lo < e0})
+    print(f'{len(cuadrados)} cuadrados para Overpass', flush=True)
     vistos, salida = set(), []
-    la = s0
-    while la < n0:
-        lo = w0
-        while lo < e0:
-            q = f'[out:json][timeout:90];{FILTRO}({la},{lo},{min(la + PASO, n0)},{min(lo + PASO, e0)});out center tags;'
-            for intento in range(6):
-                url = SERVIDORES[intento % len(SERVIDORES)]
-                try:
-                    r = requests.get(url, params={'data': q}, headers={'User-Agent': 'predinun/1.0 (sin fines comerciales)'}, timeout=120)
-                    r.raise_for_status()
-                    for el in r.json()['elements']:
-                        if (el['type'], el['id']) not in vistos:
-                            vistos.add((el['type'], el['id']))
-                            salida.append(el)
-                    break
-                except Exception as e:
-                    print('Overpass:', url, la, lo, str(e)[:100])
-                    time.sleep(15)
-            else:
-                raise RuntimeError(f'Overpass no respondió para el cuadrado {la},{lo}')
-            time.sleep(2)
-            lo += PASO
-        la += PASO
+    for la, lo in cuadrados:
+        m = 0.03    # un poco de borde para lugares justo del otro lado de la línea
+        q = f'[out:json][timeout:90];{FILTRO}({la - m},{lo - m},{min(la + PASO, n0) + m},{min(lo + PASO, e0) + m});out center tags;'
+        for intento in range(6):
+            url = SERVIDORES[intento % len(SERVIDORES)]
+            try:
+                r = requests.get(url, params={'data': q}, headers={'User-Agent': 'predinun/1.0 (sin fines comerciales)'}, timeout=120)
+                r.raise_for_status()
+                for el in r.json()['elements']:
+                    if (el['type'], el['id']) not in vistos:
+                        vistos.add((el['type'], el['id']))
+                        salida.append({k: el[k] for k in ('lat', 'lon', 'center', 'tags') if k in el})
+                break
+            except Exception as e:
+                print('Overpass:', url, la, lo, str(e)[:100], flush=True)
+                time.sleep(15)
+        else:
+            raise RuntimeError(f'Overpass no respondió para el cuadrado {la},{lo}')
+        print(f'  {la},{lo}: {len(salida)} lugares', flush=True)
+        time.sleep(2)
+    with open(CACHE, 'w', encoding='utf-8') as f:
+        json.dump({'t': time.time(), 'elementos': salida}, f, ensure_ascii=False, separators=(',', ':'))
     return salida
 
 
@@ -154,14 +168,14 @@ def main():
         return
     app = cfg.leer_json(os.path.join('..', 'docs', 'data', 'app.json')) or {}
     barrios = (cfg.leer_json(os.path.join('..', 'docs', 'data', 'barrios.json')) or {}).get('barrios', [])
+    objetivos = [(f"{x['z']}:{x['n']}:", x['z'], x['la'], x['lo']) for x in app.get('lugares', [])]
+    objetivos += [(f"{b[2]}:{b[1]}:{b[0]}", b[2], b[3], b[4]) for b in barrios]
     destinos = []
-    for e in overpass():
+    for e in overpass(objetivos):
         t = e.get('tags') or {}
         c = e.get('center') or ({'lat': e['lat'], 'lon': e['lon']} if 'lat' in e else None)
         if c and t.get('name') and t.get('amenity') in TIPOS:
             destinos.append({'n': t['name'].strip()[:80], 't': TIPOS[t['amenity']], 'la': round(c['lat'], 5), 'lo': round(c['lon'], 5)})
-    objetivos = [(f"{x['z']}:{x['n']}:", x['z'], x['la'], x['lo']) for x in app.get('lugares', [])]
-    objetivos += [(f"{b[2]}:{b[1]}:{b[0]}", b[2], b[3], b[4]) for b in barrios]
     print(f'{len(destinos)} lugares públicos, {len(objetivos)} barrios y pueblos')
     h = hand(ee, [(d['la'], d['lo']) for d in destinos] + [(o[2], o[3]) for o in objetivos])
     for d, v in zip(destinos, h[:len(destinos)]):
