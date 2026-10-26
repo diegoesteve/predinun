@@ -2,7 +2,7 @@
 //   - La app (html, js, css, íconos): lo guardado primero, y se actualiza en segundo plano.
 //   - Los datos (../data/app.json y los arroyos): de la red primero; sin conexión, lo último guardado.
 // Cambiar VERSION cuando cambie la lista de APP.
-const VERSION = 'crecidas-app-5';
+const VERSION = 'crecidas-app-6';
 const APP = ['./', 'index.html', 'app.js', 'app.css', 'manifest.webmanifest', 'iconos/icono-192.png', 'iconos/icono-512.png'];
 
 self.addEventListener('install', ev => {

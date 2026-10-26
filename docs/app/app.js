@@ -180,9 +180,9 @@ async function pintarAlto(x, b, peor) {
   try { const r = await fetch(`../data/altos/${x.z}/${slugLugar(x.n)}.json`); if (r.ok) datos = await r.json(); } catch (e) { /* sin datos */ }
   const v = datos && ((b && datos[b]) || datos['']);
   if (!v) return;
-  const agua = x.tipo === 'sierras' ? 'el arroyo' : 'el río o el canal';
+  const agua = x.tipo === 'sierras' ? 'del arroyo' : 'del río o el canal';
   const propio = v.h != null && v.h >= (x.tipo === 'sierras' ? 8 : 4)
-    ? `<p class="nota">${b ? 'Tu barrio está' : 'El centro está'} unos ${Math.round(v.h)} m por encima de ${agua} más cercano.</p>` : '';
+    ? `<p class="nota">${b ? 'Tu barrio está' : 'El centro está'} unos ${Math.round(v.h)} m por encima ${agua} más cercano.</p>` : '';
   caja.className = 'caja' + (peor >= 2 ? ' n' + peor : '');
   caja.hidden = false;
   if (!v.d) {
@@ -194,7 +194,7 @@ async function pintarAlto(x, b, peor) {
   caja.innerHTML = `<h2>Si tenés que salir</h2>
     <p class="nota">Lugar alto más cercano:</p>
     <p class="alto-destino">${esc(d.n)}</p>
-    <p class="nota">${esc(d.t.charAt(0).toUpperCase() + d.t.slice(1))} a unos ${d.m >= 1000 ? (d.m / 1000).toFixed(1).replace('.', ',') + ' km' : d.m + ' m'} hacia el ${esc(d.r)}, unos ${Math.round(d.h)} m por encima de ${agua} más cercano.</p>
+    <p class="nota">${esc(d.t.charAt(0).toUpperCase() + d.t.slice(1))} a unos ${d.m >= 1000 ? (d.m / 1000).toFixed(1).replace('.', ',') + ' km' : d.m + ' m'} hacia el ${esc(d.r)}, unos ${Math.round(d.h)} m por encima ${agua} más cercano.</p>
     ${propio}
     <a class="boton ${peor >= 2 ? 'claro' : 'chico'}" href="${ir}" target="_blank" rel="noopener" style="align-self:flex-start">Cómo llegar</a>
     <p class="nota" style="font-size:13px">Es una referencia por el relieve, no un centro de evacuación oficial. Si Defensa Civil o Protección Civil indican otro lugar, andá ahí. Si el agua ya corre fuerte por la calle, no la cruces: subí a un lugar alto cerca.</p>`;

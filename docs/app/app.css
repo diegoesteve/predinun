@@ -82,7 +82,7 @@ fieldset.caja legend { font-weight: 800; font-size: 19px; padding: 0 4px; }
 .acepto input { width: 24px; height: 24px; flex: none; margin-top: 2px; }
 .vista-fotos { display: flex; gap: 8px; flex-wrap: wrap; }
 .vista-fotos img { width: 84px; height: 84px; object-fit: cover; border-radius: 10px; }
-.alto-destino { font-size: 20px; font-weight: 800; line-height: 1.2; }
+.alto-destino { font-size: 20px; font-weight: 800; line-height: 1.2; margin: -6px 0 -4px; }
 .caja.n2 { background: var(--n2); color: var(--n2t); border-color: var(--n2); }
 .caja.n3 { background: var(--n3); color: var(--n3t); border-color: var(--n3); }
 .caja.n2 .nota, .caja.n3 .nota { color: inherit; opacity: .95; }
