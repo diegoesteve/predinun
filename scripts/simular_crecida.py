@@ -147,33 +147,43 @@ def main():
             print('  no encontré el río cerca de la escala, no se simula')
             continue
 
-        # radar Sentinel-1: la última pasada de los últimos 14 días
+        # radar Sentinel-1: las pasadas de los últimos 21 días, de la más nueva a la más vieja, hasta una que sirva
         ajuste, iou, s1_fecha, s1_altura, agua_s1 = 0.0, None, None, None, None
+        rec_zona = dem <= cero + rec_altura + 1.5        # solo donde el agua puede llegar (no los campos altos)
+        def altura_cerca(fecha, dias=3):
+            f0 = datetime.fromisoformat(fecha)
+            for dd in sorted(range(-dias, dias + 1), key=abs):
+                v = por_dia.get((f0 + timedelta(days=dd)).strftime('%Y-%m-%d'))
+                if v is not None:
+                    return v
+            return None
         try:
             col = (ee.ImageCollection('COPERNICUS/S1_GRD').filterBounds(caja)
-                   .filterDate((ahora - timedelta(days=14)).strftime('%Y-%m-%d'), (ahora + timedelta(days=1)).strftime('%Y-%m-%d'))
-                   .filter(ee.Filter.eq('instrumentMode', 'IW')).filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV'))
-                   .sort('system:time_start', False))
-            ultima = col.first()
-            s1_fecha = ee.Date(ultima.get('system:time_start')).format('YYYY-MM-dd').getInfo()
-            del_dia = col.filterDate(s1_fecha, ee.Date(s1_fecha).advance(1, 'day')).mosaic().select(['VV'], ['b'])
-            vv = bajar(ee, del_dia.focalMedian(45, 'circle', 'meters').unmask(0).toFloat(), 'b', oeste, norte, ancho, alto)
-            agua_s1 = (vv < UMBRAL_VV_DB) & (vv != 0)
-            s1_altura = por_dia.get(s1_fecha) or por_dia.get((datetime.fromisoformat(s1_fecha) - timedelta(days=1)).strftime('%Y-%m-%d'))
-            hay = vv != 0
-            if s1_altura is not None and hay.mean() > .5:
+                   .filterDate((ahora - timedelta(days=21)).strftime('%Y-%m-%d'), (ahora + timedelta(days=1)).strftime('%Y-%m-%d'))
+                   .filter(ee.Filter.eq('instrumentMode', 'IW')).filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV')))
+            fechas = sorted(set(col.aggregate_array('system:time_start').map(lambda t: ee.Date(t).format('YYYY-MM-dd')).getInfo()), reverse=True)
+            for fecha in fechas[:4]:
+                del_dia = col.filterDate(fecha, ee.Date(fecha).advance(1, 'day')).mosaic().select(['VV'], ['b'])
+                vv = bajar(ee, del_dia.focalMedian(45, 'circle', 'meters').unmask(0).toFloat(), 'b', oeste, norte, ancho, alto)
+                hay = vv != 0
+                h_dia = altura_cerca(fecha)
+                if agua_s1 is None:                       # se muestra siempre la más nueva
+                    agua_s1, s1_fecha, s1_altura = (vv < UMBRAL_VV_DB) & hay, fecha, h_dia
+                if h_dia is None or hay.mean() < .3:
+                    print(f'  radar del {fecha}: sin altura del río cerca de esa fecha o pasada incompleta')
+                    continue
+                agua = (vv < UMBRAL_VV_DB) & hay
+                zona = hay & rec_zona & ~permanente       # se compara fuera del cauce de siempre
                 mejor = (-1, 0.0)
-                for k in np.arange(-2.0, 2.01, 0.1):
-                    sim = inundado(dem, permanente, semillas, cero + s1_altura + k)
-                    inter = (sim & agua_s1 & hay).sum()
-                    union = ((sim | agua_s1) & hay).sum()
-                    v = inter / union if union else 0
+                for k in np.arange(-3.0, 3.01, 0.1):
+                    sim = inundado(dem, permanente, semillas, cero + h_dia + k)
+                    union = ((sim | agua) & zona).sum()
+                    v = (sim & agua & zona).sum() / union if union else 0
                     if v > mejor[0]:
                         mejor = (v, round(float(k), 1))
                 iou, ajuste = round(float(mejor[0]), 3), mejor[1]
-                print(f'  radar del {s1_fecha} con el río en {s1_altura} m: ajuste {ajuste:+.1f} m, coincidencia {iou:.0%}')
-            else:
-                print(f'  radar del {s1_fecha}: sin altura del río ese día o pasada incompleta, sin ajuste')
+                print(f'  radar del {fecha} con el río en {h_dia} m: ajuste {ajuste:+.1f} m, coincidencia {iou:.0%}')
+                break
         except Exception as e:
             print('  sin radar Sentinel-1:', str(e)[:120])
 
