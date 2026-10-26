@@ -13,7 +13,7 @@
 <meta property="og:title" content="¿Viene agua a tu barrio?">
 <meta property="og:description" content="Te avisamos un día antes si puede venir agua a tu barrio o pueblo. Córdoba y Santa Fe. Gratis.">
 <meta property="og:image" content="https://diegoesteve.github.io/predinun/og.png">
-<link rel="stylesheet" href="app.css?v=1">
+<link rel="stylesheet" href="app.css?v=2">
 </head>
 <body>
 <main id="app">
@@ -25,8 +25,8 @@
     <p class="bajada">Te avisamos <b>un día antes</b> si puede venir agua a tu barrio o tu pueblo. Es gratis y no tenés que registrarte.</p>
     <button type="button" id="b-ubicacion" class="boton primario"><svg width="22" height="22" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="3" fill="currentColor"/><circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Usar dónde estoy ahora</button>
     <p id="ubicacion-estado" class="nota" role="status"></p>
-    <label for="buscar" class="etiqueta">O escribí tu pueblo o tu ciudad</label>
-    <input id="buscar" type="search" autocomplete="off" placeholder="Por ejemplo Unquillo o Reconquista">
+    <label for="buscar" class="etiqueta">O escribí tu barrio, pueblo o ciudad</label>
+    <input id="buscar" type="search" autocomplete="off" placeholder="Por ejemplo Villa Cornú, Unquillo o Reconquista">
     <ul id="resultados" class="resultados" role="listbox"></ul>
     <p class="nota pie">Por ahora: sierras de Córdoba y provincia de Santa Fe.</p>
   </section>
@@ -39,6 +39,7 @@
     </header>
     <div id="l-dias" class="dias"></div>
     <div id="l-arroyo" class="caja" hidden></div>
+    <section id="l-vecinos" class="caja"></section>
     <section id="l-hacer" class="caja"></section>
     <div class="botones">
       <a id="b-whatsapp" class="boton whatsapp" href="#" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Avisar por WhatsApp</a>
@@ -52,6 +53,6 @@
 
   <p id="sin-datos" class="caja" hidden></p>
 </main>
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>

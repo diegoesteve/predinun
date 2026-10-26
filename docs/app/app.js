@@ -23,12 +23,20 @@ const claveAviso = sel => `crecidas:${sel.z}:${sel.n}`;
 
 let DATOS = null;
 const lugarDe = sel => sel && DATOS && DATOS.lugares.find(x => x.n === sel.n && x.z === sel.z);
+let BARRIOS = null, EVENTOS = {};   // barrios de OpenStreetMap (se bajan al buscar) y lo que contaron los vecinos
+async function cargarBarrios() {
+  if (BARRIOS) return BARRIOS;
+  try { BARRIOS = ((await (await fetch('../data/barrios.json')).json()).barrios || []).map(b => ({ b: b[0], n: b[1], z: b[2], la: b[3], lo: b[4] })); }
+  catch (e) { BARRIOS = []; }
+  return BARRIOS;
+}
 
 async function cargar() {
   try {
     const r = await fetch('../data/app.json?t=' + Date.now());
     if (!r.ok) throw new Error(r.status);
     DATOS = await r.json();
+    try { EVENTOS = (await (await fetch('../data/barrios_eventos.json?t=' + Date.now())).json()) || {}; } catch (e) { EVENTOS = {}; }
   } catch (e) {
     $('#sin-datos').hidden = false;
     $('#sin-datos').textContent = 'No se pudieron cargar los datos. Revisá la conexión y volvé a abrir la app.';
@@ -38,7 +46,7 @@ async function cargar() {
   const q = new URLSearchParams(location.search);
   if (q.get('l')) {
     const x = DATOS.lugares.find(y => y.n === q.get('l') && (!q.get('z') || y.z === q.get('z')));
-    if (x && !PREF.get('lugar', null)) PREF.set('lugar', { n: x.n, z: x.z });
+    if (x && !PREF.get('lugar', null)) PREF.set('lugar', { n: x.n, z: x.z, b: q.get('b') || null });
   }
   mostrar();
 }
@@ -52,19 +60,27 @@ function mostrar() {
 }
 
 // ---------------------------------------------------------------- elegir lugar
-function buscar() {
-  const q = sinTildes($('#buscar').value.trim());
+async function buscar() {
+  const texto = $('#buscar').value.trim(), q = sinTildes(texto);
   const lista = $('#resultados');
   if (q.length < 2) { lista.innerHTML = ''; return; }
-  const rango = x => { const n = sinTildes(x.n); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
-  const r = DATOS.lugares.filter(x => sinTildes(x.n).includes(q)).sort((a, b) => rango(a) - rango(b) || a.n.localeCompare(b.n)).slice(0, 8);
-  lista.innerHTML = r.length ? r.map((x, i) => `<li><button type="button" data-i="${i}"><span><b>${esc(x.n)}</b><br><small>${ZONA[x.z]}${x.rio ? ' · ' + esc(x.rio) : ''}</small></span><span aria-hidden="true">›</span></button></li>`).join('')
+  const barrios = await cargarBarrios();
+  if ($('#buscar').value.trim() !== texto) return;   // ya escribió otra cosa
+  const rango = t => { const n = sinTildes(t); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
+  const r = [
+    ...DATOS.lugares.filter(x => sinTildes(x.n).includes(q)).map(x => ({ x, nombre: x.n, r: rango(x.n), sub: `${ZONA[x.z]}${x.rio ? ' · ' + x.rio : ''}` })),
+    ...barrios.filter(b => sinTildes(b.b).includes(q) || sinTildes(b.b + ' ' + b.n).includes(q)).map(b => ({ x: lugarDe(b), barrio: b, nombre: b.b, r: rango(b.b) + 0.5, sub: `Barrio de ${b.n} · ${ZONA[b.z]}` })),
+  ].filter(o => o.x).sort((a, b) => a.r - b.r || a.nombre.localeCompare(b.nombre)).slice(0, 10);
+  lista.innerHTML = r.length ? r.map((o, i) => `<li><button type="button" data-i="${i}"><span><b>${esc(o.nombre)}</b><br><small>${esc(o.sub)}</small></span><span aria-hidden="true">›</span></button></li>`).join('')
     : '<li><p class="nota" style="padding:14px 16px">No encontramos ese lugar. Por ahora están las sierras de Córdoba y la provincia de Santa Fe.</p></li>';
-  lista.querySelectorAll('button').forEach(b => b.addEventListener('click', () => elegir(r[b.dataset.i], null)));
+  lista.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    const o = r[b.dataset.i];
+    elegir(o.x, o.barrio ? { la: o.barrio.la, lo: o.barrio.lo, barrio: true } : null, o.barrio ? o.barrio.b : null);
+  }));
 }
 
-function elegir(x, coords) {
-  PREF.set('lugar', { n: x.n, z: x.z });
+function elegir(x, coords, barrio) {
+  PREF.set('lugar', { n: x.n, z: x.z, b: barrio || null });
   PREF.set('coords', coords);
   $('#buscar').value = ''; $('#resultados').innerHTML = '';
   mostrar();
@@ -116,9 +132,40 @@ const HACER = {
   },
 };
 
-function pintarLugar(x) {
-  $('#l-nombre').textContent = x.n;
-  $('#l-zona').textContent = `${ZONA[x.z]}${x.rio ? ' · ' + x.rio : ''}`;
+// Lo que contaron los vecinos del barrio: si la lluvia prevista llega a la que ya lo inundó, el día sube a «alerta»
+function conBarrio(x, b) {
+  const ev = b && EVENTOS[`${x.z}:${x.n}:${b}`];
+  if (!ev || !ev.umbral_mm || !x.mm) return { x, ev };
+  const y = { ...x };
+  const fecha = f => f.slice(8, 10) + '/' + f.slice(5, 7) + '/' + f.slice(0, 4);
+  const ref = ev.eventos.find(e => e.lluvia_mm) || ev.eventos[0];
+  ['hoy', 'man'].forEach((dia, i) => {
+    const mm = x.mm[i] || 0;
+    if (mm >= ev.umbral_mm && y[dia].nivel < 2) {
+      y[dia] = { nivel: 2, titulo: 'Tu barrio ya se inundó con lluvias así',
+                 texto: `Se esperan unos ${Math.round(mm)} mm ${dia === 'hoy' ? 'hoy' : 'mañana'}. El ${fecha(ref.fecha)} el barrio se inundó con unos ${Math.round(ref.lluvia_mm || 0)} mm, según contaron los vecinos.`,
+                 tambien: x[dia].nivel ? x[dia].titulo : null };
+    }
+  });
+  return { x: y, ev };
+}
+
+function pintarVecinos(x, b, ev) {
+  const caja = $('#l-vecinos');
+  const fecha = f => f.slice(8, 10) + '/' + f.slice(5, 7) + '/' + f.slice(0, 4);
+  const enlace = `../mapa.html?localidad=${encodeURIComponent(x.n)}${b ? '&barrio=' + encodeURIComponent(b) : ''}#aporta`;
+  caja.innerHTML = (ev && ev.eventos.length
+    ? `<h2>Lo que contaron los vecinos</h2><ul class="eventos">${ev.eventos.slice(0, 5).map(e => `<li><b>${fecha(e.fecha)}</b>${e.lluvia_mm ? ` · llovieron unos ${Math.round(e.lluvia_mm)} mm` : ''}${e.que ? `<br>${esc(e.que)}` : ''}</li>`).join('')}</ul>`
+      + (ev.umbral_mm ? `<p class="nota" style="color:inherit">Si se esperan ${ev.umbral_mm} mm o más, te avisamos que tu barrio ya se inundó con lluvias así.</p>` : '')
+    : `<h2>¿Se inundó ${b ? 'tu barrio' : 'tu calle o tu barrio'} alguna vez?</h2><p class="nota" style="color:inherit">Contanos cuándo y hasta dónde llegó el agua. Con eso aprendemos con cuánta lluvia se inunda cada barrio y podemos avisar antes.</p>`)
+    + `<a class="boton chico" href="${enlace}" style="align-self:flex-start">${ev && ev.eventos.length ? 'Contar otra vez que se inundó' : 'Contalo'}</a>`;
+}
+
+function pintarLugar(x0) {
+  const sel = PREF.get('lugar', null) || {};
+  const { x, ev } = conBarrio(x0, sel.b);
+  $('#l-nombre').textContent = sel.b || x.n;
+  $('#l-zona').textContent = sel.b ? `Barrio de ${x.n} · ${ZONA[x.z]}` : `${ZONA[x.z]}${x.rio ? ' · ' + x.rio : ''}`;
   const man = DATOS.dia_manana ? `Mañana, ${DATOS.dia_manana}` : 'Mañana';
   // lo más importante arriba: si mañana es peor que hoy, mañana va primero y grande; si sigue igual, no se repite
   const primeroManana = x.man.nivel > x.hoy.nivel;
@@ -129,11 +176,12 @@ function pintarLugar(x) {
   const peor = Math.max(x.hoy.nivel, x.man.nivel);
   const lista = HACER[x.tipo][peor >= 2 ? 'alto' : peor === 1 ? 'medio' : 'nada'];
   $('#l-hacer').innerHTML = `<h2>${peor ? (primeroManana ? 'Qué hacer hoy, para mañana' : 'Qué hacer') : 'Para estar preparado'}</h2><ol>${lista.map(t => `<li>${esc(t)}</li>`).join('')}</ol>`;
-  const texto = `${x.n}: ${primeroManana ? 'mañana' : 'hoy'} ${((t => t.charAt(0).toLowerCase() + t.slice(1))((primeroManana ? x.man : x.hoy).titulo))}. Mirá cómo está tu barrio:`;
-  const enlace = new URL(`?l=${encodeURIComponent(x.n)}&z=${x.z}`, location.href.split('?')[0]).href;
+  const texto = `${sel.b || x.n}: ${primeroManana ? 'mañana' : 'hoy'} ${((t => t.charAt(0).toLowerCase() + t.slice(1))((primeroManana ? x.man : x.hoy).titulo))}. Mirá cómo está tu barrio:`;
+  const enlace = new URL(`?l=${encodeURIComponent(x.n)}&z=${x.z}${sel.b ? '&b=' + encodeURIComponent(sel.b) : ''}`, location.href.split('?')[0]).href;
   $('#b-whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent(`${texto} ${enlace}`);
   $('#l-fuente').textContent = `Datos de las ${DATOS.generado.slice(11)} del ${DATOS.generado.slice(8, 10)}/${DATOS.generado.slice(5, 7)}. ` +
     (x.tipo === 'sierras' ? 'Radar del OHMC, pronóstico de lluvia y alertas del SMN.' : 'Ríos del INA y Prefectura, pronóstico de lluvia y alertas del SMN.');
+  pintarVecinos(x, sel.b, ev);
   pintarArroyo(x);
   pintarAvisos();
   pintarInstalar();
@@ -160,8 +208,8 @@ async function pintarArroyo(x) {
   caja.hidden = false;
   const m = Math.round(d.m / 10) * 10;
   caja.innerHTML = m <= 300
-    ? `<h2>Estás a unos ${m} m ${d.nombre ? 'del ' + esc(d.nombre) : 'de un arroyo'}</h2><p class="nota" style="color:inherit">En la crecida de 2015 en Sierras Chicas el agua llegó hasta 300 m de la orilla. Con tormenta fuerte, alejate del arroyo.</p>`
-    : `<h2>Estás a unos ${m >= 1000 ? (m / 1000).toFixed(1).replace('.', ',') + ' km' : m + ' m'} del arroyo más cercano</h2><p class="nota" style="color:inherit">Más lejos que los 300 m a los que llegó el agua en la crecida de 2015 en Sierras Chicas. Igual, no cruces vados con tormenta.</p>`;
+    ? `<h2>${c.barrio ? 'El barrio está' : 'Estás'} a unos ${m} m ${d.nombre ? 'del ' + esc(d.nombre) : 'de un arroyo'}</h2><p class="nota" style="color:inherit">En la crecida de 2015 en Sierras Chicas el agua llegó hasta 300 m de la orilla. Con tormenta fuerte, alejate del arroyo.</p>`
+    : `<h2>${c.barrio ? 'El barrio está' : 'Estás'} a unos ${m >= 1000 ? (m / 1000).toFixed(1).replace('.', ',') + ' km' : m + ' m'} del arroyo más cercano</h2><p class="nota" style="color:inherit">Más lejos que los 300 m a los que llegó el agua en la crecida de 2015 en Sierras Chicas. Igual, no cruces vados con tormenta.</p>`;
 }
 
 async function arroyoMasCercano(la, lo) {

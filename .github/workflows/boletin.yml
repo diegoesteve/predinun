@@ -89,6 +89,9 @@ jobs:
       - name: Hoy y mañana por localidad (la app)
         continue-on-error: true
         run: python scripts/armar_app.py
+      - name: Lo que contaron los vecinos, por barrio (aportes aprobados)
+        continue-on-error: true
+        run: python scripts/eventos_barrios.py
       - name: Páginas para compartir cada localidad (vista previa en WhatsApp)
         continue-on-error: true
         run: python scripts/paginas_compartir.py

@@ -207,8 +207,16 @@
         <input name="fecha_evento" required maxlength="80" placeholder="15 de febrero de 2015, o «verano de 1992»"></label>
 
       <label><span>Localidad <span class="req">*</span></span>
-        <input name="localidad" required maxlength="80" list="lista-localidades" placeholder="Por ejemplo, Mendiolaza" autocomplete="off"></label>
+        <input name="localidad" required maxlength="80" list="lista-localidades" placeholder="Por ejemplo, Mendiolaza o Santa Fe" autocomplete="off"></label>
       <datalist id="lista-localidades"></datalist>
+
+      <label>Barrio (opcional)
+        <input name="barrio" maxlength="80" list="lista-barrios" placeholder="Por ejemplo, Villa Cornú" autocomplete="off"></label>
+      <datalist id="lista-barrios"></datalist>
+
+      <label>Fecha exacta, si la sabés (opcional)
+        <input name="fecha" type="date" min="1900-01-01"></label>
+      <p class="nota" style="margin-top:-6px">Con el barrio y la fecha buscamos cuánto llovió ese día: así aprendemos con cuánta lluvia se inunda cada barrio y podemos avisar antes.</p>
 
       <div class="campo">
         <span>Lugar en el mapa (opcional): tocá el mapa donde pasó.</span>
@@ -254,6 +262,6 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="config.js?v=202610231441"></script>
-<script src="app.js?v=202610261500"></script>
+<script src="app.js?v=202610261530"></script>
 </body>
 </html>

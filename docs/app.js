@@ -542,9 +542,23 @@ async function aporta() {
       { enableHighAccuracy: true, timeout: 15000 });
   });
   document.getElementById('borrar-punto').addEventListener('click', () => marcar(null));
-  const d = await leer('localidades.json');
-  if (d) document.getElementById('lista-localidades').innerHTML =
-    d.localidades.map(f => `<option value="${esc(f.localidad)}">`).join('');
+  const [d, sf, br] = await Promise.all([leer('localidades.json'), leer('santafe.json'), leer('barrios.json')]);
+  const nombres = [...((d && d.localidades) || []).map(f => f.localidad), ...((sf && sf.localidades) || []).map(f => f.localidad)];
+  document.getElementById('lista-localidades').innerHTML = [...new Set(nombres)].map(n => `<option value="${esc(n)}">`).join('');
+  // barrios de la localidad elegida (de OpenStreetMap)
+  const barrios = (br && br.barrios) || [];
+  const sinT = t => String(t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const pintarBarrios = () => {
+    const loc = sinT(form.elements.localidad.value);
+    document.getElementById('lista-barrios').innerHTML = barrios.filter(b => !loc || sinT(b[1]) === loc).slice(0, 500)
+      .map(b => `<option value="${esc(b[0])}">`).join('');
+  };
+  form.elements.localidad.addEventListener('change', pintarBarrios);
+  // desde la app: mapa.html?localidad=…&barrio=…#aporta llega con el lugar ya puesto
+  const q = new URLSearchParams(location.search);
+  if (q.get('localidad')) form.elements.localidad.value = q.get('localidad');
+  if (q.get('barrio')) form.elements.barrio.value = q.get('barrio');
+  pintarBarrios();
   document.getElementById('fotos').addEventListener('change', prepararFotos);
   form.addEventListener('submit', enviarAporte);
   if (activo) cargarTurnstile(cfgA.turnstileSitekey);

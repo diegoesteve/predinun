@@ -122,7 +122,9 @@ def cordoba(ahora, hoy, manana):
                                 'El agua puede bajar en minutos: alejate de la orilla y no cruces vados.'))
         man_m = [lluvia(manana, 'mañana'), *alertas_smn(smn, 'localidades', nombre, manana)]
         arroyos = [nombre_curso(a.get('arroyo')) for a in f.get('arroyos', []) if a.get('arroyo')]
+        dias = c.get('dias') or {}
         salida.append({'n': nombre, 'z': 'cba', 'la': f['lat'], 'lo': f['lon'], 'tipo': 'sierras',
+                       'mm': [(dias.get(hoy) or [0, 0])[1], (dias.get(manana) or [0, 0])[1]],
                        'rio': arroyos[0] if arroyos else None, 'expo': expo,
                        'hoy': resumen(hoy_m, 'No se esperan lluvias fuertes ni tormentas.'),
                        'man': resumen(man_m, 'No se esperan lluvias fuertes ni tormentas.')})
@@ -203,7 +205,9 @@ def santa_fe(hoy, manana):
                          2: ('Puede entrar agua en las zonas bajas', f'{Rio} sigue subiendo: mañana puede pasar el nivel de alerta y llegar a las calles más bajas cerca de la costa.'),
                          1: t}[n_man]
                 man_m.append(motivo(n_man, *t))
+        dias = f.get('dias') or {}
         salida.append({'n': nombre, 'z': 'sf', 'la': f['lat'], 'lo': f['lon'], 'tipo': 'llanura',
+                       'mm': [(dias.get(hoy) or [0, 0])[1], (dias.get(manana) or [0, 0])[1]],
                        'rio': f"{r['rio']} en {r['nombre']}" if r else None,
                        'hoy': resumen(hoy_m, 'No se esperan lluvias fuertes' + (' y el río está normal.' if r else '.')),
                        'man': resumen(man_m, 'No se esperan lluvias fuertes' + (' ni que el río pase la alerta.' if r else '.'))})

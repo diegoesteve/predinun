@@ -14,7 +14,9 @@
 const MAX_FOTOS = 3;
 const MAX_BYTES_FOTO = 5 * 1024 * 1024;
 const TIPOS_FOTO = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp' };
-const LARGOS = { tipo: 40, fecha_evento: 80, localidad: 80, relato: 4000, altura_agua: 300, contacto: 120 };
+const LARGOS = { tipo: 40, fecha_evento: 80, localidad: 80, barrio: 80, relato: 4000, altura_agua: 300, contacto: 120 };
+// fecha exacta (opcional, AAAA-MM-DD): con ella se busca cuánto llovió ese día en el barrio
+const fechaValida = t => /^\d{4}-\d{2}-\d{2}$/.test(t || '') && t >= '1900-01-01' && t <= new Date().toISOString().slice(0, 10) ? t : '';
 // Límites contra abusos: aportes aceptados por conexión (IP) y aportes sin revisar en total
 const MAX_POR_HORA = 3;
 const MAX_POR_DIA = 10;
@@ -198,8 +200,8 @@ async function recibir(req, env, url) {
   if (!campo('localidad')) return json({ ok: false, error: 'Falta la localidad.' }, 400);
   if (form.get('acepto') !== 'si') return json({ ok: false, error: 'Falta aceptar las condiciones de publicación.' }, 400);
   let lat = parseFloat(form.get('lat')), lon = parseFloat(form.get('lon'));
-  const enCordoba = lat > -35.5 && lat < -29 && lon > -66 && lon < -61;
-  if (!enCordoba) { lat = null; lon = null; }
+  const enZona = lat > -35.5 && lat < -27.5 && lon > -66 && lon < -58.5;   // Córdoba y Santa Fe
+  if (!enZona) { lat = null; lon = null; }
 
   const id = new Date().toISOString().slice(0, 10).replace(/-/g, '') + '-' + crypto.randomUUID().slice(0, 8);
   // Primero se validan todas las fotos y recién después se guardan, para no dejar archivos sueltos
@@ -221,7 +223,8 @@ async function recibir(req, env, url) {
 
   const aporte = {
     id, recibido: new Date().toISOString(), tipo: campo('tipo'), fecha_evento: campo('fecha_evento'),
-    localidad: campo('localidad'), lat: lat == null ? null : Math.round(lat * 1e4) / 1e4,
+    localidad: campo('localidad'), barrio: campo('barrio'), fecha: fechaValida(campo('fecha')),
+    lat: lat == null ? null : Math.round(lat * 1e4) / 1e4,
     lon: lon == null ? null : Math.round(lon * 1e4) / 1e4, relato, altura_agua: campo('altura_agua'),
     fotos, estado: 'pendiente',
   };
@@ -284,6 +287,8 @@ async function paginaRevision(env, url) {
       <label>Hasta dónde llegó el agua <input name="altura_agua" value="${esc(a.altura_agua)}"></label>
       <label>Fecha del evento <input name="fecha_evento" value="${esc(a.fecha_evento)}"></label>
       <label>Localidad <input name="localidad" value="${esc(a.localidad)}"></label>
+      <label>Barrio <input name="barrio" value="${esc(a.barrio || '')}"></label>
+      <label>Fecha exacta (AAAA-MM-DD) <input name="fecha" value="${esc(a.fecha || '')}" placeholder="2015-02-15"></label>
       <div class="fotos">${a.fotos.map((f, i) => `<label class="foto"><img src="/revisar/foto/${encodeURIComponent(f)}" alt="">
         <span><input type="checkbox" name="foto" value="${i}" checked> publicar</span></label>`).join('') || '<p>Sin fotos.</p>'}</div>
       <div class="botones">
@@ -334,6 +339,8 @@ async function aprobar(req, env, url) {
     id, recibido: a.recibido, tipo: a.tipo,
     fecha_evento: String(form.get('fecha_evento') || a.fecha_evento).slice(0, LARGOS.fecha_evento),
     localidad: String(form.get('localidad') || a.localidad).slice(0, LARGOS.localidad),
+    barrio: String(form.get('barrio') ?? a.barrio ?? '').slice(0, LARGOS.barrio),
+    fecha: fechaValida(String(form.get('fecha') ?? a.fecha ?? '')),
     lat: a.lat, lon: a.lon,
     relato: String(form.get('relato') || a.relato).slice(0, LARGOS.relato),
     altura_agua: String(form.get('altura_agua') ?? a.altura_agua).slice(0, LARGOS.altura_agua),
