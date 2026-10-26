@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-26 12:00",
+ "generado": "2026-10-26 13:00",
  "horas": 48,
  "smap_atraso_dias": 3.7,
  "cuencas": [
@@ -14,10 +14,10 @@
      "cuando": "2026-10-27 17:00"
     },
     "ICON": {
-     "max_3h_mm": 3.4,
+     "max_3h_mm": 2.7,
      "umbral_mm": 14.0,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 14:00"
+     "cuando": "2026-10-27 13:00"
     },
     "ECMWF": {
      "max_3h_mm": 1.6,
@@ -66,7 +66,7 @@
      "cuando": "2026-10-27 16:00"
     },
     "ICON": {
-     "max_3h_mm": 1.6,
+     "max_3h_mm": 3.5,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-27 12:00"
@@ -95,20 +95,26 @@
     "es_estimado": true,
     "estado": "saturado"
    },
-   "secado": null
+   "secado": {
+    "dias_atras": 10,
+    "dias_adelante": 7,
+    "et0_ult_mm": 25.5,
+    "et0_ult_normal_mm": 43.6,
+    "et0_ult_pct": 59,
+    "radiacion_ult_pct": 69,
+    "nubosidad_ult_media": 84,
+    "nubosidad_ult_normal": 43,
+    "dias_nublados_ult": 8,
+    "et0_prox_mm": 28.3,
+    "et0_prox_pct": 88
+   }
   },
   {
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
-    "GFS": {
-     "max_3h_mm": 0.7,
-     "umbral_mm": 10.1,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 12:00"
-    },
     "ICON": {
-     "max_3h_mm": 0.8,
+     "max_3h_mm": 4.2,
      "umbral_mm": 9.7,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-27 11:00"
@@ -131,7 +137,7 @@
     "smap_m3m3": 0.152,
     "smap_percentil": 98,
     "smap_fecha": "2026-10-22 22:30 UTC",
-    "estimado_hoy_m3m3": 0.161,
+    "estimado_hoy_m3m3": 0.16,
     "estimado_hoy_percentil": 100,
     "percentil": 100,
     "es_estimado": true,
@@ -155,6 +161,12 @@
    "cuenca": "Capital",
    "nombre": "Capital (experimental)",
    "modelos": {
+    "GFS": {
+     "max_3h_mm": 1.0,
+     "umbral_mm": 7.7,
+     "fuente_umbral": "24 h antes",
+     "cuando": "2026-10-27 17:00"
+    },
     "ICON": {
      "max_3h_mm": 3.5,
      "umbral_mm": 11.4,
@@ -303,27 +315,27 @@
     "suelo_saturado": true,
     "prob": [
      0.0,
-     0.12,
+     0.14,
      0.02,
      0.03,
-     0.01,
-     0.07,
-     0.1,
+     0.02,
+     0.03,
+     0.09,
+     0.14,
      0.11,
-     0.13,
-     0.06
+     0.05
     ],
     "mm": [
      0.0,
-     4.0,
-     0.4,
-     1.2,
-     0.1,
-     2.0,
-     4.0,
+     3.5,
+     0.0,
+     0.7,
+     0.0,
+     0.8,
      3.3,
-     3.2,
-     2.4
+     2.2,
+     2.0,
+     0.6
     ]
    }
   }
