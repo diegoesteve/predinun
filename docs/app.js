@@ -931,6 +931,7 @@ async function simulacion() {
   }
   sel.innerHTML = d.escalas.map(e => `<option value="${e.id}">Paraná en ${esc(e.nombre)}</option>`).join('');
   const m = mapas.sim = mapaBase('mapa-sim', 11);
+  m.options.zoomSnap = 0.25;   // para que el recorte de 40 km llene el mapa
   let capa = null, capaSat = null, datos = null, e = null, satDatos = null;
   const cargarPNG = url => new Promise((ok, mal) => {
     const img = new Image();
@@ -980,8 +981,8 @@ async function simulacion() {
     document.getElementById('sim-atajos').innerHTML = atajos.map(([n, h]) => `<button type="button" data-k="${cerca(h)}"><b>${metros(h)}</b>${esc(n)}</button>`).join('');
     document.querySelectorAll('#sim-atajos button').forEach(b => b.addEventListener('click', () => { rango.value = b.dataset.k; dibujar(); }));
     rango.value = cerca(e.actual.altura_m);
-    m.fitBounds(e.limites, { animate: false });
     dibujar();
+    requestAnimationFrame(() => { m.invalidateSize(); m.fitBounds(e.limites, { animate: false, padding: [0, 0] }); });
   };
   let pendiente = false;
   rango.addEventListener('input', () => { if (pendiente) return; pendiente = true; requestAnimationFrame(() => { pendiente = false; dibujar(); }); });
