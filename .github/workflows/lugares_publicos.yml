@@ -1,0 +1,39 @@
+name: Lugares públicos (OpenStreetMap)
+
+# Escuelas, hospitales, centros vecinales, etc. cerca de cada barrio y pueblo, para el «lugar alto de referencia» de la app.
+# Overpass es lento: guarda después de cada cuadrado y sigue donde quedó. El boletín usa la copia guardada.
+on:
+  schedule:
+    - cron: '20 8 6 */2 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  lugares:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - run: python scripts/lugares_altos.py --bajar-lugares
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/lugares_publicos.json
+          git diff --cached --quiet && exit 0
+          git commit -m "lugares públicos: $(date '+%d/%m/%Y')"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
+      - name: Calcular los lugares altos en el boletín
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          grep -q '"completo":true' data/lugares_publicos.json && gh workflow run boletin.yml -f lugares_altos=true || true

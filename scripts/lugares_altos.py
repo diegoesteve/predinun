@@ -25,7 +25,6 @@ import requests
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from alerta import config as cfg   # noqa: E402
-from alerta.boletin import iniciar_ee   # noqa: E402
 
 RADIO_KM = 3.0
 ALTO_M = {'cba': 8.0, 'sf': 4.0}     # sierras: arroyos encajonados; llanura: el agua sube menos pero cubre más
@@ -52,22 +51,38 @@ def rumbo(la0, lo0, la1, lo1):
 CACHE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'lugares_publicos.json')
 
 
-def overpass(objetivos):
-    """Lugares públicos con nombre, solo en los cuadrados donde hay barrios o pueblos. Guarda una copia en data/ y la
-    reusa si tiene menos de 60 días (los lugares no cambian seguido y Overpass a veces no responde)."""
+def guardar_cache(c):
+    with open(CACHE, 'w', encoding='utf-8') as f:
+        json.dump(c, f, ensure_ascii=False, separators=(',', ':'))
+
+
+def bajar_lugares(objetivos, limite_min=300):
+    """Baja de Overpass los lugares públicos con nombre, solo en los cuadrados donde hay barrios o pueblos, y los guarda
+    en data/lugares_publicos.json después de cada cuadrado: si se corta, la próxima vez sigue donde quedó.
+    Corre en su propio workflow (lugares_publicos.yml) porque Overpass a veces tarda un minuto por cuadrado."""
+    s0, w0, n0, e0 = CAJA
+    cuadrados = sorted({(round(s0 + int((la - s0) // PASO) * PASO, 2), round(w0 + int((lo - w0) // PASO) * PASO, 2))
+                        for (_, _, la, lo) in objetivos if s0 <= la < n0 and w0 <= lo < e0})
     try:
         c = json.load(open(CACHE, encoding='utf-8'))
-        if time.time() - c['t'] < 60 * 86400:
-            print(f"Lugares públicos de la copia guardada ({len(c['elementos'])})")
-            return c['elementos']
     except Exception:
-        pass
-    s0, w0, n0, e0 = CAJA
-    cuadrados = sorted({(s0 + int((la - s0) // PASO) * PASO, w0 + int((lo - w0) // PASO) * PASO)
-                        for (_, _, la, lo) in objetivos if s0 <= la < n0 and w0 <= lo < e0})
-    print(f'{len(cuadrados)} cuadrados para Overpass', flush=True)
-    vistos, salida = set(), []
+        c = {}
+    if c.get('completo') and time.time() - c.get('t', 0) < 60 * 86400:
+        print('La copia de lugares públicos está completa y tiene menos de 60 días.')
+        return
+    if c.get('completo') or 'hechos' not in c:
+        c = {'t': time.time(), 'completo': False, 'hechos': [], 'elementos': []}
+    hechos = {tuple(h) for h in c['hechos']}
+    vistos = {(round(e.get('lat', e.get('center', {}).get('lat', 0)), 5), round(e.get('lon', e.get('center', {}).get('lon', 0)), 5),
+               e['tags'].get('name')) for e in c['elementos']}
+    print(f'{len(cuadrados)} cuadrados, {len(hechos)} ya bajados', flush=True)
+    inicio = time.time()
     for la, lo in cuadrados:
+        if (la, lo) in hechos:
+            continue
+        if time.time() - inicio > limite_min * 60:
+            print('Se terminó el tiempo: sigue la próxima vez.')
+            break
         m = 0.03    # un poco de borde para lugares justo del otro lado de la línea
         q = f'[out:json][timeout:90];{FILTRO}({la - m},{lo - m},{min(la + PASO, n0) + m},{min(lo + PASO, e0) + m});out center tags;'
         for intento in range(6):
@@ -76,20 +91,35 @@ def overpass(objetivos):
                 r = requests.get(url, params={'data': q}, headers={'User-Agent': 'predinun/1.0 (sin fines comerciales)'}, timeout=120)
                 r.raise_for_status()
                 for el in r.json()['elements']:
-                    if (el['type'], el['id']) not in vistos:
-                        vistos.add((el['type'], el['id']))
-                        salida.append({k: el[k] for k in ('lat', 'lon', 'center', 'tags') if k in el})
+                    x = {k: el[k] for k in ('lat', 'lon', 'center', 'tags') if k in el}
+                    p = x.get('center') or x
+                    k = (round(p.get('lat', 0), 5), round(p.get('lon', 0), 5), x.get('tags', {}).get('name'))
+                    if k not in vistos:
+                        vistos.add(k)
+                        c['elementos'].append(x)
                 break
             except Exception as e:
                 print('Overpass:', url, la, lo, str(e)[:100], flush=True)
                 time.sleep(15)
         else:
-            raise RuntimeError(f'Overpass no respondió para el cuadrado {la},{lo}')
-        print(f'  {la},{lo}: {len(salida)} lugares', flush=True)
+            print(f'Overpass no respondió para {la},{lo}: sigue la próxima vez.', flush=True)
+            continue
+        c['hechos'].append([la, lo])
+        guardar_cache(c)
+        print(f'  {la},{lo}: {len(c["elementos"])} lugares ({len(c["hechos"])}/{len(cuadrados)})', flush=True)
         time.sleep(2)
-    with open(CACHE, 'w', encoding='utf-8') as f:
-        json.dump({'t': time.time(), 'elementos': salida}, f, ensure_ascii=False, separators=(',', ':'))
-    return salida
+    c['completo'] = len(c['hechos']) >= len(cuadrados)
+    guardar_cache(c)
+    print('Completo.' if c['completo'] else f"Faltan {len(cuadrados) - len(c['hechos'])} cuadrados.")
+
+
+def leer_lugares():
+    try:
+        c = json.load(open(CACHE, encoding='utf-8'))
+    except Exception:
+        return None
+    print(f"Lugares públicos guardados: {len(c['elementos'])} ({len(c.get('hechos', []))} cuadrados{'' if c.get('completo') else ', incompleto'})")
+    return c['elementos']
 
 
 def hand(ee, puntos):
@@ -161,17 +191,30 @@ def escribir(salida):
             json.dump(v, f, ensure_ascii=False, separators=(',', ':'))
 
 
-def main():
-    ee = iniciar_ee()
-    if ee is None:
-        print('Sin Earth Engine: no se calculan los lugares altos.')
-        return
+def objetivos_y_barrios():
     app = cfg.leer_json(os.path.join('..', 'docs', 'data', 'app.json')) or {}
     barrios = (cfg.leer_json(os.path.join('..', 'docs', 'data', 'barrios.json')) or {}).get('barrios', [])
     objetivos = [(f"{x['z']}:{x['n']}:", x['z'], x['la'], x['lo']) for x in app.get('lugares', [])]
     objetivos += [(f"{b[2]}:{b[1]}:{b[0]}", b[2], b[3], b[4]) for b in barrios]
+    return objetivos
+
+
+def main():
+    if '--bajar-lugares' in sys.argv:
+        bajar_lugares(objetivos_y_barrios())
+        return
+    elementos = leer_lugares()
+    if not elementos:
+        print('Todavía no hay lugares públicos guardados (los baja el workflow lugares_publicos.yml).')
+        return
+    from alerta.boletin import iniciar_ee
+    ee = iniciar_ee()
+    if ee is None:
+        print('Sin Earth Engine: no se calculan los lugares altos.')
+        return
+    objetivos = objetivos_y_barrios()
     destinos = []
-    for e in overpass(objetivos):
+    for e in elementos:
         t = e.get('tags') or {}
         c = e.get('center') or ({'lat': e['lat'], 'lon': e['lon']} if 'lat' in e else None)
         if c and t.get('name') and t.get('amenity') in TIPOS:
