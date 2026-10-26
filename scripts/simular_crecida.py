@@ -43,6 +43,7 @@ PASO = 0.10
 SEMILLA_KM = 3                          # el río «de la escala»: el agua permanente a menos de 3 km
 UMBRAL_VV_DB = -16                      # agua en Sentinel-1 (VV): más oscuro que esto
 SALIDA = os.path.join(cfg.DOCS_DATA, 'simulacion')
+IDESF = os.path.join(cfg.DATA, 'santafe_idesf')   # capas de la Provincia bajadas a mano (ver LEEME.md)
 
 
 def get(url, **params):
@@ -133,6 +134,20 @@ def main():
             fuente_dem = 'Copernicus GLO-30'
             dem = bajar(ee, ee.ImageCollection('COPERNICUS/DEM/GLO30').filterBounds(caja).mosaic().select(['DEM'], ['b']).toFloat(), 'b', oeste, norte, ancho, alto)
         dem[~np.isfinite(dem)] = 9999
+        # defensas de la Provincia, si están: paredes que el agua no cruza (no se sabe la cota de coronamiento:
+        # se supone que no se sobrepasan)
+        con_defensas = False
+        ruta_def = os.path.join(IDESF, f'defensas_{est_id}.png')
+        if os.path.exists(ruta_def):
+            from PIL import Image
+            from scipy import ndimage as ndi
+            im = np.array(Image.open(ruta_def).convert('RGBA')).astype(int)
+            if im.shape[:2] == dem.shape:
+                linea = (im[..., 3] > 0) & (im[..., 2] > 110) & (im[..., 0] < 90) & (im[..., 1] < 90)
+                linea = ndi.binary_dilation(linea, iterations=2)
+                dem[linea] = 9999
+                con_defensas = True
+                print(f'  defensas: {linea.sum()} píxeles de pared')
         ocurrencia = bajar(ee, ee.Image('JRC/GSW1_4/GlobalSurfaceWater').select(['occurrence'], ['b']).unmask(0).toFloat(), 'b', oeste, norte, ancho, alto)
         permanente = ocurrencia >= 50
         # semillas: el agua permanente conectada a la que está a menos de SEMILLA_KM de la escala
@@ -217,6 +232,24 @@ def main():
         except Exception as e:
             print('  sin ajuste con Landsat:', str(e)[:150])
 
+        # comprobación independiente: el agua del 19/01/1998 (IDESF) contra la simulación con la altura de ese día
+        validacion = None
+        ruta_98 = os.path.join(IDESF, f'agua_19980119_{est_id}.png')
+        h98 = por_dia.get('1998-01-19') or por_dia.get('1998-01-18') or por_dia.get('1998-01-20')
+        if os.path.exists(ruta_98) and h98 is not None:
+            from PIL import Image
+            im = np.array(Image.open(ruta_98).convert('RGB')).astype(int)
+            if im.shape[:2] == dem.shape:
+                blanco = (im > 245).all(axis=2)
+                agua98 = (im[..., 1] > 215) & (im[..., 2] < 215) & ~blanco      # verde claro = agua
+                zona = ~blanco & rec_zona & ~permanente
+                sim = inundado(dem, permanente, semillas, cero + ajuste + h98)
+                union = ((sim | agua98) & zona).sum()
+                v = float((sim & agua98 & zona).sum() / union) if union else None
+                validacion = {'fecha': '1998-01-19', 'altura_m': h98, 'coincidencia': round(v, 3) if v is not None else None,
+                              'fuente': 'Cobertura agua 19/01/1998, IDESF'}
+                print(f'  comprobación con el agua del 19/01/1998 (río en {h98} m): coincidencia {v:.0%}')
+
         # alturas a simular
         alerta, evac = est.get('nivel_alerta'), est.get('nivel_evacuacion')
         tope = max(rec_altura, (evac or 0) + 1.0) + PASO
@@ -238,6 +271,7 @@ def main():
             'niveles': niveles, 'area_km2': area, 'alerta_m': alerta, 'evacuacion_m': evac,
             'record': {'altura_m': rec_altura, 'fecha': rec_fecha}, 'actual': {'altura_m': ult_altura, 'fecha': ult_fecha},
             'satelite': ({'fecha': s1_fecha, 'altura_m': s1_altura} if agua_s1 is not None else None), 'calibracion': calibracion,
+            'validacion': validacion, 'defensas': con_defensas,
         })
         print(f'  listo en {time.time() - t0:.0f} s')
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'simulacion.json'), {
