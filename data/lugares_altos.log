@@ -1,0 +1,11 @@
+Overpass: https://overpass-api.de/api/interpreter HTTPSConnectionPool(host='overpass-api.de', port=443): Max retries exceeded with url: /api/interpreter?data=%5Bout%3Ajso
+Overpass: https://overpass.kumi.systems/api/interpreter 504 Server Error: Gateway Timeout for url: https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout
+Traceback (most recent call last):
+  File "/home/runner/work/predinun/predinun/scripts/lugares_altos.py", line 182, in <module>
+    main()
+  File "/home/runner/work/predinun/predinun/scripts/lugares_altos.py", line 138, in main
+    for e in overpass():
+             ^^^^^^^^^^
+  File "/home/runner/work/predinun/predinun/scripts/lugares_altos.py", line 58, in overpass
+    raise RuntimeError('Overpass no respondió')
+RuntimeError: Overpass no respondió

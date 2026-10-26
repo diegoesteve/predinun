@@ -1,7 +1,7 @@
 {
  "generado": "2026-10-26 15:00",
  "horas": 48,
- "smap_atraso_dias": 3.8,
+ "smap_atraso_dias": 3.9,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
@@ -20,7 +20,7 @@
      "cuando": "2026-10-27 14:00"
     },
     "ECMWF": {
-     "max_3h_mm": 1.6,
+     "max_3h_mm": 2.5,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-27 16:00"
@@ -51,8 +51,8 @@
     "nubosidad_ult_media": 73,
     "nubosidad_ult_normal": 43,
     "dias_nublados_ult": 7,
-    "et0_prox_mm": 29.6,
-    "et0_prox_pct": 87
+    "et0_prox_mm": 29.5,
+    "et0_prox_pct": 86
    }
   },
   {
@@ -72,10 +72,10 @@
      "cuando": "2026-10-27 12:00"
     },
     "ECMWF": {
-     "max_3h_mm": 1.4,
+     "max_3h_mm": 3.0,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 21:00"
+     "cuando": "2026-10-27 23:00"
     }
    },
    "ensambles": {
@@ -105,25 +105,25 @@
     "nubosidad_ult_media": 84,
     "nubosidad_ult_normal": 43,
     "dias_nublados_ult": 8,
-    "et0_prox_mm": 28.3,
-    "et0_prox_pct": 88
+    "et0_prox_mm": 27.9,
+    "et0_prox_pct": 86
    }
   },
   {
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
+    "GFS": {
+     "max_3h_mm": 1.2,
+     "umbral_mm": 10.1,
+     "fuente_umbral": "24 h antes",
+     "cuando": "2026-10-27 16:00"
+    },
     "ICON": {
      "max_3h_mm": 4.2,
      "umbral_mm": 9.7,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-27 11:00"
-    },
-    "ECMWF": {
-     "max_3h_mm": 2.1,
-     "umbral_mm": 8.8,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 21:00"
     }
    },
    "ensambles": {
@@ -153,8 +153,8 @@
     "nubosidad_ult_media": 81,
     "nubosidad_ult_normal": 44,
     "dias_nublados_ult": 8,
-    "et0_prox_mm": 28.2,
-    "et0_prox_pct": 88
+    "et0_prox_mm": 27.5,
+    "et0_prox_pct": 86
    }
   },
   {
@@ -174,7 +174,7 @@
      "cuando": "2026-10-27 13:00"
     },
     "ECMWF": {
-     "max_3h_mm": 1.9,
+     "max_3h_mm": 13.9,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-27 22:00"
@@ -185,18 +185,19 @@
     "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
-   "nivel": "verde",
-   "nivel_por_lluvia": "verde",
+   "nivel": "naranja",
+   "nivel_por_lluvia": "amarillo",
    "suelo": {
     "smap_m3m3": 0.172,
     "smap_percentil": 82,
     "smap_fecha": "2026-10-22 22:30 UTC",
-    "estimado_hoy_m3m3": 0.174,
-    "estimado_hoy_percentil": 84,
-    "percentil": 84,
+    "estimado_hoy_m3m3": 0.172,
+    "estimado_hoy_percentil": 82,
+    "percentil": 82,
     "es_estimado": true,
     "estado": "saturado"
    },
+   "agravado_por_suelo": true,
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
@@ -207,8 +208,8 @@
     "nubosidad_ult_media": 73,
     "nubosidad_ult_normal": 43,
     "dias_nublados_ult": 8,
-    "et0_prox_mm": 31.4,
-    "et0_prox_pct": 91
+    "et0_prox_mm": 30.6,
+    "et0_prox_pct": 88
    }
   }
  ],
