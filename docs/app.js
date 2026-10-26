@@ -647,9 +647,23 @@ function irALocalidad(nombre) {
   if (yaEstaba) elegirLocalidad(LOCS.find(f => f.localidad === nombre));
 }
 
+// Una localidad de Santa Fe elegida en el buscador de Inicio: a la pestaña Santa Fe, con su ficha
+function irASantaFe(nombre) {
+  mostrar('santafe');
+  let n = 0;
+  const esperar = setInterval(() => {   // la pestaña carga santafe.json la primera vez
+    if (SF || ++n > 50) { clearInterval(esperar); if (SF) elegirSF(nombre); }
+  }, 100);
+}
+
 async function portada() {
-  const [locs, a, b] = await Promise.all([cargarLocs(), leer('ahora.json'), leer('boletin.json')]);
-  prepararSugerencias('buscar-portada', 'sugerencias-portada', f => irALocalidad(f.localidad));
+  const [locs, a, b, sf] = await Promise.all([cargarLocs(), leer('ahora.json'), leer('boletin.json'), leer('santafe.json')]);
+  const deSantaFe = ((sf && sf.localidades) || []).map(f => ({ localidad: f.localidad, _sf: true }));
+  prepararSugerencias('buscar-portada', 'sugerencias-portada', f => f._sf ? irASantaFe(f.localidad) : irALocalidad(f.localidad), {
+    lista: () => [...LOCS, ...deSantaFe],
+    extra: f => f._sf ? '<span class="chip expo">Santa Fe</span>'
+      : `${f.ahora === 'alerta' || f.ahora === 'atención' ? chipAhora(f.ahora) + ' ' : ''}${chipExpo(f.exposicion)}`,
+  });
   const alerta = locs.filter(f => f.ahora === 'alerta'), atencion = locs.filter(f => f.ahora === 'atención');
   const lista = fs => `<div class="locs">${fs.map(f => `<button type="button" class="loc-link" data-loc="${esc(f.localidad)}">${esc(f.localidad)}</button>`).join('')}</div>`;
   const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
