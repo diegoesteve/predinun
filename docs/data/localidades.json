@@ -955,6 +955,101 @@
    ]
   },
   {
+   "localidad": "La Granja",
+   "lat": -31.01771,
+   "lon": -64.28098,
+   "banderas": "⛰️↪️🌉",
+   "max_banderas": 2,
+   "personas_expuestas": 69,
+   "personas_llano": 11,
+   "tipos": [
+    "crecida",
+    "crecida grande"
+   ],
+   "aviso": "no",
+   "margen_max_min": null,
+   "parecido_scm": 1.91,
+   "arroyos": [
+    {
+     "arroyo": "Río La Granja",
+     "banderas": "⛰️🌉📡",
+     "razones": [
+      "el arroyo baja de una cuenca serrana grande o muy empinada",
+      "hay puentes que se pueden tapar con ramas y troncos"
+     ],
+     "exposicion": "poco expuesta",
+     "area_km2": 94.1,
+     "personas": 6,
+     "margen_min": null,
+     "lat": -31.00458,
+     "lon": -64.25208
+    },
+    {
+     "arroyo": "Río La Granja",
+     "banderas": "⛰️↪️📡",
+     "razones": [
+      "el arroyo baja de una cuenca serrana grande o muy empinada",
+      "hay una curva cerrada o un angostamiento del cauce río arriba"
+     ],
+     "exposicion": "poco expuesta",
+     "area_km2": 85.9,
+     "personas": 6,
+     "margen_min": null,
+     "lat": -31.01292,
+     "lon": -64.28792
+    },
+    {
+     "arroyo": "Arroyo De Eduviges",
+     "banderas": "🌉📡",
+     "razones": [
+      "hay puentes que se pueden tapar con ramas y troncos"
+     ],
+     "exposicion": "poco expuesta",
+     "area_km2": 7.3,
+     "personas": 34,
+     "margen_min": null,
+     "lat": -31.03458,
+     "lon": -64.29042
+    },
+    {
+     "arroyo": "Arroyo El Algodonal",
+     "banderas": "🌉📡",
+     "razones": [
+      "hay puentes que se pueden tapar con ramas y troncos"
+     ],
+     "exposicion": "poco expuesta",
+     "area_km2": 5.9,
+     "personas": 23,
+     "margen_min": null,
+     "lat": -31.05125,
+     "lon": -64.29042
+    }
+   ],
+   "eventos": [
+    {
+     "fecha": "2015-02-15",
+     "impacto": "Desborde del río Ascochinga; una mujer arrastrada por la creciente (desaparecida al cierre de la nota); rescates desde techos; más de 1.500 casas afectadas en Sierras Chicas; torres de alta tensión caídas entre Río Ceballos, Jesús María y…",
+     "severidad": "grave",
+     "url": "https://www.bomberosra.org.ar/2015/02/18/cordoba-vivio-una-verdadera-tragedia-por-la-inundacion.html"
+    },
+    {
+     "fecha": "2019-12-29",
+     "impacto": ">100 evacuados; auto arrastrado en vado de Mendiolaza",
+     "severidad": "grave",
+     "url": "https://www.lavozdesanjusto.com.ar/inundacion-en-las-sierras-chica-hubo-decenas-de-evacuados-79512"
+    }
+   ],
+   "danos_registrados": 0,
+   "n_eventos": 2,
+   "exposicion": "muy expuesta",
+   "razones": [
+    "tuvo 2 crecidas graves registradas",
+    "el arroyo baja de una cuenca serrana grande o muy empinada",
+    "hay una curva cerrada o un angostamiento del cauce río arriba",
+    "hay puentes que se pueden tapar con ramas y troncos"
+   ]
+  },
+  {
    "localidad": "Salsipuedes",
    "lat": -31.13393,
    "lon": -64.29729,
@@ -1123,6 +1218,72 @@
     "hay puentes que se pueden tapar con ramas y troncos",
     "hay casas bajas junto al cauce",
     "el pueblo está en un llano apenas más alto que el arroyo"
+   ]
+  },
+  {
+   "localidad": "Ascochinga",
+   "lat": -30.95625,
+   "lon": -64.28458,
+   "banderas": "⛰️🚪↪️🌉",
+   "max_banderas": 4,
+   "personas_expuestas": 60,
+   "personas_llano": 0,
+   "tipos": [
+    "crecida grande"
+   ],
+   "aviso": "parcial",
+   "margen_max_min": 150,
+   "parecido_scm": 2.33,
+   "arroyos": [
+    {
+     "arroyo": "Río de San Miguel",
+     "banderas": "⛰️🚪↪️🌉📡",
+     "razones": [
+      "el arroyo baja de una cuenca serrana grande o muy empinada",
+      "el pueblo está en la salida de la sierra, donde el agua se abre y desborda",
+      "hay una curva cerrada o un angostamiento del cauce río arriba",
+      "hay puentes que se pueden tapar con ramas y troncos"
+     ],
+     "exposicion": "expuesta",
+     "area_km2": 45.9,
+     "personas": 30,
+     "margen_min": null,
+     "lat": -30.95625,
+     "lon": -64.28458
+    },
+    {
+     "arroyo": "Río de San Miguel",
+     "banderas": "⛰️🚪🌉",
+     "razones": [
+      "el arroyo baja de una cuenca serrana grande o muy empinada",
+      "el pueblo está en la salida de la sierra, donde el agua se abre y desborda",
+      "hay puentes que se pueden tapar con ramas y troncos"
+     ],
+     "exposicion": "expuesta",
+     "area_km2": 61.9,
+     "personas": 30,
+     "margen_min": 150,
+     "lat": -30.95625,
+     "lon": -64.28375
+    }
+   ],
+   "eventos": [
+    {
+     "fecha": "2015-02-15",
+     "impacto": "Desborde del río Ascochinga; una mujer arrastrada por la creciente (desaparecida al cierre de la nota); rescates desde techos; más de 1.500 casas afectadas en Sierras Chicas; torres de alta tensión caídas entre Río Ceballos, Jesús María y…",
+     "severidad": "grave",
+     "url": "https://www.bomberosra.org.ar/2015/02/18/cordoba-vivio-una-verdadera-tragedia-por-la-inundacion.html"
+    }
+   ],
+   "danos_registrados": 0,
+   "n_eventos": 1,
+   "exposicion": "muy expuesta",
+   "razones": [
+    "tuvo 1 crecida grave registrada",
+    "el arroyo baja de una cuenca serrana grande o muy empinada",
+    "el pueblo está en la salida de la sierra, donde el agua se abre y desborda",
+    "hay una curva cerrada o un angostamiento del cauce río arriba",
+    "hay puentes que se pueden tapar con ramas y troncos"
    ]
   },
   {
@@ -2185,95 +2346,6 @@
    ]
   },
   {
-   "localidad": "La Granja",
-   "lat": -31.01771,
-   "lon": -64.28098,
-   "banderas": "⛰️↪️🌉",
-   "max_banderas": 2,
-   "personas_expuestas": 69,
-   "personas_llano": 11,
-   "tipos": [
-    "crecida",
-    "crecida grande"
-   ],
-   "aviso": "no",
-   "margen_max_min": null,
-   "parecido_scm": 1.91,
-   "arroyos": [
-    {
-     "arroyo": "Río La Granja",
-     "banderas": "⛰️🌉📡",
-     "razones": [
-      "el arroyo baja de una cuenca serrana grande o muy empinada",
-      "hay puentes que se pueden tapar con ramas y troncos"
-     ],
-     "exposicion": "poco expuesta",
-     "area_km2": 94.1,
-     "personas": 6,
-     "margen_min": null,
-     "lat": -31.00458,
-     "lon": -64.25208
-    },
-    {
-     "arroyo": "Río La Granja",
-     "banderas": "⛰️↪️📡",
-     "razones": [
-      "el arroyo baja de una cuenca serrana grande o muy empinada",
-      "hay una curva cerrada o un angostamiento del cauce río arriba"
-     ],
-     "exposicion": "poco expuesta",
-     "area_km2": 85.9,
-     "personas": 6,
-     "margen_min": null,
-     "lat": -31.01292,
-     "lon": -64.28792
-    },
-    {
-     "arroyo": "Arroyo De Eduviges",
-     "banderas": "🌉📡",
-     "razones": [
-      "hay puentes que se pueden tapar con ramas y troncos"
-     ],
-     "exposicion": "poco expuesta",
-     "area_km2": 7.3,
-     "personas": 34,
-     "margen_min": null,
-     "lat": -31.03458,
-     "lon": -64.29042
-    },
-    {
-     "arroyo": "Arroyo El Algodonal",
-     "banderas": "🌉📡",
-     "razones": [
-      "hay puentes que se pueden tapar con ramas y troncos"
-     ],
-     "exposicion": "poco expuesta",
-     "area_km2": 5.9,
-     "personas": 23,
-     "margen_min": null,
-     "lat": -31.05125,
-     "lon": -64.29042
-    }
-   ],
-   "eventos": [
-    {
-     "fecha": "2019-12-29",
-     "impacto": ">100 evacuados; auto arrastrado en vado de Mendiolaza",
-     "severidad": "grave",
-     "url": "https://www.lavozdesanjusto.com.ar/inundacion-en-las-sierras-chica-hubo-decenas-de-evacuados-79512"
-    }
-   ],
-   "danos_registrados": 0,
-   "n_eventos": 1,
-   "exposicion": "expuesta",
-   "razones": [
-    "tuvo 1 crecida grave registrada",
-    "el arroyo baja de una cuenca serrana grande o muy empinada",
-    "hay una curva cerrada o un angostamiento del cauce río arriba",
-    "hay puentes que se pueden tapar con ramas y troncos"
-   ]
-  },
-  {
    "localidad": "Cruz de Caña",
    "lat": -31.065,
    "lon": -64.94899,
@@ -2379,6 +2451,53 @@
     "tuvo 1 crecida grave registrada",
     "el arroyo baja de una cuenca serrana grande o muy empinada",
     "el pueblo está en un llano apenas más alto que el arroyo"
+   ]
+  },
+  {
+   "localidad": "Villa Cerro Azul",
+   "lat": -31.07407,
+   "lon": -64.32352,
+   "banderas": "⛰️🌉",
+   "max_banderas": 2,
+   "personas_expuestas": 22,
+   "personas_llano": 0,
+   "tipos": [
+    "crecida grande"
+   ],
+   "aviso": "no",
+   "margen_max_min": 15,
+   "parecido_scm": 1.92,
+   "arroyos": [
+    {
+     "arroyo": "Rio San Vicente",
+     "banderas": "⛰️🌉",
+     "razones": [
+      "el arroyo baja de una cuenca serrana grande o muy empinada",
+      "hay puentes que se pueden tapar con ramas y troncos"
+     ],
+     "exposicion": "poco expuesta",
+     "area_km2": 53.9,
+     "personas": 22,
+     "margen_min": 15,
+     "lat": -31.07708,
+     "lon": -64.33042
+    }
+   ],
+   "eventos": [
+    {
+     "fecha": "2015-02-15",
+     "impacto": "Desborde del río Ascochinga; una mujer arrastrada por la creciente (desaparecida al cierre de la nota); rescates desde techos; más de 1.500 casas afectadas en Sierras Chicas; torres de alta tensión caídas entre Río Ceballos, Jesús María y…",
+     "severidad": "grave",
+     "url": "https://www.bomberosra.org.ar/2015/02/18/cordoba-vivio-una-verdadera-tragedia-por-la-inundacion.html"
+    }
+   ],
+   "danos_registrados": 1,
+   "n_eventos": 1,
+   "exposicion": "expuesta",
+   "razones": [
+    "tuvo 1 crecida grave registrada",
+    "el arroyo baja de una cuenca serrana grande o muy empinada",
+    "hay puentes que se pueden tapar con ramas y troncos"
    ]
   },
   {
@@ -2522,6 +2641,29 @@
    "exposicion": "expuesta",
    "razones": [
     "tuvo 1 crecida registrada"
+   ]
+  },
+  {
+   "localidad": "Agua de Oro",
+   "lat": -31.05767,
+   "lon": -64.29556,
+   "eventos": [
+    {
+     "fecha": "2015-02-15",
+     "impacto": "Desborde del río Ascochinga; una mujer arrastrada por la creciente (desaparecida al cierre de la nota); rescates desde techos; más de 1.500 casas afectadas en Sierras Chicas; torres de alta tensión caídas entre Río Ceballos, Jesús María y…",
+     "severidad": "grave",
+     "url": "https://www.bomberosra.org.ar/2015/02/18/cordoba-vivio-una-verdadera-tragedia-por-la-inundacion.html"
+    }
+   ],
+   "danos_registrados": 4,
+   "banderas": "",
+   "max_banderas": 0,
+   "personas_expuestas": 0,
+   "aviso": null,
+   "n_eventos": 1,
+   "exposicion": "expuesta",
+   "razones": [
+    "tuvo 1 crecida grave registrada"
    ]
   },
   {
@@ -3079,64 +3221,6 @@
     "hay una curva cerrada o un angostamiento del cauce río arriba",
     "hay puentes que se pueden tapar con ramas y troncos",
     "el pueblo está en un llano apenas más alto que el arroyo"
-   ]
-  },
-  {
-   "localidad": "Ascochinga",
-   "lat": -30.95625,
-   "lon": -64.28458,
-   "banderas": "⛰️🚪↪️🌉",
-   "max_banderas": 4,
-   "personas_expuestas": 60,
-   "personas_llano": 0,
-   "tipos": [
-    "crecida grande"
-   ],
-   "aviso": "parcial",
-   "margen_max_min": 150,
-   "parecido_scm": 2.33,
-   "arroyos": [
-    {
-     "arroyo": "Río de San Miguel",
-     "banderas": "⛰️🚪↪️🌉📡",
-     "razones": [
-      "el arroyo baja de una cuenca serrana grande o muy empinada",
-      "el pueblo está en la salida de la sierra, donde el agua se abre y desborda",
-      "hay una curva cerrada o un angostamiento del cauce río arriba",
-      "hay puentes que se pueden tapar con ramas y troncos"
-     ],
-     "exposicion": "expuesta",
-     "area_km2": 45.9,
-     "personas": 30,
-     "margen_min": null,
-     "lat": -30.95625,
-     "lon": -64.28458
-    },
-    {
-     "arroyo": "Río de San Miguel",
-     "banderas": "⛰️🚪🌉",
-     "razones": [
-      "el arroyo baja de una cuenca serrana grande o muy empinada",
-      "el pueblo está en la salida de la sierra, donde el agua se abre y desborda",
-      "hay puentes que se pueden tapar con ramas y troncos"
-     ],
-     "exposicion": "expuesta",
-     "area_km2": 61.9,
-     "personas": 30,
-     "margen_min": 150,
-     "lat": -30.95625,
-     "lon": -64.28375
-    }
-   ],
-   "danos_registrados": 0,
-   "eventos": [],
-   "n_eventos": 0,
-   "exposicion": "expuesta",
-   "razones": [
-    "el arroyo baja de una cuenca serrana grande o muy empinada",
-    "el pueblo está en la salida de la sierra, donde el agua se abre y desborda",
-    "hay una curva cerrada o un angostamiento del cauce río arriba",
-    "hay puentes que se pueden tapar con ramas y troncos"
    ]
   },
   {
@@ -6015,45 +6099,6 @@
    "razones": [
     "el arroyo baja de una cuenca serrana grande o muy empinada",
     "hay una curva cerrada o un angostamiento del cauce río arriba",
-    "hay puentes que se pueden tapar con ramas y troncos"
-   ]
-  },
-  {
-   "localidad": "Villa Cerro Azul",
-   "lat": -31.07407,
-   "lon": -64.32352,
-   "banderas": "⛰️🌉",
-   "max_banderas": 2,
-   "personas_expuestas": 22,
-   "personas_llano": 0,
-   "tipos": [
-    "crecida grande"
-   ],
-   "aviso": "no",
-   "margen_max_min": 15,
-   "parecido_scm": 1.92,
-   "arroyos": [
-    {
-     "arroyo": "Rio San Vicente",
-     "banderas": "⛰️🌉",
-     "razones": [
-      "el arroyo baja de una cuenca serrana grande o muy empinada",
-      "hay puentes que se pueden tapar con ramas y troncos"
-     ],
-     "exposicion": "poco expuesta",
-     "area_km2": 53.9,
-     "personas": 22,
-     "margen_min": 15,
-     "lat": -31.07708,
-     "lon": -64.33042
-    }
-   ],
-   "danos_registrados": 1,
-   "eventos": [],
-   "n_eventos": 0,
-   "exposicion": "poco expuesta",
-   "razones": [
-    "el arroyo baja de una cuenca serrana grande o muy empinada",
     "hay puentes que se pueden tapar con ramas y troncos"
    ]
   },
@@ -10154,20 +10199,6 @@
    "eventos": [],
    "n_eventos": 0,
    "exposicion": "poco expuesta",
-   "razones": []
-  },
-  {
-   "localidad": "Agua de Oro",
-   "lat": -31.05767,
-   "lon": -64.29556,
-   "danos_registrados": 4,
-   "banderas": "",
-   "max_banderas": 0,
-   "personas_expuestas": 0,
-   "aviso": null,
-   "eventos": [],
-   "n_eventos": 0,
-   "exposicion": null,
    "razones": []
   },
   {
