@@ -965,9 +965,11 @@ async function simulacion() {
     sat.disabled = !e.satelite;
     document.getElementById('sim-satelite-txt').textContent = e.satelite
       ? `Agua vista por el radar Sentinel-1 el ${fechaCorta(e.satelite.fecha)}${e.satelite.altura_m != null ? ` (río en ${metros(e.satelite.altura_m)})` : ''}` : 'Sin pasada reciente del radar Sentinel-1';
-    document.getElementById('sim-ajuste').textContent = `Relieve ${e.relieve}. ` + (e.coincidencia_radar != null
-      ? `Ajustado con esa pasada del radar: corrimiento de ${e.ajuste_m.toFixed(1).replace('.', ',')} m, coincidencia ${Math.round(e.coincidencia_radar * 100)} %.`
-      : 'Sin ajuste con radar.');
+    const usadas = (e.calibracion || []).filter(c => c.coincidencia >= 0.4);
+    const anios = [...new Set((usadas.length ? usadas : e.calibracion || []).map(c => (c.mes || c.fecha || '').slice(0, 4)))].filter(Boolean);
+    document.getElementById('sim-ajuste').textContent = `Relieve ${e.relieve}. ` + (e.coincidencia_radar != null && anios.length
+      ? `Calibrado con el agua que vieron los satélites Landsat en las crecidas de ${anios.join(' y ')}: la simulación coincide en un ${Math.round(e.coincidencia_radar * 100)} % con lo que se inundó de verdad.`
+      : 'Sin calibrar con crecidas anteriores.');
     rango.max = e.niveles.length - 1;
     // atajos: hoy, alerta, evacuación, pronóstico, récord
     const cerca = h => e.niveles.reduce((mej, v, i) => Math.abs(v - h) < Math.abs(e.niveles[mej] - h) ? i : mej, 0);
