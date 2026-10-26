@@ -1,11 +1,13 @@
-Overpass: https://overpass-api.de/api/interpreter HTTPSConnectionPool(host='overpass-api.de', port=443): Max retries exceeded with url: /api/interpreter?data=%5Bout%3Ajso
-Overpass: https://overpass.kumi.systems/api/interpreter 504 Server Error: Gateway Timeout for url: https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout
-Traceback (most recent call last):
-  File "/home/runner/work/predinun/predinun/scripts/lugares_altos.py", line 182, in <module>
-    main()
-  File "/home/runner/work/predinun/predinun/scripts/lugares_altos.py", line 138, in main
-    for e in overpass():
-             ^^^^^^^^^^
-  File "/home/runner/work/predinun/predinun/scripts/lugares_altos.py", line 58, in overpass
-    raise RuntimeError('Overpass no respondió')
-RuntimeError: Overpass no respondió
+83 cuadrados para Overpass
+Overpass: https://overpass-api.de/api/interpreter -34.5 -63.0 502 Server Error: Bad Gateway for url: https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D
+Overpass: https://overpass.kumi.systems/api/interpreter -34.5 -63.0 504 Server Error: Gateway Timeout for url: https://overpass.kumi.systems/api/interpreter?data=%5Bout
+Overpass: https://overpass.private.coffee/api/interpreter -34.5 -63.0 504 Server Error: Gateway Timeout for url: https://overpass.private.coffee/api/interpreter?data=%5Bo
+  -34.5,-63.0: 71 lugares
+Overpass: https://overpass-api.de/api/interpreter -34.5 -62.5 502 Server Error: Bad Gateway for url: https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D
+  -34.5,-62.5: 109 lugares
+  -34.5,-62.0: 171 lugares
+  -34.0,-62.5: 223 lugares
+  -34.0,-62.0: 311 lugares
+  -34.0,-61.5: 398 lugares
+  -34.0,-61.0: 560 lugares
+Overpass: https://overpass-api.de/api/interpreter -34.0 -60.5 502 Server Error: Bad Gateway for url: https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D
