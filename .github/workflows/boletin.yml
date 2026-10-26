@@ -9,6 +9,10 @@ on:
         description: Recalcular la cuenca de cada arroyo (MERIT Hydro, tarda unos minutos)
         type: boolean
         default: false
+      simulacion:
+        description: Recalcular la simulación de crecida del Litoral (relieve + radar Sentinel-1, tarda unos minutos)
+        type: boolean
+        default: false
   push:                        # un aporte aprobado aparece en el mapa enseguida
     branches: [main]
     paths: ['data/aportes/**']
@@ -64,6 +68,15 @@ jobs:
         run: |
           pip install rasterio shapely
           python scripts/cuencas_arroyos.py 2>&1 | tee data/cuencas_arroyos.log
+      - name: Simulación de crecida del Litoral (solo si se pide, si falta o el día 3 de cada mes)
+        if: ${{ inputs.simulacion || hashFiles('docs/data/simulacion.json') == '' }}
+        continue-on-error: true
+        env:
+          EE_SERVICE_ACCOUNT_JSON: ${{ secrets.EE_SERVICE_ACCOUNT_JSON }}
+          EE_PROJECT: ${{ secrets.EE_PROJECT }}
+        run: |
+          pip install scipy pillow
+          python scripts/simular_crecida.py 2>&1 | tee data/simulacion.log
       - name: Lluvia pronosticada y suelo por localidad
         continue-on-error: true
         run: python scripts/condiciones_localidades.py
@@ -81,7 +94,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data/*.json docs/data/*.geojson data/*.json docs/l
-          for f in data/cuencas_arroyos.geojson data/cuencas_arroyos.log data/historial_alarmas_pronostico.csv data/historial_alarmas.csv; do [ -f "$f" ] && git add "$f"; done; true
+          for f in data/cuencas_arroyos.geojson data/cuencas_arroyos.log data/historial_alarmas_pronostico.csv data/historial_alarmas.csv data/simulacion.log docs/data/simulacion; do [ -f "$f" ] && git add "$f"; done; true
           git diff --cached --quiet && exit 0
           git commit -m "boletín: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push

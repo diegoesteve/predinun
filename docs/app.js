@@ -859,6 +859,8 @@ async function santaFe() {
   document.getElementById('sf-parana').innerHTML = rios.filter(r => r.rio === 'Paraná').map(tarjeta).join('');
   document.getElementById('sf-salado').innerHTML = rios.filter(r => r.rio === 'Salado').map(tarjeta).join('');
 
+  simulacion();
+
   // mapa
   const m = mapas.santafe = mapaBase('mapa-santafe', 7);
   m.setView([-31.2, -60.9], 7);
@@ -914,4 +916,81 @@ function elegirSF(nombre) {
   bloqueSMNLocalidad(f.localidad, 'localidades_santafe').then(h => { const el = document.getElementById('sf-smn-loc'); if (el) el.innerHTML = h; });
   if (mapas.santafe) mapas.santafe.setView([f.lat, f.lon], 10);
   caja.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ---------------------------------------------------------------- simulación de crecida
+// docs/data/simulacion.json y docs/data/simulacion/<id>.png los escribe scripts/simular_crecida.py. Cada píxel del PNG
+// guarda la primera altura de la lista con la que ese lugar se moja (0 seco, 255 agua permanente): con eso el mapa se
+// pinta en el navegador para cualquier altura sin volver a calcular nada.
+async function simulacion() {
+  const d = await leer('simulacion.json');
+  const sel = document.getElementById('sim-escala'), rango = document.getElementById('sim-nivel');
+  if (!d || !d.escalas || !d.escalas.length) {
+    document.querySelector('.simulacion').innerHTML = '<p class="nota">La simulación todavía no está calculada.</p>';
+    return;
+  }
+  sel.innerHTML = d.escalas.map(e => `<option value="${e.id}">Paraná en ${esc(e.nombre)}</option>`).join('');
+  const m = mapas.sim = mapaBase('mapa-sim', 11);
+  let capa = null, capaSat = null, datos = null, e = null, satDatos = null;
+  const cargarPNG = url => new Promise((ok, mal) => {
+    const img = new Image();
+    img.onload = () => { const c = document.createElement('canvas'); c.width = img.width; c.height = img.height;
+      const x = c.getContext('2d'); x.drawImage(img, 0, 0); ok(x.getImageData(0, 0, c.width, c.height)); };
+    img.onerror = mal; img.src = url;
+  });
+  const pintar = (fuente, color) => {   // color(v) → [r,g,b,a] o null
+    const c = document.createElement('canvas'); c.width = fuente.width; c.height = fuente.height;
+    const x = c.getContext('2d'), sal = x.createImageData(c.width, c.height), a = fuente.data, b = sal.data;
+    for (let i = 0; i < a.length; i += 4) { const k = color(a[i]); if (k) { b[i] = k[0]; b[i + 1] = k[1]; b[i + 2] = k[2]; b[i + 3] = k[3]; } }
+    x.putImageData(sal, 0, 0);
+    return c.toDataURL();
+  };
+  const sat = document.getElementById('sim-satelite');
+  const dibujar = () => {
+    const k = Number(rango.value) + 1, h = e.niveles[k - 1];
+    document.getElementById('sim-valor').textContent = metros(h);
+    if (capa) capa.remove();
+    capa = L.imageOverlay(pintar(datos, v => v === 255 ? [143, 188, 219, 200] : v && v <= k ? [31, 95, 168, 150] : null), e.limites, { opacity: 1 }).addTo(m);
+    if (capaSat) capaSat.bringToFront();
+    const area = e.area_km2[String(h)] ?? e.area_km2[h.toFixed(2)];
+    const ref = h >= (e.evacuacion_m ?? 99) ? 'por encima del nivel de evacuación' : h >= (e.alerta_m ?? 99) ? 'por encima del nivel de alerta' : 'por debajo del nivel de alerta';
+    document.getElementById('sim-texto').innerHTML = `<b>Con ${metros(h)} en ${esc(e.nombre)}</b> (${ref}) quedarían bajo el agua unos <b>${area != null ? Math.round(area) : '–'} km²</b> en este recorte, sin contar el cauce.`;
+    document.querySelectorAll('#sim-atajos button').forEach(b => b.setAttribute('aria-pressed', String(Number(b.dataset.k) === k - 1)));
+  };
+  const elegirEscala = async () => {
+    e = d.escalas.find(x => String(x.id) === sel.value);
+    datos = await cargarPNG(`data/simulacion/${e.id}.png?v=${encodeURIComponent(d.generado)}`);
+    satDatos = null; if (capaSat) { capaSat.remove(); capaSat = null; }
+    sat.checked = false;
+    sat.disabled = !e.satelite;
+    document.getElementById('sim-satelite-txt').textContent = e.satelite
+      ? `Agua vista por el radar Sentinel-1 el ${fechaCorta(e.satelite.fecha)}${e.satelite.altura_m != null ? ` (río en ${metros(e.satelite.altura_m)})` : ''}` : 'Sin pasada reciente del radar Sentinel-1';
+    document.getElementById('sim-ajuste').textContent = `Relieve ${e.relieve}. ` + (e.coincidencia_radar != null
+      ? `Ajustado con esa pasada del radar: corrimiento de ${e.ajuste_m.toFixed(1).replace('.', ',')} m, coincidencia ${Math.round(e.coincidencia_radar * 100)} %.`
+      : 'Sin ajuste con radar.');
+    rango.max = e.niveles.length - 1;
+    // atajos: hoy, alerta, evacuación, pronóstico, récord
+    const cerca = h => e.niveles.reduce((mej, v, i) => Math.abs(v - h) < Math.abs(e.niveles[mej] - h) ? i : mej, 0);
+    const rio = SF && (SF.rios || []).find(r => r.id === e.id);
+    const pron = rio && rio.pronostico ? Math.max(...rio.pronostico.puntos.map(p => p[2]).filter(v => v != null)) : null;
+    const atajos = [['hoy', e.actual.altura_m], ['alerta', e.alerta_m], ['evacuación', e.evacuacion_m], ['pronóstico', pron], [`récord ${e.record.fecha.slice(0, 4)}`, e.record.altura_m]]
+      .filter(a => a[1] != null);
+    document.getElementById('sim-atajos').innerHTML = atajos.map(([n, h]) => `<button type="button" data-k="${cerca(h)}"><b>${metros(h)}</b>${esc(n)}</button>`).join('');
+    document.querySelectorAll('#sim-atajos button').forEach(b => b.addEventListener('click', () => { rango.value = b.dataset.k; dibujar(); }));
+    rango.value = cerca(e.actual.altura_m);
+    m.fitBounds(e.limites, { animate: false });
+    dibujar();
+  };
+  let pendiente = false;
+  rango.addEventListener('input', () => { if (pendiente) return; pendiente = true; requestAnimationFrame(() => { pendiente = false; dibujar(); }); });
+  sel.addEventListener('change', elegirEscala);
+  sat.addEventListener('change', async () => {
+    if (capaSat) { capaSat.remove(); capaSat = null; }
+    if (!sat.checked || !e.satelite) return;
+    satDatos ||= await cargarPNG(`data/simulacion/${e.id}_satelite.png?v=${encodeURIComponent(d.generado)}`);
+    capaSat = L.imageOverlay(pintar(satDatos, v => v ? [224, 69, 123, 140] : null), e.limites).addTo(m);
+  });
+  const santaFe = d.escalas.find(x => x.id === 30);
+  if (santaFe) sel.value = '30';
+  elegirEscala();
 }

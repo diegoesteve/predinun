@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=202610261030">
+<link rel="stylesheet" href="style.css?v=202610261130">
 </head>
 <body>
 <header class="barra">
@@ -161,6 +161,23 @@
     <h2>Río Salado</h2>
     <p class="nota">Estaciones de la Red Hidrológica Nacional. Algunas se leen cada varios días.</p>
     <div class="tarjetas" id="sf-salado"></div>
+    <h2>Simulá la crecida</h2>
+    <p class="nota">Elegí una escala y una altura del río: el mapa muestra qué zonas quedarían bajo el agua según el relieve. Es una aproximación: no ve defensas, terraplenes ni desagües, y no sirve para decidir una evacuación.</p>
+    <div class="simulacion">
+      <div class="sim-panel">
+        <label for="sim-escala"><b>Escala del río</b></label>
+        <select id="sim-escala"></select>
+        <div class="sim-altura"><label for="sim-nivel"><b>Altura del río</b></label><span id="sim-valor">–</span></div>
+        <input id="sim-nivel" type="range" min="0" max="0" step="1" value="0">
+        <div id="sim-atajos" class="sim-atajos"></div>
+        <div id="sim-texto" class="sim-texto"></div>
+        <label class="sim-check"><input type="checkbox" id="sim-satelite"> <span id="sim-satelite-txt">Agua vista por el radar Sentinel-1</span></label>
+        <p class="nota" id="sim-ajuste"></p>
+      </div>
+      <div id="mapa-sim" class="mapa alto sim-mapa"></div>
+    </div>
+    <div class="leyenda"><span><span class="cuadro" style="--c:#8FBCDB"></span>río y lagunas en aguas normales · <span class="cuadro" style="--c:#1F5FA8"></span>bajo el agua con esa altura · <span class="cuadro" style="--c:#E0457B"></span>agua que vio el radar</span></div>
+
     <h2>Mapa</h2>
     <div id="mapa-santafe" class="mapa alto"></div>
     <div class="leyenda">
@@ -237,6 +254,6 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="config.js?v=202610231441"></script>
-<script src="app.js?v=202610261030"></script>
+<script src="app.js?v=202610261130"></script>
 </body>
 </html>

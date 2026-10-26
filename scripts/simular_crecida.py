@@ -19,7 +19,7 @@ Es una orientación, no un mapa oficial.
 
 Escribe docs/data/simulacion.json y, por escala, docs/data/simulacion/<id>.png (cada píxel: 0 seco, 1..N la primera
 altura de la lista con la que se moja, 255 agua permanente) y <id>_satelite.png (1 = agua vista por el radar).
-Corre a mano o una vez por mes (workflow simulacion.yml).
+Corre en el workflow del boletín cuando se pide (opción «simulacion») o si falta el resultado.
 """
 import json
 import os
