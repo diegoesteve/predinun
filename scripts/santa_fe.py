@@ -204,10 +204,17 @@ def lluvia(locs):
             humedo = l7 >= HUMEDO_7D
             k = FRACCION_HUMEDO if humedo else 1
             m3, m24 = float(r3.max() or 0), float(r24.max() or 0)
+            r3d = s.rolling(3, min_periods=1).sum()
+            por_dia = {}
+            for kd in range(3):
+                d0 = max(ahora.normalize() + pd.Timedelta(days=kd), ahora)
+                d1 = ahora.normalize() + pd.Timedelta(days=kd + 1) - pd.Timedelta(hours=1)
+                if d1 >= d0:
+                    por_dia[d0.strftime('%Y-%m-%d')] = [round(float(r3d.loc[d0:d1].max() or 0), 1), round(float(s.loc[d0:d1].sum()), 1)]
             cond = ('lluvia fuerte' if m24 >= F24 * k or m3 >= F3 * k else 'atención' if m24 >= A24 * k or m3 >= A3 * k else 'normal')
             salida[f['localidad']] = {'condicion': cond, 'max_3h_mm': round(m3, 1), 'max_24h_mm': round(m24, 1),
                                       'cuando': (r24.idxmax() if m24 >= m3 * 2 else r3.idxmax()).strftime('%Y-%m-%d %H:00') if m24 > 0 else None,
-                                      'lluvia_7d_mm': round(l7, 1), 'suelo_humedo': humedo}
+                                      'lluvia_7d_mm': round(l7, 1), 'suelo_humedo': humedo, 'dias': por_dia}
         time.sleep(1)
     return salida
 

@@ -47,6 +47,9 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/radar_ohmc.py
+      - name: Hoy y mañana por localidad (la app)
+        continue-on-error: true
+        run: python scripts/armar_app.py
       - uses: actions/cache/save@v4
         if: always()
         with:
@@ -57,7 +60,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data/ahora.json docs/data/estaciones.json data/monitor/estado_zonas.json data/historia
-          for f in docs/data/radar.json data/monitor/radar_avisados.json docs/data/smn.json data/smn_cache.json data/smn_avisados.json data/historial_alarmas.csv; do [ -f "$f" ] && git add "$f"; done; true
+          for f in docs/data/app.json docs/data/radar.json data/monitor/radar_avisados.json docs/data/smn.json data/smn_cache.json data/smn_avisados.json data/historial_alarmas.csv; do [ -f "$f" ] && git add "$f"; done; true
           git diff --cached --quiet && exit 0
           git commit -m "monitor: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push

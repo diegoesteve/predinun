@@ -119,12 +119,20 @@ def main():
             # promedio de cada cuenca según cada modelo, y usarlos en un punto daría falsas alarmas.
             efectivo = UMBRAL_3H_MM * (cfg.FRACCION_LLUVIA if humedo else 1)
             maximo = float(r3.max()) if len(r3) else 0.0
+            # por día (lo que falta de hoy, mañana y pasado): mayor lluvia en 3 h y total del día, para la app
+            r3d = s.rolling(3, min_periods=1).sum()
+            por_dia = {}
+            for k in range(3):
+                d0 = max(ahora.normalize() + pd.Timedelta(days=k), ahora)
+                d1 = ahora.normalize() + pd.Timedelta(days=k + 1) - pd.Timedelta(hours=1)
+                if d1 >= d0:
+                    por_dia[d0.strftime('%Y-%m-%d')] = [round(float(r3d.loc[d0:d1].max() or 0), 1), round(float(s.loc[d0:d1].sum()), 1)]
             condicion = 'lluvia fuerte' if maximo >= efectivo else 'atención' if maximo >= efectivo / 2 else 'normal'
             salida[f['localidad']] = {
                 'condicion': condicion, 'ahora': semaforo(condicion, maximo, efectivo, f.get('exposicion')), 'max_3h_mm': round(maximo, 1),
                 'cuando': r3.idxmax().strftime('%Y-%m-%d %H:00') if maximo > 0 else None,
                 'umbral_mm': round(efectivo, 1), 'suelo_humedo': bool(humedo), 'suelo': suelo,
-                'lluvia_7d_mm': round(lluvia_7d, 1),
+                'lluvia_7d_mm': round(lluvia_7d, 1), 'dias': por_dia,
             }
         time.sleep(1)
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'condiciones_localidades.json'),

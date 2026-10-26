@@ -19,11 +19,12 @@ jobs:
           python-version: '3.12'
       - run: pip install requests shapely pandas
       - run: python scripts/importar_aprhi.py
+      - run: python scripts/armar_cursos_app.py
       - name: Guardar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/aprhi
+          git add data/aprhi docs/data/cursos
           git diff --cached --quiet && exit 0
           git commit -m "APRHI: capas $(date '+%d/%m/%Y')"
           git pull --rebase -X theirs && git push

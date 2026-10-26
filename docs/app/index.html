@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crecidas · ¿viene agua a tu barrio?</title>
+<meta name="description" content="Te avisamos un día antes si puede venir agua a tu barrio o pueblo. Córdoba y Santa Fe. Gratis, sin registrarte. No oficial.">
+<meta name="theme-color" content="#1D5C87">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="iconos/icono-192.png">
+<link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="¿Viene agua a tu barrio?">
+<meta property="og:description" content="Te avisamos un día antes si puede venir agua a tu barrio o pueblo. Córdoba y Santa Fe. Gratis.">
+<meta property="og:image" content="https://diegoesteve.github.io/predinun/og.png">
+<link rel="stylesheet" href="app.css?v=1">
+</head>
+<body>
+<main id="app">
+
+  <!-- Elegir lugar -->
+  <section id="v-elegir" class="vista" hidden>
+    <div class="logo" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 34 34"><rect width="34" height="34" rx="10" fill="#1D5C87"/><path d="M17 7c4 5 7 9 7 13a7 7 0 0 1-14 0c0-4 3-8 7-13z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg></div>
+    <h1>¿Dónde vivís?</h1>
+    <p class="bajada">Te avisamos <b>un día antes</b> si puede venir agua a tu barrio o tu pueblo. Es gratis y no tenés que registrarte.</p>
+    <button type="button" id="b-ubicacion" class="boton primario"><svg width="22" height="22" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="3" fill="currentColor"/><circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Usar dónde estoy ahora</button>
+    <p id="ubicacion-estado" class="nota" role="status"></p>
+    <label for="buscar" class="etiqueta">O escribí tu pueblo o tu ciudad</label>
+    <input id="buscar" type="search" autocomplete="off" placeholder="Por ejemplo Unquillo o Reconquista">
+    <ul id="resultados" class="resultados" role="listbox"></ul>
+    <p class="nota pie">Por ahora: sierras de Córdoba y provincia de Santa Fe.</p>
+  </section>
+
+  <!-- Hoy y mañana -->
+  <section id="v-lugar" class="vista" hidden>
+    <header class="cabeza">
+      <div><h1 id="l-nombre"></h1><p id="l-zona" class="nota"></p></div>
+      <button type="button" id="b-cambiar" class="boton chico">Cambiar</button>
+    </header>
+    <div id="l-dias" class="dias"></div>
+    <div id="l-arroyo" class="caja" hidden></div>
+    <section id="l-hacer" class="caja"></section>
+    <div class="botones">
+      <a id="b-whatsapp" class="boton whatsapp" href="#" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Avisar por WhatsApp</a>
+      <a class="boton oscuro" href="tel:103"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Llamar al 103</a>
+    </div>
+    <div id="l-avisos" class="caja oscura" hidden></div>
+    <div id="l-instalar" class="caja oscura" hidden></div>
+    <p id="l-fuente" class="nota pie"></p>
+    <p class="nota pie"><a href="../">Ver todos los datos (mapas, ríos, radar)</a> · No es un aviso oficial: seguí a Defensa Civil y a Protección Civil. Emergencias: 103 o 911.</p>
+  </section>
+
+  <p id="sin-datos" class="caja" hidden></p>
+</main>
+<script src="app.js?v=1"></script>
+</body>
+</html>

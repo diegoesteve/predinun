@@ -86,6 +86,9 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/santa_fe.py
+      - name: Hoy y mañana por localidad (la app)
+        continue-on-error: true
+        run: python scripts/armar_app.py
       - name: Páginas para compartir cada localidad (vista previa en WhatsApp)
         continue-on-error: true
         run: python scripts/paginas_compartir.py
