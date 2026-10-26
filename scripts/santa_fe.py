@@ -36,7 +36,7 @@ from alerta import config as cfg   # noqa: E402
 INA = 'https://alerta.ina.gob.ar/a5'
 CAB = {'User-Agent': 'predinun (proyecto sin fines comerciales)'}
 ARG = timezone(timedelta(hours=-3))
-SITIO = 'https://diegoesteve.github.io/predinun/#santafe'
+SITIO = 'https://diegoesteve.github.io/predinun/mapa.html#santafe'
 
 # Estaciones del INA (id de estación = id de la serie observada de altura). De norte a sur.
 PARANA = [23, 24, 25, 26, 30, 29, 31, 32, 33, 34, 35]   # Goya, Reconquista, Esquina, La Paz, Santa Fe, Paraná, Diamante, Victoria, San Lorenzo, Rosario, Villa Constitución

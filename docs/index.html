@@ -3,257 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Crecidas · Córdoba y Santa Fe</title>
-<meta name="description" content="¿Hay riesgo de crecida esta semana? Semáforo por localidad, ríos en vivo y pronóstico para las sierras de Córdoba, con datos de la Provincia, NASA y Open-Meteo. Monitor experimental, no oficial.">
+<title>Crecidas · ¿qué zona querés ver?</title>
+<script>
+  // Links viejos (?localidad=… o #ahora, #santafe…) eran de la página completa: ahora está en mapa.html
+  (function () {
+    var h = location.hash.slice(1), viejo = /[?&]localidad=/.test(location.search) || ['inicio', 'ahora', 'pronostico', 'riesgo', 'santafe', 'aporta'].indexOf(h) >= 0;
+    if (viejo) location.replace('mapa.html' + location.search + location.hash);
+  })();
+</script>
+<meta name="description" content="Ríos, arroyos y lluvia fuerte por zona de Argentina, con datos públicos. Monitor ciudadano, no oficial.">
+<meta name="theme-color" content="#1D5C87">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Crecidas">
-<meta property="og:title" content="¿Hay riesgo de crecida esta semana?">
-<meta property="og:description" content="Semáforo por localidad, ríos en vivo y pronóstico, con datos de la Provincia de Córdoba, NASA y Open-Meteo. Monitor experimental, no oficial.">
+<meta property="og:title" content="¿Viene agua a tu zona?">
+<meta property="og:description" content="Ríos, arroyos y lluvia fuerte por zona de Argentina, con datos públicos. Monitor ciudadano, no oficial.">
 <meta property="og:url" content="https://diegoesteve.github.io/predinun/">
 <meta property="og:image" content="https://diegoesteve.github.io/predinun/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta property="og:locale" content="es_AR">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=202610261235">
+<link rel="icon" href="app/iconos/icono-192.png">
+<link rel="stylesheet" href="portada.css?v=1">
 </head>
 <body>
 <header class="barra">
-  <div class="marca" role="button" tabindex="0" data-p="inicio" title="Ir al inicio">
-    <span class="titulo">Crecidas</span>
-    <span class="sub">Monitor experimental, no oficial</span>
-  </div>
-  <nav class="pestanas" role="tablist">
-    <button role="tab" data-p="inicio" aria-selected="true">Inicio</button>
-    <button role="tab" data-p="ahora" aria-selected="false">Ahora</button>
-    <button role="tab" data-p="pronostico" aria-selected="false">Pronóstico</button>
-    <button role="tab" data-p="riesgo" aria-selected="false">Mapa de riesgo</button>
-    <button role="tab" data-p="santafe" aria-selected="false">Santa Fe</button>
-    <button role="tab" data-p="aporta" aria-selected="false">Aportá</button>
-  </nav>
+  <a href="./" class="marca"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#1D5C87"/><path d="M17 7c4 5 7 9 7 13a7 7 0 0 1-14 0c0-4 3-8 7-13z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg>
+    <span><b>Crecidas</b><small>Monitor ciudadano, no oficial</small></span></a>
+  <a href="app/" class="boton oscuro">App y avisos</a>
 </header>
 
 <main>
-  <aside class="aviso" role="note">
-    <div class="aviso-titulo">Solo con fines informativos</div>
-    <div>Estos datos son experimentales y no reemplazan ni anticipan los avisos oficiales. No los uses para decidir si evacuar o volver a tu casa. Los canales oficiales son <strong>Defensa Civil de la Provincia de Córdoba</strong>, el <strong>Servicio Meteorológico Nacional</strong> y tu municipio.</div>
-    <div>Ante una emergencia llamá al <strong>103 (Defensa Civil)</strong> o al <strong>911</strong>.</div>
-  </aside>
-  <p id="datos-viejos" class="destacado alerta-roja" role="alert" hidden></p>
-
-  <section id="p-inicio" class="pagina">
-    <div class="portada">
-      <p class="antetitulo">Córdoba y Santa Fe · datos públicos</p>
-      <h1>¿Hay riesgo de crecida esta semana?</h1>
-      <p class="bajada">Lluvia, ríos y humedad del suelo en las sierras, con los datos de la Provincia de Córdoba, la NASA y los principales modelos de pronóstico, puestos para que cualquiera los pueda mirar.</p>
+  <section class="hero">
+    <p class="ante">Ríos, arroyos y lluvia fuerte · datos públicos</p>
+    <h1>¿Qué zona querés ver?</h1>
+    <p class="bajada">Elegí tu región para ver cómo están los ríos y arroyos y si viene lluvia fuerte. O buscá directamente tu pueblo.</p>
+    <div class="buscar">
+      <label for="buscar" class="oculto">Buscá tu pueblo o ciudad</label>
+      <div class="campo"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5 18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="buscar" type="search" autocomplete="off" placeholder="Buscá tu pueblo, por ejemplo Unquillo o Reconquista"></div>
+      <ul id="resultados" class="resultados"></ul>
     </div>
-    <div id="estado-hoy" class="estado-hoy">Cargando…</div>
-    <div class="buscar-portada">
-      <label for="buscar-portada"><b>¿Cómo está tu localidad?</b></label>
-      <div class="buscar-caja">
-        <input id="buscar-portada" type="search" placeholder="Escribí el nombre, por ejemplo Cosquín o Reconquista" autocomplete="off"
-               role="combobox" aria-expanded="false" aria-controls="sugerencias-portada" aria-autocomplete="list">
-        <ul id="sugerencias-portada" class="sugerencias" role="listbox" hidden></ul>
-      </div>
-    </div>
-    <div class="accesos">
-      <button class="acceso" data-ir="ahora"><b>Ríos y lluvia en vivo</b><span>Las estaciones de la Provincia, cada 15 minutos.</span></button>
-      <button class="acceso" data-ir="pronostico"><b>Pronóstico a 10 días</b><span>Cuánta lluvia esperan los modelos y cómo está el suelo.</span></button>
-      <button class="acceso" data-ir="riesgo"><b>Mapa de riesgo</b><span>Qué tan expuesta está cada localidad, y por qué.</span></button>
-      <button class="acceso acceso-aporte" data-ir="aporta"><b>¿Viviste una crecida? Contala</b><span>Tu relato y tus fotos ayudan a saber dónde es peligroso.</span></button>
-    </div>
-
-    <h2>De dónde salen los datos</h2>
-    <p class="nota">Todo viene de fuentes públicas y se actualiza solo.</p>
-    <div class="fuentes">
-      <div><b>Red de estaciones de la Provincia de Córdoba</b><span>Lluvia y nivel de los ríos. Se consulta cada 15 minutos.</span><span class="act" id="act-estaciones"></span></div>
-      <div><b>Modelos de pronóstico GFS (EE.UU.), ICON (Alemania) y ECMWF (Europa)</b><span>Lluvia de los próximos días, con sus ensambles, vía Open-Meteo. Cada 6 horas.</span><span class="act" id="act-pronostico"></span></div>
-      <div><b>Satélite SMAP de la NASA</b><span>Humedad del suelo. Llega con dos o tres días de atraso.</span><span class="act" id="act-smap"></span></div>
-      <div><b>Inventario de crecidas</b><span>Eventos desde 1671, armado con notas de prensa, archivos y relatos, con la fuente de cada uno.</span><span class="act" id="act-inventario"></span></div>
-      <div><b>Imágenes satelitales Sentinel, Landsat y Google Earth</b><span>Daños verificados en las crecidas de 2014 a 2016.</span></div>
-      <div><b>Radar meteorológico de Córdoba (OHMC)</b><span>Núcleos de tormenta detectados por el radar del Observatorio Hidro-Meteorológico de Córdoba, cada 10 minutos. Se consulta cada 15 minutos.</span><span class="act" id="act-radar"></span></div>
-      <div><b>Alertas del Servicio Meteorológico Nacional (SMN)</b><span>Alertas y avisos a corto plazo oficiales, con la zona exacta que cubren. Se consultan cada 15 minutos.</span><span class="act" id="act-smn"></span></div>
-      <div><b>Relieve, población y mapas</b><span>MERIT Hydro (relieve y cauces), GHSL (población), OpenStreetMap y el GeoPortal de la Provincia (pueblos, puentes, campings).</span></div>
-      <div><b>Administración Provincial de Recursos Hídricos (APRHI)</b><span>Subcuencas de los ríos serranos y nombres oficiales de ríos y arroyos, del <a href="https://portal-aprhi.opendata.arcgis.com/" target="_blank" rel="noopener">Portal de Información Hídrica</a>. Se actualiza una vez por mes.</span></div>
-    </div>
-
-    <h2>Quiénes hacemos esto</h2>
-    <p>Es un proyecto personal y sin fines comerciales de vecinos de Córdoba que estudian las crecidas de las sierras. No es un servicio oficial: ante una emergencia, los avisos que valen son los de Defensa Civil, el Servicio Meteorológico Nacional y tu municipio.</p>
   </section>
 
-  <section id="p-ahora" class="pagina" hidden>
-    <p class="meta" id="ahora-meta">Cargando…</p>
-    <div class="tarjetas" id="ahora-cuencas"></div>
-    <h2>Radar: tormentas ahora</h2>
-    <div id="radar-ahora" class="estado-hoy">Cargando…</div>
-    <h2>Estaciones de la Provincia</h2>
-    <p class="nota">Lluvia y nivel de los ríos de la red pública de la Provincia, consultada cada 15 minutos. Los umbrales son provisorios. Tocá una estación de la tabla para verla en el mapa.</p>
-    <div id="mapa-estaciones" class="mapa"></div>
-    <div class="tabla-envoltura"><table id="tabla-estaciones"></table></div>
-  </section>
+  <h2>Zonas con monitoreo</h2>
+  <div id="zonas" class="zonas"><p class="nota">Cargando…</p></div>
 
-  <section id="p-pronostico" class="pagina" hidden>
-    <p class="meta" id="pron-meta">Cargando…</p>
-    <h2>Próximas 48 horas</h2>
-    <div class="tabla-envoltura"><table id="tabla-48h"></table></div>
-    <h2>Perspectiva a 10 días</h2>
-    <p class="nota">Probabilidad, según los ensambles, de que en algún momento del día llueva en 3 horas lo que en el pasado alcanzó para una crecida. Con el suelo saturado se cuenta la mitad de esa lluvia. Más allá de 5 días es solo una tendencia.</p>
-    <div class="tabla-envoltura"><table id="tabla-10d"></table></div>
-    <h2>Humedad del suelo</h2>
-    <p class="nota">Percentil de la humedad de la zona de raíces (NASA SMAP) respecto del mismo mes desde 2015, y cuánto evaporó y va a evaporar comparado con lo normal para la época (Open-Meteo y ERA5). Con poca evaporación, por ejemplo con muchos días nublados, el suelo tarda más en secarse y la próxima lluvia escurre más.</p>
-    <div class="tarjetas" id="suelo"></div>
-  </section>
+  <h2>Regiones del país</h2>
+  <p class="nota">Vamos sumando regiones a medida que encontramos datos públicos para cada una.</p>
+  <div id="regiones" class="regiones"></div>
 
-  <section id="p-riesgo" class="pagina" hidden>
-    <p class="nota">Lugares con daños verificados en imágenes satelitales y de Google Earth (crecidas de 2014–2016), tramos de río inestables, microcuencas prioritarias y pueblos donde un arroyo serrano entra al pueblo con rasgos del terreno que agravan las crecidas repentinas (los que se identificaron estudiando la crecida de San Carlos Minas de 1992). Es un orden para saber dónde mirar primero, no un mapa oficial de riesgo.</p>
-    <div class="capas" id="capas"></div>
-    <div id="mapa-riesgo" class="mapa alto"></div>
-    <h2>Por localidad</h2>
-    <p class="destacado" id="resumen-ahora">Cargando el pronóstico por localidad…</p>
-    <div class="leyenda">
-      <div><b>Ahora</b>: junta dos cosas. Las <b>tormentas que ve el radar en este momento</b> (cada 15 minutos) y lo que se espera para los <b>próximos 3 días</b> (lluvia pronosticada y humedad del suelo, cada 6 horas), cruzadas con la exposición de cada lugar. Vale la peor de las dos. <span id="condiciones-meta" class="nota"></span></div>
-      <span class="n-rojo"><span class="punto"></span><b>Alerta</b>: hay una tormenta intensa sobre un lugar muy expuesto (o muy intensa sobre uno expuesto), o se espera lluvia fuerte en un lugar muy expuesto, o mucha más lluvia que eso en uno expuesto.</span>
-      <span class="n-amarillo"><span class="punto"></span><b>Atención</b>: hay una tormenta intensa cerca, o se espera lluvia fuerte, en otro lugar; o se espera una lluvia cerca de ese nivel en uno muy expuesto.</span>
-      <span class="n-verde"><span class="punto"></span><b>Normal</b>: no se espera lluvia fuerte.</span>
-      <div class="nota">Por ahora, «lluvia fuerte» es lo mismo para todas las localidades: 20 mm o más en 3 horas, o 10 mm si el suelo ya está húmedo. Es lo que alcanzó para provocar crecidas en las cuencas de Sierras Chicas y Punilla. Cuando juntemos más datos de cada lugar, lo vamos a ajustar localidad por localidad.</div>
+  <section class="app">
+    <div>
+      <h2>La app para tu celular</h2>
+      <p>Elegís tu pueblo una vez y ves hoy y mañana en palabras simples. Se instala en la pantalla de inicio, funciona con poca señal y te avisa a la noche si mañana viene agua o tormenta fuerte.</p>
     </div>
-    <div class="leyenda">
-      <div><b>Exposición</b>: no cambia con el tiempo. Sale del <b>historial</b> (crecidas registradas) y de las <b>condiciones del lugar</b> (cómo son sus arroyos y cuánta gente vive cerca del cauce). Sirve para saber dónde mirar, no dice que haya peligro hoy.</div>
-      <span><span class="cuadro" style="--c:#5B2A86"></span><b>Muy expuesta</b>: tuvo varias crecidas graves, o una grave y un terreno peligroso, o un terreno muy peligroso con mucha gente junto al cauce.</span>
-      <span><span class="cuadro" style="--c:#9B7BC0"></span><b>Expuesta</b>: tuvo crecidas, o tiene algunas condiciones peligrosas.</span>
-      <span><span class="cuadro" style="--c:#D9CCE8"></span><b>Poco expuesta</b>: pocas condiciones detectadas. <i>No quiere decir que no haya riesgo.</i></span>
-    </div>
-    <p class="nota">Buscá o elegí una localidad para centrar el mapa y ver el detalle. La columna <b>Aviso</b> dice si alguna estación río arriba da al menos media hora de margen.</p>
-    <div class="buscador">
-      <div class="buscar-caja">
-        <input id="buscar-loc" type="search" placeholder="Buscar localidad…" aria-label="Buscar localidad" autocomplete="off"
-               role="combobox" aria-expanded="false" aria-controls="sugerencias-loc" aria-autocomplete="list">
-        <ul id="sugerencias-loc" class="sugerencias" role="listbox" hidden></ul>
-      </div>
-      <label><input id="solo-eventos" type="checkbox"> Solo con crecidas registradas</label>
-      <label><input id="sin-aviso" type="checkbox"> Solo sin estación que dé aviso</label>
-    </div>
-    <div class="tabla-envoltura tabla-alta"><table id="tabla-loc"></table></div>
-    <div id="detalle-loc" class="detalle" hidden></div>
-  </section>
-
-
-  <section id="p-santafe" class="pagina" hidden>
-    <p class="meta" id="sf-meta">Cargando…</p>
-    <p class="nota">Santa Fe y región: crecidas de los ríos Paraná y Salado, y lluvia que puede anegar ciudades y campos. En la llanura el agua sube en días, no en minutos: lo que importa es cuánto falta para el nivel de alerta y hacia dónde va.</p>
-    <div id="sf-resumen" class="estado-hoy"></div>
-    <div id="sf-smn"></div>
-    <div class="buscar-portada">
-      <label for="buscar-sf"><b>¿Cómo está tu localidad?</b></label>
-      <div class="buscar-caja">
-        <input id="buscar-sf" type="search" placeholder="Escribí el nombre, por ejemplo Esperanza" autocomplete="off"
-               role="combobox" aria-expanded="false" aria-controls="sugerencias-sf" aria-autocomplete="list">
-        <ul id="sugerencias-sf" class="sugerencias" role="listbox" hidden></ul>
-      </div>
-    </div>
-    <div id="sf-ficha" class="detalle" hidden></div>
-    <h2>Río Paraná</h2>
-    <p class="nota">De norte a sur. Tocá una tarjeta para verla en el mapa. Línea gris: altura de los últimos 30 días; punteada celeste: pronóstico del INA; líneas naranja y roja: niveles de alerta y evacuación.</p>
-    <div class="tarjetas" id="sf-parana"></div>
-    <h2>Río Salado</h2>
-    <p class="nota">Estaciones de la Red Hidrológica Nacional. Algunas se leen cada varios días.</p>
-    <div class="tarjetas" id="sf-salado"></div>
-    <h2>Simulá la crecida</h2>
-    <p class="nota">Elegí una escala y una altura del río: el mapa muestra qué zonas quedarían bajo el agua según el relieve. Es una aproximación: no ve defensas, terraplenes ni desagües, y no sirve para decidir una evacuación.</p>
-    <div class="simulacion">
-      <div class="sim-panel">
-        <label for="sim-escala"><b>Escala del río</b></label>
-        <select id="sim-escala"></select>
-        <div class="sim-altura"><label for="sim-nivel"><b>Altura del río</b></label><span id="sim-valor">–</span></div>
-        <input id="sim-nivel" type="range" min="0" max="0" step="1" value="0">
-        <div id="sim-atajos" class="sim-atajos"></div>
-        <div id="sim-texto" class="sim-texto"></div>
-        <label class="sim-check"><input type="checkbox" id="sim-satelite"> <span id="sim-satelite-txt">Agua vista por el radar Sentinel-1</span></label>
-        <p class="nota" id="sim-ajuste"></p>
-      </div>
-      <div id="mapa-sim" class="mapa alto sim-mapa"></div>
-    </div>
-    <div class="leyenda"><span><span class="cuadro" style="--c:#8FBCDB"></span>río y lagunas en aguas normales · <span class="cuadro" style="--c:#1F5FA8"></span>bajo el agua con esa altura · <span class="cuadro" style="--c:#E0457B"></span>agua que vio el radar</span></div>
-
-    <h2>Mapa</h2>
-    <div id="mapa-santafe" class="mapa alto"></div>
-    <div class="leyenda">
-      <span><span class="punto" style="--c:#1F7A4D;border:2px solid #16201C"></span>Estación de río, con el color de su estado · <span class="punto" style="--c:#E07B20"></span>localidad con lluvia para tener en cuenta · <span class="punto" style="--c:#C0362C"></span>lluvia fuerte</span>
-    </div>
-    <h2>Lluvia en los próximos 3 días</h2>
-    <div class="tabla-envoltura tabla-alta"><table id="tabla-sf-lluvia"></table></div>
-    <h2>Cómo se calcula</h2>
-    <div class="leyenda" id="sf-metodo"></div>
-  </section>
-
-  <section id="p-aporta" class="pagina guia" hidden>
-    <h2>Contanos lo que viviste</h2>
-    <p>Si viviste o viste una crecida, o conocés hasta dónde llegó el agua en algún lugar, tu relato ayuda a entender dónde es peligroso y a avisar mejor. Sirven las historias viejas también: de hace 10, 30 o 50 años.</p>
-    <p class="destacado alerta-roja"><b>Esto no es un canal de emergencias.</b> Si está pasando ahora, llamá al <b>103</b> (Defensa Civil) o al <b>911</b>.</p>
-    <p id="aporta-inactivo" class="destacado" hidden>El formulario todavía no está activo. Volvé en unos días.</p>
-
-    <form id="form-aporte" class="formulario" novalidate>
-      <fieldset>
-        <legend>¿Qué querés contar?</legend>
-        <label><input type="radio" name="tipo" value="crecida que viví o vi" checked> Una crecida que viví o vi</label>
-        <label><input type="radio" name="tipo" value="marcas o daños que quedan"> Marcas o daños que todavía se ven (hasta dónde llegó el agua, un puente que se llevó…)</label>
-        <label><input type="radio" name="tipo" value="otro"> Otra cosa</label>
-      </fieldset>
-
-      <label><span>¿Cuándo fue? <span class="req">*</span></span>
-        <input name="fecha_evento" required maxlength="80" placeholder="15 de febrero de 2015, o «verano de 1992»"></label>
-
-      <label><span>Localidad <span class="req">*</span></span>
-        <input name="localidad" required maxlength="80" list="lista-localidades" placeholder="Por ejemplo, Mendiolaza" autocomplete="off"></label>
-      <datalist id="lista-localidades"></datalist>
-
-      <div class="campo">
-        <span>Lugar en el mapa (opcional): tocá el mapa donde pasó.</span>
-        <div id="mapa-aporte" class="mapa"></div>
-        <div class="fila-botones">
-          <button type="button" id="usar-ubicacion" class="boton-sec">Usar mi ubicación (si estás en el lugar)</button>
-          <button type="button" id="borrar-punto" class="boton-sec" hidden>Quitar el punto</button>
-          <span id="punto-elegido" class="nota"></span>
-        </div>
-        <p class="nota">No marques la puerta de una casa particular: con la cuadra o el tramo del río alcanza.</p>
-      </div>
-
-      <label><span>¿Qué pasó? <span class="req">*</span></span>
-        <textarea name="relato" required minlength="20" maxlength="4000" rows="6" placeholder="Cómo empezó, qué hizo el río, a qué hora, qué se llevó el agua, qué hicieron…"></textarea></label>
-
-      <label>¿Hasta dónde llegó el agua? (opcional)
-        <input name="altura_agua" maxlength="300" placeholder="«Hasta la rodilla en la calle San Martín», «tapó el puente», «llegó a la ruta»"></label>
-
-      <div class="campo">
-        <span>Fotos (opcional, hasta 3)</span>
-        <input type="file" id="fotos" accept="image/*" multiple>
-        <div id="vista-fotos" class="vista-fotos"></div>
-        <p class="nota">Se achican en tu teléfono antes de enviarse, y se les borran los datos ocultos (ubicación GPS, modelo del teléfono). Evitá caras reconocibles de otras personas y patentes.</p>
-      </div>
-
-      <label>Contacto (opcional y privado)
-        <input name="contacto" maxlength="120" placeholder="Mail o teléfono, por si necesitamos consultarte algo"></label>
-      <p class="nota">El contacto <b>nunca se publica</b>. Solo se usa para consultarte algo sobre tu aporte.</p>
-
-      <label class="check"><input type="checkbox" name="acepto" value="si" required>
-        <span>Entiendo que el relato y las fotos se publican en este sitio después de una revisión, sin mi contacto. Las fotos son mías o tengo permiso para compartirlas, y acepto que se publiquen con licencia <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es" target="_blank" rel="noopener">CC BY-NC 4.0</a> (se pueden compartir citando la fuente, sin fines comerciales).</span></label>
-
-      <div id="turnstile"></div>
-      <button type="submit" id="enviar-aporte" class="boton">Enviar</button>
-      <p id="estado-aporte" class="nota" role="status"></p>
-    </form>
+    <a href="app/" class="boton claro">Abrir la app</a>
   </section>
 </main>
 
 <footer>
-  Proyecto personal sin fines comerciales. Datos: Provincia de Córdoba (estaciones), OHMC (radar), Open-Meteo, NASA SMAP, Copernicus, Google Earth.
+  <p>Monitor experimental, no oficial: no reemplaza los avisos del Servicio Meteorológico Nacional ni de Defensa Civil. Emergencias: <b>103</b> o <b>911</b>.</p>
+  <p>Proyecto personal sin fines comerciales, con datos públicos (OHMC, Provincia de Córdoba, INA, SMN, NASA, Open-Meteo, APRHI, IDESF, GeoRef).</p>
 </footer>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="config.js?v=202610231441"></script>
-<script src="app.js?v=202610261500"></script>
+<script src="portada.js?v=1"></script>
 </body>
 </html>

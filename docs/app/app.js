@@ -129,7 +129,7 @@ function pintarLugar(x) {
   const peor = Math.max(x.hoy.nivel, x.man.nivel);
   const lista = HACER[x.tipo][peor >= 2 ? 'alto' : peor === 1 ? 'medio' : 'nada'];
   $('#l-hacer').innerHTML = `<h2>${peor ? (primeroManana ? 'Qué hacer hoy, para mañana' : 'Qué hacer') : 'Para estar preparado'}</h2><ol>${lista.map(t => `<li>${esc(t)}</li>`).join('')}</ol>`;
-  const texto = `${x.n}: ${primeroManana ? 'mañana' : 'hoy'} ${(primeroManana ? x.man : x.hoy).titulo.toLowerCase()}. Mirá cómo está tu barrio:`;
+  const texto = `${x.n}: ${primeroManana ? 'mañana' : 'hoy'} ${((t => t.charAt(0).toLowerCase() + t.slice(1))((primeroManana ? x.man : x.hoy).titulo))}. Mirá cómo está tu barrio:`;
   const enlace = new URL(`?l=${encodeURIComponent(x.n)}&z=${x.z}`, location.href.split('?')[0]).href;
   $('#b-whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent(`${texto} ${enlace}`);
   $('#l-fuente').textContent = `Datos de las ${DATOS.generado.slice(11)} del ${DATOS.generado.slice(8, 10)}/${DATOS.generado.slice(5, 7)}. ` +

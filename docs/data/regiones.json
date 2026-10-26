@@ -1,0 +1,23 @@
+{
+ "_leeme": "Regiones de la portada (docs/index.html). Para sumar una zona: agregarla en «zonas» de su región, con «z» igual al campo z de los lugares de app.json (lo arma scripts/armar_app.py). Una región sin zonas aparece como «próximamente».",
+ "regiones": [
+  {"id": "noa", "nombre": "Noroeste", "provincias": "Jujuy, Salta, Tucumán, Catamarca y Santiago del Estero",
+   "que": "Aludes y crecidas de ríos de montaña en verano", "zonas": []},
+  {"id": "nea", "nombre": "Noreste", "provincias": "Chaco, Formosa, Corrientes y Misiones",
+   "que": "Crecidas del Paraná, el Paraguay y el Uruguay, y anegamientos por lluvia", "zonas": []},
+  {"id": "cuyo", "nombre": "Cuyo", "provincias": "Mendoza, San Juan, San Luis y La Rioja",
+   "que": "Tormentas y aluviones en el piedemonte", "zonas": []},
+  {"id": "centro", "nombre": "Centro", "provincias": "Córdoba",
+   "que": "Arroyos serranos que crecen en minutos",
+   "zonas": [{"z": "cba", "nombre": "Sierras de Córdoba", "url": "mapa.html#inicio",
+              "detalle": "Radar cada 15 minutos, estaciones de la Provincia y pronóstico de lluvia"}]},
+  {"id": "litoral", "nombre": "Litoral", "provincias": "Santa Fe y Entre Ríos",
+   "que": "Ríos de llanura que crecen en días, y anegamientos por lluvia",
+   "zonas": [{"z": "sf", "nombre": "Santa Fe", "url": "mapa.html#santafe",
+              "detalle": "Paraná y Salado (INA), simulación de crecida y lluvia por localidad"}]},
+  {"id": "pampeana", "nombre": "Pampeana", "provincias": "Buenos Aires y La Pampa",
+   "que": "Delta y Río de la Plata, y anegamientos en la llanura", "zonas": []},
+  {"id": "patagonia", "nombre": "Patagonia", "provincias": "Neuquén, Río Negro, Chubut, Santa Cruz y Tierra del Fuego",
+   "que": "Crecidas por deshielo y lluvias intensas", "zonas": []}
+ ]
+}

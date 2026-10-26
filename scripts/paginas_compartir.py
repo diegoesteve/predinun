@@ -49,7 +49,7 @@ def pagina(f, c, generado):
     ahora = (c or {}).get('ahora')
     titulo = f"{f['localidad']}: {EMOJI.get(ahora, '')} {ahora}".strip() if ahora else f['localidad']
     titulo += ' · Crecidas Sierras de Córdoba'
-    destino = f"../../?localidad={quote(f['localidad'])}#riesgo"   # codificado: sin caracteres especiales de HTML
+    destino = f"../../mapa.html?localidad={quote(f['localidad'])}#riesgo"   # codificado: sin caracteres especiales de HTML
     url = f"{SITIO}l/{slug(f['localidad'])}/"
     e = lambda t: html.escape(t, quote=True)   # noqa: E731
     return f"""<!doctype html>

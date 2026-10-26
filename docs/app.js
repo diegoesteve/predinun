@@ -68,9 +68,7 @@ document.querySelectorAll('.pestanas button, .acceso').forEach(b => b.addEventLi
   mostrar(b.dataset.p || b.dataset.ir);
   if (b.dataset.ir) window.scrollTo(0, 0);
 }));
-const marca = document.querySelector('.marca');
-marca.addEventListener('click', () => mostrar('inicio'));
-marca.addEventListener('keydown', e => { if (e.key === 'Enter') mostrar('inicio'); });
+// la marca lleva a la portada de todas las zonas (index.html)
 function mostrar(p) {
   document.querySelectorAll('.pestanas button').forEach(b => b.setAttribute('aria-selected', b.dataset.p === p));
   document.querySelectorAll('.pagina').forEach(s => s.hidden = s.id !== 'p-' + p);
