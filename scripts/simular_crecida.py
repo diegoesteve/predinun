@@ -11,8 +11,9 @@ del Instituto Nacional del Agua):
      cota Y conectados al río (una laguna aislada detrás de un albardón no se llena). Se repite para alturas cada
      10 cm, desde 2 m hasta un poco más que el récord de la escala.
   3. Ajuste: el relieve satelital y el cero de la escala no usan exactamente la misma referencia, y el relieve tiene
-     error. Se prueba correr toda la simulación entre -2 y +2 m y se elige el corrimiento con el que el agua simulada
-     para la altura del día de la pasada del radar se parece más al agua que vio el radar.
+     error. En los días de agua más alta desde 2015 con pasada del radar, se prueba correr la simulación entre -3 y +3 m
+     y se elige el corrimiento con el que el agua simulada se parece más a la que vio el radar (la mediana de esas
+     crecidas).
 
 No ve defensas, terraplenes, bombeos ni desagües, y supone el río horizontal en los 20 km alrededor de la escala.
 Es una orientación, no un mapa oficial.
@@ -147,32 +148,52 @@ def main():
             print('  no encontré el río cerca de la escala, no se simula')
             continue
 
-        # radar Sentinel-1: las pasadas de los últimos 21 días, de la más nueva a la más vieja, hasta una que sirva
-        ajuste, iou, s1_fecha, s1_altura, agua_s1 = 0.0, None, None, None, None
+        # radar Sentinel-1. Para MOSTRAR: la pasada más nueva de los últimos 21 días. Para AJUSTAR: pasadas en los días
+        # de agua más alta desde 2015 (con el río bajo casi no hay agua fuera del cauce y la comparación no dice nada).
+        ajuste, iou, s1_fecha, s1_altura, agua_s1, calibracion = 0.0, None, None, None, None, []
         rec_zona = dem <= cero + rec_altura + 1.5        # solo donde el agua puede llegar (no los campos altos)
-        def altura_cerca(fecha, dias=3):
+        def altura_cerca(fecha, dias=2):
             f0 = datetime.fromisoformat(fecha)
             for dd in sorted(range(-dias, dias + 1), key=abs):
                 v = por_dia.get((f0 + timedelta(days=dd)).strftime('%Y-%m-%d'))
                 if v is not None:
                     return v
             return None
+        s1 = (ee.ImageCollection('COPERNICUS/S1_GRD').filterBounds(caja).filter(ee.Filter.eq('instrumentMode', 'IW'))
+              .filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV')))
+        def pasadas(desde, hasta):
+            col = s1.filterDate(desde, hasta)
+            return sorted(set(col.aggregate_array('system:time_start').map(lambda t: ee.Date(t).format('YYYY-MM-dd')).getInfo()))
+        def radar(fecha):
+            del_dia = s1.filterDate(fecha, ee.Date(fecha).advance(1, 'day')).mosaic().select(['VV'], ['b'])
+            vv = bajar(ee, del_dia.focalMedian(45, 'circle', 'meters').unmask(0).toFloat(), 'b', oeste, norte, ancho, alto)
+            return (vv < UMBRAL_VV_DB) & (vv != 0), vv != 0
         try:
-            col = (ee.ImageCollection('COPERNICUS/S1_GRD').filterBounds(caja)
-                   .filterDate((ahora - timedelta(days=21)).strftime('%Y-%m-%d'), (ahora + timedelta(days=1)).strftime('%Y-%m-%d'))
-                   .filter(ee.Filter.eq('instrumentMode', 'IW')).filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV')))
-            fechas = sorted(set(col.aggregate_array('system:time_start').map(lambda t: ee.Date(t).format('YYYY-MM-dd')).getInfo()), reverse=True)
-            for fecha in fechas[:4]:
-                del_dia = col.filterDate(fecha, ee.Date(fecha).advance(1, 'day')).mosaic().select(['VV'], ['b'])
-                vv = bajar(ee, del_dia.focalMedian(45, 'circle', 'meters').unmask(0).toFloat(), 'b', oeste, norte, ancho, alto)
-                hay = vv != 0
-                h_dia = altura_cerca(fecha)
-                if agua_s1 is None:                       # se muestra siempre la más nueva
-                    agua_s1, s1_fecha, s1_altura = (vv < UMBRAL_VV_DB) & hay, fecha, h_dia
-                if h_dia is None or hay.mean() < .3:
-                    print(f'  radar del {fecha}: sin altura del río cerca de esa fecha o pasada incompleta')
+            recientes = pasadas((ahora - timedelta(days=21)).strftime('%Y-%m-%d'), (ahora + timedelta(days=1)).strftime('%Y-%m-%d'))
+            if recientes:
+                s1_fecha = recientes[-1]
+                agua_s1, _ = radar(s1_fecha)
+                s1_altura = altura_cerca(s1_fecha)
+        except Exception as e:
+            print('  sin pasada reciente de Sentinel-1:', str(e)[:120])
+        try:
+            # los días más altos desde 2015, uno por crecida (separados al menos 60 días)
+            altos = []
+            for f, v in sorted(((f, v) for f, v in obs if f >= '2015-01-01'), key=lambda x: -x[1]):
+                if all(abs((datetime.fromisoformat(f) - datetime.fromisoformat(g)).days) > 60 for g, _ in altos):
+                    altos.append((f, v))
+                if len(altos) == 4:
+                    break
+            for f, _ in altos:
+                d0 = datetime.fromisoformat(f)
+                cerca = pasadas((d0 - timedelta(days=3)).strftime('%Y-%m-%d'), (d0 + timedelta(days=4)).strftime('%Y-%m-%d'))
+                if not cerca:
                     continue
-                agua = (vv < UMBRAL_VV_DB) & hay
+                fecha = min(cerca, key=lambda x: abs((datetime.fromisoformat(x) - d0).days))
+                h_dia = altura_cerca(fecha)
+                agua, hay = radar(fecha)
+                if h_dia is None or hay.mean() < .3:
+                    continue
                 zona = hay & rec_zona & ~permanente       # se compara fuera del cauce de siempre
                 mejor = (-1, 0.0)
                 for k in np.arange(-3.0, 3.01, 0.1):
@@ -181,11 +202,17 @@ def main():
                     v = (sim & agua & zona).sum() / union if union else 0
                     if v > mejor[0]:
                         mejor = (v, round(float(k), 1))
-                iou, ajuste = round(float(mejor[0]), 3), mejor[1]
-                print(f'  radar del {fecha} con el río en {h_dia} m: ajuste {ajuste:+.1f} m, coincidencia {iou:.0%}')
-                break
+                calibracion.append({'fecha': fecha, 'altura_m': h_dia, 'ajuste_m': mejor[1], 'coincidencia': round(float(mejor[0]), 3)})
+                print(f'  ajuste con el radar del {fecha} (río en {h_dia} m): {mejor[1]:+.1f} m, coincidencia {mejor[0]:.0%}')
+            buenas = [c for c in calibracion if c['coincidencia'] >= 0.3] or calibracion
+            if buenas:
+                ajuste = round(float(np.median([c['ajuste_m'] for c in buenas])), 1)
+                iou = round(float(np.mean([c['coincidencia'] for c in buenas])), 3)
+                print(f'  ajuste final {ajuste:+.1f} m (coincidencia media {iou:.0%})')
+            else:
+                print('  sin pasadas del radar en crecidas: sin ajuste')
         except Exception as e:
-            print('  sin radar Sentinel-1:', str(e)[:120])
+            print('  sin ajuste con Sentinel-1:', str(e)[:120])
 
         # alturas a simular
         alerta, evac = est.get('nivel_alerta'), est.get('nivel_evacuacion')
@@ -207,7 +234,7 @@ def main():
             'limites': [[round(norte - alto * RES, 5), round(oeste, 5)], [round(norte, 5), round(oeste + ancho * RES, 5)]],
             'niveles': niveles, 'area_km2': area, 'alerta_m': alerta, 'evacuacion_m': evac,
             'record': {'altura_m': rec_altura, 'fecha': rec_fecha}, 'actual': {'altura_m': ult_altura, 'fecha': ult_fecha},
-            'satelite': ({'fecha': s1_fecha, 'altura_m': s1_altura} if agua_s1 is not None else None),
+            'satelite': ({'fecha': s1_fecha, 'altura_m': s1_altura} if agua_s1 is not None else None), 'calibracion': calibracion,
         })
         print(f'  listo en {time.time() - t0:.0f} s')
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'simulacion.json'), {
