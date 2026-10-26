@@ -14,10 +14,10 @@
      "cuando": "2026-10-27 17:00"
     },
     "ICON": {
-     "max_3h_mm": 2.7,
+     "max_3h_mm": 3.4,
      "umbral_mm": 14.0,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 13:00"
+     "cuando": "2026-10-27 14:00"
     },
     "ECMWF": {
      "max_3h_mm": 1.6,
@@ -37,10 +37,8 @@
     "smap_m3m3": 0.117,
     "smap_percentil": 87,
     "smap_fecha": "2026-10-22 22:30 UTC",
-    "estimado_hoy_m3m3": 0.137,
-    "estimado_hoy_percentil": 100,
-    "percentil": 100,
-    "es_estimado": true,
+    "percentil": 87,
+    "es_estimado": false,
     "estado": "saturado"
    },
    "secado": {
@@ -91,23 +89,13 @@
     "smap_m3m3": 0.128,
     "smap_percentil": 96,
     "smap_fecha": "2026-10-22 22:30 UTC",
-    "percentil": 96,
-    "es_estimado": false,
+    "estimado_hoy_m3m3": 0.141,
+    "estimado_hoy_percentil": 100,
+    "percentil": 100,
+    "es_estimado": true,
     "estado": "saturado"
    },
-   "secado": {
-    "dias_atras": 10,
-    "dias_adelante": 7,
-    "et0_ult_mm": 25.5,
-    "et0_ult_normal_mm": 43.6,
-    "et0_ult_pct": 59,
-    "radiacion_ult_pct": 69,
-    "nubosidad_ult_media": 84,
-    "nubosidad_ult_normal": 43,
-    "dias_nublados_ult": 8,
-    "et0_prox_mm": 28.3,
-    "et0_prox_pct": 88
-   }
+   "secado": null
   },
   {
    "cuenca": "SanAntonio_CPaz",
@@ -133,6 +121,7 @@
     }
    },
    "ensambles": {
+    "ECMWF ENS": 0.0,
     "GFS ENS": 0.0,
     "ICON EPS": 0.05
    },
@@ -166,14 +155,8 @@
    "cuenca": "Capital",
    "nombre": "Capital (experimental)",
    "modelos": {
-    "GFS": {
-     "max_3h_mm": 1.0,
-     "umbral_mm": 7.7,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 17:00"
-    },
     "ICON": {
-     "max_3h_mm": 2.0,
+     "max_3h_mm": 3.5,
      "umbral_mm": 11.4,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-10-27 13:00"
@@ -320,27 +303,27 @@
     "suelo_saturado": true,
     "prob": [
      0.0,
-     0.04,
-     0.03,
-     0.04,
-     0.02,
-     0.1,
      0.12,
-     0.16,
-     0.19,
-     0.1
+     0.02,
+     0.03,
+     0.01,
+     0.07,
+     0.1,
+     0.11,
+     0.13,
+     0.06
     ],
     "mm": [
      0.0,
-     2.7,
-     0.6,
-     1.5,
-     0.2,
-     2.6,
-     4.6,
-     4.9,
-     4.8,
-     3.5
+     4.0,
+     0.4,
+     1.2,
+     0.1,
+     2.0,
+     4.0,
+     3.3,
+     3.2,
+     2.4
     ]
    }
   }
