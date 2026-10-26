@@ -130,6 +130,22 @@ python -m http.server -d docs         # abrir http://localhost:8000
 
 `AVISAR=0` evita los mensajes de Telegram mientras probás.
 
+## La app para todos
+
+`docs/app/` (https://diegoesteve.github.io/predinun/app/) es una app instalable (PWA) pensada para cualquier persona:
+elegís tu pueblo o barrio una vez (o usás la ubicación) y ves **hoy** y **mañana** en palabras simples, qué hacer, y
+botones para avisar por WhatsApp y llamar al 103. Funciona sin señal con lo último que se vio.
+
+- `scripts/armar_app.py` arma `docs/data/app.json` (cada 15 minutos y en el boletín): para cada localidad de las
+  sierras de Córdoba y de Santa Fe junta el radar, las alertas del SMN, la lluvia de hoy y mañana con su umbral, el río
+  más cercano con el pronóstico del INA y la exposición por la historia. Niveles: tranquilo, atención, alerta, peligro.
+- `scripts/armar_cursos_app.py` parte los arroyos de la APRHI en cuadrados de 0,1° (`docs/data/cursos/`) para que la app
+  diga a cuántos metros vive cada uno del arroyo (en la crecida de 2015 en Sierras Chicas el agua llegó hasta 300 m de
+  la orilla, según el informe de la UNC).
+- Avisos al celular: usan el servicio de suscripciones de Piedrazón (mismo sitio, mismas claves), con el lugar como
+  `crecidas:<zona>:<lugar>`. Los manda `notificar_crecidas.py` en el proceso de radar de Piedrazón: uno a la noche si
+  mañana hay alerta o peligro (y es peor que hoy), y uno en el momento si hoy sube a alerta o peligro.
+
 ## Fuentes de datos
 
 - Red de estaciones hidrometeorológicas de la Provincia de Córdoba (servicios ArcGIS públicos).
