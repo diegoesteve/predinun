@@ -94,7 +94,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data/*.json docs/data/*.geojson data/*.json docs/l
-          for f in data/cuencas_arroyos.geojson data/cuencas_arroyos.log data/historial_alarmas_pronostico.csv data/historial_alarmas.csv data/simulacion.log docs/data/simulacion; do [ -f "$f" ] && git add "$f"; done; true
+          for f in data/cuencas_arroyos.geojson data/cuencas_arroyos.log data/historial_alarmas_pronostico.csv data/historial_alarmas.csv data/simulacion.log docs/data/simulacion; do [ -e "$f" ] && git add "$f"; done; true
           git diff --cached --quiet && exit 0
           git commit -m "boletín: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push
