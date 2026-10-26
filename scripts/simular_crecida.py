@@ -14,7 +14,7 @@ del Instituto Nacional del Agua):
      error. En los meses de agua más alta (1984-2021) se compara la simulación con el agua que vio Landsat ese mes
      (JRC Monthly Water History), probando corrimientos entre -3 y +3 m; se usa la mediana de esas crecidas.
 
-No ve defensas, terraplenes, bombeos ni desagües, y supone el río horizontal en los 20 km alrededor de la escala.
+No ve bombeos ni desagües; las defensas solo donde hay capa de la Provincia (data/santafe_idesf). Supone que la superficie del río sube en línea recta aguas arriba (con la pendiente que mejor ajusta).
 Es una orientación, no un mapa oficial.
 
 Escribe docs/data/simulacion.json y, por escala, docs/data/simulacion/<id>.png (cada píxel: 0 seco, 1..N la primera
@@ -42,6 +42,7 @@ MEDIO_LAT, MEDIO_LON = 0.18, 0.21       # medio lado del cuadrado: ~20 km
 PASO = 0.10
 SEMILLA_KM = 3                          # el río «de la escala»: el agua permanente a menos de 3 km
 UMBRAL_VV_DB = -16                      # agua en Sentinel-1 (VV): más oscuro que esto
+PENDIENTES = [0.0, 0.02, 0.03, 0.04, 0.05, 0.06]   # m por km: el Paraná medio baja unos 3 a 5 cm por km
 SALIDA = os.path.join(cfg.DOCS_DATA, 'simulacion')
 IDESF = os.path.join(cfg.DATA, 'santafe_idesf')   # capas de la Provincia bajadas a mano (ver LEEME.md)
 
@@ -161,10 +162,18 @@ def main():
         if not semillas.any():
             print('  no encontré el río cerca de la escala, no se simula')
             continue
+        # El río no es plano: baja unos cm por km. Eje del valle = dirección principal del agua permanente; «arriba»
+        # es hacia el norte (el Paraná corre hacia el sur en todo este tramo). dist: km aguas arriba de la escala.
+        yk, xk = (plat - lat) * 111.3, (plon - lon) * 111.3 * np.cos(np.radians(lat))
+        pts = np.stack([xk[permanente], yk[permanente]])
+        _, vec = np.linalg.eigh(np.cov(pts))
+        eje = vec[:, -1] if vec[1, -1] >= 0 else -vec[:, -1]
+        dist = (xk * eje[0] + yk * eje[1]).astype(np.float32)
 
         # radar Sentinel-1. Para MOSTRAR: la pasada más nueva de los últimos 21 días. Para AJUSTAR: pasadas en los días
         # de agua más alta desde 2015 (con el río bajo casi no hay agua fuera del cauce y la comparación no dice nada).
         ajuste, iou, s1_fecha, s1_altura, agua_s1, calibracion = 0.0, None, None, None, None, []
+        pendiente = 0.0
         rec_zona = dem <= cero + rec_altura + 1.5        # solo donde el agua puede llegar (no los campos altos)
         def altura_cerca(fecha, dias=2):
             f0 = datetime.fromisoformat(fecha)
@@ -213,18 +222,23 @@ def main():
                 if zona.sum() < 0.2 * rec_zona.sum():       # mes muy nublado: no sirve
                     print(f'  Landsat {mes}: muy nublado')
                     continue
-                mejor = (-1, 0.0)
-                for k in np.arange(-3.0, 3.01, 0.1):
-                    sim = inundado(dem, permanente, semillas, cero + h_mes + k)
-                    union = ((sim | agua) & zona).sum()
-                    v = (sim & agua & zona).sum() / union if union else 0
-                    if v > mejor[0]:
-                        mejor = (v, round(float(k), 1))
-                calibracion.append({'mes': mes, 'altura_max_m': h_mes, 'ajuste_m': mejor[1], 'coincidencia': round(float(mejor[0]), 3)})
-                print(f'  ajuste con Landsat {mes} (río hasta {h_mes} m): {mejor[1]:+.1f} m, coincidencia {mejor[0]:.0%}')
+                # a media resolución para que la búsqueda sea rápida
+                r = (slice(None, None, 2), slice(None, None, 2))
+                d2, p2, s2, a2, z2, di2 = dem[r], permanente[r], semillas[r], agua[r], zona[r], dist[r]
+                mejor = (-1, 0.0, 0.0)
+                for pend in PENDIENTES:
+                    for k in np.arange(-3.0, 3.01, 0.1):
+                        sim = inundado(d2, p2, s2, cero + h_mes + k + pend * di2)
+                        union = ((sim | a2) & z2).sum()
+                        v = (sim & a2 & z2).sum() / union if union else 0
+                        if v > mejor[0]:
+                            mejor = (v, round(float(k), 1), pend)
+                calibracion.append({'mes': mes, 'altura_max_m': h_mes, 'ajuste_m': mejor[1], 'pendiente_m_km': mejor[2], 'coincidencia': round(float(mejor[0]), 3)})
+                print(f'  ajuste con Landsat {mes} (río hasta {h_mes} m): {mejor[1]:+.1f} m, pendiente {mejor[2] * 100:.0f} cm/km, coincidencia {mejor[0]:.0%}')
             buenas = [c for c in calibracion if c['coincidencia'] >= 0.4] or calibracion
             if buenas:
                 ajuste = round(float(np.median([c['ajuste_m'] for c in buenas])), 1)
+                pendiente = float(np.median([c['pendiente_m_km'] for c in buenas]))
                 iou = round(float(np.mean([c['coincidencia'] for c in buenas])), 3)
                 print(f'  ajuste final {ajuste:+.1f} m (coincidencia media {iou:.0%}, {len(buenas)} crecidas)')
             else:
@@ -243,7 +257,7 @@ def main():
                 blanco = (im > 245).all(axis=2)
                 agua98 = (im[..., 1] > 215) & (im[..., 2] < 215) & ~blanco      # verde claro = agua
                 zona = ~blanco & rec_zona & ~permanente
-                sim = inundado(dem, permanente, semillas, cero + ajuste + h98)
+                sim = inundado(dem, permanente, semillas, cero + ajuste + h98 + pendiente * dist)
                 union = ((sim | agua98) & zona).sum()
                 v = float((sim & agua98 & zona).sum() / union) if union else None
                 validacion = {'fecha': '1998-01-19', 'altura_m': h98, 'coincidencia': round(v, 3) if v is not None else None,
@@ -256,7 +270,7 @@ def main():
         niveles = [round(h, 2) for h in np.arange(2.0, tope + 1e-6, PASO)][:250]
         indice = np.zeros(dem.shape, dtype=np.uint8)
         for k in range(len(niveles), 0, -1):          # de la más alta a la más baja: queda la primera que moja
-            indice[inundado(dem, permanente, semillas, cero + ajuste + niveles[k - 1])] = k
+            indice[inundado(dem, permanente, semillas, cero + ajuste + niveles[k - 1] + pendiente * dist)] = k
         indice[permanente] = 255
         guardar_png(os.path.join(SALIDA, f'{est_id}.png'), indice)
         if agua_s1 is not None:
@@ -266,7 +280,7 @@ def main():
         ult_fecha, ult_altura = obs[-1]
         resultado.append({
             'id': est_id, 'nombre': est['nombre'], 'lat': round(lat, 4), 'lon': round(lon, 4),
-            'cero_m': cero, 'ajuste_m': ajuste, 'coincidencia_radar': iou, 'relieve': fuente_dem,
+            'cero_m': cero, 'ajuste_m': ajuste, 'pendiente_m_km': pendiente, 'coincidencia_radar': iou, 'relieve': fuente_dem,
             'limites': [[round(norte - alto * RES, 5), round(oeste, 5)], [round(norte, 5), round(oeste + ancho * RES, 5)]],
             'niveles': niveles, 'area_km2': area, 'alerta_m': alerta, 'evacuacion_m': evac,
             'record': {'altura_m': rec_altura, 'fecha': rec_fecha}, 'actual': {'altura_m': ult_altura, 'fecha': ult_fecha},
