@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=202610231441">
+<link rel="stylesheet" href="style.css?v=202610261030">
 </head>
 <body>
 <header class="barra">
@@ -31,6 +31,7 @@
     <button role="tab" data-p="ahora" aria-selected="false">Ahora</button>
     <button role="tab" data-p="pronostico" aria-selected="false">Pronóstico</button>
     <button role="tab" data-p="riesgo" aria-selected="false">Mapa de riesgo</button>
+    <button role="tab" data-p="santafe" aria-selected="false">Santa Fe</button>
     <button role="tab" data-p="aporta" aria-selected="false">Aportá</button>
   </nav>
 </header>
@@ -140,6 +141,37 @@
   </section>
 
 
+  <section id="p-santafe" class="pagina" hidden>
+    <p class="meta" id="sf-meta">Cargando…</p>
+    <p class="nota">Santa Fe y región: crecidas de los ríos Paraná y Salado, y lluvia que puede anegar ciudades y campos. En la llanura el agua sube en días, no en minutos: lo que importa es cuánto falta para el nivel de alerta y hacia dónde va.</p>
+    <div id="sf-resumen" class="estado-hoy"></div>
+    <div id="sf-smn"></div>
+    <div class="buscar-portada">
+      <label for="buscar-sf"><b>¿Cómo está tu localidad?</b></label>
+      <div class="buscar-caja">
+        <input id="buscar-sf" type="search" placeholder="Escribí el nombre, por ejemplo Esperanza" autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="sugerencias-sf" aria-autocomplete="list">
+        <ul id="sugerencias-sf" class="sugerencias" role="listbox" hidden></ul>
+      </div>
+    </div>
+    <div id="sf-ficha" class="detalle" hidden></div>
+    <h2>Río Paraná</h2>
+    <p class="nota">De norte a sur. Tocá una tarjeta para verla en el mapa. Línea gris: altura de los últimos 30 días; punteada celeste: pronóstico del INA; líneas naranja y roja: niveles de alerta y evacuación.</p>
+    <div class="tarjetas" id="sf-parana"></div>
+    <h2>Río Salado</h2>
+    <p class="nota">Estaciones de la Red Hidrológica Nacional. Algunas se leen cada varios días.</p>
+    <div class="tarjetas" id="sf-salado"></div>
+    <h2>Mapa</h2>
+    <div id="mapa-santafe" class="mapa alto"></div>
+    <div class="leyenda">
+      <span><span class="punto" style="--c:#1F7A4D;border:2px solid #16201C"></span>Estación de río, con el color de su estado · <span class="punto" style="--c:#E07B20"></span>localidad con lluvia para tener en cuenta · <span class="punto" style="--c:#C0362C"></span>lluvia fuerte</span>
+    </div>
+    <h2>Lluvia en los próximos 3 días</h2>
+    <div class="tabla-envoltura tabla-alta"><table id="tabla-sf-lluvia"></table></div>
+    <h2>Cómo se calcula</h2>
+    <div class="leyenda" id="sf-metodo"></div>
+  </section>
+
   <section id="p-aporta" class="pagina guia" hidden>
     <h2>Contanos lo que viviste</h2>
     <p>Si viviste o viste una crecida, o conocés hasta dónde llegó el agua en algún lugar, tu relato ayuda a entender dónde es peligroso y a avisar mejor. Sirven las historias viejas también: de hace 10, 30 o 50 años.</p>
@@ -205,6 +237,6 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="config.js?v=202610231441"></script>
-<script src="app.js?v=202610231450"></script>
+<script src="app.js?v=202610261030"></script>
 </body>
 </html>

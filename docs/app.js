@@ -63,7 +63,7 @@ function zoomConCtrl(m) {
 
 // ---------------------------------------------------------------- pestañas
 const mapas = {};
-const PESTANAS = ['inicio', 'ahora', 'pronostico', 'riesgo', 'aporta'];
+const PESTANAS = ['inicio', 'ahora', 'pronostico', 'riesgo', 'santafe', 'aporta'];
 document.querySelectorAll('.pestanas button, .acceso').forEach(b => b.addEventListener('click', () => {
   mostrar(b.dataset.p || b.dataset.ir);
   if (b.dataset.ir) window.scrollTo(0, 0);
@@ -79,6 +79,7 @@ function mostrar(p) {
   if (p === 'ahora' && !mapas.estaciones) ahora();
   if (p === 'riesgo' && !mapas.riesgo) riesgo();
   if (p === 'aporta' && !mapas.aporte) aporta();
+  if (p === 'santafe' && !mapas.santafe) santaFe();
 }
 
 // ---------------------------------------------------------------- ahora
@@ -373,7 +374,8 @@ function dibujarLocalidades() {
 }
 
 // ---------------------------------------------------------------- buscador con sugerencias
-function prepararSugerencias(idInput = 'buscar-loc', idLista = 'sugerencias-loc', alElegir = null) {
+function prepararSugerencias(idInput = 'buscar-loc', idLista = 'sugerencias-loc', alElegir = null, opciones = {}) {
+  const fuente = opciones.lista || (() => LOCS), extra = opciones.extra || (f => `${f.ahora === 'alerta' || f.ahora === 'atención' ? chipAhora(f.ahora) + ' ' : ''}${chipExpo(f.exposicion)}`);
   const input = document.getElementById(idInput), lista = document.getElementById(idLista);
   let sugeridas = [], marcada = -1;
   const cerrar = () => { lista.hidden = true; input.setAttribute('aria-expanded', 'false'); marcada = -1; };
@@ -382,13 +384,13 @@ function prepararSugerencias(idInput = 'buscar-loc', idLista = 'sugerencias-loc'
     if (!q) { cerrar(); return; }
     // primero las que empiezan así, después las que tienen una palabra que empieza así («car» → Villa Carlos Paz)
     const rango = f => { const n = sinTildes(f.localidad); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
-    sugeridas = LOCS.filter(f => sinTildes(f.localidad).includes(q))
+    sugeridas = fuente().filter(f => sinTildes(f.localidad).includes(q))
       .sort((a, b) => rango(a) - rango(b) || a.localidad.localeCompare(b.localidad))
       .slice(0, 8);
     lista.innerHTML = sugeridas.length ? sugeridas.map((f, i) => {
       const n = sinTildes(f.localidad), k = n.indexOf(q);
       const nombre = esc(f.localidad.slice(0, k)) + '<mark>' + esc(f.localidad.slice(k, k + q.length)) + '</mark>' + esc(f.localidad.slice(k + q.length));
-      return `<li role="option" id="${idLista}-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${nombre}</span><span>${f.ahora === 'alerta' || f.ahora === 'atención' ? chipAhora(f.ahora) + ' ' : ''}${chipExpo(f.exposicion)}</span></li>`;
+      return `<li role="option" id="${idLista}-${i}" data-i="${i}" aria-selected="${i === marcada}"><span>${nombre}</span><span>${extra(f)}</span></li>`;
     }).join('') : '<li class="vacio">No hay localidades con ese nombre.</li>';
     lista.hidden = false; input.setAttribute('aria-expanded', 'true');
   };
@@ -781,4 +783,135 @@ async function bloqueSMNLocalidad(nombre, clave = 'localidades') {
   const propias = agruparSMN(d.alertas.filter(a => ids.includes(a.id)));
   return propias.map(a => `<div class="smn-loc ${CLASE_SMN[a.nivel]}">${textoSMN(a)}` +
     (a.instruccion ? `<details><summary>Qué recomienda el SMN</summary><p>${esc(a.instruccion)}</p></details>` : '') + '</div>').join('');
+}
+
+// ---------------------------------------------------------------- Santa Fe y región
+// docs/data/santafe.json lo escribe scripts/santa_fe.py cada 6 horas: ríos (INA) y lluvia por localidad (Open-Meteo).
+const TEXTO_RIO = { rojo: 'evacuación', naranja: 'alerta', amarillo: 'atención', normal: 'normal', 'sin dato reciente': 'sin dato reciente' };
+const CLASE_RIO = { rojo: 'n-rojo', naranja: 'n-naranja', amarillo: 'n-amarillo', normal: 'n-verde', 'sin dato reciente': 'n-sin-datos' };
+const COLOR_RIO = { rojo: '#C0362C', naranja: '#E07B20', amarillo: '#F2C230', normal: '#1F7A4D', 'sin dato reciente': '#9AA5A0' };
+const CLASE_LLUVIA = { 'lluvia fuerte': 'n-rojo', 'atención': 'n-naranja', normal: 'n-verde' };
+let SF = null;
+const fechaCorta = f => f ? f.slice(8, 10) + '/' + f.slice(5, 7) : '–';
+const metros = v => v == null ? '–' : v.toFixed(2).replace('.', ',') + ' m';
+
+function graficoRio(r) {   // las alturas de los últimos 30 días, el pronóstico (medio y rango) y las líneas de alerta y evacuación
+  const obs = r.historia || [], pr = (r.pronostico && r.pronostico.puntos) || [];
+  if (obs.length < 2) return '';
+  const dia = f => Date.parse(f + 'T12:00:00');
+  const t0 = dia(obs[0][0]), t1 = Math.max(dia(obs[obs.length - 1][0]), ...pr.map(p => dia(p[0])));
+  const valores = [...obs.map(o => o[1]), ...pr.flatMap(p => [p[1], p[3]]).filter(v => v != null), r.alerta_m, r.evacuacion_m].filter(v => v != null);
+  const lo = Math.min(...valores) - 0.2, hi = Math.max(...valores) + 0.2, W = 300, H = 80;
+  const x = t => ((t - t0) / Math.max(t1 - t0, 1)) * W, y = v => H - ((v - lo) / (hi - lo)) * H;
+  const linea = pts => pts.map((p, i) => `${i ? 'L' : 'M'}${x(dia(p[0])).toFixed(1)} ${y(p[1]).toFixed(1)}`).join('');
+  const ult = obs[obs.length - 1];
+  let svg = '';
+  if (r.evacuacion_m != null) svg += `<line x1="0" x2="${W}" y1="${y(r.evacuacion_m)}" y2="${y(r.evacuacion_m)}" stroke="#C0362C" stroke-dasharray="4 3"/>`;
+  if (r.alerta_m != null) svg += `<line x1="0" x2="${W}" y1="${y(r.alerta_m)}" y2="${y(r.alerta_m)}" stroke="#E07B20" stroke-dasharray="4 3"/>`;
+  if (pr.length) {
+    const banda = [[ult[0], ult[1], ult[1]], ...pr.map(p => [p[0], p[1] ?? p[2], p[3] ?? p[2]])];
+    svg += `<path d="${banda.map((p, i) => `${i ? 'L' : 'M'}${x(dia(p[0])).toFixed(1)} ${y(p[2]).toFixed(1)}`).join('')}${banda.slice().reverse().map(p => `L${x(dia(p[0])).toFixed(1)} ${y(p[1]).toFixed(1)}`).join('')}Z" fill="var(--acento)" opacity=".15"/>`;
+    svg += `<path d="${linea([ult, ...pr.map(p => [p[0], p[2]])])}" fill="none" stroke="var(--acento)" stroke-width="2" stroke-dasharray="5 3"/>`;
+  }
+  svg += `<path d="${linea(obs)}" fill="none" stroke="var(--tinta)" stroke-width="2"/>`;
+  return `<svg class="grafico-rio" viewBox="-4 -4 ${W + 8} ${H + 8}" role="img" aria-label="Altura del río en ${esc(r.nombre)}">${svg}</svg>`;
+}
+
+function textoRio(r) {
+  const t = r.tendencia_m_dia;
+  const tend = t == null ? '' : Math.abs(t) < 0.01 ? 'estable' : `${t > 0 ? 'sube' : 'baja'} ${Math.round(Math.abs(t) * 100)} cm por día`;
+  const falta = r.alerta_m != null && r.altura_m != null && r.altura_m < r.alerta_m ? `a ${Math.round((r.alerta_m - r.altura_m) * 100)} cm del nivel de alerta` : '';
+  return [tend, falta].filter(Boolean).join(' · ');
+}
+
+async function santaFe() {
+  SF = await leer('santafe.json');
+  const meta = document.getElementById('sf-meta');
+  if (!SF) { meta.textContent = 'Todavía no hay datos de Santa Fe.'; return; }
+  meta.textContent = `Actualizado: ${SF.generado}`;
+  bloqueSMNInicio('localidades_santafe').then(h => { document.getElementById('sf-smn').innerHTML = h; });
+
+  // resumen
+  const rios = SF.rios || [];
+  const peor = ['rojo', 'naranja', 'amarillo'].find(n => rios.some(r => r.nivel === n));
+  const enAlerta = rios.filter(r => r.nivel === 'rojo' || r.nivel === 'naranja');
+  const lluvia = (SF.localidades || []).filter(f => f.condicion && f.condicion !== 'normal');
+  const fuertes = lluvia.filter(f => f.condicion === 'lluvia fuerte');
+  document.getElementById('sf-resumen').innerHTML =
+    `<div class="estado-titulo ${CLASE_RIO[peor || 'normal']}"><span class="punto"></span>${enAlerta.length
+      ? `Ríos: ${enAlerta.map(r => `${esc(r.rio)} en ${esc(r.nombre)}`).join(', ')} por encima del nivel de alerta`
+      : peor === 'amarillo' ? 'Ríos: alguno se acerca al nivel de alerta' : 'Ríos: todos por debajo del nivel de alerta'}</div>` +
+    `<div class="estado-titulo ${fuertes.length ? 'n-rojo' : lluvia.length ? 'n-naranja' : 'n-verde'}"><span class="punto"></span>${fuertes.length
+      ? `Lluvia fuerte prevista en ${fuertes.length} localidad${fuertes.length > 1 ? 'es' : ''} en los próximos 3 días`
+      : lluvia.length ? `Lluvia para tener en cuenta en ${lluvia.length} localidad${lluvia.length > 1 ? 'es' : ''} en los próximos 3 días`
+      : 'Lluvia: no se espera lluvia como para anegamientos en los próximos 3 días'}</div>`;
+
+  // tarjetas de los ríos
+  const tarjeta = r => `<article class="tarjeta rio ${CLASE_RIO[r.nivel]}" data-rio="${r.id}" tabindex="0"><div class="franja"></div><div class="cuerpo">
+      <div class="nombre">${esc(r.nombre)} <span class="nota">· ${esc(r.rio)}${r.provincia && r.provincia !== 'Santa Fe' ? `, ${esc(r.provincia)}` : ''}</span></div>
+      <div class="nivel"><span class="punto"></span>${esc(TEXTO_RIO[r.nivel])}</div>
+      <div class="altura">${metros(r.altura_m)} <span class="nota">el ${fechaCorta(r.fecha)}</span></div>
+      <div class="det">${esc(textoRio(r))}</div>
+      ${graficoRio(r)}
+      <div class="det">Alerta ${metros(r.alerta_m)}${r.evacuacion_m != null ? ` · evacuación ${metros(r.evacuacion_m)}` : ''}</div>
+      ${r.pronostico ? `<div class="det">Pronóstico del INA (${fechaCorta(r.pronostico.emitido)}): ${r.pronostico.puntos.map(p => `${fechaCorta(p[0])} ${metros(p[2])}${p[1] != null && p[3] != null ? ` <span class="nota">(${p[1].toFixed(2).replace('.', ',')} a ${p[3].toFixed(2).replace('.', ',')})</span>` : ''}`).join(' · ')}</div>` : ''}
+    </div></article>`;
+  document.getElementById('sf-parana').innerHTML = rios.filter(r => r.rio === 'Paraná').map(tarjeta).join('');
+  document.getElementById('sf-salado').innerHTML = rios.filter(r => r.rio === 'Salado').map(tarjeta).join('');
+
+  // mapa
+  const m = mapas.santafe = mapaBase('mapa-santafe', 7);
+  m.setView([-31.2, -60.9], 7);
+  const capaLluvia = L.layerGroup(lluvia.map(f => L.circleMarker([f.lat, f.lon], { radius: 5, color: '#fff', weight: 1,
+    fillColor: f.condicion === 'lluvia fuerte' ? '#C0362C' : '#E07B20', fillOpacity: .9 })
+    .bindPopup(`<b>${esc(f.localidad)}</b><br>${esc(f.condicion)}: hasta ${f.max_24h_mm} mm en 24 h (${f.max_3h_mm} mm en 3 h)`))).addTo(m);
+  const marcas = {};
+  rios.forEach(r => {
+    marcas[r.id] = L.circleMarker([r.lat, r.lon], { radius: 9, color: '#16201C', weight: 2, fillColor: COLOR_RIO[r.nivel], fillOpacity: 1 })
+      .bindPopup(`<b>${esc(r.rio)} en ${esc(r.nombre)}</b><br>${metros(r.altura_m)} el ${fechaCorta(r.fecha)} · ${esc(TEXTO_RIO[r.nivel])}<br>${esc(textoRio(r))}`)
+      .bindTooltip(esc(r.nombre), { direction: 'top', offset: [0, -8] }).addTo(m);
+  });
+  document.querySelectorAll('[data-rio]').forEach(el => {
+    const ir = () => { const r = rios.find(x => String(x.id) === el.dataset.rio); m.setView([r.lat, r.lon], 10); marcas[r.id].openPopup();
+      document.getElementById('mapa-santafe').scrollIntoView({ behavior: 'smooth', block: 'center' }); };
+    el.addEventListener('click', ir);
+    el.addEventListener('keydown', e => { if (e.key === 'Enter') ir(); });
+  });
+
+  // lluvia por localidad
+  const orden = { 'lluvia fuerte': 0, 'atención': 1 };
+  document.getElementById('tabla-sf-lluvia').innerHTML = lluvia.length
+    ? `<thead><tr><th>Localidad</th><th>Lluvia prevista</th><th>Máx. 24 h</th><th>Máx. 3 h</th><th>Cuándo</th><th>Últimos 7 días</th></tr></thead><tbody>` +
+      lluvia.sort((a, b) => orden[a.condicion] - orden[b.condicion] || b.max_24h_mm - a.max_24h_mm).map(f => `<tr data-loc="${esc(f.localidad)}">
+        <td>${esc(f.localidad)}</td><td><span class="chip ${CLASE_LLUVIA[f.condicion]}"><span class="punto"></span>${esc(f.condicion)}</span></td>
+        <td class="num">${f.max_24h_mm} mm</td><td class="num">${f.max_3h_mm} mm</td><td>${f.cuando ? fechaCorta(f.cuando.slice(0, 10)) + ' ' + f.cuando.slice(11, 13) + ' h' : '–'}</td>
+        <td class="num">${f.lluvia_7d_mm} mm${f.suelo_humedo ? ' <span class="nota">(suelo húmedo)</span>' : ''}</td></tr>`).join('') + '</tbody>'
+    : '<tbody><tr><td>Ninguna localidad con lluvia como para anegamientos en los próximos 3 días.</td></tr></tbody>';
+  document.querySelectorAll('#tabla-sf-lluvia [data-loc]').forEach(tr => tr.addEventListener('click', () => elegirSF(tr.dataset.loc)));
+
+  prepararSugerencias('buscar-sf', 'sugerencias-sf', f => elegirSF(f.localidad), {
+    lista: () => SF.localidades || [],
+    extra: f => f.condicion && f.condicion !== 'normal' ? `<span class="chip ${CLASE_LLUVIA[f.condicion]}"><span class="punto"></span>${esc(f.condicion)}</span>` : '',
+  });
+  const u = SF.umbrales_lluvia || {};
+  document.getElementById('sf-metodo').innerHTML =
+    `<div><b>Ríos</b>: altura diaria del <a href="https://www.ina.gob.ar/alerta/" target="_blank" rel="noopener">Alerta Hidrológico del INA</a> (escalas de Prefectura en el Paraná y de la Red Hidrológica Nacional en el Salado), con los niveles de alerta y evacuación de cada lugar. <span class="chip n-naranja"><span class="punto"></span>alerta</span> y <span class="chip n-rojo"><span class="punto"></span>evacuación</span>: el río ya pasó ese nivel. <span class="chip n-amarillo"><span class="punto"></span>atención</span>: el pronóstico del INA llega al nivel de alerta, o está a menos de 30 cm y subiendo. El pronóstico del Paraná sale martes y viernes, con un rango (la franja celeste del gráfico).</div>` +
+    `<div><b>Lluvia</b>: la mayor lluvia prevista en 24 h y en 3 h para los próximos 3 días (modelos vía Open-Meteo). <span class="chip n-rojo"><span class="punto"></span>lluvia fuerte</span> desde ${u.fuerte_24h} mm en 24 h o ${u.fuerte_3h} mm en 3 h; <span class="chip n-naranja"><span class="punto"></span>atención</span> desde ${u.atencion_24h} mm en 24 h o ${u.atencion_3h} mm en 3 h. Si en la última semana llovió ${u.humedo_7d} mm o más, el suelo está húmedo y cuenta menos lluvia (las tres cuartas partes). Son referencias aproximadas: cuánta agua anega cada barrio depende de los desagües.</div>`;
+}
+
+function elegirSF(nombre) {
+  const f = (SF.localidades || []).find(x => x.localidad === nombre);
+  if (!f) return;
+  const caja = document.getElementById('sf-ficha');
+  // estación de río más cercana a menos de 25 km
+  const km = (a, b) => Math.hypot((a.lat - b.lat) * 111, (a.lon - b.lon) * 111 * Math.cos(a.lat * Math.PI / 180));
+  const rio = (SF.rios || []).map(r => ({ r, d: km(f, r) })).filter(x => x.d <= 25).sort((a, b) => a.d - b.d)[0];
+  caja.hidden = false;
+  caja.innerHTML = `<h3>${esc(f.localidad)}</h3><div id="sf-smn-loc"></div>
+    <div><b>Lluvia en los próximos 3 días</b>: ${f.condicion ? `<span class="chip ${CLASE_LLUVIA[f.condicion]}"><span class="punto"></span>${esc(f.condicion)}</span> hasta ${f.max_24h_mm} mm en 24 h y ${f.max_3h_mm} mm en 3 h${f.cuando && f.max_24h_mm > 0 ? `, sobre todo el ${fechaCorta(f.cuando.slice(0, 10))} cerca de las ${f.cuando.slice(11, 13)} h` : ''}.` : 'sin pronóstico.'}</div>
+    <div class="nota">En la última semana llovieron ${f.lluvia_7d_mm ?? '–'} mm${f.suelo_humedo ? ': el suelo está húmedo y una lluvia más chica ya puede anegar' : ''}.</div>
+    ${rio ? `<div><b>Río ${esc(rio.r.rio)} en ${esc(rio.r.nombre)}</b> (a ${Math.round(rio.d)} km): <span class="chip ${CLASE_RIO[rio.r.nivel]}"><span class="punto"></span>${esc(TEXTO_RIO[rio.r.nivel])}</span> ${metros(rio.r.altura_m)} el ${fechaCorta(rio.r.fecha)}. ${esc(textoRio(rio.r))}</div>` : ''}`;
+  bloqueSMNLocalidad(f.localidad, 'localidades_santafe').then(h => { const el = document.getElementById('sf-smn-loc'); if (el) el.innerHTML = h; });
+  if (mapas.santafe) mapas.santafe.setView([f.lat, f.lon], 10);
+  caja.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }

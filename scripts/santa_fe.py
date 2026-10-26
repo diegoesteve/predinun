@@ -20,6 +20,7 @@ Lluvia — para cada municipio y comuna de Santa Fe (GeoRef, datos.gob.ar) la ll
 Escribe docs/data/santafe.json y avisa por Telegram cuando un río pasa el nivel de alerta o de evacuación.
 Corre en el workflow del boletín, cada 6 horas.
 """
+import json
 import os
 import re
 import sys
@@ -55,7 +56,7 @@ def get(url, **params):
         try:
             r = requests.get(url, params={'format': 'json', **params}, headers=CAB, timeout=90)
             r.raise_for_status()
-            return r.json()
+            return json.loads(r.content.decode('utf-8'))   # el INA responde text/plain sin charset: forzar UTF-8
         except Exception:
             if k == 2:
                 raise
@@ -167,7 +168,12 @@ def localidades():
     return locs
 
 
+ERRORES = []
+
+
 def lluvia(locs):
+    # Corre justo después de las localidades de Córdoba: se espera un minuto para no pasar el límite por minuto de Open-Meteo
+    time.sleep(60)
     ahora = pd.Timestamp.now(tz=cfg.TZ).tz_localize(None).floor('h')
     fin = ahora + pd.Timedelta(hours=72)
     salida = {}
@@ -175,17 +181,20 @@ def lluvia(locs):
         tanda = locs[i:i + TANDA]
         params = {'latitude': ','.join(f"{f['lat']:.4f}" for f in tanda), 'longitude': ','.join(f"{f['lon']:.4f}" for f in tanda),
                   'hourly': 'precipitation', 'past_days': 7, 'forecast_days': 4, 'timezone': cfg.TZ}
-        j = None
-        for k in range(4):
-            r = requests.get('https://api.open-meteo.com/v1/forecast', params=params, timeout=120)
-            if r.status_code == 429:
-                time.sleep(20 * (k + 1))
-                continue
-            r.raise_for_status()
-            j = r.json()
-            break
+        j, error = None, ''
+        for k in range(5):
+            try:
+                r = requests.get('https://api.open-meteo.com/v1/forecast', params=params, timeout=120)
+                if r.status_code == 200:
+                    j = r.json()
+                    break
+                error = f'HTTP {r.status_code}: {r.text[:150]}'
+            except Exception as e:
+                error = str(e)[:150]
+            time.sleep(30 * (k + 1))
         if j is None:
-            print('Open-Meteo: sin pronóstico para la tanda', i)
+            print('Open-Meteo: sin pronóstico para la tanda', i, error)
+            ERRORES.append(f'lluvia, tanda {i}: {error}')
             continue
         for f, d in zip(tanda, j if isinstance(j, list) else [j]):
             s = pd.Series(d['hourly']['precipitation'], index=pd.to_datetime(d['hourly']['time']), dtype=float).fillna(0)
@@ -246,6 +255,7 @@ def main():
         llu = lluvia(locs)
     except Exception as e:
         print('Localidades/lluvia de Santa Fe:', str(e)[:120])
+        ERRORES.append(f'localidades/lluvia: {str(e)[:150]}')
         locs, llu = cfg.leer_json('santafe_localidades.json') or [], {}
     salida = {'generado': hoy().strftime('%Y-%m-%d %H:%M'),
               'fuentes': {'rios': 'Instituto Nacional del Agua (INA), Alerta Hidrológico de la Cuenca del Plata; alturas de Prefectura Naval y Red Hidrológica Nacional',
@@ -253,6 +263,7 @@ def main():
               'umbrales_lluvia': {'atencion_24h': A24, 'atencion_3h': A3, 'fuerte_24h': F24, 'fuerte_3h': F3,
                                   'humedo_7d': HUMEDO_7D, 'fraccion_humedo': FRACCION_HUMEDO},
               'rios': lista,
+              'errores': ERRORES,
               'localidades': [{**f, **llu.get(f['localidad'], {})} for f in locs]}
     cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'santafe.json'), salida)
     print(f"santafe.json: {len(lista)} estaciones de ríos ({sum(r['nivel'] in ('naranja', 'rojo') for r in lista)} en alerta o más), "
