@@ -41,19 +41,7 @@
     "es_estimado": false,
     "estado": "saturado"
    },
-   "secado": {
-    "dias_atras": 10,
-    "dias_adelante": 7,
-    "et0_ult_mm": 31.1,
-    "et0_ult_normal_mm": 46.0,
-    "et0_ult_pct": 68,
-    "radiacion_ult_pct": 80,
-    "nubosidad_ult_media": 73,
-    "nubosidad_ult_normal": 43,
-    "dias_nublados_ult": 7,
-    "et0_prox_mm": 30.2,
-    "et0_prox_pct": 89
-   }
+   "secado": null
   },
   {
    "cuenca": "Cosquin",
@@ -105,14 +93,20 @@
     "nubosidad_ult_media": 84,
     "nubosidad_ult_normal": 43,
     "dias_nublados_ult": 8,
-    "et0_prox_mm": 28.9,
-    "et0_prox_pct": 89
+    "et0_prox_mm": 28.3,
+    "et0_prox_pct": 88
    }
   },
   {
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
+    "GFS": {
+     "max_3h_mm": 0.7,
+     "umbral_mm": 10.1,
+     "fuente_umbral": "24 h antes",
+     "cuando": "2026-10-27 12:00"
+    },
     "ICON": {
      "max_3h_mm": 0.8,
      "umbral_mm": 9.7,
@@ -137,7 +131,7 @@
     "smap_m3m3": 0.152,
     "smap_percentil": 98,
     "smap_fecha": "2026-10-22 22:30 UTC",
-    "estimado_hoy_m3m3": 0.162,
+    "estimado_hoy_m3m3": 0.161,
     "estimado_hoy_percentil": 100,
     "percentil": 100,
     "es_estimado": true,
@@ -161,12 +155,6 @@
    "cuenca": "Capital",
    "nombre": "Capital (experimental)",
    "modelos": {
-    "GFS": {
-     "max_3h_mm": 1.0,
-     "umbral_mm": 7.7,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 17:00"
-    },
     "ICON": {
      "max_3h_mm": 2.0,
      "umbral_mm": 11.4,
@@ -315,27 +303,27 @@
     "suelo_saturado": true,
     "prob": [
      0.0,
-     0.18,
-     0.01,
+     0.12,
+     0.02,
      0.03,
-     0.0,
+     0.01,
      0.07,
-     0.08,
-     0.04,
-     0.08,
-     0.05
+     0.1,
+     0.11,
+     0.13,
+     0.06
     ],
     "mm": [
      0.0,
-     5.8,
-     0.6,
-     1.4,
-     0.2,
-     2.7,
-     4.1,
-     2.7,
-     2.9,
-     2.9
+     4.0,
+     0.4,
+     1.2,
+     0.1,
+     2.0,
+     4.0,
+     3.3,
+     3.2,
+     2.4
     ]
    }
   }
