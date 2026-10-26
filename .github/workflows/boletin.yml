@@ -94,7 +94,7 @@ jobs:
         continue-on-error: true
         run: python scripts/armar_app.py
       - name: Lugares altos de referencia por barrio (solo si se pide o si falta)
-        if: ${{ inputs.lugares_altos || hashFiles('docs/data/lugares_altos.json') == '' }}
+        if: ${{ inputs.lugares_altos || hashFiles('docs/data/altos/**') == '' }}
         continue-on-error: true
         env:
           EE_SERVICE_ACCOUNT_JSON: ${{ secrets.EE_SERVICE_ACCOUNT_JSON }}
@@ -113,7 +113,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data/*.json docs/data/*.geojson data/*.json docs/l
-          for f in data/cuencas_arroyos.geojson data/cuencas_arroyos.log data/historial_alarmas_pronostico.csv data/historial_alarmas.csv data/simulacion.log docs/data/simulacion data/lugares_altos.log; do [ -e "$f" ] && git add "$f"; done; true
+          for f in data/cuencas_arroyos.geojson data/cuencas_arroyos.log data/historial_alarmas_pronostico.csv data/historial_alarmas.csv data/simulacion.log docs/data/simulacion data/lugares_altos.log docs/data/altos; do [ -e "$f" ] && git add "$f"; done; true
           git diff --cached --quiet && exit 0
           git commit -m "boletín: $(TZ=America/Argentina/Cordoba date '+%d/%m %H:%M')"
           git pull --rebase -X theirs && git push

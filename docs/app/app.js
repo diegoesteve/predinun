@@ -54,11 +54,15 @@ async function cargar() {
 
 function mostrar() {
   const x = lugarDe(PREF.get('lugar', null));
+  const contar = !!x && location.hash === '#contar';
   $('#v-elegir').hidden = !!x;
-  $('#v-lugar').hidden = !x;
-  if (x) pintarLugar(x); else $('#buscar').focus({ preventScroll: true });
+  $('#v-lugar').hidden = !x || contar;
+  $('#v-contar').hidden = !contar;
+  if (contar) prepararContar(x);
+  else if (x) pintarLugar(x); else $('#buscar').focus({ preventScroll: true });
   window.scrollTo(0, 0);
 }
+window.addEventListener('popstate', () => { if (DATOS) mostrar(); });
 
 // ---------------------------------------------------------------- elegir lugar
 async function buscar() {
@@ -159,13 +163,119 @@ function conBarrio(x, b) {
 function pintarVecinos(x, b, ev) {
   const caja = $('#l-vecinos');
   const fecha = f => f.slice(8, 10) + '/' + f.slice(5, 7) + '/' + f.slice(0, 4);
-  const enlace = `../mapa.html?localidad=${encodeURIComponent(x.n)}${b ? '&barrio=' + encodeURIComponent(b) : ''}#aporta`;
   caja.innerHTML = (ev && ev.eventos.length
     ? `<h2>Lo que contaron los vecinos</h2><ul class="eventos">${ev.eventos.slice(0, 5).map(e => `<li><b>${fecha(e.fecha)}</b>${e.lluvia_mm ? ` · llovieron unos ${Math.round(e.lluvia_mm)} mm` : ''}${e.que ? `<br>${esc(e.que)}` : ''}</li>`).join('')}</ul>`
       + (ev.umbral_mm ? `<p class="nota" style="color:inherit">Si se esperan ${ev.umbral_mm} mm o más, te avisamos que tu barrio ya se inundó con lluvias así.</p>` : '')
     : `<h2>¿Se inundó ${b ? 'tu barrio' : 'tu calle o tu barrio'} alguna vez?</h2><p class="nota" style="color:inherit">Contanos cuándo y hasta dónde llegó el agua. Con eso aprendemos con cuánta lluvia se inunda cada barrio y podemos avisar antes.</p>`)
-    + `<a class="boton chico" href="${enlace}" style="align-self:flex-start">${ev && ev.eventos.length ? 'Contar otra vez que se inundó' : 'Contalo'}</a>`;
+    + `<button type="button" class="boton chico" id="b-contar" style="align-self:flex-start">${ev && ev.eventos.length ? 'Contar otra vez que se inundó' : 'Contalo'}</button>`;
+  $('#b-contar').addEventListener('click', () => { history.pushState(null, '', '#contar'); mostrar(); });
 }
+
+// ---------------------------------------------------------------- lugar alto de referencia (scripts/lugares_altos.py)
+const slugLugar = t => sinTildes(t).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+async function pintarAlto(x, b, peor) {
+  const caja = $('#l-alto');
+  caja.hidden = true;
+  let datos = null;
+  try { const r = await fetch(`../data/altos/${x.z}/${slugLugar(x.n)}.json`); if (r.ok) datos = await r.json(); } catch (e) { /* sin datos */ }
+  const v = datos && ((b && datos[b]) || datos['']);
+  if (!v) return;
+  const agua = x.tipo === 'sierras' ? 'el arroyo' : 'el río o el canal';
+  const propio = v.h != null && v.h >= (x.tipo === 'sierras' ? 8 : 4)
+    ? `<p class="nota">${b ? 'Tu barrio está' : 'El centro está'} unos ${Math.round(v.h)} m por encima de ${agua} más cercano.</p>` : '';
+  caja.className = 'caja' + (peor >= 2 ? ' n' + peor : '');
+  caja.hidden = false;
+  if (!v.d) {
+    caja.innerHTML = `<h2>Si tenés que salir</h2>${propio}<p class="nota">No encontramos un lugar público alto a menos de 3 km. Preguntá en tu municipio cuál es el centro de evacuación.</p>`;
+    return;
+  }
+  const d = v.d;
+  const ir = `https://www.google.com/maps/dir/?api=1&destination=${d.la},${d.lo}&travelmode=walking`;
+  caja.innerHTML = `<h2>Si tenés que salir</h2>
+    <p class="nota">Lugar alto más cercano:</p>
+    <p class="alto-destino">${esc(d.n)}</p>
+    <p class="nota">${esc(d.t.charAt(0).toUpperCase() + d.t.slice(1))} a unos ${d.m >= 1000 ? (d.m / 1000).toFixed(1).replace('.', ',') + ' km' : d.m + ' m'} hacia el ${esc(d.r)}, unos ${Math.round(d.h)} m por encima de ${agua} más cercano.</p>
+    ${propio}
+    <a class="boton ${peor >= 2 ? 'claro' : 'chico'}" href="${ir}" target="_blank" rel="noopener" style="align-self:flex-start">Cómo llegar</a>
+    <p class="nota" style="font-size:13px">Es una referencia por el relieve, no un centro de evacuación oficial. Si Defensa Civil o Protección Civil indican otro lugar, andá ahí. Si el agua ya corre fuerte por la calle, no la cruces: subí a un lugar alto cerca.</p>`;
+}
+
+// ---------------------------------------------------------------- contar una inundación (mismo receptor que «Aportá»)
+let fotosContar = [], puntoContar = null, widgetContar = null;
+function prepararContar(x) {
+  const sel = PREF.get('lugar', null) || {};
+  const f = $('#f-contar');
+  f.elements.localidad.value = nom(x);
+  f.elements.barrio.value = sel.b || '';
+  $('#c-lugar').textContent = sel.b ? `Barrio ${sel.b}, ${nom(x)}` : nom(x);
+  $('#c-estado').textContent = '';
+  const cfgA = window.PREDINUN || {};
+  if (!cfgA.aportesUrl || !cfgA.turnstileSitekey) { $('#c-estado').textContent = 'El envío todavía no está activo.'; $('#c-enviar').disabled = true; return; }
+  if (widgetContar == null && !window.turnstile) {
+    window.onTurnstileApp = () => { widgetContar = window.turnstile.render('#c-turnstile', { sitekey: cfgA.turnstileSitekey, language: 'es' }); };
+    const sc = document.createElement('script');
+    sc.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileApp&render=explicit';
+    sc.async = true; document.head.appendChild(sc);
+  }
+}
+function achicarFoto(archivo) {
+  return new Promise((ok, mal) => {
+    const url = URL.createObjectURL(archivo), img = new Image();
+    img.onload = () => {
+      const k = Math.min(1, 1600 / Math.max(img.naturalWidth, img.naturalHeight));
+      const c = document.createElement('canvas');
+      c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url);
+      c.toBlob(b => b ? ok(b) : mal(new Error('no se pudo procesar')), 'image/jpeg', 0.82);
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); mal(new Error('formato no soportado')); };
+    img.src = url;
+  });
+}
+$('#c-fotos').addEventListener('change', async ev => {
+  fotosContar = []; $('#c-vista').innerHTML = '';
+  for (const a of [...ev.target.files].slice(0, 3)) {
+    try { const b = await achicarFoto(a); fotosContar.push(b); const i = document.createElement('img'); i.src = URL.createObjectURL(b); i.alt = 'Foto elegida'; $('#c-vista').appendChild(i); }
+    catch (e) { $('#c-estado').textContent = 'No se pudo usar una de las fotos. Probá con otra.'; }
+  }
+});
+$('#c-ubicacion').addEventListener('click', () => navigator.geolocation && navigator.geolocation.getCurrentPosition(p => {
+  puntoContar = { lat: p.coords.latitude, lon: p.coords.longitude };
+  $('#c-punto').textContent = 'Listo: marcamos dónde estás.';
+}, () => { $('#c-punto').textContent = 'No pudimos saber dónde estás.'; }, { enableHighAccuracy: true, timeout: 15000 }));
+$('#f-contar').elements.relato.addEventListener('input', e => {
+  const n = e.target.value.trim().length;
+  $('#c-largo').textContent = n < 20 ? `Escribí al menos 20 letras (van ${n}).` : 'Gracias, con eso alcanza. Si querés, contá más.';
+});
+$('#f-contar').addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const f = ev.target, estado = $('#c-estado'), boton = $('#c-enviar'), cfgA = window.PREDINUN || {};
+  const fd = new FormData(f);
+  if (String(fd.get('relato') || '').trim().length < 20) { estado.textContent = 'Contanos un poco más qué pasó (al menos 20 letras).'; f.elements.relato.focus(); return; }
+  if (!fd.get('fecha') && !String(fd.get('fecha_evento') || '').trim()) { estado.textContent = 'Decinos cuándo fue, aunque sea aproximado.'; return; }
+  if (fd.get('acepto') !== 'si') { estado.textContent = 'Falta tildar que aceptás que se publique.'; return; }
+  if (!fd.get('fecha_evento') && fd.get('fecha')) { const t = fd.get('fecha'); fd.set('fecha_evento', `${t.slice(8, 10)}/${t.slice(5, 7)}/${t.slice(0, 4)}`); }
+  const token = widgetContar != null && window.turnstile ? window.turnstile.getResponse(widgetContar) : '';
+  if (!token) { estado.textContent = 'Esperá unos segundos a que termine la verificación y tocá Enviar de nuevo.'; return; }
+  fd.set('cf-turnstile-response', token);
+  fotosContar.forEach((b, i) => fd.append('fotos', b, `foto-${i + 1}.jpg`));
+  if (puntoContar) { fd.set('lat', puntoContar.lat); fd.set('lon', puntoContar.lon); }
+  boton.disabled = true; estado.textContent = 'Enviando…';
+  try {
+    const r = await fetch(cfgA.aportesUrl.replace(/\/$/, '') + '/aportes', { method: 'POST', body: fd });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok || !j.ok) throw new Error(j.error || `error ${r.status}`);
+    f.reset(); fotosContar = []; puntoContar = null; $('#c-vista').innerHTML = '';
+    estado.innerHTML = '<b>¡Gracias!</b> Recibimos tu relato. Lo revisamos y, si está todo bien, en unos días aparece en tu barrio.';
+  } catch (e) {
+    estado.textContent = `No se pudo enviar: ${e.message}`;
+  } finally {
+    boton.disabled = false;
+    if (window.turnstile && widgetContar != null) window.turnstile.reset(widgetContar);
+  }
+});
+$('#b-volver').addEventListener('click', () => { history.back(); setTimeout(() => { if (location.hash === '#contar') { history.replaceState(null, '', location.pathname + location.search); mostrar(); } }, 150); });
 
 function pintarLugar(x0) {
   const sel = PREF.get('lugar', null) || {};
@@ -189,6 +299,7 @@ function pintarLugar(x0) {
   $('#l-fuente').textContent = `Datos de las ${DATOS.generado.slice(11)} del ${DATOS.generado.slice(8, 10)}/${DATOS.generado.slice(5, 7)}. ` +
     (x.tipo === 'sierras' ? 'Radar del OHMC, pronóstico de lluvia y alertas del SMN.' : 'Ríos del INA y Prefectura, pronóstico de lluvia y alertas del SMN.');
   pintarVecinos(x, sel.b, ev);
+  pintarAlto(x, sel.b, peor);
   pintarArroyo(x);
   pintarAvisos();
   pintarInstalar();

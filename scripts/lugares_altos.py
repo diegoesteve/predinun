@@ -11,7 +11,7 @@
 Es una referencia por el relieve, NO un centro de evacuación oficial: la app lo dice siempre. El relieve satelital
 tiene errores de algunos metros y no ve defensas, terraplenes ni el estado de las calles para llegar.
 
-Escribe docs/data/lugares_altos.json: {"<zona>:<localidad>:<barrio o vacío>": {"h": metros del barrio sobre su
+Escribe docs/data/altos/<zona>/<localidad>.json (uno por localidad, para que la app baje solo el suyo): {"<barrio o vacío>": {"h": metros del barrio sobre su
 desagüe, "d": {"n": nombre, "t": tipo, "m": distancia, "r": rumbo, "h": metros sobre su desagüe, "la", "lo"}}}.
 Corre en el boletín cuando se pide (opción «lugares_altos») o si falta el archivo.
 """
@@ -104,6 +104,29 @@ def secos_por_simulacion():
     return seco
 
 
+def slug(t):
+    import re
+    import unicodedata
+    t = ''.join(c for c in unicodedata.normalize('NFD', t or '') if not unicodedata.combining(c)).lower()
+    return re.sub(r'[^a-z0-9]+', '-', t).strip('-')
+
+
+def escribir(salida):
+    """Un archivo chico por localidad (con sus barrios), para que la app baje solo el suyo:
+    docs/data/altos/<zona>/<localidad>.json → {"": {...pueblo...}, "<barrio>": {...}}"""
+    import shutil
+    base = os.path.join(cfg.DOCS_DATA, 'altos')
+    shutil.rmtree(base, ignore_errors=True)
+    por_loc = {}
+    for clave, v in salida.items():
+        z, loc, barrio = clave.split(':', 2)
+        por_loc.setdefault((z, loc), {})[barrio] = v
+    for (z, loc), v in por_loc.items():
+        os.makedirs(os.path.join(base, z), exist_ok=True)
+        with open(os.path.join(base, z, slug(loc) + '.json'), 'w', encoding='utf-8') as f:
+            json.dump(v, f, ensure_ascii=False, separators=(',', ':'))
+
+
 def main():
     ee = iniciar_ee()
     if ee is None:
@@ -150,7 +173,7 @@ def main():
             dist, d = elegido
             salida[clave]['d'] = {'n': d['n'], 't': d['t'], 'm': int(round(dist * 1000, -1)), 'r': rumbo(la, lo, d['la'], d['lo']),
                                   'h': round(d['h'], 1), 'la': d['la'], 'lo': d['lo']}
-    cfg.escribir_json(os.path.join(cfg.DOCS_DATA, 'lugares_altos.json'), salida)
+    escribir(salida)
     con = sum('d' in v for v in salida.values())
     print(f'lugares_altos.json: {len(salida)} barrios y pueblos, {con} con un lugar alto a menos de {RADIO_KM} km')
 

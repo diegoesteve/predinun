@@ -13,7 +13,7 @@
 <meta property="og:title" content="¿Viene agua a tu barrio?">
 <meta property="og:description" content="Te avisamos un día antes si puede venir agua a tu barrio o pueblo. Córdoba y Santa Fe. Gratis.">
 <meta property="og:image" content="https://diegoesteve.github.io/predinun/og.png">
-<link rel="stylesheet" href="app.css?v=2">
+<link rel="stylesheet" href="app.css?v=3">
 </head>
 <body>
 <main id="app">
@@ -38,6 +38,7 @@
       <button type="button" id="b-cambiar" class="boton chico">Cambiar</button>
     </header>
     <div id="l-dias" class="dias"></div>
+    <div id="l-alto" class="caja" hidden></div>
     <div id="l-arroyo" class="caja" hidden></div>
     <section id="l-vecinos" class="caja"></section>
     <section id="l-hacer" class="caja"></section>
@@ -51,8 +52,54 @@
     <p class="nota pie"><a href="../mapa.html">Ver todos los datos (mapas, ríos, radar)</a> · No es un aviso oficial: seguí a Defensa Civil y a Protección Civil. Emergencias: 103 o 911.</p>
   </section>
 
+  <!-- Contar una inundación -->
+  <section id="v-contar" class="vista" hidden>
+    <header class="cabeza">
+      <div><h1>Contá una inundación</h1><p id="c-lugar" class="nota"></p></div>
+      <button type="button" id="b-volver" class="boton chico">Volver</button>
+    </header>
+    <p class="bajada" style="font-size:17px">Con tu relato aprendemos con cuánta lluvia se inunda tu barrio, y podemos avisarles antes a tus vecinos.</p>
+    <form id="f-contar" class="vista" novalidate>
+      <input type="hidden" name="tipo" value="crecida que viví o vi">
+      <input type="hidden" name="localidad"><input type="hidden" name="barrio">
+      <fieldset class="caja"><legend>¿Cuándo fue?</legend>
+        <label class="etiqueta-chica" for="c-fecha">El día, si lo sabés</label>
+        <input id="c-fecha" name="fecha" type="date" min="1900-01-01">
+        <label class="etiqueta-chica" for="c-cuando">Si no sabés el día, contanos cuándo fue</label>
+        <input id="c-cuando" name="fecha_evento" maxlength="80" placeholder="Por ejemplo: «el verano pasado», «febrero de 2015»">
+      </fieldset>
+      <fieldset class="caja"><legend>¿Hasta dónde llegó el agua?</legend>
+        <div class="opciones">
+          <label><input type="radio" name="altura_agua" value="El agua corrió por la calle"><span>Corrió por la calle</span></label>
+          <label><input type="radio" name="altura_agua" value="El agua tapó la vereda"><span>Tapó la vereda</span></label>
+          <label><input type="radio" name="altura_agua" value="El agua entró a las casas"><span>Entró a las casas</span></label>
+          <label><input type="radio" name="altura_agua" value="El agua pasó el metro de altura"><span>Más de un metro</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="caja"><legend>¿Qué pasó?</legend>
+        <textarea name="relato" rows="5" maxlength="4000" placeholder="Por ejemplo: a qué hora empezó, por qué calle bajó el agua, qué se llevó, cuánto duró."></textarea>
+        <p class="nota" id="c-largo">Escribí al menos 20 letras.</p>
+      </fieldset>
+      <fieldset class="caja"><legend>Más datos (opcional)</legend>
+        <button type="button" id="c-ubicacion" class="boton chico">Marcar dónde pasó con mi ubicación</button>
+        <p class="nota" id="c-punto">Solo si estás en el lugar. No marques la puerta de una casa: con la cuadra alcanza.</p>
+        <label class="etiqueta-chica" for="c-fotos">Fotos (hasta 3)</label>
+        <input id="c-fotos" type="file" accept="image/*" multiple>
+        <div id="c-vista" class="vista-fotos"></div>
+        <p class="nota">Se achican en tu celular y se les borra la ubicación antes de enviarse. Evitá caras y patentes.</p>
+        <label class="etiqueta-chica" for="c-contacto">Tu mail o teléfono, por si necesitamos consultarte (no se publica)</label>
+        <input id="c-contacto" name="contacto" maxlength="120" autocomplete="email">
+      </fieldset>
+      <label class="acepto"><input type="checkbox" name="acepto" value="si"> <span>Acepto que se publiquen el relato y las fotos para uso sin fines comerciales (CC BY-NC). Mi contacto no se publica.</span></label>
+      <div id="c-turnstile"></div>
+      <button type="submit" id="c-enviar" class="boton primario">Enviar</button>
+      <p id="c-estado" class="nota" role="status"></p>
+    </form>
+  </section>
+
   <p id="sin-datos" class="caja" hidden></p>
 </main>
-<script src="app.js?v=4"></script>
+<script src="../config.js"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>
