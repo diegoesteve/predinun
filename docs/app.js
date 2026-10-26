@@ -763,19 +763,20 @@ function textoSMN(a, cuantas) {
     `${esc(a.titulo)} (nivel ${esc(a.nivel)}), hasta ${esc(a.hasta_local)} h${cuantas != null ? ` · ${cuantas} localidad${cuantas === 1 ? '' : 'es'}` : ''}.`;
 }
 
-async function bloqueSMNInicio() {
+// clave: 'localidades' (Córdoba) o 'localidades_santafe'. Solo se muestran las alertas que tocan alguna localidad de esa zona.
+async function bloqueSMNInicio(clave = 'localidades') {
   const d = await leerSMN();
   if (!d || !d.alertas.length) return '';
-  const grupos = agruparSMN(d.alertas);
-  return `<div class="smn">${grupos.map(a => {
-      const n = Object.values(d.localidades).filter(v => v.some(i => a.ids.includes(i))).length;
-      return `<div class="estado-titulo ${CLASE_SMN[a.nivel]}" style="font-weight:400">${textoSMN(a, n)}</div>`;
-    }).join('')}<p class="nota">Avisos oficiales del <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">Servicio Meteorológico Nacional</a>. Buscá tu localidad para ver si te toca.</p></div>`;
+  const zona = d[clave] || {};
+  const grupos = agruparSMN(d.alertas).map(a => ({ a, n: Object.values(zona).filter(v => v.some(i => a.ids.includes(i))).length })).filter(x => x.n);
+  if (!grupos.length) return '';
+  return `<div class="smn">${grupos.map(({ a, n }) =>
+      `<div class="estado-titulo ${CLASE_SMN[a.nivel]}" style="font-weight:400">${textoSMN(a, n)}</div>`).join('')}<p class="nota">Avisos oficiales del <a href="https://www.smn.gob.ar/alertas" target="_blank" rel="noopener">Servicio Meteorológico Nacional</a>. Buscá tu localidad para ver si te toca.</p></div>`;
 }
 
-async function bloqueSMNLocalidad(nombre) {
+async function bloqueSMNLocalidad(nombre, clave = 'localidades') {
   const d = await leerSMN();
-  const ids = d && d.localidades[nombre];
+  const ids = d && (d[clave] || {})[nombre];
   if (!ids || !ids.length) return '';
   const propias = agruparSMN(d.alertas.filter(a => ids.includes(a.id)));
   return propias.map(a => `<div class="smn-loc ${CLASE_SMN[a.nivel]}">${textoSMN(a)}` +

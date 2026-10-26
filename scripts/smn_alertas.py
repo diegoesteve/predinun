@@ -27,10 +27,12 @@ LOCALIDADES = os.path.join(RAIZ, 'docs', 'data', 'localidades.json')
 PROYECTO = 'crecidas'
 SITIO = 'https://diegoesteve.github.io/predinun/'
 FENOMENOS = ('TORMENT', 'LLUVI', 'GRANIZ', 'PRECIPIT')     # los que interesan a este proyecto (mayúsculas, sin tildes)
+# Otras zonas (lista de {localidad, lat, lon}); cada una sale en smn.json como «localidades_<clave>»
+OTRAS_ZONAS = {'santafe': os.path.join(RAIZ, 'data', 'santafe_localidades.json')}
+ZONA = {'lat': (-35.2, -27.9), 'lon': (-65.9, -58.8)}      # Córdoba y Santa Fe
 # ----
 LISTA = 'https://ssl.smn.gob.ar/CAP/AR.php'
 CABECERA = {'User-Agent': 'predinun/piedrazon (proyectos sin fines comerciales; github.com/diegoesteve)'}
-CORDOBA = {'lat': (-35.2, -29.4), 'lon': (-65.9, -61.7)}
 ARG = timezone(timedelta(hours=-3))
 NIVEL_POR_SEVERIDAD = {'Minor': 'amarillo', 'Moderate': 'amarillo', 'Severe': 'naranja', 'Extreme': 'rojo'}
 ORDEN = {'amarillo': 1, 'naranja': 2, 'rojo': 3}
@@ -95,8 +97,8 @@ def dentro(lon, lat, anillo):
     return adentro
 
 
-def toca_cordoba(a):
-    return any(CORDOBA['lat'][0] <= la <= CORDOBA['lat'][1] and CORDOBA['lon'][0] <= lo <= CORDOBA['lon'][1]
+def toca_zona(a):
+    return any(ZONA['lat'][0] <= la <= ZONA['lat'][1] and ZONA['lon'][0] <= lo <= ZONA['lon'][1]
                for p in a['poligonos'] for lo, la in p)
 
 
@@ -142,27 +144,36 @@ def main():
         vigentes[url] = a
     escribir(ruta_cache, {u: a for u, a in cache.items() if u in enlaces})
 
-    interesan = [a for a in vigentes.values() if toca_cordoba(a) and any(f in sin_tildes(a['evento'] + ' ' + a['titulo']) for f in FENOMENOS)]
+    interesan = [a for a in vigentes.values() if toca_zona(a) and any(f in sin_tildes(a['evento'] + ' ' + a['titulo']) for f in FENOMENOS)]
     locs = (leer(LOCALIDADES) or {}).get('localidades', [])
     por_loc = {}
     for a in interesan:
         for f in locs:
             if any(dentro(f['lon'], f['lat'], p) for p in a['poligonos']):
                 por_loc.setdefault(f['localidad'], []).append(a['id'])
+    otras = {}
+    for clave, ruta in OTRAS_ZONAS.items():
+        lista = leer(ruta) or []
+        lista = lista.get('localidades', []) if isinstance(lista, dict) else lista
+        otras[clave] = {}
+        for a in interesan:
+            for f in lista:
+                if any(dentro(f['lon'], f['lat'], p) for p in a['poligonos']):
+                    otras[clave].setdefault(f['localidad'], []).append(a['id'])
     alertas = []
     for a in sorted(interesan, key=lambda a: (-ORDEN[a['nivel']], a['tipo'] != 'aviso a corto plazo', a['hasta'])):
-        n = sum(a['id'] in v for v in por_loc.values())
+        n = sum(a['id'] in v for v in por_loc.values()) + sum(a['id'] in v for z in otras.values() for v in z.values())
         if n:
             alertas.append({**{k: v for k, v in a.items() if k != 'poligonos'}, 'desde_local': hora_local(a['desde']),
                             'hasta_local': hora_local(a['hasta']), 'localidades': n, 'poligonos': a['poligonos']})
-    for v in por_loc.values():
+    for v in list(por_loc.values()) + [v for z in otras.values() for v in z.values()]:
         v.sort(key=lambda i: -ORDEN[next(a['nivel'] for a in alertas if a['id'] == i)])
     escribir(os.path.join(RAIZ, 'docs', 'data', 'smn.json'),
              {'fuente': 'Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP', 'consultado': ahora.astimezone(ARG).strftime('%Y-%m-%d %H:%M'),
-              'alertas': alertas, 'localidades': por_loc})
+              'alertas': alertas, 'localidades': por_loc, **{f'localidades_{c}': z for c, z in otras.items()}})
     print(f'smn.json: {len(enlaces)} avisos en la lista ({nuevos} nuevos), {len(vigentes)} vigentes, '
           f'{len(alertas)} para nuestras localidades, {len(por_loc)} localidades')
-    avisar(alertas, por_loc)
+    avisar(alertas, {**por_loc, **{n: v for z in otras.values() for n, v in z.items()}})
 
 
 def avisar(alertas, por_loc):
