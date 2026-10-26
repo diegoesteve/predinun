@@ -6,6 +6,7 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const sinTildes = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const ZONA = { cba: 'Córdoba', sf: 'Santa Fe' };
+const nom = x => (x && (x.nom || x.n)) || '';   // nombre para mostrar (con tildes)
 
 // Preferencias en el celular (si el navegador no deja guardar, la app igual funciona)
 const PREF = {
@@ -68,8 +69,8 @@ async function buscar() {
   if ($('#buscar').value.trim() !== texto) return;   // ya escribió otra cosa
   const rango = t => { const n = sinTildes(t); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
   const r = [
-    ...DATOS.lugares.filter(x => sinTildes(x.n).includes(q)).map(x => ({ x, nombre: x.n, r: rango(x.n), sub: `${ZONA[x.z]}${x.rio ? ' · ' + x.rio : ''}` })),
-    ...barrios.filter(b => sinTildes(b.b).includes(q) || sinTildes(b.b + ' ' + b.n).includes(q)).map(b => ({ x: lugarDe(b), barrio: b, nombre: b.b, r: rango(b.b) + 0.5, sub: `Barrio de ${b.n} · ${ZONA[b.z]}` })),
+    ...DATOS.lugares.filter(x => sinTildes(x.n).includes(q)).map(x => ({ x, nombre: nom(x), r: rango(x.n), sub: `${ZONA[x.z]}${x.rio ? ' · ' + x.rio : ''}` })),
+    ...barrios.filter(b => sinTildes(b.b).includes(q) || sinTildes(b.b + ' ' + b.n).includes(q)).map(b => ({ x: lugarDe(b), barrio: b, nombre: b.b, r: rango(b.b) + 0.5, sub: `Barrio de ${nom(lugarDe(b)) || b.n}` })),
   ].filter(o => o.x).sort((a, b) => a.r - b.r || a.nombre.localeCompare(b.nombre)).slice(0, 10);
   lista.innerHTML = r.length ? r.map((o, i) => `<li><button type="button" data-i="${i}"><span><b>${esc(o.nombre)}</b><br><small>${esc(o.sub)}</small></span><span aria-hidden="true">›</span></button></li>`).join('')
     : '<li><p class="nota" style="padding:14px 16px">No encontramos ese lugar. Por ahora están las sierras de Córdoba y la provincia de Santa Fe.</p></li>';
@@ -125,6 +126,11 @@ const HACER = {
     medio: ['Mirá el cielo y seguí los avisos de la app.', 'Si llueve fuerte, no cruces vados ni te quedes en la orilla.'],
     nada: ['Tené a mano el número de Defensa Civil: 103.', 'Si vivís cerca del arroyo, pensá a dónde ir si crece.'],
   },
+  ciudad: {
+    alto: ['Subí a lo alto lo que no se puede mojar: documentos, remedios, electrodomésticos.', 'Limpiá la vereda y las rejillas, y no dejes el auto en calles que se inundan.', 'No camines ni manejes por calles con agua corriendo: arrastra más de lo que parece.'],
+    medio: ['Limpiá la vereda y las rejillas para que corra el agua.', 'No dejes el auto en calles que se anegan.'],
+    nada: ['Tené a mano el número de Defensa Civil: 103.'],
+  },
   llanura: {
     alto: ['Subí a lo alto documentos, remedios y lo que no se puede mojar.', 'Cargá el celular y tené a mano una linterna.', 'Si tenés que salir, avisá a un vecino y seguí las indicaciones de Protección Civil.'],
     medio: ['Limpiá la vereda y las rejillas para que corra el agua.', 'No dejes el auto en calles que se anegan.', 'Seguí los avisos de la app.'],
@@ -164,8 +170,8 @@ function pintarVecinos(x, b, ev) {
 function pintarLugar(x0) {
   const sel = PREF.get('lugar', null) || {};
   const { x, ev } = conBarrio(x0, sel.b);
-  $('#l-nombre').textContent = sel.b || x.n;
-  $('#l-zona').textContent = sel.b ? `Barrio de ${x.n} · ${ZONA[x.z]}` : `${ZONA[x.z]}${x.rio ? ' · ' + x.rio : ''}`;
+  $('#l-nombre').textContent = sel.b || nom(x);
+  $('#l-zona').textContent = sel.b ? `Barrio de ${nom(x)}${nom(x) !== ZONA[x.z] ? ' · ' + ZONA[x.z] : ''}` : `${ZONA[x.z]}${x.rio ? ' · ' + x.rio : ''}`;
   const man = DATOS.dia_manana ? `Mañana, ${DATOS.dia_manana}` : 'Mañana';
   // lo más importante arriba: si mañana es peor que hoy, mañana va primero y grande; si sigue igual, no se repite
   const primeroManana = x.man.nivel > x.hoy.nivel;
@@ -174,9 +180,10 @@ function pintarLugar(x0) {
   $('#l-dias').innerHTML = primeroManana ? tarjetaDia(x.man, man) + tarjetaDia(x.hoy, 'Hoy', true)
     : tarjetaDia(x.hoy, 'Hoy') + tarjetaDia(manTarjeta, man, manTarjeta.nivel === 0 || igual);
   const peor = Math.max(x.hoy.nivel, x.man.nivel);
-  const lista = HACER[x.tipo][peor >= 2 ? 'alto' : peor === 1 ? 'medio' : 'nada'];
+  const porBarrio = [x.hoy, x.man].some(d => d.titulo === 'Tu barrio ya se inundó con lluvias así');
+  const lista = HACER[porBarrio ? 'ciudad' : x.tipo][peor >= 2 ? 'alto' : peor === 1 ? 'medio' : 'nada'];
   $('#l-hacer').innerHTML = `<h2>${peor ? (primeroManana ? 'Qué hacer hoy, para mañana' : 'Qué hacer') : 'Para estar preparado'}</h2><ol>${lista.map(t => `<li>${esc(t)}</li>`).join('')}</ol>`;
-  const texto = `${sel.b || x.n}: ${primeroManana ? 'mañana' : 'hoy'} ${((t => t.charAt(0).toLowerCase() + t.slice(1))((primeroManana ? x.man : x.hoy).titulo))}. Mirá cómo está tu barrio:`;
+  const texto = `${sel.b || nom(x)}: ${primeroManana ? 'mañana' : 'hoy'} ${((t => t.charAt(0).toLowerCase() + t.slice(1))((primeroManana ? x.man : x.hoy).titulo))}. Mirá cómo está tu barrio:`;
   const enlace = new URL(`?l=${encodeURIComponent(x.n)}&z=${x.z}${sel.b ? '&b=' + encodeURIComponent(sel.b) : ''}`, location.href.split('?')[0]).href;
   $('#b-whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent(`${texto} ${enlace}`);
   $('#l-fuente').textContent = `Datos de las ${DATOS.generado.slice(11)} del ${DATOS.generado.slice(8, 10)}/${DATOS.generado.slice(5, 7)}. ` +

@@ -12,7 +12,7 @@ function estadoZona(z) {
   if (!ls.length) return null;
   const peorHoy = Math.max(...ls.map(x => x.hoy.nivel)), peorMan = Math.max(...ls.map(x => x.man.nivel));
   const peor = Math.max(peorHoy, peorMan);
-  const lista = (dia, n) => ls.filter(x => x[dia].nivel === n).map(x => x.n);
+  const lista = (dia, n) => ls.filter(x => x[dia].nivel === n).map(x => x.nom || x.n);
   let texto;
   if (peor === 0) texto = 'Sin lluvias fuertes ni crecidas para hoy y mañana.';
   else {
@@ -45,7 +45,7 @@ function buscar() {
   const rango = x => { const n = sinTildes(x.n); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
   const r = LUGARES.filter(x => sinTildes(x.n).includes(q)).sort((a, b) => rango(a) - rango(b) || a.n.localeCompare(b.n)).slice(0, 8);
   lista.innerHTML = r.length
-    ? r.map(x => `<li><a href="app/?l=${encodeURIComponent(x.n)}&z=${x.z}"><span><b>${esc(x.n)}</b><br><small>${esc(ZONA_DE[x.z] || '')}</small></span><span class="estado e${Math.max(x.hoy.nivel, x.man.nivel)}">${NOMBRE[Math.max(x.hoy.nivel, x.man.nivel)]}</span></a></li>`).join('')
+    ? r.map(x => `<li><a href="app/?l=${encodeURIComponent(x.n)}&z=${x.z}"><span><b>${esc(x.nom || x.n)}</b><br><small>${esc(ZONA_DE[x.z] || '')}</small></span><span class="estado e${Math.max(x.hoy.nivel, x.man.nivel)}">${NOMBRE[Math.max(x.hoy.nivel, x.man.nivel)]}</span></a></li>`).join('')
     : '<li><a href="#regiones"><span>No encontramos ese lugar todavía. Mirá qué regiones tenemos.</span></a></li>';
 }
 

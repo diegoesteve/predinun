@@ -46,6 +46,28 @@ def minutos_desde(texto, ahora):
         return None
 
 
+def nombres_oficiales():
+    """Nombre oficial (con tildes) de las localidades de Córdoba según GeoRef: el inventario tiene varios sin tildes
+    («Cordoba», «Saldan»). Se baja una vez y queda en data/nombres_georef.json."""
+    import unicodedata
+    normal = lambda t: ''.join(c for c in unicodedata.normalize('NFD', t or '') if not unicodedata.combining(c)).lower().strip()   # noqa: E731
+    ruta = os.path.join(cfg.DATA, 'nombres_georef.json')
+    nombres = cfg.leer_json('nombres_georef.json')
+    if not nombres:
+        try:
+            import requests
+            nombres = []
+            for recurso in ('municipios', 'localidades'):
+                r = requests.get(f'https://apis.datos.gob.ar/georef/api/{recurso}', params={'provincia': 'Córdoba', 'max': 5000, 'campos': 'nombre'}, timeout=60)
+                r.raise_for_status()
+                nombres += [x['nombre'] for x in r.json()[recurso]]
+            cfg.escribir_json(ruta, sorted(set(nombres)))
+        except Exception as e:
+            print('GeoRef sin respuesta: nombres como están', str(e)[:80])
+            nombres = []
+    return {normal(n): n for n in nombres}
+
+
 def nombre_curso(t):
     """«A. Cabana» → «Arroyo Cabana», «Rio Ceballos» → «Río Ceballos»."""
     t = (t or '').strip()
@@ -220,6 +242,13 @@ def main():
     hoy = ahora.strftime('%Y-%m-%d')
     manana = (ahora + timedelta(days=1)).strftime('%Y-%m-%d')
     lugares = cordoba(ahora, hoy, manana) + santa_fe(hoy, manana)
+    import unicodedata
+    oficial = nombres_oficiales()
+    for x in lugares:
+        clave = ''.join(c for c in unicodedata.normalize('NFD', x['n']) if not unicodedata.combining(c)).lower().strip()
+        nom = oficial.get(clave) if x['z'] == 'cba' else None
+        if nom and nom != x['n']:
+            x['nom'] = nom          # para mostrar; «n» sigue siendo la clave que usan los demás archivos
     cfg.escribir_json(os.path.join(DD, 'app.json'), {
         'generado': ahora.strftime('%Y-%m-%d %H:%M'), 'hoy': hoy, 'manana': manana,
         'dia_manana': DIAS[(ahora + timedelta(days=1)).weekday()],
