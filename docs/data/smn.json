@@ -1,6 +1,433 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-10-26 07:33",
- "alertas": [],
- "localidades": {}
+ "consultado": "2026-10-26 14:01",
+ "alertas": [
+  {
+   "id": "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1",
+   "tipo": "alerta",
+   "evento": "Tormentas",
+   "nivel": "amarillo",
+   "titulo": "Tormentas",
+   "desde": "2026-10-27T09:00:00-03:00",
+   "hasta": "2026-10-27T14:59:59-03:00",
+   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas localmente fuertes. Las mismas podrán estar acompañadas por abundantes precipitaciones en cortos periodos, ocasional granizo, ráfagas intensas y actividad eléctrica frecuente. Se esperan valores de precipitación acumulada entre 20 y 40 mm.",
+   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
+   "zona": "",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1.xml",
+   "desde_local": "27/10 09:00",
+   "hasta_local": "27/10 14:59",
+   "localidades": 10,
+   "poligonos": [
+    [
+     [
+      -65.1,
+      -33.16
+     ],
+     [
+      -65.16,
+      -33.18
+     ],
+     [
+      -65.26,
+      -33.2
+     ],
+     [
+      -65.42,
+      -33.3
+     ],
+     [
+      -65.54,
+      -33.26
+     ],
+     [
+      -65.52,
+      -33.18
+     ],
+     [
+      -65.52,
+      -33.1
+     ],
+     [
+      -65.5,
+      -33.08
+     ],
+     [
+      -65.4,
+      -33.04
+     ],
+     [
+      -65.22,
+      -33.04
+     ],
+     [
+      -65.2,
+      -33.02
+     ],
+     [
+      -65.12,
+      -32.96
+     ],
+     [
+      -65.04,
+      -32.84
+     ],
+     [
+      -65.06,
+      -32.76
+     ],
+     [
+      -65.04,
+      -32.58
+     ],
+     [
+      -65.04,
+      -32.48
+     ],
+     [
+      -65.06,
+      -32.42
+     ],
+     [
+      -65.06,
+      -32.32
+     ],
+     [
+      -64.94,
+      -32.32
+     ],
+     [
+      -64.92,
+      -32.36
+     ],
+     [
+      -64.92,
+      -32.48
+     ],
+     [
+      -64.9,
+      -32.48
+     ],
+     [
+      -64.9,
+      -32.52
+     ],
+     [
+      -64.88,
+      -32.58
+     ],
+     [
+      -64.92,
+      -32.62
+     ],
+     [
+      -64.92,
+      -32.68
+     ],
+     [
+      -64.96,
+      -32.72
+     ],
+     [
+      -64.96,
+      -32.78
+     ],
+     [
+      -64.98,
+      -32.8
+     ],
+     [
+      -64.96,
+      -32.86
+     ],
+     [
+      -65.0,
+      -32.92
+     ],
+     [
+      -65.0,
+      -32.96
+     ],
+     [
+      -65.02,
+      -32.98
+     ],
+     [
+      -65.0,
+      -33.0
+     ],
+     [
+      -65.0,
+      -33.02
+     ],
+     [
+      -65.04,
+      -33.06
+     ],
+     [
+      -65.06,
+      -33.1
+     ],
+     [
+      -65.1,
+      -33.16
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "CAP_20261026121213_Tormenta_Cordillera_alertas_alertas_6",
+   "tipo": "alerta",
+   "evento": "Tormentas",
+   "nivel": "amarillo",
+   "titulo": "Tormentas",
+   "desde": "2026-10-27T09:00:00-03:00",
+   "hasta": "2026-10-27T14:59:59-03:00",
+   "descripcion": "El área será afectada por lluvias y tormentas de variada intensidad, algunas fuertes. Estas podrían estar acompañadas por abundantes precipitaciones, granizo ocasional y ráfagas. Se prevén valores de precipitación acumulada entre 20 y 40 mm, que pueden ser superados de forma local.",
+   "instruccion": "1- Evitá salir. 2- No saques la basura y limpiá desagües y sumideros. 3- Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua 4- Cerrá y alejate de puertas y ventanas. 5- Retirá o asegurá objetos que puedan ser arrastrados por el viento. 6- Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado.",
+   "zona": "",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/xml_generados/CAP_20261026121213_Tormenta_Cordillera_alertas_alertas_6.xml",
+   "desde_local": "27/10 09:00",
+   "hasta_local": "27/10 14:59",
+   "localidades": 6,
+   "poligonos": [
+    [
+     [
+      -65.06,
+      -32.32
+     ],
+     [
+      -65.06,
+      -32.42
+     ],
+     [
+      -65.04,
+      -32.48
+     ],
+     [
+      -65.04,
+      -32.58
+     ],
+     [
+      -65.06,
+      -32.76
+     ],
+     [
+      -65.04,
+      -32.84
+     ],
+     [
+      -65.12,
+      -32.96
+     ],
+     [
+      -65.14,
+      -32.96
+     ],
+     [
+      -65.18,
+      -32.92
+     ],
+     [
+      -65.24,
+      -32.92
+     ],
+     [
+      -65.28,
+      -32.9
+     ],
+     [
+      -65.28,
+      -32.92
+     ],
+     [
+      -65.36,
+      -32.9
+     ],
+     [
+      -65.38,
+      -32.96
+     ],
+     [
+      -65.44,
+      -32.98
+     ],
+     [
+      -65.44,
+      -32.96
+     ],
+     [
+      -65.48,
+      -32.96
+     ],
+     [
+      -65.58,
+      -33.0
+     ],
+     [
+      -65.58,
+      -32.98
+     ],
+     [
+      -65.56,
+      -32.98
+     ],
+     [
+      -65.56,
+      -32.94
+     ],
+     [
+      -65.54,
+      -32.94
+     ],
+     [
+      -65.52,
+      -32.9
+     ],
+     [
+      -65.6,
+      -32.88
+     ],
+     [
+      -65.56,
+      -32.78
+     ],
+     [
+      -65.52,
+      -32.62
+     ],
+     [
+      -65.68,
+      -32.34
+     ],
+     [
+      -65.82,
+      -32.32
+     ],
+     [
+      -65.8,
+      -32.3
+     ],
+     [
+      -65.76,
+      -32.24
+     ],
+     [
+      -65.78,
+      -32.24
+     ],
+     [
+      -65.72,
+      -32.2
+     ],
+     [
+      -65.68,
+      -32.06
+     ],
+     [
+      -65.82,
+      -32.06
+     ],
+     [
+      -65.82,
+      -31.9
+     ],
+     [
+      -65.78,
+      -31.88
+     ],
+     [
+      -65.64,
+      -31.9
+     ],
+     [
+      -65.34,
+      -32.04
+     ],
+     [
+      -65.3,
+      -32.06
+     ],
+     [
+      -65.28,
+      -32.06
+     ],
+     [
+      -65.24,
+      -32.1
+     ],
+     [
+      -65.24,
+      -32.14
+     ],
+     [
+      -65.22,
+      -32.16
+     ],
+     [
+      -65.22,
+      -32.34
+     ],
+     [
+      -65.1,
+      -32.32
+     ],
+     [
+      -65.06,
+      -32.32
+     ]
+    ]
+   ]
+  }
+ ],
+ "localidades": {
+  "Carpintería": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Los Molles": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Cortaderas": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Villa de Merlo": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Villa Larca": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Papagayos": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Villa Elena": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "San José del Morro": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Cerro de Oro": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Villa del Carmen": [
+   "CAP_20261026121213_Tormenta_Llanura_alertas_alertas_1"
+  ],
+  "Tilisarao": [
+   "CAP_20261026121213_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Naschel": [
+   "CAP_20261026121213_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "El Tala": [
+   "CAP_20261026121213_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Santa Rosa del Conlara": [
+   "CAP_20261026121213_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Concarán": [
+   "CAP_20261026121213_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Los Cajones": [
+   "CAP_20261026121213_Tormenta_Cordillera_alertas_alertas_6"
+  ]
+ },
+ "localidades_santafe": {}
 }
