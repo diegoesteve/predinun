@@ -37,8 +37,7 @@ COSTA_KM = 10
 # latitud cuánto le falta (o le sobra) al río para la alerta y la evacuación. Quedan afuera las del otro lado del valle
 # que tienen otra referencia (Goya, Paraná, Victoria).
 CADENA_PARANA = [21, 22, 24, 25, 26, 30, 31, 33, 34, 35]
-# Ciudades con defensas contra el Paraná: el nivel de evacuación de la escala es para la costa, las islas y los barrios
-# fuera de las defensas, no para toda la ciudad.
+# Ciudades con defensas contra el Paraná: el texto aclara que el peligro es para lo que queda fuera de ellas.
 CON_DEFENSAS = {'Santa Fe', 'Reconquista'}
 DIAS = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo']
 
@@ -284,8 +283,9 @@ def santa_fe(hoy, manana):
                 textos[3] = ('Costa e islas: el río pasó el nivel de evacuación',
                              f'{Rio} está muy alto y {sube}. La ciudad tiene defensas: el peligro es para quienes viven '
                              'fuera de ellas, en la costa, las islas y los barrios bajos. Si es tu caso, seguí las indicaciones de Protección Civil.')
-            # Con defensas, la evacuación de la escala es para lo que queda afuera: el pueblo no está todo en peligro (nivel 2).
-            tope = 2 if defensas else 3
+            # El nivel de evacuación de la escala es para la costa, las islas y los barrios bajos (y lo que queda fuera de las
+            # defensas), no para todo el pueblo: el río solo lleva al pueblo hasta «Alerta», con el texto de la costa.
+            tope = 2
             hm = r['manana_m'] if 'manana_m' in r else altura_manana(r, manana)
             real_hoy, real_man = n_hoy, nivel_rio(hm, r, subiendo)
             if real_hoy:
