@@ -63,22 +63,33 @@ function zoomConCtrl(m) {
 
 // ---------------------------------------------------------------- pestañas
 const mapas = {};
-const PESTANAS = ['inicio', 'ahora', 'pronostico', 'riesgo', 'santafe', 'aporta'];
+const PESTANAS = ['inicio', 'ahora', 'pronostico', 'riesgo', 'santafe', 'sfsim', 'aporta'];
+// Cada zona tiene sus pestañas: en Santa Fe no se ven las de Córdoba (y al revés). «Aportá» es de las dos.
+const ZONA_PAGINA = { inicio: 'cba', ahora: 'cba', pronostico: 'cba', riesgo: 'cba', santafe: 'sf', sfsim: 'sf' };
+let zonaActual = (() => { try { return localStorage.getItem('predinun.zona') || 'cba'; } catch (e) { return 'cba'; } })();
+document.querySelectorAll('.zona-sel button').forEach(b => b.addEventListener('click', () => {
+  mostrar(b.dataset.zona === 'sf' ? 'santafe' : 'inicio'); window.scrollTo(0, 0);
+}));
 document.querySelectorAll('.pestanas button, .acceso').forEach(b => b.addEventListener('click', () => {
   mostrar(b.dataset.p || b.dataset.ir);
   if (b.dataset.ir) window.scrollTo(0, 0);
 }));
 // la marca lleva a la portada de todas las zonas (index.html)
 function mostrar(p) {
-  document.querySelectorAll('.pestanas button').forEach(b => b.setAttribute('aria-selected', b.dataset.p === p));
+  zonaActual = ZONA_PAGINA[p] || zonaActual;
+  try { localStorage.setItem('predinun.zona', zonaActual); } catch (e) {}
+  document.querySelectorAll('.zona-sel button').forEach(b => b.setAttribute('aria-pressed', b.dataset.zona === zonaActual));
+  document.querySelectorAll('.pestanas button').forEach(b => { b.hidden = !!b.dataset.z && b.dataset.z !== zonaActual; b.setAttribute('aria-selected', b.dataset.p === p); });
   document.querySelectorAll('.pagina').forEach(s => s.hidden = s.id !== 'p-' + p);
   try { history.replaceState(null, '', '#' + p); } catch (e) {}
   Object.values(mapas).forEach(m => m.invalidateSize());
   if (p === 'ahora' && !mapas.estaciones) ahora();
   if (p === 'riesgo' && !mapas.riesgo) riesgo();
   if (p === 'aporta' && !mapas.aporte) aporta();
-  if (p === 'santafe' && !mapas.santafe) santaFe();
+  if ((p === 'santafe' || p === 'sfsim') && !SF_CARGANDO) { SF_CARGANDO = true; santaFe(); }
+  if (p === 'sfsim' && !mapas.sim) simulacion();
 }
+let SF_CARGANDO = false;
 
 // ---------------------------------------------------------------- ahora
 async function ahora() {
@@ -885,8 +896,6 @@ async function santaFe() {
     </div></article>`;
   document.getElementById('sf-parana').innerHTML = rios.filter(r => r.rio === 'Paraná').map(tarjeta).join('');
   document.getElementById('sf-salado').innerHTML = rios.filter(r => r.rio === 'Salado').map(tarjeta).join('');
-
-  simulacion();
 
   // mapa
   const m = mapas.santafe = mapaBase('mapa-santafe', 7);

@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=202610261235">
+<link rel="stylesheet" href="style.css?v=202610271300">
 </head>
 <body>
 <header class="barra">
@@ -26,14 +26,21 @@
     <span class="titulo">← Crecidas</span>
     <span class="sub">Todas las zonas · monitor no oficial</span>
   </a>
-  <nav class="pestanas" role="tablist">
-    <button role="tab" data-p="inicio" aria-selected="true">Córdoba</button>
-    <button role="tab" data-p="ahora" aria-selected="false">Ahora</button>
-    <button role="tab" data-p="pronostico" aria-selected="false">Pronóstico</button>
-    <button role="tab" data-p="riesgo" aria-selected="false">Mapa de riesgo</button>
-    <button role="tab" data-p="santafe" aria-selected="false">Santa Fe</button>
-    <button role="tab" data-p="aporta" aria-selected="false">Aportá</button>
-  </nav>
+  <div class="navegacion">
+    <div class="zona-sel" role="group" aria-label="Zona">
+      <button type="button" data-zona="cba" aria-pressed="true">Córdoba</button>
+      <button type="button" data-zona="sf" aria-pressed="false">Santa Fe</button>
+    </div>
+    <nav class="pestanas" role="tablist">
+      <button role="tab" data-p="inicio" data-z="cba" aria-selected="true">Resumen</button>
+      <button role="tab" data-p="ahora" data-z="cba" aria-selected="false">Ahora</button>
+      <button role="tab" data-p="pronostico" data-z="cba" aria-selected="false">Pronóstico</button>
+      <button role="tab" data-p="riesgo" data-z="cba" aria-selected="false">Mapa de riesgo</button>
+      <button role="tab" data-p="santafe" data-z="sf" aria-selected="false" hidden>Ríos, lluvia y mapa</button>
+      <button role="tab" data-p="sfsim" data-z="sf" aria-selected="false" hidden>Simulá la crecida</button>
+      <button role="tab" data-p="aporta" aria-selected="false">Aportá</button>
+    </nav>
+  </div>
 </header>
 
 <main>
@@ -161,7 +168,19 @@
     <h2>Río Salado</h2>
     <p class="nota">Estaciones de la Red Hidrológica Nacional. Algunas se leen cada varios días.</p>
     <div class="tarjetas" id="sf-salado"></div>
-    <h2>Simulá la crecida</h2>
+    <h2>Mapa</h2>
+    <div id="mapa-santafe" class="mapa alto"></div>
+    <div class="leyenda">
+      <span><span class="punto" style="--c:#1F7A4D;border:2px solid #16201C"></span>Estación de río, con el color de su estado · <span class="punto" style="--c:#E07B20"></span>localidad con lluvia para tener en cuenta · <span class="punto" style="--c:#C0362C"></span>lluvia fuerte</span>
+    </div>
+    <h2>Lluvia en los próximos 3 días</h2>
+    <div class="tabla-envoltura tabla-alta"><table id="tabla-sf-lluvia"></table></div>
+    <h2>Cómo se calcula</h2>
+    <div class="leyenda" id="sf-metodo"></div>
+  </section>
+
+  <section id="p-sfsim" class="pagina" hidden>
+    <h1 class="titulo-pagina">Simulá la crecida del Paraná</h1>
     <p class="nota">Elegí una escala y una altura del río: el mapa muestra qué zonas quedarían bajo el agua según el relieve. Es una aproximación: no ve defensas, terraplenes ni desagües, y no sirve para decidir una evacuación.</p>
     <div class="simulacion">
       <div class="sim-panel">
@@ -177,16 +196,6 @@
       <div id="mapa-sim" class="mapa alto sim-mapa"></div>
     </div>
     <div class="leyenda"><span><span class="cuadro" style="--c:#8FBCDB"></span>río y lagunas en aguas normales · <span class="cuadro" style="--c:#1F5FA8"></span>bajo el agua con esa altura · <span class="cuadro" style="--c:#E0457B"></span>agua que vio el radar</span></div>
-
-    <h2>Mapa</h2>
-    <div id="mapa-santafe" class="mapa alto"></div>
-    <div class="leyenda">
-      <span><span class="punto" style="--c:#1F7A4D;border:2px solid #16201C"></span>Estación de río, con el color de su estado · <span class="punto" style="--c:#E07B20"></span>localidad con lluvia para tener en cuenta · <span class="punto" style="--c:#C0362C"></span>lluvia fuerte</span>
-    </div>
-    <h2>Lluvia en los próximos 3 días</h2>
-    <div class="tabla-envoltura tabla-alta"><table id="tabla-sf-lluvia"></table></div>
-    <h2>Cómo se calcula</h2>
-    <div class="leyenda" id="sf-metodo"></div>
   </section>
 
   <section id="p-aporta" class="pagina guia" hidden>
@@ -262,6 +271,6 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="config.js?v=202610231441"></script>
-<script src="app.js?v=202610271230"></script>
+<script src="app.js?v=202610271300"></script>
 </body>
 </html>
