@@ -941,9 +941,9 @@ function elegirSF(nombre) {
   const f = (SF.localidades || []).find(x => x.localidad === nombre);
   if (!f) return;
   const caja = document.getElementById('sf-ficha');
-  // estación de río más cercana a menos de 25 km
+  // estación de río más cercana a menos de 35 km (Las Toscas y Villa Ocampo miran Bella Vista, del otro lado)
   const km = (a, b) => Math.hypot((a.lat - b.lat) * 111, (a.lon - b.lon) * 111 * Math.cos(a.lat * Math.PI / 180));
-  const rio = (SF.rios || []).map(r => ({ r, d: km(f, r) })).filter(x => x.d <= 25).sort((a, b) => a.d - b.d)[0];
+  const rio = (SF.rios || []).map(r => ({ r, d: km(f, r) })).filter(x => x.d <= 35).sort((a, b) => a.d - b.d)[0];
   caja.hidden = false;
   caja.innerHTML = `<h3>${esc(f.localidad)}</h3><div id="sf-smn-loc"></div>
     <div><b>Lluvia en los próximos 3 días</b>: ${f.condicion ? `<span class="chip ${CLASE_LLUVIA[f.condicion]}"><span class="punto"></span>${esc(f.condicion)}</span> hasta ${f.max_24h_mm} mm en 24 h y ${f.max_3h_mm} mm en 3 h${f.cuando && f.max_24h_mm > 0 ? `, sobre todo el ${fechaCorta(f.cuando.slice(0, 10))} cerca de las ${f.cuando.slice(11, 13)} h` : ''}.` : 'sin pronóstico.'}</div>
