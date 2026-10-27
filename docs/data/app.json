@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-27 19:41",
+ "generado": "2026-10-27 20:29",
  "hoy": "2026-10-27",
  "manana": "2026-10-28",
  "dia_manana": "miércoles",
@@ -65,9 +65,9 @@
    "rio": "Río San Antonio",
    "expo": "muy expuesta",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 3,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río San Antonio. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
    },
    "man": {
     "nivel": 0,
@@ -182,9 +182,9 @@
    "rio": "Río San Antonio",
    "expo": "muy expuesta",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 3,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río San Antonio. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
    },
    "man": {
     "nivel": 0,
@@ -1567,9 +1567,9 @@
    "rio": "Río Santa Rosa",
    "expo": "expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río Santa Rosa. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
@@ -1775,9 +1775,9 @@
    "rio": "Río San Antonio",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río San Antonio. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
    },
    "man": {
     "nivel": 0,
@@ -1798,9 +1798,9 @@
    "rio": "Río Santa Rosa",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del arroyo. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
@@ -2005,9 +2005,9 @@
    "rio": "Río San Antonio",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río San Antonio. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
    },
    "man": {
     "nivel": 0,
@@ -2581,9 +2581,9 @@
    "rio": "Río Santa Rosa",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río Santa Rosa. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
@@ -6110,28 +6110,6 @@
     0.0,
     0.8
    ],
-   "rio": "Paraná en San Lorenzo (San Martín)",
-   "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
-   },
-   "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
-   }
-  },
-  {
-   "n": "Alejandra",
-   "z": "sf",
-   "la": -29.9434,
-   "lo": -59.8247,
-   "tipo": "llanura",
-   "mm": [
-    0.0,
-    0.0
-   ],
    "rio": null,
    "hoy": {
     "nivel": 0,
@@ -6145,6 +6123,28 @@
    }
   },
   {
+   "n": "Alejandra",
+   "z": "sf",
+   "la": -29.9434,
+   "lo": -59.8247,
+   "tipo": "llanura",
+   "mm": [
+    0.0,
+    0.0
+   ],
+   "rio": "Paraná en Esquina",
+   "hoy": {
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
+   },
+   "man": {
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
+   }
+  },
+  {
    "n": "Alvear",
    "z": "sf",
    "la": -33.071,
@@ -6154,7 +6154,7 @@
     0.0,
     0.6
    ],
-   "rio": "Paraná en Rosario",
+   "rio": "Paraná entre Rosario y Villa Constitución",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -6330,16 +6330,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná en Diamante",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -6374,16 +6374,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Bella Vista y Reconquista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 3,
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 3,
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    }
   },
   {
@@ -6396,16 +6396,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná en Santa Fe",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -6418,16 +6418,16 @@
     0.0,
     0.6
    ],
-   "rio": null,
+   "rio": "Paraná entre Rosario y Villa Constitución",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -6528,16 +6528,16 @@
     0.0,
     0.0
    ],
-   "rio": "Paraná en Reconquista",
+   "rio": "Paraná entre Bella Vista y Reconquista",
    "hoy": {
     "nivel": 3,
-    "titulo": "El río pasó el nivel de evacuación",
-    "texto": "El río Paraná está muy alto y sigue subiendo. Seguí las indicaciones de Protección Civil."
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    },
    "man": {
     "nivel": 3,
-    "titulo": "El río pasó el nivel de evacuación",
-    "texto": "El río Paraná está muy alto y sigue subiendo. Seguí las indicaciones de Protección Civil."
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    }
   },
   {
@@ -6550,16 +6550,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Diamante y San Lorenzo (San Martín)",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -6924,7 +6924,7 @@
     0.0,
     0.7
    ],
-   "rio": "Paraná en San Lorenzo (San Martín)",
+   "rio": "Paraná entre San Lorenzo (San Martín) y Rosario",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -7163,7 +7163,7 @@
    "lo": -62.1143,
    "tipo": "llanura",
    "mm": [
-    1.2,
+    0.9,
     0.4
    ],
    "rio": null,
@@ -7254,16 +7254,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre La Paz y Santa Fe",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -7713,7 +7713,7 @@
    "lo": -61.8691,
    "tipo": "llanura",
    "mm": [
-    0.6,
+    0.3,
     0.5
    ],
    "rio": null,
@@ -7848,16 +7848,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná en La Paz",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 1,
+    "titulo": "El río está subiendo",
+    "texto": "El río Paraná sube y se acerca al nivel de alerta. Estate atento a las zonas bajas cerca de la costa."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 1,
+    "titulo": "El río está subiendo",
+    "texto": "El río Paraná sube y se acerca al nivel de alerta. Estate atento a las zonas bajas cerca de la costa."
    }
   },
   {
@@ -7958,16 +7958,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Santa Fe y Diamante",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -8156,16 +8156,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Santa Fe y Diamante",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -8288,16 +8288,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Empedrado y Bella Vista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    }
   },
   {
@@ -8310,16 +8310,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Bella Vista y Reconquista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 3,
+    "titulo": "El río puede llegar al nivel de evacuación",
+    "texto": "Mañana el río Paraná puede llegar al nivel de evacuación. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante hoy."
    }
   },
   {
@@ -8420,16 +8420,16 @@
     0.0,
     0.1
    ],
-   "rio": "Paraná en Santa Fe",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -8461,7 +8461,7 @@
    "lo": -62.0005,
    "tipo": "llanura",
    "mm": [
-    0.8,
+    0.7,
     0.3
    ],
    "rio": null,
@@ -8706,16 +8706,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Empedrado y Bella Vista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 1,
+    "titulo": "El río está subiendo",
+    "texto": "El río Paraná sube y se acerca al nivel de alerta. Estate atento a las zonas bajas cerca de la costa."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 1,
+    "titulo": "El río está subiendo",
+    "texto": "El río Paraná sube y se acerca al nivel de alerta. Estate atento a las zonas bajas cerca de la costa."
    }
   },
   {
@@ -8772,7 +8772,7 @@
     0.0,
     0.7
    ],
-   "rio": "Paraná en San Lorenzo (San Martín)",
+   "rio": "Paraná entre San Lorenzo (San Martín) y Rosario",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -8838,16 +8838,16 @@
     0.0,
     1.0
    ],
-   "rio": "Paraná en Rosario",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -8860,16 +8860,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Diamante y San Lorenzo (San Martín)",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -8992,7 +8992,7 @@
     0.0,
     0.6
    ],
-   "rio": "Paraná en Rosario",
+   "rio": "Paraná entre Rosario y Villa Constitución",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -9102,7 +9102,7 @@
     0.0,
     0.6
    ],
-   "rio": "Paraná en Rosario",
+   "rio": "Paraná entre San Lorenzo (San Martín) y Rosario",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -9168,16 +9168,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Bella Vista y Reconquista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 3,
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 3,
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    }
   },
   {
@@ -9234,16 +9234,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre La Paz y Santa Fe",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -9410,16 +9410,16 @@
     0.0,
     1.4
    ],
-   "rio": "Paraná en San Lorenzo (San Martín)",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -9539,7 +9539,7 @@
    "lo": -61.9788,
    "tipo": "llanura",
    "mm": [
-    0.4,
+    0.3,
     0.7
    ],
    "rio": null,
@@ -10048,16 +10048,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Bella Vista y Reconquista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 3,
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 3,
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    }
   },
   {
@@ -10111,7 +10111,7 @@
    "lo": -62.1477,
    "tipo": "llanura",
    "mm": [
-    0.8,
+    0.6,
     0.1
    ],
    "rio": null,
@@ -10158,16 +10158,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Empedrado y Bella Vista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    }
   },
   {
@@ -10356,16 +10356,16 @@
     0.0,
     0.0
    ],
-   "rio": "Paraná en Reconquista",
+   "rio": "Paraná entre Reconquista y Esquina",
    "hoy": {
     "nivel": 3,
-    "titulo": "El río pasó el nivel de evacuación",
-    "texto": "El río Paraná está muy alto y sigue subiendo. Seguí las indicaciones de Protección Civil."
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    },
    "man": {
     "nivel": 3,
-    "titulo": "El río pasó el nivel de evacuación",
-    "texto": "El río Paraná está muy alto y sigue subiendo. Seguí las indicaciones de Protección Civil."
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante y seguí las indicaciones de Protección Civil."
    }
   },
   {
@@ -10818,16 +10818,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Diamante y San Lorenzo (San Martín)",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -11060,16 +11060,16 @@
     0.0,
     0.5
    ],
-   "rio": null,
+   "rio": "Paraná entre Diamante y San Lorenzo (San Martín)",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -11390,16 +11390,16 @@
     0.0,
     0.2
    ],
-   "rio": "Paraná en San Lorenzo (San Martín)",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -11412,7 +11412,7 @@
     0.0,
     0.6
    ],
-   "rio": "Paraná en Rosario",
+   "rio": "Paraná entre Rosario y Villa Constitución",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -11544,16 +11544,16 @@
     0.0,
     0.8
    ],
-   "rio": "Paraná en Rosario",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -11634,14 +11634,14 @@
    ],
    "rio": "Paraná en Reconquista",
    "hoy": {
-    "nivel": 3,
-    "titulo": "El río pasó el nivel de evacuación",
-    "texto": "El río Paraná está muy alto y sigue subiendo. Seguí las indicaciones de Protección Civil."
+    "nivel": 2,
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. La ciudad tiene defensas: el peligro es para quienes viven fuera de ellas, en la costa, las islas y los barrios bajos. Si es tu caso, seguí las indicaciones de Protección Civil."
    },
    "man": {
-    "nivel": 3,
-    "titulo": "El río pasó el nivel de evacuación",
-    "texto": "El río Paraná está muy alto y sigue subiendo. Seguí las indicaciones de Protección Civil."
+    "nivel": 2,
+    "titulo": "Costa e islas: el río pasó el nivel de evacuación",
+    "texto": "El río Paraná está muy alto y sigue subiendo. La ciudad tiene defensas: el peligro es para quienes viven fuera de ellas, en la costa, las islas y los barrios bajos. Si es tu caso, seguí las indicaciones de Protección Civil."
    }
   },
   {
@@ -11654,16 +11654,16 @@
     0.1,
     0.0
    ],
-   "rio": "Paraná en Santa Fe",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -11676,7 +11676,7 @@
     0.0,
     1.2
    ],
-   "rio": "Paraná en San Lorenzo (San Martín)",
+   "rio": "Paraná entre San Lorenzo (San Martín) y Rosario",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -11742,16 +11742,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Reconquista y Esquina",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 3,
+    "titulo": "El río puede llegar al nivel de evacuación",
+    "texto": "Mañana el río Paraná puede llegar al nivel de evacuación. Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante hoy."
    }
   },
   {
@@ -11786,16 +11786,16 @@
     0.0,
     0.9
    ],
-   "rio": "Paraná en Villa Constitución",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -11874,16 +11874,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre La Paz y Santa Fe",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 1,
+    "titulo": "El río está subiendo",
+    "texto": "El río Paraná sube y se acerca al nivel de alerta. Estate atento a las zonas bajas cerca de la costa."
    }
   },
   {
@@ -11962,16 +11962,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Empedrado y Bella Vista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    }
   },
   {
@@ -12160,16 +12160,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná en Diamante",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -12270,16 +12270,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Esquina y La Paz",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 1,
+    "titulo": "El río está subiendo",
+    "texto": "El río Paraná sube y se acerca al nivel de alerta. Estate atento a las zonas bajas cerca de la costa."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "Puede entrar agua en las zonas bajas",
+    "texto": "El río Paraná sigue subiendo: mañana puede pasar el nivel de alerta y llegar a las calles más bajas cerca de la costa."
    }
   },
   {
@@ -12380,16 +12380,16 @@
     0.3,
     0.2
    ],
-   "rio": "Paraná en Santa Fe",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -12424,7 +12424,7 @@
     0.0,
     0.1
    ],
-   "rio": "Paraná en Paraná",
+   "rio": "Paraná en Santa Fe",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -12776,16 +12776,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre La Paz y Santa Fe",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes y el río está normal."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
    }
   },
   {
@@ -12952,7 +12952,7 @@
     0.2,
     0.0
    ],
-   "rio": "Paraná en Santa Fe",
+   "rio": "Paraná entre Santa Fe y Diamante",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -13018,16 +13018,16 @@
     0.0,
     0.6
    ],
-   "rio": "Paraná en Rosario",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -13150,16 +13150,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná entre Empedrado y Bella Vista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    }
   },
   {
@@ -13260,16 +13260,16 @@
     0.0,
     0.8
    ],
-   "rio": "Paraná en Villa Constitución",
+   "rio": null,
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes y el río está normal."
+    "texto": "No se esperan lluvias fuertes."
    },
    "man": {
     "nivel": 0,
     "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni que el río pase la alerta."
+    "texto": "No se esperan lluvias fuertes."
    }
   },
   {
@@ -13282,7 +13282,7 @@
     0.0,
     0.3
    ],
-   "rio": "Paraná en San Lorenzo (San Martín)",
+   "rio": "Paraná entre Diamante y San Lorenzo (San Martín)",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -13656,7 +13656,7 @@
     0.0,
     0.6
    ],
-   "rio": "Paraná en Rosario",
+   "rio": "Paraná entre Rosario y Villa Constitución",
    "hoy": {
     "nivel": 0,
     "titulo": "Tranquilo",
@@ -13744,16 +13744,16 @@
     0.0,
     0.0
    ],
-   "rio": null,
+   "rio": "Paraná en Bella Vista",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes."
+    "nivel": 2,
+    "titulo": "El río está alto",
+    "texto": "El río Paraná pasó el nivel de alerta y sigue subiendo. Las zonas bajas cerca de la costa pueden tener agua."
    }
   },
   {
@@ -13917,7 +13917,7 @@
    "lo": -61.9608,
    "tipo": "llanura",
    "mm": [
-    0.8,
+    0.7,
     0.3
    ],
    "rio": null,
