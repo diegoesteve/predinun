@@ -181,8 +181,8 @@ async function pintarAlto(x, b, peor) {
   const v = datos && ((b && datos[b]) || datos['']);
   if (!v) return;
   const agua = x.tipo === 'sierras' ? 'del arroyo' : 'del río o el canal';
-  const propio = v.h != null && v.h >= (x.tipo === 'sierras' ? 8 : 4)
-    ? `<p class="nota">${b ? 'Tu barrio está' : 'El centro está'} unos ${Math.round(v.h)} m por encima ${agua} más cercano.</p>` : '';
+  // La altura del propio barrio no se muestra: el relieve satelital falla en islas y bañados (Alto Verde da 10 m) y podría tranquilizar de más.
+  const propio = '';
   caja.className = 'caja' + (peor >= 2 ? ' n' + peor : '');
   caja.hidden = false;
   if (!v.d) {
