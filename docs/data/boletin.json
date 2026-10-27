@@ -1,7 +1,7 @@
 {
  "generado": "2026-10-26 21:00",
  "horas": 48,
- "smap_atraso_dias": 2.2,
+ "smap_atraso_dias": 2.1,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
@@ -20,10 +20,10 @@
      "cuando": "2026-10-27 14:00"
     },
     "ECMWF": {
-     "max_3h_mm": 2.5,
+     "max_3h_mm": 3.9,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 16:00"
+     "cuando": "2026-10-27 15:00"
     }
    },
    "ensambles": {
@@ -36,12 +36,24 @@
    "suelo": {
     "smap_m3m3": 0.124,
     "smap_percentil": 95,
-    "smap_fecha": "2026-10-24 19:30 UTC",
+    "smap_fecha": "2026-10-24 22:30 UTC",
     "percentil": 95,
     "es_estimado": false,
     "estado": "saturado"
    },
-   "secado": null
+   "secado": {
+    "dias_atras": 10,
+    "dias_adelante": 7,
+    "et0_ult_mm": 31.1,
+    "et0_ult_normal_mm": 46.0,
+    "et0_ult_pct": 68,
+    "radiacion_ult_pct": 80,
+    "nubosidad_ult_media": 73,
+    "nubosidad_ult_normal": 43,
+    "dias_nublados_ult": 7,
+    "et0_prox_mm": 28.1,
+    "et0_prox_pct": 82
+   }
   },
   {
    "cuenca": "Cosquin",
@@ -60,10 +72,10 @@
      "cuando": "2026-10-27 12:00"
     },
     "ECMWF": {
-     "max_3h_mm": 3.0,
+     "max_3h_mm": 2.4,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 23:00"
+     "cuando": "2026-10-27 15:00"
     }
    },
    "ensambles": {
@@ -76,9 +88,9 @@
    "suelo": {
     "smap_m3m3": 0.133,
     "smap_percentil": 99,
-    "smap_fecha": "2026-10-24 19:30 UTC",
+    "smap_fecha": "2026-10-24 22:30 UTC",
     "estimado_hoy_m3m3": 0.125,
-    "estimado_hoy_percentil": 92,
+    "estimado_hoy_percentil": 91,
     "percentil": 99,
     "es_estimado": false,
     "estado": "saturado"
@@ -93,8 +105,8 @@
     "nubosidad_ult_media": 84,
     "nubosidad_ult_normal": 43,
     "dias_nublados_ult": 8,
-    "et0_prox_mm": 27.9,
-    "et0_prox_pct": 86
+    "et0_prox_mm": 26.7,
+    "et0_prox_pct": 83
    }
   },
   {
@@ -124,8 +136,8 @@
    "suelo": {
     "smap_m3m3": 0.157,
     "smap_percentil": 99,
-    "smap_fecha": "2026-10-24 19:30 UTC",
-    "estimado_hoy_m3m3": 0.152,
+    "smap_fecha": "2026-10-24 22:30 UTC",
+    "estimado_hoy_m3m3": 0.151,
     "estimado_hoy_percentil": 98,
     "percentil": 99,
     "es_estimado": false,
@@ -141,8 +153,8 @@
     "nubosidad_ult_media": 81,
     "nubosidad_ult_normal": 44,
     "dias_nublados_ult": 8,
-    "et0_prox_mm": 27.5,
-    "et0_prox_pct": 86
+    "et0_prox_mm": 27.1,
+    "et0_prox_pct": 85
    }
   },
   {
@@ -162,10 +174,10 @@
      "cuando": "2026-10-27 14:00"
     },
     "ECMWF": {
-     "max_3h_mm": 13.9,
+     "max_3h_mm": 4.7,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-10-27 22:00"
+     "cuando": "2026-10-27 23:00"
     }
    },
    "ensambles": {
@@ -173,19 +185,18 @@
     "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
-   "nivel": "naranja",
-   "nivel_por_lluvia": "amarillo",
+   "nivel": "verde",
+   "nivel_por_lluvia": "verde",
    "suelo": {
-    "smap_m3m3": 0.179,
+    "smap_m3m3": 0.178,
     "smap_percentil": 90,
-    "smap_fecha": "2026-10-24 19:30 UTC",
-    "estimado_hoy_m3m3": 0.166,
-    "estimado_hoy_percentil": 79,
+    "smap_fecha": "2026-10-24 22:30 UTC",
+    "estimado_hoy_m3m3": 0.165,
+    "estimado_hoy_percentil": 77,
     "percentil": 90,
     "es_estimado": false,
     "estado": "saturado"
    },
-   "agravado_por_suelo": true,
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
@@ -196,8 +207,8 @@
     "nubosidad_ult_media": 73,
     "nubosidad_ult_normal": 43,
     "dias_nublados_ult": 8,
-    "et0_prox_mm": 30.6,
-    "et0_prox_pct": 88
+    "et0_prox_mm": 29.4,
+    "et0_prox_pct": 85
    }
   }
  ],
@@ -304,27 +315,27 @@
     "suelo_saturado": true,
     "prob": [
      0.0,
-     0.12,
+     0.18,
      0.01,
      0.03,
      0.0,
-     0.06,
-     0.12,
-     0.1,
-     0.1,
-     0.04
+     0.07,
+     0.08,
+     0.04,
+     0.08,
+     0.05
     ],
     "mm": [
      0.0,
-     4.3,
-     0.4,
-     1.1,
-     0.1,
-     1.9,
-     4.2,
-     3.4,
-     3.5,
-     2.4
+     5.8,
+     0.6,
+     1.4,
+     0.2,
+     2.7,
+     4.1,
+     2.7,
+     2.9,
+     2.9
     ]
    }
   }
