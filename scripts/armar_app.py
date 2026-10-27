@@ -23,7 +23,23 @@ from alerta import config as cfg   # noqa: E402
 DD = cfg.DOCS_DATA
 SMN_NIVEL = {'amarillo': 1, 'naranja': 2, 'rojo': 3}
 COLOR_SMN = {'amarillo': 'amarilla', 'naranja': 'naranja', 'rojo': 'roja'}
-RIO_KM = 20            # una localidad «tiene río» si la escala está a menos de esto
+RIO_KM = 20            # una localidad «tiene río» si la escala está a menos de esto (Salado)
+
+# Costa santafesina del Paraná (y del San Javier, su brazo): borde oeste del valle, de norte a sur, por los pueblos de la
+# costa. Las localidades a menos de COSTA_KM de esta línea toman el Paraná aunque la escala quede lejos o del otro lado
+# (Las Toscas, Villa Ocampo y Tacuarendí no tienen escala propia: la más cercana es Bella Vista, en Corrientes).
+COSTA_PARANA = [(-28.04, -59.22), (-28.23, -59.26), (-28.35, -59.25), (-28.49, -59.28), (-29.07, -59.53), (-29.24, -59.60),
+                (-29.50, -59.74), (-29.91, -59.82), (-30.58, -59.93), (-30.88, -60.03), (-31.10, -60.09), (-31.20, -60.16),
+                (-31.42, -60.33), (-31.55, -60.52), (-31.64, -60.70), (-31.97, -60.92), (-32.43, -60.82), (-32.72, -60.73),
+                (-32.95, -60.64), (-33.24, -60.33)]
+COSTA_KM = 10
+# Escalas del Paraná para la costa santafesina, de norte a sur: para un pueblo entre dos escalas se interpola por
+# latitud cuánto le falta (o le sobra) al río para la alerta y la evacuación. Quedan afuera las del otro lado del valle
+# que tienen otra referencia (Goya, Paraná, Victoria).
+CADENA_PARANA = [21, 22, 24, 25, 26, 30, 31, 33, 34, 35]
+# Ciudades con defensas contra el Paraná: el nivel de evacuación de la escala es para la costa, las islas y los barrios
+# fuera de las defensas, no para toda la ciudad.
+CON_DEFENSAS = {'Santa Fe', 'Reconquista'}
 DIAS = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo']
 
 
@@ -185,6 +201,46 @@ def nivel_rio(h, r, subiendo):
     return 0
 
 
+def km_a_costa(la, lo):
+    def seg(p, a, b):
+        # distancia de p al segmento a-b, en un plano local (km)
+        c = math.cos(math.radians(p[0]))
+        ax, ay, bx, by, px, py = a[1] * c * 111.3, a[0] * 111.3, b[1] * c * 111.3, b[0] * 111.3, p[1] * c * 111.3, p[0] * 111.3
+        dx, dy = bx - ax, by - ay
+        t = max(0, min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy or 1)))
+        return math.hypot(px - ax - t * dx, py - ay - t * dy)
+    return min(seg((la, lo), COSTA_PARANA[i], COSTA_PARANA[i + 1]) for i in range(len(COSTA_PARANA) - 1))
+
+
+def parana_en(la, rios, manana):
+    """Escala «virtual» del Paraná frente a un pueblo de la costa: interpola por latitud entre la escala de arriba y la de
+    abajo cuánto está el río sobre (o bajo) la alerta y la evacuación, hoy y mañana. Alerta = 0 m."""
+    por_id = {r['id']: r for r in rios}
+    cadena = [por_id[i] for i in CADENA_PARANA if i in por_id and por_id[i].get('altura_m') is not None and por_id[i].get('alerta_m') is not None]
+    if not cadena:
+        return None
+    cadena.sort(key=lambda r: -r['lat'])
+
+    def datos(r):
+        a = r['alerta_m']
+        e = r['evacuacion_m'] if r.get('evacuacion_m') is not None else a + 0.4
+        hm = altura_manana(r, manana)
+        return (r['altura_m'] - a, e - a, (hm - a) if hm is not None else None, r.get('tendencia_m_dia') or 0)
+    if la >= cadena[0]['lat']:
+        a = b = cadena[0]
+    elif la <= cadena[-1]['lat']:
+        a = b = cadena[-1]
+    else:
+        k = next(i for i in range(len(cadena) - 1) if cadena[i]['lat'] >= la >= cadena[i + 1]['lat'])
+        a, b = cadena[k], cadena[k + 1]
+    t = 0 if a is b else (a['lat'] - la) / (a['lat'] - b['lat'])
+    da, db = datos(a), datos(b)
+    mezcla = lambda i: None if da[i] is None or db[i] is None else da[i] + (db[i] - da[i]) * t
+    nombre = a['nombre'] if a is b or t < .15 else b['nombre'] if t > .85 else f"{a['nombre']} y {b['nombre']}"
+    return {'id': None, 'rio': 'Paraná', 'nombre': nombre, 'entre': a is not b and .15 <= t <= .85,
+            'altura_m': mezcla(0), 'alerta_m': 0.0, 'evacuacion_m': mezcla(1), 'manana_m': mezcla(2), 'tendencia_m_dia': mezcla(3)}
+
+
 def santa_fe(hoy, manana):
     d = leer('santafe.json')
     smn = leer('smn.json')
@@ -193,8 +249,12 @@ def santa_fe(hoy, manana):
     salida = []
     for f in d.get('localidades', []):
         nombre = f['localidad']
-        cerca = sorted(((km(f['lat'], f['lon'], r['lat'], r['lon']), r) for r in rios), key=lambda x: x[0])
-        r = cerca[0][1] if cerca and cerca[0][0] <= RIO_KM else None
+        if km_a_costa(f['lat'], f['lon']) <= COSTA_KM:
+            r = parana_en(f['lat'], [x for x in rios if x['rio'] == 'Paraná'], manana)
+        else:
+            cerca = sorted(((km(f['lat'], f['lon'], x['lat'], x['lon']), x) for x in rios if x['rio'] != 'Paraná'), key=lambda x: x[0])
+            r = cerca[0][1] if cerca and cerca[0][0] <= RIO_KM else None
+        defensas = nombre in CON_DEFENSAS
 
         def lluvia(dia, cuando):
             m3, total = ((f.get('dias') or {}).get(dia) or [0, 0])
@@ -213,24 +273,36 @@ def santa_fe(hoy, manana):
             rio = f"el río {r['rio']}"
             Rio = f"El río {r['rio']}"
             n_hoy = nivel_rio(r['altura_m'], r, subiendo)
-            textos = {3: ('El río pasó el nivel de evacuación', f'{Rio} está muy alto y {"sigue subiendo" if subiendo else "no baja"}. Seguí las indicaciones de Protección Civil.'),
+            sube = 'sigue subiendo' if subiendo else 'no baja'
+            textos = {3: ('Costa e islas: el río pasó el nivel de evacuación',
+                          f'{Rio} está muy alto y {sube}. Si vivís en la costa, en las islas o en un barrio bajo, '
+                          'prepará lo importante y seguí las indicaciones de Protección Civil.'),
                       2: ('El río está alto', f'{Rio} pasó el nivel de alerta{" y sigue subiendo" if subiendo else ""}. Las zonas bajas cerca de la costa pueden tener agua.'),
                       1: ('El río está subiendo', f'{Rio} sube y se acerca al nivel de alerta. Estate atento a las zonas bajas cerca de la costa.')}
-            if n_hoy:
-                hoy_m.append(motivo(n_hoy, *textos[n_hoy]))
-            hm = altura_manana(r, manana)
-            n_man = nivel_rio(hm, r, subiendo)
-            if n_man:
-                t = textos[n_man]
-                if n_man > n_hoy:
-                    t = {3: ('El río puede llegar al nivel de evacuación', f'Mañana {rio} puede llegar al nivel de evacuación. Prepará lo importante hoy.'),
+            if defensas:
+                # Con defensas, la evacuación es para lo que queda afuera: la ciudad no está toda en peligro.
+                textos[3] = ('Costa e islas: el río pasó el nivel de evacuación',
+                             f'{Rio} está muy alto y {sube}. La ciudad tiene defensas: el peligro es para quienes viven '
+                             'fuera de ellas, en la costa, las islas y los barrios bajos. Si es tu caso, seguí las indicaciones de Protección Civil.')
+            # Con defensas, la evacuación de la escala es para lo que queda afuera: el pueblo no está todo en peligro (nivel 2).
+            tope = 2 if defensas else 3
+            hm = r['manana_m'] if 'manana_m' in r else altura_manana(r, manana)
+            real_hoy, real_man = n_hoy, nivel_rio(hm, r, subiendo)
+            if real_hoy:
+                hoy_m.append(motivo(min(real_hoy, tope), *textos[real_hoy]))
+            if real_man:
+                t = textos[real_man]
+                if real_man > real_hoy:
+                    t = {3: ('El río puede llegar al nivel de evacuación',
+                             f'Mañana {rio} puede llegar al nivel de evacuación. ' + ('La ciudad tiene defensas: si vivís fuera de ellas, en la costa, las islas o un barrio bajo, prepará lo importante hoy.'
+                                                                                     if defensas else 'Si vivís en la costa, en las islas o en un barrio bajo, prepará lo importante hoy.')),
                          2: ('Puede entrar agua en las zonas bajas', f'{Rio} sigue subiendo: mañana puede pasar el nivel de alerta y llegar a las calles más bajas cerca de la costa.'),
-                         1: t}[n_man]
-                man_m.append(motivo(n_man, *t))
+                         1: t}[real_man]
+                man_m.append(motivo(min(real_man, tope), *t))
         dias = f.get('dias') or {}
         salida.append({'n': nombre, 'z': 'sf', 'la': f['lat'], 'lo': f['lon'], 'tipo': 'llanura',
                        'mm': [(dias.get(hoy) or [0, 0])[1], (dias.get(manana) or [0, 0])[1]],
-                       'rio': f"{r['rio']} en {r['nombre']}" if r else None,
+                       'rio': (f"{r['rio']} entre {r['nombre']}" if r.get('entre') else f"{r['rio']} en {r['nombre']}") if r else None,
                        'hoy': resumen(hoy_m, 'No se esperan lluvias fuertes' + (' y el río está normal.' if r else '.')),
                        'man': resumen(man_m, 'No se esperan lluvias fuertes' + (' ni que el río pase la alerta.' if r else '.'))})
     return salida

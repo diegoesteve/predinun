@@ -39,7 +39,7 @@ ARG = timezone(timedelta(hours=-3))
 SITIO = 'https://diegoesteve.github.io/predinun/mapa.html#santafe'
 
 # Estaciones del INA (id de estación = id de la serie observada de altura). De norte a sur.
-PARANA = [23, 24, 25, 26, 30, 29, 31, 32, 33, 34, 35]   # Goya, Reconquista, Esquina, La Paz, Santa Fe, Paraná, Diamante, Victoria, San Lorenzo, Rosario, Villa Constitución
+PARANA = [21, 22, 23, 24, 25, 26, 30, 29, 31, 32, 33, 34, 35]   # Empedrado, Bella Vista (frente a Las Toscas y Villa Ocampo), Goya, Reconquista, Esquina, La Paz, Santa Fe, Paraná, Diamante, Victoria, San Lorenzo, Rosario, Villa Constitución
 SALADO = {105: 105, 175: 175, 103: 103, 1679: 3044}       # estación: serie (Tostado, Emilia, Recreo, Santo Tomé)
 CALIBRADO_PARANA = 289                                    # «tabprono_central»: pronóstico oficial del Paraná medio
 DIAS_VIEJO = 5
