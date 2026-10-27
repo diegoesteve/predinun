@@ -485,8 +485,9 @@ function elegirLocalidad(f) {
 pronostico();
 portada();
 avisoDatosViejos();
-const inicial = location.hash.slice(1);
-mostrar(PESTANAS.includes(inicial) ? inicial : 'inicio');
+const inicial = location.hash.slice(1), pedidaSF = new URLSearchParams(location.search).get('localidad');
+if (inicial === 'santafe' && pedidaSF) irASantaFe(pedidaSF);   // desde la app: la ficha de esa localidad de Santa Fe
+else mostrar(PESTANAS.includes(inicial) ? inicial : 'inicio');
 window.addEventListener('hashchange', () => {
   const p = location.hash.slice(1);
   if (PESTANAS.includes(p)) mostrar(p);

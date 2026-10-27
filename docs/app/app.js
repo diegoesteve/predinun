@@ -296,6 +296,8 @@ function pintarLugar(x0) {
   const texto = `${sel.b || nom(x)}: ${primeroManana ? 'mañana' : 'hoy'} ${((t => t.charAt(0).toLowerCase() + t.slice(1))((primeroManana ? x.man : x.hoy).titulo))}. Mirá cómo está tu barrio:`;
   const enlace = new URL(`?l=${encodeURIComponent(x.n)}&z=${x.z}${sel.b ? '&b=' + encodeURIComponent(sel.b) : ''}`, location.href.split('?')[0]).href;
   $('#b-whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent(`${texto} ${enlace}`);
+  // «Ver todos los datos» abre la zona y la localidad elegidas, no la portada de Córdoba
+  $('#l-todo').href = `../mapa.html?localidad=${encodeURIComponent(x.n)}#${x.z === 'sf' ? 'santafe' : 'riesgo'}`;
   $('#l-fuente').textContent = `Datos de las ${DATOS.generado.slice(11)} del ${DATOS.generado.slice(8, 10)}/${DATOS.generado.slice(5, 7)}. ` +
     (x.tipo === 'sierras' ? 'Radar del OHMC, pronóstico de lluvia y alertas del SMN.' : 'Ríos del INA y Prefectura, pronóstico de lluvia y alertas del SMN.');
   pintarVecinos(x, sel.b, ev);
