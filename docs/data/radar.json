@@ -1,131 +1,62 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-27 20:30",
+ "consultado": "2026-10-27 22:34",
  "radar": "RMA1",
- "observacion": "2026-10-27 20:13",
+ "observacion": "2026-10-27 22:21",
  "nucleos": [
   {
-   "lat": -31.441,
-   "lon": -64.8159,
+   "lat": -31.5221,
+   "lon": -64.7513,
+   "dbz": 46,
+   "max_dbz": 51,
+   "tope_km": 5.4,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
+   "lat": -31.4771,
+   "lon": -64.7944,
    "dbz": 46,
    "max_dbz": 54,
    "tope_km": 9.0
   },
   {
+   "lat": -31.621,
+   "lon": -64.6975,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 4.8,
+   "descartado": "tope bajo (4.8 km)"
+  },
+  {
    "lat": -31.2787,
    "lon": -64.7083,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 2.4,
-   "descartado": "tope bajo (2.4 km)"
-  },
-  {
-   "lat": -31.4861,
-   "lon": -63.7508,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 5.4,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -31.5131,
-   "lon": -63.9015,
-   "dbz": 45,
-   "max_dbz": 53,
-   "tope_km": 5.4,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -31.63,
-   "lon": -64.3103,
-   "dbz": 45,
-   "max_dbz": 53,
-   "tope_km": 4.8,
-   "descartado": "tope bajo (4.8 km)"
-  },
-  {
-   "lat": -31.4951,
-   "lon": -64.7836,
-   "dbz": 45,
-   "max_dbz": 52,
-   "tope_km": 7.2,
-   "descartado": "eco fijo del terreno"
-  },
-  {
-   "lat": -31.657,
-   "lon": -64.0628,
    "dbz": 44,
    "max_dbz": 44,
-   "tope_km": 5.4,
-   "descartado": "tope bajo (5.4 km)"
+   "tope_km": 3.0,
+   "descartado": "tope bajo (3.0 km)"
   },
   {
-   "lat": -31.2246,
-   "lon": -64.7298,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 2.4,
-   "descartado": "tope bajo (2.4 km)"
-  },
-  {
-   "lat": -31.5491,
-   "lon": -63.9768,
-   "dbz": 44,
-   "max_dbz": 48,
-   "tope_km": 4.8,
-   "descartado": "tope bajo (4.8 km)"
-  },
-  {
-   "lat": -31.5581,
-   "lon": -64.7513,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 6.6
-  },
-  {
-   "lat": -31.3238,
-   "lon": -64.4178,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 2.4,
-   "descartado": "tope bajo (2.4 km)"
-  },
-  {
-   "lat": -31.387,
-   "lon": -64.3856,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 1.8,
-   "descartado": "tope bajo (1.8 km)"
-  },
-  {
-   "lat": -31.3599,
-   "lon": -64.1381,
-   "dbz": 43,
-   "max_dbz": 47,
-   "tope_km": 4.8,
-   "descartado": "tope bajo (4.8 km)"
-  },
-  {
-   "lat": -31.639,
-   "lon": -64.1274,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 6.0
-  },
-  {
-   "lat": -32.0695,
-   "lon": -64.1274,
+   "lat": -31.423,
+   "lon": -64.8051,
    "dbz": 42,
-   "max_dbz": 45,
-   "tope_km": 7.2
+   "max_dbz": 42,
+   "tope_km": 9.0
+  },
+  {
+   "lat": -31.5851,
+   "lon": -64.7621,
+   "dbz": 41,
+   "max_dbz": 41,
+   "tope_km": 5.4,
+   "descartado": "tope bajo (5.4 km)"
   },
   {
    "lat": -31.441,
-   "lon": -63.966,
+   "lon": -64.4286,
    "dbz": 41,
    "max_dbz": 41,
-   "tope_km": 6.0
+   "tope_km": 1.2,
+   "descartado": "tope bajo (1.2 km)"
   }
  ],
  "cuencas": {
@@ -136,33 +67,33 @@
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 30.7,
+   "km": 29.5,
    "max_dbz": 54,
    "tope_km": 9.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Cuesta Blanca": {
-   "km": 22.0,
+   "km": 19.5,
    "max_dbz": 54,
    "tope_km": 9.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Mayu Sumaj": {
-   "km": 25.5,
+   "km": 23.5,
    "max_dbz": 54,
    "tope_km": 9.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 23.6,
+   "km": 21.3,
    "max_dbz": 54,
    "tope_km": 9.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 13
 }
