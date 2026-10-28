@@ -1,99 +1,19 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-27 22:34",
+ "consultado": "2026-10-28 04:30",
  "radar": "RMA1",
- "observacion": "2026-10-27 22:21",
+ "observacion": "2026-10-28 04:20",
  "nucleos": [
   {
-   "lat": -31.5221,
-   "lon": -64.7513,
-   "dbz": 46,
-   "max_dbz": 51,
-   "tope_km": 5.4,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -31.4771,
+   "lat": -31.4591,
    "lon": -64.7944,
-   "dbz": 46,
-   "max_dbz": 54,
-   "tope_km": 9.0
-  },
-  {
-   "lat": -31.621,
-   "lon": -64.6975,
    "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 4.8,
-   "descartado": "tope bajo (4.8 km)"
-  },
-  {
-   "lat": -31.2787,
-   "lon": -64.7083,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 3.0,
-   "descartado": "tope bajo (3.0 km)"
-  },
-  {
-   "lat": -31.423,
-   "lon": -64.8051,
-   "dbz": 42,
-   "max_dbz": 42,
-   "tope_km": 9.0
-  },
-  {
-   "lat": -31.5851,
-   "lon": -64.7621,
-   "dbz": 41,
-   "max_dbz": 41,
-   "tope_km": 5.4,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -31.441,
-   "lon": -64.4286,
-   "dbz": 41,
-   "max_dbz": 41,
-   "tope_km": 1.2,
-   "descartado": "tope bajo (1.2 km)"
+   "max_dbz": 50,
+   "tope_km": 3.6,
+   "descartado": "tope bajo (3.6 km)"
   }
  ],
- "cuencas": {
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 54
-  }
- },
- "localidades": {
-  "Villa Carlos Paz": {
-   "km": 29.5,
-   "max_dbz": 54,
-   "tope_km": 9.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 19.5,
-   "max_dbz": 54,
-   "tope_km": 9.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 23.5,
-   "max_dbz": 54,
-   "tope_km": 9.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Tala Huasi": {
-   "km": 21.3,
-   "max_dbz": 54,
-   "tope_km": 9.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  }
- },
- "minutos": 13
+ "cuencas": {},
+ "localidades": {},
+ "minutos": 10
 }
