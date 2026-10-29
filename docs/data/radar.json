@@ -1,15 +1,16 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-29 15:18",
+ "consultado": "2026-10-29 19:55",
  "radar": "RMA1",
- "observacion": "2026-10-29 15:00",
+ "observacion": "2026-10-29 19:39",
  "nucleos": [
   {
-   "lat": -31.2878,
-   "lon": -64.7191,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 6.6
+   "lat": -31.378,
+   "lon": -64.4071,
+   "dbz": 46,
+   "max_dbz": 46,
+   "tope_km": 0.6,
+   "descartado": "tope bajo (0.6 km)"
   },
   {
    "lat": -31.3148,
@@ -20,162 +21,30 @@
    "descartado": "tope bajo (1.2 km)"
   },
   {
-   "lat": -30.7992,
-   "lon": -64.5792,
-   "dbz": 44,
-   "max_dbz": 51,
-   "tope_km": 7.8
-  },
-  {
-   "lat": -30.6994,
-   "lon": -64.5469,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 6.0
-  },
-  {
-   "lat": -31.639,
-   "lon": -64.6975,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 3.0,
-   "descartado": "tope bajo (3.0 km)"
-  },
-  {
-   "lat": -31.4591,
-   "lon": -64.7944,
-   "dbz": 43,
-   "max_dbz": 53,
-   "tope_km": 7.2,
+   "lat": -31.441,
+   "lon": -64.8159,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 8.4,
    "descartado": "eco fijo del terreno"
   },
   {
-   "lat": -31.9442,
-   "lon": -64.9342,
-   "dbz": 43,
-   "max_dbz": 49,
-   "tope_km": 7.2
+   "lat": -31.8994,
+   "lon": -64.4501,
+   "dbz": 44,
+   "max_dbz": 44,
+   "tope_km": 4.2,
+   "descartado": "tope bajo (4.2 km)"
   },
   {
-   "lat": -32.7471,
-   "lon": -63.923,
-   "dbz": 43,
-   "max_dbz": 48,
-   "tope_km": 10.2
-  },
-  {
-   "lat": -30.2717,
-   "lon": -63.7186,
-   "dbz": 43,
-   "max_dbz": 48,
-   "tope_km": 7.2
-  },
-  {
-   "lat": -30.5631,
-   "lon": -64.4931,
-   "dbz": 43,
-   "max_dbz": 46,
-   "tope_km": 6.6
-  },
-  {
-   "lat": -30.9171,
-   "lon": -64.4394,
-   "dbz": 43,
-   "max_dbz": 43,
-   "tope_km": 6.0
-  },
-  {
-   "lat": -30.2535,
-   "lon": -63.9983,
-   "dbz": 42,
-   "max_dbz": 42,
-   "tope_km": 5.4,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -32.8447,
-   "lon": -63.9983,
-   "dbz": 42,
-   "max_dbz": 47,
-   "tope_km": 9.0
-  },
-  {
-   "lat": -31.5941,
-   "lon": -64.5469,
-   "dbz": 42,
-   "max_dbz": 42,
-   "tope_km": 4.8,
-   "descartado": "tope bajo (4.8 km)"
-  },
-  {
-   "lat": -30.6267,
-   "lon": -64.3318,
-   "dbz": 41,
-   "max_dbz": 42,
-   "tope_km": 7.2
+   "lat": -32.9777,
+   "lon": -64.009,
+   "dbz": 40,
+   "max_dbz": 41,
+   "tope_km": 9.6
   }
  ],
- "cuencas": {
-  "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 51
-  }
- },
- "localidades": {
-  "San Marcos Sierras": {
-   "km": 5.4,
-   "max_dbz": 51,
-   "tope_km": 7.8,
-   "cuenca_de": "Rio San Marcos Sierra",
-   "nivel": "intensa"
-  },
-  "Santa María de Punilla": {
-   "km": 25.1,
-   "max_dbz": 51,
-   "tope_km": 6.6,
-   "cuenca_de": "Río Cosquín",
-   "nivel": "intensa"
-  },
-  "Villa Dolores": {
-   "km": 19.9,
-   "max_dbz": 49,
-   "tope_km": 7.2,
-   "cuenca_de": "Canal De Riego",
-   "nivel": "intensa"
-  },
-  "Las Tapias": {
-   "km": 15.3,
-   "max_dbz": 49,
-   "tope_km": 7.2,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "intensa"
-  },
-  "Santa Isabel": {
-   "km": 4.4,
-   "max_dbz": 51,
-   "tope_km": 7.8,
-   "nivel": "intensa"
-  },
-  "San Roque": {
-   "km": 24.8,
-   "max_dbz": 51,
-   "tope_km": 6.6,
-   "cuenca_de": "Lago San Roque",
-   "nivel": "intensa"
-  },
-  "Villa de las Rosas": {
-   "km": 6.0,
-   "max_dbz": 49,
-   "tope_km": 7.2,
-   "cuenca_de": "Arroyo Las Chacras",
-   "nivel": "intensa"
-  },
-  "Charbonier": {
-   "km": 4.1,
-   "max_dbz": 51,
-   "tope_km": 7.8,
-   "nivel": "intensa"
-  }
- },
- "minutos": 19
+ "cuencas": {},
+ "localidades": {},
+ "minutos": 17
 }
