@@ -1,68 +1,8 @@
 {
- "generado": "2026-10-30T06:12:04+00:00",
+ "generado": "2026-10-30T13:19:27+00:00",
  "criterio": "a menos de 5 m sobre un cauce, con un río de más de 20 km² de cuenca a menos de 150 m (MERIT Hydro, 90 m)",
- "bloques_sin_bajar": 15,
+ "bloques_sin_bajar": 13,
  "lugares": [
-  {
-   "osm": "node/12604545143",
-   "tipo": "camping",
-   "nombre": "Camping La Esquina",
-   "lat": -33.14372,
-   "lon": -65.37728,
-   "altura_sobre_cauce_m": 0,
-   "cuenca_rio_cercano_km2": 1.1,
-   "bajo_junto_a_rio": false
-  },
-  {
-   "osm": "node/13015472131",
-   "tipo": "camping",
-   "nombre": "Cámping Municipal",
-   "lat": -33.14527,
-   "lon": -65.08445,
-   "altura_sobre_cauce_m": 0,
-   "cuenca_rio_cercano_km2": 11.1,
-   "bajo_junto_a_rio": false
-  },
-  {
-   "osm": "way/1186126691",
-   "tipo": "camping",
-   "nombre": "",
-   "lat": -33.14447,
-   "lon": -65.37849,
-   "altura_sobre_cauce_m": 0,
-   "cuenca_rio_cercano_km2": 1.1,
-   "bajo_junto_a_rio": false
-  },
-  {
-   "osm": "way/1186126694",
-   "tipo": "camping",
-   "nombre": "",
-   "lat": -33.14405,
-   "lon": -65.37841,
-   "altura_sobre_cauce_m": 0,
-   "cuenca_rio_cercano_km2": 1.1,
-   "bajo_junto_a_rio": false
-  },
-  {
-   "osm": "way/1186126703",
-   "tipo": "camping",
-   "nombre": "",
-   "lat": -33.14404,
-   "lon": -65.37755,
-   "altura_sobre_cauce_m": 0,
-   "cuenca_rio_cercano_km2": 1.1,
-   "bajo_junto_a_rio": false
-  },
-  {
-   "osm": "way/1418093530",
-   "tipo": "camping",
-   "nombre": "Camping Municipal",
-   "lat": -32.94108,
-   "lon": -65.0351,
-   "altura_sobre_cauce_m": 3.6,
-   "cuenca_rio_cercano_km2": 0.0,
-   "bajo_junto_a_rio": false
-  },
   {
    "osm": "node/11330177269",
    "tipo": "camping",
@@ -111,6 +51,46 @@
    "lon": -64.34765,
    "altura_sobre_cauce_m": 11.2,
    "cuenca_rio_cercano_km2": 0.1,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/6177284024",
+   "tipo": "camping",
+   "nombre": "Camping del Complejo Río Conlara",
+   "lat": -32.343,
+   "lon": -65.2148,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 5302.4,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/11837622897",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -32.56504,
+   "lon": -65.25647,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 2984.4,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/12610848209",
+   "tipo": "camping",
+   "nombre": "Camping Municipal",
+   "lat": -32.77218,
+   "lon": -65.36935,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 1259.0,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/12980419105",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -32.31018,
+   "lon": -65.0008,
+   "altura_sobre_cauce_m": 52.2,
+   "cuenca_rio_cercano_km2": 0.3,
    "bajo_junto_a_rio": false
   },
   {
@@ -352,6 +332,16 @@
    "altura_sobre_cauce_m": 0,
    "cuenca_rio_cercano_km2": 3.3,
    "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/12507289367",
+   "tipo": "camping",
+   "nombre": "Camping Municipal de Paso Cabral",
+   "lat": -32.41135,
+   "lon": -64.49862,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 437.9,
+   "bajo_junto_a_rio": true
   },
   {
    "osm": "node/4418164091",
@@ -982,6 +972,286 @@
    "altura_sobre_cauce_m": 0,
    "cuenca_rio_cercano_km2": 205.6,
    "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/2003625142",
+   "tipo": "camping",
+   "nombre": "La Bomba",
+   "lat": -32.18317,
+   "lon": -64.27364,
+   "altura_sobre_cauce_m": 4.8,
+   "cuenca_rio_cercano_km2": 0.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/2110521421",
+   "tipo": "camping",
+   "nombre": "Camping Las Bajadas",
+   "lat": -32.10316,
+   "lon": -64.33793,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 149.4,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/3241835139",
+   "tipo": "camping",
+   "nombre": "El Chino",
+   "lat": -32.16254,
+   "lon": -64.3764,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 3364.7,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/3241836548",
+   "tipo": "camping",
+   "nombre": "Camping Segunda Usina",
+   "lat": -32.16559,
+   "lon": -64.38052,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 3340.1,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/3258313391",
+   "tipo": "camping",
+   "nombre": "Zona de Camping",
+   "lat": -32.16381,
+   "lon": -64.37914,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 3340.8,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/3942519617",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -31.83749,
+   "lon": -64.43231,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 1.2,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/3942519618",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -31.83751,
+   "lon": -64.43298,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 951.1,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/3942519623",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -31.83839,
+   "lon": -64.4328,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 952.3,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/3942519624",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -31.83951,
+   "lon": -64.43509,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 951.1,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/3960140612",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -32.17544,
+   "lon": -64.25093,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 0.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/4769963921",
+   "tipo": "camping",
+   "nombre": "Camping Municipal Almafuerte",
+   "lat": -32.16943,
+   "lon": -64.23233,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 3849.5,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/4783072379",
+   "tipo": "camping",
+   "nombre": "Camping Tercera Usina",
+   "lat": -32.20198,
+   "lon": -64.33138,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 0.2,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/7810732446",
+   "tipo": "camping",
+   "nombre": "Camping Los Nogales",
+   "lat": -32.0304,
+   "lon": -64.46642,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 16.5,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/8284973729",
+   "tipo": "camping",
+   "nombre": "Camping Municipal Rio III",
+   "lat": -32.1606,
+   "lon": -64.11212,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 4202.3,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "node/11393369653",
+   "tipo": "playa",
+   "nombre": "Costa pescador",
+   "lat": -32.18096,
+   "lon": -64.43492,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 0.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "node/12599420382",
+   "tipo": "camping",
+   "nombre": "Camping Municipal",
+   "lat": -32.19369,
+   "lon": -64.48129,
+   "altura_sobre_cauce_m": 3.1,
+   "cuenca_rio_cercano_km2": 0.3,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/135095346",
+   "tipo": "camping",
+   "nombre": "Camping Villa Del Dique",
+   "lat": -32.17424,
+   "lon": -64.4466,
+   "altura_sobre_cauce_m": 3.6,
+   "cuenca_rio_cercano_km2": 0.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/218599907",
+   "tipo": "camping",
+   "nombre": "Camping Municipal",
+   "lat": -32.1903,
+   "lon": -64.40659,
+   "altura_sobre_cauce_m": 8,
+   "cuenca_rio_cercano_km2": 0.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/218599912",
+   "tipo": "playa",
+   "nombre": "Playa Municipal",
+   "lat": -32.18965,
+   "lon": -64.40775,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 0.2,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/314256922",
+   "tipo": "camping",
+   "nombre": "Camping La Cruz",
+   "lat": -32.29838,
+   "lon": -64.48017,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 491.8,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "way/316741436",
+   "tipo": "playa",
+   "nombre": "Playa de los alemanes",
+   "lat": -32.18547,
+   "lon": -64.49071,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 0.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/711882465",
+   "tipo": "camping",
+   "nombre": "",
+   "lat": -32.16168,
+   "lon": -64.11142,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 4202.3,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "way/775640128",
+   "tipo": "camping",
+   "nombre": "Campamentos Embalse Río III",
+   "lat": -32.21963,
+   "lon": -64.42887,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 4.6,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/1284136395",
+   "tipo": "playa",
+   "nombre": "PLAYA AMARILLA",
+   "lat": -32.17409,
+   "lon": -64.25095,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 0.0,
+   "bajo_junto_a_rio": false
+  },
+  {
+   "osm": "way/1284138899",
+   "tipo": "playa",
+   "nombre": "",
+   "lat": -32.15741,
+   "lon": -64.11278,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 4201.6,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "way/1284139824",
+   "tipo": "playa",
+   "nombre": "Isla",
+   "lat": -32.14774,
+   "lon": -64.1197,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 4197.8,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "way/1284144583",
+   "tipo": "playa",
+   "nombre": "",
+   "lat": -32.15221,
+   "lon": -64.13197,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 4194.4,
+   "bajo_junto_a_rio": true
+  },
+  {
+   "osm": "way/1558210819",
+   "tipo": "playa",
+   "nombre": "",
+   "lat": -32.18198,
+   "lon": -64.49238,
+   "altura_sobre_cauce_m": 0,
+   "cuenca_rio_cercano_km2": 0.1,
+   "bajo_junto_a_rio": false
   }
  ]
 }
