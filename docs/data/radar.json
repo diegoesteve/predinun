@@ -1,71 +1,39 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-30 05:56",
+ "consultado": "2026-10-30 12:47",
  "radar": "RMA1",
- "observacion": "2026-10-30 05:43",
+ "observacion": "2026-10-30 12:16",
  "nucleos": [
   {
-   "lat": -31.2878,
-   "lon": -64.7083,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 3.0,
-   "descartado": "tope bajo (3.0 km)"
-  },
-  {
-   "lat": -32.8713,
-   "lon": -65.4291,
-   "dbz": 45,
-   "max_dbz": 55,
-   "tope_km": 11.4
-  },
-  {
-   "lat": -31.441,
-   "lon": -64.4286,
-   "dbz": 44,
-   "max_dbz": 44,
-   "tope_km": 0.6,
-   "descartado": "tope bajo (0.6 km)"
-  },
-  {
-   "lat": -31.4771,
-   "lon": -64.7836,
-   "dbz": 44,
-   "max_dbz": 48,
-   "tope_km": 5.4,
-   "descartado": "tope bajo (5.4 km)"
-  },
-  {
-   "lat": -32.5782,
-   "lon": -64.2457,
-   "dbz": 42,
-   "max_dbz": 42,
-   "tope_km": 8.4
-  },
-  {
-   "lat": -32.5158,
-   "lon": -63.8799,
-   "dbz": 42,
-   "max_dbz": 43,
-   "tope_km": 8.4
-  },
-  {
-   "lat": -32.5693,
+   "lat": -31.7109,
    "lon": -64.5039,
-   "dbz": 40,
-   "max_dbz": 40,
-   "tope_km": 9.0
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 7.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Tilisarao": {
-   "km": 18.9,
-   "max_dbz": 55,
-   "tope_km": 11.4,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+  "Anisacate": {
+   "km": 8.2,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "La Serranita": {
+   "km": 4.9,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "nivel": "intensa"
+  },
+  "La Paisanita": {
+   "km": 2.3,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 31
 }
