@@ -1,50 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-29 19:55",
+ "consultado": "2026-10-29 23:29",
  "radar": "RMA1",
- "observacion": "2026-10-29 19:39",
+ "observacion": "2026-10-29 23:16",
  "nucleos": [
   {
-   "lat": -31.378,
-   "lon": -64.4071,
-   "dbz": 46,
-   "max_dbz": 46,
-   "tope_km": 0.6,
-   "descartado": "tope bajo (0.6 km)"
-  },
-  {
-   "lat": -31.3148,
-   "lon": -64.4178,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 1.2,
-   "descartado": "tope bajo (1.2 km)"
-  },
-  {
-   "lat": -31.441,
-   "lon": -64.8159,
-   "dbz": 45,
-   "max_dbz": 45,
-   "tope_km": 8.4,
-   "descartado": "eco fijo del terreno"
-  },
-  {
-   "lat": -31.8994,
-   "lon": -64.4501,
-   "dbz": 44,
-   "max_dbz": 44,
+   "lat": -31.5131,
+   "lon": -64.7621,
+   "dbz": 47,
+   "max_dbz": 52,
    "tope_km": 4.2,
    "descartado": "tope bajo (4.2 km)"
   },
   {
-   "lat": -32.9777,
-   "lon": -64.009,
-   "dbz": 40,
-   "max_dbz": 41,
-   "tope_km": 9.6
+   "lat": -31.3329,
+   "lon": -64.4178,
+   "dbz": 46,
+   "max_dbz": 46,
+   "tope_km": 1.8,
+   "descartado": "tope bajo (1.8 km)"
+  },
+  {
+   "lat": -30.9261,
+   "lon": -64.3318,
+   "dbz": 44,
+   "max_dbz": 50,
+   "tope_km": 9.0
+  },
+  {
+   "lat": -30.9623,
+   "lon": -64.1704,
+   "dbz": 43,
+   "max_dbz": 43,
+   "tope_km": 6.6
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 17
+ "localidades": {
+  "Ascochinga": {
+   "km": 5.7,
+   "max_dbz": 50,
+   "tope_km": 9.0,
+   "cuenca_de": "Río de San Miguel",
+   "nivel": "intensa"
+  },
+  "Jesús María": {
+   "km": 19.4,
+   "max_dbz": 50,
+   "tope_km": 9.0,
+   "cuenca_de": "Jesus Maria",
+   "nivel": "intensa"
+  },
+  "La Paz": {
+   "km": 11.5,
+   "max_dbz": 50,
+   "tope_km": 9.0,
+   "cuenca_de": "Río Ascochinga",
+   "nivel": "intensa"
+  },
+  "La Pampa": {
+   "km": 4.7,
+   "max_dbz": 50,
+   "tope_km": 9.0,
+   "nivel": "intensa"
+  },
+  "Cañada Martel": {
+   "km": 2.6,
+   "max_dbz": 50,
+   "tope_km": 9.0,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 13
 }
