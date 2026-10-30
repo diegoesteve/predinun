@@ -1,74 +1,70 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-29 23:29",
+ "consultado": "2026-10-30 05:56",
  "radar": "RMA1",
- "observacion": "2026-10-29 23:16",
+ "observacion": "2026-10-30 05:43",
  "nucleos": [
   {
-   "lat": -31.5131,
-   "lon": -64.7621,
-   "dbz": 47,
-   "max_dbz": 52,
-   "tope_km": 4.2,
-   "descartado": "tope bajo (4.2 km)"
+   "lat": -31.2878,
+   "lon": -64.7083,
+   "dbz": 45,
+   "max_dbz": 45,
+   "tope_km": 3.0,
+   "descartado": "tope bajo (3.0 km)"
   },
   {
-   "lat": -31.3329,
-   "lon": -64.4178,
-   "dbz": 46,
-   "max_dbz": 46,
-   "tope_km": 1.8,
-   "descartado": "tope bajo (1.8 km)"
+   "lat": -32.8713,
+   "lon": -65.4291,
+   "dbz": 45,
+   "max_dbz": 55,
+   "tope_km": 11.4
   },
   {
-   "lat": -30.9261,
-   "lon": -64.3318,
+   "lat": -31.441,
+   "lon": -64.4286,
    "dbz": 44,
-   "max_dbz": 50,
-   "tope_km": 9.0
+   "max_dbz": 44,
+   "tope_km": 0.6,
+   "descartado": "tope bajo (0.6 km)"
   },
   {
-   "lat": -30.9623,
-   "lon": -64.1704,
-   "dbz": 43,
+   "lat": -31.4771,
+   "lon": -64.7836,
+   "dbz": 44,
+   "max_dbz": 48,
+   "tope_km": 5.4,
+   "descartado": "tope bajo (5.4 km)"
+  },
+  {
+   "lat": -32.5782,
+   "lon": -64.2457,
+   "dbz": 42,
+   "max_dbz": 42,
+   "tope_km": 8.4
+  },
+  {
+   "lat": -32.5158,
+   "lon": -63.8799,
+   "dbz": 42,
    "max_dbz": 43,
-   "tope_km": 6.6
+   "tope_km": 8.4
+  },
+  {
+   "lat": -32.5693,
+   "lon": -64.5039,
+   "dbz": 40,
+   "max_dbz": 40,
+   "tope_km": 9.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Ascochinga": {
-   "km": 5.7,
-   "max_dbz": 50,
-   "tope_km": 9.0,
-   "cuenca_de": "Río de San Miguel",
-   "nivel": "intensa"
-  },
-  "Jesús María": {
-   "km": 19.4,
-   "max_dbz": 50,
-   "tope_km": 9.0,
-   "cuenca_de": "Jesus Maria",
-   "nivel": "intensa"
-  },
-  "La Paz": {
-   "km": 11.5,
-   "max_dbz": 50,
-   "tope_km": 9.0,
-   "cuenca_de": "Río Ascochinga",
-   "nivel": "intensa"
-  },
-  "La Pampa": {
-   "km": 4.7,
-   "max_dbz": 50,
-   "tope_km": 9.0,
-   "nivel": "intensa"
-  },
-  "Cañada Martel": {
-   "km": 2.6,
-   "max_dbz": 50,
-   "tope_km": 9.0,
-   "nivel": "intensa"
+  "Tilisarao": {
+   "km": 18.9,
+   "max_dbz": 55,
+   "tope_km": 11.4,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
   }
  },
  "minutos": 13
