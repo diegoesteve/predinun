@@ -56,10 +56,10 @@ export default {
 };
 
 // Qué correr con cada horario de wrangler.toml: «repo:workflow» separados por coma
+// (Piedrazón tiene su propio despertador: acá solo predinun, para no correr dos veces su radar.)
 const DESPERTAR = {
-  '*/15 * * * *': 'diegoesteve/predinun:monitor.yml,diegoesteve/piedrazon:radar.yml',
+  '*/15 * * * *': 'diegoesteve/predinun:monitor.yml',
   '20 */6 * * *': 'diegoesteve/predinun:boletin.yml',
-  '35 */6 * * *': 'diegoesteve/piedrazon:pronostico.yml',
 };
 
 async function despertar(env, cron) {
