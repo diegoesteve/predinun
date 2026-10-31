@@ -1,142 +1,158 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 17:29",
+ "consultado": "2026-10-31 18:59",
  "radar": "RMA1",
- "observacion": "2026-10-31 17:20",
+ "observacion": "2026-10-31 18:50",
  "nucleos": [
   {
-   "lat": -31.621,
-   "lon": -63.7078,
-   "dbz": 54,
+   "lat": -31.2517,
+   "lon": -64.3533,
+   "dbz": 55,
    "max_dbz": 64,
-   "tope_km": 16.4
+   "tope_km": 11.7
   },
   {
-   "lat": -31.5311,
-   "lon": -64.1596,
-   "dbz": 52,
-   "max_dbz": 65,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.3509,
-   "lon": -64.321,
-   "dbz": 51,
+   "lat": -31.0619,
+   "lon": -64.0628,
+   "dbz": 53,
    "max_dbz": 63,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.5581,
-   "lon": -64.6222,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.5401,
-   "lon": -64.3318,
-   "dbz": 51,
-   "max_dbz": 59,
    "tope_km": 11.7
   },
   {
-   "lat": -31.9352,
-   "lon": -64.4178,
-   "dbz": 50,
-   "max_dbz": 58,
+   "lat": -32.756,
+   "lon": -64.8482,
+   "dbz": 53,
+   "max_dbz": 59,
    "tope_km": 11.1
   },
   {
-   "lat": -31.6031,
-   "lon": -63.9337,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 10.6
+   "lat": -31.2697,
+   "lon": -63.7401,
+   "dbz": 52,
+   "max_dbz": 63,
+   "tope_km": 15.8
   },
   {
-   "lat": -31.5491,
-   "lon": -64.0198,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.1053,
-   "lon": -64.7836,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.7468,
-   "lon": -64.1489,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 12.3
+   "lat": -31.3599,
+   "lon": -64.2672,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 11.1
   },
   {
    "lat": -31.405,
-   "lon": -64.4716,
-   "dbz": 48,
-   "max_dbz": 48,
+   "lon": -64.0628,
+   "dbz": 52,
+   "max_dbz": 61,
    "tope_km": 10.0
+  },
+  {
+   "lat": -31.432,
+   "lon": -64.2995,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.2483,
+   "lon": -64.7944,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -31.1071,
+   "lon": -63.7831,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -32.5604,
+   "lon": -64.8267,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -33.0751,
+   "lon": -65.3108,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 12.3
   }
  ],
- "cuencas": {},
- "localidades": {
-  "Villa Carlos Paz": {
-   "km": 2.9,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "nivel": "intensa"
+ "cuencas": {
+  "SierrasChicas": {
+   "nucleos": 1,
+   "max_dbz": 64
   },
-  "Saldan": {
-   "km": 4.4,
-   "max_dbz": 63,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
-  },
-  "La Calera": {
-   "km": 2.4,
-   "max_dbz": 63,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
-  },
-  "Anisacate": {
-   "km": 26.5,
-   "max_dbz": 57,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "La Serranita": {
-   "km": 24.8,
-   "max_dbz": 57,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "Los Molinos": {
-   "km": 8.5,
-   "max_dbz": 58,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio Los Molinos",
-   "nivel": "muy intensa"
-  },
-  "El Durazno": {
-   "km": 10.6,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río El Durazno",
-   "nivel": "intensa"
-  },
-  "La Paisanita": {
-   "km": 22.5,
-   "max_dbz": 57,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+  "Capital": {
+   "nucleos": 1,
+   "max_dbz": 59
   }
  },
- "minutos": 9
+ "localidades": {
+  "Villa Allende": {
+   "km": 4.9,
+   "max_dbz": 64,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo Chico",
+   "nivel": "muy intensa"
+  },
+  "Unquillo": {
+   "km": 3.4,
+   "max_dbz": 64,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Mendiolaza": {
+   "km": 2.0,
+   "max_dbz": 64,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo Santa Lucía",
+   "nivel": "muy intensa"
+  },
+  "Malvinas Argentinas": {
+   "km": 3.1,
+   "max_dbz": 61,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
+  },
+  "Tilisarao": {
+   "km": 35.6,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 26.8,
+   "max_dbz": 54,
+   "tope_km": 11.7,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Villa la Rivera": {
+   "km": 42.2,
+   "max_dbz": 54,
+   "tope_km": 11.7,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Santa Rita": {
+   "km": 36.2,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
+  },
+  "La Perla": {
+   "km": 3.0,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 8
 }

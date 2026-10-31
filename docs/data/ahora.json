@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-10-31 17:29",
- "boletin_generado": "2026-10-31 09:00",
+ "actualizado": "2026-10-31 18:58",
+ "boletin_generado": "2026-10-31 18:00",
  "zonas": [
   {
    "zona": "Córdoba / La Calera",
-   "estado": "normal"
+   "estado": "rojo"
   },
   {
    "zona": "Punilla norte",
-   "estado": "amarillo"
+   "estado": "normal"
   },
   {
    "zona": "Punilla sur / San Antonio",
@@ -16,7 +16,7 @@
   },
   {
    "zona": "Sierras Chicas",
-   "estado": "normal"
+   "estado": "amarillo"
   }
  ],
  "cuencas": [
@@ -24,10 +24,10 @@
    "cuenca": "SierrasChicas",
    "nombre": "Sierras Chicas",
    "zona_estaciones": "Sierras Chicas",
-   "nivel": "amarillo",
-   "estaciones": "verde",
-   "pronostico": "amarillo",
-   "motivo": "pronóstico 48 h: amarillo",
+   "nivel": "naranja",
+   "estaciones": "amarillo",
+   "pronostico": "naranja",
+   "motivo": "estaciones: amarillo; pronóstico 48 h: naranja",
    "suelo": "saturado"
   },
   {
@@ -35,29 +35,29 @@
    "nombre": "Cosquín",
    "zona_estaciones": "Punilla norte",
    "nivel": "amarillo",
-   "estaciones": "amarillo",
-   "pronostico": "amarillo",
-   "motivo": "estaciones: amarillo; pronóstico 48 h: amarillo",
-   "suelo": "saturado"
-  },
-  {
-   "cuenca": "SanAntonio_CPaz",
-   "nombre": "San Antonio / Carlos Paz",
-   "zona_estaciones": "Punilla sur / San Antonio",
-   "nivel": "amarillo",
    "estaciones": "verde",
    "pronostico": "amarillo",
    "motivo": "pronóstico 48 h: amarillo",
    "suelo": "saturado"
   },
   {
-   "cuenca": "Capital",
-   "nombre": "Capital (experimental)",
-   "zona_estaciones": "Córdoba / La Calera",
+   "cuenca": "SanAntonio_CPaz",
+   "nombre": "San Antonio / Carlos Paz",
+   "zona_estaciones": "Punilla sur / San Antonio",
    "nivel": "naranja",
    "estaciones": "verde",
    "pronostico": "naranja",
    "motivo": "pronóstico 48 h: naranja",
+   "suelo": "saturado"
+  },
+  {
+   "cuenca": "Capital",
+   "nombre": "Capital (experimental)",
+   "zona_estaciones": "Córdoba / La Calera",
+   "nivel": "rojo",
+   "estaciones": "rojo",
+   "pronostico": "naranja",
+   "motivo": "estaciones: rojo; pronóstico 48 h: naranja",
    "suelo": "saturado"
   }
  ],
