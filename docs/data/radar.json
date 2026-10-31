@@ -1,142 +1,154 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 19:30",
+ "consultado": "2026-10-31 19:45",
  "radar": "RMA1",
- "observacion": "2026-10-31 19:18",
+ "observacion": "2026-10-31 19:37",
  "nucleos": [
   {
-   "lat": -31.3058,
-   "lon": -64.1812,
+   "lat": -32.159,
+   "lon": -64.2672,
    "dbz": 52,
+   "max_dbz": 55,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.1613,
+   "lon": -63.7293,
+   "dbz": 51,
    "max_dbz": 58,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.1794,
-   "lon": -63.8907,
-   "dbz": 51,
-   "max_dbz": 60,
    "tope_km": 11.1
   },
   {
-   "lat": -31.5131,
-   "lon": -63.8692,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 11.1
+   "lat": -31.3779,
+   "lon": -64.0413,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 9.4
   },
   {
-   "lat": -32.1143,
-   "lon": -64.3748,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -33.0751,
-   "lon": -65.1924,
-   "dbz": 51,
-   "max_dbz": 54,
+   "lat": -32.5604,
+   "lon": -64.7191,
+   "dbz": 50,
+   "max_dbz": 50,
    "tope_km": 11.7
   },
   {
-   "lat": -32.8536,
+   "lat": -32.4268,
    "lon": -64.7406,
    "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 11.7
+   "max_dbz": 53,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.63,
+   "lon": -65.4506,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -32.3911,
+   "lon": -64.0198,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 9.4
   },
   {
    "lat": -32.3108,
-   "lon": -64.6545,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.4713,
-   "lon": -64.7944,
+   "lon": -64.6976,
    "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.159,
+   "lon": -64.4609,
+   "dbz": 48,
    "max_dbz": 52,
-   "tope_km": 11.1
+   "tope_km": 10.6
   },
   {
-   "lat": -33.2784,
-   "lon": -64.4824,
+   "lat": -31.3329,
+   "lon": -65.5905,
    "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.2305,
-   "lon": -64.7406,
-   "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 11.1
+   "max_dbz": 50,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cordoba": {
-   "km": 3.5,
-   "max_dbz": 58,
+  "La Cruz": {
+   "km": 32.3,
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
+  },
+  "Rio de los Sauces": {
+   "km": 11.9,
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "intensa"
+  },
+  "Almafuerte": {
+   "km": 4.3,
+   "max_dbz": 55,
    "tope_km": 10.6,
-   "cuenca_de": "Canal",
    "nivel": "muy intensa"
   },
-  "Tilisarao": {
-   "km": 36.1,
-   "max_dbz": 54,
-   "tope_km": 11.7,
-   "cuenca_de": "sin nombre",
+  "Malvinas Argentinas": {
+   "km": 1.1,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  },
+  "Villa del Dique": {
+   "km": 4.2,
+   "max_dbz": 52,
+   "tope_km": 10.6,
    "nivel": "intensa"
   },
   "Cañada del Sauce": {
-   "km": 17.7,
-   "max_dbz": 52,
-   "tope_km": 11.1,
+   "km": 10.7,
+   "max_dbz": 53,
+   "tope_km": 10.6,
    "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "El Corcovado el Torreon": {
+   "km": 4.2,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Paso Cabral": {
+   "km": 26.2,
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "intensa"
   },
   "Villa la Rivera": {
-   "km": 33.0,
-   "max_dbz": 52,
-   "tope_km": 11.1,
+   "km": 26.0,
+   "max_dbz": 53,
+   "tope_km": 10.6,
    "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
-  "Las Bajadas": {
-   "km": 4.1,
+  "Villa San Antonio": {
+   "km": 10.0,
    "max_dbz": 51,
    "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Santa Rita": {
-   "km": 22.5,
-   "max_dbz": 55,
-   "tope_km": 11.7,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
-  },
-  "El Gateado": {
-   "km": 7.5,
-   "max_dbz": 58,
+  "Villa Rumipal": {
+   "km": 3.0,
+   "max_dbz": 52,
    "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Villa los Llanos Juarez Celman": {
-   "km": 4.7,
-   "max_dbz": 58,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
-  "Parque Norte": {
-   "km": 0.9,
-   "max_dbz": 58,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 8
 }

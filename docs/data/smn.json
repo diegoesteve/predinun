@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-10-31 19:30",
+ "consultado": "2026-10-31 19:45",
  "alertas": [
   {
    "id": "2026_10_31_2003_cap_es",
@@ -106,6 +106,114 @@
      [
       -64.21,
       -31.05
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_10_31_2240_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-10-31T22:40:00-03:00",
+   "hasta": "2026-11-01T00:40:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrastrados por el viento. Cerrá y alejate de puertas y ventanas. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "CORDOBA: CRUZ DEL EJE - ISCHILIN - MINAS - POCHO - PUNILLA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_10_31_2240_cap_es.xml",
+   "desde_local": "31/10 22:40",
+   "hasta_local": "01/11 00:40",
+   "localidades": 42,
+   "poligonos": [
+    [
+     [
+      -65.39,
+      -31.39
+     ],
+     [
+      -65.58,
+      -31.4
+     ],
+     [
+      -65.72,
+      -31.32
+     ],
+     [
+      -65.7,
+      -30.98
+     ],
+     [
+      -65.47,
+      -30.45
+     ],
+     [
+      -64.69,
+      -30.48
+     ],
+     [
+      -64.66,
+      -31.0
+     ],
+     [
+      -64.83,
+      -31.39
+     ],
+     [
+      -65.39,
+      -31.39
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_10_31_2235_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-10-31T22:35:00-03:00",
+   "hasta": "2026-11-01T01:35:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrastrados por el viento. Cerrá y alejate de puertas y ventanas. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "CORDOBA: JUAREZ CELMAN - RIO CUARTO - UNION.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_10_31_2235_cap_es.xml",
+   "desde_local": "31/10 22:35",
+   "hasta_local": "01/11 01:35",
+   "localidades": 1,
+   "poligonos": [
+    [
+     [
+      -64.53,
+      -33.2
+     ],
+     [
+      -64.44,
+      -33.47
+     ],
+     [
+      -64.45,
+      -33.74
+     ],
+     [
+      -63.11,
+      -33.69
+     ],
+     [
+      -63.03,
+      -33.44
+     ],
+     [
+      -63.2,
+      -33.15
+     ],
+     [
+      -63.99,
+      -33.15
+     ],
+     [
+      -64.53,
+      -33.2
      ]
     ]
    ]
@@ -14553,6 +14661,7 @@
   ],
   "Olivares de San Nicolás": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_17",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_90",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_100",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_52"
@@ -14583,6 +14692,7 @@
   ],
   "Huascha": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_17",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_90",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_100",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_52"
@@ -14619,16 +14729,19 @@
   ],
   "San Carlos Minas": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
   "Salsacate": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
   "Cruz de Caña": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14684,6 +14797,7 @@
   ],
   "Tala Cañada": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14699,11 +14813,13 @@
   ],
   "Taninga": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
   "Las Cañadas": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14714,6 +14830,7 @@
   ],
   "La Playa": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14724,11 +14841,13 @@
   ],
   "Characato": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
   "Los Talares": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14744,11 +14863,13 @@
   ],
   "Sauce de los Quevedos": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
   "La Argentina": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14764,16 +14885,19 @@
   ],
   "Piedras Anchas": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
   "Guasapampa": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
   "San Geronimo": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14794,6 +14918,7 @@
   ],
   "Talaini": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14809,11 +14934,13 @@
   ],
   "Cañada de Salas": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
   "Cienaga del Coro": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14829,6 +14956,7 @@
   ],
   "Estancia de Guadalupe": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14839,6 +14967,7 @@
   ],
   "Tosno": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_15",
+   "2026_10_31_2240_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_86",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_35"
   ],
@@ -14859,6 +14988,7 @@
   ],
   "Santa Catalina": [
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_5",
+   "2026_10_31_2235_cap_es",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_96",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_92"
   ],
@@ -15021,6 +15151,69 @@
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_14",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_95",
    "CAP_20261031205741_Tormenta_Llanura_alertas_alertas_34"
+  ],
+  "Villa de Soto": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Cruz del Eje": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Bañado de Soto": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Serrezuela": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Santa Ana": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "La Higuera": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Los Sauces": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Agua de Crespin": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Paraje Puesto del Gallo": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Tres Árboles": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Rumi Huasi": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Piedras Amontonadas": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Paraje Palo Parado": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Iglesia Vieja": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Alto de los Quebrachos": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Canteras Quilpo": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "El Brete": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Las Playas": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Los Chañaritos": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Media Naranja": [
+   "2026_10_31_2240_cap_es"
+  ],
+  "Tuclame": [
+   "2026_10_31_2240_cap_es"
   ]
  },
  "localidades_santafe": {
