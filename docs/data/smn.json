@@ -1,59 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-10-31 20:00",
+ "consultado": "2026-10-31 20:15",
  "alertas": [
-  {
-   "id": "2026_10_31_2003_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-10-31T20:03:00-03:00",
-   "hasta": "2026-10-31T23:03:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
-   "zona": "CORDOBA: COLON - CORDOBA - PUNILLA - RIO PRIMERO - SANTA MARIA.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_10_31_2003_cap_es.xml",
-   "desde_local": "31/10 20:03",
-   "hasta_local": "31/10 23:03",
-   "localidades": 35,
-   "poligonos": [
-    [
-     [
-      -64.19,
-      -31.74
-     ],
-     [
-      -64.45,
-      -31.71
-     ],
-     [
-      -64.64,
-      -31.54
-     ],
-     [
-      -64.49,
-      -31.19
-     ],
-     [
-      -63.87,
-      -31.23
-     ],
-     [
-      -63.87,
-      -31.55
-     ],
-     [
-      -64.18,
-      -31.61
-     ],
-     [
-      -64.19,
-      -31.74
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_10_31_2217_cap_es",
    "tipo": "aviso a corto plazo",
@@ -13924,236 +13872,6 @@
   }
  ],
  "localidades": {
-  "Cordoba": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_10",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_89",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_74",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_32"
-  ],
-  "Villa Carlos Paz": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Saldan": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_10",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_89",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_74",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_32"
-  ],
-  "Cosquin": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Villa Allende": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
-  ],
-  "Unquillo": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
-  ],
-  "Cuesta Blanca": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Mendiolaza": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
-  ],
-  "La Calera": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
-  ],
-  "Alta Gracia": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
-  ],
-  "Cabalango": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "San Antonio de Arredondo": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Santa María de Punilla": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Malvinas Argentinas": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
-  ],
-  "Barrio Sierras de Oro": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
-  ],
-  "Mayu Sumaj": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Estación Juárez Celman": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
-  ],
-  "Tala Huasi": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "San Roque": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Estancia Vieja": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Falda del Carmen": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
-  ],
-  "Pozo del Tala": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
-  ],
-  "Villa Parque Santa Ana": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
-  ],
-  "La Perla": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
-  ],
-  "Las Jarillas": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "El Gateado": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_10",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_89",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_74",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_32"
-  ],
-  "Bialet Masse": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Villa los Llanos Juarez Celman": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
-  ],
-  "Malagueño": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
-  ],
-  "Parque Norte": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
-  ],
-  "Rafael Garcia": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
-  ],
-  "Villa del Prado": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
-  ],
-  "Villa Parque Siquiman": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Villa Rio Icho Cruz": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
-  "Villa Santa Cruz del Lago": [
-   "2026_10_31_2003_cap_es",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
-   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
-  ],
   "Jesús María": [
    "2026_10_31_2217_cap_es",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
@@ -14385,6 +14103,30 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
   ],
+  "Villa Allende": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
+  ],
+  "Unquillo": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
+  ],
+  "Mendiolaza": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
+  ],
+  "La Calera": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
+  ],
   "La Granja": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
@@ -14410,6 +14152,18 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
   ],
   "Agua de Oro": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
+  ],
+  "Malvinas Argentinas": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
+  ],
+  "Estación Juárez Celman": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
@@ -14451,11 +14205,41 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
   ],
+  "Villa los Llanos Juarez Celman": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
+  ],
+  "Parque Norte": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
+  ],
   "Villa Gutierrez": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_11",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_90",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_75",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_33"
+  ],
+  "Cordoba": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_10",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_89",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_74",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_32"
+  ],
+  "Saldan": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_10",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_89",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_74",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_32"
+  ],
+  "El Gateado": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_10",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_89",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_74",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_32"
   ],
   "La Cruz": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
@@ -14464,6 +14248,12 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
   ],
   "Rio de los Sauces": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Alta Gracia": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
@@ -14512,6 +14302,12 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
   ],
   "Potrero de Garay": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Barrio Sierras de Oro": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
@@ -14595,6 +14391,18 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
   ],
+  "Falda del Carmen": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Pozo del Tala": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
+  ],
   "Villa San Isidro": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
@@ -14625,6 +14433,12 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
   ],
+  "Villa Parque Santa Ana": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
+  ],
   "Villa la Rancherita": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
@@ -14632,6 +14446,12 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
   ],
   "Villa Amancay": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "La Perla": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
@@ -14685,7 +14505,25 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
   ],
+  "Malagueño": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Rafael Garcia": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
+  ],
   "Villa Ciudad Parque los Reartes": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_31"
+  ],
+  "Villa del Prado": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_88",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_73",
@@ -14805,6 +14643,26 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_96",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_52"
   ],
+  "Villa Carlos Paz": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Cosquin": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Cuesta Blanca": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Cabalango": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
   "Tanti": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
@@ -14816,6 +14674,16 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Villa Giardino": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "San Antonio de Arredondo": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Santa María de Punilla": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
@@ -14840,6 +14708,16 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
   ],
+  "Mayu Sumaj": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Tala Huasi": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
   "San Esteban": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
@@ -14850,12 +14728,22 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
   ],
+  "San Roque": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
   "Paso de la Pampa": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
   ],
   "La Cumbre": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Estancia Vieja": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
@@ -14890,7 +14778,17 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
   ],
+  "Las Jarillas": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
   "Charbonier": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Bialet Masse": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
@@ -14906,6 +14804,21 @@
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Los Cocos": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Villa Parque Siquiman": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Villa Rio Icho Cruz": [
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
+   "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
+  ],
+  "Villa Santa Cruz del Lago": [
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_16",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_95",
    "CAP_20261031221939_Tormenta_Llanura_alertas_alertas_37"
