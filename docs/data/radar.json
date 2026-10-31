@@ -1,154 +1,89 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 19:45",
+ "consultado": "2026-10-31 20:01",
  "radar": "RMA1",
- "observacion": "2026-10-31 19:37",
+ "observacion": "2026-10-31 19:46",
  "nucleos": [
   {
-   "lat": -32.159,
-   "lon": -64.2672,
-   "dbz": 52,
-   "max_dbz": 55,
-   "tope_km": 10.6
+   "lat": -31.423,
+   "lon": -63.9983,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 10.0
   },
   {
-   "lat": -31.1613,
-   "lon": -63.7293,
+   "lat": -31.7379,
+   "lon": -65.2893,
    "dbz": 51,
-   "max_dbz": 58,
+   "max_dbz": 56,
    "tope_km": 11.1
   },
   {
-   "lat": -31.3779,
-   "lon": -64.0413,
+   "lat": -32.1858,
+   "lon": -64.2242,
    "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -32.6227,
+   "lon": -64.6868,
+   "dbz": 49,
    "max_dbz": 56,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.5604,
-   "lon": -64.7191,
-   "dbz": 50,
-   "max_dbz": 50,
    "tope_km": 11.7
   },
   {
-   "lat": -32.4268,
-   "lon": -64.7406,
-   "dbz": 50,
+   "lat": -33.3225,
+   "lon": -64.2887,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.2305,
+   "lon": -63.8584,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.3198,
+   "lon": -64.6115,
+   "dbz": 49,
    "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.5159,
+   "lon": -64.0843,
+   "dbz": 47,
+   "max_dbz": 48,
    "tope_km": 10.6
-  },
-  {
-   "lat": -31.63,
-   "lon": -65.4506,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 15.2
-  },
-  {
-   "lat": -32.3911,
-   "lon": -64.0198,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.3108,
-   "lon": -64.6976,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.159,
-   "lon": -64.4609,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.3329,
-   "lon": -65.5905,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Cruz": {
-   "km": 32.3,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "intensa"
-  },
-  "Rio de los Sauces": {
-   "km": 11.9,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "intensa"
-  },
   "Almafuerte": {
-   "km": 4.3,
+   "km": 1.4,
    "max_dbz": 55,
-   "tope_km": 10.6,
+   "tope_km": 14.1,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
-  },
-  "Malvinas Argentinas": {
-   "km": 1.1,
-   "max_dbz": 56,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
-  },
-  "Villa del Dique": {
-   "km": 4.2,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Cañada del Sauce": {
-   "km": 10.7,
-   "max_dbz": 53,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "El Corcovado el Torreon": {
-   "km": 4.2,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Paso Cabral": {
-   "km": 26.2,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "intensa"
   },
   "Villa la Rivera": {
-   "km": 26.0,
+   "km": 9.1,
    "max_dbz": 53,
-   "tope_km": 10.6,
+   "tope_km": 11.1,
    "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
-  "Villa San Antonio": {
-   "km": 10.0,
-   "max_dbz": 51,
-   "tope_km": 10.6,
+  "La Cortadera": {
+   "km": 8.6,
+   "max_dbz": 56,
+   "tope_km": 11.1,
    "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Villa Rumipal": {
-   "km": 3.0,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 8
+ "minutos": 15
 }
