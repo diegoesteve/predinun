@@ -1,92 +1,142 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 14:12",
+ "consultado": "2026-10-31 17:29",
  "radar": "RMA1",
- "observacion": "2026-10-31 13:53",
+ "observacion": "2026-10-31 17:20",
  "nucleos": [
   {
-   "lat": -31.675,
-   "lon": -64.4501,
-   "dbz": 55,
-   "max_dbz": 67,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.0528,
-   "lon": -64.0843,
+   "lat": -31.621,
+   "lon": -63.7078,
    "dbz": 54,
-   "max_dbz": 66,
-   "tope_km": 17.0
+   "max_dbz": 64,
+   "tope_km": 16.4
   },
   {
-   "lat": -31.9083,
-   "lon": -64.5469,
+   "lat": -31.5311,
+   "lon": -64.1596,
    "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 15.2
+   "max_dbz": 65,
+   "tope_km": 11.1
   },
   {
-   "lat": -32.0338,
-   "lon": -65.1279,
-   "dbz": 50,
-   "max_dbz": 54,
+   "lat": -31.3509,
+   "lon": -64.321,
+   "dbz": 51,
+   "max_dbz": 63,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.5581,
+   "lon": -64.6222,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.5401,
+   "lon": -64.3318,
+   "dbz": 51,
+   "max_dbz": 59,
    "tope_km": 11.7
   },
   {
-   "lat": -31.8187,
-   "lon": -64.676,
+   "lat": -31.9352,
+   "lon": -64.4178,
+   "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.6031,
+   "lon": -63.9337,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.5491,
+   "lon": -64.0198,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.1053,
+   "lon": -64.7836,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.7468,
+   "lon": -64.1489,
    "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 16.4
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.405,
+   "lon": -64.4716,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alta Gracia": {
-   "km": 2.6,
-   "max_dbz": 67,
-   "tope_km": 14.7,
-   "nivel": "muy intensa"
-  },
-  "Los Reartes": {
-   "km": 2.5,
-   "max_dbz": 60,
-   "tope_km": 15.2,
-   "nivel": "muy intensa"
-  },
-  "Potrero de Garay": {
-   "km": 9.9,
-   "max_dbz": 49,
-   "tope_km": 16.4,
-   "cuenca_de": "Rio San Pedro",
+  "Villa Carlos Paz": {
+   "km": 2.9,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "nivel": "intensa"
   },
-  "Pozo del Tala": {
-   "km": 4.6,
-   "max_dbz": 67,
-   "tope_km": 14.7,
+  "Saldan": {
+   "km": 4.4,
+   "max_dbz": 63,
+   "tope_km": 12.3,
    "nivel": "muy intensa"
   },
-  "La Boca del Río": {
-   "km": 14.4,
-   "max_dbz": 60,
-   "tope_km": 15.2,
-   "cuenca_de": "Río de los Molinos",
+  "La Calera": {
+   "km": 2.4,
+   "max_dbz": 63,
+   "tope_km": 12.3,
    "nivel": "muy intensa"
   },
-  "Villa la Merced": {
-   "km": 11.1,
-   "max_dbz": 60,
-   "tope_km": 15.2,
-   "cuenca_de": "Río de los Molinos",
+  "Anisacate": {
+   "km": 26.5,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
-  "Villa Ciudad Parque los Reartes": {
-   "km": 0.2,
-   "max_dbz": 60,
-   "tope_km": 15.2,
+  "La Serranita": {
+   "km": 24.8,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
+  },
+  "Los Molinos": {
+   "km": 8.5,
+   "max_dbz": 58,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio Los Molinos",
+   "nivel": "muy intensa"
+  },
+  "El Durazno": {
+   "km": 10.6,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Río El Durazno",
+   "nivel": "intensa"
+  },
+  "La Paisanita": {
+   "km": 22.5,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 9
 }
