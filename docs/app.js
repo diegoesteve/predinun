@@ -122,7 +122,7 @@ async function ahora() {
       ? `Nivel ${s.nivel_m} m · subió ${s.subida_1h_m ?? '–'} m en 1 h`
       : `Lluvia 1 h: ${s.lluvia_1h ?? '–'} mm · 3 h: ${s.lluvia_3h ?? '–'} mm · 24 h: ${s.lluvia_24h ?? '–'} mm`;
     marcas.set(s, L.circleMarker([s.lat, s.lon], {
-      radius: s.tipo === 'rio' ? 8 : 6, color: s.tipo === 'rio' ? '#0E5E5A' : '#fff', weight: 2,
+      radius: s.tipo === 'rio' ? 8 : 6, color: s.tipo === 'rio' ? '#1D5C87' : '#fff', weight: 2,
       fillColor: COLOR[s.estado] || COLOR['sin datos'], fillOpacity: .9
     }).bindPopup(`<b>${esc(s.nombre)}</b> (${s.tipo === 'rio' ? 'río' : 'lluvia'})<br>${esc(txt)}<br>${esc(s.hora)} · ${esc(TEXTO[s.estado] || s.estado)}${s.nota ? `<br><i>${esc(s.nota)}</i>` : ''}`)
       .addTo(mapas.estaciones));
@@ -207,7 +207,7 @@ async function riesgo() {
   if (!g) return;
   const estilos = {
     'daño confirmado': { color: '#C0362C', radio: 7, titulo: 'Daños confirmados (2014–2016)' },
-    'tramo de río': { color: '#0E5E5A', radio: 5, titulo: 'Tramos de río inestables o con casas cerca' },
+    'tramo de río': { color: '#1D5C87', radio: 5, titulo: 'Tramos de río inestables o con casas cerca' },
     'microcuenca': { color: '#E07B20', radio: 5, titulo: 'Microcuencas prioritarias' },
     'comunidad análoga': { color: '#5B2A86', radio: 7, titulo: 'Arroyos serranos que entran a un pueblo (más oscuro, más expuesto)' },
     'camping o balneario bajo': { color: '#1F6FB2', radio: 5, titulo: 'Campings y balnearios a menos de 5 m sobre un río' },
@@ -448,7 +448,7 @@ function elegirLocalidad(f) {
     : mapas.riesgo.setView([f.lat, f.lon], 13), 50);
   if (marcaLoc) marcaLoc.remove();
   marcaLoc = L.layerGroup().addTo(mapas.riesgo);
-  (f.arroyos || []).forEach((a, i) => L.circleMarker([a.lat, a.lon], { radius: 11, color: '#0E5E5A', weight: 4, fillColor: '#fff', fillOpacity: .6 })
+  (f.arroyos || []).forEach((a, i) => L.circleMarker([a.lat, a.lon], { radius: 11, color: '#1D5C87', weight: 4, fillColor: '#fff', fillOpacity: .6 })
     .bindTooltip(`${i + 1}. ${esc(a.arroyo)}`, { permanent: true, direction: 'top', offset: [0, -10] }).addTo(marcaLoc));
   const arroyos = (f.arroyos || []).map((a, i) => `<li><button type="button" class="loc-link ver-arroyo" data-i="${i}">${i + 1}. Ver en el mapa</button> <b>${esc(a.arroyo)}</b> ${chipExpo(a.exposicion)} · cuenca de ${Math.round(a.area_km2)} km² · unas ${a.personas} personas cerca del cauce · ${a.margen_min != null && a.margen_min >= 30 ? `hay una estación río arriba que da unas ${Math.round(a.margen_min / 60 * 10) / 10} h de aviso` : 'ninguna estación río arriba da tiempo de avisar'}${a.razones && a.razones.length ? `<br><span class="nota">${esc(a.razones.join('; '))}.</span>` : ''}</li>`).join('');
   const eventos = (f.eventos || []).sort((a, b) => String(b.fecha).localeCompare(a.fecha)).map(e =>
