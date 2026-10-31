@@ -17,6 +17,6 @@ jobs:
             code=$(curl -sS -o resp.txt -w '%{http_code}' -X POST \
               -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
               "https://api.github.com/repos/${item%%:*}/actions/workflows/${item##*:}/dispatches" -d '{"ref":"main"}')
-            echo "$item -> $code"; cat resp.txt; echo
-            [ "$code" = "204" ] || exit 1
-          done
+            echo "::warning::$item -> $code $(head -c 200 resp.txt | tr -d "\n")"
+            [ "$code" = "204" ] || fallo=1
+          done; exit ${fallo:-0}
