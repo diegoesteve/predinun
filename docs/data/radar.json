@@ -1,158 +1,143 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 18:59",
+ "consultado": "2026-10-31 19:20",
  "radar": "RMA1",
- "observacion": "2026-10-31 18:50",
+ "observacion": "2026-10-31 19:09",
  "nucleos": [
   {
-   "lat": -31.2517,
-   "lon": -64.3533,
-   "dbz": 55,
-   "max_dbz": 64,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.0619,
-   "lon": -64.0628,
-   "dbz": 53,
-   "max_dbz": 63,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.756,
-   "lon": -64.8482,
-   "dbz": 53,
-   "max_dbz": 59,
+   "lat": -31.4861,
+   "lon": -63.9337,
+   "dbz": 52,
+   "max_dbz": 57,
    "tope_km": 11.1
   },
   {
-   "lat": -31.2697,
+   "lat": -31.1523,
    "lon": -63.7401,
    "dbz": 52,
-   "max_dbz": 63,
-   "tope_km": 15.8
+   "max_dbz": 64,
+   "tope_km": 14.7
   },
   {
-   "lat": -31.3599,
-   "lon": -64.2672,
+   "lat": -31.3238,
+   "lon": -64.2027,
    "dbz": 52,
-   "max_dbz": 59,
+   "max_dbz": 61,
    "tope_km": 11.1
   },
   {
-   "lat": -31.405,
-   "lon": -64.0628,
+   "lat": -31.1252,
+   "lon": -63.9552,
    "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.432,
-   "lon": -64.2995,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -32.2483,
-   "lon": -64.7944,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -31.1071,
-   "lon": -63.7831,
-   "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -32.5604,
-   "lon": -64.8267,
-   "dbz": 49,
-   "max_dbz": 54,
+   "max_dbz": 63,
    "tope_km": 11.7
   },
   {
-   "lat": -33.0751,
-   "lon": -65.3108,
+   "lat": -32.8181,
+   "lon": -64.7944,
+   "dbz": 52,
+   "max_dbz": 57,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -33.0839,
+   "lon": -65.1924,
+   "dbz": 50,
+   "max_dbz": 52,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.2126,
+   "lon": -64.7836,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.4446,
+   "lon": -64.8697,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.2841,
+   "lon": -64.7083,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.45,
+   "lon": -65.5905,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.6049,
+   "lon": -64.6976,
    "dbz": 48,
    "max_dbz": 50,
-   "tope_km": 12.3
+   "tope_km": 10.0
   }
  ],
- "cuencas": {
-  "SierrasChicas": {
-   "nucleos": 1,
-   "max_dbz": 64
-  },
-  "Capital": {
-   "nucleos": 1,
-   "max_dbz": 59
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "Villa Allende": {
-   "km": 4.9,
-   "max_dbz": 64,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo Chico",
-   "nivel": "muy intensa"
-  },
-  "Unquillo": {
-   "km": 3.4,
-   "max_dbz": 64,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
-  },
-  "Mendiolaza": {
-   "km": 2.0,
-   "max_dbz": 64,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo Santa Lucía",
-   "nivel": "muy intensa"
-  },
-  "Malvinas Argentinas": {
-   "km": 3.1,
+  "Cordoba": {
+   "km": 4.2,
    "max_dbz": 61,
-   "tope_km": 10.0,
+   "tope_km": 11.1,
+   "cuenca_de": "Canal",
    "nivel": "muy intensa"
   },
   "Tilisarao": {
-   "km": 35.6,
-   "max_dbz": 50,
-   "tope_km": 12.3,
+   "km": 37.1,
+   "max_dbz": 52,
+   "tope_km": 11.7,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
   "Cañada del Sauce": {
-   "km": 26.8,
+   "km": 22.5,
    "max_dbz": 54,
-   "tope_km": 11.7,
+   "tope_km": 11.1,
    "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
   "Villa la Rivera": {
-   "km": 42.2,
+   "km": 37.1,
    "max_dbz": 54,
-   "tope_km": 11.7,
+   "tope_km": 11.1,
    "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
   "Santa Rita": {
-   "km": 36.2,
-   "max_dbz": 59,
-   "tope_km": 11.1,
+   "km": 28.6,
+   "max_dbz": 57,
+   "tope_km": 11.7,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
   },
-  "La Perla": {
-   "km": 3.0,
-   "max_dbz": 51,
-   "tope_km": 8.8,
+  "El Gateado": {
+   "km": 9.7,
+   "max_dbz": 61,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Pueblo Escondido": {
+   "km": 2.3,
+   "max_dbz": 54,
+   "tope_km": 11.1,
    "nivel": "intensa"
+  },
+  "Parque Norte": {
+   "km": 3.7,
+   "max_dbz": 61,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 8
+ "minutos": 12
 }
