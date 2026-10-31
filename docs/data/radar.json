@@ -1,10 +1,92 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 08:59",
- "radar": "RMA17",
- "observacion": "2026-10-31 08:25",
- "nucleos": [],
+ "consultado": "2026-10-31 14:12",
+ "radar": "RMA1",
+ "observacion": "2026-10-31 13:53",
+ "nucleos": [
+  {
+   "lat": -31.675,
+   "lon": -64.4501,
+   "dbz": 55,
+   "max_dbz": 67,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -31.0528,
+   "lon": -64.0843,
+   "dbz": 54,
+   "max_dbz": 66,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.9083,
+   "lon": -64.5469,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -32.0338,
+   "lon": -65.1279,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.8187,
+   "lon": -64.676,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 16.4
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 34
+ "localidades": {
+  "Alta Gracia": {
+   "km": 2.6,
+   "max_dbz": 67,
+   "tope_km": 14.7,
+   "nivel": "muy intensa"
+  },
+  "Los Reartes": {
+   "km": 2.5,
+   "max_dbz": 60,
+   "tope_km": 15.2,
+   "nivel": "muy intensa"
+  },
+  "Potrero de Garay": {
+   "km": 9.9,
+   "max_dbz": 49,
+   "tope_km": 16.4,
+   "cuenca_de": "Rio San Pedro",
+   "nivel": "intensa"
+  },
+  "Pozo del Tala": {
+   "km": 4.6,
+   "max_dbz": 67,
+   "tope_km": 14.7,
+   "nivel": "muy intensa"
+  },
+  "La Boca del Río": {
+   "km": 14.4,
+   "max_dbz": 60,
+   "tope_km": 15.2,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa la Merced": {
+   "km": 11.1,
+   "max_dbz": 60,
+   "tope_km": 15.2,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa Ciudad Parque los Reartes": {
+   "km": 0.2,
+   "max_dbz": 60,
+   "tope_km": 15.2,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 20
 }
