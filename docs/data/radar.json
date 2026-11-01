@@ -1,92 +1,86 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 05:45",
+ "consultado": "2026-11-01 06:01",
  "radar": "RMA1",
- "observacion": "2026-11-01 05:31",
+ "observacion": "2026-11-01 05:50",
  "nucleos": [
   {
-   "lat": -30.3537,
-   "lon": -64.5469,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lat": -30.3173,
+   "lon": -64.3963,
+   "dbz": 52,
+   "max_dbz": 58,
    "tope_km": 10.6
   },
   {
-   "lat": -30.5267,
-   "lon": -65.3968,
+   "lat": -30.5722,
+   "lon": -64.7406,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 12.9
+   "max_dbz": 53,
+   "tope_km": 9.4
   },
   {
-   "lat": -30.4084,
-   "lon": -64.0736,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -30.4357,
-   "lon": -64.4824,
+   "lat": -30.3811,
+   "lon": -64.3963,
    "dbz": 48,
    "max_dbz": 50,
    "tope_km": 10.0
   },
   {
-   "lat": -30.6631,
-   "lon": -65.3968,
+   "lat": -30.4903,
+   "lon": -64.278,
    "dbz": 48,
    "max_dbz": 50,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -30.5631,
-   "lon": -63.9445,
-   "dbz": 47,
-   "max_dbz": 47,
    "tope_km": 11.1
   },
   {
-   "lat": -30.6085,
-   "lon": -64.4071,
+   "lat": -30.8536,
+   "lon": -64.6545,
    "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 10.0
+   "max_dbz": 50,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -30.4994,
+   "lon": -65.2462,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.7266,
+   "lon": -65.2462,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.4448,
+   "lon": -63.9122,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada de Rio Pinto": {
-   "km": 19.0,
-   "max_dbz": 47,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
+  "Huascha": {
+   "km": 3.3,
+   "max_dbz": 53,
+   "tope_km": 9.4,
    "nivel": "intensa"
   },
-  "Serrezuela": {
-   "km": 2.8,
+  "Los Pozos": {
+   "km": 4.2,
    "max_dbz": 50,
-   "tope_km": 11.7,
+   "tope_km": 11.1,
    "nivel": "intensa"
   },
-  "Jaime Peter": {
-   "km": 4.0,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Ischilín Viejo": {
-   "km": 2.3,
-   "max_dbz": 47,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "San Pedro de Toyos": {
-   "km": 3.9,
-   "max_dbz": 50,
-   "tope_km": 10.0,
+  "Tuclame": {
+   "km": 2.7,
+   "max_dbz": 49,
+   "tope_km": 11.1,
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
