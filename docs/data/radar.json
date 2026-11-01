@@ -1,59 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 23:30",
+ "consultado": "2026-10-31 23:38",
  "radar": "RMA1",
- "observacion": "2026-10-31 23:17",
+ "observacion": "2026-10-31 23:26",
  "nucleos": [
   {
-   "lat": -30.1804,
-   "lon": -64.3103,
+   "lat": -30.1987,
+   "lon": -64.278,
    "dbz": 50,
    "max_dbz": 54,
    "tope_km": 12.3
   },
   {
-   "lat": -30.7175,
-   "lon": -64.0413,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -30.4084,
-   "lon": -64.1812,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -30.6267,
-   "lon": -65.5259,
+   "lat": -30.1074,
+   "lon": -64.278,
    "dbz": 48,
    "max_dbz": 51,
    "tope_km": 12.9
   },
   {
-   "lat": -30.5358,
-   "lon": -65.5797,
+   "lat": -30.6721,
+   "lon": -65.4614,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.2808,
+   "lon": -64.2995,
    "dbz": 47,
    "max_dbz": 49,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.7357,
+   "lon": -63.9983,
+   "dbz": 47,
+   "max_dbz": 48,
    "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa del Totoral": {
-   "km": 2.9,
-   "max_dbz": 53,
-   "tope_km": 12.3,
+  "San José de las Salinas": {
+   "km": 34.6,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Villa Tulumba": {
-   "km": 4.5,
-   "max_dbz": 52,
-   "tope_km": 12.3,
+  "Quilino": {
+   "km": 18.6,
+   "max_dbz": 49,
+   "tope_km": 11.7,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "La Isabela": {
+   "km": 5.4,
+   "max_dbz": 49,
+   "tope_km": 11.7,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 12
 }
