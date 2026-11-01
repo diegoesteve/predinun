@@ -1,22 +1,22 @@
 {
- "actualizado": "2026-10-31 23:15",
+ "actualizado": "2026-10-31 23:30",
  "boletin_generado": "2026-10-31 21:00",
  "zonas": [
   {
    "zona": "Córdoba / La Calera",
-   "estado": "amarillo"
+   "estado": "naranja"
   },
   {
    "zona": "Punilla norte",
-   "estado": "amarillo"
+   "estado": "rojo"
   },
   {
    "zona": "Punilla sur / San Antonio",
-   "estado": "normal"
+   "estado": "amarillo"
   },
   {
    "zona": "Sierras Chicas",
-   "estado": "amarillo"
+   "estado": "normal"
   }
  ],
  "cuencas": [
@@ -24,20 +24,20 @@
    "cuenca": "SierrasChicas",
    "nombre": "Sierras Chicas",
    "zona_estaciones": "Sierras Chicas",
-   "nivel": "amarillo",
-   "estaciones": "amarillo",
+   "nivel": "verde",
+   "estaciones": "verde",
    "pronostico": "verde",
-   "motivo": "estaciones: amarillo",
+   "motivo": "sin lluvias fuertes ni crecidas",
    "suelo": "normal"
   },
   {
    "cuenca": "Cosquin",
    "nombre": "Cosquín",
    "zona_estaciones": "Punilla norte",
-   "nivel": "amarillo",
-   "estaciones": "amarillo",
+   "nivel": "rojo",
+   "estaciones": "rojo",
    "pronostico": "amarillo",
-   "motivo": "estaciones: amarillo; pronóstico 48 h: amarillo",
+   "motivo": "estaciones: rojo; pronóstico 48 h: amarillo",
    "suelo": "saturado"
   },
   {
@@ -45,19 +45,19 @@
    "nombre": "San Antonio / Carlos Paz",
    "zona_estaciones": "Punilla sur / San Antonio",
    "nivel": "naranja",
-   "estaciones": "verde",
+   "estaciones": "amarillo",
    "pronostico": "naranja",
-   "motivo": "pronóstico 48 h: naranja",
+   "motivo": "estaciones: amarillo; pronóstico 48 h: naranja",
    "suelo": "saturado"
   },
   {
    "cuenca": "Capital",
    "nombre": "Capital (experimental)",
    "zona_estaciones": "Córdoba / La Calera",
-   "nivel": "amarillo",
-   "estaciones": "amarillo",
+   "nivel": "naranja",
+   "estaciones": "naranja",
    "pronostico": "amarillo",
-   "motivo": "estaciones: amarillo; pronóstico 48 h: amarillo",
+   "motivo": "estaciones: naranja; pronóstico 48 h: amarillo",
    "suelo": "saturado"
   }
  ],
