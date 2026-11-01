@@ -1,61 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 16:15",
+ "consultado": "2026-11-01 16:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 16:03",
+ "observacion": "2026-11-01 16:12",
  "nucleos": [
   {
-   "lat": -32.2841,
-   "lon": -64.3425,
-   "dbz": 54,
-   "max_dbz": 63,
+   "lat": -32.2662,
+   "lon": -64.278,
+   "dbz": 53,
+   "max_dbz": 66,
    "tope_km": 17.0
   },
   {
-   "lat": -32.507,
-   "lon": -64.2242,
-   "dbz": 53,
+   "lat": -32.6138,
+   "lon": -63.9552,
+   "dbz": 51,
    "max_dbz": 61,
    "tope_km": 17.0
   },
   {
-   "lat": -32.5782,
-   "lon": -63.9552,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.1322,
-   "lon": -64.0951,
-   "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.3555,
-   "lon": -63.9445,
+   "lat": -32.3287,
+   "lon": -63.9337,
    "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.4951,
-   "lon": -64.7836,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 7.0,
-   "descartado": "eco fijo del terreno"
+   "max_dbz": 55,
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Rio Tercero": {
-   "km": 5.0,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+  "Almafuerte": {
+   "km": 7.3,
+   "max_dbz": 66,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 12
+ "minutos": 18
 }
