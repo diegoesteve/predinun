@@ -1,102 +1,113 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 00:00",
+ "consultado": "2026-11-01 00:15",
  "radar": "RMA1",
- "observacion": "2026-10-31 23:44",
+ "observacion": "2026-11-01 00:02",
  "nucleos": [
   {
-   "lat": -30.1531,
-   "lon": -64.1166,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -30.0526,
-   "lon": -64.1381,
-   "dbz": 49,
+   "lat": -30.0617,
+   "lon": -64.0628,
+   "dbz": 48,
    "max_dbz": 53,
-   "tope_km": 13.5
+   "tope_km": 11.1
   },
   {
-   "lat": -31.3779,
-   "lon": -64.2027,
+   "lat": -31.45,
+   "lon": -63.9768,
    "dbz": 48,
    "max_dbz": 52,
-   "tope_km": 8.8
+   "tope_km": 11.1
   },
   {
-   "lat": -31.4591,
-   "lon": -64.1166,
+   "lat": -30.1531,
+   "lon": -63.966,
    "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 9.4
+   "max_dbz": 49,
+   "tope_km": 11.7
   },
   {
-   "lat": -31.3689,
-   "lon": -64.3533,
+   "lat": -31.3148,
+   "lon": -64.2995,
    "dbz": 48,
-   "max_dbz": 48,
+   "max_dbz": 50,
    "tope_km": 10.0
   },
   {
-   "lat": -31.7468,
-   "lon": -64.009,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -31.3238,
+   "lon": -64.0951,
+   "dbz": 48,
+   "max_dbz": 52,
    "tope_km": 10.6
   },
   {
-   "lat": -31.2607,
-   "lon": -64.3425,
+   "lat": -31.3238,
+   "lon": -64.1812,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.3509,
+   "lon": -63.9983,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.387,
+   "lon": -63.9122,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.0617,
+   "lon": -64.4071,
    "dbz": 47,
    "max_dbz": 48,
-   "tope_km": 10.6
+   "tope_km": 11.1
   }
  ],
- "cuencas": {
-  "SierrasChicas": {
-   "nucleos": 1,
-   "max_dbz": 48
-  },
-  "Capital": {
-   "nucleos": 2,
-   "max_dbz": 52
-  }
- },
+ "cuencas": {},
  "localidades": {
   "Cordoba": {
-   "km": 2.5,
-   "max_dbz": 52,
-   "tope_km": 8.8,
+   "km": 2.2,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "cuenca_de": "Canal",
+   "nivel": "intensa"
+  },
+  "Saldan": {
+   "km": 0.3,
+   "max_dbz": 50,
+   "tope_km": 10.0,
    "nivel": "intensa"
   },
   "Villa Allende": {
-   "km": 3.4,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Chico",
-   "nivel": "intensa"
-  },
-  "Unquillo": {
-   "km": 3.8,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Mendiolaza": {
-   "km": 0.6,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Santa Lucía",
-   "nivel": "intensa"
-  },
-  "La Calera": {
-   "km": 3.3,
-   "max_dbz": 48,
+   "km": 2.7,
+   "max_dbz": 50,
    "tope_km": 10.0,
+   "nivel": "intensa"
+  },
+  "Isla de San Antonio": {
+   "km": 3.1,
+   "max_dbz": 48,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "El Gateado": {
+   "km": 1.8,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Parque Norte": {
+   "km": 2.8,
+   "max_dbz": 51,
+   "tope_km": 10.6,
    "nivel": "intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
