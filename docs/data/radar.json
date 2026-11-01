@@ -1,46 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 18:15",
+ "consultado": "2026-11-01 18:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 18:00",
+ "observacion": "2026-11-01 18:18",
  "nucleos": [
   {
-   "lat": -32.9511,
-   "lon": -65.3753,
-   "dbz": 49,
-   "max_dbz": 52,
+   "lat": -32.9068,
+   "lon": -65.3861,
+   "dbz": 50,
+   "max_dbz": 53,
    "tope_km": 11.7
-  },
-  {
-   "lat": -32.96,
-   "lon": -65.5367,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -33.0131,
-   "lon": -65.4183,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 23.7,
-   "max_dbz": 52,
+   "km": 19.6,
+   "max_dbz": 53,
    "tope_km": 11.7,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
   "Naschel": {
-   "km": 4.5,
-   "max_dbz": 52,
+   "km": 0.7,
+   "max_dbz": 53,
    "tope_km": 11.7,
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
