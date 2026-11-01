@@ -1,10 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 20:30",
+ "consultado": "2026-11-01 20:45",
  "radar": "RMA1",
- "observacion": "2026-11-01 20:15",
- "nucleos": [],
+ "observacion": "2026-11-01 20:34",
+ "nucleos": [
+  {
+   "lat": -32.1053,
+   "lon": -64.6868,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.6
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 15
+ "localidades": {
+  "Amboy": {
+   "km": 12.7,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Amboy",
+   "nivel": "intensa"
+  },
+  "Villa Amancay": {
+   "km": 14.8,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Amboy",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 12
 }
