@@ -1,60 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 02:00",
+ "consultado": "2026-11-01 02:15",
  "radar": "RMA1",
- "observacion": "2026-11-01 01:43",
+ "observacion": "2026-11-01 02:01",
  "nucleos": [
   {
-   "lat": -29.8788,
-   "lon": -64.6007,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 12.3
+   "lat": -29.952,
+   "lon": -64.4501,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 11.7
   },
   {
-   "lat": -31.3058,
-   "lon": -63.9875,
+   "lat": -30.08,
+   "lon": -64.3425,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -30.0983,
-   "lon": -64.5792,
-   "dbz": 48,
-   "max_dbz": 51,
+   "max_dbz": 50,
    "tope_km": 11.1
   },
   {
-   "lat": -31.3509,
-   "lon": -63.7939,
+   "lat": -31.5311,
+   "lon": -63.7078,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.5761,
-   "lon": -63.7401,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.4591,
-   "lon": -63.7724,
-   "dbz": 47,
    "max_dbz": 48,
    "tope_km": 10.0
   },
   {
-   "lat": -31.414,
-   "lon": -63.8692,
+   "lat": -31.5941,
+   "lon": -63.7078,
    "dbz": 47,
-   "max_dbz": 48,
+   "max_dbz": 50,
    "tope_km": 10.0
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "localidades": {
+  "Isla de San Antonio": {
+   "km": 9.1,
+   "max_dbz": 50,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 14
 }
