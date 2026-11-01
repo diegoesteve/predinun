@@ -1,59 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 03:00",
+ "consultado": "2026-11-01 03:15",
  "radar": "RMA1",
- "observacion": "2026-11-01 02:46",
+ "observacion": "2026-11-01 03:05",
  "nucleos": [
   {
-   "lat": -30.0526,
-   "lon": -64.009,
+   "lat": -30.8989,
+   "lon": -64.3856,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -30.917,
-   "lon": -64.7406,
-   "dbz": 48,
-   "max_dbz": 51,
+   "max_dbz": 54,
    "tope_km": 9.4
   },
   {
-   "lat": -31.0619,
-   "lon": -65.257,
-   "dbz": 47,
+   "lat": -30.0708,
+   "lon": -63.7831,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.6267,
+   "lon": -64.8912,
+   "dbz": 48,
    "max_dbz": 49,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.1613,
+   "lon": -65.0526,
+   "dbz": 47,
+   "max_dbz": 47,
    "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Ana": {
-   "km": 26.5,
-   "max_dbz": 49,
+  "Ascochinga": {
+   "km": 11.6,
+   "max_dbz": 54,
    "tope_km": 9.4,
-   "cuenca_de": "Arroyo Agua Blanca",
+   "cuenca_de": "Río de San Miguel",
    "nivel": "intensa"
   },
-  "Rumi Huasi": {
-   "km": 3.9,
-   "max_dbz": 49,
+  "San Carlos Minas": {
+   "km": 5.0,
+   "max_dbz": 47,
    "tope_km": 9.4,
    "nivel": "intensa"
   },
-  "Piedras Amontonadas": {
-   "km": 20.3,
-   "max_dbz": 49,
+  "Jesús María": {
+   "km": 25.2,
+   "max_dbz": 54,
    "tope_km": 9.4,
-   "cuenca_de": "Río Seco",
+   "cuenca_de": "Jesus Maria",
    "nivel": "intensa"
   },
-  "Cienaga del Coro": {
-   "km": 3.6,
-   "max_dbz": 49,
+  "La Paz": {
+   "km": 17.4,
+   "max_dbz": 54,
    "tope_km": 9.4,
+   "cuenca_de": "Río Ascochinga",
+   "nivel": "intensa"
+  },
+  "Media Naranja": {
+   "km": 4.3,
+   "max_dbz": 49,
+   "tope_km": 10.0,
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
