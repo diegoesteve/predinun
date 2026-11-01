@@ -1,46 +1,61 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 15:15",
+ "consultado": "2026-11-01 15:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 14:57",
+ "observacion": "2026-11-01 15:15",
  "nucleos": [
   {
-   "lat": -32.7382,
-   "lon": -64.7191,
-   "dbz": 50,
-   "max_dbz": 58,
+   "lat": -32.4268,
+   "lon": -64.6438,
+   "dbz": 53,
+   "max_dbz": 62,
    "tope_km": 17.0
   },
   {
-   "lat": -32.8625,
-   "lon": -64.8159,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 12.3
+   "lat": -32.6671,
+   "lon": -64.633,
+   "dbz": 53,
+   "max_dbz": 61,
+   "tope_km": 14.7
   },
   {
-   "lat": -32.7915,
-   "lon": -64.7836,
-   "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 11.7
+   "lat": -32.4,
+   "lon": -64.0951,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.5426,
+   "lon": -64.6653,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa el Chacay": {
-   "km": 4.9,
-   "max_dbz": 49,
-   "tope_km": 12.3,
+  "La Cruz": {
+   "km": 17.3,
+   "max_dbz": 62,
+   "tope_km": 17.0,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "muy intensa"
+  },
+  "Rio de los Sauces": {
+   "km": 6.6,
+   "max_dbz": 54,
+   "tope_km": 14.7,
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "intensa"
   },
-  "Santa Rita": {
-   "km": 27.9,
-   "max_dbz": 58,
+  "Paso Cabral": {
+   "km": 13.5,
+   "max_dbz": 62,
    "tope_km": 17.0,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "cuenca_de": "Río de la Cruz",
    "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 15
 }
