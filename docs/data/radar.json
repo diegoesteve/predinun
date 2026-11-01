@@ -1,53 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 05:15",
+ "consultado": "2026-11-01 05:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 05:04",
+ "observacion": "2026-11-01 05:13",
  "nucleos": [
   {
-   "lat": -30.5449,
-   "lon": -64.2565,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -31.1071,
-   "lon": -63.9768,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 10.6
-  },
-  {
    "lat": -30.5813,
-   "lon": -63.8584,
-   "dbz": 48,
+   "lon": -64.1812,
+   "dbz": 49,
    "max_dbz": 52,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.8083,
+   "lon": -64.9988,
+   "dbz": 48,
+   "max_dbz": 51,
    "tope_km": 10.0
   },
   {
-   "lat": -31.1794,
-   "lon": -63.9875,
+   "lat": -30.554,
+   "lon": -63.7831,
    "dbz": 48,
-   "max_dbz": 50,
+   "max_dbz": 52,
    "tope_km": 10.6
   },
   {
-   "lat": -30.8717,
-   "lon": -65.0956,
+   "lat": -31.1704,
+   "lon": -63.8584,
    "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 10.6
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.917,
+   "lon": -64.9988,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.6449,
+   "lon": -64.1812,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.5994,
+   "lon": -65.569,
+   "dbz": 46,
+   "max_dbz": 46,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Pozos": {
-   "km": 2.7,
-   "max_dbz": 54,
-   "tope_km": 12.9,
+  "Villa de Soto": {
+   "km": 4.9,
+   "max_dbz": 51,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
+  "Villa Gutierrez": {
+   "km": 4.2,
+   "max_dbz": 48,
+   "tope_km": 11.7,
    "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
