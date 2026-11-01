@@ -1,40 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 16:30",
+ "consultado": "2026-11-01 16:45",
  "radar": "RMA1",
- "observacion": "2026-11-01 16:12",
+ "observacion": "2026-11-01 16:30",
  "nucleos": [
   {
-   "lat": -32.2662,
-   "lon": -64.278,
+   "lat": -32.1322,
+   "lon": -64.0198,
    "dbz": 53,
-   "max_dbz": 66,
+   "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -32.6138,
-   "lon": -63.9552,
-   "dbz": 51,
-   "max_dbz": 61,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.3287,
-   "lon": -63.9337,
-   "dbz": 49,
-   "max_dbz": 55,
+   "lat": -32.3108,
+   "lon": -63.7939,
+   "dbz": 52,
+   "max_dbz": 60,
    "tope_km": 13.5
+  },
+  {
+   "lat": -32.6227,
+   "lon": -63.8692,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.3198,
+   "lon": -64.0305,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.4892,
+   "lon": -64.0521,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Almafuerte": {
-   "km": 7.3,
-   "max_dbz": 66,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  }
- },
- "minutos": 18
+ "localidades": {},
+ "minutos": 15
 }
