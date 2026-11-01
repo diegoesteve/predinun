@@ -1,334 +1,192 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 21:30",
+ "consultado": "2026-10-31 21:45",
  "radar": "RMA1",
- "observacion": "2026-10-31 21:18",
+ "observacion": "2026-10-31 21:36",
  "nucleos": [
   {
-   "lat": -31.7379,
-   "lon": -63.7616,
+   "lat": -32.0696,
+   "lon": -63.923,
    "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.8097,
-   "lon": -64.3318,
-   "dbz": 51,
    "max_dbz": 58,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -32.1947,
-   "lon": -64.1489,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -30.7811,
-   "lon": -65.1064,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.8456,
-   "lon": -64.4824,
-   "dbz": 50,
-   "max_dbz": 60,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.441,
-   "lon": -64.5685,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.423,
-   "lon": -64.4394,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.666,
-   "lon": -64.3963,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.5941,
-   "lon": -64.2565,
-   "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.0347,
-   "lon": -64.7836,
-   "dbz": 49,
-   "max_dbz": 57,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -31.5851,
-   "lon": -64.5469,
-   "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.9083,
-   "lon": -64.235,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.2878,
-   "lon": -64.4716,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.1053,
-   "lon": -64.3318,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.5693,
-   "lon": -64.4716,
-   "dbz": 48,
-   "max_dbz": 53,
    "tope_km": 11.1
   },
   {
-   "lat": -32.4892,
-   "lon": -64.9557,
-   "dbz": 48,
-   "max_dbz": 51,
+   "lat": -31.8007,
+   "lon": -64.3103,
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.0528,
+   "lon": -64.6545,
+   "dbz": 51,
+   "max_dbz": 57,
    "tope_km": 12.3
   },
   {
-   "lat": -32.4981,
-   "lon": -64.8374,
-   "dbz": 48,
+   "lat": -31.414,
+   "lon": -64.3963,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.6227,
+   "lon": -65.0526,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.6138,
+   "lon": -64.945,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.7629,
+   "lon": -64.6976,
+   "dbz": 49,
    "max_dbz": 53,
    "tope_km": 11.7
   },
   {
-   "lat": -31.3509,
-   "lon": -64.6545,
+   "lat": -32.1769,
+   "lon": -63.9983,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.1232,
+   "lon": -63.8369,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.8808,
+   "lon": -64.7191,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.5581,
+   "lon": -64.2995,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.5722,
+   "lon": -64.9342,
    "dbz": 48,
    "max_dbz": 51,
    "tope_km": 12.3
   },
   {
-   "lat": -30.917,
-   "lon": -64.9127,
+   "lat": -31.7019,
+   "lon": -64.3856,
    "dbz": 47,
-   "max_dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.1794,
+   "lon": -64.5685,
+   "dbz": 47,
+   "max_dbz": 50,
    "tope_km": 12.3
   }
  ],
  "cuencas": {
   "Cosquin": {
    "nucleos": 1,
-   "max_dbz": 54
-  },
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 57
+   "max_dbz": 50
   }
  },
  "localidades": {
-  "Cordoba": {
-   "km": 16.9,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo La Cañada",
-   "nivel": "muy intensa"
-  },
-  "Villa Carlos Paz": {
+  "La Calera": {
    "km": 7.9,
    "max_dbz": 57,
    "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 3.9,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
-  },
-  "Villa de Soto": {
-   "km": 9.2,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Soto",
-   "nivel": "intensa"
-  },
-  "Alta Gracia": {
-   "km": 4.1,
-   "max_dbz": 54,
-   "tope_km": 12.3,
-   "nivel": "intensa"
-  },
-  "San Antonio de Arredondo": {
-   "km": 4.9,
-   "max_dbz": 57,
-   "tope_km": 11.7,
+   "cuenca_de": "Arroyo Canada De Molina",
    "nivel": "muy intensa"
   },
   "Santa María de Punilla": {
-   "km": 3.2,
-   "max_dbz": 54,
-   "tope_km": 11.7,
+   "km": 14.0,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Cosquín",
    "nivel": "intensa"
   },
-  "Rio Tercero": {
+  "Anisacate": {
    "km": 3.7,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Barrio Sierras de Oro": {
-   "km": 4.1,
-   "max_dbz": 56,
+   "max_dbz": 51,
    "tope_km": 11.7,
-   "cuenca_de": "Arroyo Los Morteritos",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
-  "Bañado de Soto": {
-   "km": 4.7,
+  "Villa Larca": {
+   "km": 3.8,
    "max_dbz": 55,
-   "tope_km": 12.3,
+   "tope_km": 12.9,
    "nivel": "muy intensa"
   },
-  "Cortaderas": {
-   "km": 3.5,
-   "max_dbz": 51,
-   "tope_km": 12.3,
-   "nivel": "intensa"
-  },
-  "Cañada del Sauce": {
-   "km": 22.7,
-   "max_dbz": 53,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 3.0,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Tala Huasi": {
+  "Los Sauces": {
    "km": 3.6,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
-  },
-  "Villa la Rivera": {
-   "km": 38.1,
    "max_dbz": 53,
    "tope_km": 11.7,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Villa Elena": {
-   "km": 4.3,
-   "max_dbz": 51,
-   "tope_km": 12.3,
    "nivel": "intensa"
   },
   "San Roque": {
-   "km": 5.3,
-   "max_dbz": 54,
-   "tope_km": 11.7,
+   "km": 20.0,
+   "max_dbz": 50,
+   "tope_km": 12.3,
    "cuenca_de": "Lago San Roque",
    "nivel": "intensa"
   },
   "Dique Chico": {
-   "km": 27.0,
-   "max_dbz": 56,
+   "km": 6.9,
+   "max_dbz": 51,
    "tope_km": 11.7,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Las Cañadas": {
-   "km": 5.3,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "cuenca_de": "Arroyo Cañada Honda",
-   "nivel": "muy intensa"
-  },
-  "Falda del Carmen": {
-   "km": 8.8,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo Almacuna",
-   "nivel": "muy intensa"
-  },
-  "Villa San Isidro": {
-   "km": 5.0,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
-  },
-  "Las Bajadas": {
-   "km": 0.7,
-   "max_dbz": 54,
-   "tope_km": 17.0,
    "nivel": "intensa"
   },
-  "Villa Parque Santa Ana": {
-   "km": 17.3,
-   "max_dbz": 56,
-   "tope_km": 11.7,
+  "San Antonio": {
+   "km": 21.7,
+   "max_dbz": 51,
+   "tope_km": 12.3,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
-  "La Boca del Río": {
-   "km": 4.4,
-   "max_dbz": 60,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
+  "Canteras Quilpo": {
+   "km": 2.7,
+   "max_dbz": 52,
+   "tope_km": 12.3,
+   "nivel": "intensa"
   },
-  "Villa la Merced": {
-   "km": 3.9,
-   "max_dbz": 60,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
-  },
-  "Bialet Masse": {
-   "km": 3.5,
-   "max_dbz": 54,
+  "Costa Azul": {
+   "km": 2.8,
+   "max_dbz": 51,
    "tope_km": 11.7,
    "nivel": "intensa"
   },
   "Despeñaderos": {
-   "km": 3.9,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
-  },
-  "Villa Rio Icho Cruz": {
-   "km": 4.5,
-   "max_dbz": 57,
+   "km": 2.2,
+   "max_dbz": 59,
    "tope_km": 11.7,
    "nivel": "muy intensa"
+  },
+  "Los Chañaritos": {
+   "km": 4.1,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 9
 }
