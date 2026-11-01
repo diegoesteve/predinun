@@ -1,132 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 04:45",
+ "consultado": "2026-11-01 05:00",
  "radar": "RMA1",
- "observacion": "2026-11-01 04:27",
+ "observacion": "2026-11-01 04:46",
  "nucleos": [
   {
-   "lat": -30.5904,
-   "lon": -64.4931,
-   "dbz": 50,
-   "max_dbz": 58,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -30.5994,
-   "lon": -64.1919,
+   "lat": -30.5722,
+   "lon": -64.3856,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.7
+   "max_dbz": 53,
+   "tope_km": 12.3
   },
   {
-   "lat": -31.6121,
-   "lon": -64.2887,
-   "dbz": 48,
-   "max_dbz": 51,
+   "lat": -30.5085,
+   "lon": -64.1059,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 8.8
   },
   {
-   "lat": -30.5631,
-   "lon": -64.988,
+   "lat": -31.7109,
+   "lon": -64.2457,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -30.6812,
-   "lon": -64.1596,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.5671,
-   "lon": -64.4824,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 7.6
-  },
-  {
-   "lat": -31.6031,
-   "lon": -64.3641,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 7.6
+   "max_dbz": 49,
+   "tope_km": 8.2
   },
   {
    "lat": -30.8627,
-   "lon": -64.8374,
+   "lon": -65.257,
    "dbz": 47,
    "max_dbz": 49,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.5813,
-   "lon": -64.9127,
-   "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 10.0
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cruz del Eje": {
-   "km": 13.3,
+  "Cañada de Rio Pinto": {
+   "km": 14.7,
+   "max_dbz": 53,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Piedras Amontonadas": {
+   "km": 4.8,
    "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Cruz Del Eje",
+   "tope_km": 11.7,
    "nivel": "intensa"
   },
-  "Dique Chico": {
-   "km": 15.6,
-   "max_dbz": 48,
-   "tope_km": 7.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Falda del Carmen": {
-   "km": 2.0,
-   "max_dbz": 48,
-   "tope_km": 7.6,
-   "nivel": "intensa"
-  },
-  "Villa Parque Santa Ana": {
-   "km": 2.4,
-   "max_dbz": 48,
-   "tope_km": 7.6,
-   "nivel": "intensa"
-  },
-  "San Antonio": {
-   "km": 23.7,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Los Chañaritos": {
-   "km": 1.3,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Rafael Garcia": {
-   "km": 4.5,
-   "max_dbz": 51,
-   "tope_km": 8.8,
-   "nivel": "intensa"
-  },
-  "Villa del Prado": {
-   "km": 2.5,
-   "max_dbz": 48,
-   "tope_km": 7.6,
-   "nivel": "intensa"
-  },
-  "Villa Gutierrez": {
-   "km": 0.4,
-   "max_dbz": 52,
-   "tope_km": 14.1,
+  "Ischilín": {
+   "km": 2.3,
+   "max_dbz": 53,
+   "tope_km": 12.3,
    "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
