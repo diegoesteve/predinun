@@ -1,25 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 07:45",
+ "consultado": "2026-11-01 08:00",
  "radar": "RMA1",
- "observacion": "2026-11-01 07:21",
+ "observacion": "2026-11-01 07:40",
  "nucleos": [
   {
    "lat": -30.1987,
-   "lon": -64.5577,
-   "dbz": 50,
-   "max_dbz": 58,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -30.372,
-   "lon": -64.2027,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 10.6
+   "lon": -64.4071,
+   "dbz": 53,
+   "max_dbz": 61,
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 24
+ "localidades": {
+  "Villa Quilino": {
+   "km": 5.2,
+   "max_dbz": 61,
+   "tope_km": 12.3,
+   "cuenca_de": "Arroyo Las Chacras",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 21
 }
