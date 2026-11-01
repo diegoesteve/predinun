@@ -1,40 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 15:45",
+ "consultado": "2026-11-01 16:00",
  "radar": "RMA1",
- "observacion": "2026-11-01 15:33",
+ "observacion": "2026-11-01 15:45",
  "nucleos": [
   {
-   "lat": -32.3911,
-   "lon": -64.5039,
-   "dbz": 53,
-   "max_dbz": 63,
+   "lat": -32.3555,
+   "lon": -64.4716,
+   "dbz": 54,
+   "max_dbz": 65,
    "tope_km": 17.0
   },
   {
-   "lat": -32.4892,
-   "lon": -64.0198,
-   "dbz": 53,
-   "max_dbz": 56,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -32.3733,
-   "lon": -64.0628,
+   "lat": -32.3644,
+   "lon": -63.9983,
    "dbz": 52,
-   "max_dbz": 64,
-   "tope_km": 12.9
+   "max_dbz": 61,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.5604,
-   "lon": -64.5577,
+   "lat": -32.507,
+   "lon": -63.9983,
    "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 13.5
+   "max_dbz": 60,
+   "tope_km": 10.6
   },
   {
-   "lat": -32.7204,
-   "lon": -64.5254,
+   "lat": -32.5337,
+   "lon": -64.3748,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.6582,
+   "lon": -64.4286,
    "dbz": 48,
    "max_dbz": 50,
    "tope_km": 12.3
@@ -43,30 +43,18 @@
  "cuencas": {},
  "localidades": {
   "La Cruz": {
-   "km": 5.2,
-   "max_dbz": 63,
+   "km": 5.3,
+   "max_dbz": 65,
    "tope_km": 17.0,
-   "cuenca_de": "Río de la Cruz",
+   "cuenca_de": "Rio La Cruz",
    "nivel": "muy intensa"
   },
-  "Rio de los Sauces": {
-   "km": 4.4,
-   "max_dbz": 57,
-   "tope_km": 13.5,
-   "nivel": "muy intensa"
-  },
-  "Paso Cabral": {
-   "km": 2.4,
-   "max_dbz": 63,
+  "Elena": {
+   "km": 4.6,
+   "max_dbz": 54,
    "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Las Caleras": {
-   "km": 1.6,
-   "max_dbz": 63,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 15
 }
