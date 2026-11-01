@@ -1,73 +1,119 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 03:15",
+ "consultado": "2026-11-01 03:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 03:05",
+ "observacion": "2026-11-01 03:14",
  "nucleos": [
   {
-   "lat": -30.8989,
-   "lon": -64.3856,
-   "dbz": 49,
-   "max_dbz": 54,
+   "lat": -30.9442,
+   "lon": -64.321,
+   "dbz": 50,
+   "max_dbz": 55,
    "tope_km": 9.4
   },
   {
-   "lat": -30.0708,
-   "lon": -63.7831,
-   "dbz": 49,
-   "max_dbz": 53,
+   "lat": -30.654,
+   "lon": -64.8804,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 11.1
   },
   {
-   "lat": -30.6267,
-   "lon": -64.8912,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 10.0
+   "lat": -31.2065,
+   "lon": -64.9773,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 10.6
   },
   {
-   "lat": -31.1613,
-   "lon": -65.0526,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -30.0891,
+   "lon": -63.7078,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.8536,
+   "lon": -64.4609,
+   "dbz": 48,
+   "max_dbz": 50,
    "tope_km": 9.4
+  },
+  {
+   "lat": -31.0257,
+   "lon": -65.4614,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Ascochinga": {
-   "km": 11.6,
-   "max_dbz": 54,
+   "km": 3.7,
+   "max_dbz": 55,
    "tope_km": 9.4,
-   "cuenca_de": "Río de San Miguel",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "San Carlos Minas": {
-   "km": 5.0,
-   "max_dbz": 47,
+   "km": 10.9,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Los Barreales",
+   "nivel": "intensa"
+  },
+  "San Marcos Sierras": {
+   "km": 18.3,
+   "max_dbz": 50,
    "tope_km": 9.4,
+   "cuenca_de": "Rio San Marcos Sierra",
    "nivel": "intensa"
   },
   "Jesús María": {
-   "km": 25.2,
-   "max_dbz": 54,
+   "km": 17.9,
+   "max_dbz": 55,
    "tope_km": 9.4,
    "cuenca_de": "Jesus Maria",
+   "nivel": "muy intensa"
+  },
+  "Capilla del Monte": {
+   "km": 3.9,
+   "max_dbz": 50,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Calabalumba",
    "nivel": "intensa"
   },
   "La Paz": {
-   "km": 17.4,
-   "max_dbz": 54,
+   "km": 9.9,
+   "max_dbz": 55,
    "tope_km": 9.4,
    "cuenca_de": "Río Ascochinga",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
-  "Media Naranja": {
-   "km": 4.3,
-   "max_dbz": 49,
-   "tope_km": 10.0,
+  "La Pampa": {
+   "km": 3.7,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  },
+  "Cañada Martel": {
+   "km": 3.9,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  },
+  "El Brete": {
+   "km": 2.2,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "El Rincon": {
+   "km": 1.2,
+   "max_dbz": 50,
+   "tope_km": 9.4,
    "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 16
 }
