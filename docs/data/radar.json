@@ -1,96 +1,105 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-10-31 23:00",
+ "consultado": "2026-10-31 23:15",
  "radar": "RMA1",
- "observacion": "2026-10-31 22:49",
+ "observacion": "2026-10-31 22:58",
  "nucleos": [
   {
-   "lat": -30.4903,
-   "lon": -64.321,
-   "dbz": 51,
-   "max_dbz": 59,
+   "lat": -30.1896,
+   "lon": -64.4394,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.4812,
+   "lon": -64.278,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 13.5
   },
   {
-   "lat": -30.7266,
-   "lon": -64.2995,
-   "dbz": 50,
+   "lat": -30.6994,
+   "lon": -64.1919,
+   "dbz": 49,
    "max_dbz": 54,
    "tope_km": 12.9
   },
   {
-   "lat": -30.3993,
-   "lon": -64.9665,
+   "lat": -31.0619,
+   "lon": -63.9337,
    "dbz": 49,
-   "max_dbz": 53,
+   "max_dbz": 52,
    "tope_km": 12.3
   },
   {
-   "lat": -31.3599,
-   "lon": -63.8692,
+   "lat": -30.2534,
+   "lon": -64.3748,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.432,
-   "lon": -63.8261,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.423,
-   "lon": -63.7401,
-   "dbz": 48,
-   "max_dbz": 48,
+   "max_dbz": 51,
    "tope_km": 11.7
   },
   {
-   "lat": -31.0528,
-   "lon": -64.0628,
-   "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.1342,
-   "lon": -63.9122,
-   "dbz": 47,
-   "max_dbz": 50,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -30.6085,
-   "lon": -64.4609,
-   "dbz": 47,
+   "lat": -30.372,
+   "lon": -64.3103,
+   "dbz": 48,
    "max_dbz": 49,
    "tope_km": 12.9
   },
   {
-   "lat": -30.4084,
-   "lon": -64.2995,
-   "dbz": 46,
-   "max_dbz": 47,
-   "tope_km": 12.9
+   "lat": -30.5813,
+   "lon": -64.3856,
+   "dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa del Totoral": {
-   "km": 17.9,
-   "max_dbz": 54,
-   "tope_km": 12.9,
+  "Cañada de Rio Pinto": {
+   "km": 15.7,
+   "max_dbz": 50,
+   "tope_km": 12.3,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Deán Funes": {
-   "km": 3.9,
-   "max_dbz": 47,
+  "Villa Quilino": {
+   "km": 3.3,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "cuenca_de": "Arroyo Las Chacras",
+   "nivel": "intensa"
+  },
+  "Ischilín": {
+   "km": 2.0,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "nivel": "intensa"
+  },
+  "Ischilín Viejo": {
+   "km": 4.7,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "nivel": "intensa"
+  },
+  "Las Manzanas": {
+   "km": 1.4,
+   "max_dbz": 54,
    "tope_km": 12.9,
-   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Deán Funes": {
+   "km": 3.2,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "nivel": "intensa"
+  },
+  "Villa Gutierrez": {
+   "km": 3.8,
+   "max_dbz": 54,
+   "tope_km": 12.9,
    "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
