@@ -1,113 +1,134 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 00:15",
+ "consultado": "2026-11-01 00:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 00:02",
+ "observacion": "2026-11-01 00:11",
  "nucleos": [
   {
-   "lat": -30.0617,
-   "lon": -64.0628,
+   "lat": -31.5221,
+   "lon": -64.1274,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.0983,
+   "lon": -65.2355,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.2787,
+   "lon": -64.0951,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.3238,
+   "lon": -64.2027,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.3238,
+   "lon": -64.0305,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.1165,
+   "lon": -63.8907,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.45,
+   "lon": -63.9337,
    "dbz": 48,
    "max_dbz": 53,
    "tope_km": 11.1
   },
   {
-   "lat": -31.45,
-   "lon": -63.9768,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.1531,
-   "lon": -63.966,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.3148,
-   "lon": -64.2995,
+   "lat": -30.0708,
+   "lon": -64.0198,
    "dbz": 48,
    "max_dbz": 50,
-   "tope_km": 10.0
+   "tope_km": 11.1
   },
   {
-   "lat": -31.3238,
-   "lon": -64.0951,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.3238,
-   "lon": -64.1812,
+   "lat": -31.3689,
+   "lon": -64.0843,
    "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.3509,
-   "lon": -63.9983,
-   "dbz": 47,
-   "max_dbz": 49,
    "tope_km": 11.1
   },
   {
-   "lat": -31.387,
-   "lon": -63.9122,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.0617,
-   "lon": -64.4071,
-   "dbz": 47,
+   "lat": -31.405,
+   "lon": -64.0198,
+   "dbz": 48,
    "max_dbz": 48,
    "tope_km": 11.1
+  },
+  {
+   "lat": -31.3329,
+   "lon": -63.9337,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.5221,
+   "lon": -63.9983,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.621,
+   "lon": -63.9122,
+   "dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Cordoba": {
-   "km": 2.2,
+   "km": 4.2,
    "max_dbz": 51,
-   "tope_km": 10.6,
+   "tope_km": 10.0,
    "cuenca_de": "Canal",
    "nivel": "intensa"
   },
-  "Saldan": {
-   "km": 0.3,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Villa Allende": {
-   "km": 2.7,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Isla de San Antonio": {
-   "km": 3.1,
-   "max_dbz": 48,
+  "Malvinas Argentinas": {
+   "km": 3.2,
+   "max_dbz": 51,
    "tope_km": 11.1,
-   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "El Gateado": {
-   "km": 1.8,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Parque Norte": {
+  "Estación Juárez Celman": {
    "km": 2.8,
    "max_dbz": 51,
    "tope_km": 10.6,
    "nivel": "intensa"
+  },
+  "El Gateado": {
+   "km": 3.4,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Parque Norte": {
+   "km": 3.7,
+   "max_dbz": 51,
+   "tope_km": 10.0,
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 19
 }
