@@ -1,73 +1,92 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 05:30",
+ "consultado": "2026-11-01 05:45",
  "radar": "RMA1",
- "observacion": "2026-11-01 05:13",
+ "observacion": "2026-11-01 05:31",
  "nucleos": [
   {
-   "lat": -30.5813,
-   "lon": -64.1812,
+   "lat": -30.3537,
+   "lon": -64.5469,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -30.5267,
+   "lon": -65.3968,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.4084,
+   "lon": -64.0736,
    "dbz": 49,
    "max_dbz": 52,
    "tope_km": 11.7
   },
   {
-   "lat": -30.8083,
-   "lon": -64.9988,
+   "lat": -30.4357,
+   "lon": -64.4824,
    "dbz": 48,
-   "max_dbz": 51,
+   "max_dbz": 50,
    "tope_km": 10.0
   },
   {
-   "lat": -30.554,
-   "lon": -63.7831,
+   "lat": -30.6631,
+   "lon": -65.3968,
    "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.1704,
-   "lon": -63.8584,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -30.917,
-   "lon": -64.9988,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -30.6449,
-   "lon": -64.1812,
-   "dbz": 47,
-   "max_dbz": 48,
+   "max_dbz": 50,
    "tope_km": 11.7
   },
   {
-   "lat": -30.5994,
-   "lon": -65.569,
-   "dbz": 46,
-   "max_dbz": 46,
+   "lat": -30.5631,
+   "lon": -63.9445,
+   "dbz": 47,
+   "max_dbz": 47,
    "tope_km": 11.1
+  },
+  {
+   "lat": -30.6085,
+   "lon": -64.4071,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa de Soto": {
-   "km": 4.9,
-   "max_dbz": 51,
+  "Cañada de Rio Pinto": {
+   "km": 19.0,
+   "max_dbz": 47,
+   "tope_km": 10.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Serrezuela": {
+   "km": 2.8,
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  },
+  "Jaime Peter": {
+   "km": 4.0,
+   "max_dbz": 50,
    "tope_km": 10.0,
    "nivel": "intensa"
   },
-  "Villa Gutierrez": {
-   "km": 4.2,
-   "max_dbz": 48,
-   "tope_km": 11.7,
+  "Ischilín Viejo": {
+   "km": 2.3,
+   "max_dbz": 47,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
+  "San Pedro de Toyos": {
+   "km": 3.9,
+   "max_dbz": 50,
+   "tope_km": 10.0,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
