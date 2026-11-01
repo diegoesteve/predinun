@@ -1,59 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 05:00",
+ "consultado": "2026-11-01 05:15",
  "radar": "RMA1",
- "observacion": "2026-11-01 04:46",
+ "observacion": "2026-11-01 05:04",
  "nucleos": [
   {
-   "lat": -30.5722,
-   "lon": -64.3856,
+   "lat": -30.5449,
+   "lon": -64.2565,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 12.3
+   "max_dbz": 54,
+   "tope_km": 12.9
   },
   {
-   "lat": -30.5085,
-   "lon": -64.1059,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.7109,
-   "lon": -64.2457,
+   "lat": -31.1071,
+   "lon": -63.9768,
    "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 8.2
+   "max_dbz": 52,
+   "tope_km": 10.6
   },
   {
-   "lat": -30.8627,
-   "lon": -65.257,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 11.7
+   "lat": -30.5813,
+   "lon": -63.8584,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.1794,
+   "lon": -63.9875,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -30.8717,
+   "lon": -65.0956,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada de Rio Pinto": {
-   "km": 14.7,
-   "max_dbz": 53,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Piedras Amontonadas": {
-   "km": 4.8,
-   "max_dbz": 49,
-   "tope_km": 11.7,
-   "nivel": "intensa"
-  },
-  "Ischilín": {
-   "km": 2.3,
-   "max_dbz": 53,
-   "tope_km": 12.3,
+  "Los Pozos": {
+   "km": 2.7,
+   "max_dbz": 54,
+   "tope_km": 12.9,
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 11
 }
