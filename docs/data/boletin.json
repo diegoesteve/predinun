@@ -113,9 +113,15 @@
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
-    "ICON": {
-     "max_3h_mm": 4.6,
-     "umbral_mm": 9.7,
+    "GFS": {
+     "max_3h_mm": 3.3,
+     "umbral_mm": 10.1,
+     "fuente_umbral": "24 h antes",
+     "cuando": "2026-11-01 03:00"
+    },
+    "ECMWF": {
+     "max_3h_mm": 2.0,
+     "umbral_mm": 8.8,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-11-01 05:00"
     },
@@ -314,27 +320,27 @@
     "nombre": "Capital (experimental)",
     "suelo_saturado": true,
     "prob": [
-     0.64,
+     0.38,
+     0.09,
+     0.22,
+     0.05,
+     0.0,
+     0.01,
+     0.01,
+     0.05,
      0.06,
-     0.13,
-     0.02,
-     0.0,
-     0.0,
-     0.0,
-     0.0,
-     0.02,
-     0.0
+     0.01
     ],
     "mm": [
-     12.5,
-     2.1,
-     5.3,
-     0.7,
+     10.2,
+     3.8,
+     8.4,
+     1.5,
      0.0,
      0.0,
      0.0,
      0.0,
-     0.0,
+     0.1,
      0.0
     ]
    }
