@@ -1,60 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 07:00",
+ "consultado": "2026-11-01 07:15",
  "radar": "RMA1",
- "observacion": "2026-11-01 06:44",
+ "observacion": "2026-11-01 07:03",
  "nucleos": [
   {
-   "lat": -30.299,
-   "lon": -64.4501,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.554,
-   "lon": -64.5039,
-   "dbz": 49,
-   "max_dbz": 50,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.299,
-   "lon": -63.966,
-   "dbz": 49,
-   "max_dbz": 49,
+   "lat": -30.3811,
+   "lon": -64.3533,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 10.6
   },
   {
-   "lat": -30.3628,
-   "lon": -64.7729,
-   "dbz": 48,
+   "lat": -30.0891,
+   "lon": -64.8912,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.3355,
+   "lon": -64.4286,
+   "dbz": 49,
    "max_dbz": 51,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.2443,
+   "lon": -64.6438,
+   "dbz": 48,
+   "max_dbz": 48,
    "tope_km": 11.7
-  },
-  {
-   "lat": -30.3993,
-   "lon": -64.5577,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.4903,
-   "lon": -64.5469,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.3082,
-   "lon": -63.8369,
-   "dbz": 47,
-   "max_dbz": 50,
-   "tope_km": 11.1
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 16
+ "localidades": {
+  "Deán Funes": {
+   "km": 2.1,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 12
 }
