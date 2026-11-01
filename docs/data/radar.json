@@ -1,72 +1,88 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 00:45",
+ "consultado": "2026-11-01 01:00",
  "radar": "RMA1",
- "observacion": "2026-11-01 00:30",
+ "observacion": "2026-11-01 00:48",
  "nucleos": [
   {
-   "lat": -30.299,
-   "lon": -64.5469,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.1896,
-   "lon": -65.1171,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.2968,
-   "lon": -64.1166,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.3599,
-   "lon": -64.009,
-   "dbz": 48,
-   "max_dbz": 52,
+   "lat": -30.372,
+   "lon": -64.4501,
+   "dbz": 50,
+   "max_dbz": 50,
    "tope_km": 10.6
   },
   {
-   "lat": -31.45,
+   "lat": -30.1622,
+   "lon": -64.9235,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -31.4681,
+   "lon": -64.4178,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -29.952,
+   "lon": -65.0526,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -31.414,
    "lon": -63.8584,
-   "dbz": 47,
+   "dbz": 48,
    "max_dbz": 48,
    "tope_km": 10.6
   },
   {
-   "lat": -31.387,
-   "lon": -63.9122,
+   "lat": -31.3509,
+   "lon": -63.8261,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -30.9985,
+   "lon": -65.4614,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.0891,
+   "lon": -64.9342,
    "dbz": 47,
-   "max_dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.45,
+   "lon": -63.7616,
+   "dbz": 47,
+   "max_dbz": 49,
    "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Malvinas Argentinas": {
-   "km": 4.6,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Estación Juárez Celman": {
-   "km": 2.4,
-   "max_dbz": 51,
+  "Cordoba": {
+   "km": 14.0,
+   "max_dbz": 49,
    "tope_km": 10.0,
+   "cuenca_de": "Arroyo La Cañada",
    "nivel": "intensa"
   },
-  "El Gateado": {
-   "km": 1.9,
-   "max_dbz": 51,
+  "Barrio Sierras de Oro": {
+   "km": 1.2,
+   "max_dbz": 49,
    "tope_km": 10.0,
    "nivel": "intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
