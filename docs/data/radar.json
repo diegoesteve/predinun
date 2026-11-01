@@ -1,86 +1,80 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 04:00",
+ "consultado": "2026-11-01 04:15",
  "radar": "RMA1",
- "observacion": "2026-11-01 03:51",
+ "observacion": "2026-11-01 04:00",
  "nucleos": [
   {
-   "lat": -30.7901,
-   "lon": -65.1171,
-   "dbz": 50,
-   "max_dbz": 52,
+   "lat": -30.654,
+   "lon": -64.4071,
+   "dbz": 49,
+   "max_dbz": 51,
    "tope_km": 9.4
   },
   {
-   "lat": -30.7448,
-   "lon": -64.3318,
+   "lat": -30.7811,
+   "lon": -65.0741,
    "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.7266,
+   "lon": -64.4071,
+   "dbz": 48,
    "max_dbz": 52,
    "tope_km": 10.0
   },
   {
-   "lat": -30.7538,
-   "lon": -64.4609,
+   "lat": -30.6721,
+   "lon": -64.4824,
    "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.7811,
-   "lon": -64.59,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.6267,
-   "lon": -64.5362,
-   "dbz": 47,
    "max_dbz": 49,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -30.7357,
+   "lon": -64.2672,
+   "dbz": 47,
+   "max_dbz": 47,
    "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Marcos Sierras": {
-   "km": 16.5,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio San Marcos Sierra",
-   "nivel": "intensa"
-  },
-  "Villa del Totoral": {
-   "km": 21.2,
-   "max_dbz": 52,
-   "tope_km": 10.0,
+  "Cañada de Rio Pinto": {
+   "km": 24.0,
+   "max_dbz": 51,
+   "tope_km": 9.4,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Santa Isabel": {
-   "km": 8.7,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Seco (Quebrada de Luna)",
-   "nivel": "intensa"
-  },
-  "Quebrada de Luna": {
-   "km": 2.8,
-   "max_dbz": 52,
+  "Bañado de Soto": {
+   "km": 1.6,
+   "max_dbz": 51,
    "tope_km": 11.1,
    "nivel": "intensa"
   },
   "Copacabana": {
-   "km": 3.4,
-   "max_dbz": 49,
+   "km": 13.8,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Copacabana",
+   "nivel": "intensa"
+  },
+  "Ischilín Viejo": {
+   "km": 3.7,
+   "max_dbz": 51,
    "tope_km": 9.4,
    "nivel": "intensa"
   },
-  "Charbonier": {
-   "km": 2.7,
-   "max_dbz": 51,
-   "tope_km": 10.6,
+  "Las Manzanas": {
+   "km": 7.0,
+   "max_dbz": 47,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo Los Mimbres",
    "nivel": "intensa"
   }
  },
- "minutos": 10
+ "minutos": 15
 }
