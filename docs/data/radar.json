@@ -1,60 +1,61 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 16:00",
+ "consultado": "2026-11-01 16:15",
  "radar": "RMA1",
- "observacion": "2026-11-01 15:45",
+ "observacion": "2026-11-01 16:03",
  "nucleos": [
   {
-   "lat": -32.3555,
-   "lon": -64.4716,
+   "lat": -32.2841,
+   "lon": -64.3425,
    "dbz": 54,
-   "max_dbz": 65,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.3644,
-   "lon": -63.9983,
-   "dbz": 52,
-   "max_dbz": 61,
+   "max_dbz": 63,
    "tope_km": 17.0
   },
   {
    "lat": -32.507,
-   "lon": -63.9983,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.5337,
-   "lon": -64.3748,
-   "dbz": 50,
-   "max_dbz": 54,
+   "lon": -64.2242,
+   "dbz": 53,
+   "max_dbz": 61,
    "tope_km": 17.0
   },
   {
-   "lat": -32.6582,
-   "lon": -64.4286,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 12.3
+   "lat": -32.5782,
+   "lon": -63.9552,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.1322,
+   "lon": -64.0951,
+   "dbz": 51,
+   "max_dbz": 54,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.3555,
+   "lon": -63.9445,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.4951,
+   "lon": -64.7836,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 7.0,
+   "descartado": "eco fijo del terreno"
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Cruz": {
-   "km": 5.3,
-   "max_dbz": 65,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio La Cruz",
-   "nivel": "muy intensa"
-  },
-  "Elena": {
-   "km": 4.6,
+  "Rio Tercero": {
+   "km": 5.0,
    "max_dbz": 54,
-   "tope_km": 17.0,
+   "tope_km": 10.6,
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
