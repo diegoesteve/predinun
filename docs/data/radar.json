@@ -1,40 +1,39 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 14:15",
+ "consultado": "2026-11-01 14:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 14:03",
+ "observacion": "2026-11-01 14:21",
  "nucleos": [
   {
-   "lat": -32.7648,
-   "lon": -65.1709,
-   "dbz": 52,
-   "max_dbz": 58,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.8802,
-   "lon": -65.0956,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.6671,
-   "lon": -65.2893,
-   "dbz": 48,
-   "max_dbz": 48,
+   "lat": -32.676,
+   "lon": -65.0741,
+   "dbz": 51,
+   "max_dbz": 57,
    "tope_km": 11.7
+  },
+  {
+   "lat": -32.9068,
+   "lon": -64.9988,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.8447,
+   "lon": -64.9988,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Tilisarao": {
-   "km": 21.2,
-   "max_dbz": 55,
+  "Villa del Carmen": {
+   "km": 1.8,
+   "max_dbz": 50,
    "tope_km": 12.9,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 10
 }
