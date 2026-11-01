@@ -1,39 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 14:30",
+ "consultado": "2026-11-01 14:45",
  "radar": "RMA1",
- "observacion": "2026-11-01 14:21",
+ "observacion": "2026-11-01 14:30",
  "nucleos": [
   {
-   "lat": -32.676,
-   "lon": -65.0741,
-   "dbz": 51,
+   "lat": -32.6227,
+   "lon": -65.0633,
+   "dbz": 50,
    "max_dbz": 57,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.8004,
+   "lon": -64.8051,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 11.7
   },
   {
-   "lat": -32.9068,
+   "lat": -32.8802,
    "lon": -64.9988,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.8447,
-   "lon": -64.9988,
-   "dbz": 50,
+   "dbz": 49,
    "max_dbz": 53,
    "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Santa Rita": {
+   "km": 30.4,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "intensa"
+  },
   "Villa del Carmen": {
-   "km": 1.8,
-   "max_dbz": 50,
+   "km": 3.1,
+   "max_dbz": 53,
    "tope_km": 12.9,
    "nivel": "intensa"
   }
  },
- "minutos": 10
+ "minutos": 16
 }
