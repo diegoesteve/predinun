@@ -1,25 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 02:45",
+ "consultado": "2026-11-01 03:00",
  "radar": "RMA1",
- "observacion": "2026-11-01 02:28",
+ "observacion": "2026-11-01 02:46",
  "nucleos": [
   {
-   "lat": -31.0438,
-   "lon": -65.4937,
-   "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 11.1
+   "lat": -30.0526,
+   "lon": -64.009,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 12.9
   },
   {
-   "lat": -29.9794,
-   "lon": -64.2027,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 11.1
+   "lat": -30.917,
+   "lon": -64.7406,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.0619,
+   "lon": -65.257,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 17
+ "localidades": {
+  "Santa Ana": {
+   "km": 26.5,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo Agua Blanca",
+   "nivel": "intensa"
+  },
+  "Rumi Huasi": {
+   "km": 3.9,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
+  "Piedras Amontonadas": {
+   "km": 20.3,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Seco",
+   "nivel": "intensa"
+  },
+  "Cienaga del Coro": {
+   "km": 3.6,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 14
 }
