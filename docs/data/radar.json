@@ -1,80 +1,146 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 04:15",
+ "consultado": "2026-11-01 04:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 04:00",
+ "observacion": "2026-11-01 04:09",
  "nucleos": [
   {
-   "lat": -30.654,
-   "lon": -64.4071,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.7811,
-   "lon": -65.0741,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.7266,
-   "lon": -64.4071,
-   "dbz": 48,
-   "max_dbz": 52,
+   "lat": -30.8808,
+   "lon": -65.5582,
+   "dbz": 50,
+   "max_dbz": 54,
    "tope_km": 10.0
   },
   {
-   "lat": -30.6721,
-   "lon": -64.4824,
-   "dbz": 48,
-   "max_dbz": 49,
+   "lat": -30.5904,
+   "lon": -64.3748,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.7175,
+   "lon": -64.6438,
+   "dbz": 49,
+   "max_dbz": 51,
    "tope_km": 9.4
   },
   {
-   "lat": -30.7357,
-   "lon": -64.2672,
+   "lat": -30.772,
+   "lon": -64.9557,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.5761,
+   "lon": -64.4609,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.5941,
+   "lon": -64.3856,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -30.6267,
+   "lon": -64.6653,
    "dbz": 47,
-   "max_dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -30.6994,
+   "lon": -64.9988,
+   "dbz": 47,
+   "max_dbz": 48,
    "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
   "Cañada de Rio Pinto": {
-   "km": 24.0,
+   "km": 16.7,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Los Sauces": {
+   "km": 4.3,
    "max_dbz": 51,
    "tope_km": 9.4,
+   "cuenca_de": "Arroyo Los Sauces",
+   "nivel": "intensa"
+  },
+  "Dique Chico": {
+   "km": 17.1,
+   "max_dbz": 48,
+   "tope_km": 8.2,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Bañado de Soto": {
-   "km": 1.6,
-   "max_dbz": 51,
-   "tope_km": 11.1,
+  "Falda del Carmen": {
+   "km": 2.4,
+   "max_dbz": 48,
+   "tope_km": 8.2,
    "nivel": "intensa"
   },
-  "Copacabana": {
-   "km": 13.8,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio Copacabana",
+  "Paraje Puesto del Gallo": {
+   "km": 18.0,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
+  },
+  "Olivares de San Nicolás": {
+   "km": 17.8,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "El Carrizal": {
+   "km": 0.9,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
+  "Villa Parque Santa Ana": {
+   "km": 3.4,
+   "max_dbz": 48,
+   "tope_km": 8.2,
+   "nivel": "intensa"
+  },
+  "Paraje Palo Parado": {
+   "km": 15.6,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Ischilín": {
+   "km": 1.3,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "nivel": "muy intensa"
   },
   "Ischilín Viejo": {
-   "km": 3.7,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "nivel": "intensa"
+   "km": 4.0,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "nivel": "muy intensa"
   },
-  "Las Manzanas": {
-   "km": 7.0,
-   "max_dbz": 47,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Los Mimbres",
+  "Villa del Prado": {
+   "km": 2.2,
+   "max_dbz": 48,
+   "tope_km": 8.2,
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 21
 }
