@@ -1,7 +1,47 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-01 06:15",
+ "consultado": "2026-11-01 06:30",
  "alertas": [
+  {
+   "id": "2026_11_01_0923_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
+   "desde": "2026-11-01T09:23:00-03:00",
+   "hasta": "2026-11-01T10:23:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS Y RAFAGAS",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CATAMARCA: LA PAZ. CORDOBA: CRUZ DEL EJE - ISCHILIN - SOBREMONTE - TOTORAL - TULUMBA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_01_0923_cap_es.xml",
+   "desde_local": "01/11 09:23",
+   "hasta_local": "01/11 10:23",
+   "localidades": 16,
+   "poligonos": [
+    [
+     [
+      -64.93,
+      -30.66
+     ],
+     [
+      -65.38,
+      -30.01
+     ],
+     [
+      -64.48,
+      -29.65
+     ],
+     [
+      -63.84,
+      -30.4
+     ],
+     [
+      -64.93,
+      -30.66
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_6",
    "tipo": "alerta",
@@ -8989,18 +9029,22 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Cañada de Rio Pinto": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "San José de las Salinas": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Quilino": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Villa Quilino": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -9009,26 +9053,32 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Las Palmas": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Isla de San Antonio": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Olivares de San Nicolás": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Villa Tulumba": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "La Isabela": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Jaime Peter": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -9037,6 +9087,7 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Huascha": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -9049,6 +9100,7 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Deán Funes": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -9057,6 +9109,7 @@
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
   "San Pedro de Toyos": [
+   "2026_11_01_0923_cap_es",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_55",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -9707,6 +9760,15 @@
   "Rio Tercero": [
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_46",
    "CAP_20261101085501_Tormenta_Llanura_alertas_alertas_36"
+  ],
+  "San Antonio": [
+   "2026_11_01_0923_cap_es"
+  ],
+  "Los Chañaritos": [
+   "2026_11_01_0923_cap_es"
+  ],
+  "Media Naranja": [
+   "2026_11_01_0923_cap_es"
   ]
  },
  "localidades_santafe": {

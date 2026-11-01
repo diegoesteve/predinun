@@ -1,73 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 06:15",
+ "consultado": "2026-11-01 06:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 05:59",
+ "observacion": "2026-11-01 06:17",
  "nucleos": [
   {
-   "lat": -30.3173,
-   "lon": -64.3425,
+   "lat": -30.3264,
+   "lon": -64.2027,
    "dbz": 49,
    "max_dbz": 55,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.6085,
-   "lon": -64.6545,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 10.6
+   "tope_km": 11.1
   },
   {
    "lat": -30.4084,
-   "lon": -65.1924,
+   "lon": -64.9557,
    "dbz": 48,
    "max_dbz": 50,
    "tope_km": 12.3
-  },
-  {
-   "lat": -30.5722,
-   "lon": -64.988,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.4357,
-   "lon": -63.8477,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 10.0
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Villa Quilino": {
-   "km": 16.1,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Las Chacras",
-   "nivel": "muy intensa"
-  },
-  "Paraje Puesto del Gallo": {
-   "km": 4.7,
-   "max_dbz": 49,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Huascha": {
-   "km": 8.3,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Los Chañaritos": {
-   "km": 1.2,
-   "max_dbz": 49,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  }
- },
- "minutos": 17
+ "localidades": {},
+ "minutos": 13
 }
