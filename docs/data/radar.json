@@ -1,52 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 22:30",
+ "consultado": "2026-11-01 22:45",
  "radar": "RMA1",
- "observacion": "2026-11-01 22:04",
+ "observacion": "2026-11-01 22:32",
  "nucleos": [
   {
-   "lat": -31.7917,
-   "lon": -64.5792,
-   "dbz": 54,
-   "max_dbz": 67,
-   "tope_km": 12.9
+   "lat": -31.8545,
+   "lon": -63.8154,
+   "dbz": 51,
+   "max_dbz": 62,
+   "tope_km": 12.3
   },
   {
-   "lat": -31.693,
-   "lon": -65.4721,
-   "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 12.9
+   "lat": -31.7648,
+   "lon": -64.321,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.7109,
+   "lon": -64.2565,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.8097,
+   "lon": -64.1812,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -31.8097,
+   "lon": -64.0413,
+   "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.8187,
+   "lon": -63.9015,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Potrero de Garay": {
-   "km": 3.4,
-   "max_dbz": 67,
-   "tope_km": 12.9,
-   "nivel": "muy intensa"
-  },
-  "La Boca del Río": {
-   "km": 16.7,
-   "max_dbz": 67,
-   "tope_km": 12.9,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Villa la Merced": {
-   "km": 7.6,
-   "max_dbz": 67,
-   "tope_km": 12.9,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Villa Ciudad de America": {
-   "km": 4.8,
-   "max_dbz": 67,
-   "tope_km": 12.9,
-   "nivel": "muy intensa"
+  "Dique Chico": {
+   "km": 2.9,
+   "max_dbz": 51,
+   "tope_km": 10.0,
+   "nivel": "intensa"
   }
  },
- "minutos": 26
+ "minutos": 14
 }
