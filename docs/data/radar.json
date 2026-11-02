@@ -1,47 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 03:00",
+ "consultado": "2026-11-02 03:15",
  "radar": "RMA17",
- "observacion": "2026-11-02 02:35",
+ "observacion": "2026-11-02 03:00",
  "nucleos": [
   {
-   "lat": -32.6104,
-   "lon": -64.9018,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 15.2
+   "lat": -32.0006,
+   "lon": -64.9897,
+   "dbz": 53,
+   "max_dbz": 53,
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alpa Corral": {
-   "km": 17.4,
-   "max_dbz": 49,
-   "tope_km": 15.2,
-   "cuenca_de": "Rio Barrancas",
+  "Villa Dolores": {
+   "km": 22.1,
+   "max_dbz": 53,
+   "tope_km": 13.5,
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "intensa"
   },
-  "Paso del Río Seco": {
-   "km": 39.3,
-   "max_dbz": 49,
-   "tope_km": 15.2,
-   "cuenca_de": "Río de las Barrancas",
+  "Chuchiras": {
+   "km": 9.0,
+   "max_dbz": 53,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo Chuchiras",
    "nivel": "intensa"
   },
-  "Santa Rita": {
-   "km": 50.0,
-   "max_dbz": 49,
-   "tope_km": 15.2,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
+  "San Javier Y Yacanto": {
+   "km": 4.8,
+   "max_dbz": 53,
+   "tope_km": 13.5,
    "nivel": "intensa"
   },
-  "Unión de los Rios": {
-   "km": 14.3,
-   "max_dbz": 49,
-   "tope_km": 15.2,
-   "cuenca_de": "Arroyo El Talita",
+  "San Javier": {
+   "km": 2.1,
+   "max_dbz": 53,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo Achiras",
    "nivel": "intensa"
   }
  },
- "minutos": 25
+ "minutos": 16
 }
