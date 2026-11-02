@@ -1,52 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 09:30",
- "radar": "RMA1",
- "observacion": "2026-11-02 09:04",
+ "consultado": "2026-11-02 09:45",
+ "radar": "RMA17",
+ "observacion": "2026-11-02 09:18",
  "nucleos": [
   {
-   "lat": -31.4591,
-   "lon": -64.7944,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 11.1
+   "lat": -32.6195,
+   "lon": -64.9018,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 15.2
   }
  ],
- "cuencas": {
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 48
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 29.0,
-   "max_dbz": 48,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio San Antonio",
+  "Alpa Corral": {
+   "km": 17.0,
+   "max_dbz": 51,
+   "tope_km": 15.2,
+   "cuenca_de": "Rio Barrancas",
    "nivel": "intensa"
   },
-  "Cuesta Blanca": {
-   "km": 19.6,
-   "max_dbz": 48,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio San Antonio",
+  "Paso del Río Seco": {
+   "km": 38.7,
+   "max_dbz": 51,
+   "tope_km": 15.2,
+   "cuenca_de": "Río de las Barrancas",
    "nivel": "intensa"
   },
-  "Mayu Sumaj": {
-   "km": 23.4,
-   "max_dbz": 48,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio San Antonio",
+  "Santa Rita": {
+   "km": 49.4,
+   "max_dbz": 51,
+   "tope_km": 15.2,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
   },
-  "Tala Huasi": {
-   "km": 21.3,
-   "max_dbz": 48,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio San Antonio",
+  "Unión de los Rios": {
+   "km": 13.9,
+   "max_dbz": 51,
+   "tope_km": 15.2,
+   "cuenca_de": "Arroyo El Talita",
    "nivel": "intensa"
   }
  },
- "minutos": 26
+ "minutos": 27
 }
