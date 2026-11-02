@@ -1,59 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-01 21:00",
+ "consultado": "2026-11-01 21:15",
  "alertas": [
-  {
-   "id": "2026_11_01_2213_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-11-01T22:13:00-03:00",
-   "hasta": "2026-11-02T00:13:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
-   "zona": "SAN LUIS: AYACUCHO - BELGRANO - CHACABUCO - JUNIN - LDOR GRAL SAN MARTIN.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_01_2213_cap_es.xml",
-   "desde_local": "01/11 22:13",
-   "hasta_local": "02/11 00:13",
-   "localidades": 2,
-   "poligonos": [
-    [
-     [
-      -67.16,
-      -31.97
-     ],
-     [
-      -67.18,
-      -32.37
-     ],
-     [
-      -65.53,
-      -32.82
-     ],
-     [
-      -65.08,
-      -32.92
-     ],
-     [
-      -65.06,
-      -32.65
-     ],
-     [
-      -65.28,
-      -32.3
-     ],
-     [
-      -65.46,
-      -32.11
-     ],
-     [
-      -67.16,
-      -31.97
-     ]
-    ]
-   ]
-  },
   {
    "id": "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_5",
    "tipo": "alerta",
@@ -10420,16 +10368,6 @@
   }
  ],
  "localidades": {
-  "Tilisarao": [
-   "2026_11_01_2213_cap_es",
-   "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_4",
-   "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_11"
-  ],
-  "Concarán": [
-   "2026_11_01_2213_cap_es",
-   "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_4",
-   "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_11"
-  ],
   "Carpintería": [
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_80",
    "CAP_20261101223916_Tormenta_Llanura_alertas_alertas_30"
@@ -11240,6 +11178,10 @@
    "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_5",
    "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_12"
   ],
+  "Tilisarao": [
+   "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_4",
+   "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_11"
+  ],
   "Naschel": [
    "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_4",
    "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_11"
@@ -11249,6 +11191,10 @@
    "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_11"
   ],
   "Santa Rosa del Conlara": [
+   "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_4",
+   "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_11"
+  ],
+  "Concarán": [
    "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_4",
    "CAP_20261101223917_Tormenta_Cordillera_alertas_alertas_11"
   ],

@@ -1,108 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 21:00",
+ "consultado": "2026-11-01 21:15",
  "radar": "RMA1",
- "observacion": "2026-11-01 20:52",
+ "observacion": "2026-11-01 21:01",
  "nucleos": [
   {
    "lat": -31.8635,
-   "lon": -64.7836,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.3733,
-   "lon": -64.4286,
+   "lon": -64.676,
    "dbz": 49,
    "max_dbz": 54,
    "tope_km": 10.6
   },
   {
-   "lat": -32.2394,
-   "lon": -65.4506,
-   "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 12.3
+   "lat": -32.0696,
+   "lon": -65.3323,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 11.1
   },
   {
-   "lat": -31.989,
-   "lon": -64.7191,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.1322,
-   "lon": -65.4721,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 12.3
+   "lat": -32.2126,
+   "lon": -65.3753,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Reartes": {
-   "km": 17.0,
+  "Potrero de Garay": {
+   "km": 10.7,
    "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río del Medio",
-   "nivel": "intensa"
-  },
-  "El Corcovado el Torreon": {
-   "km": 27.1,
-   "max_dbz": 51,
    "tope_km": 10.6,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "intensa"
-  },
-  "Villa Berna": {
-   "km": 6.1,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río del Medio",
-   "nivel": "intensa"
-  },
-  "Santa Mónica": {
-   "km": 11.0,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Santa Rosa",
-   "nivel": "intensa"
-  },
-  "La Cumbrecita": {
-   "km": 4.0,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Intiyaco": {
-   "km": 3.0,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "El Corcovado": {
-   "km": 25.3,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio Santa Rosa",
+   "cuenca_de": "Rio San Pedro",
    "nivel": "intensa"
   },
   "La Boca del Río": {
-   "km": 35.0,
+   "km": 24.9,
    "max_dbz": 54,
-   "tope_km": 10.0,
+   "tope_km": 10.6,
    "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   },
   "Villa la Merced": {
-   "km": 27.0,
+   "km": 17.1,
    "max_dbz": 54,
-   "tope_km": 10.0,
+   "tope_km": 10.6,
    "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   }
  },
- "minutos": 9
+ "minutos": 15
 }
