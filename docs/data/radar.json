@@ -1,108 +1,82 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 22:00",
+ "consultado": "2026-11-01 22:15",
  "radar": "RMA1",
- "observacion": "2026-11-01 21:46",
+ "observacion": "2026-11-01 21:55",
  "nucleos": [
   {
-   "lat": -31.9083,
-   "lon": -64.7836,
-   "dbz": 53,
-   "max_dbz": 65,
+   "lat": -31.8456,
+   "lon": -64.676,
+   "dbz": 54,
+   "max_dbz": 63,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -31.7199,
+   "lon": -65.5152,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -31.9979,
+   "lon": -63.9983,
+   "dbz": 51,
+   "max_dbz": 51,
    "tope_km": 14.7
   },
   {
-   "lat": -31.8097,
-   "lon": -64.3856,
+   "lat": -31.684,
+   "lon": -64.5147,
    "dbz": 50,
-   "max_dbz": 53,
+   "max_dbz": 54,
    "tope_km": 10.0
-  },
-  {
-   "lat": -31.693,
-   "lon": -64.5254,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.621,
-   "lon": -64.5792,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Reartes": {
-   "km": 17.0,
-   "max_dbz": 65,
-   "tope_km": 14.7,
-   "cuenca_de": "Río del Medio",
+  "Potrero de Garay": {
+   "km": 10.1,
+   "max_dbz": 63,
+   "tope_km": 15.2,
+   "cuenca_de": "Rio San Pedro",
    "nivel": "muy intensa"
   },
   "Anisacate": {
-   "km": 10.6,
-   "max_dbz": 55,
-   "tope_km": 10.6,
+   "km": 10.0,
+   "max_dbz": 54,
+   "tope_km": 10.0,
    "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "Villa Berna": {
-   "km": 6.3,
-   "max_dbz": 65,
-   "tope_km": 14.7,
-   "cuenca_de": "Río del Medio",
-   "nivel": "muy intensa"
-  },
-  "La Cumbrecita": {
-   "km": 0.6,
-   "max_dbz": 65,
-   "tope_km": 14.7,
-   "cuenca_de": "Rio Del Medio",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "La Serranita": {
-   "km": 7.7,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "Villa San Isidro": {
-   "km": 1.4,
-   "max_dbz": 53,
+   "km": 7.5,
+   "max_dbz": 54,
    "tope_km": 10.0,
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
   "La Paisanita": {
-   "km": 5.1,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "Jose de la Quintana": {
-   "km": 3.3,
-   "max_dbz": 53,
+   "km": 5.2,
+   "max_dbz": 54,
    "tope_km": 10.0,
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
   "La Boca del Río": {
-   "km": 35.7,
-   "max_dbz": 65,
-   "tope_km": 14.7,
+   "km": 24.8,
+   "max_dbz": 63,
+   "tope_km": 15.2,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 28.4,
-   "max_dbz": 65,
-   "tope_km": 14.7,
+   "km": 16.6,
+   "max_dbz": 63,
+   "tope_km": 15.2,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 20
 }
