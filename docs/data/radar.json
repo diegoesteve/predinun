@@ -1,33 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 02:00",
+ "consultado": "2026-11-02 02:15",
  "radar": "RMA17",
- "observacion": "2026-11-02 01:46",
+ "observacion": "2026-11-02 01:54",
  "nucleos": [
   {
-   "lat": -32.101,
-   "lon": -64.9567,
+   "lat": -32.1101,
+   "lon": -64.9787,
+   "dbz": 53,
+   "max_dbz": 60,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -32.0006,
+   "lon": -65.0007,
    "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 17.0
+   "max_dbz": 56,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Romeros": {
-   "km": 25.2,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+  "Villa Dolores": {
+   "km": 21.1,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "muy intensa"
   },
-  "La Poblacion": {
-   "km": 6.2,
-   "max_dbz": 51,
-   "tope_km": 17.0,
+  "Chuchiras": {
+   "km": 8.0,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Chuchiras",
+   "nivel": "muy intensa"
+  },
+  "San Javier Y Yacanto": {
+   "km": 4.1,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "Los Romeros": {
+   "km": 23.0,
+   "max_dbz": 60,
+   "tope_km": 14.1,
    "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "San Javier": {
+   "km": 1.1,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 21
 }
