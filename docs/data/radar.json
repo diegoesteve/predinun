@@ -1,139 +1,108 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 21:45",
+ "consultado": "2026-11-01 22:00",
  "radar": "RMA1",
- "observacion": "2026-11-01 21:28",
+ "observacion": "2026-11-01 21:46",
  "nucleos": [
   {
-   "lat": -31.9532,
-   "lon": -65.0311,
+   "lat": -31.9083,
+   "lon": -64.7836,
    "dbz": 53,
-   "max_dbz": 60,
-   "tope_km": 15.8
+   "max_dbz": 65,
+   "tope_km": 14.7
   },
   {
-   "lat": -32.0338,
-   "lon": -64.2672,
+   "lat": -31.8097,
+   "lon": -64.3856,
    "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 17.0
+   "max_dbz": 53,
+   "tope_km": 10.0
   },
   {
-   "lat": -31.666,
-   "lon": -64.676,
+   "lat": -31.693,
+   "lon": -64.5254,
    "dbz": 49,
    "max_dbz": 55,
    "tope_km": 10.6
   },
   {
-   "lat": -31.8187,
-   "lon": -64.5147,
+   "lat": -31.621,
+   "lon": -64.5792,
    "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.9263,
-   "lon": -64.4824,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 10.0
+   "max_dbz": 48,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Dolores": {
-   "km": 11.0,
-   "max_dbz": 60,
-   "tope_km": 15.8,
-   "cuenca_de": "Canal De Riego",
+  "Los Reartes": {
+   "km": 17.0,
+   "max_dbz": 65,
+   "tope_km": 14.7,
+   "cuenca_de": "Río del Medio",
    "nivel": "muy intensa"
   },
-  "Potrero de Garay": {
-   "km": 4.3,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
   "Anisacate": {
-   "km": 25.2,
+   "km": 10.6,
    "max_dbz": 55,
    "tope_km": 10.6,
    "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
+  },
+  "Villa Berna": {
+   "km": 6.3,
+   "max_dbz": 65,
+   "tope_km": 14.7,
+   "cuenca_de": "Río del Medio",
+   "nivel": "muy intensa"
+  },
+  "La Cumbrecita": {
+   "km": 0.6,
+   "max_dbz": 65,
+   "tope_km": 14.7,
+   "cuenca_de": "Rio Del Medio",
    "nivel": "muy intensa"
   },
   "La Serranita": {
-   "km": 21.9,
+   "km": 7.7,
    "max_dbz": 55,
    "tope_km": 10.6,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
-  "Las Tapias": {
-   "km": 6.2,
-   "max_dbz": 60,
-   "tope_km": 15.8,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "muy intensa"
-  },
-  "Los Molinos": {
-   "km": 12.0,
-   "max_dbz": 52,
+  "Villa San Isidro": {
+   "km": 1.4,
+   "max_dbz": 53,
    "tope_km": 10.0,
-   "cuenca_de": "Rio Los Molinos",
    "nivel": "intensa"
-  },
-  "Las Chacras Norte": {
-   "km": 2.3,
-   "max_dbz": 60,
-   "tope_km": 15.8,
-   "nivel": "muy intensa"
-  },
-  "Villa de las Rosas": {
-   "km": 1.1,
-   "max_dbz": 60,
-   "tope_km": 15.8,
-   "nivel": "muy intensa"
   },
   "La Paisanita": {
-   "km": 19.2,
+   "km": 5.1,
    "max_dbz": 55,
    "tope_km": 10.6,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
+  "Jose de la Quintana": {
+   "km": 3.3,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
   "La Boca del Río": {
-   "km": 10.0,
-   "max_dbz": 53,
-   "tope_km": 10.0,
+   "km": 35.7,
+   "max_dbz": 65,
+   "tope_km": 14.7,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
-  },
-  "Villa la Merced": {
-   "km": 1.1,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
-  },
-  "Pueblito": {
-   "km": 4.3,
-   "max_dbz": 60,
-   "tope_km": 15.8,
    "nivel": "muy intensa"
   },
-  "Villa Ciudad de America": {
-   "km": 3.4,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Quebrada de los Pozos": {
-   "km": 4.2,
-   "max_dbz": 60,
-   "tope_km": 15.8,
+  "Villa la Merced": {
+   "km": 28.4,
+   "max_dbz": 65,
+   "tope_km": 14.7,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
