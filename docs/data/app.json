@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-02 12:15",
+ "generado": "2026-11-02 12:30",
  "hoy": "2026-11-02",
  "manana": "2026-11-03",
  "dia_manana": "martes",
@@ -1222,9 +1222,9 @@
    "rio": "sin nombre",
    "expo": "expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del sin nombre. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
@@ -1821,9 +1821,10 @@
    "rio": "Arroyo Santa Catalina",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 14:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Arroyo Santa Catalina. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
+    "tambien": "Alerta amarilla del SMN"
    },
    "man": {
     "nivel": 1,
