@@ -37,8 +37,10 @@
     "smap_m3m3": 0.122,
     "smap_percentil": 91,
     "smap_fecha": "2026-10-28 22:30 UTC",
+    "estimado_hoy_m3m3": 0.122,
+    "estimado_hoy_percentil": 91,
     "percentil": 91,
-    "es_estimado": false,
+    "es_estimado": true,
     "estado": "saturado"
    },
    "secado": {
@@ -89,10 +91,8 @@
     "smap_m3m3": 0.132,
     "smap_percentil": 99,
     "smap_fecha": "2026-10-28 22:30 UTC",
-    "estimado_hoy_m3m3": 0.13,
-    "estimado_hoy_percentil": 98,
-    "percentil": 98,
-    "es_estimado": true,
+    "percentil": 99,
+    "es_estimado": false,
     "estado": "saturado"
    },
    "secado": {
@@ -113,6 +113,12 @@
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
+    "GFS": {
+     "max_3h_mm": 2.0,
+     "umbral_mm": 10.1,
+     "fuente_umbral": "24 h antes",
+     "cuando": "2026-11-03 04:00"
+    },
     "ICON": {
      "max_3h_mm": 2.1,
      "umbral_mm": 9.7,
@@ -128,8 +134,7 @@
    },
    "ensambles": {
     "ECMWF ENS": 0.02,
-    "GFS ENS": 0.0,
-    "ICON EPS": 0.0
+    "GFS ENS": 0.0
    },
    "nivel": "verde",
    "nivel_por_lluvia": "verde",
@@ -314,21 +319,21 @@
     "nombre": "Capital (experimental)",
     "suelo_saturado": true,
     "prob": [
-     0.03,
-     0.26,
-     0.08,
+     0.02,
+     0.21,
+     0.07,
      0.0,
      0.0,
-     0.01,
+     0.06,
      0.0,
-     0.03,
+     0.02,
      0.0,
      0.01
     ],
     "mm": [
-     1.6,
-     7.8,
-     0.7,
+     0.9,
+     8.2,
+     1.0,
      0.0,
      0.2,
      0.0,
