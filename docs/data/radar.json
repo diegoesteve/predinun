@@ -1,82 +1,52 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 22:15",
+ "consultado": "2026-11-01 22:30",
  "radar": "RMA1",
- "observacion": "2026-11-01 21:55",
+ "observacion": "2026-11-01 22:04",
  "nucleos": [
   {
-   "lat": -31.8456,
-   "lon": -64.676,
+   "lat": -31.7917,
+   "lon": -64.5792,
    "dbz": 54,
-   "max_dbz": 63,
-   "tope_km": 15.2
+   "max_dbz": 67,
+   "tope_km": 12.9
   },
   {
-   "lat": -31.7199,
-   "lon": -65.5152,
+   "lat": -31.693,
+   "lon": -65.4721,
    "dbz": 52,
    "max_dbz": 60,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -31.9979,
-   "lon": -63.9983,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.684,
-   "lon": -64.5147,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.0
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
   "Potrero de Garay": {
-   "km": 10.1,
-   "max_dbz": 63,
-   "tope_km": 15.2,
-   "cuenca_de": "Rio San Pedro",
+   "km": 3.4,
+   "max_dbz": 67,
+   "tope_km": 12.9,
    "nivel": "muy intensa"
   },
-  "Anisacate": {
-   "km": 10.0,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "La Serranita": {
-   "km": 7.5,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "La Paisanita": {
-   "km": 5.2,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
   "La Boca del Río": {
-   "km": 24.8,
-   "max_dbz": 63,
-   "tope_km": 15.2,
+   "km": 16.7,
+   "max_dbz": 67,
+   "tope_km": 12.9,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 16.6,
-   "max_dbz": 63,
-   "tope_km": 15.2,
+   "km": 7.6,
+   "max_dbz": 67,
+   "tope_km": 12.9,
    "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa Ciudad de America": {
+   "km": 4.8,
+   "max_dbz": 67,
+   "tope_km": 12.9,
    "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 26
 }
