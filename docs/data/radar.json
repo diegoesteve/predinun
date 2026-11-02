@@ -1,54 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-01 21:15",
+ "consultado": "2026-11-01 21:28",
  "radar": "RMA1",
- "observacion": "2026-11-01 21:01",
+ "observacion": "2026-11-01 21:10",
  "nucleos": [
   {
-   "lat": -31.8635,
-   "lon": -64.676,
-   "dbz": 49,
-   "max_dbz": 54,
+   "lat": -32.0248,
+   "lon": -65.2462,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 10.6
   },
   {
-   "lat": -32.0696,
-   "lon": -65.3323,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 11.1
+   "lat": -31.8276,
+   "lon": -64.7191,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 10.0
   },
   {
-   "lat": -32.2126,
-   "lon": -65.3753,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 11.7
+   "lat": -31.9263,
+   "lon": -64.6115,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Los Reartes": {
+   "km": 3.2,
+   "max_dbz": 52,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio De Los Reartes",
+   "nivel": "intensa"
+  },
   "Potrero de Garay": {
-   "km": 10.7,
-   "max_dbz": 54,
-   "tope_km": 10.6,
+   "km": 14.0,
+   "max_dbz": 52,
+   "tope_km": 10.0,
    "cuenca_de": "Rio San Pedro",
    "nivel": "intensa"
   },
+  "Capilla Vieja": {
+   "km": 0.7,
+   "max_dbz": 52,
+   "tope_km": 12.9,
+   "nivel": "intensa"
+  },
   "La Boca del Río": {
-   "km": 24.9,
-   "max_dbz": 54,
-   "tope_km": 10.6,
+   "km": 20.8,
+   "max_dbz": 52,
+   "tope_km": 12.9,
    "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   },
   "Villa la Merced": {
-   "km": 17.1,
-   "max_dbz": 54,
-   "tope_km": 10.6,
+   "km": 16.0,
+   "max_dbz": 52,
+   "tope_km": 12.9,
    "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 18
 }
