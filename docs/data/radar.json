@@ -1,52 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 16:01",
+ "consultado": "2026-11-03 16:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 15:40",
+ "observacion": "2026-11-03 15:58",
  "nucleos": [
   {
-   "lat": -32.8092,
-   "lon": -64.4716,
+   "lat": -32.7826,
+   "lon": -64.3963,
+   "dbz": 53,
+   "max_dbz": 64,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.6849,
+   "lon": -65.0418,
    "dbz": 52,
-   "max_dbz": 58,
+   "max_dbz": 61,
    "tope_km": 11.1
   },
   {
-   "lat": -32.7293,
-   "lon": -65.1279,
-   "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 11.7
+   "lat": -32.8181,
+   "lon": -64.676,
+   "dbz": 51,
+   "max_dbz": 55,
+   "tope_km": 11.1
   },
   {
-   "lat": -33.0928,
-   "lon": -64.3425,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 10.6
+   "lat": -32.7382,
+   "lon": -64.4931,
+   "dbz": 50,
+   "max_dbz": 52,
+   "tope_km": 12.9
   },
   {
-   "lat": -33.0574,
-   "lon": -64.1381,
+   "lat": -32.8092,
+   "lon": -64.5147,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -33.1282,
+   "lon": -63.9552,
    "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 10.6
+   "max_dbz": 52,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Rio Cuarto": {
-   "km": 2.8,
-   "max_dbz": 49,
-   "tope_km": 10.6,
+  "Paso del Río Seco": {
+   "km": 4.6,
+   "max_dbz": 53,
+   "tope_km": 12.9,
    "nivel": "intensa"
   },
-  "Las Higueras": {
-   "km": 4.2,
-   "max_dbz": 49,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+  "Santa Rita": {
+   "km": 19.0,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 21
+ "minutos": 17
 }
