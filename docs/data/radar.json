@@ -1,66 +1,111 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 01:30",
+ "consultado": "2026-11-03 01:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 01:14",
+ "observacion": "2026-11-03 01:33",
  "nucleos": [
   {
-   "lat": -30.7992,
-   "lon": -64.6222,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -30.5449,
-   "lon": -64.6976,
+   "lat": -30.8899,
+   "lon": -64.4931,
    "dbz": 50,
    "max_dbz": 59,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.6903,
+   "lon": -64.8267,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 11.1
   },
   {
-   "lat": -30.4903,
-   "lon": -64.9235,
+   "lat": -30.5813,
+   "lon": -64.321,
    "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 12.9
+   "max_dbz": 56,
+   "tope_km": 10.6
   },
   {
-   "lat": -30.6812,
-   "lon": -64.633,
+   "lat": -30.6358,
+   "lon": -64.6653,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.6085,
+   "lon": -64.8267,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.5085,
+   "lon": -64.5469,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.0
+   "max_dbz": 48,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
   "San Marcos Sierras": {
-   "km": 2.9,
+   "km": 18.0,
    "max_dbz": 59,
-   "tope_km": 13.5,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Marcos Sierra",
    "nivel": "muy intensa"
   },
-  "Las Palmas": {
-   "km": 24.4,
+  "Capilla del Monte": {
+   "km": 4.6,
    "max_dbz": 59,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
+  },
+  "Olivares de San Nicolás": {
+   "km": 18.1,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "San Antonio": {
+   "km": 38.4,
+   "max_dbz": 56,
    "tope_km": 11.1,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Olivares de San Nicolás": {
-   "km": 23.0,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+  "Ischilín": {
+   "km": 4.2,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
   },
-  "El Carrizal": {
-   "km": 3.4,
-   "max_dbz": 50,
+  "El Brete": {
+   "km": 5.0,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "El Rincon": {
+   "km": 4.0,
+   "max_dbz": 59,
    "tope_km": 10.0,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "Las Playas": {
+   "km": 2.0,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "Los Cocos": {
+   "km": 4.7,
+   "max_dbz": 59,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
