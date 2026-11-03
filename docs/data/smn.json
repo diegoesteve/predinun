@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-03 14:30",
+ "consultado": "2026-11-03 14:45",
  "alertas": [
   {
    "id": "2026_11_03_1631_cap_es",
@@ -78,6 +78,46 @@
      [
       -66.3,
       -33.26
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_03_1731_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-03T17:31:00-03:00",
+   "hasta": "2026-11-03T19:31:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CORDOBA: RIO CUARTO. SAN LUIS: AYACUCHO - BELGRANO - CHACABUCO - CNEL PRINGLES - GRAL PEDERNERA - JUAN M.  DE PUEYRREDON - LDOR GRAL SAN MARTIN.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_1731_cap_es.xml",
+   "desde_local": "03/11 17:31",
+   "hasta_local": "03/11 19:31",
+   "localidades": 3,
+   "poligonos": [
+    [
+     [
+      -66.37,
+      -33.01
+     ],
+     [
+      -66.57,
+      -32.48
+     ],
+     [
+      -65.54,
+      -32.51
+     ],
+     [
+      -64.86,
+      -33.06
+     ],
+     [
+      -66.37,
+      -33.01
      ]
     ]
    ]
@@ -6231,12 +6271,15 @@
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_5"
   ],
   "Tilisarao": [
+   "2026_11_03_1731_cap_es",
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_8"
   ],
   "Naschel": [
+   "2026_11_03_1731_cap_es",
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_8"
   ],
   "El Tala": [
+   "2026_11_03_1731_cap_es",
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_8"
   ],
   "Santa Rosa del Conlara": [
