@@ -1,66 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 12:30",
+ "consultado": "2026-11-03 12:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 12:20",
+ "observacion": "2026-11-03 12:29",
  "nucleos": [
   {
-   "lat": -32.3822,
-   "lon": -65.2462,
+   "lat": -32.4,
+   "lon": -65.1494,
    "dbz": 55,
-   "max_dbz": 65,
+   "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -32.7648,
-   "lon": -64.3963,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.5871,
-   "lon": -64.988,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.9777,
-   "lon": -63.9122,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 10.0
+   "lat": -32.9511,
+   "lon": -64.2027,
+   "dbz": 52,
+   "max_dbz": 52,
+   "tope_km": 11.7
   },
   {
    "lat": -32.7915,
-   "lon": -64.5685,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 11.1
+   "lon": -64.2995,
+   "dbz": 50,
+   "max_dbz": 59,
+   "tope_km": 10.6
   },
   {
-   "lat": -33.4283,
-   "lon": -64.8697,
-   "dbz": 47,
-   "max_dbz": 48,
+   "lat": -32.7915,
+   "lon": -64.4824,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -33.4548,
+   "lon": -64.8267,
+   "dbz": 48,
+   "max_dbz": 50,
    "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Larca": {
-   "km": 4.0,
-   "max_dbz": 57,
+  "Alcira Gigena": {
+   "km": 4.5,
+   "max_dbz": 59,
    "tope_km": 10.6,
    "nivel": "muy intensa"
-  },
-  "Paso del Río Seco": {
-   "km": 3.1,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "nivel": "intensa"
   }
  },
- "minutos": 10
+ "minutos": 16
 }
