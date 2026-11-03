@@ -1,110 +1,45 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 06:15",
+ "consultado": "2026-11-03 06:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 05:57",
+ "observacion": "2026-11-03 06:15",
  "nucleos": [
   {
-   "lat": -30.8445,
-   "lon": -64.235,
-   "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 10.0
+   "lat": -30.9895,
+   "lon": -63.7078,
+   "dbz": 54,
+   "max_dbz": 60,
+   "tope_km": 9.4
   },
   {
-   "lat": -31.3689,
-   "lon": -64.3103,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 8.2
-  },
-  {
-   "lat": -32.6049,
-   "lon": -63.7724,
+   "lat": -31.396,
+   "lon": -64.4394,
    "dbz": 50,
    "max_dbz": 57,
-   "tope_km": 11.7
+   "tope_km": 7.6
   },
   {
-   "lat": -30.8173,
-   "lon": -64.009,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -31.2517,
-   "lon": -64.2995,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 8.2
-  },
-  {
-   "lat": -32.8891,
-   "lon": -64.9665,
+   "lat": -30.908,
+   "lon": -64.0628,
    "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -30.7901,
-   "lon": -64.1059,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.8173,
-   "lon": -63.9122,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 10.0
+   "max_dbz": 53,
+   "tope_km": 8.8
   }
  ],
- "cuencas": {
-  "SierrasChicas": {
-   "nucleos": 1,
-   "max_dbz": 53
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "Villa Allende": {
-   "km": 4.3,
-   "max_dbz": 53,
-   "tope_km": 8.2,
-   "nivel": "intensa"
-  },
-  "Unquillo": {
-   "km": 3.8,
-   "max_dbz": 53,
-   "tope_km": 8.2,
-   "nivel": "intensa"
-  },
-  "Mendiolaza": {
-   "km": 1.3,
-   "max_dbz": 53,
-   "tope_km": 8.2,
-   "nivel": "intensa"
-  },
-  "La Calera": {
-   "km": 4.5,
-   "max_dbz": 59,
-   "tope_km": 8.2,
+  "San Roque": {
+   "km": 4.1,
+   "max_dbz": 57,
+   "tope_km": 7.6,
    "nivel": "muy intensa"
   },
-  "Colonia Hogar": {
-   "km": 4.0,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "nivel": "muy intensa"
-  },
-  "Santa Rita": {
-   "km": 42.5,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
+  "Sinsacate": {
+   "km": 4.9,
+   "max_dbz": 53,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
