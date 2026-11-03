@@ -1,123 +1,196 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 02:15",
+ "consultado": "2026-11-03 02:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 02:00",
+ "observacion": "2026-11-03 02:09",
  "nucleos": [
   {
-   "lat": -30.6994,
-   "lon": -64.3963,
-   "dbz": 54,
-   "max_dbz": 61,
-   "tope_km": 12.9
-  },
-  {
    "lat": -30.7629,
-   "lon": -64.278,
+   "lon": -64.3318,
    "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 12.9
+   "max_dbz": 58,
+   "tope_km": 11.7
   },
   {
-   "lat": -30.908,
-   "lon": -64.4071,
-   "dbz": 51,
-   "max_dbz": 62,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -30.8173,
-   "lon": -63.7939,
+   "lat": -30.8445,
+   "lon": -64.2565,
    "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.8627,
+   "lon": -63.7508,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.7811,
+   "lon": -64.4716,
+   "dbz": 49,
    "max_dbz": 55,
    "tope_km": 11.1
   },
   {
-   "lat": -30.7629,
-   "lon": -63.923,
+   "lat": -31.1342,
+   "lon": -64.9557,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -30.9985,
+   "lon": -64.4716,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.9714,
+   "lon": -64.3641,
    "dbz": 49,
    "max_dbz": 49,
-   "tope_km": 12.9
+   "tope_km": 12.3
   },
   {
-   "lat": -30.7266,
-   "lon": -64.5362,
+   "lat": -30.9352,
+   "lon": -64.4394,
    "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.1
+   "max_dbz": 51,
+   "tope_km": 12.3
   },
   {
-   "lat": -30.7448,
-   "lon": -63.7186,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.8536,
-   "lon": -64.7406,
+   "lat": -30.9442,
+   "lon": -64.6438,
    "dbz": 48,
    "max_dbz": 50,
-   "tope_km": 10.6
+   "tope_km": 11.7
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 56
+  }
+ },
  "localidades": {
+  "La Granja": {
+   "km": 16.8,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "cuenca_de": "Río La Granja",
+   "nivel": "intensa"
+  },
   "Ascochinga": {
-   "km": 12.9,
-   "max_dbz": 62,
+   "km": 7.8,
+   "max_dbz": 49,
    "tope_km": 12.3,
    "cuenca_de": "Río de San Miguel",
+   "nivel": "intensa"
+  },
+  "San Marcos Sierras": {
+   "km": 15.3,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Marcos Sierra",
+   "nivel": "muy intensa"
+  },
+  "Villa Giardino": {
+   "km": 3.1,
+   "max_dbz": 56,
+   "tope_km": 12.3,
+   "cuenca_de": "Arroyo El Pongo",
+   "nivel": "muy intensa"
+  },
+  "Santa María de Punilla": {
+   "km": 29.4,
+   "max_dbz": 56,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Cosquín",
    "nivel": "muy intensa"
   },
   "Jesús María": {
-   "km": 26.8,
-   "max_dbz": 62,
-   "tope_km": 12.3,
+   "km": 18.3,
+   "max_dbz": 58,
+   "tope_km": 11.7,
    "cuenca_de": "Jesus Maria",
    "nivel": "muy intensa"
   },
+  "Los Molles": {
+   "km": 23.2,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "cuenca_de": "Río La Granja",
+   "nivel": "intensa"
+  },
+  "Colonia Caroya": {
+   "km": 34.2,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Carnero",
+   "nivel": "intensa"
+  },
   "La Paz": {
-   "km": 18.9,
-   "max_dbz": 62,
+   "km": 13.9,
+   "max_dbz": 49,
    "tope_km": 12.3,
    "cuenca_de": "Río Ascochinga",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Villa del Totoral": {
-   "km": 16.8,
-   "max_dbz": 60,
-   "tope_km": 12.9,
+   "km": 21.7,
+   "max_dbz": 58,
+   "tope_km": 11.7,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Los Sauces": {
-   "km": 14.3,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Los Sauces",
-   "nivel": "intensa"
-  },
-  "Copacabana": {
-   "km": 12.9,
-   "max_dbz": 61,
-   "tope_km": 12.9,
-   "cuenca_de": "Rio Copacabana",
+  "Casa Grande": {
+   "km": 19.1,
+   "max_dbz": 56,
+   "tope_km": 12.3,
+   "cuenca_de": "Rio Grande De Punilla",
    "nivel": "muy intensa"
   },
-  "El Carrizal": {
-   "km": 9.0,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo del Carrizal",
+  "La Higuera": {
+   "km": 19.0,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo Los Quirquinchos",
    "nivel": "intensa"
   },
-  "Canteras Quilpo": {
-   "km": 2.2,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+  "Colonia Hogar": {
+   "km": 1.9,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Santa Isabel": {
+   "km": 6.4,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Seco (Quebrada de Luna)",
+   "nivel": "muy intensa"
+  },
+  "San Roque": {
+   "km": 37.5,
+   "max_dbz": 56,
+   "tope_km": 12.3,
+   "cuenca_de": "Lago San Roque",
+   "nivel": "muy intensa"
+  },
+  "La Cumbre": {
+   "km": 3.6,
+   "max_dbz": 56,
+   "tope_km": 12.3,
+   "nivel": "muy intensa"
+  },
+  "Quebrada de Luna": {
+   "km": 2.0,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 21
 }
