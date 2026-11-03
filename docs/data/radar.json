@@ -1,18 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 17:31",
+ "consultado": "2026-11-03 17:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 17:20",
+ "observacion": "2026-11-03 17:29",
  "nucleos": [
   {
-   "lat": -32.2573,
-   "lon": -64.7083,
-   "dbz": 54,
-   "max_dbz": 64,
+   "lat": -32.2394,
+   "lon": -64.5792,
+   "dbz": 57,
+   "max_dbz": 68,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 11
+ "localidades": {
+  "Villa San Antonio": {
+   "km": 3.6,
+   "max_dbz": 68,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 17
 }

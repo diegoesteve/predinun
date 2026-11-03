@@ -1,47 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-03 17:31",
+ "consultado": "2026-11-03 17:45",
  "alertas": [
-  {
-   "id": "2026_11_03_1938_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-11-03T19:38:00-03:00",
-   "hasta": "2026-11-03T20:38:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
-   "zona": "CORDOBA: CALAMUCHITA - GRAL SAN MARTIN - JUAREZ CELMAN - RIO CUARTO - SAN JAVIER - TERCERO ARRIBA. SAN LUIS: CHACABUCO - JUNIN - LDOR GRAL SAN MARTIN.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_1938_cap_es.xml",
-   "desde_local": "03/11 19:38",
-   "hasta_local": "03/11 20:38",
-   "localidades": 43,
-   "poligonos": [
-    [
-     [
-      -63.53,
-      -33.21
-     ],
-     [
-      -65.63,
-      -32.43
-     ],
-     [
-      -65.14,
-      -31.95
-     ],
-     [
-      -63.09,
-      -32.69
-     ],
-     [
-      -63.53,
-      -33.21
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_03_2015_cap_es",
    "tipo": "aviso a corto plazo",
@@ -82,6 +42,86 @@
      [
       -61.37,
       -32.94
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_03_2036_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-03T20:36:00-03:00",
+   "hasta": "2026-11-03T21:36:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CORDOBA: CALAMUCHITA - TERCERO ARRIBA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_2036_cap_es.xml",
+   "desde_local": "03/11 20:36",
+   "hasta_local": "03/11 21:36",
+   "localidades": 18,
+   "poligonos": [
+    [
+     [
+      -64.55,
+      -32.41
+     ],
+     [
+      -64.82,
+      -32.19
+     ],
+     [
+      -64.49,
+      -31.86
+     ],
+     [
+      -64.14,
+      -32.06
+     ],
+     [
+      -64.55,
+      -32.41
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_03_2037_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas severas",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "desde": "2026-11-03T20:37:00-03:00",
+   "hasta": "2026-11-03T21:37:00-03:00",
+   "descripcion": "TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "instruccion": "Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Evitá circular por calles inundadas o afectadas. Retirá o asegurá objetos que puedan ser arrastrados por el viento. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, ",
+   "zona": "CORDOBA: CALAMUCHITA - TERCERO ARRIBA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_2037_cap_es.xml",
+   "desde_local": "03/11 20:37",
+   "hasta_local": "03/11 21:37",
+   "localidades": 18,
+   "poligonos": [
+    [
+     [
+      -64.55,
+      -32.41
+     ],
+     [
+      -64.82,
+      -32.19
+     ],
+     [
+      -64.49,
+      -31.86
+     ],
+     [
+      -64.14,
+      -32.06
+     ],
+     [
+      -64.55,
+      -32.41
      ]
     ]
    ]
@@ -5538,11 +5578,9 @@
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_8"
   ],
   "Santa Rosa del Conlara": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_8"
   ],
   "Concarán": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_8"
   ],
   "Los Cajones": [
@@ -5555,7 +5593,6 @@
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_9"
   ],
   "Chuchiras": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_9"
   ],
   "Las Tapias": [
@@ -5568,7 +5605,6 @@
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_9"
   ],
   "Los Romeros": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_9"
   ],
   "La Cortadera": [
@@ -5578,7 +5614,6 @@
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_9"
   ],
   "Conlara": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_9"
   ],
   "El Medanito": [
@@ -5612,7 +5647,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "La Paz": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Ambul": [
@@ -5622,7 +5656,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "La Ramada": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Las Rabonas": [
@@ -5635,7 +5668,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "La Travesía": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Tala Cañada": [
@@ -5645,7 +5677,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Luyaba": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Taninga": [
@@ -5655,7 +5686,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "San Javier Y Yacanto": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "La Playa": [
@@ -5674,7 +5704,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "La Poblacion": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Sauce de los Quevedos": [
@@ -5687,7 +5716,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Pueblito": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Piedras Anchas": [
@@ -5700,15 +5728,12 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Paraje las Chacras": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "San Javier": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Loma Bola": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Talaini": [
@@ -5748,7 +5773,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Alpa Corral": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Villa Berna": [
@@ -5761,7 +5785,8 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "El Durazno": [
-   "2026_11_03_1938_cap_es",
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Villa el Chacay": [
@@ -5771,11 +5796,9 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Unión de los Rios": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Pueblo Escondido": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Villa Yacanto": [
@@ -5863,7 +5886,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Paso del Río Seco": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "La Carolina el Potosí": [
@@ -5876,22 +5898,18 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Alcira Gigena": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Berrotaran": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Chucul": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Coronel Baigorria": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Elena": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Las Higueras": [
@@ -5901,7 +5919,6 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Las Peñas Sud": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Almafuerte": [
@@ -5911,37 +5928,30 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_38"
   ],
   "Carpintería": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Los Molles": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Cortaderas": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Villa de Merlo": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Villa Larca": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Papagayos": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Villa Elena": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "San José del Morro": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Cerro de Oro": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Villa del Carmen": [
@@ -6065,36 +6075,47 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_31"
   ],
   "La Cruz": [
-   "2026_11_03_1938_cap_es",
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Rio de los Sauces": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Alta Gracia": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Santa Rosa de Calamuchita": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa General Belgrano": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Los Reartes": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Embalse": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa del Dique": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa Quillinzo": [
-   "2026_11_03_1938_cap_es",
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "San Agustin": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Potrero de Garay": [
@@ -6107,31 +6128,35 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Cañada del Sauce": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Amboy": [
-   "2026_11_03_1938_cap_es",
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "El Corcovado el Torreon": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa los Aromos": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Santa Mónica": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "La Serranita": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Paso Cabral": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa la Rivera": [
-   "2026_11_03_1938_cap_es",
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Los Molinos": [
@@ -6141,10 +6166,13 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "El Corcovado": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa San Antonio": [
-   "2026_11_03_1938_cap_es",
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Falda del Carmen": [
@@ -6157,12 +6185,16 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Parque Calmayo": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Capilla Vieja": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Las Bajadas": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "La Paisanita": [
@@ -6175,7 +6207,8 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa Amancay": [
-   "2026_11_03_1938_cap_es",
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "La Perla": [
@@ -6200,11 +6233,9 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Las Caleras": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Los Condores": [
-   "2026_11_03_1938_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Malagueño": [
@@ -6220,6 +6251,8 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa Rumipal": [
+   "2026_11_03_2037_cap_es",
+   "2026_11_03_2036_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ]
  },
