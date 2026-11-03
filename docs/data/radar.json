@@ -1,67 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 05:30",
+ "consultado": "2026-11-03 05:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 05:12",
+ "observacion": "2026-11-03 05:30",
  "nucleos": [
   {
-   "lat": -33.3401,
-   "lon": -64.2887,
-   "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -32.7116,
-   "lon": -65.3968,
-   "dbz": 50,
-   "max_dbz": 57,
+   "lat": -33.4195,
+   "lon": -64.1274,
+   "dbz": 51,
+   "max_dbz": 55,
    "tope_km": 12.9
   },
   {
-   "lat": -31.5941,
-   "lon": -64.4286,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 8.2
+   "lat": -32.8181,
+   "lon": -65.2247,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 12.9
   },
   {
-   "lat": -31.7468,
-   "lon": -63.9122,
+   "lat": -30.6721,
+   "lon": -64.0198,
+   "dbz": 50,
+   "max_dbz": 52,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.6721,
+   "lon": -64.1274,
    "dbz": 49,
    "max_dbz": 54,
-   "tope_km": 8.8
+   "tope_km": 9.4
   },
   {
-   "lat": -31.7019,
-   "lon": -63.8154,
-   "dbz": 48,
-   "max_dbz": 51,
+   "lat": -31.8007,
+   "lon": -63.7186,
+   "dbz": 49,
+   "max_dbz": 52,
    "tope_km": 10.6
-  },
-  {
-   "lat": -32.2751,
-   "lon": -63.7724,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Dique Chico": {
-   "km": 18.8,
-   "max_dbz": 55,
-   "tope_km": 8.2,
+  "Tilisarao": {
+   "km": 7.9,
+   "max_dbz": 56,
+   "tope_km": 12.9,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Villa del Prado": {
-   "km": 4.5,
-   "max_dbz": 55,
-   "tope_km": 8.2,
-   "nivel": "muy intensa"
+  "Villa Gutierrez": {
+   "km": 3.3,
+   "max_dbz": 54,
+   "tope_km": 9.4,
+   "nivel": "intensa"
   }
  },
- "minutos": 19
+ "minutos": 15
 }
