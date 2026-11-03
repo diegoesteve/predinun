@@ -1,159 +1,159 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 03:15",
+ "consultado": "2026-11-03 03:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 03:04",
+ "observacion": "2026-11-03 03:13",
  "nucleos": [
   {
-   "lat": -32.8891,
-   "lon": -65.5474,
-   "dbz": 52,
-   "max_dbz": 58,
+   "lat": -32.9334,
+   "lon": -65.4614,
+   "dbz": 51,
+   "max_dbz": 56,
    "tope_km": 12.3
   },
   {
-   "lat": -31.0076,
-   "lon": -64.0843,
-   "dbz": 51,
-   "max_dbz": 62,
-   "tope_km": 10.6
+   "lat": -31.2697,
+   "lon": -65.0095,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 11.1
   },
   {
-   "lat": -30.9895,
-   "lon": -63.7078,
+   "lat": -31.0528,
+   "lon": -64.0198,
    "dbz": 50,
-   "max_dbz": 58,
+   "max_dbz": 59,
    "tope_km": 11.7
   },
   {
-   "lat": -32.9334,
-   "lon": -65.3646,
-   "dbz": 50,
-   "max_dbz": 52,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.2155,
-   "lon": -65.1064,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.414,
-   "lon": -64.4931,
+   "lat": -33.0397,
+   "lon": -65.2893,
    "dbz": 50,
    "max_dbz": 55,
-   "tope_km": 10.6
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.3599,
+   "lon": -64.9235,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 13.5
   },
   {
    "lat": -31.441,
-   "lon": -64.6653,
+   "lon": -63.8046,
    "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.3058,
-   "lon": -64.9773,
-   "dbz": 49,
-   "max_dbz": 59,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.1794,
-   "lon": -63.9875,
-   "dbz": 49,
-   "max_dbz": 53,
+   "max_dbz": 55,
    "tope_km": 11.7
   },
   {
-   "lat": -31.3238,
-   "lon": -63.8692,
+   "lat": -31.4771,
+   "lon": -64.4071,
    "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 11.7
+   "max_dbz": 55,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.5131,
+   "lon": -64.6007,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 2,
-   "max_dbz": 55
+   "nucleos": 1,
+   "max_dbz": 48
   }
  },
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 0.8,
+  "Cordoba": {
+   "km": 13.0,
    "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio San Antonio",
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo La Cañada",
    "nivel": "muy intensa"
   },
-  "Cuesta Blanca": {
-   "km": 8.4,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+  "Villa Carlos Paz": {
+   "km": 15.5,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
+  "Cuesta Blanca": {
+   "km": 3.4,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Las Tomitas",
+   "nivel": "intensa"
+  },
   "San Carlos Minas": {
-   "km": 17.8,
-   "max_dbz": 59,
+   "km": 12.8,
+   "max_dbz": 56,
    "tope_km": 11.1,
    "cuenca_de": "Noguinet",
    "nivel": "muy intensa"
   },
-  "Jesús María": {
-   "km": 3.4,
-   "max_dbz": 62,
-   "tope_km": 10.6,
+  "Tilisarao": {
+   "km": 26.1,
+   "max_dbz": 56,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Tilisarao": {
-   "km": 21.5,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Colonia Caroya": {
-   "km": 0.2,
-   "max_dbz": 62,
-   "tope_km": 10.6,
+  "Barrio Sierras de Oro": {
+   "km": 2.2,
+   "max_dbz": 55,
+   "tope_km": 11.1,
    "nivel": "muy intensa"
   },
   "Naschel": {
-   "km": 3.3,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "nivel": "intensa"
+   "km": 7.1,
+   "max_dbz": 56,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
   },
   "Mayu Sumaj": {
-   "km": 11.4,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+   "km": 7.6,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 9.8,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+   "km": 5.2,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "Estancia Vieja": {
-   "km": 3.9,
-   "max_dbz": 55,
-   "tope_km": 10.6,
+  "Sauce de los Quevedos": {
+   "km": 2.4,
+   "max_dbz": 56,
+   "tope_km": 11.1,
    "nivel": "muy intensa"
   },
-  "Piedras Anchas": {
-   "km": 4.2,
+  "San Geronimo": {
+   "km": 2.0,
    "max_dbz": 54,
-   "tope_km": 10.6,
+   "tope_km": 13.5,
+   "nivel": "intensa"
+  },
+  "Malagueño": {
+   "km": 4.9,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "Villa Rio Icho Cruz": {
+   "km": 4.8,
+   "max_dbz": 48,
+   "tope_km": 10.0,
    "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 17
 }
