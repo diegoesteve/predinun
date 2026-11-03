@@ -1,18 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 22:45",
+ "consultado": "2026-11-02 23:00",
  "radar": "RMA1",
- "observacion": "2026-11-02 22:31",
+ "observacion": "2026-11-02 22:49",
  "nucleos": [
   {
-   "lat": -30.8808,
-   "lon": -64.1919,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 9.4
+   "lat": -31.0166,
+   "lon": -64.009,
+   "dbz": 50,
+   "max_dbz": 59,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.917,
+   "lon": -64.1812,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 14
+ "localidades": {
+  "Jesús María": {
+   "km": 7.6,
+   "max_dbz": 53,
+   "tope_km": 8.8,
+   "cuenca_de": "Jesus Maria",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 11
 }
