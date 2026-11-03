@@ -1,159 +1,181 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 03:30",
+ "consultado": "2026-11-03 03:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 03:13",
+ "observacion": "2026-11-03 03:31",
  "nucleos": [
   {
-   "lat": -32.9334,
-   "lon": -65.4614,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.2697,
-   "lon": -65.0095,
+   "lat": -31.5581,
+   "lon": -64.2672,
    "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.0528,
-   "lon": -64.0198,
-   "dbz": 50,
-   "max_dbz": 59,
+   "max_dbz": 57,
    "tope_km": 11.7
   },
   {
-   "lat": -33.0397,
-   "lon": -65.2893,
+   "lat": -32.9866,
+   "lon": -65.257,
    "dbz": 50,
    "max_dbz": 55,
    "tope_km": 11.7
   },
   {
-   "lat": -31.3599,
-   "lon": -64.9235,
-   "dbz": 50,
+   "lat": -31.3329,
+   "lon": -64.676,
+   "dbz": 49,
    "max_dbz": 54,
-   "tope_km": 13.5
+   "tope_km": 11.1
   },
   {
-   "lat": -31.441,
-   "lon": -63.8046,
-   "dbz": 50,
+   "lat": -31.1433,
+   "lon": -63.9122,
+   "dbz": 49,
+   "max_dbz": 57,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.5671,
+   "lon": -63.8261,
+   "dbz": 49,
    "max_dbz": 55,
    "tope_km": 11.7
-  },
-  {
-   "lat": -31.4771,
-   "lon": -64.4071,
-   "dbz": 48,
-   "max_dbz": 55,
-   "tope_km": 11.1
   },
   {
    "lat": -31.5131,
-   "lon": -64.6007,
+   "lon": -64.7836,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.5491,
+   "lon": -64.1381,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.3779,
+   "lon": -64.8912,
+   "dbz": 48,
+   "max_dbz": 53,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.6121,
+   "lon": -64.5254,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.0166,
+   "lon": -63.7831,
    "dbz": 48,
    "max_dbz": 48,
    "tope_km": 10.0
   }
  ],
  "cuencas": {
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 54
+  },
   "SanAntonio_CPaz": {
    "nucleos": 1,
-   "max_dbz": 48
+   "max_dbz": 53
   }
  },
  "localidades": {
-  "Cordoba": {
-   "km": 13.0,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo La Cañada",
-   "nivel": "muy intensa"
-  },
   "Villa Carlos Paz": {
-   "km": 15.5,
-   "max_dbz": 48,
+   "km": 29.8,
+   "max_dbz": 53,
    "tope_km": 10.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Cuesta Blanca": {
-   "km": 3.4,
-   "max_dbz": 48,
+   "km": 18.9,
+   "max_dbz": 53,
    "tope_km": 10.0,
-   "cuenca_de": "Arroyo Las Tomitas",
+   "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "San Carlos Minas": {
-   "km": 12.8,
-   "max_dbz": 56,
+  "Villa de Soto": {
+   "km": 58.8,
+   "max_dbz": 53,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Soto",
+   "nivel": "intensa"
+  },
+  "Alta Gracia": {
+   "km": 6.8,
+   "max_dbz": 51,
    "tope_km": 11.1,
-   "cuenca_de": "Noguinet",
-   "nivel": "muy intensa"
+   "cuenca_de": "Chicamtoltina",
+   "nivel": "intensa"
+  },
+  "Santa María de Punilla": {
+   "km": 22.3,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "intensa"
+  },
+  "Cruz de Caña": {
+   "km": 33.4,
+   "max_dbz": 53,
+   "tope_km": 12.3,
+   "cuenca_de": "Río San Guillermo",
+   "nivel": "intensa"
   },
   "Tilisarao": {
-   "km": 26.1,
-   "max_dbz": 56,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Barrio Sierras de Oro": {
-   "km": 2.2,
+   "km": 25.6,
    "max_dbz": 55,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
-  "Naschel": {
-   "km": 7.1,
-   "max_dbz": 56,
-   "tope_km": 12.3,
+   "tope_km": 11.7,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
+  },
+  "Bañado de Soto": {
+   "km": 63.6,
+   "max_dbz": 53,
+   "tope_km": 12.3,
+   "cuenca_de": "San Guillermo De Soto",
+   "nivel": "intensa"
   },
   "Mayu Sumaj": {
-   "km": 7.6,
-   "max_dbz": 48,
+   "km": 23.1,
+   "max_dbz": 53,
    "tope_km": 10.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 5.2,
-   "max_dbz": 48,
+   "km": 20.7,
+   "max_dbz": 53,
    "tope_km": 10.0,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "Sauce de los Quevedos": {
-   "km": 2.4,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
-  "San Geronimo": {
-   "km": 2.0,
+  "San Roque": {
+   "km": 20.1,
    "max_dbz": 54,
-   "tope_km": 13.5,
+   "tope_km": 11.1,
+   "cuenca_de": "Lago San Roque",
    "nivel": "intensa"
   },
-  "Malagueño": {
+  "Falda del Carmen": {
    "km": 4.9,
-   "max_dbz": 55,
+   "max_dbz": 51,
    "tope_km": 11.1,
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
-  "Villa Rio Icho Cruz": {
-   "km": 4.8,
-   "max_dbz": 48,
-   "tope_km": 10.0,
+  "Pozo del Tala": {
+   "km": 3.0,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo de la Buena Esperanza",
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
