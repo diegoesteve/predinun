@@ -1,152 +1,30 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 04:15",
+ "consultado": "2026-11-03 04:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 03:59",
+ "observacion": "2026-11-03 04:17",
  "nucleos": [
   {
-   "lat": -31.3419,
-   "lon": -64.2887,
-   "dbz": 52,
-   "max_dbz": 65,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.7109,
-   "lon": -64.2134,
-   "dbz": 50,
-   "max_dbz": 64,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.5041,
-   "lon": -64.7083,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.7109,
-   "lon": -64.5577,
+   "lat": -31.405,
+   "lon": -64.1381,
    "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.675,
-   "lon": -63.8799,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.5041,
-   "lon": -64.3963,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.5131,
-   "lon": -64.59,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
+   "max_dbz": 53,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {
-  "SanAntonio_CPaz": {
-   "nucleos": 2,
-   "max_dbz": 55
+  "Capital": {
+   "nucleos": 1,
+   "max_dbz": 53
   }
  },
  "localidades": {
   "Cordoba": {
-   "km": 12.5,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo La Cañada",
-   "nivel": "intensa"
-  },
-  "Villa Carlos Paz": {
-   "km": 22.9,
-   "max_dbz": 55,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Saldan": {
-   "km": 3.3,
-   "max_dbz": 65,
-   "tope_km": 10.0,
-   "nivel": "muy intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 11.7,
-   "max_dbz": 55,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Barrio Sierras de Oro": {
-   "km": 4.7,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Anisacate": {
-   "km": 13.3,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 16.0,
-   "max_dbz": 55,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Tala Huasi": {
-   "km": 13.5,
-   "max_dbz": 55,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "La Serranita": {
-   "km": 9.7,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "Paso de la Pampa": {
    "km": 4.8,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "nivel": "intensa"
-  },
-  "La Paisanita": {
-   "km": 7.1,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "Las Jarillas": {
-   "km": 4.3,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Villa Rio Icho Cruz": {
-   "km": 4.2,
-   "max_dbz": 51,
-   "tope_km": 10.6,
+   "max_dbz": 53,
+   "tope_km": 8.2,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 13
 }
