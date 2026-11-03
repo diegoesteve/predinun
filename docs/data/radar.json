@@ -1,88 +1,103 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 16:46",
+ "consultado": "2026-11-03 17:00",
  "radar": "RMA1",
- "observacion": "2026-11-03 16:25",
+ "observacion": "2026-11-03 16:34",
  "nucleos": [
   {
    "lat": -32.756,
-   "lon": -64.1704,
+   "lon": -64.0951,
    "dbz": 54,
-   "max_dbz": 66,
-   "tope_km": 17.0
+   "max_dbz": 65,
+   "tope_km": 12.9
   },
   {
    "lat": -32.4802,
-   "lon": -65.3861,
-   "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -32.6316,
-   "lon": -64.5685,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.5426,
-   "lon": -65.0418,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -32.6938,
-   "lon": -64.3641,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.9334,
-   "lon": -64.2672,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.0
+   "lon": -65.3,
+   "dbz": 53,
+   "max_dbz": 63,
+   "tope_km": 11.1
   },
   {
    "lat": -32.6671,
-   "lon": -64.7729,
+   "lon": -64.7406,
    "dbz": 50,
-   "max_dbz": 56,
+   "max_dbz": 57,
    "tope_km": 10.6
+  },
+  {
+   "lat": -31.45,
+   "lon": -64.7944,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "descartado": "eco fijo del terreno"
+  },
+  {
+   "lat": -32.5604,
+   "lon": -64.9342,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.7116,
+   "lon": -64.3318,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.6138,
+   "lon": -64.8267,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.6671,
+   "lon": -64.4501,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
   "Alpa Corral": {
-   "km": 3.9,
-   "max_dbz": 56,
+   "km": 1.2,
+   "max_dbz": 57,
    "tope_km": 10.6,
    "cuenca_de": "Rio Barrancas",
    "nivel": "muy intensa"
   },
+  "Villa Elena": {
+   "km": 3.3,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
   "Paso del Río Seco": {
-   "km": 26.0,
-   "max_dbz": 56,
+   "km": 23.7,
+   "max_dbz": 57,
    "tope_km": 10.6,
    "cuenca_de": "Río de las Barrancas",
    "nivel": "muy intensa"
   },
   "Santa Rita": {
-   "km": 37.1,
-   "max_dbz": 56,
+   "km": 35.2,
+   "max_dbz": 57,
    "tope_km": 10.6,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
   },
   "Unión de los Rios": {
-   "km": 1.0,
-   "max_dbz": 56,
+   "km": 2.1,
+   "max_dbz": 57,
    "tope_km": 10.6,
    "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 26
 }
