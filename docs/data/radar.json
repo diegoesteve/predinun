@@ -1,66 +1,66 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 01:16",
+ "consultado": "2026-11-03 01:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 01:05",
+ "observacion": "2026-11-03 01:14",
  "nucleos": [
   {
-   "lat": -30.6267,
-   "lon": -64.7729,
+   "lat": -30.7992,
+   "lon": -64.6222,
    "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 9.4
+   "max_dbz": 59,
+   "tope_km": 13.5
   },
   {
-   "lat": -30.7175,
-   "lon": -64.7513,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 9.4
+   "lat": -30.5449,
+   "lon": -64.6976,
+   "dbz": 50,
+   "max_dbz": 59,
+   "tope_km": 11.1
   },
   {
-   "lat": -30.4175,
-   "lon": -64.988,
+   "lat": -30.4903,
+   "lon": -64.9235,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.6812,
+   "lon": -64.633,
    "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -30.5085,
-   "lon": -65.1817,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 9.4
+   "max_dbz": 50,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cruz del Eje": {
-   "km": 4.7,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "nivel": "intensa"
+  "San Marcos Sierras": {
+   "km": 2.9,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "nivel": "muy intensa"
+  },
+  "Las Palmas": {
+   "km": 24.4,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
   },
   "Olivares de San Nicolás": {
-   "km": 8.4,
-   "max_dbz": 57,
-   "tope_km": 9.4,
+   "km": 23.0,
+   "max_dbz": 50,
+   "tope_km": 10.0,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
-  "Huascha": {
-   "km": 4.1,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
-  },
-  "San Antonio": {
-   "km": 45.3,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "cuenca_de": "sin nombre",
+  "El Carrizal": {
+   "km": 3.4,
+   "max_dbz": 50,
+   "tope_km": 10.0,
    "nivel": "intensa"
   }
  },
- "minutos": 10
+ "minutos": 16
 }
