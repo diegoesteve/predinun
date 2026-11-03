@@ -1,67 +1,88 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 13:00",
+ "consultado": "2026-11-03 13:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 12:47",
+ "observacion": "2026-11-03 12:57",
  "nucleos": [
   {
    "lat": -32.4268,
-   "lon": -64.9557,
+   "lon": -64.8697,
    "dbz": 54,
-   "max_dbz": 65,
-   "tope_km": 17.0
+   "max_dbz": 63,
+   "tope_km": 12.9
   },
   {
-   "lat": -33.3225,
-   "lon": -65.0095,
-   "dbz": 53,
+   "lat": -32.827,
+   "lon": -64.1166,
+   "dbz": 52,
    "max_dbz": 61,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.9511,
+   "lon": -64.009,
+   "dbz": 51,
+   "max_dbz": 57,
    "tope_km": 13.5
   },
   {
    "lat": -32.827,
-   "lon": -64.1704,
-   "dbz": 52,
-   "max_dbz": 59,
+   "lon": -64.235,
+   "dbz": 51,
+   "max_dbz": 57,
    "tope_km": 10.6
   },
   {
-   "lat": -32.827,
-   "lon": -64.2887,
-   "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 12.3
+   "lat": -33.3313,
+   "lon": -64.9665,
+   "dbz": 51,
+   "max_dbz": 54,
+   "tope_km": 13.5
   },
   {
-   "lat": -32.9334,
-   "lon": -64.0951,
-   "dbz": 51,
-   "max_dbz": 57,
+   "lat": -33.0131,
+   "lon": -63.9552,
+   "dbz": 50,
+   "max_dbz": 55,
    "tope_km": 14.7
   },
   {
-   "lat": -33.0751,
-   "lon": -63.7724,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
+   "lat": -32.9954,
+   "lon": -64.4824,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Carpintería": {
-   "km": 9.3,
-   "max_dbz": 65,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
+  "Cañada del Sauce": {
+   "km": 21.9,
+   "max_dbz": 63,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
-  "Los Molles": {
-   "km": 4.2,
-   "max_dbz": 65,
-   "tope_km": 17.0,
+  "Santa Catalina": {
+   "km": 22.5,
+   "max_dbz": 47,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "intensa"
+  },
+  "Villa la Rivera": {
+   "km": 36.2,
+   "max_dbz": 63,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Pueblo Escondido": {
+   "km": 0.5,
+   "max_dbz": 63,
+   "tope_km": 12.9,
    "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 19
 }
