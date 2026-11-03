@@ -1,25 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 10:30",
+ "consultado": "2026-11-03 10:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 10:13",
+ "observacion": "2026-11-03 10:31",
  "nucleos": [
   {
-   "lat": -32.5782,
-   "lon": -65.3215,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 9.4
+   "lat": -32.6849,
+   "lon": -65.2785,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 12.3
   },
   {
-   "lat": -32.6404,
-   "lon": -65.3861,
-   "dbz": 48,
-   "max_dbz": 53,
+   "lat": -32.6671,
+   "lon": -65.1817,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 12.3
+  },
+  {
+   "lat": -31.5041,
+   "lon": -64.8697,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 7.6
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "localidades": {
+  "San Carlos Minas": {
+   "km": 41.6,
+   "max_dbz": 56,
+   "tope_km": 7.6,
+   "cuenca_de": "Jaime",
+   "nivel": "muy intensa"
+  },
+  "Salsacate": {
+   "km": 29.0,
+   "max_dbz": 56,
+   "tope_km": 7.6,
+   "cuenca_de": "Rio Salsacate",
+   "nivel": "muy intensa"
+  },
+  "Taninga": {
+   "km": 26.3,
+   "max_dbz": 56,
+   "tope_km": 7.6,
+   "cuenca_de": "Río Jaime",
+   "nivel": "muy intensa"
+  },
+  "Los Talares": {
+   "km": 21.8,
+   "max_dbz": 56,
+   "tope_km": 7.6,
+   "cuenca_de": "Río Jaime",
+   "nivel": "muy intensa"
+  },
+  "Concarán": {
+   "km": 16.6,
+   "max_dbz": 56,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 14
 }
