@@ -1,51 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-03 13:45",
+ "consultado": "2026-11-03 14:00",
  "alertas": [
-  {
-   "id": "2026_11_03_1453_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-11-03T14:53:00-03:00",
-   "hasta": "2026-11-03T16:53:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
-   "zona": "SANTA FE: CASEROS - GRAL LOPEZ. CORDOBA: JUAREZ CELMAN - MARCOS JUAREZ - PRES ROQUE S.  PENA - UNION.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_1453_cap_es.xml",
-   "desde_local": "03/11 14:53",
-   "hasta_local": "03/11 16:53",
-   "localidades": 25,
-   "poligonos": [
-    [
-     [
-      -63.8,
-      -33.99
-     ],
-     [
-      -62.29,
-      -33.08
-     ],
-     [
-      -61.52,
-      -33.27
-     ],
-     [
-      -61.75,
-      -34.34
-     ],
-     [
-      -63.42,
-      -34.35
-     ],
-     [
-      -63.8,
-      -33.99
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_03_1529_cap_es",
    "tipo": "aviso a corto plazo",
@@ -122,6 +78,46 @@
      [
       -64.89,
       -33.49
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_03_1653_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-03T16:53:00-03:00",
+   "hasta": "2026-11-03T18:53:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CORDOBA: RIO CUARTO. SAN LUIS: BELGRANO - CNEL PRINGLES - GRAL PEDERNERA - JUAN M.  DE PUEYRREDON.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_1653_cap_es.xml",
+   "desde_local": "03/11 16:53",
+   "hasta_local": "03/11 18:53",
+   "localidades": 2,
+   "poligonos": [
+    [
+     [
+      -66.3,
+      -33.26
+     ],
+     [
+      -66.25,
+      -33.02
+     ],
+     [
+      -64.85,
+      -33.07
+     ],
+     [
+      -64.9,
+      -33.37
+     ],
+     [
+      -66.3,
+      -33.26
      ]
     ]
    ]
@@ -6602,6 +6598,7 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Achiras": [
+   "2026_11_03_1653_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Alcira Gigena": [
@@ -6662,6 +6659,7 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "San José del Morro": [
+   "2026_11_03_1653_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Cerro de Oro": [
@@ -7245,11 +7243,9 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_57"
   ],
   "Aarón Castellanos": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Amenábar": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Arequito": [
@@ -7259,18 +7255,15 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Berabevú": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Bigand": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Cafferata": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Carmen": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Carreras": [
@@ -7280,66 +7273,54 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Cañada del Ucle": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Chabas": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Chapuy": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Chañar Ladeado": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Chovet": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Christophersen": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Diego de Alvear": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Elortondo": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Gödeken": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Hughes": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "La Chispa": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Labordeboy": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Lazzarino": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Los Molinos": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Los Quirquinchos": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Maggiolo": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "María Teresa": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Melincué": [
@@ -7349,44 +7330,36 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Murphy": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Rufino": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "San Eduardo": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "San Francisco de Santa Fe": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "San Gregorio": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "San José de la Esquina": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Sancti Spiritu": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Sanford": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Santa Isabel": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Teodelina": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Venado Tuerto": [
-   "2026_11_03_1453_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_44"
   ],
   "Villa Cañás": [
