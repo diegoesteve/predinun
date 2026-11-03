@@ -1,114 +1,159 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 03:00",
+ "consultado": "2026-11-03 03:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 02:46",
+ "observacion": "2026-11-03 03:04",
  "nucleos": [
   {
-   "lat": -32.7293,
-   "lon": -65.5044,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.1161,
-   "lon": -63.9552,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lat": -32.8891,
+   "lon": -65.5474,
+   "dbz": 52,
+   "max_dbz": 58,
    "tope_km": 12.3
   },
   {
-   "lat": -30.9442,
-   "lon": -63.9445,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.2697,
-   "lon": -64.5685,
-   "dbz": 50,
-   "max_dbz": 56,
+   "lat": -31.0076,
+   "lon": -64.0843,
+   "dbz": 51,
+   "max_dbz": 62,
    "tope_km": 10.6
   },
   {
-   "lat": -30.6176,
-   "lon": -63.966,
+   "lat": -30.9895,
+   "lon": -63.7078,
    "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.917,
-   "lon": -64.2242,
-   "dbz": 50,
-   "max_dbz": 61,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.0981,
-   "lon": -64.1704,
-   "dbz": 50,
-   "max_dbz": 54,
+   "max_dbz": 58,
    "tope_km": 11.7
   },
   {
-   "lat": -31.1252,
-   "lon": -65.1386,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 12.3
+   "lat": -32.9334,
+   "lon": -65.3646,
+   "dbz": 50,
+   "max_dbz": 52,
+   "tope_km": 11.7
   },
   {
-   "lat": -30.7357,
-   "lon": -63.9122,
-   "dbz": 47,
+   "lat": -31.2155,
+   "lon": -65.1064,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.414,
+   "lon": -64.4931,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.441,
+   "lon": -64.6653,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.3058,
+   "lon": -64.9773,
+   "dbz": 49,
+   "max_dbz": 59,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.1794,
+   "lon": -63.9875,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.3238,
+   "lon": -63.8692,
+   "dbz": 48,
    "max_dbz": 49,
-   "tope_km": 10.0
+   "tope_km": 11.7
   }
  ],
  "cuencas": {
-  "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 56
+  "SanAntonio_CPaz": {
+   "nucleos": 2,
+   "max_dbz": 55
   }
  },
  "localidades": {
-  "Santa María de Punilla": {
-   "km": 10.6,
-   "max_dbz": 56,
+  "Villa Carlos Paz": {
+   "km": 0.8,
+   "max_dbz": 55,
    "tope_km": 10.6,
-   "cuenca_de": "Río Cosquín",
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 8.4,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "San Carlos Minas": {
+   "km": 17.8,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "cuenca_de": "Noguinet",
    "nivel": "muy intensa"
   },
   "Jesús María": {
-   "km": 10.4,
-   "max_dbz": 61,
-   "tope_km": 11.1,
-   "cuenca_de": "Jesus Maria",
-   "nivel": "muy intensa"
-  },
-  "La Paz": {
-   "km": 3.9,
-   "max_dbz": 61,
-   "tope_km": 11.1,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "San Roque": {
-   "km": 12.3,
-   "max_dbz": 56,
+   "km": 3.4,
+   "max_dbz": 62,
    "tope_km": 10.6,
-   "cuenca_de": "Lago San Roque",
    "nivel": "muy intensa"
   },
-  "General Paz": {
-   "km": 4.8,
-   "max_dbz": 54,
+  "Tilisarao": {
+   "km": 21.5,
+   "max_dbz": 52,
    "tope_km": 11.7,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Colonia Caroya": {
+   "km": 0.2,
+   "max_dbz": 62,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  },
+  "Naschel": {
+   "km": 3.3,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 11.4,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Tala Huasi": {
+   "km": 9.8,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Estancia Vieja": {
+   "km": 3.9,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  },
+  "Piedras Anchas": {
+   "km": 4.2,
+   "max_dbz": 54,
+   "tope_km": 10.6,
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
