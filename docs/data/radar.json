@@ -1,111 +1,128 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 01:45",
+ "consultado": "2026-11-03 02:00",
  "radar": "RMA1",
- "observacion": "2026-11-03 01:33",
+ "observacion": "2026-11-03 01:42",
  "nucleos": [
   {
-   "lat": -30.8899,
-   "lon": -64.4931,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 10.0
+   "lat": -30.7448,
+   "lon": -64.7298,
+   "dbz": 52,
+   "max_dbz": 58,
+   "tope_km": 12.3
   },
   {
-   "lat": -30.6903,
-   "lon": -64.8267,
+   "lat": -30.5994,
+   "lon": -64.6545,
    "dbz": 50,
-   "max_dbz": 56,
+   "max_dbz": 55,
    "tope_km": 11.1
-  },
-  {
-   "lat": -30.5813,
-   "lon": -64.321,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 10.6
   },
   {
    "lat": -30.6358,
-   "lon": -64.6653,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.1
+   "lon": -64.2995,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 11.7
   },
   {
-   "lat": -30.6085,
-   "lon": -64.8267,
+   "lat": -30.7901,
+   "lon": -64.6222,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.5722,
+   "lon": -64.5039,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -30.6903,
+   "lon": -64.6222,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.9623,
+   "lon": -64.4286,
    "dbz": 49,
    "max_dbz": 52,
    "tope_km": 11.7
   },
   {
-   "lat": -30.5085,
-   "lon": -64.5469,
+   "lat": -30.9533,
+   "lon": -64.6007,
    "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 11.1
+   "max_dbz": 52,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
+  "La Granja": {
+   "km": 14.6,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "cuenca_de": "Río La Granja",
+   "nivel": "intensa"
+  },
   "San Marcos Sierras": {
-   "km": 18.0,
-   "max_dbz": 59,
-   "tope_km": 10.0,
+   "km": 1.5,
+   "max_dbz": 54,
+   "tope_km": 12.3,
    "cuenca_de": "Rio San Marcos Sierra",
+   "nivel": "intensa"
+  },
+  "Los Molles": {
+   "km": 21.2,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "cuenca_de": "Río La Granja",
+   "nivel": "intensa"
+  },
+  "Colonia Caroya": {
+   "km": 32.3,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Carnero",
+   "nivel": "intensa"
+  },
+  "Los Sauces": {
+   "km": 4.5,
+   "max_dbz": 58,
+   "tope_km": 12.3,
    "nivel": "muy intensa"
   },
-  "Capilla del Monte": {
-   "km": 4.6,
-   "max_dbz": 59,
-   "tope_km": 10.0,
+  "Las Palmas": {
+   "km": 31.6,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
   "Olivares de San Nicolás": {
-   "km": 18.1,
+   "km": 24.4,
    "max_dbz": 53,
-   "tope_km": 11.1,
+   "tope_km": 12.3,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "San Antonio": {
-   "km": 38.4,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+  "El Carrizal": {
+   "km": 3.1,
+   "max_dbz": 53,
+   "tope_km": 12.3,
+   "nivel": "intensa"
   },
-  "Ischilín": {
-   "km": 4.2,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
-  "El Brete": {
-   "km": 5.0,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
-  "El Rincon": {
-   "km": 4.0,
-   "max_dbz": 59,
-   "tope_km": 10.0,
-   "nivel": "muy intensa"
-  },
-  "Las Playas": {
-   "km": 2.0,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
-  "Los Cocos": {
-   "km": 4.7,
-   "max_dbz": 59,
-   "tope_km": 10.0,
+  "Villa Albertina": {
+   "km": 2.8,
+   "max_dbz": 55,
+   "tope_km": 11.7,
    "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 19
 }
