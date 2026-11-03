@@ -1,103 +1,61 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 17:00",
+ "consultado": "2026-11-03 17:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 16:34",
+ "observacion": "2026-11-03 17:01",
  "nucleos": [
   {
-   "lat": -32.756,
-   "lon": -64.0951,
-   "dbz": 54,
-   "max_dbz": 65,
-   "tope_km": 12.9
+   "lat": -32.3733,
+   "lon": -64.8374,
+   "dbz": 53,
+   "max_dbz": 64,
+   "tope_km": 16.4
   },
   {
-   "lat": -32.4802,
-   "lon": -65.3,
-   "dbz": 53,
-   "max_dbz": 63,
+   "lat": -32.6049,
+   "lon": -63.7939,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.5337,
+   "lon": -64.5039,
+   "dbz": 52,
+   "max_dbz": 58,
    "tope_km": 11.1
   },
   {
-   "lat": -32.6671,
-   "lon": -64.7406,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.45,
-   "lon": -64.7944,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 8.8,
-   "descartado": "eco fijo del terreno"
-  },
-  {
-   "lat": -32.5604,
-   "lon": -64.9342,
-   "dbz": 50,
+   "lat": -32.5248,
+   "lon": -64.7298,
+   "dbz": 49,
    "max_dbz": 55,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.7116,
-   "lon": -64.3318,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.6138,
-   "lon": -64.8267,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.6671,
-   "lon": -64.4501,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 11.7
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alpa Corral": {
-   "km": 1.2,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio Barrancas",
-   "nivel": "muy intensa"
-  },
-  "Villa Elena": {
-   "km": 3.3,
+  "La Cruz": {
+   "km": 30.3,
    "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
+   "tope_km": 11.1,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "muy intensa"
   },
-  "Paso del Río Seco": {
-   "km": 23.7,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "cuenca_de": "Río de las Barrancas",
+  "Rio de los Sauces": {
+   "km": 12.7,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
-  "Santa Rita": {
-   "km": 35.2,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
-  },
-  "Unión de los Rios": {
-   "km": 2.1,
-   "max_dbz": 57,
-   "tope_km": 10.6,
+  "Paso Cabral": {
+   "km": 24.8,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "muy intensa"
   }
  },
- "minutos": 26
+ "minutos": 14
 }
