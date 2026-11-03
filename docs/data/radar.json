@@ -1,178 +1,152 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 04:00",
+ "consultado": "2026-11-03 04:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 03:40",
+ "observacion": "2026-11-03 03:59",
  "nucleos": [
   {
-   "lat": -33.0308,
-   "lon": -65.1709,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 11.7
+   "lat": -31.3419,
+   "lon": -64.2887,
+   "dbz": 52,
+   "max_dbz": 65,
+   "tope_km": 10.0
   },
   {
-   "lat": -31.2336,
-   "lon": -64.5039,
+   "lat": -31.7109,
+   "lon": -64.2134,
    "dbz": 50,
-   "max_dbz": 57,
+   "max_dbz": 64,
    "tope_km": 11.7
   },
   {
-   "lat": -31.5761,
+   "lat": -31.5041,
    "lon": -64.7083,
    "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.423,
-   "lon": -64.59,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.6031,
-   "lon": -63.7724,
-   "dbz": 49,
    "max_dbz": 55,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.7109,
+   "lon": -64.5577,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.675,
+   "lon": -63.8799,
+   "dbz": 49,
+   "max_dbz": 49,
    "tope_km": 11.7
   },
   {
-   "lat": -31.657,
-   "lon": -64.2565,
-   "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.423,
-   "lon": -64.7729,
-   "dbz": 49,
-   "max_dbz": 52,
+   "lat": -31.5041,
+   "lon": -64.3963,
+   "dbz": 48,
+   "max_dbz": 48,
    "tope_km": 10.6
   },
   {
-   "lat": -31.1975,
-   "lon": -63.8584,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.0
+   "lat": -31.5131,
+   "lon": -64.59,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {
-  "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 57
-  },
   "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 52
+   "nucleos": 2,
+   "max_dbz": 55
   }
  },
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 26.4,
-   "max_dbz": 52,
+  "Cordoba": {
+   "km": 12.5,
+   "max_dbz": 48,
    "tope_km": 10.6,
-   "cuenca_de": "Rio San Antonio",
+   "cuenca_de": "Arroyo La Cañada",
    "nivel": "intensa"
   },
-  "Cosquin": {
-   "km": 4.2,
-   "max_dbz": 57,
-   "tope_km": 11.7,
+  "Villa Carlos Paz": {
+   "km": 22.9,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Saldan": {
+   "km": 3.3,
+   "max_dbz": 65,
+   "tope_km": 10.0,
    "nivel": "muy intensa"
   },
   "Cuesta Blanca": {
-   "km": 18.5,
-   "max_dbz": 52,
-   "tope_km": 10.6,
+   "km": 11.7,
+   "max_dbz": 55,
+   "tope_km": 8.8,
    "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Barrio Sierras de Oro": {
+   "km": 4.7,
+   "max_dbz": 48,
+   "tope_km": 10.6,
    "nivel": "intensa"
   },
-  "Cabalango": {
-   "km": 3.7,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
-  "Santa María de Punilla": {
-   "km": 5.5,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "cuenca_de": "Río Cosquín",
-   "nivel": "muy intensa"
-  },
-  "Tilisarao": {
-   "km": 31.8,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
   "Anisacate": {
-   "km": 31.8,
-   "max_dbz": 53,
+   "km": 13.3,
+   "max_dbz": 49,
    "tope_km": 11.1,
    "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
   "Mayu Sumaj": {
-   "km": 21.8,
-   "max_dbz": 52,
-   "tope_km": 10.6,
+   "km": 16.0,
+   "max_dbz": 55,
+   "tope_km": 8.8,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Tala Huasi": {
-   "km": 20.1,
-   "max_dbz": 52,
-   "tope_km": 10.6,
+   "km": 13.5,
+   "max_dbz": 55,
+   "tope_km": 8.8,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "La Serranita": {
-   "km": 29.3,
-   "max_dbz": 53,
+   "km": 9.7,
+   "max_dbz": 49,
    "tope_km": 11.1,
    "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "San Roque": {
-   "km": 11.9,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "cuenca_de": "Lago San Roque",
-   "nivel": "muy intensa"
-  },
-  "Estancia Vieja": {
-   "km": 6.4,
-   "max_dbz": 56,
+  "Paso de la Pampa": {
+   "km": 4.8,
+   "max_dbz": 49,
    "tope_km": 11.1,
-   "cuenca_de": "Rio Los Chorrillos",
-   "nivel": "muy intensa"
-  },
-  "Villa Flor Serrana": {
-   "km": 4.0,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "La Paisanita": {
-   "km": 26.8,
-   "max_dbz": 53,
+   "km": 7.1,
+   "max_dbz": 49,
    "tope_km": 11.1,
    "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "Rafael Garcia": {
-   "km": 1.5,
-   "max_dbz": 56,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
+  "Las Jarillas": {
+   "km": 4.3,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Villa Rio Icho Cruz": {
+   "km": 4.2,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "nivel": "intensa"
   }
  },
- "minutos": 20
+ "minutos": 17
 }
