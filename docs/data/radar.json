@@ -1,67 +1,102 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 15:31",
+ "consultado": "2026-11-03 15:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 15:13",
+ "observacion": "2026-11-03 15:31",
  "nucleos": [
   {
-   "lat": -33.0928,
-   "lon": -64.4501,
+   "lat": -32.7116,
+   "lon": -65.1817,
    "dbz": 52,
-   "max_dbz": 57,
-   "tope_km": 13.5
+   "max_dbz": 61,
+   "tope_km": 11.7
   },
   {
-   "lat": -32.9068,
-   "lon": -64.945,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 12.9
+   "lat": -33.1547,
+   "lon": -64.2027,
+   "dbz": 52,
+   "max_dbz": 58,
+   "tope_km": 17.0
   },
   {
-   "lat": -33.137,
-   "lon": -64.3856,
+   "lat": -32.827,
+   "lon": -65.0095,
    "dbz": 51,
-   "max_dbz": 55,
+   "max_dbz": 59,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.8891,
+   "lon": -64.5685,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -32.9511,
+   "lon": -64.7836,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -33.1016,
+   "lon": -64.4178,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.8359,
+   "lon": -64.5147,
+   "dbz": 49,
+   "max_dbz": 52,
    "tope_km": 11.1
   },
   {
-   "lat": -33.0751,
-   "lon": -64.5792,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 12.9
+   "lat": -33.0839,
+   "lon": -64.1704,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 17.0
   },
   {
-   "lat": -33.2342,
-   "lon": -64.321,
+   "lat": -32.8891,
+   "lon": -64.9557,
    "dbz": 48,
    "max_dbz": 50,
-   "tope_km": 11.1
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Rio Cuarto": {
-   "km": 3.6,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
   "Santa Catalina": {
-   "km": 11.3,
-   "max_dbz": 57,
-   "tope_km": 13.5,
+   "km": 42.4,
+   "max_dbz": 54,
+   "tope_km": 10.0,
    "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
+  },
+  "Paso del Río Seco": {
+   "km": 4.8,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "nivel": "intensa"
   },
   "Santa Rita": {
-   "km": 40.4,
-   "max_dbz": 60,
-   "tope_km": 12.9,
+   "km": 6.2,
+   "max_dbz": 50,
+   "tope_km": 9.4,
    "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "intensa"
+  },
+  "Concarán": {
+   "km": 21.4,
+   "max_dbz": 61,
+   "tope_km": 11.7,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
