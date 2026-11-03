@@ -1,53 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 12:45",
+ "consultado": "2026-11-03 13:00",
  "radar": "RMA1",
- "observacion": "2026-11-03 12:29",
+ "observacion": "2026-11-03 12:47",
  "nucleos": [
   {
-   "lat": -32.4,
-   "lon": -65.1494,
-   "dbz": 55,
-   "max_dbz": 64,
+   "lat": -32.4268,
+   "lon": -64.9557,
+   "dbz": 54,
+   "max_dbz": 65,
    "tope_km": 17.0
   },
   {
-   "lat": -32.9511,
-   "lon": -64.2027,
-   "dbz": 52,
-   "max_dbz": 52,
-   "tope_km": 11.7
+   "lat": -33.3225,
+   "lon": -65.0095,
+   "dbz": 53,
+   "max_dbz": 61,
+   "tope_km": 13.5
   },
   {
-   "lat": -32.7915,
-   "lon": -64.2995,
-   "dbz": 50,
+   "lat": -32.827,
+   "lon": -64.1704,
+   "dbz": 52,
    "max_dbz": 59,
    "tope_km": 10.6
   },
   {
-   "lat": -32.7915,
-   "lon": -64.4824,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.6
+   "lat": -32.827,
+   "lon": -64.2887,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 12.3
   },
   {
-   "lat": -33.4548,
-   "lon": -64.8267,
+   "lat": -32.9334,
+   "lon": -64.0951,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -33.0751,
+   "lon": -63.7724,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.1
+   "max_dbz": 51,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alcira Gigena": {
-   "km": 4.5,
-   "max_dbz": 59,
-   "tope_km": 10.6,
+  "Carpintería": {
+   "km": 9.3,
+   "max_dbz": 65,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Los Molles": {
+   "km": 4.2,
+   "max_dbz": 65,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
