@@ -1,47 +1,93 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 14:00",
+ "consultado": "2026-11-03 14:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 13:51",
+ "observacion": "2026-11-03 14:00",
  "nucleos": [
   {
-   "lat": -33.3401,
-   "lon": -64.4394,
-   "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -33.3313,
-   "lon": -64.6976,
-   "dbz": 49,
-   "max_dbz": 49,
+   "lat": -33.1989,
+   "lon": -64.945,
+   "dbz": 51,
+   "max_dbz": 60,
    "tope_km": 12.3
   },
   {
-   "lat": -33.1282,
-   "lon": -65.2247,
-   "dbz": 49,
-   "max_dbz": 52,
+   "lat": -33.2695,
+   "lon": -64.7836,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.9245,
+   "lon": -65.4291,
+   "dbz": 50,
+   "max_dbz": 57,
    "tope_km": 11.7
   },
   {
-   "lat": -33.3754,
-   "lon": -64.5039,
+   "lat": -33.3048,
+   "lon": -64.5577,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -33.0928,
+   "lon": -65.2462,
    "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -33.3401,
+   "lon": -64.3963,
+   "dbz": 48,
    "max_dbz": 49,
-   "tope_km": 12.9
+   "tope_km": 15.2
+  },
+  {
+   "lat": -33.2607,
+   "lon": -64.6115,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -33.3931,
+   "lon": -64.3318,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 41.5,
-   "max_dbz": 52,
+   "km": 23.4,
+   "max_dbz": 57,
    "tope_km": 11.7,
    "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "Naschel": {
+   "km": 3.9,
+   "max_dbz": 57,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Achiras": {
+   "km": 4.8,
+   "max_dbz": 60,
+   "tope_km": 12.3,
+   "nivel": "muy intensa"
+  },
+  "Las Vertientes": {
+   "km": 2.9,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 9
+ "minutos": 15
 }
