@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-03 15:16",
+ "consultado": "2026-11-03 15:30",
  "alertas": [
   {
    "id": "2026_11_03_1631_cap_es",
@@ -162,6 +162,46 @@
      [
       -66.37,
       -33.01
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_03_1829_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-03T18:29:00-03:00",
+   "hasta": "2026-11-03T20:29:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CORDOBA: CALAMUCHITA - JUAREZ CELMAN - RIO CUARTO. SAN LUIS: CHACABUCO.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_1829_cap_es.xml",
+   "desde_local": "03/11 18:29",
+   "hasta_local": "03/11 20:29",
+   "localidades": 12,
+   "poligonos": [
+    [
+     [
+      -64.01,
+      -33.36
+     ],
+     [
+      -65.25,
+      -32.8
+     ],
+     [
+      -65.03,
+      -32.51
+     ],
+     [
+      -63.73,
+      -33.01
+     ],
+     [
+      -64.01,
+      -33.36
      ]
     ]
    ]
@@ -5817,6 +5857,7 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Alpa Corral": [
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Villa Berna": [
@@ -5833,12 +5874,14 @@
   ],
   "Villa el Chacay": [
    "2026_11_03_1747_cap_es",
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "San Miguel de los Ríos": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Unión de los Rios": [
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Pueblo Escondido": [
@@ -5924,6 +5967,7 @@
   ],
   "Rio Cuarto": [
    "2026_11_03_1747_cap_es",
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Santa Catalina": [
@@ -5931,6 +5975,7 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Paso del Río Seco": [
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "La Carolina el Potosí": [
@@ -5939,6 +5984,7 @@
   ],
   "Santa Rita": [
    "2026_11_03_1747_cap_es",
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Achiras": [
@@ -5952,9 +5998,11 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Chucul": [
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Coronel Baigorria": [
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Elena": [
@@ -5962,6 +6010,7 @@
   ],
   "Las Higueras": [
    "2026_11_03_1747_cap_es",
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Las Vertientes": [
@@ -5990,9 +6039,11 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Villa Larca": [
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Papagayos": [
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Villa Elena": [
@@ -6007,6 +6058,7 @@
   ],
   "Villa del Carmen": [
    "2026_11_03_1747_cap_es",
+   "2026_11_03_1829_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_42"
   ],
   "Villa Carlos Paz": [

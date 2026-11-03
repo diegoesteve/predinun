@@ -1,82 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 15:16",
+ "consultado": "2026-11-03 15:31",
  "radar": "RMA1",
- "observacion": "2026-11-03 14:55",
+ "observacion": "2026-11-03 15:13",
  "nucleos": [
   {
-   "lat": -32.9245,
-   "lon": -65.0848,
-   "dbz": 53,
-   "max_dbz": 62,
+   "lat": -33.0928,
+   "lon": -64.4501,
+   "dbz": 52,
+   "max_dbz": 57,
    "tope_km": 13.5
   },
   {
+   "lat": -32.9068,
+   "lon": -64.945,
+   "dbz": 51,
+   "max_dbz": 60,
+   "tope_km": 12.9
+  },
+  {
    "lat": -33.137,
-   "lon": -64.5792,
-   "dbz": 50,
+   "lon": -64.3856,
+   "dbz": 51,
    "max_dbz": 55,
    "tope_km": 11.1
   },
   {
-   "lat": -32.8536,
-   "lon": -65.2462,
+   "lat": -33.0751,
+   "lon": -64.5792,
    "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 10.6
+   "max_dbz": 51,
+   "tope_km": 12.9
   },
   {
-   "lat": -33.1458,
-   "lon": -64.4609,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -33.3137,
-   "lon": -64.1274,
+   "lat": -33.2342,
+   "lon": -64.321,
    "dbz": 48,
    "max_dbz": 50,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -33.0574,
-   "lon": -64.59,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -33.2872,
-   "lon": -64.3641,
-   "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 11.7
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Tilisarao": {
-   "km": 25.3,
-   "max_dbz": 62,
-   "tope_km": 13.5,
-   "cuenca_de": "sin nombre",
+  "Rio Cuarto": {
+   "km": 3.6,
+   "max_dbz": 55,
+   "tope_km": 11.1,
    "nivel": "muy intensa"
   },
   "Santa Catalina": {
-   "km": 5.9,
-   "max_dbz": 49,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "intensa"
-  },
-  "El Tala": {
-   "km": 7.0,
-   "max_dbz": 62,
+   "km": 11.3,
+   "max_dbz": 57,
    "tope_km": 13.5,
-   "cuenca_de": "sin nombre",
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "muy intensa"
+  },
+  "Santa Rita": {
+   "km": 40.4,
+   "max_dbz": 60,
+   "tope_km": 12.9,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
   }
  },
- "minutos": 21
+ "minutos": 18
 }
