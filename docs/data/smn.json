@@ -1,59 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-03 08:00",
+ "consultado": "2026-11-03 08:15",
  "alertas": [
-  {
-   "id": "2026_11_03_0904_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-11-03T09:04:00-03:00",
-   "hasta": "2026-11-03T11:04:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
-   "zona": "SANTA FE: GRAL LOPEZ. CORDOBA: GRAL ROCA - JUAREZ CELMAN - MARCOS JUAREZ - PRES ROQUE S.  PENA - RIO CUARTO - UNION. SAN LUIS: GDOR DUPUY - GRAL PEDERNERA. BUENOS AIRES: FLORENTINO AMEGHINO - GRAL PINTO - GRAL VILLEGAS. LA PAMPA: CHAPALEUFU - PARERA - REALICO.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_0904_cap_es.xml",
-   "desde_local": "03/11 09:04",
-   "hasta_local": "03/11 11:04",
-   "localidades": 6,
-   "poligonos": [
-    [
-     [
-      -64.22,
-      -35.45
-     ],
-     [
-      -66.03,
-      -34.3
-     ],
-     [
-      -65.79,
-      -34.02
-     ],
-     [
-      -64.48,
-      -34.12
-     ],
-     [
-      -63.91,
-      -33.42
-     ],
-     [
-      -61.91,
-      -34.22
-     ],
-     [
-      -63.04,
-      -34.97
-     ],
-     [
-      -64.22,
-      -35.45
-     ]
-    ]
-   ]
-  },
   {
    "id": "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_3",
    "tipo": "alerta",
@@ -10100,36 +10048,6 @@
   ]
  },
  "localidades_santafe": {
-  "Aarón Castellanos": [
-   "2026_11_03_0904_cap_es",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
-  ],
-  "Amenábar": [
-   "2026_11_03_0904_cap_es",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
-  ],
-  "Christophersen": [
-   "2026_11_03_0904_cap_es",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
-  ],
-  "Diego de Alvear": [
-   "2026_11_03_0904_cap_es",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
-  ],
-  "Lazzarino": [
-   "2026_11_03_0904_cap_es",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
-  ],
-  "Rufino": [
-   "2026_11_03_0904_cap_es",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
-   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
-  ],
   "Alejandra": [
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_75",
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_82"
@@ -10536,6 +10454,14 @@
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_74",
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_81"
   ],
+  "Aarón Castellanos": [
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
+  ],
+  "Amenábar": [
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
+  ],
   "Arequito": [
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
@@ -10588,6 +10514,14 @@
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
   ],
+  "Christophersen": [
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
+  ],
+  "Diego de Alvear": [
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
+  ],
   "Elortondo": [
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
@@ -10605,6 +10539,10 @@
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
   ],
   "Labordeboy": [
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
+  ],
+  "Lazzarino": [
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
   ],
@@ -10633,6 +10571,10 @@
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
   ],
   "Murphy": [
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
+   "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
+  ],
+  "Rufino": [
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261103091945_Tormenta_Llanura_alertas_alertas_40"
   ],
