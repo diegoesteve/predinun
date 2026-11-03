@@ -1,67 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 16:15",
+ "consultado": "2026-11-03 16:26",
  "radar": "RMA1",
- "observacion": "2026-11-03 15:58",
+ "observacion": "2026-11-03 16:16",
  "nucleos": [
   {
    "lat": -32.7826,
-   "lon": -64.3963,
+   "lon": -64.3103,
+   "dbz": 54,
+   "max_dbz": 62,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.9068,
+   "lon": -64.3533,
    "dbz": 53,
-   "max_dbz": 64,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.6849,
-   "lon": -65.0418,
-   "dbz": 52,
    "max_dbz": 61,
-   "tope_km": 11.1
+   "tope_km": 11.7
   },
   {
-   "lat": -32.8181,
-   "lon": -64.676,
+   "lat": -32.4981,
+   "lon": -65.5474,
+   "dbz": 52,
+   "max_dbz": 58,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -33.1105,
+   "lon": -63.7401,
+   "dbz": 52,
+   "max_dbz": 52,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.6582,
+   "lon": -64.9342,
    "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.7382,
-   "lon": -64.4931,
-   "dbz": 50,
-   "max_dbz": 52,
+   "max_dbz": 59,
    "tope_km": 12.9
   },
   {
-   "lat": -32.8092,
-   "lon": -64.5147,
-   "dbz": 50,
+   "lat": -32.6138,
+   "lon": -64.633,
+   "dbz": 51,
    "max_dbz": 53,
-   "tope_km": 12.9
+   "tope_km": 10.0
   },
   {
-   "lat": -33.1282,
-   "lon": -63.9552,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.1
+   "lat": -32.6938,
+   "lon": -64.4609,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Paso del Río Seco": {
+  "Papagayos": {
    "km": 4.6,
-   "max_dbz": 53,
+   "max_dbz": 59,
    "tope_km": 12.9,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
-  "Santa Rita": {
-   "km": 19.0,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
+  "Alcira Gigena": {
+   "km": 3.1,
+   "max_dbz": 62,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 10
 }
