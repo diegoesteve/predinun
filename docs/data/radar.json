@@ -1,33 +1,38 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-02 23:00",
+ "consultado": "2026-11-02 23:15",
  "radar": "RMA1",
- "observacion": "2026-11-02 22:49",
+ "observacion": "2026-11-02 22:58",
  "nucleos": [
   {
-   "lat": -31.0166,
-   "lon": -64.009,
+   "lat": -30.9895,
+   "lon": -64.0628,
    "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 11.1
+   "max_dbz": 56,
+   "tope_km": 10.6
   },
   {
-   "lat": -30.917,
-   "lon": -64.1812,
+   "lat": -31.0619,
+   "lon": -63.9768,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 8.8
+   "max_dbz": 55,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Jesús María": {
-   "km": 7.6,
-   "max_dbz": 53,
-   "tope_km": 8.8,
-   "cuenca_de": "Jesus Maria",
-   "nivel": "intensa"
+   "km": 3.5,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  },
+  "Colonia Caroya": {
+   "km": 2.7,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
