@@ -1,54 +1,74 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 13:30",
+ "consultado": "2026-11-03 13:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 13:15",
+ "observacion": "2026-11-03 13:33",
  "nucleos": [
   {
-   "lat": -32.827,
-   "lon": -63.9552,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 11.1
-  },
-  {
    "lat": -33.3313,
-   "lon": -64.8804,
-   "dbz": 51,
-   "max_dbz": 59,
+   "lon": -64.7298,
+   "dbz": 52,
+   "max_dbz": 61,
    "tope_km": 12.9
   },
   {
-   "lat": -32.409,
-   "lon": -64.6976,
-   "dbz": 51,
+   "lat": -32.8979,
+   "lon": -63.8261,
+   "dbz": 52,
    "max_dbz": 60,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -33.2784,
+   "lon": -64.9127,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 12.3
   },
   {
-   "lat": -32.9866,
-   "lon": -63.8046,
-   "dbz": 47,
-   "max_dbz": 48,
+   "lat": -32.409,
+   "lon": -64.6115,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -33.349,
+   "lon": -64.4071,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -33.4019,
+   "lon": -64.6007,
+   "dbz": 48,
+   "max_dbz": 50,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada del Sauce": {
-   "km": 6.2,
-   "max_dbz": 60,
-   "tope_km": 12.3,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "muy intensa"
+  "La Cruz": {
+   "km": 13.6,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
   },
-  "Villa la Rivera": {
-   "km": 21.6,
-   "max_dbz": 60,
-   "tope_km": 12.3,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "muy intensa"
+  "Cañada del Sauce": {
+   "km": 5.0,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
+  "Paso Cabral": {
+   "km": 10.4,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
   }
  },
- "minutos": 16
+ "minutos": 12
 }
