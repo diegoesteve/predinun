@@ -1,67 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 04:45",
+ "consultado": "2026-11-03 05:00",
  "radar": "RMA1",
- "observacion": "2026-11-03 04:26",
+ "observacion": "2026-11-03 04:44",
  "nucleos": [
   {
-   "lat": -31.5131,
-   "lon": -64.2242,
+   "lat": -31.63,
+   "lon": -64.2027,
    "dbz": 50,
-   "max_dbz": 52,
-   "tope_km": 7.6
+   "max_dbz": 55,
+   "tope_km": 9.4
   },
   {
-   "lat": -31.5581,
-   "lon": -63.9983,
+   "lat": -31.6031,
+   "lon": -64.1274,
    "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 11.1
+   "max_dbz": 56,
+   "tope_km": 9.4
   },
   {
-   "lat": -33.1724,
-   "lon": -64.676,
-   "dbz": 50,
-   "max_dbz": 52,
+   "lat": -32.1053,
+   "lon": -63.923,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 17.0
   },
   {
-   "lat": -31.423,
-   "lon": -64.0628,
+   "lat": -33.2077,
+   "lon": -64.4824,
    "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 7.6
-  },
-  {
-   "lat": -31.9979,
-   "lon": -64.0305,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.98,
-   "lon": -64.1596,
-   "dbz": 48,
-   "max_dbz": 48,
+   "max_dbz": 53,
    "tope_km": 11.7
   },
   {
-   "lat": -31.5671,
-   "lon": -64.0951,
+   "lat": -31.4861,
+   "lon": -63.8477,
    "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.8007,
-   "lon": -64.0413,
-   "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 10.0
+   "max_dbz": 48,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 19
+ "localidades": {
+  "Santa Catalina": {
+   "km": 5.0,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 16
 }
