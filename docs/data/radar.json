@@ -1,45 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 11:01",
+ "consultado": "2026-11-03 11:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 10:49",
+ "observacion": "2026-11-03 10:58",
  "nucleos": [
   {
    "lat": -32.6849,
-   "lon": -65.0741,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.6849,
-   "lon": -65.4399,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.6404,
-   "lon": -64.9665,
-   "dbz": 49,
-   "max_dbz": 55,
+   "lon": -65.0311,
+   "dbz": 53,
+   "max_dbz": 62,
    "tope_km": 11.1
+  },
+  {
+   "lat": -32.7293,
+   "lon": -65.343,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.7027,
+   "lon": -64.902,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Larca": {
-   "km": 2.6,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
-  "Papagayos": {
-   "km": 4.3,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
+  "Santa Rita": {
+   "km": 43.6,
+   "max_dbz": 53,
+   "tope_km": 13.5,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 17
 }
