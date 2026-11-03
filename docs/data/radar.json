@@ -1,33 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 09:00",
+ "consultado": "2026-11-03 09:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 08:42",
+ "observacion": "2026-11-03 09:00",
  "nucleos": [
   {
-   "lat": -32.4,
-   "lon": -64.7836,
+   "lat": -32.4713,
+   "lon": -64.6438,
+   "dbz": 55,
+   "max_dbz": 63,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.1858,
+   "lon": -64.988,
    "dbz": 51,
-   "max_dbz": 61,
-   "tope_km": 13.5
+   "max_dbz": 55,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada del Sauce": {
-   "km": 13.3,
-   "max_dbz": 61,
-   "tope_km": 13.5,
-   "cuenca_de": "Rio Quillinzo",
+  "La Cruz": {
+   "km": 20.3,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "muy intensa"
   },
-  "Villa la Rivera": {
-   "km": 27.6,
-   "max_dbz": 61,
-   "tope_km": 13.5,
-   "cuenca_de": "Rio Quillinzo",
+  "Paso Cabral": {
+   "km": 14.9,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "muy intensa"
+  },
+  "Luyaba": {
+   "km": 6.1,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo Corralito",
+   "nivel": "muy intensa"
+  },
+  "Loma Bola": {
+   "km": 4.9,
+   "max_dbz": 55,
+   "tope_km": 8.8,
    "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 15
 }
