@@ -1,45 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 06:30",
+ "consultado": "2026-11-03 06:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 06:15",
+ "observacion": "2026-11-03 06:34",
  "nucleos": [
   {
-   "lat": -30.9895,
-   "lon": -63.7078,
+   "lat": -31.5041,
+   "lon": -64.321,
    "dbz": 54,
    "max_dbz": 60,
-   "tope_km": 9.4
+   "tope_km": 7.0
   },
   {
-   "lat": -31.396,
-   "lon": -64.4394,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 7.6
-  },
-  {
-   "lat": -30.908,
-   "lon": -64.0628,
+   "lat": -32.96,
+   "lon": -64.6222,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 8.8
+   "max_dbz": 49,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.7915,
+   "lon": -64.59,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Roque": {
-   "km": 4.1,
-   "max_dbz": 57,
-   "tope_km": 7.6,
+  "Cordoba": {
+   "km": 6.0,
+   "max_dbz": 60,
+   "tope_km": 7.0,
+   "cuenca_de": "Arroyo La Cañada",
    "nivel": "muy intensa"
   },
-  "Sinsacate": {
-   "km": 4.9,
-   "max_dbz": 53,
-   "tope_km": 8.8,
+  "Santa Catalina": {
+   "km": 31.4,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "intensa"
+  },
+  "Paso del Río Seco": {
+   "km": 4.0,
+   "max_dbz": 48,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  },
+  "Santa Rita": {
+   "km": 16.0,
+   "max_dbz": 48,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
