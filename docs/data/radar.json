@@ -1,88 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 13:15",
+ "consultado": "2026-11-03 13:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 12:57",
+ "observacion": "2026-11-03 13:15",
  "nucleos": [
   {
-   "lat": -32.4268,
-   "lon": -64.8697,
-   "dbz": 54,
-   "max_dbz": 63,
-   "tope_km": 12.9
-  },
-  {
    "lat": -32.827,
-   "lon": -64.1166,
-   "dbz": 52,
-   "max_dbz": 61,
+   "lon": -63.9552,
+   "dbz": 51,
+   "max_dbz": 56,
    "tope_km": 11.1
   },
   {
-   "lat": -32.9511,
-   "lon": -64.009,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -32.827,
-   "lon": -64.235,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 10.6
-  },
-  {
    "lat": -33.3313,
-   "lon": -64.9665,
+   "lon": -64.8804,
    "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 13.5
+   "max_dbz": 59,
+   "tope_km": 12.9
   },
   {
-   "lat": -33.0131,
-   "lon": -63.9552,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 14.7
+   "lat": -32.409,
+   "lon": -64.6976,
+   "dbz": 51,
+   "max_dbz": 60,
+   "tope_km": 12.3
   },
   {
-   "lat": -32.9954,
-   "lon": -64.4824,
+   "lat": -32.9866,
+   "lon": -63.8046,
    "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 10.0
+   "max_dbz": 48,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Cañada del Sauce": {
-   "km": 21.9,
-   "max_dbz": 63,
-   "tope_km": 12.9,
+   "km": 6.2,
+   "max_dbz": 60,
+   "tope_km": 12.3,
    "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
-  },
-  "Santa Catalina": {
-   "km": 22.5,
-   "max_dbz": 47,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "intensa"
   },
   "Villa la Rivera": {
-   "km": 36.2,
-   "max_dbz": 63,
-   "tope_km": 12.9,
+   "km": 21.6,
+   "max_dbz": 60,
+   "tope_km": 12.3,
    "cuenca_de": "Rio Quillinzo",
-   "nivel": "muy intensa"
-  },
-  "Pueblo Escondido": {
-   "km": 0.5,
-   "max_dbz": 63,
-   "tope_km": 12.9,
    "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
