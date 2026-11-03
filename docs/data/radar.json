@@ -1,18 +1,51 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 08:15",
+ "consultado": "2026-11-03 08:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 07:56",
+ "observacion": "2026-11-03 08:14",
  "nucleos": [
   {
-   "lat": -33.1635,
-   "lon": -63.923,
-   "dbz": 50,
+   "lat": -33.2607,
+   "lon": -63.7831,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.3198,
+   "lon": -64.988,
+   "dbz": 51,
    "max_dbz": 56,
-   "tope_km": 17.0
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.2841,
+   "lon": -64.9235,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 19
+ "localidades": {
+  "Villa de Merlo": {
+   "km": 1.9,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
+  },
+  "La Ramada": {
+   "km": 2.4,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
+  },
+  "Cerro de Oro": {
+   "km": 4.8,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 16
 }
