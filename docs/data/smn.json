@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-03 17:45",
+ "consultado": "2026-11-03 18:00",
  "alertas": [
   {
    "id": "2026_11_03_2015_cap_es",
@@ -122,6 +122,46 @@
      [
       -64.55,
       -32.41
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_03_2046_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas severas",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "desde": "2026-11-03T20:46:00-03:00",
+   "hasta": "2026-11-03T21:46:00-03:00",
+   "descripcion": "TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
+   "instruccion": "Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Evitá circular por calles inundadas o afectadas. Retirá o asegurá objetos que puedan ser arrastrados por el viento. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, ",
+   "zona": "CORDOBA: CALAMUCHITA - SANTA MARIA - TERCERO ARRIBA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_2046_cap_es.xml",
+   "desde_local": "03/11 20:46",
+   "hasta_local": "03/11 21:46",
+   "localidades": 7,
+   "poligonos": [
+    [
+     [
+      -64.32,
+      -32.34
+     ],
+     [
+      -64.56,
+      -32.19
+     ],
+     [
+      -64.09,
+      -31.86
+     ],
+     [
+      -63.82,
+      -32.15
+     ],
+     [
+      -64.32,
+      -32.34
      ]
     ]
    ]
@@ -5922,9 +5962,11 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_37"
   ],
   "Almafuerte": [
+   "2026_11_03_2046_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_38"
   ],
   "Rio Tercero": [
+   "2026_11_03_2046_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_38"
   ],
   "Carpintería": [
@@ -6101,11 +6143,13 @@
   "Embalse": [
    "2026_11_03_2037_cap_es",
    "2026_11_03_2036_cap_es",
+   "2026_11_03_2046_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa del Dique": [
    "2026_11_03_2037_cap_es",
    "2026_11_03_2036_cap_es",
+   "2026_11_03_2046_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Villa Quillinzo": [
@@ -6195,6 +6239,7 @@
   "Las Bajadas": [
    "2026_11_03_2037_cap_es",
    "2026_11_03_2036_cap_es",
+   "2026_11_03_2046_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "La Paisanita": [
@@ -6236,6 +6281,7 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Los Condores": [
+   "2026_11_03_2046_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Malagueño": [
@@ -6253,6 +6299,7 @@
   "Villa Rumipal": [
    "2026_11_03_2037_cap_es",
    "2026_11_03_2036_cap_es",
+   "2026_11_03_2046_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_30"
   ]
  },
