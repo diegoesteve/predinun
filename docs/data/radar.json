@@ -1,54 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 12:00",
+ "consultado": "2026-11-03 12:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 11:44",
+ "observacion": "2026-11-03 12:02",
  "nucleos": [
   {
-   "lat": -32.7116,
-   "lon": -64.6653,
-   "dbz": 53,
+   "lat": -32.7648,
+   "lon": -64.5147,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.3644,
+   "lon": -65.4076,
+   "dbz": 51,
    "max_dbz": 61,
-   "tope_km": 17.0
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.6316,
+   "lon": -64.988,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 10.6
   },
   {
    "lat": -32.756,
-   "lon": -64.9342,
-   "dbz": 52,
-   "max_dbz": 59,
+   "lon": -64.7621,
+   "dbz": 50,
+   "max_dbz": 53,
    "tope_km": 11.1
   },
   {
-   "lat": -32.3376,
-   "lon": -65.4721,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.293,
-   "lon": -65.5797,
-   "dbz": 47,
-   "max_dbz": 50,
-   "tope_km": 11.1
+   "lat": -32.7293,
+   "lon": -64.8374,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Paso del Río Seco": {
-   "km": 15.3,
-   "max_dbz": 61,
-   "tope_km": 17.0,
-   "cuenca_de": "Río de las Barrancas",
-   "nivel": "muy intensa"
+  "Villa Larca": {
+   "km": 1.0,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "nivel": "intensa"
   },
   "Santa Rita": {
-   "km": 27.2,
-   "max_dbz": 61,
-   "tope_km": 17.0,
+   "km": 29.6,
+   "max_dbz": 53,
+   "tope_km": 11.1,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 13
 }
