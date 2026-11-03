@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-03 19:45",
+ "consultado": "2026-11-03 20:00",
  "alertas": [
   {
    "id": "2026_11_03_2231_cap_es",
@@ -42,6 +42,46 @@
      [
       -66.64,
       -30.38
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_03_2244_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-03T22:44:00-03:00",
+   "hasta": "2026-11-03T23:44:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "LA RIOJA: GRAL SAN MARTIN - ROSARIO V.  PENALOZA. CORDOBA: POCHO - SAN ALBERTO - SAN JAVIER. SAN LUIS: AYACUCHO - JUNIN.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_03_2244_cap_es.xml",
+   "desde_local": "03/11 22:44",
+   "hasta_local": "03/11 23:44",
+   "localidades": 1,
+   "poligonos": [
+    [
+     [
+      -66.72,
+      -31.61
+     ],
+     [
+      -66.31,
+      -32.07
+     ],
+     [
+      -65.42,
+      -32.14
+     ],
+     [
+      -65.4,
+      -31.56
+     ],
+     [
+      -66.72,
+      -31.61
      ]
     ]
    ]
@@ -5543,6 +5583,7 @@
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_9"
   ],
   "Los Cerrillos": [
+   "2026_11_03_2244_cap_es",
    "CAP_20261103130902_Tormenta_Cordillera_alertas_alertas_9"
   ],
   "San Jose": [
