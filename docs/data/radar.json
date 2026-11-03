@@ -1,25 +1,30 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 18:45",
+ "consultado": "2026-11-03 19:00",
  "radar": "RMA1",
- "observacion": "2026-11-03 18:32",
+ "observacion": "2026-11-03 18:50",
  "nucleos": [
   {
-   "lat": -31.9442,
-   "lon": -63.7939,
-   "dbz": 56,
-   "max_dbz": 67,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.1679,
-   "lon": -63.8369,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 8.8
+   "lat": -31.3689,
+   "lon": -64.1489,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 9.4
   }
  ],
- "cuencas": {},
- "localidades": {},
- "minutos": 13
+ "cuencas": {
+  "Capital": {
+   "nucleos": 1,
+   "max_dbz": 58
+  }
+ },
+ "localidades": {
+  "Cordoba": {
+   "km": 4.8,
+   "max_dbz": 58,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 10
 }
