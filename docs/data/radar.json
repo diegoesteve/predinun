@@ -1,18 +1,37 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 21:15",
+ "consultado": "2026-11-03 21:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 21:06",
+ "observacion": "2026-11-03 21:15",
  "nucleos": [
   {
-   "lat": -31.8097,
-   "lon": -65.4399,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.6
+   "lat": -31.2787,
+   "lon": -64.1166,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 7.6
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 9
+ "localidades": {
+  "Estación Juárez Celman": {
+   "km": 0.8,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "nivel": "intensa"
+  },
+  "El Gateado": {
+   "km": 3.6,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "nivel": "intensa"
+  },
+  "Villa los Llanos Juarez Celman": {
+   "km": 4.8,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 15
 }
