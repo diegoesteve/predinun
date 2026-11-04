@@ -1,92 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 22:45",
+ "consultado": "2026-11-03 23:00",
  "radar": "RMA1",
- "observacion": "2026-11-03 22:28",
+ "observacion": "2026-11-03 22:46",
  "nucleos": [
   {
-   "lat": -30.0526,
-   "lon": -64.3748,
+   "lat": -30.0069,
+   "lon": -64.676,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.5671,
+   "lon": -65.2032,
    "dbz": 52,
    "max_dbz": 59,
-   "tope_km": 10.6
+   "tope_km": 11.1
   },
   {
-   "lat": -29.9977,
-   "lon": -64.7083,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.5851,
-   "lon": -65.3861,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -29.9337,
-   "lon": -64.8482,
-   "dbz": 50,
-   "max_dbz": 54,
+   "lat": -31.8007,
+   "lon": -65.3323,
+   "dbz": 49,
+   "max_dbz": 52,
    "tope_km": 10.0
   },
   {
-   "lat": -31.9263,
-   "lon": -64.5792,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.6
+   "lat": -30.08,
+   "lon": -64.5147,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Reartes": {
-   "km": 0.2,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio De Los Reartes",
-   "nivel": "intensa"
-  },
-  "Isla de San Antonio": {
-   "km": 4.7,
+  "San Carlos Minas": {
+   "km": 42.4,
    "max_dbz": 59,
-   "tope_km": 10.6,
+   "tope_km": 11.1,
+   "cuenca_de": "Jaime",
    "nivel": "muy intensa"
   },
-  "Capilla Vieja": {
-   "km": 2.3,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "El Medanito": {
-   "km": 2.5,
-   "max_dbz": 57,
-   "tope_km": 12.3,
+  "Salsacate": {
+   "km": 29.0,
+   "max_dbz": 59,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Salsacate",
    "nivel": "muy intensa"
-  },
-  "La Boca del Río": {
-   "km": 18.1,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
-  },
-  "Villa la Merced": {
-   "km": 14.3,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
-  },
-  "Villa Ciudad Parque los Reartes": {
-   "km": 3.5,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
