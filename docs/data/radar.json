@@ -1,54 +1,65 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 23:45",
+ "consultado": "2026-11-04 00:00",
  "radar": "RMA1",
- "observacion": "2026-11-03 23:32",
+ "observacion": "2026-11-03 23:50",
  "nucleos": [
   {
-   "lat": -29.9703,
-   "lon": -64.4071,
-   "dbz": 54,
-   "max_dbz": 58,
-   "tope_km": 8.8
+   "lat": -31.7648,
+   "lon": -64.4716,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 9.4
   },
   {
-   "lat": -31.7019,
-   "lon": -64.6976,
-   "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 10.6
+   "lat": -30.7901,
+   "lon": -65.5152,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 11.7
   },
   {
-   "lat": -30.08,
-   "lon": -64.1166,
-   "dbz": 50,
-   "max_dbz": 60,
+   "lat": -30.1074,
+   "lon": -63.923,
+   "dbz": 48,
+   "max_dbz": 48,
    "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Anisacate": {
-   "km": 26.6,
-   "max_dbz": 59,
-   "tope_km": 10.6,
+   "km": 7.1,
+   "max_dbz": 51,
+   "tope_km": 9.4,
    "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
+  },
+  "Villa los Aromos": {
+   "km": 3.9,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo Los Quebrachos",
+   "nivel": "intensa"
   },
   "La Serranita": {
-   "km": 22.9,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+   "km": 4.0,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
   },
   "La Paisanita": {
-   "km": 20.4,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+   "km": 4.9,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
+  "Villa la Rancherita": {
+   "km": 1.5,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 10
 }
