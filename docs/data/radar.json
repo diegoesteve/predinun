@@ -1,67 +1,101 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 02:15",
+ "consultado": "2026-11-04 02:30",
  "radar": "RMA1",
- "observacion": "2026-11-04 02:07",
+ "observacion": "2026-11-04 02:16",
  "nucleos": [
   {
-   "lat": -30.1713,
-   "lon": -64.3103,
+   "lat": -30.1987,
+   "lon": -64.1596,
    "dbz": 52,
-   "max_dbz": 60,
+   "max_dbz": 57,
    "tope_km": 10.0
   },
   {
-   "lat": -30.217,
-   "lon": -65.0311,
-   "dbz": 51,
+   "lat": -30.9804,
+   "lon": -64.4286,
+   "dbz": 49,
    "max_dbz": 54,
    "tope_km": 11.1
   },
   {
    "lat": -30.2717,
-   "lon": -64.2027,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.9261,
-   "lon": -64.5685,
+   "lon": -64.1059,
    "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 8.2
+   "max_dbz": 49,
+   "tope_km": 11.7
   },
   {
    "lat": -30.1987,
-   "lon": -65.2355,
+   "lon": -65.2032,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.7
+   "max_dbz": 51,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.387,
+   "lon": -65.5259,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -30.9261,
+   "lon": -64.2565,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Marcos Sierras": {
-   "km": 17.4,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "cuenca_de": "Rio San Marcos Sierra",
-   "nivel": "muy intensa"
+  "La Granja": {
+   "km": 13.9,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Río La Granja",
+   "nivel": "intensa"
   },
-  "Capilla del Monte": {
-   "km": 7.0,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "cuenca_de": "Río Dolores",
-   "nivel": "muy intensa"
+  "Ascochinga": {
+   "km": 4.3,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   },
-  "San Esteban": {
-   "km": 3.3,
-   "max_dbz": 56,
-   "tope_km": 8.2,
-   "nivel": "muy intensa"
+  "Jesús María": {
+   "km": 12.6,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "cuenca_de": "Jesus Maria",
+   "nivel": "intensa"
+  },
+  "Los Molles": {
+   "km": 20.7,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Río La Granja",
+   "nivel": "intensa"
+  },
+  "Colonia Caroya": {
+   "km": 31.7,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Carnero",
+   "nivel": "intensa"
+  },
+  "La Paz": {
+   "km": 5.6,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "La Pampa": {
+   "km": 2.8,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   }
  },
- "minutos": 8
+ "minutos": 14
 }
