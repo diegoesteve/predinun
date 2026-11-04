@@ -1,52 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 01:45",
+ "consultado": "2026-11-04 02:00",
  "radar": "RMA1",
- "observacion": "2026-11-04 01:30",
+ "observacion": "2026-11-04 01:49",
  "nucleos": [
   {
-   "lat": -30.1348,
-   "lon": -64.7298,
-   "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 12.9
+   "lat": -30.1531,
+   "lon": -64.4931,
+   "dbz": 51,
+   "max_dbz": 64,
+   "tope_km": 10.6
   },
   {
-   "lat": -30.8173,
-   "lon": -65.1602,
+   "lat": -30.908,
+   "lon": -64.8374,
    "dbz": 51,
    "max_dbz": 57,
-   "tope_km": 14.7
+   "tope_km": 10.6
   },
   {
-   "lat": -31.0981,
-   "lon": -63.9552,
+   "lat": -30.3537,
+   "lon": -64.5469,
    "dbz": 49,
-   "max_dbz": 49,
+   "max_dbz": 57,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -30.4721,
+   "lon": -63.7401,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.0166,
+   "lon": -64.0736,
+   "dbz": 48,
+   "max_dbz": 51,
    "tope_km": 9.4
   },
   {
-   "lat": -30.6721,
-   "lon": -64.1274,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -30.6085,
+   "lon": -64.0736,
+   "dbz": 48,
+   "max_dbz": 49,
    "tope_km": 8.8
+  },
+  {
+   "lat": -30.1896,
+   "lon": -65.5044,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Ana": {
-   "km": 2.7,
-   "max_dbz": 57,
-   "tope_km": 14.7,
-   "nivel": "muy intensa"
+  "Jesús María": {
+   "km": 4.8,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
   },
-  "Villa Gutierrez": {
-   "km": 3.3,
-   "max_dbz": 47,
-   "tope_km": 8.8,
+  "Colonia Caroya": {
+   "km": 1.4,
+   "max_dbz": 51,
+   "tope_km": 9.4,
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
