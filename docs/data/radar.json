@@ -1,25 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 01:00",
+ "consultado": "2026-11-04 01:15",
  "radar": "RMA1",
- "observacion": "2026-11-04 00:44",
+ "observacion": "2026-11-04 01:03",
  "nucleos": [
   {
-   "lat": -30.2078,
-   "lon": -65.1924,
-   "dbz": 54,
-   "max_dbz": 63,
+   "lat": -30.1987,
+   "lon": -64.9988,
+   "dbz": 53,
+   "max_dbz": 62,
    "tope_km": 14.1
   },
   {
-   "lat": -30.016,
-   "lon": -65.5044,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.1
+   "lat": -31.0166,
+   "lon": -64.4394,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 9.4
   }
  ],
- "cuencas": {},
- "localidades": {},
- "minutos": 16
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 50
+  }
+ },
+ "localidades": {
+  "Villa Giardino": {
+   "km": 5.0,
+   "max_dbz": 50,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo La Higuerita",
+   "nivel": "intensa"
+  },
+  "Santa María de Punilla": {
+   "km": 27.4,
+   "max_dbz": 50,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "intensa"
+  },
+  "Casa Grande": {
+   "km": 17.6,
+   "max_dbz": 50,
+   "tope_km": 9.4,
+   "cuenca_de": "Rio Grande De Punilla",
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 35.6,
+   "max_dbz": 50,
+   "tope_km": 9.4,
+   "cuenca_de": "Lago San Roque",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 13
 }
