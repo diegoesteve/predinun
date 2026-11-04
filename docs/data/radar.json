@@ -1,96 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 23:30",
+ "consultado": "2026-11-03 23:45",
  "radar": "RMA1",
- "observacion": "2026-11-03 23:14",
+ "observacion": "2026-11-03 23:32",
  "nucleos": [
   {
-   "lat": -30.0708,
-   "lon": -64.3963,
+   "lat": -29.9703,
+   "lon": -64.4071,
+   "dbz": 54,
+   "max_dbz": 58,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.7019,
+   "lon": -64.6976,
    "dbz": 52,
-   "max_dbz": 62,
+   "max_dbz": 59,
    "tope_km": 10.6
   },
   {
-   "lat": -31.5671,
-   "lon": -64.8374,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.6121,
-   "lon": -64.9342,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 11.1
+   "lat": -30.08,
+   "lon": -64.1166,
+   "dbz": 50,
+   "max_dbz": 60,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 37.0,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 25.6,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Villa Dolores": {
-   "km": 39.7,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "intensa"
-  },
-  "San Lorenzo": {
-   "km": 10.8,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Panaholma",
-   "nivel": "intensa"
-  },
-  "Panaholma": {
-   "km": 11.3,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Panaholma",
-   "nivel": "intensa"
-  },
-  "Mayu Sumaj": {
-   "km": 29.9,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Mina Clavero": {
-   "km": 16.2,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "cuenca_de": "Panaholma",
-   "nivel": "intensa"
-  },
-  "Tala Huasi": {
-   "km": 27.4,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Isla de San Antonio": {
-   "km": 4.5,
-   "max_dbz": 62,
+  "Anisacate": {
+   "km": 26.6,
+   "max_dbz": 59,
    "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
+  },
+  "La Serranita": {
+   "km": 22.9,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
+  },
+  "La Paisanita": {
+   "km": 20.4,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
