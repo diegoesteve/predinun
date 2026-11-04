@@ -1,51 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-04 02:45",
+ "consultado": "2026-11-04 03:00",
  "alertas": [
-  {
-   "id": "2026_11_04_0446_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-11-04T04:46:00-03:00",
-   "hasta": "2026-11-04T05:46:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
-   "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
-   "zona": "CHACO: MAYOR L.  J.  FONTANA - SAN FERNANDO - TAPENAGA. SANTA FE: GRAL OBLIGADO - VERA.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_04_0446_cap_es.xml",
-   "desde_local": "04/11 04:46",
-   "hasta_local": "04/11 05:46",
-   "localidades": 10,
-   "poligonos": [
-    [
-     [
-      -60.37,
-      -27.85
-     ],
-     [
-      -60.26,
-      -28.6
-     ],
-     [
-      -59.18,
-      -28.74
-     ],
-     [
-      -59.17,
-      -28.13
-     ],
-     [
-      -59.2,
-      -27.6
-     ],
-     [
-      -60.37,
-      -27.85
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_04_0430_cap_es",
    "tipo": "aviso a corto plazo",
@@ -86,6 +42,62 @@
      [
       -61.66,
       -27.81
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_04_0545_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas severas",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-04T05:45:00-03:00",
+   "hasta": "2026-11-04T07:45:00-03:00",
+   "descripcion": "TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Evitá circular por calles inundadas o afectadas. Retirá o asegurá objetos que puedan ser arrastrados por el viento. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, ",
+   "zona": "CHACO: SAN FERNANDO. SANTA FE: GRAL OBLIGADO - VERA. CORRIENTES: BELLA VISTA - CONCEPCION - EMPEDRADO - MBURUCUYA - SALADAS - SAN ROQUE.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_04_0545_cap_es.xml",
+   "desde_local": "04/11 05:45",
+   "hasta_local": "04/11 07:45",
+   "localidades": 13,
+   "poligonos": [
+    [
+     [
+      -60.3,
+      -28.81
+     ],
+     [
+      -60.09,
+      -28.01
+     ],
+     [
+      -58.39,
+      -28.02
+     ],
+     [
+      -57.85,
+      -28.05
+     ],
+     [
+      -57.71,
+      -28.33
+     ],
+     [
+      -57.98,
+      -28.64
+     ],
+     [
+      -59.07,
+      -28.73
+     ],
+     [
+      -59.3,
+      -28.81
+     ],
+     [
+      -60.3,
+      -28.81
      ]
     ]
    ]
@@ -1005,6 +1017,7 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Arroyo Ceibal": [
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Avellaneda": [
@@ -1029,14 +1042,15 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "El Rabón": [
-   "2026_11_04_0446_cap_es",
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "El Sombrerito": [
-   "2026_11_04_0446_cap_es",
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Florencia": [
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Fortín Olmos": [
@@ -1052,6 +1066,7 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Ingeniero Chanourdie": [
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Intiyaco": [
@@ -1073,18 +1088,17 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Las Toscas": [
-   "2026_11_04_0446_cap_es",
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Los Amores": [
-   "2026_11_04_0446_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Los Laureles": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Los Tábanos": [
-   "2026_11_04_0446_cap_es",
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Malabrigo": [
@@ -1103,17 +1117,18 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "San Antonio de Obligado": [
-   "2026_11_04_0446_cap_es",
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "San Javier": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Tacuarendi": [
-   "2026_11_04_0446_cap_es",
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Tartagal": [
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Toba": [
@@ -1123,15 +1138,15 @@
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Villa Ana": [
-   "2026_11_04_0446_cap_es",
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Villa Guillermina": [
-   "2026_11_04_0446_cap_es",
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Villa Ocampo": [
-   "2026_11_04_0446_cap_es",
+   "2026_11_04_0545_cap_es",
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
   ],
   "Aguará Grande": [
