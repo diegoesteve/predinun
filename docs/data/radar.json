@@ -1,9 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 03:00",
- "radar": null,
- "observacion": null,
- "nucleos": [],
+ "consultado": "2026-11-04 03:15",
+ "radar": "RMA1",
+ "observacion": "2026-11-04 03:02",
+ "nucleos": [
+  {
+   "lat": -30.0891,
+   "lon": -65.0526,
+   "dbz": 52,
+   "max_dbz": 55,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -30.3537,
+   "lon": -64.4394,
+   "dbz": 52,
+   "max_dbz": 58,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -29.9703,
+   "lon": -64.1704,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -30.1439,
+   "lon": -64.9235,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.3509,
+   "lon": -65.257,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -30.2078,
+   "lon": -64.7621,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 10.6
+  }
+ ],
  "cuencas": {},
- "localidades": {}
+ "localidades": {
+  "San Carlos Minas": {
+   "km": 22.2,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "cuenca_de": "Jaime",
+   "nivel": "intensa"
+  },
+  "Salsacate": {
+   "km": 16.3,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "cuenca_de": "Arroyo Salsacate",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 13
 }
