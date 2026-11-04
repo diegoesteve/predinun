@@ -1,59 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 01:15",
+ "consultado": "2026-11-04 01:30",
  "radar": "RMA1",
- "observacion": "2026-11-04 01:03",
+ "observacion": "2026-11-04 01:12",
  "nucleos": [
   {
    "lat": -30.1987,
-   "lon": -64.9988,
-   "dbz": 53,
-   "max_dbz": 62,
-   "tope_km": 14.1
+   "lon": -64.902,
+   "dbz": 54,
+   "max_dbz": 61,
+   "tope_km": 17.0
   },
   {
-   "lat": -31.0166,
-   "lon": -64.4394,
-   "dbz": 48,
-   "max_dbz": 50,
+   "lat": -30.8083,
+   "lon": -65.5152,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.0257,
+   "lon": -64.321,
+   "dbz": 50,
+   "max_dbz": 55,
    "tope_km": 9.4
+  },
+  {
+   "lat": -30.2899,
+   "lon": -64.8589,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 12.9
   }
  ],
- "cuencas": {
-  "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 50
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "Villa Giardino": {
-   "km": 5.0,
-   "max_dbz": 50,
+  "La Granja": {
+   "km": 3.1,
+   "max_dbz": 55,
    "tope_km": 9.4,
-   "cuenca_de": "Arroyo La Higuerita",
-   "nivel": "intensa"
+   "cuenca_de": "Arroyo De Eduviges",
+   "nivel": "muy intensa"
   },
-  "Santa María de Punilla": {
-   "km": 27.4,
-   "max_dbz": 50,
+  "Agua de Oro": {
+   "km": 4.3,
+   "max_dbz": 55,
    "tope_km": 9.4,
-   "cuenca_de": "Río Cosquín",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
-  "Casa Grande": {
-   "km": 17.6,
-   "max_dbz": 50,
+  "Los Molles": {
+   "km": 8.8,
+   "max_dbz": 55,
    "tope_km": 9.4,
-   "cuenca_de": "Rio Grande De Punilla",
-   "nivel": "intensa"
+   "cuenca_de": "Río San Cristóbal",
+   "nivel": "muy intensa"
   },
-  "San Roque": {
-   "km": 35.6,
-   "max_dbz": 50,
+  "Colonia Caroya": {
+   "km": 20.8,
+   "max_dbz": 55,
    "tope_km": 9.4,
-   "cuenca_de": "Lago San Roque",
-   "nivel": "intensa"
+   "cuenca_de": "Río Carnero",
+   "nivel": "muy intensa"
+  },
+  "San Vicente": {
+   "km": 4.6,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 18
 }
