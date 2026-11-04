@@ -1,68 +1,82 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 03:15",
+ "consultado": "2026-11-04 03:30",
  "radar": "RMA1",
- "observacion": "2026-11-04 03:02",
+ "observacion": "2026-11-04 03:21",
  "nucleos": [
   {
-   "lat": -30.0891,
-   "lon": -65.0526,
+   "lat": -30.0343,
+   "lon": -63.966,
    "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -30.1074,
+   "lon": -64.6653,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -30.1713,
+   "lon": -64.3641,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -29.9337,
+   "lon": -63.7939,
+   "dbz": 49,
    "max_dbz": 55,
    "tope_km": 9.4
   },
   {
-   "lat": -30.3537,
-   "lon": -64.4394,
-   "dbz": 52,
-   "max_dbz": 58,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -29.9703,
-   "lon": -64.1704,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -30.1439,
-   "lon": -64.9235,
+   "lat": -29.8238,
+   "lon": -64.8589,
    "dbz": 49,
-   "max_dbz": 51,
+   "max_dbz": 50,
    "tope_km": 11.1
   },
   {
-   "lat": -31.3509,
-   "lon": -65.257,
+   "lat": -30.2626,
+   "lon": -64.2995,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 8.2
+   "max_dbz": 52,
+   "tope_km": 9.4
   },
   {
-   "lat": -30.2078,
-   "lon": -64.7621,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -30.299,
+   "lon": -64.2027,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -29.8146,
+   "lon": -63.7616,
+   "dbz": 48,
+   "max_dbz": 49,
    "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Carlos Minas": {
-   "km": 22.2,
-   "max_dbz": 51,
-   "tope_km": 8.2,
-   "cuenca_de": "Jaime",
+  "Quilino": {
+   "km": 18.1,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Salsacate": {
-   "km": 16.3,
-   "max_dbz": 51,
-   "tope_km": 8.2,
-   "cuenca_de": "Arroyo Salsacate",
+  "La Isabela": {
+   "km": 7.2,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 9
 }
