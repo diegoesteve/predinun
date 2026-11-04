@@ -1,73 +1,52 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 01:30",
+ "consultado": "2026-11-04 01:45",
  "radar": "RMA1",
- "observacion": "2026-11-04 01:12",
+ "observacion": "2026-11-04 01:30",
  "nucleos": [
   {
-   "lat": -30.1987,
-   "lon": -64.902,
-   "dbz": 54,
-   "max_dbz": 61,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -30.8083,
-   "lon": -65.5152,
+   "lat": -30.1348,
+   "lon": -64.7298,
    "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 11.7
+   "max_dbz": 61,
+   "tope_km": 12.9
   },
   {
-   "lat": -31.0257,
-   "lon": -64.321,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lat": -30.8173,
+   "lon": -65.1602,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -31.0981,
+   "lon": -63.9552,
+   "dbz": 49,
+   "max_dbz": 49,
    "tope_km": 9.4
   },
   {
-   "lat": -30.2899,
-   "lon": -64.8589,
+   "lat": -30.6721,
+   "lon": -64.1274,
    "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 12.9
+   "max_dbz": 47,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Granja": {
-   "km": 3.1,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo De Eduviges",
+  "Santa Ana": {
+   "km": 2.7,
+   "max_dbz": 57,
+   "tope_km": 14.7,
    "nivel": "muy intensa"
   },
-  "Agua de Oro": {
-   "km": 4.3,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
-  },
-  "Los Molles": {
-   "km": 8.8,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "cuenca_de": "Río San Cristóbal",
-   "nivel": "muy intensa"
-  },
-  "Colonia Caroya": {
-   "km": 20.8,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "cuenca_de": "Río Carnero",
-   "nivel": "muy intensa"
-  },
-  "San Vicente": {
-   "km": 4.6,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
+  "Villa Gutierrez": {
+   "km": 3.3,
+   "max_dbz": 47,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
