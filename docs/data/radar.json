@@ -1,59 +1,96 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 23:15",
+ "consultado": "2026-11-03 23:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 22:55",
+ "observacion": "2026-11-03 23:14",
  "nucleos": [
   {
-   "lat": -31.5131,
-   "lon": -65.1064,
-   "dbz": 53,
+   "lat": -30.0708,
+   "lon": -64.3963,
+   "dbz": 52,
    "max_dbz": 62,
-   "tope_km": 13.5
+   "tope_km": 10.6
   },
   {
-   "lat": -30.0526,
-   "lon": -64.6115,
-   "dbz": 53,
-   "max_dbz": 62,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.0343,
-   "lon": -65.0526,
-   "dbz": 48,
-   "max_dbz": 49,
+   "lat": -31.5671,
+   "lon": -64.8374,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 10.0
+  },
+  {
+   "lat": -31.6121,
+   "lon": -64.9342,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Carlos Minas": {
-   "km": 35.5,
-   "max_dbz": 62,
-   "tope_km": 13.5,
-   "cuenca_de": "Jaime",
-   "nivel": "muy intensa"
+  "Villa Carlos Paz": {
+   "km": 37.0,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
   },
-  "Salsacate": {
-   "km": 21.0,
-   "max_dbz": 62,
-   "tope_km": 13.5,
-   "cuenca_de": "Arroyo Salsacate",
-   "nivel": "muy intensa"
+  "Cuesta Blanca": {
+   "km": 25.6,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
   },
-  "San José de las Salinas": {
-   "km": 4.6,
-   "max_dbz": 62,
+  "Villa Dolores": {
+   "km": 39.7,
+   "max_dbz": 51,
    "tope_km": 11.1,
-   "nivel": "muy intensa"
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "intensa"
   },
-  "Alto Grande": {
-   "km": 0.5,
+  "San Lorenzo": {
+   "km": 10.8,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Panaholma",
+   "nivel": "intensa"
+  },
+  "Panaholma": {
+   "km": 11.3,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Panaholma",
+   "nivel": "intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 29.9,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Mina Clavero": {
+   "km": 16.2,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "cuenca_de": "Panaholma",
+   "nivel": "intensa"
+  },
+  "Tala Huasi": {
+   "km": 27.4,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Isla de San Antonio": {
+   "km": 4.5,
    "max_dbz": 62,
-   "tope_km": 13.5,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 17
 }
