@@ -1,61 +1,87 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 22:15",
+ "consultado": "2026-11-03 22:30",
  "radar": "RMA1",
- "observacion": "2026-11-03 22:01",
+ "observacion": "2026-11-03 22:19",
  "nucleos": [
   {
-   "lat": -31.9173,
-   "lon": -64.8697,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.0
+   "lat": -31.5941,
+   "lon": -65.5044,
+   "dbz": 53,
+   "max_dbz": 62,
+   "tope_km": 12.9
   },
   {
-   "lat": -29.9611,
+   "lat": -30.0434,
+   "lon": -64.5254,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.9352,
    "lon": -64.6976,
    "dbz": 49,
-   "max_dbz": 53,
+   "max_dbz": 52,
    "tope_km": 9.4
+  },
+  {
+   "lat": -29.952,
+   "lon": -64.8482,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Los Reartes": {
-   "km": 27.6,
-   "max_dbz": 53,
-   "tope_km": 10.0,
+   "km": 11.4,
+   "max_dbz": 52,
+   "tope_km": 9.4,
    "cuenca_de": "Rio De Los Reartes",
    "nivel": "intensa"
   },
+  "San José de las Salinas": {
+   "km": 9.7,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Villa Berna": {
+   "km": 3.6,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
   "Intiyaco": {
-   "km": 15.0,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "cuenca_de": "Río de los Reartes",
+   "km": 3.7,
+   "max_dbz": 52,
+   "tope_km": 9.4,
    "nivel": "intensa"
   },
   "Capilla Vieja": {
-   "km": 25.1,
-   "max_dbz": 53,
-   "tope_km": 10.0,
+   "km": 8.9,
+   "max_dbz": 52,
+   "tope_km": 9.4,
    "cuenca_de": "Rio De Los Reartes",
    "nivel": "intensa"
   },
   "La Boca del Río": {
-   "km": 43.9,
-   "max_dbz": 53,
-   "tope_km": 10.0,
+   "km": 28.7,
+   "max_dbz": 52,
+   "tope_km": 9.4,
    "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   },
   "Villa la Merced": {
-   "km": 36.4,
-   "max_dbz": 53,
-   "tope_km": 10.0,
+   "km": 22.7,
+   "max_dbz": 52,
+   "tope_km": 9.4,
    "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 11
 }
