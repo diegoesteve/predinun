@@ -1,60 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 03:45",
+ "consultado": "2026-11-04 04:00",
  "radar": "RMA1",
- "observacion": "2026-11-04 03:30",
+ "observacion": "2026-11-04 03:39",
  "nucleos": [
   {
-   "lat": -30.08,
-   "lon": -64.4824,
-   "dbz": 50,
-   "max_dbz": 57,
+   "lat": -30.1165,
+   "lon": -64.3963,
+   "dbz": 52,
+   "max_dbz": 60,
    "tope_km": 10.6
   },
   {
-   "lat": -29.8421,
-   "lon": -63.8692,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 10.0
+   "lat": -29.8146,
+   "lon": -63.9122,
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 12.3
   },
   {
-   "lat": -30.08,
-   "lon": -63.8477,
-   "dbz": 49,
-   "max_dbz": 53,
+   "lat": -30.0617,
+   "lon": -63.7186,
+   "dbz": 50,
+   "max_dbz": 55,
    "tope_km": 8.8
   },
   {
-   "lat": -30.1896,
-   "lon": -64.278,
+   "lat": -30.372,
+   "lon": -64.0198,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -29.9154,
+   "lon": -64.5254,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.0343,
+   "lon": -63.9337,
    "dbz": 49,
-   "max_dbz": 54,
+   "max_dbz": 53,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -29.9703,
+   "lon": -64.4609,
+   "dbz": 49,
+   "max_dbz": 51,
    "tope_km": 11.7
   },
   {
-   "lat": -30.3537,
-   "lon": -64.1059,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -29.9886,
-   "lon": -63.7508,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.2899,
-   "lon": -64.2027,
+   "lat": -30.217,
+   "lon": -64.1704,
    "dbz": 48,
    "max_dbz": 49,
-   "tope_km": 8.8
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 16
+ "localidades": {
+  "San José de las Salinas": {
+   "km": 24.5,
+   "max_dbz": 60,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 22
 }
