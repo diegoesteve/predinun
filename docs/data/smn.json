@@ -1,55 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-04 06:30",
+ "consultado": "2026-11-04 06:45",
  "alertas": [
-  {
-   "id": "2026_11_04_0739_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas severas",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "desde": "2026-11-04T07:39:00-03:00",
-   "hasta": "2026-11-04T09:39:00-03:00",
-   "descripcion": "TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y CAIDA DE GRANIZO",
-   "instruccion": "Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Evitá circular por calles inundadas o afectadas. Retirá o asegurá objetos que puedan ser arrastrados por el viento. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, ",
-   "zona": "CHACO: MAYOR L.  J.  FONTANA - SAN FERNANDO - SAN LORENZO - TAPENAGA. SANTA FE: 9 DE JULIO - GRAL OBLIGADO - VERA. CORRIENTES: BELLA VISTA - EMPEDRADO - SALADAS.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_04_0739_cap_es.xml",
-   "desde_local": "04/11 07:39",
-   "hasta_local": "04/11 09:39",
-   "localidades": 12,
-   "poligonos": [
-    [
-     [
-      -60.91,
-      -27.65
-     ],
-     [
-      -60.86,
-      -28.06
-     ],
-     [
-      -60.52,
-      -28.48
-     ],
-     [
-      -58.98,
-      -28.53
-     ],
-     [
-      -58.43,
-      -28.12
-     ],
-     [
-      -58.63,
-      -27.67
-     ],
-     [
-      -60.91,
-      -27.65
-     ]
-    ]
-   ]
-  },
   {
    "id": "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7",
    "tipo": "alerta",
@@ -961,54 +913,6 @@
  ],
  "localidades": {},
  "localidades_santafe": {
-  "Cañada Ombú": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "El Rabón": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Florencia": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Golondrina": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Las Toscas": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Los Amores": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Los Tábanos": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "San Antonio de Obligado": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Tacuarendi": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Villa Ana": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Villa Guillermina": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Villa Ocampo": [
-   "2026_11_04_0739_cap_es",
-   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
-  ],
   "Alejandra": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
@@ -1027,19 +931,31 @@
   "Calchaquí": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
+  "Cañada Ombú": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
   "Colonia Durán": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
   "El Araza": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
+  "El Rabón": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
   "El Sombrerito": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Florencia": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Fortín Olmos": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Garabato": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Golondrina": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Guadalupe Norte": [
@@ -1066,7 +982,16 @@
   "Las Garzas": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
+  "Las Toscas": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Los Amores": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
   "Los Laureles": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Los Tábanos": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Malabrigo": [
@@ -1084,7 +1009,13 @@
   "Romang": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
+  "San Antonio de Obligado": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
   "San Javier": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Tacuarendi": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Tartagal": [
@@ -1094,6 +1025,15 @@
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Vera": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Villa Ana": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Villa Guillermina": [
+   "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Villa Ocampo": [
    "CAP_20261104083420_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Aguará Grande": [
