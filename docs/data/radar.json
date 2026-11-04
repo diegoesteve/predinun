@@ -1,65 +1,58 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-04 00:00",
+ "consultado": "2026-11-04 00:15",
  "radar": "RMA1",
- "observacion": "2026-11-03 23:50",
+ "observacion": "2026-11-03 23:59",
  "nucleos": [
   {
-   "lat": -31.7648,
-   "lon": -64.4716,
+   "lat": -30.1439,
+   "lon": -63.7831,
+   "dbz": 51,
+   "max_dbz": 55,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.7992,
+   "lon": -65.4076,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.8187,
+   "lon": -64.3856,
    "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -30.0526,
+   "lon": -64.1704,
+   "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.7901,
-   "lon": -65.5152,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -30.1074,
-   "lon": -63.923,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.6
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Anisacate": {
-   "km": 7.1,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "cuenca_de": "Río Anizacate",
+  "Los Molinos": {
+   "km": 4.4,
+   "max_dbz": 49,
+   "tope_km": 8.8,
    "nivel": "intensa"
   },
-  "Villa los Aromos": {
-   "km": 3.9,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Los Quebrachos",
+  "Villa San Isidro": {
+   "km": 0.5,
+   "max_dbz": 49,
+   "tope_km": 8.8,
    "nivel": "intensa"
   },
-  "La Serranita": {
-   "km": 4.0,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "nivel": "intensa"
-  },
-  "La Paisanita": {
-   "km": 4.9,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "nivel": "intensa"
-  },
-  "Villa la Rancherita": {
-   "km": 1.5,
-   "max_dbz": 51,
-   "tope_km": 9.4,
+  "Jose de la Quintana": {
+   "km": 3.5,
+   "max_dbz": 49,
+   "tope_km": 8.8,
    "nivel": "intensa"
   }
  },
- "minutos": 10
+ "minutos": 16
 }
