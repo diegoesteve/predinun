@@ -1,10 +1,65 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-03 21:45",
+ "consultado": "2026-11-03 22:00",
  "radar": "RMA1",
- "observacion": "2026-11-03 21:24",
- "nucleos": [],
+ "observacion": "2026-11-03 21:52",
+ "nucleos": [
+  {
+   "lat": -31.8994,
+   "lon": -64.9665,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 10.0
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 21
+ "localidades": {
+  "Villa Dolores": {
+   "km": 17.2,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "cuenca_de": "Canal De Riego",
+   "nivel": "intensa"
+  },
+  "Las Rabonas": {
+   "km": 4.8,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
+  "Las Tapias": {
+   "km": 13.6,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "intensa"
+  },
+  "Las Chacras Norte": {
+   "km": 7.8,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Los Hornillos",
+   "nivel": "intensa"
+  },
+  "Los Hornillos": {
+   "km": 0.7,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Los Hornillos",
+   "nivel": "intensa"
+  },
+  "Dos Arroyos": {
+   "km": 2.0,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
+  "El Pantanillo": {
+   "km": 3.1,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 9
 }
