@@ -1,7 +1,51 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-04 00:30",
+ "consultado": "2026-11-04 00:45",
  "alertas": [
+  {
+   "id": "2026_11_04_0339_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-04T03:39:00-03:00",
+   "hasta": "2026-11-04T05:39:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CATAMARCA: LA PAZ. LA RIOJA: CHAMICAL - GRAL BELGRANO - GRAL OCAMPO. CORDOBA: CRUZ DEL EJE - ISCHILIN - MINAS - TULUMBA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_04_0339_cap_es.xml",
+   "desde_local": "04/11 03:39",
+   "hasta_local": "04/11 05:39",
+   "localidades": 10,
+   "poligonos": [
+    [
+     [
+      -66.45,
+      -30.25
+     ],
+     [
+      -66.26,
+      -30.91
+     ],
+     [
+      -64.74,
+      -30.64
+     ],
+     [
+      -64.75,
+      -29.78
+     ],
+     [
+      -66.38,
+      -30.03
+     ],
+     [
+      -66.45,
+      -30.25
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58",
    "tipo": "alerta",
@@ -911,7 +955,38 @@
    ]
   }
  ],
- "localidades": {},
+ "localidades": {
+  "Serrezuela": [
+   "2026_11_04_0339_cap_es"
+  ],
+  "Las Palmas": [
+   "2026_11_04_0339_cap_es"
+  ],
+  "Paraje Puesto del Gallo": [
+   "2026_11_04_0339_cap_es"
+  ],
+  "Olivares de San Nicolás": [
+   "2026_11_04_0339_cap_es"
+  ],
+  "Paraje Palo Parado": [
+   "2026_11_04_0339_cap_es"
+  ],
+  "San Antonio": [
+   "2026_11_04_0339_cap_es"
+  ],
+  "Iglesia Vieja": [
+   "2026_11_04_0339_cap_es"
+  ],
+  "Alto de los Quebrachos": [
+   "2026_11_04_0339_cap_es"
+  ],
+  "Los Chañaritos": [
+   "2026_11_04_0339_cap_es"
+  ],
+  "Media Naranja": [
+   "2026_11_04_0339_cap_es"
+  ]
+ },
  "localidades_santafe": {
   "Alejandra": [
    "CAP_20261103130902_Tormenta_Llanura_alertas_alertas_58"
