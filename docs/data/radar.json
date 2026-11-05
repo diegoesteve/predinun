@@ -1,26 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 08:45",
+ "consultado": "2026-11-05 09:00",
  "radar": "RMA17",
- "observacion": "2026-11-05 08:32",
+ "observacion": "2026-11-05 08:40",
  "nucleos": [
   {
-   "lat": -32.1557,
-   "lon": -64.9127,
+   "lat": -32.2286,
+   "lon": -64.9457,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.028,
+   "lon": -64.9567,
    "dbz": 50,
-   "max_dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.0919,
+   "lon": -64.9237,
+   "dbz": 48,
+   "max_dbz": 48,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
+  "San Javier Y Yacanto": {
+   "km": 4.9,
+   "max_dbz": 54,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo San Javier",
+   "nivel": "intensa"
+  },
   "El Durazno": {
-   "km": 12.2,
-   "max_dbz": 50,
+   "km": 14.9,
+   "max_dbz": 48,
    "tope_km": 17.0,
    "cuenca_de": "Arroyo Sombra de Toro",
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 21
 }
