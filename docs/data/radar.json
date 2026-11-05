@@ -1,46 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 08:15",
+ "consultado": "2026-11-05 08:30",
  "radar": "RMA17",
- "observacion": "2026-11-05 07:59",
+ "observacion": "2026-11-05 08:15",
  "nucleos": [
   {
-   "lat": -32.7826,
-   "lon": -63.8355,
-   "dbz": 62,
-   "max_dbz": 73,
+   "lat": -32.7464,
+   "lon": -64.8138,
+   "dbz": 52,
+   "max_dbz": 57,
    "tope_km": 17.0
-  },
-  {
-   "lat": -33.2701,
-   "lon": -64.55,
-   "dbz": 54,
-   "max_dbz": 64,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.864,
-   "lon": -64.517,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -33.3961,
-   "lon": -64.55,
-   "dbz": 49,
-   "max_dbz": 58,
-   "tope_km": 14.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Las Vertientes": {
-   "km": 2.8,
-   "max_dbz": 64,
-   "tope_km": 12.9,
+  "Santa Rita": {
+   "km": 34.1,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 15
 }
