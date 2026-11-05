@@ -1,33 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 09:45",
+ "consultado": "2026-11-05 10:00",
  "radar": "RMA17",
- "observacion": "2026-11-05 09:12",
+ "observacion": "2026-11-05 09:45",
  "nucleos": [
   {
-   "lat": -32.1375,
-   "lon": -64.9787,
+   "lat": -32.4742,
+   "lon": -64.8688,
+   "dbz": 54,
+   "max_dbz": 54,
+   "tope_km": 15.8
+  },
+  {
+   "lat": -32.6467,
+   "lon": -64.8908,
    "dbz": 50,
    "max_dbz": 50,
-   "tope_km": 14.7
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Luyaba": {
-   "km": 7.4,
+  "Alpa Corral": {
+   "km": 15.1,
    "max_dbz": 50,
-   "tope_km": 14.7,
-   "cuenca_de": "Acc Privado",
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Barrancas",
    "nivel": "intensa"
   },
-  "Los Romeros": {
-   "km": 22.9,
+  "Cañada del Sauce": {
+   "km": 23.7,
+   "max_dbz": 54,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Villa la Rivera": {
+   "km": 38.8,
+   "max_dbz": 54,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Paso del Río Seco": {
+   "km": 36.2,
    "max_dbz": 50,
-   "tope_km": 14.7,
-   "cuenca_de": "sin nombre",
+   "tope_km": 17.0,
+   "cuenca_de": "Río de las Barrancas",
+   "nivel": "intensa"
+  },
+  "Santa Rita": {
+   "km": 46.6,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "intensa"
+  },
+  "Unión de los Rios": {
+   "km": 12.1,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo El Talita",
    "nivel": "intensa"
   }
  },
- "minutos": 33
+ "minutos": 15
 }
