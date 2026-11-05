@@ -1,10 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-05 08:00",
- "radar": "RMA16",
- "observacion": "2026-11-05 07:52",
- "nucleos": [],
+ "consultado": "2026-11-05 08:15",
+ "radar": "RMA17",
+ "observacion": "2026-11-05 07:59",
+ "nucleos": [
+  {
+   "lat": -32.7826,
+   "lon": -63.8355,
+   "dbz": 62,
+   "max_dbz": 73,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -33.2701,
+   "lon": -64.55,
+   "dbz": 54,
+   "max_dbz": 64,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.864,
+   "lon": -64.517,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -33.3961,
+   "lon": -64.55,
+   "dbz": 49,
+   "max_dbz": 58,
+   "tope_km": 14.1
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 8
+ "localidades": {
+  "Las Vertientes": {
+   "km": 2.8,
+   "max_dbz": 64,
+   "tope_km": 12.9,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 17
 }
