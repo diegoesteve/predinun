@@ -4,52 +4,109 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Crecidas · ¿viene agua a tu barrio?</title>
-<meta name="description" content="Te avisamos un día antes si puede venir agua a tu barrio o pueblo. Córdoba y Santa Fe. Gratis, sin registrarte. No oficial.">
+<meta name="description" content="El zorro gris te avisa un día antes si puede venir agua a tu casa o a la de los tuyos. Córdoba y Santa Fe. Gratis, sin registrarte. No oficial.">
 <meta name="theme-color" content="#1D5C87">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="iconos/icono-192.png">
 <link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="¿Viene agua a tu barrio?">
-<meta property="og:description" content="Te avisamos un día antes si puede venir agua a tu barrio o pueblo. Córdoba y Santa Fe. Gratis.">
+<meta property="og:description" content="El zorro gris te avisa un día antes si puede venir agua a tu casa o a la de los tuyos. Córdoba y Santa Fe. Gratis.">
 <meta property="og:image" content="https://diegoesteve.github.io/predinun/og.png">
-<link rel="stylesheet" href="app.css?v=4">
+<link rel="stylesheet" href="app.css?v=5">
 </head>
 <body>
 <main id="app">
 
-  <!-- Elegir lugar -->
-  <section id="v-elegir" class="vista" hidden>
-    <div class="logo" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 34 34"><rect width="34" height="34" rx="10" fill="#1D5C87"/><path d="M17 7c4 5 7 9 7 13a7 7 0 0 1-14 0c0-4 3-8 7-13z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg></div>
-    <h1>¿Dónde vivís?</h1>
-    <p class="bajada">Te avisamos <b>un día antes</b> si puede venir agua a tu barrio o tu pueblo. Es gratis y no tenés que registrarte.</p>
-    <button type="button" id="b-ubicacion" class="boton primario"><svg width="22" height="22" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="3" fill="currentColor"/><circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Usar dónde estoy ahora</button>
-    <p id="ubicacion-estado" class="nota" role="status"></p>
-    <label for="buscar" class="etiqueta">O escribí tu barrio, pueblo o ciudad</label>
-    <input id="buscar" type="search" autocomplete="off" placeholder="Por ejemplo Villa Cornú, Unquillo o Reconquista">
-    <ul id="resultados" class="resultados" role="listbox"></ul>
-    <p class="nota pie">Por ahora: sierras de Córdoba y provincia de Santa Fe.</p>
+  <!-- Bienvenida: el zorro se presenta -->
+  <section id="v-hola" class="vista" hidden>
+    <p class="marca"><img src="iconos/icono-192.png" alt="" width="26" height="26">Crecidas</p>
+    <div class="caja presenta">
+      <img class="zorro grande" src="zorro/tranquilo.png" alt="El zorro gris, tranquilo" width="150" height="150">
+      <p class="nota fuerte">Así te voy a avisar:</p>
+      <div class="cuatro">
+        <span><img class="zorro" src="zorro/tranquilo.png" alt="" width="54" height="54">Tranquilo</span>
+        <span><img class="zorro" src="zorro/atencion.png" alt="" width="54" height="54">Atención</span>
+        <span><img class="zorro" src="zorro/alerta.png" alt="" width="54" height="54">Alerta</span>
+        <span><img class="zorro" src="zorro/peligro.png" alt="" width="54" height="54">Peligro</span>
+      </div>
+    </div>
+    <h1 class="titular">Hola, soy el zorro gris</h1>
+    <blockquote id="h-frase" class="frase">«El río es hermoso, pero la sierra manda. Si yo me muevo, vos también.»</blockquote>
+    <p class="bajada">Te aviso <b>un día antes</b> si viene agua a tu casa o a la de los tuyos, y te digo qué hacer.</p>
+    <button type="button" id="b-empezar" class="boton primario">Empecemos <span aria-hidden="true">→</span></button>
+    <p class="nota centro">Gratis y sin registrarte. Son 2 preguntas. No reemplaza a Defensa Civil.</p>
   </section>
 
-  <!-- Hoy y mañana -->
-  <section id="v-lugar" class="vista" hidden>
+  <!-- Paso 1: ¿dónde está tu casa? -->
+  <section id="v-elegir" class="vista" hidden>
+    <div class="pasos"><button type="button" class="redondo" id="b-elegir-volver" aria-label="Volver">‹</button><span class="puntos" aria-label="Paso 1 de 2"><i class="largo"></i><i></i></span><span class="redondo vacio"></span></div>
+    <div class="dice"><img class="zorro" src="zorro/tranquilo.png" alt="" width="76" height="76"><p class="globo">Primero, ¿dónde está <b>tu casa</b>? Con el barrio alcanza.</p></div>
+    <button type="button" id="b-ubicacion" class="boton primario"><svg width="22" height="22" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="3" fill="currentColor"/><circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Estoy en casa: usar mi ubicación</button>
+    <p id="ubicacion-estado" class="nota" role="status"></p>
+    <label for="buscar" class="etiqueta">O escribí tu barrio o tu pueblo</label>
+    <input id="buscar" type="search" autocomplete="off" placeholder="Por ejemplo Villa Cornú, Unquillo o Reconquista">
+    <ul id="resultados" class="resultados" role="listbox"></ul>
+    <p class="nota pie">Tu ubicación no sale de tu celular. Por ahora: sierras de Córdoba y provincia de Santa Fe.</p>
+  </section>
+
+  <!-- Paso 2 (y después, desde Hoy): ¿a quién más cuidás? -->
+  <section id="v-tuyos" class="vista" hidden>
+    <div class="pasos"><button type="button" class="redondo" id="b-tuyos-volver" aria-label="Volver">‹</button><span class="puntos" id="t-puntos" aria-label="Paso 2 de 2"><i></i><i class="largo"></i></span><span class="redondo vacio"></span></div>
+    <div class="dice"><img class="zorro" src="zorro/tranquilo.png" alt="" width="72" height="72"><p class="globo">¿Hay <b>familia o vecinos</b> que quieras cuidar? Te muestro cómo están ellos también.</p></div>
+    <ul id="t-lista" class="tuyos"></ul>
+    <form id="t-form" class="caja" hidden>
+      <label for="t-nombre" class="etiqueta-chica">¿Cómo le decís?</label>
+      <input id="t-nombre" maxlength="30" autocomplete="off" placeholder="Por ejemplo: Mamá, Don Rubén">
+      <label for="t-buscar" class="etiqueta-chica">¿En qué barrio o pueblo vive?</label>
+      <input id="t-buscar" type="search" autocomplete="off" placeholder="Escribí el barrio o el pueblo">
+      <ul id="t-resultados" class="resultados" role="listbox"></ul>
+      <p id="t-estado" class="nota" role="status"></p>
+      <button type="button" id="t-cancelar" class="boton chico" style="align-self:flex-start">Cancelar</button>
+    </form>
+    <button type="button" id="t-agregar" class="boton punteado">+ Agregar a alguien</button>
+    <p class="nota">Solo se guarda en tu celular: nadie más sabe a quién cuidás.</p>
+    <div class="abajo">
+      <button type="button" id="t-listo" class="boton primario">Listo: activar los avisos</button>
+      <button type="button" id="t-despues" class="boton texto">Ahora no, después agrego</button>
+    </div>
+  </section>
+
+  <!-- Hoy -->
+  <section id="v-lugar" class="vista con-barra" hidden>
     <header class="cabeza">
-      <div><h1 id="l-nombre"></h1><p id="l-zona" class="nota"></p></div>
+      <div><p class="nota fuerte">Tu casa</p><h1 id="l-nombre"></h1><p id="l-zona" class="nota"></p></div>
       <button type="button" id="b-cambiar" class="boton chico">Cambiar</button>
     </header>
-    <div id="l-dias" class="dias"></div>
-    <div id="l-alto" class="caja" hidden></div>
+    <section id="l-estado" class="estado" aria-live="polite"></section>
+    <section id="l-hacer" class="caja"></section>
+    <section id="l-tuyos" class="caja"></section>
     <div id="l-arroyo" class="caja" hidden></div>
     <section id="l-vecinos" class="caja"></section>
-    <section id="l-hacer" class="caja"></section>
-    <div class="botones">
-      <a id="b-whatsapp" class="boton whatsapp" href="#" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Avisar por WhatsApp</a>
-      <a class="boton oscuro" href="tel:103"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Llamar al 103</a>
-    </div>
+    <a id="b-whatsapp" class="caja fila-link" href="#" target="_blank" rel="noopener"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z" fill="none" stroke="#1E8E4E" stroke-width="2" stroke-linejoin="round"/></svg>
+      <span><b>Sumá a tus vecinos</b><br><span class="nota">Mandales la app por WhatsApp: cuantos más, mejor nos cuidamos.</span></span></a>
     <div id="l-avisos" class="caja oscura" hidden></div>
     <div id="l-instalar" class="caja oscura" hidden></div>
     <p id="l-fuente" class="nota pie"></p>
     <p class="nota pie"><a id="l-todo" href="../mapa.html">Ver todos los datos (mapas, ríos, radar)</a> · No es un aviso oficial: seguí a Defensa Civil y a Protección Civil. Emergencias: 103 o 911.</p>
+  </section>
+
+  <!-- ¿Está entrando agua a tu casa? -->
+  <section id="v-agua" class="vista con-barra" hidden>
+    <h1 class="rojo">¿Está entrando agua a tu casa?</h1>
+    <div class="dice"><img class="zorro" src="zorro/peligro.png" alt="" width="72" height="72"><p class="globo">El agua <b>podría seguir subiendo</b>. Informate llamando a <span id="a-quien">Defensa Civil</span>:</p></div>
+    <a class="boton rojo" href="tel:103"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span id="a-llamar">Llamar al 103 (Defensa Civil)</span></a>
+    <section class="caja">
+      <h2>Si tenés que salir</h2>
+      <ol>
+        <li><b>Cortá la luz</b> solo si llegás a la llave sin pisar agua. Si no, no la toques.</li>
+        <li>Agarrá documentos, remedios y el celular. Lo demás se queda.</li>
+        <li>Salí con los tuyos y avisá a los vecinos que necesiten ayuda.</li>
+        <li><b>No cruces agua que corre</b>, aunque parezca poca: te puede tirar.</li>
+      </ol>
+    </section>
+    <div id="a-alto" class="caja oscura" hidden></div>
+    <a class="boton borde-rojo" href="tel:911">Emergencias: 911</a>
   </section>
 
   <!-- Contar una inundación -->
@@ -99,7 +156,12 @@
 
   <p id="sin-datos" class="caja" hidden></p>
 </main>
+
+<nav id="barra" class="barra" aria-label="Secciones" hidden>
+  <a href="#" id="n-hoy"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Hoy</a>
+  <a href="#agua" id="n-agua" class="emergencia"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3 17q2.2-1.6 4.5 0t4.5 0t4.5 0t4.5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>¿Está entrando agua a tu casa?</a>
+</nav>
 <script src="../config.js"></script>
-<script src="app.js?v=8"></script>
+<script src="app.js?v=9"></script>
 </body>
 </html>

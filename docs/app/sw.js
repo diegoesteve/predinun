@@ -2,8 +2,9 @@
 //   - La app (html, js, css, íconos): lo guardado primero, y se actualiza en segundo plano.
 //   - Los datos (../data/app.json y los arroyos): de la red primero; sin conexión, lo último guardado.
 // Cambiar VERSION cuando cambie la lista de APP.
-const VERSION = 'crecidas-app-8';
-const APP = ['./', 'index.html', 'app.js', 'app.css', 'manifest.webmanifest', 'iconos/icono-192.png', 'iconos/icono-512.png'];
+const VERSION = 'crecidas-app-9';
+const APP = ['./', 'index.html', 'app.js', 'app.css', 'manifest.webmanifest', 'iconos/icono-192.png', 'iconos/icono-512.png',
+  'zorro/tranquilo.png', 'zorro/atencion.png', 'zorro/alerta.png', 'zorro/peligro.png'];
 
 self.addEventListener('install', ev => {
   ev.waitUntil(caches.open(VERSION).then(c => Promise.all(APP.map(u => c.add(new Request(u, { cache: 'reload' })).catch(() => null)))).then(() => self.skipWaiting()));

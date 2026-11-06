@@ -1,4 +1,4 @@
-// Crecidas · la app para todos: elegís tu lugar una vez y ves hoy y mañana en palabras simples.
+// Crecidas · la app para todos: el zorro gris te dice si viene agua a tu casa y a la de los tuyos, y qué hacer.
 // Los datos salen de ../data/app.json (scripts/armar_app.py, cada 15 minutos). Nada de esto sale del celular salvo,
 // si se activan los avisos, la dirección de push del navegador y el lugar elegido.
 'use strict';
@@ -52,44 +52,59 @@ async function cargar() {
   mostrar();
 }
 
+const VISTAS = ['hola', 'elegir', 'tuyos', 'lugar', 'agua', 'contar'];
 function mostrar() {
   const x = lugarDe(PREF.get('lugar', null));
-  const contar = !!x && location.hash === '#contar';
-  $('#v-elegir').hidden = !!x;
-  $('#v-lugar').hidden = !x || contar;
-  $('#v-contar').hidden = !contar;
-  if (contar) prepararContar(x);
-  else if (x) pintarLugar(x); else $('#buscar').focus({ preventScroll: true });
+  const h = location.hash.slice(1);
+  let v;
+  if (h === 'elegir' || (!x && PREF.get('visto-hola', false))) v = 'elegir';
+  else if (!x) v = 'hola';
+  else v = ['contar', 'tuyos', 'agua'].includes(h) ? h : 'lugar';
+  VISTAS.forEach(k => { $('#v-' + k).hidden = k !== v; });
+  $('#barra').hidden = !(v === 'lugar' || v === 'agua');
+  $('#n-hoy').toggleAttribute('aria-current', v === 'lugar');
+  $('#n-agua').toggleAttribute('aria-current', v === 'agua');
+  if (v === 'contar') prepararContar(x);
+  else if (v === 'tuyos') pintarTuyosEditar();
+  else if (v === 'agua') pintarAgua(x);
+  else if (v === 'lugar') pintarLugar(x);
+  else if (v === 'elegir') { $('#b-elegir-volver').hidden = false; }
   window.scrollTo(0, 0);
 }
-window.addEventListener('popstate', () => { if (DATOS) mostrar(); });
+const ir = h => { if (location.hash.slice(1) === h) mostrar(); else location.hash = h; };
+window.addEventListener('hashchange', () => { if (DATOS) mostrar(); });
 
 // ---------------------------------------------------------------- elegir lugar
-async function buscar() {
-  const texto = $('#buscar').value.trim(), q = sinTildes(texto);
-  const lista = $('#resultados');
-  if (q.length < 2) { lista.innerHTML = ''; return; }
+async function buscarLugares(texto) {
+  const q = sinTildes(texto);
+  if (q.length < 2) return null;
   const barrios = await cargarBarrios();
-  if ($('#buscar').value.trim() !== texto) return;   // ya escribió otra cosa
   const rango = t => { const n = sinTildes(t); return n.startsWith(q) ? 0 : (' ' + n).includes(' ' + q) ? 1 : 2; };
-  const r = [
+  return [
     ...DATOS.lugares.filter(x => sinTildes(x.n).includes(q)).map(x => ({ x, nombre: nom(x), r: rango(x.n), sub: `${ZONA[x.z]}${x.rio ? ' · ' + x.rio : ''}` })),
     ...barrios.filter(b => sinTildes(b.b).includes(q) || sinTildes(b.b + ' ' + b.n).includes(q)).map(b => ({ x: lugarDe(b), barrio: b, nombre: b.b, r: rango(b.b) + 0.5, sub: `Barrio de ${nom(lugarDe(b)) || b.n}` })),
   ].filter(o => o.x).sort((a, b) => a.r - b.r || a.nombre.localeCompare(b.nombre)).slice(0, 10);
+}
+async function mostrarResultados(entrada, lista, alElegir) {
+  const texto = entrada.value.trim();
+  const r = await buscarLugares(texto);
+  if (entrada.value.trim() !== texto) return;   // ya escribió otra cosa
+  if (!r) { lista.innerHTML = ''; return; }
   lista.innerHTML = r.length ? r.map((o, i) => `<li><button type="button" data-i="${i}"><span><b>${esc(o.nombre)}</b><br><small>${esc(o.sub)}</small></span><span aria-hidden="true">›</span></button></li>`).join('')
     : '<li><p class="nota" style="padding:14px 16px">No encontramos ese lugar. Por ahora están las sierras de Córdoba y la provincia de Santa Fe.</p></li>';
-  lista.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
-    const o = r[b.dataset.i];
-    elegir(o.x, o.barrio ? { la: o.barrio.la, lo: o.barrio.lo, barrio: true } : null, o.barrio ? o.barrio.b : null);
-  }));
+  lista.querySelectorAll('button').forEach(b => b.addEventListener('click', () => alElegir(r[b.dataset.i])));
 }
+const buscar = () => mostrarResultados($('#buscar'), $('#resultados'), o =>
+  elegir(o.x, o.barrio ? { la: o.barrio.la, lo: o.barrio.lo, barrio: true } : null, o.barrio ? o.barrio.b : null));
 
 function elegir(x, coords, barrio) {
   PREF.set('lugar', { n: x.n, z: x.z, b: barrio || null });
   PREF.set('coords', coords);
   $('#buscar').value = ''; $('#resultados').innerHTML = '';
-  mostrar();
   sincronizarAvisos();
+  // la primera vez sigue el paso 2 (¿a quién más cuidás?); después, vuelve a Hoy
+  if (!PREF.get('armado', false)) { history.replaceState(null, '', location.pathname + location.search); ir('tuyos'); }
+  else { history.replaceState(null, '', location.pathname + location.search); mostrar(); }
 }
 
 const kmEntre = (a, b, c, d) => Math.hypot((a - c) * 111.3, (b - d) * 111.3 * Math.cos(a * Math.PI / 180));
@@ -108,21 +123,10 @@ function usarUbicacion() {
 }
 
 // ---------------------------------------------------------------- hoy y mañana
-const ICONO = {
-  0: c => `<svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
-  1: c => `<svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 2.5 20h19z" fill="none" stroke="${c}" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 10v4.5" stroke="${c}" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17.2" r="1.3" fill="${c}"/></svg>`,
-};
-ICONO[2] = ICONO[1]; ICONO[3] = ICONO[1];
-const COLOR_ICONO = { 0: '#fff', 1: '#F2C230', 2: '#D9711C', 3: '#C23A2E' };
-
-function tarjetaDia(d, cuando, chico) {
-  return `<div class="dia n${d.nivel}${chico ? ' chico' : ''}" role="group" aria-label="${esc(cuando)}: ${esc(d.titulo)}">
-    <div class="fila"><span class="icono">${ICONO[d.nivel](COLOR_ICONO[d.nivel])}</span>
-      <span><span class="cuando">${esc(cuando)}</span><br><span class="titulo">${esc(d.titulo)}</span></span></div>
-    ${d.nivel ? `<p class="texto">${esc(d.texto)}</p>` : `<p class="texto">${esc(d.texto)}</p>`}
-    ${d.tambien ? `<p class="tambien">También: ${esc(d.tambien)}.</p>` : ''}
-  </div>`;
-}
+const NIVEL = ['Tranquilo', 'Atención', 'Alerta', 'Peligro'];
+const ZORRO = ['tranquilo', 'atencion', 'alerta', 'peligro'].map(n => `zorro/${n}.png`);
+const ZORRO_ALT = ['tranquilo', 'atento', 'en alerta', 'en peligro'].map(t => `El zorro gris, ${t}`);
+const peorDe = x => Math.max(x.hoy.nivel, x.man.nivel);
 
 const HACER = {
   sierras: {
@@ -168,13 +172,12 @@ function pintarVecinos(x, b, ev) {
       + (ev.umbral_mm ? `<p class="nota" style="color:inherit">Si se esperan ${ev.umbral_mm} mm o más, te avisamos que tu barrio ya se inundó con lluvias así.</p>` : '')
     : `<h2>¿Se inundó ${b ? 'tu barrio' : 'tu calle o tu barrio'} alguna vez?</h2><p class="nota" style="color:inherit">Contanos cuándo y hasta dónde llegó el agua. Con eso aprendemos con cuánta lluvia se inunda cada barrio y podemos avisar antes.</p>`)
     + `<button type="button" class="boton chico" id="b-contar" style="align-self:flex-start">${ev && ev.eventos.length ? 'Contar otra vez que se inundó' : 'Contalo'}</button>`;
-  $('#b-contar').addEventListener('click', () => { history.pushState(null, '', '#contar'); mostrar(); });
+  $('#b-contar').addEventListener('click', () => ir('contar'));
 }
 
 // ---------------------------------------------------------------- lugar alto de referencia (scripts/lugares_altos.py)
 const slugLugar = t => sinTildes(t).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-async function pintarAlto(x, b, peor) {
-  const caja = $('#l-alto');
+async function pintarAlto(x, b, peor, caja = $('#a-alto')) {
   caja.hidden = true;
   let datos = null;
   try { const r = await fetch(`../data/altos/${x.z}/${slugLugar(x.n)}.json`); if (r.ok) datos = await r.json(); } catch (e) { /* sin datos */ }
@@ -183,20 +186,20 @@ async function pintarAlto(x, b, peor) {
   const agua = x.tipo === 'sierras' ? 'del arroyo' : 'del río o el canal';
   // La altura del propio barrio no se muestra: el relieve satelital falla en islas y bañados (Alto Verde da 10 m) y podría tranquilizar de más.
   const propio = '';
-  caja.className = 'caja' + (peor >= 2 ? ' n' + peor : '');
+  caja.className = 'caja oscura';
   caja.hidden = false;
   if (!v.d) {
-    caja.innerHTML = `<h2>Si tenés que salir</h2>${propio}<p class="nota">No encontramos un lugar público alto a menos de 3 km. Preguntá en tu municipio cuál es el centro de evacuación.</p>`;
+    caja.innerHTML = `<h2>A dónde ir</h2>${propio}<p class="nota">No encontramos un lugar público alto a menos de 3 km. Preguntá en tu municipio cuál es el centro de evacuación.</p>`;
     return;
   }
   const d = v.d;
-  const ir = `https://www.google.com/maps/dir/?api=1&destination=${d.la},${d.lo}&travelmode=walking`;
-  caja.innerHTML = `<h2>Si tenés que salir</h2>
+  const ruta = `https://www.google.com/maps/dir/?api=1&destination=${d.la},${d.lo}&travelmode=walking`;
+  caja.innerHTML = `<h2>A dónde ir</h2>
     <p class="nota">Lugar alto más cercano:</p>
     <p class="alto-destino">${esc(d.n)}</p>
     <p class="nota">${esc(d.t.charAt(0).toUpperCase() + d.t.slice(1))} a unos ${d.m >= 1000 ? (d.m / 1000).toFixed(1).replace('.', ',') + ' km' : d.m + ' m'} hacia el ${esc(d.r)}, unos ${Math.round(d.h)} m por encima ${agua} más cercano.</p>
     ${propio}
-    <a class="boton ${peor >= 2 ? 'claro' : 'chico'}" href="${ir}" target="_blank" rel="noopener" style="align-self:flex-start">Cómo llegar</a>
+    <a class="boton claro" href="${ruta}" target="_blank" rel="noopener" style="align-self:flex-start">Cómo llegar</a>
     <p class="nota" style="font-size:13px">Es una referencia por el relieve, no un centro de evacuación oficial. Si Defensa Civil o Protección Civil indican otro lugar, andá ahí. Si el agua ya corre fuerte por la calle, no la cruces: subí a un lugar alto cerca.</p>`;
 }
 
@@ -275,36 +278,126 @@ $('#f-contar').addEventListener('submit', async ev => {
     if (window.turnstile && widgetContar != null) window.turnstile.reset(widgetContar);
   }
 });
-$('#b-volver').addEventListener('click', () => { history.back(); setTimeout(() => { if (location.hash === '#contar') { history.replaceState(null, '', location.pathname + location.search); mostrar(); } }, 150); });
+$('#b-volver').addEventListener('click', () => { history.replaceState(null, '', location.pathname + location.search); mostrar(); });
 
 function pintarLugar(x0) {
   const sel = PREF.get('lugar', null) || {};
   const { x, ev } = conBarrio(x0, sel.b);
   $('#l-nombre').textContent = sel.b || nom(x);
   $('#l-zona').textContent = sel.b ? `Barrio de ${nom(x)}${nom(x) !== ZONA[x.z] ? ' · ' + ZONA[x.z] : ''}` : `${ZONA[x.z]}${x.rio ? ' · ' + x.rio : ''}`;
-  const man = DATOS.dia_manana ? `Mañana, ${DATOS.dia_manana}` : 'Mañana';
-  // lo más importante arriba: si mañana es peor que hoy, mañana va primero y grande; si sigue igual, no se repite
+  const peor = peorDe(x);
   const primeroManana = x.man.nivel > x.hoy.nivel;
-  const igual = x.man.nivel === x.hoy.nivel && x.man.titulo === x.hoy.titulo;
-  const manTarjeta = igual && x.hoy.nivel ? { ...x.man, titulo: 'Sigue igual', texto: 'No se espera que mejore todavía.', tambien: null } : x.man;
-  $('#l-dias').innerHTML = primeroManana ? tarjetaDia(x.man, man) + tarjetaDia(x.hoy, 'Hoy', true)
-    : tarjetaDia(x.hoy, 'Hoy') + tarjetaDia(manTarjeta, man, manTarjeta.nivel === 0 || igual);
-  const peor = Math.max(x.hoy.nivel, x.man.nivel);
-  const porBarrio = [x.hoy, x.man].some(d => d.titulo === 'Tu barrio ya se inundó con lluvias así');
-  const lista = HACER[porBarrio ? 'ciudad' : x.tipo][peor >= 2 ? 'alto' : peor === 1 ? 'medio' : 'nada'];
-  $('#l-hacer').innerHTML = `<h2>${peor ? (primeroManana ? 'Qué hacer hoy, para mañana' : 'Qué hacer') : 'Para estar preparado'}</h2><ol>${lista.map(t => `<li>${esc(t)}</li>`).join('')}</ol>`;
-  const texto = `${sel.b || nom(x)}: ${primeroManana ? 'mañana' : 'hoy'} ${((t => t.charAt(0).toLowerCase() + t.slice(1))((primeroManana ? x.man : x.hoy).titulo))}. Mirá cómo está tu barrio:`;
-  const enlace = new URL(`?l=${encodeURIComponent(x.n)}&z=${x.z}${sel.b ? '&b=' + encodeURIComponent(sel.b) : ''}`, location.href.split('?')[0]).href;
+  pintarEstado(x, peor, primeroManana);
+  pintarHacer(x, peor, primeroManana);
+  pintarTuyosHoy();
+  const texto = `${sel.b || nom(x)}: ${primeroManana ? 'mañana' : 'hoy'} ${((t => t.charAt(0).toLowerCase() + t.slice(1))((primeroManana ? x.man : x.hoy).titulo))}. El zorro gris avisa si viene agua a tu barrio:`;
+  const enlace = new URL(`?l=${encodeURIComponent(x.n)}&z=${x.z}${sel.b ? '&b=' + encodeURIComponent(sel.b) : ''}`, location.href.split('?')[0].split('#')[0]).href;
   $('#b-whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent(`${texto} ${enlace}`);
   // «Ver todos los datos» abre la zona y la localidad elegidas, no la portada de Córdoba
   $('#l-todo').href = `../mapa.html?localidad=${encodeURIComponent(x.n)}#${x.z === 'sf' ? 'santafe' : 'riesgo'}`;
   $('#l-fuente').textContent = `Datos de las ${DATOS.generado.slice(11)} del ${DATOS.generado.slice(8, 10)}/${DATOS.generado.slice(5, 7)}. ` +
     (x.tipo === 'sierras' ? 'Radar del OHMC, pronóstico de lluvia y alertas del SMN.' : 'Ríos del INA y Prefectura, pronóstico de lluvia y alertas del SMN.');
   pintarVecinos(x, sel.b, ev);
-  pintarAlto(x, sel.b, peor);
   pintarArroyo(x);
   pintarAvisos();
   pintarInstalar();
+}
+
+// El estado de tu casa: el zorro en su color, lo más importante primero
+function pintarEstado(x, peor, primeroManana) {
+  const d = primeroManana ? x.man : x.hoy;
+  const man = DATOS.dia_manana ? `Mañana (${DATOS.dia_manana})` : 'Mañana';
+  const cuando = peor ? (primeroManana ? ' mañana' : ' hoy') : '';
+  const fila = (t, y) => `<li><span class="punto n${y.nivel}" aria-hidden="true"></span><span><b>${t}:</b> ${esc(y.titulo)}</span></li>`;
+  $('#l-estado').className = 'estado n' + peor;
+  $('#l-estado').innerHTML = `
+    <div class="estado-arriba"><div><p class="nivel">${NIVEL[peor]}${cuando}</p><p class="sub">${esc(d.titulo)}</p></div>
+      <img class="zorro" src="${ZORRO[peor]}" alt="${ZORRO_ALT[peor]}" width="92" height="92"></div>
+    <p class="globo">${esc(d.texto)}${d.tambien ? ` También: ${esc(d.tambien)}.` : ''}${peor >= 2 ? ' <b>Si yo me muevo, vos también.</b>' : ''}</p>
+    <ul class="dias-mini">${fila('Hoy', x.hoy)}${fila(man, x.man)}</ul>`;
+}
+
+// Qué hacer: con aviso, una lista para tildar (se guarda en el celular, por día); sin aviso, cómo prepararse
+function pintarHacer(x, peor, primeroManana) {
+  const caja = $('#l-hacer');
+  const porBarrio = [x.hoy, x.man].some(d => d.titulo === 'Tu barrio ya se inundó con lluvias así');
+  const tipo = porBarrio ? 'ciudad' : x.tipo;
+  if (peor < 2) {
+    const lista = HACER[tipo][peor === 1 ? 'medio' : 'nada'];
+    caja.innerHTML = `<h2>${peor ? 'Qué hacer' : 'Para estar preparado'}</h2><ol>${lista.map(t => `<li>${esc(t)}</li>`).join('')}</ol>`;
+    return;
+  }
+  const tareas = [...HACER[tipo].alto];
+  tuyosConEstado().filter(t => t.peor >= 2).forEach(t => tareas.push(`Llamá a ${t.nombre}: en ${t.donde} también hay ${NIVEL[t.peor].toLowerCase()}.`));
+  const hecho = PREF.get('hecho', {});
+  const clave = `${DATOS.hoy}:${x.z}:${x.n}`;
+  const marcadas = hecho.clave === clave ? hecho.k : [];
+  const n = marcadas.length;
+  caja.innerHTML = `<h2 class="con-cuenta">${primeroManana ? 'Qué hacer hoy, para mañana' : 'Qué hacer hoy'} <span class="nota">${n} de ${tareas.length}</span></h2>
+    <ul class="tildar">${tareas.map((t, i) => `<li><label><input type="checkbox" data-i="${i}"${marcadas.includes(i) ? ' checked' : ''}><span>${esc(t)}</span></label></li>`).join('')}</ul>`;
+  caja.querySelectorAll('input').forEach(c => c.addEventListener('change', () => {
+    const k = [...caja.querySelectorAll('input:checked')].map(e => +e.dataset.i);
+    PREF.set('hecho', { clave, k });
+    caja.querySelector('.con-cuenta .nota').textContent = `${k.length} de ${tareas.length}`;
+  }));
+}
+
+// ---------------------------------------------------------------- los tuyos (familia y vecinos, solo en el celular)
+const tuyos = () => PREF.get('tuyos', []) || [];
+function tuyosConEstado() {
+  return tuyos().map(t => {
+    const x0 = lugarDe(t);
+    if (!x0) return { ...t, peor: null };
+    const { x } = conBarrio(x0, t.b);
+    const peor = peorDe(x);
+    return { ...t, x, peor, cuando: peor ? (x.man.nivel > x.hoy.nivel ? 'mañana' : 'hoy') : '', donde: t.b || nom(x0) };
+  });
+}
+const inicial = t => esc((t.trim()[0] || '?').toUpperCase());
+function pintarTuyosHoy() {
+  const caja = $('#l-tuyos'), ls = tuyosConEstado();
+  if (!ls.length) {
+    caja.innerHTML = `<h2>Los tuyos</h2><p class="nota">¿Tenés familia o vecinos en otro barrio o pueblo? Agregalos y te muestro cómo están.</p>
+      <a class="boton chico" href="#tuyos" style="align-self:flex-start">Agregar a alguien</a>`;
+    return;
+  }
+  caja.innerHTML = `<h2 class="con-cuenta">Los tuyos <a href="#tuyos" class="nota">Editar</a></h2><ul class="tuyos">${ls.map(t => `
+    <li><span class="avatar" aria-hidden="true">${inicial(t.nombre)}</span>
+      <span class="quien"><b>${esc(t.nombre)}</b><br><span class="nota">${esc(t.donde)}</span></span>
+      ${t.peor == null ? '<span class="nota">Sin datos</span>' : `<span class="chip n${t.peor}"><img src="${ZORRO[t.peor]}" alt="" width="22" height="22">${NIVEL[t.peor]}${t.peor ? ' ' + t.cuando : ''}</span>`}</li>`).join('')}</ul>`;
+}
+let enAlta = false;
+function pintarTuyosEditar() {
+  const primeraVez = !PREF.get('armado', false);   // primera vez: es el paso 2 de 2
+  $('#t-puntos').hidden = !primeraVez;
+  $('#t-listo').textContent = primeraVez ? 'Listo: activar los avisos' : 'Listo';
+  $('#t-despues').hidden = !primeraVez;
+  const ls = tuyos();
+  $('#t-lista').innerHTML = ls.map((t, i) => `<li><span class="avatar" aria-hidden="true">${inicial(t.nombre)}</span>
+    <span class="quien"><b>${esc(t.nombre)}</b><br><span class="nota">${esc(t.b || nom(lugarDe(t)) || t.n)}</span></span>
+    <button type="button" class="redondo" data-i="${i}" aria-label="Quitar a ${esc(t.nombre)}">✕</button></li>`).join('');
+  $('#t-lista').querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    const l = tuyos(); l.splice(+b.dataset.i, 1); PREF.set('tuyos', l); pintarTuyosEditar();
+  }));
+  $('#t-form').hidden = !enAlta;
+  $('#t-agregar').hidden = enAlta || ls.length >= 6;
+}
+function cerrarAlta() { enAlta = false; $('#t-nombre').value = ''; $('#t-buscar').value = ''; $('#t-resultados').innerHTML = ''; $('#t-estado').textContent = ''; pintarTuyosEditar(); }
+function terminarTuyos(avisos) {
+  PREF.set('armado', true);
+  enAlta = false;
+  history.replaceState(null, '', location.pathname + location.search);
+  mostrar();
+  if (avisos && AVISOS.url && avisosPosibles() && !(enIOS && !instalada())) activarAvisos().then(pintarAvisos).catch(() => {});
+}
+
+// ---------------------------------------------------------------- ¿está entrando agua a tu casa?
+function pintarAgua(x) {
+  const sel = PREF.get('lugar', null) || {};
+  const quien = x.z === 'sf' ? 'Protección Civil' : 'Defensa Civil';
+  $('#a-quien').textContent = quien;
+  $('#a-llamar').textContent = `Llamar al 103 (${quien})`;
+  pintarAlto(x, sel.b, 3, $('#a-alto'));
 }
 
 // ---------------------------------------------------------------- a cuántos metros del arroyo
@@ -426,7 +519,24 @@ function pintarAvisos() {
 // ---------------------------------------------------------------- arranque
 $('#buscar').addEventListener('input', buscar);
 $('#b-ubicacion').addEventListener('click', usarUbicacion);
-$('#b-cambiar').addEventListener('click', () => { PREF.set('lugar', null); mostrar(); });
+$('#b-cambiar').addEventListener('click', () => ir('elegir'));
+$('#b-empezar').addEventListener('click', () => { PREF.set('visto-hola', true); mostrar(); });
+$('#b-elegir-volver').addEventListener('click', () => {
+  if (lugarDe(PREF.get('lugar', null))) { history.replaceState(null, '', location.pathname + location.search); mostrar(); }
+  else { PREF.set('visto-hola', false); history.replaceState(null, '', location.pathname + location.search); mostrar(); }
+});
+$('#b-tuyos-volver').addEventListener('click', () => PREF.get('armado', false) ? terminarTuyos(false) : ir('elegir'));
+$('#t-agregar').addEventListener('click', () => { enAlta = true; pintarTuyosEditar(); $('#t-nombre').focus(); });
+$('#t-cancelar').addEventListener('click', cerrarAlta);
+$('#t-buscar').addEventListener('input', () => mostrarResultados($('#t-buscar'), $('#t-resultados'), o => {
+  const nombre = $('#t-nombre').value.trim();
+  if (!nombre) { $('#t-estado').textContent = 'Escribí arriba cómo le decís (por ejemplo «Mamá»).'; $('#t-nombre').focus(); return; }
+  PREF.set('tuyos', [...tuyos(), { nombre: nombre.slice(0, 30), n: o.x.n, z: o.x.z, b: o.barrio ? o.barrio.b : null }]);
+  cerrarAlta();
+}));
+$('#t-listo').addEventListener('click', () => terminarTuyos(!PREF.get('armado', false)));   // la primera vez, además, pide los avisos
+$('#t-despues').addEventListener('click', () => terminarTuyos(false));
+$('#n-hoy').addEventListener('click', e => { e.preventDefault(); history.replaceState(null, '', location.pathname + location.search); mostrar(); });
 if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && DATOS) cargar(); });
 cargar();
