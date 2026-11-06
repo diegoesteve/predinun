@@ -1,18 +1,44 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-06 09:00",
- "radar": "RMA16",
- "observacion": "2026-11-06 08:43",
+ "consultado": "2026-11-06 09:15",
+ "radar": "RMA17",
+ "observacion": "2026-11-06 09:01",
  "nucleos": [
   {
-   "lat": -33.2038,
-   "lon": -65.1105,
-   "dbz": 53,
-   "max_dbz": 62,
-   "tope_km": 7.6
+   "lat": -32.0371,
+   "lon": -65.0007,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "localidades": {
+  "San Javier Y Yacanto": {
+   "km": 2.7,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "nivel": "intensa"
+  },
+  "Conlara": {
+   "km": 23.1,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "La Poblacion": {
+   "km": 3.5,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "nivel": "intensa"
+  },
+  "San Javier": {
+   "km": 3.6,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 15
 }
