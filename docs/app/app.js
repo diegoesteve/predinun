@@ -364,7 +364,8 @@ function pintarTuyosHoy() {
   caja.innerHTML = `<h2 class="con-cuenta">Los tuyos <a href="#tuyos" class="nota">Editar</a></h2><ul class="tuyos">${ls.map(t => `
     <li><span class="avatar" aria-hidden="true">${inicial(t.nombre)}</span>
       <span class="quien"><b>${esc(t.nombre)}</b><br><span class="nota">${esc(t.donde)}</span></span>
-      ${t.peor == null ? '<span class="nota">Sin datos</span>' : `<span class="chip n${t.peor}"><img src="${ZORRO[t.peor]}" alt="" width="22" height="22">${NIVEL[t.peor]}${t.peor ? ' ' + t.cuando : ''}</span>`}</li>`).join('')}</ul>`;
+      ${t.peor == null ? '<span class="nota">Sin datos</span>' : `<span class="chip n${t.peor}"><img src="${ZORRO[t.peor]}" alt="" width="22" height="22">${NIVEL[t.peor]}${t.peor ? ' ' + t.cuando : ''}</span>`}</li>`).join('')}</ul>
+    <p class="nota" style="font-size:13px">Guardados solo en este celular.</p>`;
 }
 let enAlta = false;
 function pintarTuyosEditar() {
@@ -379,6 +380,9 @@ function pintarTuyosEditar() {
   $('#t-lista').querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
     const l = tuyos(); l.splice(+b.dataset.i, 1); PREF.set('tuyos', l); pintarTuyosEditar();
   }));
+  // En iPhone, Safari y la app agregada a inicio guardan por separado
+  $('#t-guardado').innerHTML = 'Se guardan <b>solo en este celular</b>: no van a ningún servidor y nadie más sabe a quién cuidás. Si cambiás de celular o de navegador, usás modo incógnito o borrás los datos del navegador, vas a tener que cargarlos de nuevo.'
+    + (enIOS && !instalada() ? ' <b>En iPhone:</b> si después agregás la app a la pantalla de inicio, cargalos otra vez ahí.' : '');
   $('#t-form').hidden = !enAlta;
   $('#t-agregar').hidden = enAlta || ls.length >= 6;
 }
