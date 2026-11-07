@@ -1,7 +1,7 @@
 {
- "generado": "2026-11-07 03:00",
+ "generado": "2026-11-07 09:00",
  "horas": 48,
- "smap_atraso_dias": 2.3,
+ "smap_atraso_dias": 2.6,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
@@ -14,16 +14,16 @@
      "cuando": null
     },
     "ICON": {
-     "max_3h_mm": 0.2,
+     "max_3h_mm": 0.0,
      "umbral_mm": 14.0,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-07 03:00"
+     "cuando": null
     },
     "ECMWF": {
-     "max_3h_mm": 1.0,
+     "max_3h_mm": 0.2,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-07 05:00"
+     "cuando": "2026-11-07 10:00"
     }
    },
    "ensambles": {
@@ -37,6 +37,8 @@
     "smap_m3m3": 0.127,
     "smap_percentil": 81,
     "smap_fecha": "2026-11-04 22:30 UTC",
+    "estimado_hoy_m3m3": 0.109,
+    "estimado_hoy_percentil": 47,
     "percentil": 81,
     "es_estimado": false,
     "estado": "saturado"
@@ -44,15 +46,15 @@
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
-    "et0_ult_mm": 50.2,
+    "et0_ult_mm": 50.3,
     "et0_ult_normal_mm": 49.5,
     "et0_ult_pct": 101,
     "radiacion_ult_pct": 110,
     "nubosidad_ult_media": 39,
     "nubosidad_ult_normal": 41,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 41.6,
-    "et0_prox_pct": 112
+    "et0_prox_mm": 40.9,
+    "et0_prox_pct": 110
    }
   },
   {
@@ -69,13 +71,13 @@
      "max_3h_mm": 0.0,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-07 03:00"
+     "cuando": null
     },
     "ECMWF": {
-     "max_3h_mm": 1.2,
+     "max_3h_mm": 0.2,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-07 05:00"
+     "cuando": "2026-11-07 16:00"
     }
    },
    "ensambles": {
@@ -89,8 +91,6 @@
     "smap_m3m3": 0.136,
     "smap_percentil": 86,
     "smap_fecha": "2026-11-04 22:30 UTC",
-    "estimado_hoy_m3m3": 0.126,
-    "estimado_hoy_percentil": 75,
     "percentil": 86,
     "es_estimado": false,
     "estado": "saturado"
@@ -102,11 +102,11 @@
     "et0_ult_normal_mm": 46.9,
     "et0_ult_pct": 101,
     "radiacion_ult_pct": 110,
-    "nubosidad_ult_media": 38,
+    "nubosidad_ult_media": 37,
     "nubosidad_ult_normal": 41,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 37.5,
-    "et0_prox_pct": 107
+    "et0_prox_mm": 36.5,
+    "et0_prox_pct": 104
    }
   },
   {
@@ -119,11 +119,11 @@
      "fuente_umbral": "24 h antes",
      "cuando": null
     },
-    "ICON": {
-     "max_3h_mm": 0.0,
-     "umbral_mm": 9.7,
+    "ECMWF": {
+     "max_3h_mm": 1.2,
+     "umbral_mm": 8.8,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-07 03:00"
+     "cuando": "2026-11-07 18:00"
     }
    },
    "ensambles": {
@@ -153,8 +153,8 @@
     "nubosidad_ult_media": 40,
     "nubosidad_ult_normal": 42,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 37.4,
-    "et0_prox_pct": 107
+    "et0_prox_mm": 37.0,
+    "et0_prox_pct": 106
    }
   },
   {
@@ -162,22 +162,22 @@
    "nombre": "Capital (experimental)",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 0.4,
+     "max_3h_mm": 0.0,
      "umbral_mm": 7.7,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-07 03:00"
+     "cuando": null
     },
     "ICON": {
-     "max_3h_mm": 0.3,
+     "max_3h_mm": 0.0,
      "umbral_mm": 11.4,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-07 03:00"
+     "cuando": null
     },
     "ECMWF": {
-     "max_3h_mm": 0.9,
+     "max_3h_mm": 0.0,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-07 05:00"
+     "cuando": null
     }
    },
    "ensambles": {
@@ -191,8 +191,8 @@
     "smap_m3m3": 0.178,
     "smap_percentil": 79,
     "smap_fecha": "2026-11-04 22:30 UTC",
-    "estimado_hoy_m3m3": 0.167,
-    "estimado_hoy_percentil": 58,
+    "estimado_hoy_m3m3": 0.169,
+    "estimado_hoy_percentil": 63,
     "percentil": 79,
     "es_estimado": false,
     "estado": "normal"
@@ -207,8 +207,8 @@
     "nubosidad_ult_media": 39,
     "nubosidad_ult_normal": 40,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 42.2,
-    "et0_prox_pct": 112
+    "et0_prox_mm": 42.0,
+    "et0_prox_pct": 111
    }
   }
  ],
@@ -233,24 +233,24 @@
      0.0,
      0.0,
      0.0,
-     0.03,
+     0.04,
      0.0,
-     0.01,
+     0.03,
      0.19,
-     0.41,
-     0.11,
+     0.48,
+     0.15,
      0.05
     ],
     "mm": [
-     0.4,
-     0.0,
-     0.0,
      0.2,
      0.0,
-     0.2,
-     4.0,
-     15.7,
-     0.3,
+     0.0,
+     0.7,
+     0.0,
+     0.1,
+     2.7,
+     14.8,
+     3.0,
      0.3
     ]
    },
@@ -261,24 +261,24 @@
      0.0,
      0.0,
      0.0,
-     0.03,
+     0.04,
      0.0,
      0.01,
-     0.2,
-     0.4,
-     0.11,
-     0.06
+     0.19,
+     0.45,
+     0.17,
+     0.04
     ],
     "mm": [
-     0.5,
+     0.3,
      0.0,
      0.0,
-     0.2,
+     0.9,
      0.0,
-     0.2,
-     4.7,
-     16.5,
-     0.4,
+     0.1,
+     3.1,
+     14.4,
+     3.1,
      0.4
     ]
    },
@@ -289,25 +289,25 @@
      0.0,
      0.0,
      0.0,
-     0.03,
+     0.05,
      0.0,
      0.0,
-     0.25,
-     0.49,
-     0.12,
-     0.06
+     0.29,
+     0.51,
+     0.19,
+     0.09
     ],
     "mm": [
-     0.9,
+     0.8,
      0.0,
      0.0,
-     0.9,
+     1.6,
      0.0,
      0.1,
-     6.5,
-     15.8,
-     0.5,
-     0.8
+     4.1,
+     16.0,
+     3.2,
+     0.7
     ]
    },
    "Capital": {
@@ -320,22 +320,22 @@
      0.0,
      0.0,
      0.0,
-     0.07,
-     0.25,
-     0.03,
-     0.0
+     0.06,
+     0.22,
+     0.09,
+     0.02
     ],
     "mm": [
-     0.7,
+     0.4,
      0.0,
      0.0,
-     0.3,
+     1.3,
      0.0,
      0.0,
-     5.2,
-     21.2,
-     0.5,
-     0.6
+     2.4,
+     17.3,
+     5.5,
+     0.5
     ]
    }
   }
