@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-07 09:00",
+ "generado": "2026-11-07 10:00",
  "horas": 48,
  "smap_atraso_dias": 2.6,
  "cuencas": [
@@ -37,8 +37,6 @@
     "smap_m3m3": 0.127,
     "smap_percentil": 81,
     "smap_fecha": "2026-11-04 22:30 UTC",
-    "estimado_hoy_m3m3": 0.109,
-    "estimado_hoy_percentil": 47,
     "percentil": 81,
     "es_estimado": false,
     "estado": "saturado"
@@ -53,8 +51,8 @@
     "nubosidad_ult_media": 39,
     "nubosidad_ult_normal": 41,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 40.9,
-    "et0_prox_pct": 110
+    "et0_prox_mm": 41.1,
+    "et0_prox_pct": 111
    }
   },
   {
@@ -91,6 +89,8 @@
     "smap_m3m3": 0.136,
     "smap_percentil": 86,
     "smap_fecha": "2026-11-04 22:30 UTC",
+    "estimado_hoy_m3m3": 0.123,
+    "estimado_hoy_percentil": 71,
     "percentil": 86,
     "es_estimado": false,
     "estado": "saturado"
@@ -113,11 +113,11 @@
    "cuenca": "SanAntonio_CPaz",
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
-    "GFS": {
+    "ICON": {
      "max_3h_mm": 0.0,
-     "umbral_mm": 10.1,
+     "umbral_mm": 9.7,
      "fuente_umbral": "24 h antes",
-     "cuando": null
+     "cuando": "2026-11-07 15:00"
     },
     "ECMWF": {
      "max_3h_mm": 1.2,
@@ -137,8 +137,8 @@
     "smap_m3m3": 0.157,
     "smap_percentil": 82,
     "smap_fecha": "2026-11-04 22:30 UTC",
-    "estimado_hoy_m3m3": 0.149,
-    "estimado_hoy_percentil": 75,
+    "estimado_hoy_m3m3": 0.148,
+    "estimado_hoy_percentil": 74,
     "percentil": 82,
     "es_estimado": false,
     "estado": "saturado"
@@ -153,8 +153,8 @@
     "nubosidad_ult_media": 40,
     "nubosidad_ult_normal": 42,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 37.0,
-    "et0_prox_pct": 106
+    "et0_prox_mm": 36.6,
+    "et0_prox_pct": 105
    }
   },
   {
@@ -192,7 +192,7 @@
     "smap_percentil": 79,
     "smap_fecha": "2026-11-04 22:30 UTC",
     "estimado_hoy_m3m3": 0.169,
-    "estimado_hoy_percentil": 63,
+    "estimado_hoy_percentil": 62,
     "percentil": 79,
     "es_estimado": false,
     "estado": "normal"
@@ -320,22 +320,22 @@
      0.0,
      0.0,
      0.0,
+     0.12,
+     0.27,
      0.06,
-     0.22,
-     0.09,
      0.02
     ],
     "mm": [
-     0.4,
+     0.2,
      0.0,
      0.0,
-     1.3,
      0.0,
      0.0,
-     2.4,
-     17.3,
-     5.5,
-     0.5
+     0.0,
+     2.0,
+     8.5,
+     0.0,
+     0.0
     ]
    }
   }
