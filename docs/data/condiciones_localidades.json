@@ -1,12 +1,12 @@
 {
- "generado": "2026-11-08 09:00",
+ "generado": "2026-11-08 10:00",
  "horas": 72,
  "localidades": {
   "Cordoba": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.2,
-   "cuando": "2026-11-10 13:00",
+   "max_3h_mm": 0.5,
+   "cuando": "2026-11-10 21:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (percentil 77 de humedad, cuenca Capital (experimental))",
@@ -21,15 +21,15 @@
      0.0
     ],
     "2026-11-10": [
-     1.2,
-     2.6
+     0.5,
+     1.0
     ]
    }
   },
   "Rio Ceballos": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 3.9,
+   "max_3h_mm": 1.3,
    "cuando": "2026-11-10 13:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
@@ -45,16 +45,16 @@
      0.0
     ],
     "2026-11-10": [
-     3.9,
-     6.0
+     1.3,
+     1.9
     ]
    }
   },
   "Villa Carlos Paz": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.6,
-   "cuando": "2026-11-10 11:00",
+   "max_3h_mm": 0.8,
+   "cuando": "2026-11-10 18:00",
    "umbral_mm": 10.0,
    "suelo_humedo": true,
    "suelo": "muy húmedo (percentil 82 de humedad, cuenca San Antonio / Carlos Paz)",
@@ -69,15 +69,15 @@
      0.0
     ],
     "2026-11-10": [
-     1.6,
-     3.6
+     0.8,
+     1.0
     ]
    }
   },
   "Saldan": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 0.9,
+   "max_3h_mm": 0.5,
    "cuando": "2026-11-10 21:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
@@ -93,16 +93,16 @@
      0.0
     ],
     "2026-11-10": [
-     0.9,
-     1.5
+     0.5,
+     0.7
     ]
    }
   },
   "Cosquin": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.6,
-   "cuando": "2026-11-10 12:00",
+   "max_3h_mm": 0.7,
+   "cuando": "2026-11-10 21:00",
    "umbral_mm": 10.0,
    "suelo_humedo": true,
    "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
@@ -117,15 +117,15 @@
      0.0
     ],
     "2026-11-10": [
-     1.6,
-     4.0
+     0.7,
+     1.6
     ]
    }
   },
   "Villa Allende": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 0.9,
+   "max_3h_mm": 0.5,
    "cuando": "2026-11-10 21:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
@@ -141,16 +141,16 @@
      0.0
     ],
     "2026-11-10": [
-     0.9,
-     1.5
+     0.5,
+     0.7
     ]
    }
   },
   "Unquillo": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.4,
-   "cuando": "2026-11-10 21:00",
+   "max_3h_mm": 0.4,
+   "cuando": "2026-11-10 13:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (percentil 77 de humedad, cuenca Sierras Chicas)",
@@ -165,16 +165,16 @@
      0.0
     ],
     "2026-11-10": [
-     1.4,
-     3.1
+     0.4,
+     0.8
     ]
    }
   },
   "Cuesta Blanca": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 2.2,
-   "cuando": "2026-11-10 09:00",
+   "max_3h_mm": 1.4,
+   "cuando": "2026-11-10 19:00",
    "umbral_mm": 10.0,
    "suelo_humedo": true,
    "suelo": "muy húmedo (percentil 82 de humedad, cuenca San Antonio / Carlos Paz)",
@@ -189,16 +189,16 @@
      0.0
     ],
     "2026-11-10": [
-     2.2,
-     5.3
+     1.4,
+     3.2
     ]
    }
   },
   "Mendiolaza": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.4,
-   "cuando": "2026-11-10 21:00",
+   "max_3h_mm": 0.4,
+   "cuando": "2026-11-10 13:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (percentil 77 de humedad, cuenca Sierras Chicas)",
@@ -213,16 +213,16 @@
      0.0
     ],
     "2026-11-10": [
-     1.4,
-     3.1
+     0.4,
+     0.8
     ]
    }
   },
   "La Calera": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 2.0,
-   "cuando": "2026-11-10 12:00",
+   "max_3h_mm": 0.7,
+   "cuando": "2026-11-10 21:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (20 mm en los últimos 7 días)",
@@ -237,16 +237,16 @@
      0.0
     ],
     "2026-11-10": [
-     2.0,
-     3.8
+     0.7,
+     1.4
     ]
    }
   },
   "La Granja": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 0.8,
-   "cuando": "2026-11-10 20:00",
+   "max_3h_mm": 0.9,
+   "cuando": "2026-11-10 13:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (22 mm en los últimos 7 días)",
@@ -261,15 +261,15 @@
      0.0
     ],
     "2026-11-10": [
-     0.8,
-     1.4
+     0.9,
+     1.0
     ]
    }
   },
   "Salsipuedes": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 3.9,
+   "max_3h_mm": 1.3,
    "cuando": "2026-11-10 13:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
@@ -285,15 +285,15 @@
      0.0
     ],
     "2026-11-10": [
-     3.9,
-     6.0
+     1.3,
+     1.9
     ]
    }
   },
   "La Cruz": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 4.9,
+   "max_3h_mm": 3.6,
    "cuando": "2026-11-10 15:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
@@ -309,8 +309,8 @@
      0.0
     ],
     "2026-11-10": [
-     4.9,
-     5.9
+     3.6,
+     4.6
     ]
    }
   },
@@ -342,7 +342,7 @@
    "condicion": "normal",
    "ahora": "normal",
    "max_3h_mm": 0.1,
-   "cuando": "2026-11-10 09:00",
+   "cuando": "2026-11-10 13:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (17 mm en los últimos 7 días)",
@@ -358,19 +358,19 @@
     ],
     "2026-11-10": [
      0.1,
-     0.2
+     0.1
     ]
    }
   },
   "San Carlos Minas": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 0.3,
-   "cuando": "2026-11-10 19:00",
+   "max_3h_mm": 0.4,
+   "cuando": "2026-11-10 20:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (4 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 4.5,
+   "lluvia_7d_mm": 4.0,
    "dias": {
     "2026-11-08": [
      0.0,
@@ -381,20 +381,20 @@
      0.0
     ],
     "2026-11-10": [
-     0.3,
-     0.7
+     0.4,
+     0.4
     ]
    }
   },
   "San Marcos Sierras": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 0.1,
-   "cuando": "2026-11-10 17:00",
+   "max_3h_mm": 0.0,
+   "cuando": null,
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (16 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 15.7,
+   "lluvia_7d_mm": 15.5,
    "dias": {
     "2026-11-08": [
      0.0,
@@ -405,16 +405,16 @@
      0.0
     ],
     "2026-11-10": [
-     0.1,
-     0.1
+     0.0,
+     0.0
     ]
    }
   },
   "Rio de los Sauces": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 3.3,
-   "cuando": "2026-11-10 12:00",
+   "max_3h_mm": 2.1,
+   "cuando": "2026-11-10 19:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (15 mm en los últimos 7 días)",
@@ -429,8 +429,8 @@
      0.0
     ],
     "2026-11-10": [
-     3.3,
-     7.8
+     2.1,
+     5.6
     ]
    }
   },
@@ -461,8 +461,8 @@
   "Alta Gracia": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.1,
-   "cuando": "2026-11-10 16:00",
+   "max_3h_mm": 0.5,
+   "cuando": "2026-11-10 19:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (9 mm en los últimos 7 días)",
@@ -477,644 +477,20 @@
      0.0
     ],
     "2026-11-10": [
-     1.1,
-     2.9
+     0.5,
+     1.1
     ]
    }
   },
   "Salsacate": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.2,
-   "cuando": "2026-11-10 08:00",
+   "max_3h_mm": 0.2,
+   "cuando": "2026-11-10 19:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (4 mm en los últimos 7 días)",
    "lluvia_7d_mm": 4.2,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     1.2,
-     1.9
-    ]
-   }
-  },
-  "Cabalango": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 1.6,
-   "cuando": "2026-11-10 11:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (10 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 10.4,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     1.6,
-     3.6
-    ]
-   }
-  },
-  "Tanti": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 2.2,
-   "cuando": "2026-11-10 19:00",
-   "umbral_mm": 10.0,
-   "suelo_humedo": true,
-   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
-   "lluvia_7d_mm": 16.3,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     2.2,
-     6.1
-    ]
-   }
-  },
-  "Santa Rosa de Calamuchita": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 2.6,
-   "cuando": "2026-11-10 15:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (16 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 16.1,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     2.6,
-     4.2
-    ]
-   }
-  },
-  "La Falda": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 2.7,
-   "cuando": "2026-11-10 21:00",
-   "umbral_mm": 10.0,
-   "suelo_humedo": true,
-   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
-   "lluvia_7d_mm": 47.3,
-   "dias": {
-    "2026-11-08": [
-     0.1,
-     0.1
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     2.7,
-     4.3
-    ]
-   }
-  },
-  "Villa General Belgrano": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 4.4,
-   "cuando": "2026-11-10 15:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (14 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 13.6,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     4.4,
-     6.4
-    ]
-   }
-  },
-  "Los Reartes": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 1.9,
-   "cuando": "2026-11-10 10:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (10 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 9.8,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     1.9,
-     4.9
-    ]
-   }
-  },
-  "Alpa Corral": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 3.2,
-   "cuando": "2026-11-10 14:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (31 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 31.2,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     3.2,
-     10.2
-    ]
-   }
-  },
-  "Villa Giardino": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 2.6,
-   "cuando": "2026-11-10 13:00",
-   "umbral_mm": 10.0,
-   "suelo_humedo": true,
-   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
-   "lluvia_7d_mm": 16.4,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     2.6,
-     3.6
-    ]
-   }
-  },
-  "San Antonio de Arredondo": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 1.6,
-   "cuando": "2026-11-10 11:00",
-   "umbral_mm": 10.0,
-   "suelo_humedo": true,
-   "suelo": "muy húmedo (percentil 82 de humedad, cuenca San Antonio / Carlos Paz)",
-   "lluvia_7d_mm": 9.6,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     1.6,
-     4.4
-    ]
-   }
-  },
-  "Santa María de Punilla": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 2.3,
-   "cuando": "2026-11-10 12:00",
-   "umbral_mm": 10.0,
-   "suelo_humedo": true,
-   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
-   "lluvia_7d_mm": 19.8,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     2.3,
-     4.5
-    ]
-   }
-  },
-  "Cruz de Caña": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 0.9,
-   "cuando": "2026-11-10 17:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (9 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 9.1,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     0.9,
-     1.6
-    ]
-   }
-  },
-  "Jesús María": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 0.3,
-   "cuando": "2026-11-10 21:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (13 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 13.4,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     0.3,
-     0.4
-    ]
-   }
-  },
-  "Villa Cerro Azul": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 1.3,
-   "cuando": "2026-11-10 21:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (37 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 37.4,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     1.3,
-     2.6
-    ]
-   }
-  },
-  "Almafuerte": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 4.0,
-   "cuando": "2026-11-10 15:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (14 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 13.9,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     4.0,
-     4.9
-    ]
-   }
-  },
-  "Huerta Grande": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 2.7,
-   "cuando": "2026-11-10 21:00",
-   "umbral_mm": 10.0,
-   "suelo_humedo": true,
-   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
-   "lluvia_7d_mm": 47.3,
-   "dias": {
-    "2026-11-08": [
-     0.1,
-     0.1
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     2.7,
-     4.3
-    ]
-   }
-  },
-  "Valle Hermoso": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 1.5,
-   "cuando": "2026-11-10 21:00",
-   "umbral_mm": 10.0,
-   "suelo_humedo": true,
-   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
-   "lluvia_7d_mm": 43.7,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     1.5,
-     3.7
-    ]
-   }
-  },
-  "Agua de Oro": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 0.8,
-   "cuando": "2026-11-10 20:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (22 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 21.9,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     0.8,
-     1.4
-    ]
-   }
-  },
-  "Embalse": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 6.3,
-   "cuando": "2026-11-10 15:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (10 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 10.2,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     6.3,
-     6.7
-    ]
-   }
-  },
-  "Malvinas Argentinas": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 3.2,
-   "cuando": "2026-11-10 13:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (17 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 16.8,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     3.2,
-     4.0
-    ]
-   }
-  },
-  "Rio Cuarto": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 7.0,
-   "cuando": "2026-11-10 13:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (19 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 19.0,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     7.0,
-     12.4
-    ]
-   }
-  },
-  "Rio Tercero": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 5.0,
-   "cuando": "2026-11-10 16:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (20 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 19.8,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     5.0,
-     8.5
-    ]
-   }
-  },
-  "Villa del Dique": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 5.3,
-   "cuando": "2026-11-10 15:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (13 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 13.3,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     5.3,
-     7.6
-    ]
-   }
-  },
-  "Villa Quillinzo": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 4.3,
-   "cuando": "2026-11-10 15:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (12 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 12.1,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     4.3,
-     5.2
-    ]
-   }
-  },
-  "Villa Dolores": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 2.6,
-   "cuando": "2026-11-10 14:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (14 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 13.7,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     2.6,
-     3.2
-    ]
-   }
-  },
-  "San Agustin": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 3.9,
-   "cuando": "2026-11-10 15:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (16 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 15.5,
-   "dias": {
-    "2026-11-08": [
-     0.0,
-     0.0
-    ],
-    "2026-11-09": [
-     0.0,
-     0.0
-    ],
-    "2026-11-10": [
-     3.9,
-     10.3
-    ]
-   }
-  },
-  "Cruz del Eje": {
-   "condicion": "normal",
-   "ahora": "normal",
-   "max_3h_mm": 0.2,
-   "cuando": "2026-11-10 17:00",
-   "umbral_mm": 20.0,
-   "suelo_humedo": false,
-   "suelo": "normal (18 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 17.5,
    "dias": {
     "2026-11-08": [
      0.0,
@@ -1130,6 +506,630 @@
     ]
    }
   },
+  "Cabalango": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.8,
+   "cuando": "2026-11-10 18:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (10 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 10.4,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.8,
+     1.0
+    ]
+   }
+  },
+  "Tanti": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 1.0,
+   "cuando": "2026-11-10 18:00",
+   "umbral_mm": 10.0,
+   "suelo_humedo": true,
+   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
+   "lluvia_7d_mm": 16.3,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     1.0,
+     1.1
+    ]
+   }
+  },
+  "Santa Rosa de Calamuchita": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 1.0,
+   "cuando": "2026-11-10 20:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (16 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 16.1,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     1.0,
+     2.0
+    ]
+   }
+  },
+  "La Falda": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.6,
+   "cuando": "2026-11-10 16:00",
+   "umbral_mm": 10.0,
+   "suelo_humedo": true,
+   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
+   "lluvia_7d_mm": 47.3,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.6,
+     0.8
+    ]
+   }
+  },
+  "Villa General Belgrano": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.8,
+   "cuando": "2026-11-10 20:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (14 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 13.6,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.8,
+     1.5
+    ]
+   }
+  },
+  "Los Reartes": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 1.1,
+   "cuando": "2026-11-10 19:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (10 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 9.8,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     1.1,
+     2.1
+    ]
+   }
+  },
+  "Alpa Corral": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 3.4,
+   "cuando": "2026-11-10 18:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (31 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 31.2,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     3.4,
+     8.9
+    ]
+   }
+  },
+  "Villa Giardino": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.5,
+   "cuando": "2026-11-10 12:00",
+   "umbral_mm": 10.0,
+   "suelo_humedo": true,
+   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
+   "lluvia_7d_mm": 16.3,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.5,
+     1.0
+    ]
+   }
+  },
+  "San Antonio de Arredondo": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.9,
+   "cuando": "2026-11-10 17:00",
+   "umbral_mm": 10.0,
+   "suelo_humedo": true,
+   "suelo": "muy húmedo (percentil 82 de humedad, cuenca San Antonio / Carlos Paz)",
+   "lluvia_7d_mm": 9.6,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.9,
+     1.2
+    ]
+   }
+  },
+  "Santa María de Punilla": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.5,
+   "cuando": "2026-11-10 17:00",
+   "umbral_mm": 10.0,
+   "suelo_humedo": true,
+   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
+   "lluvia_7d_mm": 19.8,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.5,
+     0.6
+    ]
+   }
+  },
+  "Cruz de Caña": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.3,
+   "cuando": "2026-11-10 18:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (9 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 8.9,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.3,
+     0.3
+    ]
+   }
+  },
+  "Jesús María": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.0,
+   "cuando": null,
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (13 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 13.4,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "Villa Cerro Azul": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 1.5,
+   "cuando": "2026-11-10 13:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (37 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 37.4,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     1.5,
+     1.8
+    ]
+   }
+  },
+  "Almafuerte": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 3.7,
+   "cuando": "2026-11-10 15:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (14 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 13.9,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     3.7,
+     4.5
+    ]
+   }
+  },
+  "Huerta Grande": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.6,
+   "cuando": "2026-11-10 16:00",
+   "umbral_mm": 10.0,
+   "suelo_humedo": true,
+   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
+   "lluvia_7d_mm": 47.3,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.6,
+     0.8
+    ]
+   }
+  },
+  "Valle Hermoso": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 1.8,
+   "cuando": "2026-11-10 20:00",
+   "umbral_mm": 10.0,
+   "suelo_humedo": true,
+   "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
+   "lluvia_7d_mm": 43.7,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     1.8,
+     2.3
+    ]
+   }
+  },
+  "Agua de Oro": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.9,
+   "cuando": "2026-11-10 13:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (22 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 21.9,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.9,
+     1.0
+    ]
+   }
+  },
+  "Embalse": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 3.2,
+   "cuando": "2026-11-10 15:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (10 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 10.2,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     3.2,
+     5.5
+    ]
+   }
+  },
+  "Malvinas Argentinas": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 2.5,
+   "cuando": "2026-11-10 13:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (17 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 16.8,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     2.5,
+     3.2
+    ]
+   }
+  },
+  "Rio Cuarto": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 5.3,
+   "cuando": "2026-11-10 12:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (19 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 19.0,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     5.3,
+     9.8
+    ]
+   }
+  },
+  "Rio Tercero": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 4.3,
+   "cuando": "2026-11-10 16:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (20 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 19.8,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     4.3,
+     7.9
+    ]
+   }
+  },
+  "Villa del Dique": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 4.9,
+   "cuando": "2026-11-10 15:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (13 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 13.3,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     4.9,
+     8.6
+    ]
+   }
+  },
+  "Villa Quillinzo": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 2.7,
+   "cuando": "2026-11-10 15:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (12 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 12.1,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     2.7,
+     5.3
+    ]
+   }
+  },
+  "Villa Dolores": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.3,
+   "cuando": "2026-11-10 11:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (14 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 13.7,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.3,
+     0.4
+    ]
+   }
+  },
+  "San Agustin": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 2.7,
+   "cuando": "2026-11-10 20:00",
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (16 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 15.5,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     2.7,
+     7.4
+    ]
+   }
+  },
+  "Cruz del Eje": {
+   "condicion": "normal",
+   "ahora": "normal",
+   "max_3h_mm": 0.0,
+   "cuando": null,
+   "umbral_mm": 20.0,
+   "suelo_humedo": false,
+   "suelo": "normal (18 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 17.5,
+   "dias": {
+    "2026-11-08": [
+     0.0,
+     0.0
+    ],
+    "2026-11-09": [
+     0.0,
+     0.0
+    ],
+    "2026-11-10": [
+     0.0,
+     0.0
+    ]
+   }
+  },
   "San José de las Salinas": {
    "condicion": "normal",
    "ahora": "normal",
@@ -1137,7 +1137,7 @@
    "cuando": null,
    "umbral_mm": 20.0,
    "suelo_humedo": false,
-   "suelo": "normal (4 mm en los últimos 7 días)",
+   "suelo": "normal (5 mm en los últimos 7 días)",
    "lluvia_7d_mm": 4.5,
    "dias": {
     "2026-11-08": [
@@ -1181,8 +1181,8 @@
   "Potrero de Garay": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.9,
-   "cuando": "2026-11-10 10:00",
+   "max_3h_mm": 1.6,
+   "cuando": "2026-11-10 16:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (14 mm en los últimos 7 días)",
@@ -1197,16 +1197,16 @@
      0.0
     ],
     "2026-11-10": [
-     1.9,
-     6.0
+     1.6,
+     4.7
     ]
    }
   },
   "San Lorenzo": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 5.1,
-   "cuando": "2026-11-10 14:00",
+   "max_3h_mm": 0.3,
+   "cuando": "2026-11-10 12:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (11 mm en los últimos 7 días)",
@@ -1221,16 +1221,16 @@
      0.0
     ],
     "2026-11-10": [
-     5.1,
-     8.2
+     0.3,
+     0.5
     ]
    }
   },
   "Carpintería": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 2.7,
-   "cuando": "2026-11-10 13:00",
+   "max_3h_mm": 1.4,
+   "cuando": "2026-11-10 18:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (6 mm en los últimos 7 días)",
@@ -1245,16 +1245,16 @@
      0.0
     ],
     "2026-11-10": [
-     2.7,
-     4.1
+     1.4,
+     2.0
     ]
    }
   },
   "Tilisarao": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 7.3,
-   "cuando": "2026-11-10 18:00",
+   "max_3h_mm": 8.9,
+   "cuando": "2026-11-10 12:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (10 mm en los últimos 7 días)",
@@ -1269,16 +1269,16 @@
      0.0
     ],
     "2026-11-10": [
-     7.3,
-     15.4
+     8.9,
+     11.5
     ]
    }
   },
   "Barrio Sierras de Oro": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 4.8,
-   "cuando": "2026-11-10 12:00",
+   "max_3h_mm": 0.6,
+   "cuando": "2026-11-10 17:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (13 mm en los últimos 7 días)",
@@ -1293,16 +1293,16 @@
      0.0
     ],
     "2026-11-10": [
-     4.8,
-     9.1
+     0.6,
+     1.6
     ]
    }
   },
   "Anisacate": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 2.2,
-   "cuando": "2026-11-10 16:00",
+   "max_3h_mm": 1.1,
+   "cuando": "2026-11-10 20:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (7 mm en los últimos 7 días)",
@@ -1317,16 +1317,16 @@
      0.0
     ],
     "2026-11-10": [
-     2.2,
-     3.9
+     1.1,
+     1.7
     ]
    }
   },
   "Panaholma": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.8,
-   "cuando": "2026-11-10 14:00",
+   "max_3h_mm": 0.3,
+   "cuando": "2026-11-10 11:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (5 mm en los últimos 7 días)",
@@ -1341,8 +1341,8 @@
      0.0
     ],
     "2026-11-10": [
-     1.8,
-     2.6
+     0.3,
+     0.5
     ]
    }
   },
@@ -1397,8 +1397,8 @@
   "Los Molles": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 2.7,
-   "cuando": "2026-11-10 13:00",
+   "max_3h_mm": 1.4,
+   "cuando": "2026-11-10 18:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (6 mm en los últimos 7 días)",
@@ -1413,16 +1413,16 @@
      0.0
     ],
     "2026-11-10": [
-     2.7,
-     4.1
+     1.4,
+     2.0
     ]
    }
   },
   "Colonia Caroya": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.1,
-   "cuando": "2026-11-10 14:00",
+   "max_3h_mm": 0.1,
+   "cuando": "2026-11-10 12:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (17 mm en los últimos 7 días)",
@@ -1437,16 +1437,16 @@
      0.0
     ],
     "2026-11-10": [
-     1.1,
-     1.4
+     0.1,
+     0.1
     ]
    }
   },
   "La Paz": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 3.3,
-   "cuando": "2026-11-10 14:00",
+   "max_3h_mm": 0.2,
+   "cuando": "2026-11-10 18:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (8 mm en los últimos 7 días)",
@@ -1461,20 +1461,20 @@
      0.0
     ],
     "2026-11-10": [
-     3.3,
-     4.0
+     0.2,
+     0.3
     ]
    }
   },
   "Villa del Totoral": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 0.1,
-   "cuando": "2026-11-10 16:00",
+   "max_3h_mm": 0.0,
+   "cuando": null,
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (12 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 11.7,
+   "lluvia_7d_mm": 11.6,
    "dias": {
     "2026-11-08": [
      0.0,
@@ -1485,16 +1485,16 @@
      0.0
     ],
     "2026-11-10": [
-     0.1,
-     0.2
+     0.0,
+     0.0
     ]
    }
   },
   "Sauce Arriba": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 2.6,
-   "cuando": "2026-11-10 14:00",
+   "max_3h_mm": 0.3,
+   "cuando": "2026-11-10 11:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (14 mm en los últimos 7 días)",
@@ -1509,16 +1509,16 @@
      0.0
     ],
     "2026-11-10": [
-     2.6,
-     3.2
+     0.3,
+     0.4
     ]
    }
   },
   "Casa Grande": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.5,
-   "cuando": "2026-11-10 21:00",
+   "max_3h_mm": 1.8,
+   "cuando": "2026-11-10 20:00",
    "umbral_mm": 10.0,
    "suelo_humedo": true,
    "suelo": "muy húmedo (percentil 84 de humedad, cuenca Cosquín)",
@@ -1533,16 +1533,16 @@
      0.0
     ],
     "2026-11-10": [
-     1.5,
-     3.7
+     1.8,
+     2.3
     ]
    }
   },
   "Cortaderas": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 4.6,
-   "cuando": "2026-11-10 13:00",
+   "max_3h_mm": 3.1,
+   "cuando": "2026-11-10 18:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (7 mm en los últimos 7 días)",
@@ -1557,15 +1557,15 @@
      0.0
     ],
     "2026-11-10": [
-     4.6,
-     7.2
+     3.1,
+     4.2
     ]
    }
   },
   "Cañada del Sauce": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 8.3,
+   "max_3h_mm": 2.6,
    "cuando": "2026-11-10 19:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
@@ -1581,16 +1581,16 @@
      0.0
     ],
     "2026-11-10": [
-     8.3,
-     12.0
+     2.6,
+     7.8
     ]
    }
   },
   "Amboy": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 2.6,
-   "cuando": "2026-11-10 15:00",
+   "max_3h_mm": 2.8,
+   "cuando": "2026-11-10 19:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (14 mm en los últimos 7 días)",
@@ -1605,16 +1605,16 @@
      0.0
     ],
     "2026-11-10": [
-     2.6,
-     3.9
+     2.8,
+     5.7
     ]
    }
   },
   "El Corcovado el Torreon": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 2.6,
-   "cuando": "2026-11-10 15:00",
+   "max_3h_mm": 2.8,
+   "cuando": "2026-11-10 19:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (14 mm en los últimos 7 días)",
@@ -1629,16 +1629,16 @@
      0.0
     ],
     "2026-11-10": [
-     2.6,
-     3.9
+     2.8,
+     5.7
     ]
    }
   },
   "Villa Berna": {
-   "condicion": "atención",
+   "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 5.2,
-   "cuando": "2026-11-10 19:00",
+   "max_3h_mm": 1.7,
+   "cuando": "2026-11-10 20:00",
    "umbral_mm": 10.0,
    "suelo_humedo": true,
    "suelo": "húmedo (51 mm en los últimos 7 días)",
@@ -1653,16 +1653,16 @@
      0.0
     ],
     "2026-11-10": [
-     5.2,
-     11.5
+     1.7,
+     3.9
     ]
    }
   },
   "Naschel": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 4.9,
-   "cuando": "2026-11-10 18:00",
+   "max_3h_mm": 1.9,
+   "cuando": "2026-11-10 08:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (14 mm en los últimos 7 días)",
@@ -1677,8 +1677,8 @@
      0.0
     ],
     "2026-11-10": [
-     4.9,
-     8.8
+     1.9,
+     4.9
     ]
    }
   },
@@ -1686,7 +1686,7 @@
    "condicion": "normal",
    "ahora": "normal",
    "max_3h_mm": 0.5,
-   "cuando": "2026-11-10 19:00",
+   "cuando": "2026-11-10 12:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (2 mm en los últimos 7 días)",
@@ -1702,7 +1702,7 @@
     ],
     "2026-11-10": [
      0.5,
-     0.8
+     1.0
     ]
    }
   },
@@ -1733,8 +1733,8 @@
   "Villa los Aromos": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 2.2,
-   "cuando": "2026-11-10 16:00",
+   "max_3h_mm": 1.1,
+   "cuando": "2026-11-10 20:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (7 mm en los últimos 7 días)",
@@ -1749,8 +1749,8 @@
      0.0
     ],
     "2026-11-10": [
-     2.2,
-     3.9
+     1.1,
+     1.7
     ]
    }
   },
@@ -1781,8 +1781,8 @@
   "Nono": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 6.3,
-   "cuando": "2026-11-10 14:00",
+   "max_3h_mm": 0.4,
+   "cuando": "2026-11-10 16:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (7 mm en los últimos 7 días)",
@@ -1797,16 +1797,16 @@
      0.0
     ],
     "2026-11-10": [
-     6.3,
-     8.1
+     0.4,
+     0.6
     ]
    }
   },
   "Villa de Merlo": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 4.8,
-   "cuando": "2026-11-10 15:00",
+   "max_3h_mm": 3.5,
+   "cuando": "2026-11-10 18:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (6 mm en los últimos 7 días)",
@@ -1821,16 +1821,16 @@
      0.0
     ],
     "2026-11-10": [
-     4.8,
-     5.9
+     3.5,
+     5.0
     ]
    }
   },
   "Mayu Sumaj": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 1.6,
-   "cuando": "2026-11-10 11:00",
+   "max_3h_mm": 0.9,
+   "cuando": "2026-11-10 17:00",
    "umbral_mm": 10.0,
    "suelo_humedo": true,
    "suelo": "muy húmedo (percentil 82 de humedad, cuenca San Antonio / Carlos Paz)",
@@ -1845,16 +1845,16 @@
      0.0
     ],
     "2026-11-10": [
-     1.6,
-     4.4
+     0.9,
+     1.2
     ]
    }
   },
   "Santa Mónica": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 4.4,
-   "cuando": "2026-11-10 15:00",
+   "max_3h_mm": 0.8,
+   "cuando": "2026-11-10 20:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (14 mm en los últimos 7 días)",
@@ -1869,16 +1869,16 @@
      0.0
     ],
     "2026-11-10": [
-     4.4,
-     6.4
+     0.8,
+     1.5
     ]
    }
   },
   "Santa Catalina": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 5.1,
-   "cuando": "2026-11-10 11:00",
+   "max_3h_mm": 6.3,
+   "cuando": "2026-11-10 13:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (23 mm en los últimos 7 días)",
@@ -1893,16 +1893,16 @@
      0.0
     ],
     "2026-11-10": [
-     5.1,
-     11.7
+     6.3,
+     12.2
     ]
    }
   },
   "Chuchiras": {
    "condicion": "normal",
    "ahora": "normal",
-   "max_3h_mm": 3.0,
-   "cuando": "2026-11-10 14:00",
+   "max_3h_mm": 0.6,
+   "cuando": "2026-11-10 11:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (9 mm en los últimos 7 días)",
@@ -1917,8 +1917,8 @@
      0.0
     ],
     "2026-11-10": [
-     3.0,
-     3.9
+     0.6,
+     0.7
     ]
    }
   },
@@ -2410,7 +2410,7 @@
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (20 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 20.0,
+   "lluvia_7d_mm": 19.9,
    "dias": {
     "2026-11-08": [
      0.0,
@@ -2793,8 +2793,8 @@
    "cuando": "2026-11-10 17:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
-   "suelo": "normal (12 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 11.6,
+   "suelo": "normal (11 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 11.0,
    "dias": {
     "2026-11-08": [
      0.0,
@@ -3225,7 +3225,7 @@
    "cuando": null,
    "umbral_mm": 20.0,
    "suelo_humedo": false,
-   "suelo": "normal (15 mm en los últimos 7 días)",
+   "suelo": "normal (14 mm en los últimos 7 días)",
    "lluvia_7d_mm": 14.5,
    "dias": {
     "2026-11-08": [
@@ -3369,8 +3369,8 @@
    "cuando": "2026-11-10 18:00",
    "umbral_mm": 20.0,
    "suelo_humedo": false,
-   "suelo": "normal (16 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 15.5,
+   "suelo": "normal (15 mm en los últimos 7 días)",
+   "lluvia_7d_mm": 15.2,
    "dias": {
     "2026-11-08": [
      0.0,
@@ -3586,7 +3586,7 @@
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (21 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 20.6,
+   "lluvia_7d_mm": 20.5,
    "dias": {
     "2026-11-08": [
      0.0,
@@ -3754,7 +3754,7 @@
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (18 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 17.6,
+   "lluvia_7d_mm": 17.5,
    "dias": {
     "2026-11-08": [
      0.0,
@@ -4114,7 +4114,7 @@
    "umbral_mm": 20.0,
    "suelo_humedo": false,
    "suelo": "normal (12 mm en los últimos 7 días)",
-   "lluvia_7d_mm": 11.7,
+   "lluvia_7d_mm": 11.6,
    "dias": {
     "2026-11-08": [
      0.0,
