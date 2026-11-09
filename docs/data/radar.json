@@ -1,9 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-09 03:30",
- "radar": null,
- "observacion": null,
- "nucleos": [],
+ "consultado": "2026-11-09 03:39",
+ "radar": "RMA17",
+ "observacion": "2026-11-09 03:19",
+ "nucleos": [
+  {
+   "lat": -32.1284,
+   "lon": -64.9127,
+   "dbz": 52,
+   "max_dbz": 63,
+   "tope_km": 17.0
+  }
+ ],
  "cuencas": {},
- "localidades": {}
+ "localidades": {
+  "El Durazno": {
+   "km": 12.5,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo Sombra de Toro",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 20
 }
