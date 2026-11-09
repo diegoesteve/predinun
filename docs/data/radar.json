@@ -1,81 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-08 23:00",
+ "consultado": "2026-11-08 23:15",
  "radar": "RMA17",
- "observacion": "2026-11-08 22:32",
+ "observacion": "2026-11-08 22:48",
  "nucleos": [
   {
-   "lat": -32.0919,
-   "lon": -64.9237,
+   "lat": -32.1284,
+   "lon": -64.9677,
    "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 12.9
+   "max_dbz": 57,
+   "tope_km": 17.0
   },
   {
-   "lat": -31.9367,
-   "lon": -64.9567,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 11.1
+   "lat": -32.2013,
+   "lon": -64.9787,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.0006,
-   "lon": -64.9457,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lat": -31.9458,
+   "lon": -64.9677,
+   "dbz": 49,
+   "max_dbz": 49,
    "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 17.8,
-   "max_dbz": 56,
+   "km": 16.8,
+   "max_dbz": 49,
    "tope_km": 11.1,
    "cuenca_de": "Canal De Riego",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
-  "Chuchiras": {
-   "km": 13.0,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Chuchiras",
+  "La Travesía": {
+   "km": 7.0,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo de la Cal",
    "nivel": "muy intensa"
   },
   "Las Tapias": {
-   "km": 13.3,
-   "max_dbz": 56,
+   "km": 12.2,
+   "max_dbz": 49,
    "tope_km": 11.1,
    "cuenca_de": "Rio De Los Sauces",
-   "nivel": "muy intensa"
-  },
-  "Las Chacras Norte": {
-   "km": 7.7,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Los Hornillos",
-   "nivel": "muy intensa"
-  },
-  "El Durazno": {
-   "km": 14.9,
-   "max_dbz": 51,
-   "tope_km": 12.9,
-   "cuenca_de": "Arroyo Sombra de Toro",
    "nivel": "intensa"
   },
-  "Pueblito": {
-   "km": 10.3,
-   "max_dbz": 55,
+  "Luyaba": {
+   "km": 7.4,
+   "max_dbz": 49,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo Corralito",
+   "nivel": "intensa"
+  },
+  "Villa de las Rosas": {
+   "km": 2.9,
+   "max_dbz": 49,
    "tope_km": 11.1,
-   "cuenca_de": "Arroyo Hondo",
+   "cuenca_de": "Arroyo Las Chacras",
+   "nivel": "intensa"
+  },
+  "Los Romeros": {
+   "km": 23.9,
+   "max_dbz": 57,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Los Hornillos": {
-   "km": 4.7,
-   "max_dbz": 56,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
+  "Loma Bola": {
+   "km": 4.8,
+   "max_dbz": 49,
+   "tope_km": 17.0,
+   "nivel": "intensa"
   }
  },
- "minutos": 28
+ "minutos": 27
 }
