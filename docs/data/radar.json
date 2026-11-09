@@ -1,26 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-09 03:39",
+ "consultado": "2026-11-09 03:45",
  "radar": "RMA17",
- "observacion": "2026-11-09 03:19",
+ "observacion": "2026-11-09 03:27",
  "nucleos": [
   {
-   "lat": -32.1284,
-   "lon": -64.9127,
+   "lat": -32.3197,
+   "lon": -64.7369,
+   "dbz": 53,
+   "max_dbz": 53,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.5015,
+   "lon": -64.7369,
    "dbz": 52,
-   "max_dbz": 63,
+   "max_dbz": 60,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "El Durazno": {
-   "km": 12.5,
-   "max_dbz": 63,
+  "La Cruz": {
+   "km": 29.2,
+   "max_dbz": 60,
    "tope_km": 17.0,
-   "cuenca_de": "Arroyo Sombra de Toro",
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "muy intensa"
+  },
+  "Rio de los Sauces": {
+   "km": 13.8,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "muy intensa"
+  },
+  "Paso Cabral": {
+   "km": 24.2,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 18
 }
