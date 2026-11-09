@@ -1,81 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-08 23:15",
+ "consultado": "2026-11-08 23:30",
  "radar": "RMA17",
- "observacion": "2026-11-08 22:48",
+ "observacion": "2026-11-08 23:13",
  "nucleos": [
   {
-   "lat": -32.1284,
-   "lon": -64.9677,
-   "dbz": 51,
-   "max_dbz": 57,
+   "lat": -32.0006,
+   "lon": -64.9897,
+   "dbz": 52,
+   "max_dbz": 56,
    "tope_km": 17.0
   },
   {
-   "lat": -32.2013,
+   "lat": -32.1557,
    "lon": -64.9787,
-   "dbz": 49,
-   "max_dbz": 49,
+   "dbz": 51,
+   "max_dbz": 55,
    "tope_km": 17.0
-  },
-  {
-   "lat": -31.9458,
-   "lon": -64.9677,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 16.8,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Canal De Riego",
-   "nivel": "intensa"
-  },
-  "La Travesía": {
-   "km": 7.0,
-   "max_dbz": 57,
+   "km": 22.1,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "cuenca_de": "Arroyo de la Cal",
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
-  "Las Tapias": {
-   "km": 12.2,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "intensa"
+  "Chuchiras": {
+   "km": 9.0,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo Chuchiras",
+   "nivel": "muy intensa"
   },
   "Luyaba": {
-   "km": 7.4,
-   "max_dbz": 49,
+   "km": 7.2,
+   "max_dbz": 55,
    "tope_km": 17.0,
-   "cuenca_de": "Arroyo Corralito",
-   "nivel": "intensa"
+   "cuenca_de": "Acc Privado",
+   "nivel": "muy intensa"
   },
-  "Villa de las Rosas": {
-   "km": 2.9,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Las Chacras",
-   "nivel": "intensa"
+  "San Javier Y Yacanto": {
+   "km": 4.8,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
   },
   "Los Romeros": {
-   "km": 23.9,
-   "max_dbz": 57,
+   "km": 23.0,
+   "max_dbz": 55,
    "tope_km": 17.0,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Loma Bola": {
-   "km": 4.8,
-   "max_dbz": 49,
+  "San Javier": {
+   "km": 2.1,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "nivel": "intensa"
+   "cuenca_de": "Arroyo Achiras",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 27
+ "minutos": 17
 }
