@@ -1,40 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-08 22:30",
+ "consultado": "2026-11-08 22:45",
  "radar": "RMA17",
- "observacion": "2026-11-08 22:07",
+ "observacion": "2026-11-08 22:32",
  "nucleos": [
   {
-   "lat": -32.0463,
-   "lon": -64.9127,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 10.6
+   "lat": -32.0919,
+   "lon": -64.9237,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -31.9367,
+   "lon": -64.9567,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.0006,
+   "lon": -64.9457,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "El Corcovado el Torreon": {
-   "km": 39.7,
-   "max_dbz": 47,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio Santa Rosa",
+  "Villa Dolores": {
+   "km": 17.8,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Canal De Riego",
+   "nivel": "muy intensa"
+  },
+  "Chuchiras": {
+   "km": 13.0,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Chuchiras",
+   "nivel": "muy intensa"
+  },
+  "Las Tapias": {
+   "km": 13.3,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "muy intensa"
+  },
+  "Las Chacras Norte": {
+   "km": 7.7,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Los Hornillos",
+   "nivel": "muy intensa"
+  },
+  "El Durazno": {
+   "km": 14.9,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "cuenca_de": "Arroyo Sombra de Toro",
    "nivel": "intensa"
   },
-  "Santa Mónica": {
-   "km": 27.5,
-   "max_dbz": 47,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Santa Rosa",
-   "nivel": "intensa"
+  "Pueblito": {
+   "km": 10.3,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Hondo",
+   "nivel": "muy intensa"
   },
-  "El Corcovado": {
-   "km": 39.2,
-   "max_dbz": 47,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "intensa"
+  "Los Hornillos": {
+   "km": 4.7,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 23
+ "minutos": 13
 }
