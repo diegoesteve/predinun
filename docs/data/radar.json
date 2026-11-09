@@ -1,18 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-08 22:15",
- "radar": "RMA16",
- "observacion": "2026-11-08 21:44",
+ "consultado": "2026-11-08 22:30",
+ "radar": "RMA17",
+ "observacion": "2026-11-08 22:07",
  "nucleos": [
   {
-   "lat": -33.2219,
-   "lon": -65.0442,
-   "dbz": 52,
-   "max_dbz": 52,
-   "tope_km": 7.6
+   "lat": -32.0463,
+   "lon": -64.9127,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 32
+ "localidades": {
+  "El Corcovado el Torreon": {
+   "km": 39.7,
+   "max_dbz": 47,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "intensa"
+  },
+  "Santa Mónica": {
+   "km": 27.5,
+   "max_dbz": 47,
+   "tope_km": 10.6,
+   "cuenca_de": "Río Santa Rosa",
+   "nivel": "intensa"
+  },
+  "El Corcovado": {
+   "km": 39.2,
+   "max_dbz": 47,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 23
 }
