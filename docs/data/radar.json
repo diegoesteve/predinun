@@ -1,59 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 15:45",
+ "consultado": "2026-11-10 16:00",
  "radar": "RMA1",
- "observacion": "2026-11-10 15:29",
+ "observacion": "2026-11-10 15:47",
  "nucleos": [
   {
-   "lat": -31.8276,
-   "lon": -64.5147,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 10.0
+   "lat": -31.684,
+   "lon": -64.6653,
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 7.6
   },
   {
-   "lat": -31.9979,
-   "lon": -64.3856,
+   "lat": -32.0517,
+   "lon": -64.1919,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.7
+   "max_dbz": 53,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Agustin": {
-   "km": 2.5,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo San Agustin",
-   "nivel": "intensa"
-  },
-  "Los Molinos": {
-   "km": 14.6,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio Los Molinos",
-   "nivel": "intensa"
-  },
-  "La Boca del Río": {
-   "km": 9.7,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "cuenca_de": "Río de los Molinos",
+  "Anisacate": {
+   "km": 23.8,
+   "max_dbz": 59,
+   "tope_km": 7.6,
+   "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
-  "Villa la Merced": {
-   "km": 1.7,
-   "max_dbz": 57,
-   "tope_km": 10.0,
+  "La Serranita": {
+   "km": 20.3,
+   "max_dbz": 59,
+   "tope_km": 7.6,
+   "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
-  "Villa Ciudad de America": {
-   "km": 4.3,
-   "max_dbz": 57,
-   "tope_km": 10.0,
+  "San Clemente": {
+   "km": 5.0,
+   "max_dbz": 59,
+   "tope_km": 7.6,
+   "nivel": "muy intensa"
+  },
+  "La Paisanita": {
+   "km": 17.7,
+   "max_dbz": 59,
+   "tope_km": 7.6,
+   "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
