@@ -1,68 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 15:00",
+ "consultado": "2026-11-10 15:15",
  "radar": "RMA1",
- "observacion": "2026-11-10 14:35",
+ "observacion": "2026-11-10 15:02",
  "nucleos": [
   {
-   "lat": -31.8456,
-   "lon": -64.6653,
+   "lat": -31.9173,
+   "lon": -64.6115,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 8.2
+   "max_dbz": 55,
+   "tope_km": 9.4
   },
   {
-   "lat": -31.98,
-   "lon": -64.633,
+   "lat": -32.0248,
+   "lon": -63.9875,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 9.4
+   "max_dbz": 48,
+   "tope_km": 15.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Rosa de Calamuchita": {
-   "km": 9.7,
-   "max_dbz": 51,
+  "Los Reartes": {
+   "km": 3.3,
+   "max_dbz": 55,
    "tope_km": 9.4,
-   "cuenca_de": "Arroyo El Sauce",
-   "nivel": "intensa"
+   "cuenca_de": "Rio De Los Reartes",
+   "nivel": "muy intensa"
   },
-  "Potrero de Garay": {
-   "km": 9.1,
-   "max_dbz": 53,
-   "tope_km": 8.2,
-   "cuenca_de": "Rio San Pedro",
-   "nivel": "intensa"
-  },
-  "El Corcovado el Torreon": {
-   "km": 22.8,
-   "max_dbz": 51,
+  "Capilla Vieja": {
+   "km": 1.3,
+   "max_dbz": 55,
    "tope_km": 9.4,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "intensa"
-  },
-  "El Corcovado": {
-   "km": 20.5,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "La Boca del Río": {
-   "km": 23.8,
-   "max_dbz": 53,
-   "tope_km": 8.2,
+   "km": 20.4,
+   "max_dbz": 55,
+   "tope_km": 9.4,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 15.6,
-   "max_dbz": 53,
-   "tope_km": 8.2,
+   "km": 15.2,
+   "max_dbz": 55,
+   "tope_km": 9.4,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 25
+ "minutos": 13
 }
