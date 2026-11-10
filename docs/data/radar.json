@@ -1,18 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 13:15",
+ "consultado": "2026-11-10 13:18",
  "radar": "RMA1",
- "observacion": "2026-11-10 12:37",
+ "observacion": "2026-11-10 13:05",
  "nucleos": [
   {
-   "lat": -32.6493,
-   "lon": -65.5367,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 10.6
+   "lat": -32.3198,
+   "lon": -65.2032,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.4535,
+   "lon": -65.5259,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 38
+ "localidades": {
+  "Santa Rosa del Conlara": {
+   "km": 3.6,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 13
 }
