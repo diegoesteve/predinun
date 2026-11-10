@@ -1,53 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 16:00",
+ "consultado": "2026-11-10 16:15",
  "radar": "RMA1",
- "observacion": "2026-11-10 15:47",
+ "observacion": "2026-11-10 15:56",
  "nucleos": [
   {
-   "lat": -31.684,
-   "lon": -64.6653,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 7.6
+   "lat": -31.7109,
+   "lon": -64.6115,
+   "dbz": 52,
+   "max_dbz": 52,
+   "tope_km": 8.8
   },
   {
-   "lat": -32.0517,
-   "lon": -64.1919,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.0
+   "lat": -32.0785,
+   "lon": -64.0736,
+   "dbz": 48,
+   "max_dbz": 55,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Anisacate": {
-   "km": 23.8,
-   "max_dbz": 59,
-   "tope_km": 7.6,
+   "km": 18.4,
+   "max_dbz": 52,
+   "tope_km": 8.8,
    "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "La Serranita": {
-   "km": 20.3,
-   "max_dbz": 59,
-   "tope_km": 7.6,
+   "km": 14.7,
+   "max_dbz": 52,
+   "tope_km": 8.8,
    "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
+  },
+  "Paso de la Pampa": {
+   "km": 4.3,
+   "max_dbz": 52,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   },
   "San Clemente": {
-   "km": 5.0,
-   "max_dbz": 59,
-   "tope_km": 7.6,
-   "nivel": "muy intensa"
+   "km": 2.1,
+   "max_dbz": 52,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   },
   "La Paisanita": {
-   "km": 17.7,
-   "max_dbz": 59,
-   "tope_km": 7.6,
+   "km": 12.2,
+   "max_dbz": 52,
+   "tope_km": 8.8,
    "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 19
 }
