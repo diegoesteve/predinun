@@ -1,102 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 15:30",
+ "consultado": "2026-11-10 15:45",
  "radar": "RMA1",
- "observacion": "2026-11-10 15:11",
+ "observacion": "2026-11-10 15:29",
  "nucleos": [
   {
-   "lat": -31.8366,
-   "lon": -64.6653,
+   "lat": -31.8276,
+   "lon": -64.5147,
    "dbz": 50,
-   "max_dbz": 53,
+   "max_dbz": 57,
    "tope_km": 10.0
   },
   {
-   "lat": -32.0964,
-   "lon": -63.9337,
+   "lat": -31.9979,
+   "lon": -64.3856,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.9621,
-   "lon": -64.5147,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.7738,
-   "lon": -64.633,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 9.4
+   "max_dbz": 52,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Rosa de Calamuchita": {
-   "km": 9.8,
-   "max_dbz": 53,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo El Sauce",
+  "San Agustin": {
+   "km": 2.5,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo San Agustin",
    "nivel": "intensa"
   },
-  "Villa General Belgrano": {
-   "km": 4.0,
-   "max_dbz": 53,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Potrero de Garay": {
-   "km": 9.0,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio San Pedro",
-   "nivel": "intensa"
-  },
-  "El Corcovado el Torreon": {
-   "km": 21.8,
-   "max_dbz": 53,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "intensa"
-  },
-  "El Corcovado": {
-   "km": 18.8,
-   "max_dbz": 53,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "intensa"
-  },
-  "Paso de la Pampa": {
-   "km": 5.2,
-   "max_dbz": 48,
-   "tope_km": 9.4,
-   "cuenca_de": "Río San Pedro",
+  "Los Molinos": {
+   "km": 14.6,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "cuenca_de": "Rio Los Molinos",
    "nivel": "intensa"
   },
   "La Boca del Río": {
-   "km": 23.8,
-   "max_dbz": 53,
+   "km": 9.7,
+   "max_dbz": 57,
    "tope_km": 10.0,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 15.5,
-   "max_dbz": 53,
+   "km": 1.7,
+   "max_dbz": 57,
    "tope_km": 10.0,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Villa Ciudad de America": {
-   "km": 9.5,
-   "max_dbz": 48,
-   "tope_km": 9.4,
-   "cuenca_de": "Embalse Los Molinos",
-   "nivel": "intensa"
+   "km": 4.3,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
