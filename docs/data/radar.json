@@ -1,107 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-10 14:30",
+ "consultado": "2026-11-10 14:45",
  "radar": "RMA1",
- "observacion": "2026-11-10 14:17",
+ "observacion": "2026-11-10 14:35",
  "nucleos": [
   {
-   "lat": -31.8097,
+   "lat": -31.8456,
    "lon": -64.6653,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.9263,
-   "lon": -64.7298,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.0158,
-   "lon": -64.7406,
    "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 8.8
+   "max_dbz": 53,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.98,
+   "lon": -64.633,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Reartes": {
-   "km": 14.3,
-   "max_dbz": 56,
+  "Santa Rosa de Calamuchita": {
+   "km": 9.7,
+   "max_dbz": 51,
    "tope_km": 9.4,
-   "cuenca_de": "Rio De Los Reartes",
-   "nivel": "muy intensa"
+   "cuenca_de": "Arroyo El Sauce",
+   "nivel": "intensa"
   },
   "Potrero de Garay": {
    "km": 9.1,
-   "max_dbz": 56,
-   "tope_km": 8.8,
+   "max_dbz": 53,
+   "tope_km": 8.2,
    "cuenca_de": "Rio San Pedro",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "El Corcovado el Torreon": {
-   "km": 26.7,
-   "max_dbz": 54,
-   "tope_km": 8.8,
+   "km": 22.8,
+   "max_dbz": 51,
+   "tope_km": 9.4,
    "cuenca_de": "Rio Santa Rosa",
    "nivel": "intensa"
-  },
-  "Villa Berna": {
-   "km": 1.4,
-   "max_dbz": 56,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
-  },
-  "Santa Mónica": {
-   "km": 11.7,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "cuenca_de": "Río Santa Rosa",
-   "nivel": "intensa"
-  },
-  "Intiyaco": {
-   "km": 4.1,
-   "max_dbz": 56,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
   },
   "El Corcovado": {
-   "km": 25.3,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "intensa"
-  },
-  "Capilla Vieja": {
-   "km": 11.9,
-   "max_dbz": 56,
+   "km": 20.5,
+   "max_dbz": 51,
    "tope_km": 9.4,
-   "cuenca_de": "Rio De Los Reartes",
-   "nivel": "muy intensa"
-  },
-  "San Miguel de los Ríos": {
-   "km": 2.8,
-   "max_dbz": 54,
-   "tope_km": 8.8,
+   "cuenca_de": "Rio Santa Rosa",
    "nivel": "intensa"
   },
   "La Boca del Río": {
-   "km": 24.1,
-   "max_dbz": 56,
-   "tope_km": 8.8,
+   "km": 23.8,
+   "max_dbz": 53,
+   "tope_km": 8.2,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Villa la Merced": {
-   "km": 15.3,
-   "max_dbz": 56,
-   "tope_km": 8.8,
+   "km": 15.6,
+   "max_dbz": 53,
+   "tope_km": 8.2,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 10
 }
