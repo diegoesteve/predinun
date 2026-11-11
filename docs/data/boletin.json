@@ -124,16 +124,11 @@
      "umbral_mm": 9.7,
      "fuente_umbral": "24 h antes",
      "cuando": null
-    },
-    "ECMWF": {
-     "max_3h_mm": 0.1,
-     "umbral_mm": 8.8,
-     "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-12 16:00"
     }
    },
    "ensambles": {
     "ECMWF ENS": 0.0,
+    "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
    "nivel": "verde",
