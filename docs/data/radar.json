@@ -1,37 +1,45 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 08:15",
+ "consultado": "2026-11-12 08:30",
  "radar": "RMA17",
- "observacion": "2026-11-12 07:56",
+ "observacion": "2026-11-12 08:04",
  "nucleos": [
   {
-   "lat": -32.3742,
-   "lon": -64.9787,
+   "lat": -32.0006,
+   "lon": -65.0007,
    "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 11.7
+   "max_dbz": 52,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Carpintería": {
+  "Villa Dolores": {
+   "km": 21.1,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "intensa"
+  },
+  "Chuchiras": {
+   "km": 8.0,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Chuchiras",
+   "nivel": "intensa"
+  },
+  "San Javier Y Yacanto": {
    "km": 4.1,
-   "max_dbz": 54,
-   "tope_km": 11.7,
+   "max_dbz": 52,
+   "tope_km": 11.1,
    "nivel": "intensa"
   },
-  "Villa de Merlo": {
-   "km": 4.3,
-   "max_dbz": 54,
-   "tope_km": 11.7,
-   "nivel": "intensa"
-  },
-  "Cerro de Oro": {
-   "km": 1.8,
-   "max_dbz": 54,
-   "tope_km": 11.7,
+  "San Javier": {
+   "km": 1.1,
+   "max_dbz": 52,
+   "tope_km": 11.1,
    "nivel": "intensa"
   }
  },
- "minutos": 19
+ "minutos": 26
 }
