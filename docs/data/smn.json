@@ -1,7 +1,51 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-12 18:30",
+ "consultado": "2026-11-12 18:45",
  "alertas": [
+  {
+   "id": "2026_11_12_2138_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-12T21:38:00-03:00",
+   "hasta": "2026-11-13T00:38:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CHACO: MAYOR L.  J.  FONTANA - SAN FERNANDO - TAPENAGA. SANTA FE: GRAL OBLIGADO - VERA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_12_2138_cap_es.xml",
+   "desde_local": "12/11 21:38",
+   "hasta_local": "13/11 00:38",
+   "localidades": 2,
+   "poligonos": [
+    [
+     [
+      -60.26,
+      -27.98
+     ],
+     [
+      -59.31,
+      -27.75
+     ],
+     [
+      -59.31,
+      -28.34
+     ],
+     [
+      -59.78,
+      -28.41
+     ],
+     [
+      -60.21,
+      -28.42
+     ],
+     [
+      -60.26,
+      -27.98
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261112153040_Tormenta_Patagonia_alertas_alertas_22",
    "tipo": "alerta",
@@ -12500,6 +12544,7 @@
    "CAP_20261112153040_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Los Amores": [
+   "2026_11_12_2138_cap_es",
    "CAP_20261112153040_Tormenta_Patagonia_alertas_alertas_36",
    "CAP_20261112153040_Tormenta_Llanura_alertas_alertas_36"
   ],
@@ -12560,6 +12605,7 @@
    "CAP_20261112153040_Tormenta_Llanura_alertas_alertas_36"
   ],
   "Villa Guillermina": [
+   "2026_11_12_2138_cap_es",
    "CAP_20261112153040_Tormenta_Patagonia_alertas_alertas_36",
    "CAP_20261112153040_Tormenta_Llanura_alertas_alertas_36"
   ],
