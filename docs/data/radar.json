@@ -1,9 +1,37 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 08:00",
- "radar": null,
- "observacion": null,
- "nucleos": [],
+ "consultado": "2026-11-12 08:15",
+ "radar": "RMA17",
+ "observacion": "2026-11-12 07:56",
+ "nucleos": [
+  {
+   "lat": -32.3742,
+   "lon": -64.9787,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 11.7
+  }
+ ],
  "cuencas": {},
- "localidades": {}
+ "localidades": {
+  "Carpintería": {
+   "km": 4.1,
+   "max_dbz": 54,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  },
+  "Villa de Merlo": {
+   "km": 4.3,
+   "max_dbz": 54,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  },
+  "Cerro de Oro": {
+   "km": 1.8,
+   "max_dbz": 54,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 19
 }
