@@ -1,47 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 06:15",
+ "consultado": "2026-11-12 06:30",
  "radar": "RMA17",
- "observacion": "2026-11-12 05:54",
+ "observacion": "2026-11-12 06:10",
  "nucleos": [
   {
-   "lat": -32.6195,
-   "lon": -64.9237,
+   "lat": -32.1284,
+   "lon": -65.0007,
    "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 15.2
+   "max_dbz": 61,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.1922,
+   "lon": -64.9897,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alpa Corral": {
-   "km": 18.9,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "cuenca_de": "Rio Barrancas",
+  "La Travesía": {
+   "km": 4.1,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo de la Cal",
    "nivel": "muy intensa"
   },
-  "Paso del Río Seco": {
-   "km": 40.4,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "cuenca_de": "Río de las Barrancas",
+  "Luyaba": {
+   "km": 6.1,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo Corralito",
+   "nivel": "intensa"
+  },
+  "Los Romeros": {
+   "km": 20.8,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Santa Rita": {
-   "km": 50.9,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
-  },
-  "Unión de los Rios": {
-   "km": 15.8,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "cuenca_de": "Arroyo El Talita",
-   "nivel": "muy intensa"
+  "Loma Bola": {
+   "km": 4.3,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "nivel": "intensa"
   }
  },
- "minutos": 22
+ "minutos": 20
 }
