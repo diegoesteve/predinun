@@ -1,10 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 06:00",
- "radar": "RMA16",
- "observacion": "2026-11-12 05:38",
- "nucleos": [],
+ "consultado": "2026-11-12 06:15",
+ "radar": "RMA17",
+ "observacion": "2026-11-12 05:54",
+ "nucleos": [
+  {
+   "lat": -32.6195,
+   "lon": -64.9237,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 15.2
+  }
+ ],
  "cuencas": {},
- "localidades": {},
+ "localidades": {
+  "Alpa Corral": {
+   "km": 18.9,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "cuenca_de": "Rio Barrancas",
+   "nivel": "muy intensa"
+  },
+  "Paso del Río Seco": {
+   "km": 40.4,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "cuenca_de": "Río de las Barrancas",
+   "nivel": "muy intensa"
+  },
+  "Santa Rita": {
+   "km": 50.9,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
+  },
+  "Unión de los Rios": {
+   "km": 15.8,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "cuenca_de": "Arroyo El Talita",
+   "nivel": "muy intensa"
+  }
+ },
  "minutos": 22
 }
