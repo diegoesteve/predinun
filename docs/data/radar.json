@@ -1,53 +1,65 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-12 09:00",
+ "consultado": "2026-11-12 09:15",
  "radar": "RMA17",
- "observacion": "2026-11-12 08:37",
+ "observacion": "2026-11-12 09:01",
  "nucleos": [
   {
-   "lat": -32.0554,
-   "lon": -64.9897,
-   "dbz": 52,
-   "max_dbz": 60,
+   "lat": -32.0371,
+   "lon": -65.0007,
+   "dbz": 54,
+   "max_dbz": 61,
    "tope_km": 17.0
   },
   {
-   "lat": -32.1375,
-   "lon": -64.9897,
-   "dbz": 51,
-   "max_dbz": 51,
+   "lat": -32.1284,
+   "lon": -65.0007,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "La Travesía": {
-   "km": 5.5,
-   "max_dbz": 51,
+   "km": 4.1,
+   "max_dbz": 56,
    "tope_km": 17.0,
    "cuenca_de": "Arroyo de la Cal",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "San Javier Y Yacanto": {
-   "km": 4.6,
-   "max_dbz": 60,
+   "km": 2.7,
+   "max_dbz": 61,
    "tope_km": 17.0,
    "nivel": "muy intensa"
   },
   "Los Romeros": {
-   "km": 23.6,
-   "max_dbz": 60,
+   "km": 20.8,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Conlara": {
+   "km": 23.1,
+   "max_dbz": 61,
    "tope_km": 17.0,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
   "La Poblacion": {
-   "km": 0.8,
-   "max_dbz": 60,
+   "km": 3.5,
+   "max_dbz": 61,
    "tope_km": 17.0,
-   "cuenca_de": "Arroyo Cruz Del Quebracho",
+   "nivel": "muy intensa"
+  },
+  "San Javier": {
+   "km": 3.6,
+   "max_dbz": 61,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 23
+ "minutos": 14
 }
