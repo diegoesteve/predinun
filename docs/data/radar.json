@@ -1,89 +1,99 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 17:45",
+ "consultado": "2026-11-13 18:01",
  "radar": "RMA1",
- "observacion": "2026-11-13 17:30",
+ "observacion": "2026-11-13 17:39",
  "nucleos": [
   {
-   "lat": -32.2483,
-   "lon": -64.3963,
+   "lat": -32.159,
+   "lon": -64.2565,
    "dbz": 52,
    "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -32.3911,
-   "lon": -64.59,
-   "dbz": 51,
+   "lat": -32.3644,
+   "lon": -64.5685,
+   "dbz": 50,
    "max_dbz": 57,
-   "tope_km": 12.3
+   "tope_km": 14.7
   },
   {
-   "lat": -32.3465,
-   "lon": -64.0628,
+   "lat": -32.3198,
+   "lon": -63.7508,
    "dbz": 50,
-   "max_dbz": 53,
+   "max_dbz": 57,
    "tope_km": 17.0
   },
   {
-   "lat": -32.6582,
-   "lon": -64.5254,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.3019,
-   "lon": -63.8046,
+   "lat": -32.409,
+   "lon": -64.4824,
    "dbz": 49,
-   "max_dbz": 54,
+   "max_dbz": 58,
    "tope_km": 17.0
   },
   {
-   "lat": -32.4713,
-   "lon": -64.6115,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.7382,
-   "lon": -64.5147,
+   "lat": -32.4446,
+   "lon": -64.8804,
    "dbz": 48,
    "max_dbz": 48,
    "tope_km": 17.0
   },
   {
-   "lat": -32.4179,
-   "lon": -63.7939,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 17.0
+   "lat": -32.4713,
+   "lon": -64.5577,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 15.2
   }
  ],
  "cuencas": {},
  "localidades": {
   "La Cruz": {
-   "km": 18.2,
-   "max_dbz": 51,
-   "tope_km": 12.9,
+   "km": 6.9,
+   "max_dbz": 58,
+   "tope_km": 17.0,
    "cuenca_de": "Río de la Cruz",
+   "nivel": "muy intensa"
+  },
+  "Almafuerte": {
+   "km": 4.2,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 23.4,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
   "Paso Cabral": {
-   "km": 12.2,
-   "max_dbz": 51,
-   "tope_km": 12.9,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "intensa"
+   "km": 1.8,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
   },
   "Villa la Rivera": {
-   "km": 13.9,
+   "km": 10.4,
    "max_dbz": 57,
-   "tope_km": 12.3,
+   "tope_km": 14.7,
    "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Pueblo Escondido": {
+   "km": 2.3,
+   "max_dbz": 48,
+   "tope_km": 17.0,
+   "nivel": "intensa"
+  },
+  "Las Caleras": {
+   "km": 4.2,
+   "max_dbz": 58,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 23
 }
