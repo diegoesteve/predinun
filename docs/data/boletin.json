@@ -1,7 +1,7 @@
 {
- "generado": "2026-11-13 15:00",
+ "generado": "2026-11-13 16:00",
  "horas": 48,
- "smap_atraso_dias": 2.8,
+ "smap_atraso_dias": 2.9,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
@@ -37,8 +37,8 @@
     "smap_m3m3": 0.117,
     "smap_percentil": 65,
     "smap_fecha": "2026-11-10 22:30 UTC",
-    "estimado_hoy_m3m3": 0.121,
-    "estimado_hoy_percentil": 71,
+    "estimado_hoy_m3m3": 0.125,
+    "estimado_hoy_percentil": 79,
     "percentil": 65,
     "es_estimado": false,
     "estado": "normal"
@@ -81,7 +81,7 @@
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.24,
+    "ECMWF ENS": 0.22,
     "GFS ENS": 0.61,
     "ICON EPS": 0.3
    },
@@ -91,8 +91,8 @@
     "smap_m3m3": 0.126,
     "smap_percentil": 75,
     "smap_fecha": "2026-11-10 22:30 UTC",
-    "estimado_hoy_m3m3": 0.12,
-    "estimado_hoy_percentil": 66,
+    "estimado_hoy_m3m3": 0.124,
+    "estimado_hoy_percentil": 72,
     "percentil": 75,
     "es_estimado": false,
     "estado": "normal"
@@ -135,7 +135,7 @@
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.25,
+    "ECMWF ENS": 0.24,
     "GFS ENS": 0.68,
     "ICON EPS": 0.28
    },
@@ -145,8 +145,8 @@
     "smap_m3m3": 0.149,
     "smap_percentil": 75,
     "smap_fecha": "2026-11-10 22:30 UTC",
-    "estimado_hoy_m3m3": 0.146,
-    "estimado_hoy_percentil": 71,
+    "estimado_hoy_m3m3": 0.15,
+    "estimado_hoy_percentil": 75,
     "percentil": 75,
     "es_estimado": false,
     "estado": "normal"
@@ -189,8 +189,9 @@
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.27,
-    "GFS ENS": 0.87
+    "ECMWF ENS": 0.25,
+    "GFS ENS": 0.87,
+    "ICON EPS": 0.65
    },
    "nivel": "naranja",
    "nivel_por_lluvia": "naranja",
@@ -198,8 +199,8 @@
     "smap_m3m3": 0.168,
     "smap_percentil": 61,
     "smap_fecha": "2026-11-10 22:30 UTC",
-    "estimado_hoy_m3m3": 0.199,
-    "estimado_hoy_percentil": 97,
+    "estimado_hoy_m3m3": 0.208,
+    "estimado_hoy_percentil": 98,
     "percentil": 61,
     "es_estimado": false,
     "estado": "normal"
@@ -237,28 +238,28 @@
     "nombre": "Sierras Chicas",
     "suelo_saturado": false,
     "prob": [
-     0.1,
-     0.33,
      0.0,
-     0.21,
-     0.24,
-     0.01,
-     0.01,
+     0.68,
+     0.0,
+     0.35,
+     0.65,
+     0.0,
+     0.0,
      0.03,
      0.0,
      0.0
     ],
     "mm": [
-     7.7,
-     17.6,
-     0.1,
-     13.4,
-     10.3,
-     5.1,
-     4.8,
-     1.8,
-     0.2,
-     1.7
+     5.2,
+     32.3,
+     0.0,
+     15.2,
+     15.7,
+     2.8,
+     0.6,
+     1.7,
+     0.3,
+     0.9
     ]
    },
    "Cosquin": {
@@ -321,28 +322,28 @@
     "nombre": "Capital (experimental)",
     "suelo_saturado": false,
     "prob": [
-     0.15,
-     0.44,
+     0.25,
+     0.47,
      0.01,
-     0.4,
-     0.4,
+     0.29,
+     0.29,
      0.0,
-     0.04,
-     0.04,
+     0.02,
+     0.02,
      0.0,
-     0.02
+     0.01
     ],
     "mm": [
-     9.9,
-     18.1,
+     10.7,
+     17.6,
+     0.0,
+     14.9,
+     8.9,
+     4.3,
+     4.5,
+     1.6,
      0.1,
-     17.4,
-     10.2,
-     4.4,
-     6.2,
-     2.0,
-     0.2,
-     2.3
+     1.5
     ]
    }
   }
