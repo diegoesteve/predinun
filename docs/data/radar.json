@@ -1,67 +1,95 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 16:45",
+ "consultado": "2026-11-13 17:01",
  "radar": "RMA1",
- "observacion": "2026-11-13 16:36",
+ "observacion": "2026-11-13 16:44",
  "nucleos": [
   {
-   "lat": -32.2841,
-   "lon": -64.4178,
+   "lat": -32.96,
+   "lon": -63.7831,
+   "dbz": 53,
+   "max_dbz": 65,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.3555,
+   "lon": -64.5577,
+   "dbz": 53,
+   "max_dbz": 62,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.2394,
+   "lon": -64.3963,
    "dbz": 52,
    "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -32.4802,
-   "lon": -64.4609,
+   "lat": -32.507,
+   "lon": -64.3533,
    "dbz": 52,
-   "max_dbz": 59,
+   "max_dbz": 61,
    "tope_km": 17.0
   },
   {
-   "lat": -32.9511,
-   "lon": -63.7724,
-   "dbz": 52,
-   "max_dbz": 62,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.9777,
-   "lon": -64.1704,
+   "lat": -32.7648,
+   "lon": -64.2565,
    "dbz": 51,
-   "max_dbz": 60,
+   "max_dbz": 57,
    "tope_km": 17.0
   },
   {
-   "lat": -32.756,
-   "lon": -64.8804,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 14.1
+   "lat": -32.7826,
+   "lon": -64.8697,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 11.1
   },
   {
-   "lat": -32.6849,
-   "lon": -64.278,
+   "lat": -32.6938,
+   "lon": -64.2242,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.8447,
+   "lon": -64.0628,
+   "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -33.0839,
+   "lon": -63.7724,
    "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 16.4
+   "max_dbz": 50,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Rita": {
-   "km": 38.9,
-   "max_dbz": 49,
-   "tope_km": 14.1,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "intensa"
-  },
-  "Chucul": {
-   "km": 3.7,
-   "max_dbz": 60,
+  "Embalse": {
+   "km": 4.3,
+   "max_dbz": 64,
    "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 9.1,
+   "max_dbz": 62,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Santa Rita": {
+   "km": 36.7,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
   }
  },
- "minutos": 10
+ "minutos": 17
 }
