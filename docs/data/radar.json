@@ -1,85 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 16:30",
+ "consultado": "2026-11-13 16:45",
  "radar": "RMA1",
- "observacion": "2026-11-13 16:17",
+ "observacion": "2026-11-13 16:36",
  "nucleos": [
   {
-   "lat": -32.2573,
-   "lon": -64.5362,
-   "dbz": 54,
+   "lat": -32.2841,
+   "lon": -64.4178,
+   "dbz": 52,
    "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -32.8979,
-   "lon": -64.4824,
+   "lat": -32.4802,
+   "lon": -64.4609,
    "dbz": 52,
-   "max_dbz": 63,
+   "max_dbz": 59,
    "tope_km": 17.0
   },
   {
-   "lat": -33.1724,
-   "lon": -63.8261,
+   "lat": -32.9511,
+   "lon": -63.7724,
    "dbz": 52,
    "max_dbz": 62,
    "tope_km": 17.0
   },
   {
-   "lat": -32.3822,
-   "lon": -64.6868,
-   "dbz": 52,
+   "lat": -32.9777,
+   "lon": -64.1704,
+   "dbz": 51,
    "max_dbz": 60,
-   "tope_km": 15.2
+   "tope_km": 17.0
   },
   {
-   "lat": -32.3911,
-   "lon": -64.5685,
+   "lat": -32.756,
+   "lon": -64.8804,
    "dbz": 49,
-   "max_dbz": 57,
-   "tope_km": 16.4
+   "max_dbz": 49,
+   "tope_km": 14.1
   },
   {
-   "lat": -33.2607,
-   "lon": -64.0951,
+   "lat": -32.6849,
+   "lon": -64.278,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 14.1
+   "max_dbz": 48,
+   "tope_km": 16.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Quillinzo": {
-   "km": 2.9,
-   "max_dbz": 64,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Cañada del Sauce": {
-   "km": 4.0,
-   "max_dbz": 60,
-   "tope_km": 15.2,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "muy intensa"
-  },
-  "Villa la Rivera": {
-   "km": 1.7,
-   "max_dbz": 64,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
   "Santa Rita": {
-   "km": 3.7,
-   "max_dbz": 63,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
+   "km": 38.9,
+   "max_dbz": 49,
+   "tope_km": 14.1,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "intensa"
   },
-  "Las Caleras": {
-   "km": 4.5,
-   "max_dbz": 57,
-   "tope_km": 16.4,
+  "Chucul": {
+   "km": 3.7,
+   "max_dbz": 60,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 10
 }
