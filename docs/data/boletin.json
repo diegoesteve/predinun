@@ -1,35 +1,35 @@
 {
- "generado": "2026-11-13 09:00",
+ "generado": "2026-11-13 15:00",
  "horas": 48,
- "smap_atraso_dias": 2.6,
+ "smap_atraso_dias": 2.8,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
    "nombre": "Sierras Chicas",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 22.4,
+     "max_3h_mm": 25.4,
      "umbral_mm": 9.9,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-11-14 05:00"
     },
     "ICON": {
-     "max_3h_mm": 7.0,
+     "max_3h_mm": 6.8,
      "umbral_mm": 14.0,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-14 07:00"
+     "cuando": "2026-11-14 06:00"
     },
     "ECMWF": {
-     "max_3h_mm": 9.1,
+     "max_3h_mm": 19.7,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-13 17:00"
+     "cuando": "2026-11-13 16:00"
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.12,
-    "GFS ENS": 0.61,
-    "ICON EPS": 0.5
+    "ECMWF ENS": 0.2,
+    "GFS ENS": 0.68,
+    "ICON EPS": 0.33
    },
    "nivel": "naranja",
    "nivel_por_lluvia": "naranja",
@@ -37,6 +37,8 @@
     "smap_m3m3": 0.117,
     "smap_percentil": 65,
     "smap_fecha": "2026-11-10 22:30 UTC",
+    "estimado_hoy_m3m3": 0.121,
+    "estimado_hoy_percentil": 71,
     "percentil": 65,
     "es_estimado": false,
     "estado": "normal"
@@ -51,8 +53,8 @@
     "nubosidad_ult_media": 28,
     "nubosidad_ult_normal": 39,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 28.9,
-    "et0_prox_pct": 75
+    "et0_prox_mm": 28.1,
+    "et0_prox_pct": 73
    }
   },
   {
@@ -60,28 +62,28 @@
    "nombre": "Cosquín",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 35.7,
+     "max_3h_mm": 31.0,
      "umbral_mm": 13.0,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-11-14 05:00"
     },
     "ICON": {
-     "max_3h_mm": 5.0,
+     "max_3h_mm": 5.2,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-14 09:00"
+     "cuando": "2026-11-14 07:00"
     },
     "ECMWF": {
-     "max_3h_mm": 11.2,
+     "max_3h_mm": 9.7,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-13 17:00"
+     "cuando": "2026-11-13 16:00"
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.18,
-    "GFS ENS": 0.42,
-    "ICON EPS": 0.35
+    "ECMWF ENS": 0.24,
+    "GFS ENS": 0.61,
+    "ICON EPS": 0.3
    },
    "nivel": "naranja",
    "nivel_por_lluvia": "naranja",
@@ -89,8 +91,8 @@
     "smap_m3m3": 0.126,
     "smap_percentil": 75,
     "smap_fecha": "2026-11-10 22:30 UTC",
-    "estimado_hoy_m3m3": 0.113,
-    "estimado_hoy_percentil": 50,
+    "estimado_hoy_m3m3": 0.12,
+    "estimado_hoy_percentil": 66,
     "percentil": 75,
     "es_estimado": false,
     "estado": "normal"
@@ -105,8 +107,8 @@
     "nubosidad_ult_media": 28,
     "nubosidad_ult_normal": 40,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 27.5,
-    "et0_prox_pct": 76
+    "et0_prox_mm": 25.3,
+    "et0_prox_pct": 70
    }
   },
   {
@@ -114,28 +116,28 @@
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 26.1,
+     "max_3h_mm": 23.2,
      "umbral_mm": 10.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-14 05:00"
+     "cuando": "2026-11-14 06:00"
     },
     "ICON": {
-     "max_3h_mm": 5.9,
+     "max_3h_mm": 3.5,
      "umbral_mm": 9.7,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-13 22:00"
+     "cuando": "2026-11-14 01:00"
     },
     "ECMWF": {
-     "max_3h_mm": 13.3,
+     "max_3h_mm": 7.6,
      "umbral_mm": 8.8,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-13 17:00"
+     "cuando": "2026-11-13 16:00"
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.18,
-    "GFS ENS": 0.58,
-    "ICON EPS": 0.33
+    "ECMWF ENS": 0.25,
+    "GFS ENS": 0.68,
+    "ICON EPS": 0.28
    },
    "nivel": "naranja",
    "nivel_por_lluvia": "naranja",
@@ -143,8 +145,8 @@
     "smap_m3m3": 0.149,
     "smap_percentil": 75,
     "smap_fecha": "2026-11-10 22:30 UTC",
-    "estimado_hoy_m3m3": 0.141,
-    "estimado_hoy_percentil": 67,
+    "estimado_hoy_m3m3": 0.146,
+    "estimado_hoy_percentil": 71,
     "percentil": 75,
     "es_estimado": false,
     "estado": "normal"
@@ -159,8 +161,8 @@
     "nubosidad_ult_media": 27,
     "nubosidad_ult_normal": 41,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 27.2,
-    "et0_prox_pct": 75
+    "et0_prox_mm": 25.4,
+    "et0_prox_pct": 70
    }
   },
   {
@@ -168,28 +170,27 @@
    "nombre": "Capital (experimental)",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 11.8,
+     "max_3h_mm": 13.1,
      "umbral_mm": 7.7,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-14 01:00"
+     "cuando": "2026-11-13 23:00"
     },
     "ICON": {
-     "max_3h_mm": 10.4,
+     "max_3h_mm": 11.7,
      "umbral_mm": 11.4,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-13 22:00"
+     "cuando": "2026-11-13 20:00"
     },
     "ECMWF": {
-     "max_3h_mm": 8.1,
+     "max_3h_mm": 28.3,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-13 17:00"
+     "cuando": "2026-11-13 16:00"
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.2,
-    "GFS ENS": 0.81,
-    "ICON EPS": 0.7
+    "ECMWF ENS": 0.27,
+    "GFS ENS": 0.87
    },
    "nivel": "naranja",
    "nivel_por_lluvia": "naranja",
@@ -197,6 +198,8 @@
     "smap_m3m3": 0.168,
     "smap_percentil": 61,
     "smap_fecha": "2026-11-10 22:30 UTC",
+    "estimado_hoy_m3m3": 0.199,
+    "estimado_hoy_percentil": 97,
     "percentil": 61,
     "es_estimado": false,
     "estado": "normal"
@@ -211,8 +214,8 @@
     "nubosidad_ult_media": 27,
     "nubosidad_ult_normal": 39,
     "dias_nublados_ult": 1,
-    "et0_prox_mm": 29.9,
-    "et0_prox_pct": 77
+    "et0_prox_mm": 29.2,
+    "et0_prox_pct": 75
    }
   }
  ],
@@ -234,82 +237,82 @@
     "nombre": "Sierras Chicas",
     "suelo_saturado": false,
     "prob": [
-     0.03,
-     0.38,
-     0.02,
-     0.29,
-     0.26,
+     0.1,
+     0.33,
      0.0,
-     0.04,
-     0.05,
+     0.21,
+     0.24,
      0.01,
-     0.01
+     0.01,
+     0.03,
+     0.0,
+     0.0
     ],
     "mm": [
-     4.0,
-     16.9,
-     0.3,
-     16.0,
-     9.3,
-     5.8,
-     5.3,
-     1.5,
+     7.7,
+     17.6,
      0.1,
-     1.6
+     13.4,
+     10.3,
+     5.1,
+     4.8,
+     1.8,
+     0.2,
+     1.7
     ]
    },
    "Cosquin": {
     "nombre": "Cosquín",
     "suelo_saturado": false,
     "prob": [
-     0.03,
+     0.11,
      0.3,
-     0.01,
-     0.29,
-     0.28,
      0.0,
-     0.05,
-     0.06,
-     0.01,
-     0.01
+     0.22,
+     0.23,
+     0.0,
+     0.02,
+     0.03,
+     0.0,
+     0.0
     ],
     "mm": [
-     4.4,
-     16.4,
-     0.5,
-     16.6,
-     9.9,
-     6.0,
-     5.4,
-     1.8,
+     7.7,
+     18.4,
      0.3,
-     1.9
+     14.1,
+     10.4,
+     5.7,
+     5.7,
+     2.1,
+     0.3,
+     2.0
     ]
    },
    "SanAntonio_CPaz": {
     "nombre": "San Antonio / Carlos Paz",
     "suelo_saturado": false,
     "prob": [
-     0.05,
-     0.31,
-     0.02,
-     0.3,
-     0.26,
-     0.02,
+     0.12,
+     0.32,
+     0.01,
+     0.29,
+     0.24,
+     0.01,
      0.06,
      0.05,
-     0.03,
-     0.02
+     0.01,
+     0.01
     ],
     "mm": [
-     5.3,
-     15.3,
-     0.8,
-     14.6,
      8.6,
-     8.9,
-     7.0,
-     2.2,
+     18.1,
+     0.7,
+     15.0,
+     10.1,
+     7.2,
+     7.4,
+     2.9,
      0.6,
      2.3
     ]
@@ -318,28 +321,28 @@
     "nombre": "Capital (experimental)",
     "suelo_saturado": false,
     "prob": [
-     0.14,
-     0.5,
-     0.0,
-     0.29,
-     0.3,
-     0.0,
-     0.05,
-     0.05,
+     0.15,
+     0.44,
      0.01,
-     0.01
+     0.4,
+     0.4,
+     0.0,
+     0.04,
+     0.04,
+     0.0,
+     0.02
     ],
     "mm": [
-     6.2,
-     17.3,
-     0.0,
-     16.4,
-     8.4,
-     4.5,
-     5.4,
-     1.3,
+     9.9,
+     18.1,
      0.1,
-     1.4
+     17.4,
+     10.2,
+     4.4,
+     6.2,
+     2.0,
+     0.2,
+     2.3
     ]
    }
   }
