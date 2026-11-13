@@ -1,61 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 05:47",
+ "consultado": "2026-11-13 06:00",
  "radar": "RMA1",
- "observacion": "2026-11-13 05:36",
+ "observacion": "2026-11-13 05:45",
  "nucleos": [
   {
-   "lat": -31.0347,
-   "lon": -64.8912,
+   "lat": -31.0528,
+   "lon": -64.9235,
    "dbz": 52,
    "max_dbz": 60,
    "tope_km": 16.4
   },
   {
-   "lat": -30.7811,
-   "lon": -64.0305,
+   "lat": -30.6903,
+   "lon": -64.4178,
    "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -30.7266,
-   "lon": -64.3963,
-   "dbz": 51,
-   "max_dbz": 59,
+   "max_dbz": 54,
    "tope_km": 13.5
   },
   {
-   "lat": -30.6812,
-   "lon": -63.8046,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.089,
-   "lon": -65.3538,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.7
+   "lat": -30.8355,
+   "lon": -63.9552,
+   "dbz": 51,
+   "max_dbz": 61,
+   "tope_km": 16.4
   },
   {
    "lat": -30.8627,
-   "lon": -64.5254,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -30.8083,
-   "lon": -64.2995,
-   "dbz": 49,
-   "max_dbz": 55,
+   "lon": -64.0951,
+   "dbz": 51,
+   "max_dbz": 57,
    "tope_km": 13.5
   },
   {
-   "lat": -30.9533,
-   "lon": -64.7513,
+   "lat": -30.7266,
+   "lon": -63.8369,
    "dbz": 48,
    "max_dbz": 51,
    "tope_km": 17.0
@@ -64,64 +43,32 @@
  "cuencas": {},
  "localidades": {
   "Villa de Soto": {
-   "km": 21.6,
+   "km": 22.6,
    "max_dbz": 60,
    "tope_km": 16.4,
    "cuenca_de": "Río Soto",
    "nivel": "muy intensa"
   },
-  "San Marcos Sierras": {
-   "km": 13.7,
-   "max_dbz": 54,
-   "tope_km": 14.1,
-   "cuenca_de": "Rio San Marcos Sierra",
-   "nivel": "intensa"
-  },
-  "Capilla del Monte": {
-   "km": 0.3,
-   "max_dbz": 54,
-   "tope_km": 14.1,
-   "nivel": "intensa"
+  "Cruz de Caña": {
+   "km": 2.8,
+   "max_dbz": 60,
+   "tope_km": 16.4,
+   "nivel": "muy intensa"
   },
   "Bañado de Soto": {
-   "km": 27.4,
+   "km": 27.9,
    "max_dbz": 60,
    "tope_km": 16.4,
    "cuenca_de": "San Guillermo De Soto",
    "nivel": "muy intensa"
   },
-  "Las Cañadas": {
-   "km": 4.4,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "nivel": "intensa"
-  },
-  "Paraje San Pellegrino": {
-   "km": 0.7,
-   "max_dbz": 55,
-   "tope_km": 13.5,
-   "nivel": "muy intensa"
-  },
-  "La Playa": {
-   "km": 9.0,
-   "max_dbz": 53,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio Guasapampa",
-   "nivel": "intensa"
-  },
   "Copacabana": {
-   "km": 14.6,
-   "max_dbz": 59,
+   "km": 10.6,
+   "max_dbz": 54,
    "tope_km": 13.5,
    "cuenca_de": "Rio Copacabana",
-   "nivel": "muy intensa"
-  },
-  "Guasapampa": {
-   "km": 2.0,
-   "max_dbz": 53,
-   "tope_km": 11.7,
    "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 15
 }
