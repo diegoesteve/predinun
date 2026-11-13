@@ -1,66 +1,106 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 18:16",
+ "consultado": "2026-11-13 18:30",
  "radar": "RMA1",
- "observacion": "2026-11-13 18:06",
+ "observacion": "2026-11-13 18:15",
  "nucleos": [
   {
-   "lat": -31.9979,
-   "lon": -64.0843,
-   "dbz": 52,
-   "max_dbz": 64,
+   "lat": -32.1947,
+   "lon": -64.7191,
+   "dbz": 53,
+   "max_dbz": 63,
    "tope_km": 17.0
   },
   {
-   "lat": -32.2394,
-   "lon": -64.6976,
-   "dbz": 51,
+   "lat": -31.9442,
+   "lon": -63.923,
+   "dbz": 52,
+   "max_dbz": 66,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.1143,
+   "lon": -64.7944,
+   "dbz": 52,
    "max_dbz": 60,
    "tope_km": 17.0
   },
   {
-   "lat": -32.2751,
-   "lon": -64.3318,
-   "dbz": 50,
-   "max_dbz": 57,
+   "lat": -32.1411,
+   "lon": -64.3641,
+   "dbz": 52,
+   "max_dbz": 62,
    "tope_km": 17.0
   },
   {
-   "lat": -32.0964,
-   "lon": -64.8374,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 14.1
+   "lat": -32.0606,
+   "lon": -64.235,
+   "dbz": 51,
+   "max_dbz": 62,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.2483,
-   "lon": -64.4824,
+   "lat": -31.7828,
+   "lon": -64.3318,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 15.8
+  },
+  {
+   "lat": -32.2394,
+   "lon": -64.3318,
    "dbz": 48,
-   "max_dbz": 52,
+   "max_dbz": 51,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.2394,
+   "lon": -64.4286,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.2751,
+   "lon": -64.2565,
+   "dbz": 47,
+   "max_dbz": 51,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Quillinzo": {
-   "km": 3.1,
-   "max_dbz": 52,
+  "Almafuerte": {
+   "km": 11.8,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Embalse": {
+   "km": 3.8,
+   "max_dbz": 51,
    "tope_km": 17.0,
    "nivel": "intensa"
   },
-  "Villa la Rivera": {
-   "km": 4.3,
-   "max_dbz": 52,
-   "tope_km": 17.0,
-   "nivel": "intensa"
+  "Dique Chico": {
+   "km": 4.8,
+   "max_dbz": 56,
+   "tope_km": 15.8,
+   "nivel": "muy intensa"
   },
   "El Durazno": {
-   "km": 8.2,
-   "max_dbz": 51,
-   "tope_km": 14.1,
-   "cuenca_de": "Arroyo Sombra de Toro",
-   "nivel": "intensa"
+   "km": 4.6,
+   "max_dbz": 60,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Despeñaderos": {
+   "km": 5.0,
+   "max_dbz": 56,
+   "tope_km": 15.8,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 10
+ "minutos": 16
 }
