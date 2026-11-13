@@ -1,87 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 04:30",
+ "consultado": "2026-11-13 04:45",
  "radar": "RMA1",
- "observacion": "2026-11-13 04:15",
+ "observacion": "2026-11-13 04:33",
  "nucleos": [
   {
-   "lat": -30.5449,
-   "lon": -64.2672,
+   "lat": -30.2717,
+   "lon": -64.4501,
    "dbz": 53,
-   "max_dbz": 62,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -30.2078,
-   "lon": -64.4286,
-   "dbz": 52,
    "max_dbz": 61,
-   "tope_km": 15.2
+   "tope_km": 17.0
   },
   {
    "lat": -30.6358,
-   "lon": -64.3963,
+   "lon": -64.3103,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -30.917,
+   "lon": -65.1924,
    "dbz": 51,
-   "max_dbz": 56,
+   "max_dbz": 58,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -30.4448,
+   "lon": -64.1596,
+   "dbz": 50,
+   "max_dbz": 55,
    "tope_km": 15.2
   },
   {
-   "lat": -30.3264,
-   "lon": -64.2887,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -30.372,
-   "lon": -64.4071,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 17.0
+   "lat": -30.5994,
+   "lon": -64.1919,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada de Rio Pinto": {
-   "km": 21.9,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "cuenca_de": "sin nombre",
+  "Piedras Amontonadas": {
+   "km": 4.2,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "cuenca_de": "Río Seco",
    "nivel": "muy intensa"
   },
-  "Quilino": {
-   "km": 21.7,
-   "max_dbz": 59,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Villa Quilino": {
-   "km": 3.0,
-   "max_dbz": 61,
-   "tope_km": 15.2,
-   "cuenca_de": "Arroyo Las Chacras",
-   "nivel": "muy intensa"
-  },
-  "La Isabela": {
-   "km": 1.5,
-   "max_dbz": 59,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Ischilín Viejo": {
-   "km": 1.5,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "cuenca_de": "Arroyo Ojo de Agua",
-   "nivel": "muy intensa"
-  },
-  "Los Pozos": {
-   "km": 3.0,
-   "max_dbz": 62,
-   "tope_km": 13.5,
+  "Villa Albertina": {
+   "km": 3.3,
+   "max_dbz": 60,
+   "tope_km": 14.7,
    "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
