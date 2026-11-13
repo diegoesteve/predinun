@@ -1,106 +1,109 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 18:30",
+ "consultado": "2026-11-13 18:45",
  "radar": "RMA1",
- "observacion": "2026-11-13 18:15",
+ "observacion": "2026-11-13 18:33",
  "nucleos": [
   {
-   "lat": -32.1947,
-   "lon": -64.7191,
-   "dbz": 53,
-   "max_dbz": 63,
+   "lat": -32.0517,
+   "lon": -64.3425,
+   "dbz": 55,
+   "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -31.9442,
-   "lon": -63.923,
+   "lat": -32.1501,
+   "lon": -64.9235,
    "dbz": 52,
-   "max_dbz": 66,
+   "max_dbz": 59,
    "tope_km": 17.0
   },
   {
-   "lat": -32.1143,
-   "lon": -64.7944,
+   "lat": -31.8366,
+   "lon": -63.9337,
    "dbz": 52,
-   "max_dbz": 60,
+   "max_dbz": 65,
    "tope_km": 17.0
   },
   {
-   "lat": -32.1411,
-   "lon": -64.3641,
+   "lat": -32.0874,
+   "lon": -64.7729,
    "dbz": 52,
-   "max_dbz": 62,
+   "max_dbz": 61,
    "tope_km": 17.0
   },
   {
-   "lat": -32.0606,
-   "lon": -64.235,
+   "lat": -32.2394,
+   "lon": -65.3646,
    "dbz": 51,
-   "max_dbz": 62,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.7828,
-   "lon": -64.3318,
-   "dbz": 50,
    "max_dbz": 56,
-   "tope_km": 15.8
+   "tope_km": 16.4
   },
   {
-   "lat": -32.2394,
-   "lon": -64.3318,
-   "dbz": 48,
-   "max_dbz": 51,
+   "lat": -32.1947,
+   "lon": -64.7513,
+   "dbz": 51,
+   "max_dbz": 55,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -31.9083,
+   "lon": -64.3641,
+   "dbz": 50,
+   "max_dbz": 54,
    "tope_km": 17.0
   },
   {
-   "lat": -32.2394,
-   "lon": -64.4286,
+   "lat": -32.0964,
+   "lon": -64.2672,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.2751,
-   "lon": -64.2565,
-   "dbz": 47,
-   "max_dbz": 51,
+   "max_dbz": 52,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Almafuerte": {
-   "km": 11.8,
-   "max_dbz": 51,
+  "El Corcovado el Torreon": {
+   "km": 25.8,
+   "max_dbz": 61,
    "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Embalse": {
-   "km": 3.8,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "nivel": "intensa"
-  },
-  "Dique Chico": {
-   "km": 4.8,
-   "max_dbz": 56,
-   "tope_km": 15.8,
+   "cuenca_de": "Rio Santa Rosa",
    "nivel": "muy intensa"
   },
-  "El Durazno": {
-   "km": 4.6,
-   "max_dbz": 60,
+  "Santa Mónica": {
+   "km": 15.1,
+   "max_dbz": 61,
    "tope_km": 17.0,
+   "cuenca_de": "Río Santa Rosa",
    "nivel": "muy intensa"
   },
-  "Despeñaderos": {
-   "km": 5.0,
-   "max_dbz": 56,
-   "tope_km": 15.8,
+  "Los Molinos": {
+   "km": 4.7,
+   "max_dbz": 54,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Los Molinos",
+   "nivel": "intensa"
+  },
+  "El Corcovado": {
+   "km": 25.3,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "muy intensa"
+  },
+  "Las Bajadas": {
+   "km": 9.6,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo Soconcho",
+   "nivel": "muy intensa"
+  },
+  "Villa Yacanto": {
+   "km": 3.3,
+   "max_dbz": 61,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
