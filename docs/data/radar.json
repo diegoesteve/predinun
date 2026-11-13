@@ -1,74 +1,109 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 06:00",
+ "consultado": "2026-11-13 06:15",
  "radar": "RMA1",
- "observacion": "2026-11-13 05:45",
+ "observacion": "2026-11-13 05:55",
  "nucleos": [
   {
-   "lat": -31.0528,
-   "lon": -64.9235,
-   "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 16.4
-  },
-  {
-   "lat": -30.6903,
+   "lat": -30.8355,
    "lon": -64.4178,
    "dbz": 52,
+   "max_dbz": 62,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -31.08,
+   "lon": -64.9235,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.8627,
+   "lon": -64.59,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -30.9352,
+   "lon": -63.8907,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.0528,
+   "lon": -64.0198,
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.7085,
+   "lon": -64.3856,
+   "dbz": 51,
    "max_dbz": 54,
    "tope_km": 13.5
   },
   {
-   "lat": -30.8355,
-   "lon": -63.9552,
-   "dbz": 51,
-   "max_dbz": 61,
-   "tope_km": 16.4
-  },
-  {
-   "lat": -30.8627,
-   "lon": -64.0951,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -30.7266,
-   "lon": -63.8369,
+   "lat": -30.7811,
+   "lon": -64.0305,
    "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 17.0
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa de Soto": {
-   "km": 22.6,
-   "max_dbz": 60,
-   "tope_km": 16.4,
+   "km": 25.6,
+   "max_dbz": 61,
+   "tope_km": 12.9,
    "cuenca_de": "Río Soto",
    "nivel": "muy intensa"
   },
-  "Cruz de Caña": {
-   "km": 2.8,
+  "San Marcos Sierras": {
+   "km": 10.1,
    "max_dbz": 60,
-   "tope_km": 16.4,
+   "tope_km": 14.1,
+   "cuenca_de": "Rio San Marcos Sierra",
+   "nivel": "muy intensa"
+  },
+  "Cañada de Rio Pinto": {
+   "km": 29.9,
+   "max_dbz": 54,
+   "tope_km": 13.5,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Cruz de Caña": {
+   "km": 2.9,
+   "max_dbz": 61,
+   "tope_km": 12.9,
    "nivel": "muy intensa"
   },
   "Bañado de Soto": {
-   "km": 27.9,
-   "max_dbz": 60,
-   "tope_km": 16.4,
+   "km": 30.8,
+   "max_dbz": 61,
+   "tope_km": 12.9,
    "cuenca_de": "San Guillermo De Soto",
    "nivel": "muy intensa"
   },
-  "Copacabana": {
-   "km": 10.6,
+  "Paraje San Pellegrino": {
+   "km": 12.5,
+   "max_dbz": 62,
+   "tope_km": 14.7,
+   "cuenca_de": "Río Pinto",
+   "nivel": "muy intensa"
+  },
+  "Ischilín Viejo": {
+   "km": 9.4,
    "max_dbz": 54,
    "tope_km": 13.5,
-   "cuenca_de": "Rio Copacabana",
+   "cuenca_de": "Arroyo Ojo de Agua",
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 21
 }
