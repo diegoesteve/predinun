@@ -1,40 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 03:30",
+ "consultado": "2026-11-13 03:45",
  "radar": "RMA1",
- "observacion": "2026-11-13 03:12",
+ "observacion": "2026-11-13 03:30",
  "nucleos": [
   {
-   "lat": -30.2078,
-   "lon": -64.278,
-   "dbz": 52,
+   "lat": -30.08,
+   "lon": -64.4609,
+   "dbz": 53,
    "max_dbz": 59,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -30.2534,
+   "lon": -64.2565,
+   "dbz": 52,
+   "max_dbz": 60,
    "tope_km": 14.7
   },
   {
-   "lat": -30.0343,
-   "lon": -64.4931,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 11.1
+   "lat": -30.5085,
+   "lon": -64.3856,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 13.5
   },
   {
-   "lat": -29.8879,
-   "lon": -64.4716,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 12.3
+   "lat": -30.554,
+   "lon": -64.4824,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San José de las Salinas": {
-   "km": 12.4,
-   "max_dbz": 55,
-   "tope_km": 11.1,
+  "Cañada de Rio Pinto": {
+   "km": 7.7,
+   "max_dbz": 51,
+   "tope_km": 13.5,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
+  },
+  "Jaime Peter": {
+   "km": 13.8,
+   "max_dbz": 50,
+   "tope_km": 13.5,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
