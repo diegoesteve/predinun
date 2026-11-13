@@ -1,99 +1,66 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 18:01",
+ "consultado": "2026-11-13 18:16",
  "radar": "RMA1",
- "observacion": "2026-11-13 17:39",
+ "observacion": "2026-11-13 18:06",
  "nucleos": [
   {
-   "lat": -32.159,
-   "lon": -64.2565,
+   "lat": -31.9979,
+   "lon": -64.0843,
    "dbz": 52,
    "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -32.3644,
-   "lon": -64.5685,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 14.7
+   "lat": -32.2394,
+   "lon": -64.6976,
+   "dbz": 51,
+   "max_dbz": 60,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.3198,
-   "lon": -63.7508,
+   "lat": -32.2751,
+   "lon": -64.3318,
    "dbz": 50,
    "max_dbz": 57,
    "tope_km": 17.0
   },
   {
-   "lat": -32.409,
-   "lon": -64.4824,
+   "lat": -32.0964,
+   "lon": -64.8374,
    "dbz": 49,
-   "max_dbz": 58,
-   "tope_km": 17.0
+   "max_dbz": 51,
+   "tope_km": 14.1
   },
   {
-   "lat": -32.4446,
-   "lon": -64.8804,
+   "lat": -32.2483,
+   "lon": -64.4824,
    "dbz": 48,
-   "max_dbz": 48,
+   "max_dbz": 52,
    "tope_km": 17.0
-  },
-  {
-   "lat": -32.4713,
-   "lon": -64.5577,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 15.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Cruz": {
-   "km": 6.9,
-   "max_dbz": 58,
+  "Villa Quillinzo": {
+   "km": 3.1,
+   "max_dbz": 52,
    "tope_km": 17.0,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "muy intensa"
-  },
-  "Almafuerte": {
-   "km": 4.2,
-   "max_dbz": 64,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Cañada del Sauce": {
-   "km": 23.4,
-   "max_dbz": 48,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
-  },
-  "Paso Cabral": {
-   "km": 1.8,
-   "max_dbz": 58,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
   },
   "Villa la Rivera": {
-   "km": 10.4,
-   "max_dbz": 57,
-   "tope_km": 14.7,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "muy intensa"
-  },
-  "Pueblo Escondido": {
-   "km": 2.3,
-   "max_dbz": 48,
+   "km": 4.3,
+   "max_dbz": 52,
    "tope_km": 17.0,
    "nivel": "intensa"
   },
-  "Las Caleras": {
-   "km": 4.2,
-   "max_dbz": 58,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
+  "El Durazno": {
+   "km": 8.2,
+   "max_dbz": 51,
+   "tope_km": 14.1,
+   "cuenca_de": "Arroyo Sombra de Toro",
+   "nivel": "intensa"
   }
  },
- "minutos": 23
+ "minutos": 10
 }
