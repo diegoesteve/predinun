@@ -1,133 +1,89 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 17:30",
+ "consultado": "2026-11-13 17:45",
  "radar": "RMA1",
- "observacion": "2026-11-13 17:12",
+ "observacion": "2026-11-13 17:30",
  "nucleos": [
   {
-   "lat": -32.2751,
-   "lon": -64.4609,
-   "dbz": 53,
-   "max_dbz": 68,
+   "lat": -32.2483,
+   "lon": -64.3963,
+   "dbz": 52,
+   "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -32.4268,
-   "lon": -64.5362,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 14.1
+   "lat": -32.3911,
+   "lon": -64.59,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 12.3
   },
   {
-   "lat": -32.7648,
-   "lon": -64.6653,
+   "lat": -32.3465,
+   "lon": -64.0628,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.6582,
+   "lon": -64.5254,
    "dbz": 50,
    "max_dbz": 55,
    "tope_km": 17.0
   },
   {
-   "lat": -32.5693,
-   "lon": -63.9122,
-   "dbz": 50,
-   "max_dbz": 57,
+   "lat": -32.3019,
+   "lon": -63.8046,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 17.0
   },
   {
    "lat": -32.4713,
-   "lon": -64.3963,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 15.8
-  },
-  {
-   "lat": -32.8447,
-   "lon": -64.7406,
-   "dbz": 49,
+   "lon": -64.6115,
+   "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 17.0
+   "tope_km": 12.9
   },
   {
-   "lat": -32.6404,
-   "lon": -63.9445,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.6849,
-   "lon": -64.8051,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -32.2662,
-   "lon": -63.9875,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.6493,
-   "lon": -63.8154,
-   "dbz": 47,
+   "lat": -32.7382,
+   "lon": -64.5147,
+   "dbz": 48,
    "max_dbz": 48,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.4179,
+   "lon": -63.7939,
+   "dbz": 48,
+   "max_dbz": 52,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "La Cruz": {
-   "km": 3.6,
-   "max_dbz": 68,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Alpa Corral": {
-   "km": 6.8,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "cuenca_de": "Rio Barrancas",
+   "km": 18.2,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "intensa"
   },
   "Paso Cabral": {
-   "km": 3.6,
-   "max_dbz": 54,
-   "tope_km": 14.1,
+   "km": 12.2,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "intensa"
   },
-  "Paso del Río Seco": {
-   "km": 27.2,
-   "max_dbz": 49,
+  "Villa la Rivera": {
+   "km": 13.9,
+   "max_dbz": 57,
    "tope_km": 12.3,
-   "cuenca_de": "Río de las Barrancas",
-   "nivel": "intensa"
-  },
-  "Santa Rita": {
-   "km": 22.3,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
-  },
-  "Unión de los Rios": {
-   "km": 4.6,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "nivel": "intensa"
-  },
-  "Berrotaran": {
-   "km": 3.0,
-   "max_dbz": 56,
-   "tope_km": 15.8,
-   "nivel": "muy intensa"
-  },
-  "Las Caleras": {
-   "km": 4.3,
-   "max_dbz": 54,
-   "tope_km": 14.1,
-   "nivel": "intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
