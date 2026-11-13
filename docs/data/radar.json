@@ -1,18 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 03:15",
+ "consultado": "2026-11-13 03:30",
  "radar": "RMA1",
- "observacion": "2026-11-13 03:03",
+ "observacion": "2026-11-13 03:12",
  "nucleos": [
   {
-   "lat": -30.1713,
+   "lat": -30.2078,
    "lon": -64.278,
-   "dbz": 51,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -30.0343,
+   "lon": -64.4931,
+   "dbz": 50,
    "max_dbz": 55,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -29.8879,
+   "lon": -64.4716,
+   "dbz": 49,
+   "max_dbz": 51,
    "tope_km": 12.3
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 12
+ "localidades": {
+  "San José de las Salinas": {
+   "km": 12.4,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 18
 }
