@@ -1,80 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 05:15",
+ "consultado": "2026-11-13 05:30",
  "radar": "RMA1",
- "observacion": "2026-11-13 05:00",
+ "observacion": "2026-11-13 05:09",
  "nucleos": [
   {
-   "lat": -30.7357,
-   "lon": -64.3748,
+   "lat": -31.0257,
+   "lon": -65.3,
    "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -30.8627,
-   "lon": -64.7944,
-   "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.0076,
-   "lon": -65.257,
-   "dbz": 51,
-   "max_dbz": 58,
+   "max_dbz": 64,
    "tope_km": 14.7
   },
   {
    "lat": -30.6721,
-   "lon": -64.0951,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 14.7
+   "lon": -64.0521,
+   "dbz": 52,
+   "max_dbz": 62,
+   "tope_km": 17.0
   },
   {
-   "lat": -30.3811,
-   "lon": -64.5362,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 13.5
+   "lat": -30.8989,
+   "lon": -64.8051,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -30.7357,
+   "lon": -64.3748,
+   "dbz": 51,
+   "max_dbz": 61,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -30.3264,
+   "lon": -64.4931,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 14.1
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa del Totoral": {
-   "km": 25.2,
-   "max_dbz": 61,
+   "km": 4.0,
+   "max_dbz": 62,
    "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
   "Santa Ana": {
-   "km": 20.8,
-   "max_dbz": 58,
+   "km": 24.3,
+   "max_dbz": 64,
    "tope_km": 14.7,
    "cuenca_de": "Arroyo Agua Blanca",
    "nivel": "muy intensa"
   },
   "Piedras Amontonadas": {
-   "km": 14.4,
-   "max_dbz": 58,
+   "km": 17.9,
+   "max_dbz": 64,
    "tope_km": 14.7,
    "cuenca_de": "Río Seco",
    "nivel": "muy intensa"
   },
-  "Jaime Peter": {
-   "km": 4.1,
-   "max_dbz": 53,
-   "tope_km": 13.5,
-   "nivel": "intensa"
-  },
   "Cienaga del Coro": {
-   "km": 4.2,
-   "max_dbz": 58,
+   "km": 2.2,
+   "max_dbz": 64,
    "tope_km": 14.7,
    "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 21
 }
