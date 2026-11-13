@@ -1,46 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 15:01",
+ "consultado": "2026-11-13 15:15",
  "radar": "RMA1",
- "observacion": "2026-11-13 14:47",
+ "observacion": "2026-11-13 14:56",
  "nucleos": [
   {
    "lat": -33.2872,
-   "lon": -65.2139,
+   "lon": -65.0418,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -33.2342,
+   "lon": -64.7191,
    "dbz": 52,
    "max_dbz": 60,
    "tope_km": 17.0
   },
   {
-   "lat": -33.2254,
-   "lon": -64.7621,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 17.0
+   "lat": -33.534,
+   "lon": -64.1166,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 14.1
   },
   {
-   "lat": -33.5428,
-   "lon": -64.1596,
-   "dbz": 49,
-   "max_dbz": 51,
+   "lat": -33.534,
+   "lon": -63.9445,
+   "dbz": 47,
+   "max_dbz": 47,
    "tope_km": 17.0
-  },
-  {
-   "lat": -33.3931,
-   "lon": -65.1279,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
   "La Carolina el Potosí": {
-   "km": 3.4,
-   "max_dbz": 55,
+   "km": 3.9,
+   "max_dbz": 60,
    "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 19
 }
