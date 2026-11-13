@@ -1,106 +1,87 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 04:15",
+ "consultado": "2026-11-13 04:30",
  "radar": "RMA1",
- "observacion": "2026-11-13 04:06",
+ "observacion": "2026-11-13 04:15",
  "nucleos": [
   {
-   "lat": -30.5358,
-   "lon": -64.3318,
+   "lat": -30.5449,
+   "lon": -64.2672,
    "dbz": 53,
-   "max_dbz": 59,
+   "max_dbz": 62,
    "tope_km": 13.5
   },
   {
-   "lat": -30.217,
-   "lon": -64.4609,
+   "lat": -30.2078,
+   "lon": -64.4286,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -30.6358,
+   "lon": -64.3963,
    "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 12.3
+   "max_dbz": 56,
+   "tope_km": 15.2
   },
   {
-   "lat": -30.2352,
-   "lon": -64.3425,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -30.6267,
-   "lon": -64.3856,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -30.3628,
+   "lat": -30.3264,
    "lon": -64.2887,
    "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 12.9
+   "max_dbz": 59,
+   "tope_km": 17.0
   },
   {
-   "lat": -30.7085,
-   "lon": -64.5147,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -30.299,
-   "lon": -64.2027,
+   "lat": -30.372,
+   "lon": -64.4071,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 14.1
+   "max_dbz": 48,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Marcos Sierras": {
-   "km": 13.7,
-   "max_dbz": 55,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Marcos Sierra",
-   "nivel": "muy intensa"
-  },
   "Cañada de Rio Pinto": {
-   "km": 10.9,
-   "max_dbz": 59,
-   "tope_km": 13.5,
+   "km": 21.9,
+   "max_dbz": 56,
+   "tope_km": 15.2,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
   "Quilino": {
-   "km": 3.9,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
-  },
-  "Villa Quilino": {
-   "km": 0.4,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
-  },
-  "La Isabela": {
-   "km": 3.6,
-   "max_dbz": 57,
-   "tope_km": 12.9,
-   "nivel": "muy intensa"
-  },
-  "Charbonier": {
-   "km": 8.1,
-   "max_dbz": 55,
-   "tope_km": 11.7,
+   "km": 21.7,
+   "max_dbz": 59,
+   "tope_km": 17.0,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
+  "Villa Quilino": {
+   "km": 3.0,
+   "max_dbz": 61,
+   "tope_km": 15.2,
+   "cuenca_de": "Arroyo Las Chacras",
+   "nivel": "muy intensa"
+  },
+  "La Isabela": {
+   "km": 1.5,
+   "max_dbz": 59,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
   "Ischilín Viejo": {
-   "km": 0.6,
-   "max_dbz": 55,
-   "tope_km": 12.9,
+   "km": 1.5,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "cuenca_de": "Arroyo Ojo de Agua",
+   "nivel": "muy intensa"
+  },
+  "Los Pozos": {
+   "km": 3.0,
+   "max_dbz": 62,
+   "tope_km": 13.5,
    "nivel": "muy intensa"
   }
  },
- "minutos": 9
+ "minutos": 15
 }
