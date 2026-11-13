@@ -1,52 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 07:01",
+ "consultado": "2026-11-13 07:15",
  "radar": "RMA1",
- "observacion": "2026-11-13 06:49",
+ "observacion": "2026-11-13 06:58",
  "nucleos": [
   {
-   "lat": -30.9623,
-   "lon": -64.4931,
-   "dbz": 53,
-   "max_dbz": 64,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -30.9714,
-   "lon": -64.5685,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 14.7
+   "lat": -30.9895,
+   "lon": -64.4609,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Marcos Sierras": {
-   "km": 24.3,
-   "max_dbz": 64,
-   "tope_km": 14.7,
-   "cuenca_de": "Rio San Marcos Sierra",
+  "Villa Giardino": {
+   "km": 4.5,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "cuenca_de": "Arroyo El Pongo",
    "nivel": "muy intensa"
   },
-  "Capilla del Monte": {
-   "km": 11.7,
-   "max_dbz": 64,
-   "tope_km": 14.7,
-   "cuenca_de": "Río Dolores",
+  "Santa María de Punilla": {
+   "km": 30.3,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "muy intensa"
+  },
+  "Casa Grande": {
+   "km": 20.2,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "cuenca_de": "Rio Grande De Punilla",
+   "nivel": "muy intensa"
+  },
+  "San Roque": {
+   "km": 38.5,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "cuenca_de": "Lago San Roque",
    "nivel": "muy intensa"
   },
   "La Cumbre": {
-   "km": 1.0,
-   "max_dbz": 64,
-   "tope_km": 14.7,
-   "nivel": "muy intensa"
-  },
-  "Los Cocos": {
    "km": 3.6,
-   "max_dbz": 64,
-   "tope_km": 14.7,
+   "max_dbz": 59,
+   "tope_km": 12.3,
    "nivel": "muy intensa"
   }
  },
- "minutos": 12
+ "minutos": 18
 }
