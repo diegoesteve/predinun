@@ -1,95 +1,74 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 17:01",
+ "consultado": "2026-11-13 17:15",
  "radar": "RMA1",
- "observacion": "2026-11-13 16:44",
+ "observacion": "2026-11-13 17:02",
  "nucleos": [
   {
-   "lat": -32.96,
-   "lon": -63.7831,
-   "dbz": 53,
-   "max_dbz": 65,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.3555,
-   "lon": -64.5577,
-   "dbz": 53,
-   "max_dbz": 62,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.2394,
-   "lon": -64.3963,
-   "dbz": 52,
-   "max_dbz": 64,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.507,
-   "lon": -64.3533,
-   "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.7648,
-   "lon": -64.2565,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 17.0
-  },
-  {
    "lat": -32.7826,
-   "lon": -64.8697,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.6938,
-   "lon": -64.2242,
-   "dbz": 50,
-   "max_dbz": 57,
+   "lon": -63.7078,
+   "dbz": 52,
+   "max_dbz": 63,
    "tope_km": 17.0
   },
   {
-   "lat": -32.8447,
-   "lon": -64.0628,
-   "dbz": 50,
-   "max_dbz": 58,
+   "lat": -32.159,
+   "lon": -64.1059,
+   "dbz": 52,
+   "max_dbz": 63,
    "tope_km": 17.0
   },
   {
-   "lat": -33.0839,
-   "lon": -63.7724,
+   "lat": -32.6138,
+   "lon": -64.1274,
+   "dbz": 50,
+   "max_dbz": 59,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.4713,
+   "lon": -64.4609,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -32.827,
+   "lon": -64.7729,
    "dbz": 48,
-   "max_dbz": 50,
+   "max_dbz": 52,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.8979,
+   "lon": -63.7939,
+   "dbz": 48,
+   "max_dbz": 52,
    "tope_km": 17.0
+  },
+  {
+   "lat": -32.7471,
+   "lon": -64.7191,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 14.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Embalse": {
-   "km": 4.3,
-   "max_dbz": 64,
+  "Rio Tercero": {
+   "km": 2.1,
+   "max_dbz": 63,
    "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Villa la Rivera": {
-   "km": 9.1,
-   "max_dbz": 62,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
   "Santa Rita": {
-   "km": 36.7,
-   "max_dbz": 56,
-   "tope_km": 11.1,
+   "km": 26.4,
+   "max_dbz": 52,
+   "tope_km": 14.7,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 13
 }
