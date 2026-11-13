@@ -1,93 +1,85 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 16:15",
+ "consultado": "2026-11-13 16:30",
  "radar": "RMA1",
- "observacion": "2026-11-13 15:59",
+ "observacion": "2026-11-13 16:17",
  "nucleos": [
   {
-   "lat": -33.3754,
-   "lon": -64.2457,
-   "dbz": 52,
-   "max_dbz": 56,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.9777,
-   "lon": -64.59,
-   "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.2037,
+   "lat": -32.2573,
    "lon": -64.5362,
-   "dbz": 51,
-   "max_dbz": 56,
+   "dbz": 54,
+   "max_dbz": 64,
    "tope_km": 17.0
+  },
+  {
+   "lat": -32.8979,
+   "lon": -64.4824,
+   "dbz": 52,
+   "max_dbz": 63,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -33.1724,
+   "lon": -63.8261,
+   "dbz": 52,
+   "max_dbz": 62,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.3822,
+   "lon": -64.6868,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -32.3911,
+   "lon": -64.5685,
+   "dbz": 49,
+   "max_dbz": 57,
+   "tope_km": 16.4
   },
   {
    "lat": -33.2607,
-   "lon": -63.7831,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -33.0839,
-   "lon": -65.1494,
-   "dbz": 49,
-   "max_dbz": 50,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -33.2077,
-   "lon": -64.3318,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -33.1105,
-   "lon": -64.6007,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -33.2519,
-   "lon": -64.4716,
+   "lon": -64.0951,
    "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 17.0
+   "tope_km": 14.1
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Quillinzo": {
+   "km": 2.9,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 4.0,
+   "max_dbz": 60,
+   "tope_km": 15.2,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 1.7,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Santa Rita": {
+   "km": 3.7,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Las Caleras": {
    "km": 4.5,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Amboy": {
-   "km": 4.4,
-   "max_dbz": 56,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Santa Catalina": {
-   "km": 28.1,
-   "max_dbz": 61,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "muy intensa"
-  },
-  "Villa Amancay": {
-   "km": 3.3,
-   "max_dbz": 56,
-   "tope_km": 17.0,
+   "max_dbz": 57,
+   "tope_km": 16.4,
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
