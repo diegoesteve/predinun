@@ -1,235 +1,220 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 19:15",
+ "consultado": "2026-11-13 19:30",
  "radar": "RMA1",
- "observacion": "2026-11-13 19:00",
+ "observacion": "2026-11-13 19:18",
  "nucleos": [
   {
-   "lat": -32.1053,
-   "lon": -64.8159,
-   "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.657,
-   "lon": -64.1489,
-   "dbz": 52,
-   "max_dbz": 64,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.9621,
-   "lon": -64.5577,
+   "lat": -31.9083,
+   "lon": -64.8589,
    "dbz": 51,
-   "max_dbz": 57,
+   "max_dbz": 62,
    "tope_km": 17.0
   },
   {
-   "lat": -31.8994,
-   "lon": -64.8267,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.5761,
-   "lon": -64.1704,
-   "dbz": 51,
-   "max_dbz": 61,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.989,
-   "lon": -64.4394,
+   "lat": -31.432,
+   "lon": -64.1059,
    "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 17.0
+   "max_dbz": 60,
+   "tope_km": 12.9
   },
   {
-   "lat": -31.8904,
-   "lon": -64.945,
-   "dbz": 49,
-   "max_dbz": 53,
+   "lat": -31.9711,
+   "lon": -65.2247,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 14.7
   },
   {
-   "lat": -32.1858,
-   "lon": -65.3753,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.9352,
+   "lat": -31.666,
    "lon": -64.2887,
-   "dbz": 48,
-   "max_dbz": 51,
+   "dbz": 50,
+   "max_dbz": 58,
    "tope_km": 17.0
   },
   {
-   "lat": -31.7379,
-   "lon": -64.4716,
+   "lat": -31.3509,
+   "lon": -64.1059,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -31.3329,
+   "lon": -64.1812,
+   "dbz": 49,
+   "max_dbz": 57,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.3599,
+   "lon": -64.2565,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.7019,
+   "lon": -64.4501,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.989,
+   "lon": -64.7836,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.8635,
+   "lon": -65.2355,
    "dbz": 48,
-   "max_dbz": 51,
+   "max_dbz": 50,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -31.9532,
+   "lon": -64.235,
+   "dbz": 48,
+   "max_dbz": 50,
    "tope_km": 17.0
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "Capital": {
+   "nucleos": 3,
+   "max_dbz": 60
+  }
+ },
  "localidades": {
-  "Santa Rosa de Calamuchita": {
-   "km": 8.8,
+  "Cordoba": {
+   "km": 2.1,
    "max_dbz": 57,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo El Sauce",
-   "nivel": "muy intensa"
-  },
-  "Villa General Belgrano": {
-   "km": 1.9,
-   "max_dbz": 57,
-   "tope_km": 17.0,
+   "tope_km": 12.3,
+   "cuenca_de": "Canal",
    "nivel": "muy intensa"
   },
   "Los Reartes": {
-   "km": 23.7,
-   "max_dbz": 57,
+   "km": 26.6,
+   "max_dbz": 62,
    "tope_km": 17.0,
    "cuenca_de": "Rio De Los Reartes",
    "nivel": "muy intensa"
   },
-  "Villa Dolores": {
-   "km": 18.8,
-   "max_dbz": 53,
-   "tope_km": 14.7,
-   "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "intensa"
-  },
-  "San Agustin": {
-   "km": 6.9,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo San Agustin",
-   "nivel": "muy intensa"
-  },
   "Anisacate": {
-   "km": 5.4,
-   "max_dbz": 51,
+   "km": 3.7,
+   "max_dbz": 56,
    "tope_km": 17.0,
    "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "El Corcovado el Torreon": {
-   "km": 22.2,
-   "max_dbz": 57,
+   "km": 31.7,
+   "max_dbz": 55,
    "tope_km": 17.0,
    "cuenca_de": "Rio Santa Rosa",
    "nivel": "muy intensa"
   },
   "Villa los Aromos": {
-   "km": 2.6,
-   "max_dbz": 51,
+   "km": 4.1,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
-  "Las Rabonas": {
-   "km": 3.1,
-   "max_dbz": 53,
-   "tope_km": 14.7,
-   "cuenca_de": "Las Rabonas",
-   "nivel": "intensa"
+  "Santa Mónica": {
+   "km": 16.5,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "cuenca_de": "Río Santa Rosa",
+   "nivel": "muy intensa"
   },
   "La Serranita": {
-   "km": 1.5,
-   "max_dbz": 51,
+   "km": 3.3,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "Los Molinos": {
-   "km": 14.8,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Los Molinos",
    "nivel": "muy intensa"
   },
   "Intiyaco": {
-   "km": 12.2,
-   "max_dbz": 57,
+   "km": 14.4,
+   "max_dbz": 62,
    "tope_km": 17.0,
    "cuenca_de": "Río de los Reartes",
    "nivel": "muy intensa"
   },
   "El Corcovado": {
-   "km": 19.4,
-   "max_dbz": 57,
+   "km": 30.3,
+   "max_dbz": 55,
    "tope_km": 17.0,
    "cuenca_de": "Rio Santa Rosa",
    "nivel": "muy intensa"
   },
-  "El Durazno": {
-   "km": 6.3,
-   "max_dbz": 60,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo Sombra de Toro",
-   "nivel": "muy intensa"
-  },
-  "Parque Calmayo": {
-   "km": 4.8,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
   "Capilla Vieja": {
-   "km": 21.3,
-   "max_dbz": 57,
+   "km": 24.2,
+   "max_dbz": 62,
    "tope_km": 17.0,
    "cuenca_de": "Rio De Los Reartes",
    "nivel": "muy intensa"
   },
   "La Paisanita": {
-   "km": 2.1,
-   "max_dbz": 51,
+   "km": 3.9,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
-  "Villa la Rancherita": {
-   "km": 2.3,
-   "max_dbz": 51,
+  "San Miguel de los Ríos": {
+   "km": 3.9,
+   "max_dbz": 55,
    "tope_km": 17.0,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "La Boca del Río": {
-   "km": 39.5,
-   "max_dbz": 57,
+   "km": 42.7,
+   "max_dbz": 62,
    "tope_km": 17.0,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 31.9,
-   "max_dbz": 57,
+   "km": 35.1,
+   "max_dbz": 62,
    "tope_km": 17.0,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
-  "Los Hornillos": {
-   "km": 4.2,
-   "max_dbz": 53,
-   "tope_km": 14.7,
-   "nivel": "intensa"
+  "El Gateado": {
+   "km": 8.0,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
   },
-  "Dos Arroyos": {
-   "km": 3.4,
-   "max_dbz": 53,
+  "Los Cajones": {
+   "km": 16.4,
+   "max_dbz": 56,
    "tope_km": 14.7,
-   "nivel": "intensa"
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
   },
-  "El Pantanillo": {
-   "km": 4.3,
-   "max_dbz": 53,
+  "Los Callejones": {
+   "km": 4.4,
+   "max_dbz": 56,
    "tope_km": 14.7,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "Parque Norte": {
+   "km": 3.8,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "nivel": "muy intensa"
+  },
+  "Rafael Garcia": {
+   "km": 3.7,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
