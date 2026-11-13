@@ -1,18 +1,52 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 06:45",
+ "consultado": "2026-11-13 07:01",
  "radar": "RMA1",
- "observacion": "2026-11-13 06:31",
+ "observacion": "2026-11-13 06:49",
  "nucleos": [
   {
-   "lat": -30.9533,
-   "lon": -64.59,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 13.5
+   "lat": -30.9623,
+   "lon": -64.4931,
+   "dbz": 53,
+   "max_dbz": 64,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -30.9714,
+   "lon": -64.5685,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 14.7
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 15
+ "localidades": {
+  "San Marcos Sierras": {
+   "km": 24.3,
+   "max_dbz": 64,
+   "tope_km": 14.7,
+   "cuenca_de": "Rio San Marcos Sierra",
+   "nivel": "muy intensa"
+  },
+  "Capilla del Monte": {
+   "km": 11.7,
+   "max_dbz": 64,
+   "tope_km": 14.7,
+   "cuenca_de": "Río Dolores",
+   "nivel": "muy intensa"
+  },
+  "La Cumbre": {
+   "km": 1.0,
+   "max_dbz": 64,
+   "tope_km": 14.7,
+   "nivel": "muy intensa"
+  },
+  "Los Cocos": {
+   "km": 3.6,
+   "max_dbz": 64,
+   "tope_km": 14.7,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 12
 }
