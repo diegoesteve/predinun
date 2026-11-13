@@ -1,18 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 14:15",
- "radar": "RMA1",
- "observacion": "2026-11-13 13:44",
+ "consultado": "2026-11-13 14:30",
+ "radar": "RMA17",
+ "observacion": "2026-11-13 14:16",
  "nucleos": [
   {
-   "lat": -33.4636,
-   "lon": -64.3533,
-   "dbz": 48,
-   "max_dbz": 49,
+   "lat": -33.153,
+   "lon": -64.6709,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -33.405,
+   "lon": -65.3964,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 31
+ "localidades": {
+  "Santa Catalina": {
+   "km": 22.8,
+   "max_dbz": 57,
+   "tope_km": 15.2,
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 14
 }
