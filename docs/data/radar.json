@@ -1,46 +1,65 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-13 15:15",
+ "consultado": "2026-11-13 15:30",
  "radar": "RMA1",
- "observacion": "2026-11-13 14:56",
+ "observacion": "2026-11-13 15:05",
  "nucleos": [
   {
-   "lat": -33.2872,
-   "lon": -65.0418,
+   "lat": -33.2607,
+   "lon": -64.988,
    "dbz": 52,
    "max_dbz": 61,
    "tope_km": 17.0
   },
   {
-   "lat": -33.2342,
-   "lon": -64.7191,
+   "lat": -33.2607,
+   "lon": -64.6545,
    "dbz": 52,
    "max_dbz": 60,
    "tope_km": 17.0
   },
   {
-   "lat": -33.534,
-   "lon": -64.1166,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 14.1
+   "lat": -33.5252,
+   "lon": -63.9445,
+   "dbz": 52,
+   "max_dbz": 62,
+   "tope_km": 17.0
   },
   {
-   "lat": -33.534,
-   "lon": -63.9445,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 17.0
+   "lat": -31.8097,
+   "lon": -64.5254,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Carolina el Potosí": {
-   "km": 3.9,
-   "max_dbz": 60,
-   "tope_km": 17.0,
+  "Potrero de Garay": {
+   "km": 2.9,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "La Boca del Río": {
+   "km": 11.2,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa la Merced": {
+   "km": 2.1,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Villa Ciudad de America": {
+   "km": 2.2,
+   "max_dbz": 56,
+   "tope_km": 11.7,
    "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 25
 }
