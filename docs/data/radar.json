@@ -1,18 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-14 03:45",
+ "consultado": "2026-11-14 04:00",
  "radar": "RMA1",
- "observacion": "2026-11-14 03:20",
+ "observacion": "2026-11-14 03:48",
  "nucleos": [
   {
-   "lat": -31.1704,
-   "lon": -65.4399,
-   "dbz": 51,
-   "max_dbz": 56,
+   "lat": -31.08,
+   "lon": -65.3861,
+   "dbz": 50,
+   "max_dbz": 53,
    "tope_km": 13.5
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 25
+ "localidades": {
+  "Guasapampa": {
+   "km": 3.7,
+   "max_dbz": 53,
+   "tope_km": 13.5,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 13
 }
