@@ -1,10 +1,10 @@
 {
- "actualizado": "2026-11-13 21:15",
- "boletin_generado": "2026-11-13 16:00",
+ "actualizado": "2026-11-13 21:30",
+ "boletin_generado": "2026-11-13 21:00",
  "zonas": [
   {
    "zona": "Córdoba / La Calera",
-   "estado": "rojo"
+   "estado": "naranja"
   },
   {
    "zona": "Punilla norte",
@@ -12,7 +12,7 @@
   },
   {
    "zona": "Punilla sur / San Antonio",
-   "estado": "normal"
+   "estado": "amarillo"
   },
   {
    "zona": "Sierras Chicas",
@@ -36,8 +36,8 @@
    "zona_estaciones": "Punilla norte",
    "nivel": "naranja",
    "estaciones": "naranja",
-   "pronostico": "naranja",
-   "motivo": "estaciones: naranja; pronóstico 48 h: naranja",
+   "pronostico": "amarillo",
+   "motivo": "estaciones: naranja; pronóstico 48 h: amarillo",
    "suelo": "normal"
   },
   {
@@ -45,19 +45,19 @@
    "nombre": "San Antonio / Carlos Paz",
    "zona_estaciones": "Punilla sur / San Antonio",
    "nivel": "naranja",
-   "estaciones": "verde",
+   "estaciones": "amarillo",
    "pronostico": "naranja",
-   "motivo": "pronóstico 48 h: naranja",
+   "motivo": "estaciones: amarillo; pronóstico 48 h: naranja",
    "suelo": "normal"
   },
   {
    "cuenca": "Capital",
    "nombre": "Capital (experimental)",
    "zona_estaciones": "Córdoba / La Calera",
-   "nivel": "rojo",
-   "estaciones": "rojo",
+   "nivel": "naranja",
+   "estaciones": "naranja",
    "pronostico": "naranja",
-   "motivo": "estaciones: rojo; pronóstico 48 h: naranja",
+   "motivo": "estaciones: naranja; pronóstico 48 h: naranja",
    "suelo": "normal"
   }
  ],
