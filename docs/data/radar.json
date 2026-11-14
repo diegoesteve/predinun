@@ -1,79 +1,39 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-14 02:30",
+ "consultado": "2026-11-14 02:45",
  "radar": "RMA1",
- "observacion": "2026-11-14 02:17",
+ "observacion": "2026-11-14 02:26",
  "nucleos": [
   {
-   "lat": -30.9804,
-   "lon": -64.3103,
-   "dbz": 50,
-   "max_dbz": 52,
-   "tope_km": 15.8
-  },
-  {
-   "lat": -31.0438,
-   "lon": -65.0633,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 16.4
-  },
-  {
-   "lat": -31.3599,
-   "lon": -65.1924,
+   "lat": -31.3148,
+   "lon": -65.1386,
    "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 15.2
+   "max_dbz": 53,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -31.2426,
+   "lon": -65.0741,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Ascochinga": {
-   "km": 3.6,
-   "max_dbz": 52,
-   "tope_km": 15.8,
-   "nivel": "intensa"
-  },
   "San Carlos Minas": {
-   "km": 20.0,
-   "max_dbz": 52,
-   "tope_km": 15.2,
+   "km": 13.7,
+   "max_dbz": 53,
+   "tope_km": 14.7,
    "cuenca_de": "Jaime",
    "nivel": "intensa"
   },
   "Salsacate": {
-   "km": 10.6,
-   "max_dbz": 52,
-   "tope_km": 15.2,
-   "cuenca_de": "Arroyo Salsacate",
-   "nivel": "intensa"
-  },
-  "Jesús María": {
-   "km": 16.6,
-   "max_dbz": 52,
-   "tope_km": 15.8,
-   "cuenca_de": "Jesus Maria",
-   "nivel": "intensa"
-  },
-  "La Paz": {
-   "km": 9.0,
-   "max_dbz": 52,
-   "tope_km": 15.8,
-   "cuenca_de": "Río Ascochinga",
-   "nivel": "intensa"
-  },
-  "La Higuera": {
-   "km": 4.6,
-   "max_dbz": 52,
-   "tope_km": 16.4,
-   "nivel": "intensa"
-  },
-  "Agua de Crespin": {
-   "km": 2.9,
-   "max_dbz": 52,
-   "tope_km": 16.4,
+   "km": 4.8,
+   "max_dbz": 53,
+   "tope_km": 14.7,
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 19
 }
