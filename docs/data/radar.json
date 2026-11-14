@@ -1,201 +1,178 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-14 01:45",
+ "consultado": "2026-11-14 02:00",
  "radar": "RMA1",
- "observacion": "2026-11-14 01:31",
+ "observacion": "2026-11-14 01:40",
  "nucleos": [
   {
-   "lat": -31.0257,
-   "lon": -65.3753,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.1161,
-   "lon": -65.0203,
-   "dbz": 50,
-   "max_dbz": 57,
+   "lat": -31.387,
+   "lon": -64.676,
+   "dbz": 53,
+   "max_dbz": 60,
    "tope_km": 14.7
   },
   {
-   "lat": -31.432,
-   "lon": -64.6976,
-   "dbz": 50,
-   "max_dbz": 59,
+   "lat": -31.1613,
+   "lon": -64.9235,
+   "dbz": 51,
+   "max_dbz": 56,
    "tope_km": 15.2
   },
   {
-   "lat": -30.9895,
-   "lon": -64.3533,
+   "lat": -31.666,
+   "lon": -65.569,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -31.675,
+   "lon": -65.4614,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 15.8
+  },
+  {
+   "lat": -30.1074,
+   "lon": -64.6653,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -29.9062,
+   "lon": -64.6007,
    "dbz": 50,
    "max_dbz": 54,
    "tope_km": 14.7
   },
   {
-   "lat": -31.0528,
-   "lon": -64.2672,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -30.917,
-   "lon": -64.5577,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.414,
-   "lon": -63.8261,
+   "lat": -30.8173,
+   "lon": -64.4931,
    "dbz": 49,
    "max_dbz": 54,
    "tope_km": 14.1
   },
   {
-   "lat": -31.4951,
-   "lon": -65.1171,
+   "lat": -31.0076,
+   "lon": -64.2457,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -29.8788,
+   "lon": -63.7293,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.2426,
+   "lon": -65.3968,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -31.441,
+   "lon": -65.0848,
    "dbz": 48,
    "max_dbz": 51,
    "tope_km": 14.7
-  },
-  {
-   "lat": -30.3082,
-   "lon": -64.3533,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -29.952,
-   "lon": -63.8584,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 14.1
   }
  ],
- "cuencas": {
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 59
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 19.4,
-   "max_dbz": 59,
-   "tope_km": 15.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 11.6,
-   "max_dbz": 59,
-   "tope_km": 15.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
   "La Granja": {
-   "km": 4.1,
-   "max_dbz": 59,
-   "tope_km": 14.7,
+   "km": 3.5,
+   "max_dbz": 52,
+   "tope_km": 14.1,
+   "nivel": "intensa"
+  },
+  "Villa de Soto": {
+   "km": 34.5,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "cuenca_de": "Río Soto",
    "nivel": "muy intensa"
   },
   "San Carlos Minas": {
-   "km": 33.5,
+   "km": 27.6,
    "max_dbz": 51,
    "tope_km": 14.7,
    "cuenca_de": "Jaime",
    "nivel": "intensa"
   },
   "San Marcos Sierras": {
-   "km": 16.8,
+   "km": 13.9,
    "max_dbz": 54,
-   "tope_km": 14.7,
+   "tope_km": 14.1,
    "cuenca_de": "Rio San Marcos Sierra",
    "nivel": "intensa"
   },
   "Salsacate": {
-   "km": 19.1,
+   "km": 12.9,
    "max_dbz": 51,
    "tope_km": 14.7,
    "cuenca_de": "Arroyo Salsacate",
    "nivel": "intensa"
   },
-  "Agua de Oro": {
-   "km": 2.8,
-   "max_dbz": 59,
+  "Cabalango": {
+   "km": 10.1,
+   "max_dbz": 60,
    "tope_km": 14.7,
+   "cuenca_de": "Río Los Chorrillos",
    "nivel": "muy intensa"
   },
-  "Capilla del Monte": {
-   "km": 5.7,
-   "max_dbz": 54,
-   "tope_km": 14.7,
-   "cuenca_de": "Río Dolores",
-   "nivel": "intensa"
+  "Cruz de Caña": {
+   "km": 9.2,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "cuenca_de": "Río San Guillermo",
+   "nivel": "muy intensa"
+  },
+  "Bañado de Soto": {
+   "km": 39.4,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "cuenca_de": "San Guillermo De Soto",
+   "nivel": "muy intensa"
   },
   "Los Molles": {
-   "km": 3.4,
-   "max_dbz": 59,
-   "tope_km": 14.7,
-   "cuenca_de": "Río San Cristóbal",
-   "nivel": "muy intensa"
+   "km": 3.1,
+   "max_dbz": 52,
+   "tope_km": 14.1,
+   "cuenca_de": "Río La Granja",
+   "nivel": "intensa"
   },
   "Colonia Caroya": {
-   "km": 15.5,
-   "max_dbz": 59,
-   "tope_km": 14.7,
-   "cuenca_de": "Río Carnero",
-   "nivel": "muy intensa"
-  },
-  "Villa Quilino": {
-   "km": 14.6,
-   "max_dbz": 51,
+   "km": 14.1,
+   "max_dbz": 52,
    "tope_km": 14.1,
-   "cuenca_de": "Arroyo Las Chacras",
+   "cuenca_de": "Río Carnero",
    "nivel": "intensa"
   },
-  "Mayu Sumaj": {
-   "km": 14.6,
-   "max_dbz": 59,
-   "tope_km": 15.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Tala Huasi": {
-   "km": 13.0,
-   "max_dbz": 59,
-   "tope_km": 15.2,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "San Esteban": {
-   "km": 2.6,
+  "Santa Isabel": {
+   "km": 3.0,
    "max_dbz": 54,
+   "tope_km": 14.1,
+   "cuenca_de": "Arroyo Los Terrones",
+   "nivel": "intensa"
+  },
+  "Estancia Vieja": {
+   "km": 13.4,
+   "max_dbz": 60,
    "tope_km": 14.7,
-   "nivel": "intensa"
+   "cuenca_de": "Rio Los Chorrillos",
+   "nivel": "muy intensa"
   },
-  "La Playa": {
-   "km": 1.8,
-   "max_dbz": 53,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Guasapampa",
-   "nivel": "intensa"
-  },
-  "Alto Grande": {
-   "km": 2.2,
+  "Mussi": {
+   "km": 2.3,
    "max_dbz": 51,
    "tope_km": 14.7,
    "nivel": "intensa"
-  },
-  "El Manzano": {
-   "km": 4.6,
-   "max_dbz": 59,
-   "tope_km": 14.7,
-   "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 20
 }
