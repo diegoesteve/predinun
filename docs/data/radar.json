@@ -1,178 +1,93 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-14 02:00",
+ "consultado": "2026-11-14 02:15",
  "radar": "RMA1",
- "observacion": "2026-11-14 01:40",
+ "observacion": "2026-11-14 01:58",
  "nucleos": [
   {
-   "lat": -31.387,
-   "lon": -64.676,
-   "dbz": 53,
-   "max_dbz": 60,
-   "tope_km": 14.7
+   "lat": -29.9977,
+   "lon": -64.4716,
+   "dbz": 51,
+   "max_dbz": 55,
+   "tope_km": 14.1
   },
   {
-   "lat": -31.1613,
-   "lon": -64.9235,
-   "dbz": 51,
-   "max_dbz": 56,
+   "lat": -31.3329,
+   "lon": -64.9557,
+   "dbz": 50,
+   "max_dbz": 54,
    "tope_km": 15.2
   },
   {
-   "lat": -31.666,
-   "lon": -65.569,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.675,
-   "lon": -65.4614,
-   "dbz": 50,
-   "max_dbz": 56,
+   "lat": -30.6721,
+   "lon": -64.4394,
+   "dbz": 49,
+   "max_dbz": 49,
    "tope_km": 15.8
   },
   {
-   "lat": -30.1074,
-   "lon": -64.6653,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -29.9062,
-   "lon": -64.6007,
-   "dbz": 50,
-   "max_dbz": 54,
+   "lat": -31.5311,
+   "lon": -65.3861,
+   "dbz": 48,
+   "max_dbz": 49,
    "tope_km": 14.7
   },
   {
-   "lat": -30.8173,
-   "lon": -64.4931,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.0076,
-   "lon": -64.2457,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -29.8788,
-   "lon": -63.7293,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.2426,
-   "lon": -65.3968,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 15.2
-  },
-  {
-   "lat": -31.441,
-   "lon": -65.0848,
+   "lat": -31.3599,
+   "lon": -65.3538,
    "dbz": 48,
    "max_dbz": 51,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -31.4951,
+   "lon": -65.3215,
+   "dbz": 48,
+   "max_dbz": 50,
    "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Granja": {
-   "km": 3.5,
-   "max_dbz": 52,
-   "tope_km": 14.1,
-   "nivel": "intensa"
-  },
-  "Villa de Soto": {
-   "km": 34.5,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "cuenca_de": "Río Soto",
-   "nivel": "muy intensa"
-  },
   "San Carlos Minas": {
-   "km": 27.6,
+   "km": 21.4,
+   "max_dbz": 54,
+   "tope_km": 15.2,
+   "cuenca_de": "Noguinet",
+   "nivel": "intensa"
+  },
+  "Tala Cañada": {
+   "km": 3.9,
+   "max_dbz": 54,
+   "tope_km": 15.2,
+   "nivel": "intensa"
+  },
+  "Chancaní": {
+   "km": 9.6,
    "max_dbz": 51,
    "tope_km": 14.7,
-   "cuenca_de": "Jaime",
+   "cuenca_de": "Río del Norte (Chancani)",
    "nivel": "intensa"
   },
-  "San Marcos Sierras": {
-   "km": 13.9,
-   "max_dbz": 54,
-   "tope_km": 14.1,
-   "cuenca_de": "Rio San Marcos Sierra",
+  "Copacabana": {
+   "km": 7.9,
+   "max_dbz": 49,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Copacabana",
    "nivel": "intensa"
   },
-  "Salsacate": {
-   "km": 12.9,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "cuenca_de": "Arroyo Salsacate",
-   "nivel": "intensa"
-  },
-  "Cabalango": {
-   "km": 10.1,
-   "max_dbz": 60,
-   "tope_km": 14.7,
-   "cuenca_de": "Río Los Chorrillos",
-   "nivel": "muy intensa"
-  },
-  "Cruz de Caña": {
-   "km": 9.2,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "cuenca_de": "Río San Guillermo",
-   "nivel": "muy intensa"
-  },
-  "Bañado de Soto": {
-   "km": 39.4,
-   "max_dbz": 56,
-   "tope_km": 15.2,
-   "cuenca_de": "San Guillermo De Soto",
-   "nivel": "muy intensa"
-  },
-  "Los Molles": {
-   "km": 3.1,
-   "max_dbz": 52,
-   "tope_km": 14.1,
-   "cuenca_de": "Río La Granja",
-   "nivel": "intensa"
-  },
-  "Colonia Caroya": {
-   "km": 14.1,
-   "max_dbz": 52,
-   "tope_km": 14.1,
-   "cuenca_de": "Río Carnero",
-   "nivel": "intensa"
-  },
-  "Santa Isabel": {
-   "km": 3.0,
-   "max_dbz": 54,
-   "tope_km": 14.1,
-   "cuenca_de": "Arroyo Los Terrones",
-   "nivel": "intensa"
-  },
-  "Estancia Vieja": {
-   "km": 13.4,
-   "max_dbz": 60,
-   "tope_km": 14.7,
-   "cuenca_de": "Rio Los Chorrillos",
-   "nivel": "muy intensa"
-  },
-  "Mussi": {
+  "San Geronimo": {
    "km": 2.3,
-   "max_dbz": 51,
+   "max_dbz": 54,
+   "tope_km": 15.2,
+   "nivel": "intensa"
+  },
+  "Villa de Pocho": {
+   "km": 3.8,
+   "max_dbz": 50,
    "tope_km": 14.7,
    "nivel": "intensa"
   }
  },
- "minutos": 20
+ "minutos": 17
 }
