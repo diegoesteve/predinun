@@ -1,211 +1,272 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-14 01:15",
+ "consultado": "2026-11-14 01:30",
  "radar": "RMA1",
- "observacion": "2026-11-14 01:04",
+ "observacion": "2026-11-14 01:13",
  "nucleos": [
   {
-   "lat": -30.1622,
-   "lon": -65.3646,
+   "lat": -31.2155,
+   "lon": -65.0311,
    "dbz": 52,
-   "max_dbz": 56,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.089,
-   "lon": -64.2242,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 15.2
-  },
-  {
-   "lat": -31.2426,
-   "lon": -65.0956,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.0619,
-   "lon": -64.3963,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 15.8
-  },
-  {
-   "lat": -30.0617,
-   "lon": -64.0521,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 13.5
+   "max_dbz": 59,
+   "tope_km": 14.1
   },
   {
    "lat": -31.08,
-   "lon": -65.3753,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 14.7
+   "lon": -64.4394,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 15.8
   },
   {
-   "lat": -31.5851,
-   "lon": -65.3,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 14.1
+   "lat": -31.08,
+   "lon": -64.5362,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 15.8
   },
   {
-   "lat": -30.4357,
-   "lon": -64.8159,
+   "lat": -30.1531,
+   "lon": -65.3108,
    "dbz": 49,
    "max_dbz": 54,
    "tope_km": 17.0
   },
   {
-   "lat": -30.0526,
-   "lon": -64.321,
+   "lat": -31.4951,
+   "lon": -64.7944,
    "dbz": 49,
-   "max_dbz": 52,
+   "max_dbz": 53,
    "tope_km": 14.1
   },
   {
-   "lat": -30.3902,
-   "lon": -65.0633,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.1342,
-   "lon": -64.6115,
+   "lat": -31.0438,
+   "lon": -65.3108,
    "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.1884,
-   "lon": -64.988,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -30.0526,
-   "lon": -64.5792,
-   "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -30.3993,
-   "lon": -64.5254,
-   "dbz": 48,
-   "max_dbz": 51,
    "tope_km": 15.2
   },
   {
-   "lat": -30.9352,
-   "lon": -64.8589,
+   "lat": -30.1348,
+   "lon": -65.5044,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -30.7357,
-   "lon": -64.9235,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 16.4
-  },
-  {
-   "lat": -30.299,
-   "lon": -65.2785,
-   "dbz": 48,
-   "max_dbz": 50,
+   "max_dbz": 51,
    "tope_km": 17.0
   },
   {
-   "lat": -30.4175,
-   "lon": -63.8046,
+   "lat": -29.9428,
+   "lon": -64.4824,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 15.8
+  },
+  {
+   "lat": -30.4084,
+   "lon": -64.5792,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -30.0343,
+   "lon": -63.9983,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -30.372,
+   "lon": -64.4824,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -30.08,
+   "lon": -64.5254,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -30.08,
+   "lon": -64.1704,
    "dbz": 47,
    "max_dbz": 48,
    "tope_km": 15.8
+  },
+  {
+   "lat": -30.6994,
+   "lon": -64.9127,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 14.7
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 2,
+   "max_dbz": 56
+  },
+  "SanAntonio_CPaz": {
+   "nucleos": 1,
+   "max_dbz": 53
+  }
+ },
  "localidades": {
+  "Villa Carlos Paz": {
+   "km": 30.0,
+   "max_dbz": 53,
+   "tope_km": 14.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 19.6,
+   "max_dbz": 53,
+   "tope_km": 14.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
   "San Carlos Minas": {
-   "km": 5.7,
-   "max_dbz": 55,
-   "tope_km": 14.7,
-   "cuenca_de": "Jaime",
+   "km": 7.3,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "cuenca_de": "Arroyo Los Barreales",
    "nivel": "muy intensa"
   },
+  "La Falda": {
+   "km": 4.3,
+   "max_dbz": 50,
+   "tope_km": 15.8,
+   "nivel": "intensa"
+  },
+  "Villa Giardino": {
+   "km": 4.4,
+   "max_dbz": 50,
+   "tope_km": 15.8,
+   "nivel": "intensa"
+  },
+  "Santa María de Punilla": {
+   "km": 21.6,
+   "max_dbz": 50,
+   "tope_km": 15.8,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "intensa"
+  },
   "Villa Cerro Azul": {
-   "km": 6.5,
-   "max_dbz": 54,
+   "km": 10.4,
+   "max_dbz": 56,
    "tope_km": 15.8,
    "cuenca_de": "Rio San Vicente",
+   "nivel": "muy intensa"
+  },
+  "Huerta Grande": {
+   "km": 4.3,
+   "max_dbz": 50,
+   "tope_km": 15.8,
    "nivel": "intensa"
   },
   "Los Molles": {
-   "km": 15.7,
-   "max_dbz": 54,
+   "km": 20.1,
+   "max_dbz": 56,
    "tope_km": 15.8,
    "cuenca_de": "Río San Cristóbal",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Colonia Caroya": {
-   "km": 27.9,
-   "max_dbz": 54,
+   "km": 32.2,
+   "max_dbz": 56,
    "tope_km": 15.8,
    "cuenca_de": "Río Carnero",
+   "nivel": "muy intensa"
+  },
+  "Casa Grande": {
+   "km": 11.1,
+   "max_dbz": 50,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Grande De Punilla",
    "nivel": "intensa"
   },
-  "Chancaní": {
-   "km": 24.6,
-   "max_dbz": 54,
+  "Mayu Sumaj": {
+   "km": 23.7,
+   "max_dbz": 53,
    "tope_km": 14.1,
-   "cuenca_de": "Río del Norte (Chancani)",
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Tala Huasi": {
+   "km": 21.4,
+   "max_dbz": 53,
+   "tope_km": 14.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Santa Ana": {
+   "km": 26.5,
+   "max_dbz": 53,
+   "tope_km": 15.2,
+   "cuenca_de": "Arroyo Agua Blanca",
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 29.2,
+   "max_dbz": 50,
+   "tope_km": 15.8,
+   "cuenca_de": "Lago San Roque",
    "nivel": "intensa"
   },
   "Paraje Puesto del Gallo": {
-   "km": 14.6,
+   "km": 11.2,
    "max_dbz": 49,
-   "tope_km": 16.4,
+   "tope_km": 14.7,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "San Vicente": {
-   "km": 3.7,
-   "max_dbz": 54,
-   "tope_km": 15.8,
+  "Piedras Amontonadas": {
+   "km": 20.1,
+   "max_dbz": 53,
+   "tope_km": 15.2,
+   "cuenca_de": "Río Seco",
    "nivel": "intensa"
   },
   "Paraje Palo Parado": {
-   "km": 11.9,
+   "km": 8.5,
    "max_dbz": 49,
-   "tope_km": 16.4,
+   "tope_km": 14.7,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
   "Jaime Peter": {
-   "km": 2.3,
-   "max_dbz": 51,
+   "km": 4.0,
+   "max_dbz": 48,
+   "tope_km": 13.5,
+   "nivel": "intensa"
+  },
+  "Sauce de los Quevedos": {
+   "km": 3.9,
+   "max_dbz": 59,
+   "tope_km": 14.1,
+   "nivel": "muy intensa"
+  },
+  "Guasapampa": {
+   "km": 4.8,
+   "max_dbz": 53,
    "tope_km": 15.2,
    "nivel": "intensa"
   },
-  "Guasapampa": {
-   "km": 2.7,
-   "max_dbz": 52,
-   "tope_km": 14.7,
+  "Cienaga del Coro": {
+   "km": 2.8,
+   "max_dbz": 53,
+   "tope_km": 15.2,
    "nivel": "intensa"
   },
-  "San Antonio": {
-   "km": 2.7,
-   "max_dbz": 52,
+  "El Brete": {
+   "km": 4.6,
+   "max_dbz": 49,
    "tope_km": 14.7,
    "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
