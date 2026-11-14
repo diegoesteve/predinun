@@ -1,59 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-13 22:00",
+ "consultado": "2026-11-13 22:15",
  "alertas": [
-  {
-   "id": "2026_11_13_2308_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas severas",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-11-13T23:08:00-03:00",
-   "hasta": "2026-11-14T01:08:00-03:00",
-   "descripcion": "TORMENTAS SEVERAS CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
-   "instruccion": "Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Evitá circular por calles inundadas o afectadas. Retirá o asegurá objetos que puedan ser arrastrados por el viento. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, ",
-   "zona": "CORDOBA: COLON - RIO PRIMERO - RIO SEGUNDO - SAN JUSTO - TOTORAL.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_13_2308_cap_es.xml",
-   "desde_local": "13/11 23:08",
-   "hasta_local": "14/11 01:08",
-   "localidades": 9,
-   "poligonos": [
-    [
-     [
-      -64.35,
-      -31.22
-     ],
-     [
-      -64.24,
-      -30.86
-     ],
-     [
-      -63.75,
-      -30.81
-     ],
-     [
-      -62.99,
-      -30.99
-     ],
-     [
-      -62.55,
-      -31.14
-     ],
-     [
-      -62.8,
-      -31.52
-     ],
-     [
-      -63.75,
-      -31.21
-     ],
-     [
-      -64.35,
-      -31.22
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_13_2340_cap_es",
    "tipo": "aviso a corto plazo",
@@ -17644,51 +17592,6 @@
   }
  ],
  "localidades": {
-  "Rio Ceballos": [
-   "2026_11_13_2308_cap_es",
-   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
-   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "La Granja": [
-   "2026_11_13_2308_cap_es",
-   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
-   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Salsipuedes": [
-   "2026_11_13_2308_cap_es",
-   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
-   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Jesús María": [
-   "2026_11_13_2308_cap_es",
-   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
-   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Agua de Oro": [
-   "2026_11_13_2308_cap_es",
-   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
-   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Colonia Caroya": [
-   "2026_11_13_2308_cap_es",
-   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
-   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "General Paz": [
-   "2026_11_13_2308_cap_es",
-   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
-   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "El Manzano": [
-   "2026_11_13_2308_cap_es",
-   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
-   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
-  ],
-  "Sinsacate": [
-   "2026_11_13_2308_cap_es",
-   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
-   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
-  ],
   "San Carlos Minas": [
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_9",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_9",
@@ -18084,6 +17987,10 @@
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_12",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_12"
   ],
+  "Rio Ceballos": [
+   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
+   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
+  ],
   "Villa Allende": [
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7",
@@ -18104,7 +18011,19 @@
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7",
    "2026_11_14_0012_cap_es"
   ],
+  "La Granja": [
+   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
+   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Salsipuedes": [
+   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
+   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
+  ],
   "Ascochinga": [
+   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
+   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "Jesús María": [
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
   ],
@@ -18112,10 +18031,18 @@
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
   ],
+  "Agua de Oro": [
+   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
+   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
+  ],
   "Malvinas Argentinas": [
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7",
    "2026_11_14_0012_cap_es"
+  ],
+  "Colonia Caroya": [
+   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
+   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Villa del Totoral": [
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
@@ -18134,11 +18061,19 @@
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
   ],
+  "General Paz": [
+   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
+   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
+  ],
   "La Pampa": [
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Canteras el Sauce": [
+   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
+   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
+  ],
+  "El Manzano": [
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
   ],
@@ -18151,6 +18086,10 @@
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
    "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7",
    "2026_11_14_0012_cap_es"
+  ],
+  "Sinsacate": [
+   "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
+   "CAP_20261113231128_Tormenta_Llanura_alertas_alertas_7"
   ],
   "Villa Gutierrez": [
    "CAP_20261113231130_Tormenta_Patagonia_alertas_alertas_7",
