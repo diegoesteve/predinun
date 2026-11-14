@@ -1,93 +1,79 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-14 02:15",
+ "consultado": "2026-11-14 02:30",
  "radar": "RMA1",
- "observacion": "2026-11-14 01:58",
+ "observacion": "2026-11-14 02:17",
  "nucleos": [
   {
-   "lat": -29.9977,
-   "lon": -64.4716,
-   "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.3329,
-   "lon": -64.9557,
+   "lat": -30.9804,
+   "lon": -64.3103,
    "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 15.2
-  },
-  {
-   "lat": -30.6721,
-   "lon": -64.4394,
-   "dbz": 49,
-   "max_dbz": 49,
+   "max_dbz": 52,
    "tope_km": 15.8
   },
   {
-   "lat": -31.5311,
-   "lon": -65.3861,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 14.7
+   "lat": -31.0438,
+   "lon": -65.0633,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 16.4
   },
   {
    "lat": -31.3599,
-   "lon": -65.3538,
+   "lon": -65.1924,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.4951,
-   "lon": -65.3215,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 14.7
+   "max_dbz": 52,
+   "tope_km": 15.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Carlos Minas": {
-   "km": 21.4,
-   "max_dbz": 54,
-   "tope_km": 15.2,
-   "cuenca_de": "Noguinet",
-   "nivel": "intensa"
-  },
-  "Tala Cañada": {
-   "km": 3.9,
-   "max_dbz": 54,
-   "tope_km": 15.2,
-   "nivel": "intensa"
-  },
-  "Chancaní": {
-   "km": 9.6,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "cuenca_de": "Río del Norte (Chancani)",
-   "nivel": "intensa"
-  },
-  "Copacabana": {
-   "km": 7.9,
-   "max_dbz": 49,
+  "Ascochinga": {
+   "km": 3.6,
+   "max_dbz": 52,
    "tope_km": 15.8,
-   "cuenca_de": "Rio Copacabana",
    "nivel": "intensa"
   },
-  "San Geronimo": {
-   "km": 2.3,
-   "max_dbz": 54,
+  "San Carlos Minas": {
+   "km": 20.0,
+   "max_dbz": 52,
    "tope_km": 15.2,
+   "cuenca_de": "Jaime",
    "nivel": "intensa"
   },
-  "Villa de Pocho": {
-   "km": 3.8,
-   "max_dbz": 50,
-   "tope_km": 14.7,
+  "Salsacate": {
+   "km": 10.6,
+   "max_dbz": 52,
+   "tope_km": 15.2,
+   "cuenca_de": "Arroyo Salsacate",
+   "nivel": "intensa"
+  },
+  "Jesús María": {
+   "km": 16.6,
+   "max_dbz": 52,
+   "tope_km": 15.8,
+   "cuenca_de": "Jesus Maria",
+   "nivel": "intensa"
+  },
+  "La Paz": {
+   "km": 9.0,
+   "max_dbz": 52,
+   "tope_km": 15.8,
+   "cuenca_de": "Río Ascochinga",
+   "nivel": "intensa"
+  },
+  "La Higuera": {
+   "km": 4.6,
+   "max_dbz": 52,
+   "tope_km": 16.4,
+   "nivel": "intensa"
+  },
+  "Agua de Crespin": {
+   "km": 2.9,
+   "max_dbz": 52,
+   "tope_km": 16.4,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
