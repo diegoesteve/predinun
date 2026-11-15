@@ -1,45 +1,39 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-15 08:30",
+ "consultado": "2026-11-15 08:45",
  "radar": "RMA17",
- "observacion": "2026-11-15 08:12",
+ "observacion": "2026-11-15 08:20",
  "nucleos": [
   {
-   "lat": -32.0006,
-   "lon": -65.0007,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 7.0
+   "lat": -32.0554,
+   "lon": -64.9897,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Dolores": {
-   "km": 21.1,
-   "max_dbz": 57,
-   "tope_km": 7.0,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "muy intensa"
-  },
-  "Chuchiras": {
-   "km": 8.0,
-   "max_dbz": 57,
-   "tope_km": 7.0,
-   "cuenca_de": "Arroyo Chuchiras",
-   "nivel": "muy intensa"
-  },
   "San Javier Y Yacanto": {
-   "km": 4.1,
-   "max_dbz": 57,
-   "tope_km": 7.0,
-   "nivel": "muy intensa"
+   "km": 4.6,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "nivel": "intensa"
   },
-  "San Javier": {
-   "km": 1.1,
-   "max_dbz": 57,
-   "tope_km": 7.0,
-   "nivel": "muy intensa"
+  "Los Romeros": {
+   "km": 23.6,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "La Poblacion": {
+   "km": 0.8,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "cuenca_de": "Arroyo Cruz Del Quebracho",
+   "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 25
 }
