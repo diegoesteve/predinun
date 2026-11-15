@@ -1,9 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-15 10:15",
- "radar": null,
- "observacion": null,
- "nucleos": [],
+ "consultado": "2026-11-15 10:30",
+ "radar": "RMA17",
+ "observacion": "2026-11-15 10:13",
+ "nucleos": [
+  {
+   "lat": -32.0645,
+   "lon": -64.9787,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 8.2
+  }
+ ],
  "cuencas": {},
- "localidades": {}
+ "localidades": {
+  "Los Romeros": {
+   "km": 24.2,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "La Poblacion": {
+   "km": 1.8,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "cuenca_de": "Arroyo Cruz Del Quebracho",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 17
 }
