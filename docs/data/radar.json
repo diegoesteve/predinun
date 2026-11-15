@@ -1,18 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-15 02:00",
+ "consultado": "2026-11-15 02:15",
  "radar": "RMA17",
- "observacion": "2026-11-15 01:32",
+ "observacion": "2026-11-15 01:57",
  "nucleos": [
   {
-   "lat": -32.2104,
-   "lon": -64.9567,
-   "dbz": 48,
-   "max_dbz": 51,
+   "lat": -32.265,
+   "lon": -64.9787,
+   "dbz": 49,
+   "max_dbz": 50,
    "tope_km": 7.6
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 28
+ "localidades": {
+  "Cruz de Caña": {
+   "km": 4.9,
+   "max_dbz": 50,
+   "tope_km": 7.6,
+   "cuenca_de": "Arroyo Seco",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 18
 }
