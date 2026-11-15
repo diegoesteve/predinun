@@ -1,46 +1,19 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-15 03:00",
- "radar": "RMA17",
- "observacion": "2026-11-15 02:21",
+ "consultado": "2026-11-15 03:15",
+ "radar": "RMA16",
+ "observacion": "2026-11-15 02:57",
  "nucleos": [
   {
-   "lat": -32.0006,
-   "lon": -64.9897,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 8.8
+   "lat": -33.24,
+   "lon": -65.0884,
+   "dbz": 52,
+   "max_dbz": 52,
+   "tope_km": 2.3,
+   "descartado": "tope bajo (2.3 km)"
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Villa Dolores": {
-   "km": 22.1,
-   "max_dbz": 49,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "intensa"
-  },
-  "Chuchiras": {
-   "km": 9.0,
-   "max_dbz": 49,
-   "tope_km": 8.8,
-   "cuenca_de": "Arroyo Chuchiras",
-   "nivel": "intensa"
-  },
-  "San Javier Y Yacanto": {
-   "km": 4.8,
-   "max_dbz": 49,
-   "tope_km": 8.8,
-   "nivel": "intensa"
-  },
-  "San Javier": {
-   "km": 2.1,
-   "max_dbz": 49,
-   "tope_km": 8.8,
-   "cuenca_de": "Arroyo Achiras",
-   "nivel": "intensa"
-  }
- },
- "minutos": 39
+ "localidades": {},
+ "minutos": 19
 }
