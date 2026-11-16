@@ -1,88 +1,117 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 16:15",
+ "consultado": "2026-11-16 16:30",
  "radar": "RMA1",
- "observacion": "2026-11-16 15:54",
+ "observacion": "2026-11-16 16:12",
  "nucleos": [
   {
-   "lat": -32.8891,
-   "lon": -65.1709,
-   "dbz": 54,
-   "max_dbz": 63,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -32.9334,
-   "lon": -64.1059,
-   "dbz": 54,
+   "lat": -33.0574,
+   "lon": -63.8907,
+   "dbz": 53,
    "max_dbz": 64,
-   "tope_km": 17.0
+   "tope_km": 15.2
   },
   {
-   "lat": -33.1812,
-   "lon": -64.945,
-   "dbz": 52,
+   "lat": -32.8713,
+   "lon": -64.9773,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -33.3225,
+   "lon": -64.8051,
+   "dbz": 51,
+   "max_dbz": 54,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -33.1547,
+   "lon": -64.1704,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -33.1458,
+   "lon": -64.7621,
+   "dbz": 51,
    "max_dbz": 60,
-   "tope_km": 17.0
+   "tope_km": 12.3
   },
   {
-   "lat": -32.8891,
-   "lon": -65.2785,
-   "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -33.0043,
-   "lon": -65.0311,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -33.349,
-   "lon": -64.902,
+   "lat": -33.3931,
+   "lon": -64.3748,
    "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 13.5
+   "max_dbz": 59,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.7116,
+   "lon": -65.2139,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 9.4
   },
   {
    "lat": -32.9866,
-   "lon": -65.3,
-   "dbz": 50,
+   "lon": -65.1817,
+   "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 11.7
+   "tope_km": 11.1
   },
   {
-   "lat": -32.8004,
-   "lon": -64.2565,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 8.2
+   "lat": -33.4988,
+   "lon": -64.4286,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -33.4724,
+   "lon": -64.3103,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -33.0839,
+   "lon": -64.8374,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.8092,
+   "lon": -65.2247,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 17.3,
-   "max_dbz": 63,
-   "tope_km": 13.5,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "El Tala": {
-   "km": 14.0,
-   "max_dbz": 56,
+   "km": 26.8,
+   "max_dbz": 53,
    "tope_km": 11.1,
    "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Santa Catalina": {
+   "km": 31.3,
+   "max_dbz": 60,
+   "tope_km": 12.3,
+   "cuenca_de": "Arroyo Santa Catalina",
    "nivel": "muy intensa"
   },
-  "Achiras": {
-   "km": 4.0,
-   "max_dbz": 60,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
+  "Concarán": {
+   "km": 20.9,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
   }
  },
- "minutos": 21
+ "minutos": 18
 }
