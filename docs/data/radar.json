@@ -1,40 +1,88 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 04:45",
+ "consultado": "2026-11-16 05:00",
  "radar": "RMA17",
- "observacion": "2026-11-16 04:35",
+ "observacion": "2026-11-16 04:52",
  "nucleos": [
   {
-   "lat": -32.0006,
+   "lat": -32.6467,
+   "lon": -64.8908,
+   "dbz": 54,
+   "max_dbz": 62,
+   "tope_km": 5.9,
+   "descartado": "tope bajo (5.9 km)"
+  },
+  {
+   "lat": -31.9732,
    "lon": -64.9787,
-   "dbz": 52,
-   "max_dbz": 56,
-   "tope_km": 10.6
+   "dbz": 53,
+   "max_dbz": 62,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.2013,
+   "lon": -64.9787,
+   "dbz": 53,
+   "max_dbz": 60,
+   "tope_km": 7.6
+  },
+  {
+   "lat": -32.0919,
+   "lon": -64.9237,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 23.1,
-   "max_dbz": 56,
-   "tope_km": 10.6,
+   "km": 16.4,
+   "max_dbz": 62,
+   "tope_km": 11.1,
+   "cuenca_de": "Canal De Riego",
+   "nivel": "muy intensa"
+  },
+  "Las Tapias": {
+   "km": 11.3,
+   "max_dbz": 62,
+   "tope_km": 11.1,
    "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
-  "Chuchiras": {
-   "km": 10.0,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Chuchiras",
+  "Luyaba": {
+   "km": 7.4,
+   "max_dbz": 60,
+   "tope_km": 7.6,
+   "cuenca_de": "Arroyo Corralito",
    "nivel": "muy intensa"
   },
+  "Villa de las Rosas": {
+   "km": 7.1,
+   "max_dbz": 62,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Los Molles",
+   "nivel": "muy intensa"
+  },
+  "El Durazno": {
+   "km": 14.9,
+   "max_dbz": 50,
+   "tope_km": 8.2,
+   "cuenca_de": "Arroyo Sombra de Toro",
+   "nivel": "intensa"
+  },
   "San Javier": {
-   "km": 3.1,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Achiras",
+   "km": 4.7,
+   "max_dbz": 62,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "Loma Bola": {
+   "km": 4.8,
+   "max_dbz": 60,
+   "tope_km": 7.6,
    "nivel": "muy intensa"
   }
  },
- "minutos": 10
+ "minutos": 9
 }
