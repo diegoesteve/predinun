@@ -1,86 +1,79 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 06:45",
+ "consultado": "2026-11-16 07:01",
  "radar": "RMA17",
- "observacion": "2026-11-16 06:30",
+ "observacion": "2026-11-16 06:46",
  "nucleos": [
   {
-   "lat": -32.101,
-   "lon": -64.9457,
+   "lat": -31.9641,
+   "lon": -64.9897,
    "dbz": 53,
-   "max_dbz": 61,
-   "tope_km": 10.0
+   "max_dbz": 60,
+   "tope_km": 11.1
   },
   {
    "lat": -32.2013,
    "lon": -64.9787,
    "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 9.4
+   "max_dbz": 60,
+   "tope_km": 11.7
   },
   {
-   "lat": -31.9732,
+   "lat": -32.0736,
    "lon": -64.9787,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 8.8
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 16.4,
-   "max_dbz": 49,
-   "tope_km": 8.8,
+   "km": 15.1,
+   "max_dbz": 60,
+   "tope_km": 11.1,
    "cuenca_de": "Canal De Riego",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Las Tapias": {
-   "km": 11.3,
-   "max_dbz": 49,
-   "tope_km": 8.8,
+   "km": 10.2,
+   "max_dbz": 60,
+   "tope_km": 11.1,
    "cuenca_de": "Rio De Los Sauces",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Luyaba": {
    "km": 7.4,
-   "max_dbz": 54,
-   "tope_km": 9.4,
+   "max_dbz": 60,
+   "tope_km": 11.7,
    "cuenca_de": "Arroyo Corralito",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Villa de las Rosas": {
-   "km": 7.1,
-   "max_dbz": 49,
-   "tope_km": 8.8,
+   "km": 5.9,
+   "max_dbz": 60,
+   "tope_km": 11.1,
    "cuenca_de": "Arroyo Los Molles",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Los Romeros": {
-   "km": 26.3,
-   "max_dbz": 61,
-   "tope_km": 10.0,
+   "km": 23.9,
+   "max_dbz": 53,
+   "tope_km": 13.5,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "La Poblacion": {
-   "km": 7.2,
-   "max_dbz": 61,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "San Javier": {
-   "km": 4.7,
-   "max_dbz": 49,
-   "tope_km": 8.8,
+   "km": 4.4,
+   "max_dbz": 53,
+   "tope_km": 13.5,
    "nivel": "intensa"
   },
   "Loma Bola": {
    "km": 4.8,
-   "max_dbz": 54,
-   "tope_km": 9.4,
-   "nivel": "intensa"
+   "max_dbz": 60,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
   }
  },
  "minutos": 15
