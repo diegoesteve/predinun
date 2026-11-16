@@ -1,93 +1,169 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 17:00",
+ "consultado": "2026-11-16 17:15",
  "radar": "RMA1",
- "observacion": "2026-11-16 16:39",
+ "observacion": "2026-11-16 16:57",
  "nucleos": [
   {
-   "lat": -32.6493,
-   "lon": -64.9557,
-   "dbz": 54,
+   "lat": -32.6227,
+   "lon": -63.8154,
+   "dbz": 53,
    "max_dbz": 62,
-   "tope_km": 13.5
+   "tope_km": 17.0
   },
   {
-   "lat": -32.4713,
-   "lon": -64.4501,
-   "dbz": 52,
-   "max_dbz": 59,
+   "lat": -33.0574,
+   "lon": -64.3103,
+   "dbz": 51,
+   "max_dbz": 64,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.4892,
+   "lon": -64.321,
+   "dbz": 51,
+   "max_dbz": 60,
    "tope_km": 12.3
   },
   {
-   "lat": -32.4268,
-   "lon": -64.3641,
-   "dbz": 51,
-   "max_dbz": 58,
+   "lat": -32.4446,
+   "lon": -65.2032,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.596,
+   "lon": -64.8697,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.1858,
+   "lon": -65.4721,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.4713,
+   "lon": -64.9773,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 11.7
   },
   {
-   "lat": -33.1105,
-   "lon": -64.4931,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 14.1
+   "lat": -32.4446,
+   "lon": -64.5254,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 10.0
   },
   {
-   "lat": -32.8004,
+   "lat": -32.6582,
    "lon": -64.7621,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.7
+   "max_dbz": 53,
+   "tope_km": 10.6
   },
   {
-   "lat": -32.5871,
-   "lon": -63.9768,
-   "dbz": 47,
+   "lat": -32.4624,
+   "lon": -65.3753,
+   "dbz": 49,
    "max_dbz": 49,
    "tope_km": 11.1
   },
   {
-   "lat": -32.4357,
-   "lon": -65.3753,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 8.8
+   "lat": -33.296,
+   "lon": -63.9768,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -33.4107,
+   "lon": -63.9875,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.4535,
+   "lon": -65.2785,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Catalina": {
-   "km": 10.8,
-   "max_dbz": 52,
-   "tope_km": 14.1,
-   "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "intensa"
-  },
-  "Villa Larca": {
-   "km": 4.0,
-   "max_dbz": 62,
-   "tope_km": 13.5,
+  "La Cruz": {
+   "km": 11.5,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "muy intensa"
   },
-  "Papagayos": {
-   "km": 3.8,
-   "max_dbz": 62,
-   "tope_km": 13.5,
+  "Rio de los Sauces": {
+   "km": 26.6,
+   "max_dbz": 57,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "muy intensa"
+  },
+  "Alpa Corral": {
+   "km": 15.6,
+   "max_dbz": 57,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio Barrancas",
+   "nivel": "muy intensa"
+  },
+  "Los Molles": {
+   "km": 4.9,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Cortaderas": {
+   "km": 2.1,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Paso Cabral": {
+   "km": 4.2,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "muy intensa"
+  },
+  "Paso del Río Seco": {
+   "km": 38.0,
+   "max_dbz": 57,
+   "tope_km": 12.9,
+   "cuenca_de": "Río de las Barrancas",
    "nivel": "muy intensa"
   },
   "Santa Rita": {
-   "km": 26.8,
-   "max_dbz": 52,
-   "tope_km": 11.7,
+   "km": 49.1,
+   "max_dbz": 57,
+   "tope_km": 12.9,
    "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
+  },
+  "Unión de los Rios": {
+   "km": 0.6,
+   "max_dbz": 53,
+   "tope_km": 10.6,
    "nivel": "intensa"
   },
-  "Berrotaran": {
-   "km": 2.9,
-   "max_dbz": 58,
-   "tope_km": 11.7,
+  "Las Higueras": {
+   "km": 4.8,
+   "max_dbz": 64,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   }
  },
- "minutos": 21
+ "minutos": 18
 }
