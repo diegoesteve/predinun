@@ -1,53 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 03:48",
+ "consultado": "2026-11-16 04:00",
  "radar": "RMA17",
- "observacion": "2026-11-16 03:38",
+ "observacion": "2026-11-16 03:46",
  "nucleos": [
   {
-   "lat": -32.3288,
-   "lon": -64.9567,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 7.0
-  },
-  {
-   "lat": -32.1466,
+   "lat": -32.1557,
    "lon": -64.9897,
    "dbz": 49,
    "max_dbz": 51,
-   "tope_km": 10.0
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa de Merlo": {
-   "km": 3.2,
-   "max_dbz": 49,
-   "tope_km": 7.0,
-   "nivel": "intensa"
-  },
   "Luyaba": {
    "km": 6.2,
    "max_dbz": 51,
-   "tope_km": 10.0,
+   "tope_km": 8.2,
    "cuenca_de": "Acc Privado",
-   "nivel": "intensa"
-  },
-  "Santa Rosa del Conlara": {
-   "km": 20.2,
-   "max_dbz": 49,
-   "tope_km": 7.0,
-   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
   "Los Romeros": {
    "km": 21.9,
    "max_dbz": 51,
-   "tope_km": 10.0,
+   "tope_km": 8.2,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   }
  },
- "minutos": 9
+ "minutos": 14
 }
