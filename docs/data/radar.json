@@ -1,123 +1,97 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 05:15",
+ "consultado": "2026-11-16 05:31",
  "radar": "RMA17",
- "observacion": "2026-11-16 05:08",
+ "observacion": "2026-11-16 05:16",
  "nucleos": [
   {
-   "lat": -32.6467,
-   "lon": -64.8798,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 7.0
+   "lat": -31.9732,
+   "lon": -64.9787,
+   "dbz": 52,
+   "max_dbz": 52,
+   "tope_km": 8.8
   },
   {
-   "lat": -32.1375,
-   "lon": -64.9567,
-   "dbz": 50,
+   "lat": -32.0828,
+   "lon": -64.9677,
+   "dbz": 52,
+   "max_dbz": 52,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -32.2195,
+   "lon": -64.9677,
+   "dbz": 52,
    "max_dbz": 52,
    "tope_km": 10.0
   },
   {
-   "lat": -31.9732,
-   "lon": -64.9787,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 8.8
+   "lat": -32.3106,
+   "lon": -64.9347,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 7.0
   },
   {
-   "lat": -32.0463,
-   "lon": -64.9567,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.0
+   "lat": -32.6376,
+   "lon": -64.9018,
+   "dbz": 51,
+   "max_dbz": 55,
+   "tope_km": 5.9,
+   "descartado": "tope bajo (5.9 km)"
+  },
+  {
+   "lat": -32.8007,
+   "lon": -64.9347,
+   "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 5.3,
+   "descartado": "tope bajo (5.3 km)"
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alpa Corral": {
-   "km": 14.1,
-   "max_dbz": 56,
-   "tope_km": 7.0,
-   "cuenca_de": "Rio Barrancas",
-   "nivel": "muy intensa"
-  },
   "Villa Dolores": {
    "km": 16.4,
-   "max_dbz": 54,
+   "max_dbz": 52,
    "tope_km": 8.8,
    "cuenca_de": "Canal De Riego",
    "nivel": "intensa"
   },
   "Las Tapias": {
    "km": 11.3,
-   "max_dbz": 54,
+   "max_dbz": 52,
    "tope_km": 8.8,
    "cuenca_de": "Rio De Los Sauces",
    "nivel": "intensa"
   },
-  "Paso del Río Seco": {
-   "km": 35.4,
-   "max_dbz": 56,
-   "tope_km": 7.0,
-   "cuenca_de": "Río de las Barrancas",
-   "nivel": "muy intensa"
-  },
-  "Luyaba": {
-   "km": 9.4,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "cuenca_de": "Acc Privado",
-   "nivel": "intensa"
-  },
-  "San Javier Y Yacanto": {
-   "km": 5.7,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo El Molle",
-   "nivel": "intensa"
-  },
   "Villa de las Rosas": {
    "km": 7.1,
-   "max_dbz": 54,
+   "max_dbz": 52,
    "tope_km": 8.8,
    "cuenca_de": "Arroyo Los Molles",
    "nivel": "intensa"
   },
   "Los Romeros": {
-   "km": 24.9,
+   "km": 24.6,
    "max_dbz": 52,
-   "tope_km": 10.0,
+   "tope_km": 8.2,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
-  },
-  "Conlara": {
-   "km": 26.8,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Santa Rita": {
-   "km": 45.8,
-   "max_dbz": 56,
-   "tope_km": 7.0,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
-  },
-  "Unión de los Rios": {
-   "km": 11.1,
-   "max_dbz": 56,
-   "tope_km": 7.0,
-   "cuenca_de": "Arroyo El Talita",
-   "nivel": "muy intensa"
   },
   "San Javier": {
    "km": 4.7,
-   "max_dbz": 54,
+   "max_dbz": 52,
    "tope_km": 8.8,
+   "nivel": "intensa"
+  },
+  "Loma Bola": {
+   "km": 5.7,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo El Arenal",
    "nivel": "intensa"
   }
  },
- "minutos": 7
+ "minutos": 15
 }
