@@ -1,52 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 04:30",
+ "consultado": "2026-11-16 04:45",
  "radar": "RMA17",
- "observacion": "2026-11-16 04:19",
+ "observacion": "2026-11-16 04:35",
  "nucleos": [
   {
-   "lat": -32.0736,
+   "lat": -32.0006,
    "lon": -64.9787,
-   "dbz": 54,
-   "max_dbz": 55,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.1831,
-   "lon": -65.0007,
    "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 10.0
+   "max_dbz": 56,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Luyaba": {
-   "km": 4.9,
-   "max_dbz": 60,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo Corralito",
+  "Villa Dolores": {
+   "km": 23.1,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
-  "Los Romeros": {
-   "km": 23.9,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
+  "Chuchiras": {
+   "km": 10.0,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Chuchiras",
    "nivel": "muy intensa"
   },
-  "La Poblacion": {
-   "km": 4.4,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "nivel": "muy intensa"
-  },
-  "Loma Bola": {
-   "km": 4.3,
-   "max_dbz": 60,
-   "tope_km": 10.0,
+  "San Javier": {
+   "km": 3.1,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Achiras",
    "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 10
 }
