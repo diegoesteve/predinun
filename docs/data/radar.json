@@ -1,65 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 18:46",
+ "consultado": "2026-11-16 19:01",
  "radar": "RMA1",
- "observacion": "2026-11-16 18:27",
+ "observacion": "2026-11-16 18:45",
  "nucleos": [
   {
-   "lat": -32.0427,
-   "lon": -63.9015,
-   "dbz": 52,
-   "max_dbz": 65,
-   "tope_km": null
+   "lat": -30.5358,
+   "lon": -65.5797,
+   "dbz": 51,
+   "max_dbz": 62,
+   "tope_km": 17.0
   },
   {
    "lat": -32.2037,
-   "lon": -64.0628,
+   "lon": -63.7616,
    "dbz": 50,
-   "max_dbz": 57,
+   "max_dbz": 55,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.9688,
+   "lon": -65.5905,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.3911,
+   "lon": -63.9337,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.3465,
+   "lon": -63.7939,
+   "dbz": 48,
+   "max_dbz": 51,
    "tope_km": 11.1
-  },
-  {
-   "lat": -32.2841,
-   "lon": -63.9122,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.2751,
-   "lon": -64.4071,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.2573,
-   "lon": -64.4824,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.0
   }
  ],
  "cuencas": {},
- "localidades": {
-  "La Cruz": {
-   "km": 5.0,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Villa Quillinzo": {
-   "km": 3.5,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Villa la Rivera": {
-   "km": 3.9,
-   "max_dbz": 50,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  }
- },
- "minutos": 19
+ "localidades": {},
+ "minutos": 15
 }
