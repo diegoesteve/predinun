@@ -1,61 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 15:01",
+ "consultado": "2026-11-16 15:15",
  "radar": "RMA1",
- "observacion": "2026-11-16 14:51",
+ "observacion": "2026-11-16 15:00",
  "nucleos": [
   {
-   "lat": -33.1547,
-   "lon": -64.4071,
-   "dbz": 54,
-   "max_dbz": 65,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -33.2077,
-   "lon": -65.5582,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 14.1
+   "lat": -33.1193,
+   "lon": -64.4501,
+   "dbz": 53,
+   "max_dbz": 63,
+   "tope_km": null
   },
   {
    "lat": -32.9777,
-   "lon": -65.5797,
-   "dbz": 50,
-   "max_dbz": 57,
+   "lon": -65.5367,
+   "dbz": 53,
+   "max_dbz": 62,
    "tope_km": 12.9
   },
   {
-   "lat": -33.0839,
-   "lon": -64.4716,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.6
+   "lat": -33.2254,
+   "lon": -65.4614,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 14.1
   },
   {
-   "lat": -33.4195,
-   "lon": -64.4178,
+   "lat": -33.4548,
+   "lon": -64.3318,
    "dbz": 48,
    "max_dbz": 50,
-   "tope_km": 12.9
+   "tope_km": 11.1
   },
   {
-   "lat": -33.534,
-   "lon": -64.2565,
+   "lat": -33.0308,
+   "lon": -64.3533,
    "dbz": 48,
    "max_dbz": 49,
-   "tope_km": 11.1
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
   "Santa Catalina": {
-   "km": 12.7,
-   "max_dbz": 52,
-   "tope_km": 10.6,
+   "km": 8.4,
+   "max_dbz": 63,
+   "tope_km": null,
    "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "San José del Morro": {
+   "km": 2.8,
+   "max_dbz": 61,
+   "tope_km": 14.1,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 9
+ "minutos": 15
 }

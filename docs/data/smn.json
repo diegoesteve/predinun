@@ -1,7 +1,55 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-16 15:01",
+ "consultado": "2026-11-16 15:15",
  "alertas": [
+  {
+   "id": "2026_11_16_1801_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-16T18:01:00-03:00",
+   "hasta": "2026-11-16T20:01:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CORDOBA: GRAL ROCA - GRAL SAN MARTIN - JUAREZ CELMAN - PRES ROQUE S.  PENA - RIO CUARTO - UNION. SAN LUIS: CHACABUCO - CNEL PRINGLES - GRAL PEDERNERA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_16_1801_cap_es.xml",
+   "desde_local": "16/11 18:01",
+   "hasta_local": "16/11 20:01",
+   "localidades": 8,
+   "poligonos": [
+    [
+     [
+      -63.0,
+      -34.28
+     ],
+     [
+      -65.23,
+      -34.19
+     ],
+     [
+      -66.05,
+      -33.39
+     ],
+     [
+      -65.67,
+      -32.95
+     ],
+     [
+      -63.27,
+      -32.97
+     ],
+     [
+      -62.89,
+      -33.6
+     ],
+     [
+      -63.0,
+      -34.28
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_12",
    "tipo": "alerta",
@@ -21373,6 +21421,7 @@
   "San José del Morro": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_5",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_5",
+   "2026_11_16_1801_cap_es",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_66",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_66"
   ],
@@ -22007,12 +22056,14 @@
   "Rio Cuarto": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_16_1801_cap_es",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_59",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_59"
   ],
   "Santa Catalina": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_16_1801_cap_es",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_59",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_59"
   ],
@@ -22025,6 +22076,7 @@
   "La Carolina el Potosí": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_16_1801_cap_es",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_59",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_59"
   ],
@@ -22037,6 +22089,7 @@
   "Achiras": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_16_1801_cap_es",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_59",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_59"
   ],
@@ -22055,6 +22108,7 @@
   "Chucul": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_16_1801_cap_es",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_59",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_59"
   ],
@@ -22073,12 +22127,14 @@
   "Las Higueras": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_16_1801_cap_es",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_59",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_59"
   ],
   "Las Vertientes": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_16_1801_cap_es",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_59",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_59"
   ],
