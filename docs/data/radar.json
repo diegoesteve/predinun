@@ -1,93 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 02:45",
+ "consultado": "2026-11-16 03:00",
  "radar": "RMA17",
- "observacion": "2026-11-16 02:34",
+ "observacion": "2026-11-16 02:51",
  "nucleos": [
   {
-   "lat": -32.1739,
-   "lon": -65.0117,
-   "dbz": 53,
+   "lat": -32.0736,
+   "lon": -64.9677,
+   "dbz": 52,
+   "max_dbz": 55,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -32.1375,
+   "lon": -64.9897,
+   "dbz": 52,
    "max_dbz": 60,
    "tope_km": 10.0
-  },
-  {
-   "lat": -32.0554,
-   "lon": -64.9897,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.9915,
-   "lon": -64.9897,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Dolores": {
-   "km": 21.8,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "muy intensa"
-  },
-  "Chuchiras": {
-   "km": 8.7,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Chuchiras",
-   "nivel": "muy intensa"
-  },
-  "Luyaba": {
-   "km": 3.8,
+  "La Travesía": {
+   "km": 5.5,
    "max_dbz": 60,
    "tope_km": 10.0,
-   "cuenca_de": "Arroyo Corralito",
-   "nivel": "muy intensa"
-  },
-  "San Javier Y Yacanto": {
-   "km": 4.6,
-   "max_dbz": 60,
-   "tope_km": 10.6,
+   "cuenca_de": "Arroyo de la Cal",
    "nivel": "muy intensa"
   },
   "Los Romeros": {
-   "km": 23.6,
-   "max_dbz": 60,
-   "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "La Poblacion": {
-   "km": 0.8,
-   "max_dbz": 60,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Cruz Del Quebracho",
-   "nivel": "muy intensa"
-  },
-  "Pueblito": {
-   "km": 6.1,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Hondo",
-   "nivel": "muy intensa"
-  },
-  "San Javier": {
-   "km": 2.6,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
-  "Loma Bola": {
-   "km": 4.7,
+   "km": 21.8,
    "max_dbz": 60,
    "tope_km": 10.0,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 9
 }
