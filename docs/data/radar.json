@@ -1,117 +1,93 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 16:30",
+ "consultado": "2026-11-16 17:00",
  "radar": "RMA1",
- "observacion": "2026-11-16 16:12",
+ "observacion": "2026-11-16 16:39",
  "nucleos": [
   {
-   "lat": -33.0574,
-   "lon": -63.8907,
-   "dbz": 53,
-   "max_dbz": 64,
-   "tope_km": 15.2
+   "lat": -32.6493,
+   "lon": -64.9557,
+   "dbz": 54,
+   "max_dbz": 62,
+   "tope_km": 13.5
   },
   {
-   "lat": -32.8713,
-   "lon": -64.9773,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -33.3225,
-   "lon": -64.8051,
-   "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -33.1547,
-   "lon": -64.1704,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -33.1458,
-   "lon": -64.7621,
-   "dbz": 51,
-   "max_dbz": 60,
+   "lat": -32.4713,
+   "lon": -64.4501,
+   "dbz": 52,
+   "max_dbz": 59,
    "tope_km": 12.3
   },
   {
-   "lat": -33.3931,
-   "lon": -64.3748,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 10.6
+   "lat": -32.4268,
+   "lon": -64.3641,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 11.7
   },
   {
-   "lat": -32.7116,
-   "lon": -65.2139,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.9866,
-   "lon": -65.1817,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -33.4988,
-   "lon": -64.4286,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -33.4724,
-   "lon": -64.3103,
+   "lat": -33.1105,
+   "lon": -64.4931,
    "dbz": 49,
    "max_dbz": 52,
-   "tope_km": 11.1
+   "tope_km": 14.1
   },
   {
-   "lat": -33.0839,
-   "lon": -64.8374,
+   "lat": -32.8004,
+   "lon": -64.7621,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.1
+   "max_dbz": 52,
+   "tope_km": 11.7
   },
   {
-   "lat": -32.8092,
-   "lon": -65.2247,
-   "dbz": 49,
+   "lat": -32.5871,
+   "lon": -63.9768,
+   "dbz": 47,
    "max_dbz": 49,
-   "tope_km": 10.6
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.4357,
+   "lon": -65.3753,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Tilisarao": {
-   "km": 26.8,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "cuenca_de": "sin nombre",
+  "Santa Catalina": {
+   "km": 10.8,
+   "max_dbz": 52,
+   "tope_km": 14.1,
+   "cuenca_de": "Arroyo Santa Catalina",
    "nivel": "intensa"
   },
-  "Santa Catalina": {
-   "km": 31.3,
-   "max_dbz": 60,
-   "tope_km": 12.3,
-   "cuenca_de": "Arroyo Santa Catalina",
+  "Villa Larca": {
+   "km": 4.0,
+   "max_dbz": 62,
+   "tope_km": 13.5,
    "nivel": "muy intensa"
   },
-  "Concarán": {
-   "km": 20.9,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "cuenca_de": "sin nombre",
+  "Papagayos": {
+   "km": 3.8,
+   "max_dbz": 62,
+   "tope_km": 13.5,
+   "nivel": "muy intensa"
+  },
+  "Santa Rita": {
+   "km": 26.8,
+   "max_dbz": 52,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
+  },
+  "Berrotaran": {
+   "km": 2.9,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 21
 }
