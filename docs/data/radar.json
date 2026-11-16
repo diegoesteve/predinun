@@ -1,73 +1,93 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 02:30",
+ "consultado": "2026-11-16 02:45",
  "radar": "RMA17",
- "observacion": "2026-11-16 02:10",
+ "observacion": "2026-11-16 02:34",
  "nucleos": [
   {
-   "lat": -32.0006,
-   "lon": -64.9897,
+   "lat": -32.1739,
+   "lon": -65.0117,
    "dbz": 53,
    "max_dbz": 60,
-   "tope_km": 8.8
+   "tope_km": 10.0
   },
   {
-   "lat": -32.1557,
-   "lon": -65.0227,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 8.2
+   "lat": -32.0554,
+   "lon": -64.9897,
+   "dbz": 51,
+   "max_dbz": 60,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.9915,
+   "lon": -64.9897,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 22.1,
-   "max_dbz": 60,
-   "tope_km": 8.8,
+   "km": 21.8,
+   "max_dbz": 55,
+   "tope_km": 10.6,
    "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
   "Chuchiras": {
-   "km": 9.0,
-   "max_dbz": 60,
-   "tope_km": 8.8,
+   "km": 8.7,
+   "max_dbz": 55,
+   "tope_km": 10.6,
    "cuenca_de": "Arroyo Chuchiras",
    "nivel": "muy intensa"
   },
-  "La Travesía": {
-   "km": 5.0,
-   "max_dbz": 52,
-   "tope_km": 8.2,
-   "nivel": "intensa"
-  },
   "Luyaba": {
-   "km": 3.1,
-   "max_dbz": 52,
-   "tope_km": 8.2,
-   "cuenca_de": "Acc Privado",
-   "nivel": "intensa"
+   "km": 3.8,
+   "max_dbz": 60,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Corralito",
+   "nivel": "muy intensa"
   },
   "San Javier Y Yacanto": {
-   "km": 4.8,
+   "km": 4.6,
    "max_dbz": 60,
-   "tope_km": 8.8,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   },
   "Los Romeros": {
-   "km": 18.8,
-   "max_dbz": 52,
-   "tope_km": 8.2,
+   "km": 23.6,
+   "max_dbz": 60,
+   "tope_km": 10.6,
    "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "La Poblacion": {
+   "km": 0.8,
+   "max_dbz": 60,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Cruz Del Quebracho",
+   "nivel": "muy intensa"
+  },
+  "Pueblito": {
+   "km": 6.1,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Hondo",
+   "nivel": "muy intensa"
   },
   "San Javier": {
-   "km": 2.1,
+   "km": 2.6,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  },
+  "Loma Bola": {
+   "km": 4.7,
    "max_dbz": 60,
-   "tope_km": 8.8,
-   "cuenca_de": "Arroyo Achiras",
+   "tope_km": 10.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 21
+ "minutos": 11
 }
