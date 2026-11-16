@@ -1,7 +1,47 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-16 12:30",
+ "consultado": "2026-11-16 12:46",
  "alertas": [
+  {
+   "id": "2026_11_16_1543_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-16T15:43:00-03:00",
+   "hasta": "2026-11-16T16:43:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CORDOBA: RIO CUARTO. SAN LUIS: CNEL PRINGLES - GRAL PEDERNERA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_16_1543_cap_es.xml",
+   "desde_local": "16/11 15:43",
+   "hasta_local": "16/11 16:43",
+   "localidades": 2,
+   "poligonos": [
+    [
+     [
+      -64.87,
+      -33.72
+     ],
+     [
+      -65.76,
+      -33.93
+     ],
+     [
+      -65.84,
+      -33.3
+     ],
+     [
+      -64.96,
+      -33.07
+     ],
+     [
+      -64.87,
+      -33.72
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_12",
    "tipo": "alerta",
@@ -21577,6 +21617,7 @@
   "San José del Morro": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_5",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_5",
+   "2026_11_16_1543_cap_es",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_66",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_66"
   ],
@@ -22241,6 +22282,7 @@
   "Achiras": [
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_4",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_4",
+   "2026_11_16_1543_cap_es",
    "CAP_20261116125047_Tormenta_Patagonia_alertas_alertas_59",
    "CAP_20261116125045_Tormenta_Llanura_alertas_alertas_59"
   ],
