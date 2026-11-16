@@ -1,32 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 19:30",
+ "consultado": "2026-11-16 19:45",
  "radar": "RMA1",
- "observacion": "2026-11-16 19:12",
+ "observacion": "2026-11-16 19:30",
  "nucleos": [
   {
-   "lat": -31.9711,
-   "lon": -65.5474,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -30.4266,
-   "lon": -65.3646,
-   "dbz": 49,
-   "max_dbz": 65,
+   "lat": -30.3355,
+   "lon": -65.2247,
+   "dbz": 52,
+   "max_dbz": 63,
    "tope_km": 17.0
   },
   {
-   "lat": -31.405,
-   "lon": -63.8477,
+   "lat": -31.9442,
+   "lon": -65.3108,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.387,
+   "lon": -63.8261,
+   "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.3058,
+   "lon": -63.7724,
    "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 10.0
+   "max_dbz": 54,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "localidades": {
+  "San Jose": {
+   "km": 1.7,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 15
 }
