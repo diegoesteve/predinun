@@ -1,40 +1,34 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 03:00",
+ "consultado": "2026-11-16 03:15",
  "radar": "RMA17",
- "observacion": "2026-11-16 02:51",
+ "observacion": "2026-11-16 02:59",
  "nucleos": [
   {
-   "lat": -32.0736,
+   "lat": -32.2742,
    "lon": -64.9677,
-   "dbz": 52,
-   "max_dbz": 55,
-   "tope_km": 8.2
+   "dbz": 54,
+   "max_dbz": 60,
+   "tope_km": 7.6
   },
   {
-   "lat": -32.1375,
-   "lon": -64.9897,
-   "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 10.0
+   "lat": -32.6467,
+   "lon": -64.9127,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 5.9,
+   "descartado": "tope bajo (5.9 km)"
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Travesía": {
-   "km": 5.5,
+  "Cruz de Caña": {
+   "km": 5.8,
    "max_dbz": 60,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo de la Cal",
-   "nivel": "muy intensa"
-  },
-  "Los Romeros": {
-   "km": 21.8,
-   "max_dbz": 60,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
+   "tope_km": 7.6,
+   "cuenca_de": "Arroyo Seco",
    "nivel": "muy intensa"
   }
  },
- "minutos": 9
+ "minutos": 16
 }
