@@ -1,97 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 05:31",
+ "consultado": "2026-11-16 05:45",
  "radar": "RMA17",
- "observacion": "2026-11-16 05:16",
+ "observacion": "2026-11-16 05:33",
  "nucleos": [
   {
-   "lat": -31.9732,
-   "lon": -64.9787,
-   "dbz": 52,
-   "max_dbz": 52,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -32.0828,
-   "lon": -64.9677,
-   "dbz": 52,
-   "max_dbz": 52,
-   "tope_km": 8.2
-  },
-  {
-   "lat": -32.2195,
-   "lon": -64.9677,
-   "dbz": 52,
-   "max_dbz": 52,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.3106,
-   "lon": -64.9347,
-   "dbz": 51,
-   "max_dbz": 51,
+   "lat": -32.3288,
+   "lon": -64.9237,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 7.0
   },
   {
-   "lat": -32.6376,
-   "lon": -64.9018,
-   "dbz": 51,
-   "max_dbz": 55,
+   "lat": -32.2104,
+   "lon": -64.9787,
+   "dbz": 49,
+   "max_dbz": 51,
    "tope_km": 5.9,
    "descartado": "tope bajo (5.9 km)"
-  },
-  {
-   "lat": -32.8007,
-   "lon": -64.9347,
-   "dbz": 50,
-   "max_dbz": 58,
-   "tope_km": 5.3,
-   "descartado": "tope bajo (5.3 km)"
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Villa Dolores": {
-   "km": 16.4,
-   "max_dbz": 52,
-   "tope_km": 8.8,
-   "cuenca_de": "Canal De Riego",
-   "nivel": "intensa"
-  },
-  "Las Tapias": {
-   "km": 11.3,
-   "max_dbz": 52,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "intensa"
-  },
-  "Villa de las Rosas": {
-   "km": 7.1,
-   "max_dbz": 52,
-   "tope_km": 8.8,
-   "cuenca_de": "Arroyo Los Molles",
-   "nivel": "intensa"
-  },
-  "Los Romeros": {
-   "km": 24.6,
-   "max_dbz": 52,
-   "tope_km": 8.2,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "San Javier": {
-   "km": 4.7,
-   "max_dbz": 52,
-   "tope_km": 8.8,
-   "nivel": "intensa"
-  },
-  "Loma Bola": {
-   "km": 5.7,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo El Arenal",
-   "nivel": "intensa"
-  }
- },
- "minutos": 15
+ "localidades": {},
+ "minutos": 13
 }
