@@ -1,54 +1,66 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 15:45",
+ "consultado": "2026-11-16 16:00",
  "radar": "RMA1",
- "observacion": "2026-11-16 15:27",
+ "observacion": "2026-11-16 15:45",
  "nucleos": [
   {
-   "lat": -32.9245,
-   "lon": -65.4076,
-   "dbz": 54,
-   "max_dbz": 63,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -33.0751,
-   "lon": -64.235,
+   "lat": -33.0131,
+   "lon": -64.1381,
    "dbz": 53,
    "max_dbz": 63,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.8447,
+   "lon": -65.2355,
+   "dbz": 53,
+   "max_dbz": 60,
    "tope_km": 14.1
   },
   {
-   "lat": -33.2077,
-   "lon": -65.1817,
-   "dbz": 50,
-   "max_dbz": 54,
+   "lat": -33.349,
+   "lon": -64.9235,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -33.1812,
+   "lon": -65.0311,
+   "dbz": 51,
+   "max_dbz": 60,
    "tope_km": 12.9
   },
   {
-   "lat": -33.4019,
-   "lon": -65.0956,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.1
+   "lat": -32.9954,
+   "lon": -65.2785,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 22.3,
-   "max_dbz": 63,
-   "tope_km": 14.7,
+   "km": 10.2,
+   "max_dbz": 60,
+   "tope_km": 14.1,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Naschel": {
-   "km": 2.2,
+  "Achiras": {
+   "km": 4.3,
+   "max_dbz": 60,
+   "tope_km": 12.9,
+   "nivel": "muy intensa"
+  },
+  "Chucul": {
+   "km": 4.4,
    "max_dbz": 63,
-   "tope_km": 14.7,
-   "cuenca_de": "sin nombre",
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
