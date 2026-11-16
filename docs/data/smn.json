@@ -1,6 +1,6 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-16 18:15",
+ "consultado": "2026-11-16 18:30",
  "alertas": [
   {
    "id": "2026_11_16_2048_cap_es",
@@ -134,6 +134,50 @@
      [
       -65.56,
       -30.96
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "2026_11_16_2117_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-16T21:17:00-03:00",
+   "hasta": "2026-11-16T22:17:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "SANTA FE: GRAL LOPEZ. BUENOS AIRES: GRAL PINTO - GRAL VILLEGAS.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_16_2117_cap_es.xml",
+   "desde_local": "16/11 21:17",
+   "hasta_local": "16/11 22:17",
+   "localidades": 8,
+   "poligonos": [
+    [
+     [
+      -62.46,
+      -34.35
+     ],
+     [
+      -62.48,
+      -33.97
+     ],
+     [
+      -61.89,
+      -34.0
+     ],
+     [
+      -61.88,
+      -34.39
+     ],
+     [
+      -62.25,
+      -34.5
+     ],
+     [
+      -62.46,
+      -34.35
      ]
     ]
    ]
@@ -27278,10 +27322,12 @@
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_96"
   ],
   "Aarón Castellanos": [
+   "2026_11_16_2117_cap_es",
    "CAP_20261116205502_Tormenta_Patagonia_alertas_alertas_49",
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Amenábar": [
+   "2026_11_16_2117_cap_es",
    "CAP_20261116205502_Tormenta_Patagonia_alertas_alertas_49",
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -27338,10 +27384,12 @@
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Christophersen": [
+   "2026_11_16_2117_cap_es",
    "CAP_20261116205502_Tormenta_Patagonia_alertas_alertas_49",
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Diego de Alvear": [
+   "2026_11_16_2117_cap_es",
    "CAP_20261116205502_Tormenta_Patagonia_alertas_alertas_49",
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -27366,6 +27414,7 @@
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Lazzarino": [
+   "2026_11_16_2117_cap_es",
    "CAP_20261116205502_Tormenta_Patagonia_alertas_alertas_49",
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -27382,6 +27431,7 @@
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
   "María Teresa": [
+   "2026_11_16_2117_cap_es",
    "CAP_20261116205502_Tormenta_Patagonia_alertas_alertas_49",
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -27410,6 +27460,7 @@
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
   "San Gregorio": [
+   "2026_11_16_2117_cap_es",
    "CAP_20261116205502_Tormenta_Patagonia_alertas_alertas_49",
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
@@ -27418,6 +27469,7 @@
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],
   "Sancti Spiritu": [
+   "2026_11_16_2117_cap_es",
    "CAP_20261116205502_Tormenta_Patagonia_alertas_alertas_49",
    "CAP_20261116205447_Tormenta_Llanura_alertas_alertas_49"
   ],

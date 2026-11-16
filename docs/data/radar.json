@@ -1,73 +1,66 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 18:15",
+ "consultado": "2026-11-16 18:30",
  "radar": "RMA1",
- "observacion": "2026-11-16 18:00",
+ "observacion": "2026-11-16 18:18",
  "nucleos": [
   {
-   "lat": -32.1143,
-   "lon": -64.009,
-   "dbz": 52,
-   "max_dbz": 62,
+   "lat": -32.2126,
+   "lon": -64.1812,
+   "dbz": 53,
+   "max_dbz": 65,
    "tope_km": 12.3
   },
   {
-   "lat": -32.1769,
-   "lon": -63.8046,
+   "lat": -32.0696,
+   "lon": -63.8907,
    "dbz": 51,
    "max_dbz": 62,
-   "tope_km": null
+   "tope_km": 13.5
   },
   {
-   "lat": -32.1858,
-   "lon": -64.2242,
+   "lat": -32.159,
+   "lon": -64.009,
    "dbz": 50,
-   "max_dbz": 57,
+   "max_dbz": 55,
    "tope_km": 10.6
   },
   {
-   "lat": -32.1679,
-   "lon": -64.4286,
-   "dbz": 50,
-   "max_dbz": 61,
-   "tope_km": null
-  },
-  {
-   "lat": -32.1679,
-   "lon": -64.6868,
+   "lat": -32.2394,
+   "lon": -64.0305,
    "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 12.9
+   "max_dbz": 52,
+   "tope_km": 10.0
   },
   {
-   "lat": -32.2751,
-   "lon": -64.3318,
+   "lat": -32.2662,
+   "lon": -64.5469,
    "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 10.0
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.1501,
+   "lon": -63.9122,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Almafuerte": {
-   "km": 1.4,
-   "max_dbz": 57,
+  "Villa Quillinzo": {
+   "km": 4.3,
+   "max_dbz": 53,
    "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
-  "Embalse": {
-   "km": 4.4,
-   "max_dbz": 61,
-   "tope_km": null,
-   "nivel": "muy intensa"
-  },
-  "Villa del Dique": {
-   "km": 3.4,
-   "max_dbz": 61,
-   "tope_km": null,
-   "nivel": "muy intensa"
+  "Villa la Rivera": {
+   "km": 2.3,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
