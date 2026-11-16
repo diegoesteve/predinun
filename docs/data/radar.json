@@ -1,119 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 09:16",
+ "consultado": "2026-11-16 09:30",
  "radar": "RMA17",
- "observacion": "2026-11-16 09:05",
+ "observacion": "2026-11-16 09:22",
  "nucleos": [
   {
-   "lat": -32.3015,
+   "lat": -32.0006,
    "lon": -65.0007,
-   "dbz": 53,
-   "max_dbz": 58,
-   "tope_km": 7.0
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 10.6
   },
   {
-   "lat": -32.4288,
-   "lon": -64.9127,
-   "dbz": 53,
-   "max_dbz": 53,
-   "tope_km": 6.4
-  },
-  {
-   "lat": -31.9915,
-   "lon": -65.0007,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.1831,
-   "lon": -65.0007,
-   "dbz": 50,
-   "max_dbz": 52,
-   "tope_km": 10.0
+   "lat": -32.5378,
+   "lon": -64.9018,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 5.9,
+   "descartado": "tope bajo (5.9 km)"
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 20.8,
-   "max_dbz": 57,
-   "tope_km": 11.1,
+   "km": 21.1,
+   "max_dbz": 61,
+   "tope_km": 10.6,
    "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
-  "Cañada del Sauce": {
-   "km": 25.8,
-   "max_dbz": 53,
-   "tope_km": 6.4,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Villa de Merlo": {
-   "km": 4.1,
-   "max_dbz": 58,
-   "tope_km": 7.0,
-   "nivel": "muy intensa"
-  },
   "Chuchiras": {
-   "km": 7.7,
-   "max_dbz": 57,
-   "tope_km": 11.1,
+   "km": 8.0,
+   "max_dbz": 61,
+   "tope_km": 10.6,
    "cuenca_de": "Arroyo Chuchiras",
    "nivel": "muy intensa"
   },
-  "La Ramada": {
-   "km": 1.7,
-   "max_dbz": 58,
-   "tope_km": 7.0,
-   "nivel": "muy intensa"
-  },
-  "Villa la Rivera": {
-   "km": 39.9,
-   "max_dbz": 53,
-   "tope_km": 6.4,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Luyaba": {
-   "km": 4.9,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo Corralito",
-   "nivel": "intensa"
-  },
   "San Javier Y Yacanto": {
-   "km": 4.9,
-   "max_dbz": 57,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
-  "Pueblito": {
-   "km": 5.0,
-   "max_dbz": 57,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Hondo",
+   "km": 4.1,
+   "max_dbz": 61,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   },
   "San Javier": {
-   "km": 1.9,
-   "max_dbz": 57,
-   "tope_km": 11.1,
+   "km": 1.1,
+   "max_dbz": 61,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
-  },
-  "Loma Bola": {
-   "km": 4.3,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Pueblo Escondido": {
-   "km": 3.7,
-   "max_dbz": 53,
-   "tope_km": 6.4,
-   "cuenca_de": "Arroyo del Medio",
-   "nivel": "intensa"
   }
  },
- "minutos": 10
+ "minutos": 8
 }
