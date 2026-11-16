@@ -1,39 +1,52 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 04:15",
+ "consultado": "2026-11-16 04:30",
  "radar": "RMA17",
- "observacion": "2026-11-16 04:03",
+ "observacion": "2026-11-16 04:19",
  "nucleos": [
   {
+   "lat": -32.0736,
+   "lon": -64.9787,
+   "dbz": 54,
+   "max_dbz": 55,
+   "tope_km": 10.0
+  },
+  {
    "lat": -32.1831,
-   "lon": -64.9897,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 10.6
+   "lon": -65.0007,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Luyaba": {
-   "km": 7.1,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "cuenca_de": "Acc Privado",
+   "km": 4.9,
+   "max_dbz": 60,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Corralito",
    "nivel": "muy intensa"
   },
   "Los Romeros": {
-   "km": 22.4,
-   "max_dbz": 59,
-   "tope_km": 10.6,
+   "km": 23.9,
+   "max_dbz": 55,
+   "tope_km": 10.0,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
+  "La Poblacion": {
+   "km": 4.4,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
+  },
   "Loma Bola": {
-   "km": 5.0,
-   "max_dbz": 59,
-   "tope_km": 10.6,
+   "km": 4.3,
+   "max_dbz": 60,
+   "tope_km": 10.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 11
 }
