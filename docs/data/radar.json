@@ -1,55 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 07:30",
+ "consultado": "2026-11-17 07:45",
  "radar": "RMA17",
- "observacion": "2026-11-17 07:18",
+ "observacion": "2026-11-17 07:34",
  "nucleos": [
   {
    "lat": -32.1192,
    "lon": -64.9457,
+   "dbz": 53,
+   "max_dbz": 53,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.9915,
+   "lon": -64.9897,
    "dbz": 52,
-   "max_dbz": 52,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.265,
-   "lon": -64.9787,
-   "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 7.0
-  },
-  {
-   "lat": -32.4106,
-   "lon": -64.9347,
-   "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 6.4
-  },
-  {
-   "lat": -32.6557,
-   "lon": -64.9127,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 5.9,
-   "descartado": "tope bajo (5.9 km)"
+   "max_dbz": 56,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cruz de Caña": {
-   "km": 4.9,
-   "max_dbz": 60,
-   "tope_km": 7.0,
-   "cuenca_de": "Arroyo Seco",
+  "Villa Dolores": {
+   "km": 21.8,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
-  "Carpintería": {
-   "km": 4.0,
-   "max_dbz": 55,
-   "tope_km": 6.4,
-   "cuenca_de": "sin nombre",
+  "Chuchiras": {
+   "km": 8.7,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo Chuchiras",
+   "nivel": "muy intensa"
+  },
+  "Pueblito": {
+   "km": 6.1,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo Hondo",
+   "nivel": "muy intensa"
+  },
+  "San Javier": {
+   "km": 2.6,
+   "max_dbz": 56,
+   "tope_km": 8.8,
    "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 11
 }
