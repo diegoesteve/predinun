@@ -1,53 +1,72 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 07:45",
+ "consultado": "2026-11-17 08:00",
  "radar": "RMA17",
- "observacion": "2026-11-17 07:34",
+ "observacion": "2026-11-17 07:42",
  "nucleos": [
   {
-   "lat": -32.1192,
-   "lon": -64.9457,
-   "dbz": 53,
-   "max_dbz": 53,
-   "tope_km": 8.2
+   "lat": -32.0006,
+   "lon": -65.0007,
+   "dbz": 57,
+   "max_dbz": 60,
+   "tope_km": 8.8
   },
   {
-   "lat": -31.9915,
-   "lon": -64.9897,
-   "dbz": 52,
-   "max_dbz": 56,
-   "tope_km": 8.8
+   "lat": -32.1557,
+   "lon": -65.0227,
+   "dbz": 50,
+   "max_dbz": 59,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 21.8,
-   "max_dbz": 56,
+   "km": 21.1,
+   "max_dbz": 60,
    "tope_km": 8.8,
    "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
   "Chuchiras": {
-   "km": 8.7,
-   "max_dbz": 56,
+   "km": 8.0,
+   "max_dbz": 60,
    "tope_km": 8.8,
    "cuenca_de": "Arroyo Chuchiras",
    "nivel": "muy intensa"
   },
-  "Pueblito": {
-   "km": 6.1,
-   "max_dbz": 56,
+  "La Travesía": {
+   "km": 5.0,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "nivel": "muy intensa"
+  },
+  "Luyaba": {
+   "km": 3.1,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "cuenca_de": "Acc Privado",
+   "nivel": "muy intensa"
+  },
+  "San Javier Y Yacanto": {
+   "km": 4.1,
+   "max_dbz": 60,
    "tope_km": 8.8,
-   "cuenca_de": "Arroyo Hondo",
+   "nivel": "muy intensa"
+  },
+  "Los Romeros": {
+   "km": 18.8,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
   "San Javier": {
-   "km": 2.6,
-   "max_dbz": 56,
+   "km": 1.1,
+   "max_dbz": 60,
    "tope_km": 8.8,
    "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 18
 }
