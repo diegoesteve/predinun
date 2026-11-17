@@ -1,33 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 06:15",
+ "consultado": "2026-11-17 06:30",
  "radar": "RMA17",
- "observacion": "2026-11-17 05:56",
+ "observacion": "2026-11-17 06:20",
  "nucleos": [
   {
-   "lat": -32.101,
-   "lon": -64.9567,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 8.2
+   "lat": -32.1101,
+   "lon": -64.9457,
+   "dbz": 54,
+   "max_dbz": 54,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.9641,
+   "lon": -64.9897,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Romeros": {
-   "km": 25.2,
-   "max_dbz": 50,
-   "tope_km": 8.2,
-   "cuenca_de": "sin nombre",
+  "Villa Dolores": {
+   "km": 15.1,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "cuenca_de": "Canal De Riego",
    "nivel": "intensa"
   },
-  "La Poblacion": {
-   "km": 6.2,
-   "max_dbz": 50,
-   "tope_km": 8.2,
+  "Las Tapias": {
+   "km": 10.2,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "intensa"
+  },
+  "Villa de las Rosas": {
+   "km": 5.9,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo Los Molles",
+   "nivel": "intensa"
+  },
+  "Los Romeros": {
+   "km": 26.1,
+   "max_dbz": 54,
+   "tope_km": 10.0,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   }
  },
- "minutos": 20
+ "minutos": 10
 }
