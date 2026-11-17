@@ -1,54 +1,79 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 06:30",
+ "consultado": "2026-11-17 06:45",
  "radar": "RMA17",
- "observacion": "2026-11-17 06:20",
+ "observacion": "2026-11-17 06:37",
  "nucleos": [
   {
-   "lat": -32.1101,
-   "lon": -64.9457,
+   "lat": -32.0006,
+   "lon": -65.0007,
    "dbz": 54,
-   "max_dbz": 54,
-   "tope_km": 10.0
+   "max_dbz": 65,
+   "tope_km": 11.1
   },
   {
-   "lat": -31.9641,
-   "lon": -64.9897,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 8.8
+   "lat": -32.101,
+   "lon": -64.9567,
+   "dbz": 53,
+   "max_dbz": 53,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -32.2924,
+   "lon": -65.0007,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 7.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 15.1,
-   "max_dbz": 51,
-   "tope_km": 8.8,
-   "cuenca_de": "Canal De Riego",
-   "nivel": "intensa"
-  },
-  "Las Tapias": {
-   "km": 10.2,
-   "max_dbz": 51,
-   "tope_km": 8.8,
+   "km": 21.1,
+   "max_dbz": 65,
+   "tope_km": 11.1,
    "cuenca_de": "Rio De Los Sauces",
+   "nivel": "muy intensa"
+  },
+  "Chuchiras": {
+   "km": 8.0,
+   "max_dbz": 65,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Chuchiras",
+   "nivel": "muy intensa"
+  },
+  "La Ramada": {
+   "km": 2.6,
+   "max_dbz": 52,
+   "tope_km": 7.0,
    "nivel": "intensa"
   },
-  "Villa de las Rosas": {
-   "km": 5.9,
-   "max_dbz": 51,
-   "tope_km": 8.8,
-   "cuenca_de": "Arroyo Los Molles",
-   "nivel": "intensa"
+  "San Javier Y Yacanto": {
+   "km": 4.1,
+   "max_dbz": 65,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
   },
   "Los Romeros": {
-   "km": 26.1,
-   "max_dbz": 54,
-   "tope_km": 10.0,
+   "km": 25.2,
+   "max_dbz": 53,
+   "tope_km": 8.2,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
+  },
+  "La Poblacion": {
+   "km": 6.2,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "San Javier": {
+   "km": 1.1,
+   "max_dbz": 65,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 10
+ "minutos": 8
 }
