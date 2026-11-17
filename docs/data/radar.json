@@ -1,260 +1,127 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 21:45",
+ "consultado": "2026-11-16 22:00",
  "radar": "RMA1",
- "observacion": "2026-11-16 21:28",
+ "observacion": "2026-11-16 21:46",
  "nucleos": [
   {
-   "lat": -31.684,
-   "lon": -64.2565,
-   "dbz": 53,
-   "max_dbz": 65,
-   "tope_km": 10.6
+   "lat": -30.7992,
+   "lon": -65.5259,
+   "dbz": 54,
+   "max_dbz": 61,
+   "tope_km": 15.2
   },
   {
-   "lat": -31.414,
-   "lon": -64.8697,
-   "dbz": 51,
-   "max_dbz": 64,
-   "tope_km": 15.8
-  },
-  {
-   "lat": -31.5671,
-   "lon": -64.4824,
-   "dbz": 50,
-   "max_dbz": 58,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.4812,
-   "lon": -63.8692,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.8366,
-   "lon": -64.7298,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.2246,
-   "lon": -65.5905,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.2065,
-   "lon": -65.2893,
-   "dbz": 49,
-   "max_dbz": 54,
+   "lat": -31.648,
+   "lon": -64.2242,
+   "dbz": 52,
+   "max_dbz": 61,
    "tope_km": 11.1
   },
   {
-   "lat": -30.4084,
-   "lon": -63.8907,
+   "lat": -31.2878,
+   "lon": -64.9127,
+   "dbz": 51,
+   "max_dbz": 61,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -31.621,
+   "lon": -64.6868,
    "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 12.9
+   "max_dbz": 49,
+   "tope_km": 10.6
   },
   {
-   "lat": -30.4357,
-   "lon": -64.0736,
-   "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 5.9,
-   "descartado": "tope bajo (5.9 km)"
+   "lat": -31.2336,
+   "lon": -65.1709,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 12.3
   },
   {
-   "lat": -31.3419,
-   "lon": -65.2032,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -31.9263,
-   "lon": -64.6115,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 7.0
-  },
-  {
-   "lat": -31.989,
+   "lat": -31.8097,
    "lon": -64.4394,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 7.0
-  },
-  {
-   "lat": -31.8007,
-   "lon": -64.8804,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 9.4
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa de Soto": {
-   "km": 63.1,
-   "max_dbz": 64,
-   "tope_km": 15.8,
-   "cuenca_de": "Río Soto",
-   "nivel": "muy intensa"
-  },
   "San Carlos Minas": {
-   "km": 18.6,
-   "max_dbz": 52,
-   "tope_km": 13.5,
-   "cuenca_de": "Jaime",
-   "nivel": "intensa"
-  },
-  "Salsacate": {
-   "km": 11.1,
-   "max_dbz": 52,
-   "tope_km": 13.5,
-   "cuenca_de": "Arroyo Salsacate",
-   "nivel": "intensa"
-  },
-  "Los Reartes": {
-   "km": 3.2,
-   "max_dbz": 51,
-   "tope_km": 7.0,
-   "cuenca_de": "Rio De Los Reartes",
-   "nivel": "intensa"
-  },
-  "Cruz de Caña": {
-   "km": 37.6,
-   "max_dbz": 64,
-   "tope_km": 15.8,
-   "cuenca_de": "Río San Guillermo",
+   "km": 21.2,
+   "max_dbz": 61,
+   "tope_km": 14.7,
+   "cuenca_de": "Noguinet",
    "nivel": "muy intensa"
   },
-  "Villa Dolores": {
-   "km": 28.1,
-   "max_dbz": 48,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "intensa"
-  },
-  "San Agustin": {
-   "km": 6.9,
-   "max_dbz": 50,
-   "tope_km": 7.0,
-   "cuenca_de": "Arroyo San Agustin",
-   "nivel": "intensa"
-  },
-  "Potrero de Garay": {
-   "km": 15.0,
-   "max_dbz": 55,
+  "Anisacate": {
+   "km": 27.8,
+   "max_dbz": 49,
    "tope_km": 10.6,
-   "cuenca_de": "Rio San Pedro",
-   "nivel": "muy intensa"
-  },
-  "Bañado de Soto": {
-   "km": 68.0,
-   "max_dbz": 64,
-   "tope_km": 15.8,
-   "cuenca_de": "San Guillermo De Soto",
-   "nivel": "muy intensa"
-  },
-  "Nono": {
-   "km": 9.6,
-   "max_dbz": 48,
-   "tope_km": 9.4,
-   "cuenca_de": "Río Chico de Nono",
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "Las Calles": {
-   "km": 6.8,
-   "max_dbz": 48,
-   "tope_km": 9.4,
-   "cuenca_de": "Río Chico de Nono",
-   "nivel": "intensa"
-  },
-  "Los Molinos": {
-   "km": 14.8,
-   "max_dbz": 50,
-   "tope_km": 7.0,
-   "cuenca_de": "Rio Los Molinos",
-   "nivel": "intensa"
-  },
-  "Dique Chico": {
-   "km": 24.2,
-   "max_dbz": 58,
+  "La Serranita": {
+   "km": 24.9,
+   "max_dbz": 49,
    "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "La Playa": {
-   "km": 23.3,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio Guasapampa",
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "Falda del Carmen": {
-   "km": 2.0,
-   "max_dbz": 58,
+  "Villa San Isidro": {
+   "km": 5.6,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Carada del Tala",
+   "nivel": "intensa"
+  },
+  "La Paisanita": {
+   "km": 22.3,
+   "max_dbz": 49,
    "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
-  "Parque Calmayo": {
-   "km": 4.8,
-   "max_dbz": 50,
-   "tope_km": 7.0,
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "Capilla Vieja": {
-   "km": 0.7,
-   "max_dbz": 51,
-   "tope_km": 7.0,
-   "nivel": "intensa"
-  },
-  "Villa Parque Santa Ana": {
-   "km": 11.7,
-   "max_dbz": 58,
-   "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
+  "Sauce de los Quevedos": {
+   "km": 11.0,
+   "max_dbz": 61,
+   "tope_km": 14.7,
+   "cuenca_de": "Arroyo Sauce de los Quevedos",
    "nivel": "muy intensa"
   },
-  "La Argentina": {
-   "km": 2.2,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+  "Jose de la Quintana": {
+   "km": 1.7,
+   "max_dbz": 53,
+   "tope_km": 10.0,
    "nivel": "intensa"
   },
   "La Boca del Río": {
-   "km": 29.9,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
+   "km": 3.4,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "nivel": "intensa"
   },
-  "Villa la Merced": {
-   "km": 21.5,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Guasapampa": {
-   "km": 12.7,
+  "Piedras Anchas": {
+   "km": 4.0,
    "max_dbz": 54,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Guasapampa",
+   "tope_km": 12.3,
+   "cuenca_de": "Arroyo Piedras Anchas",
+   "nivel": "intensa"
+  },
+  "Talaini": {
+   "km": 2.0,
+   "max_dbz": 54,
+   "tope_km": 12.3,
    "nivel": "intensa"
   },
   "Rafael Garcia": {
-   "km": 4.5,
-   "max_dbz": 65,
-   "tope_km": 10.6,
+   "km": 3.4,
+   "max_dbz": 61,
+   "tope_km": 11.1,
    "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
