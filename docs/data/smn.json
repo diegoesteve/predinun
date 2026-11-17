@@ -1,55 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-16 23:15",
+ "consultado": "2026-11-16 23:30",
  "alertas": [
-  {
-   "id": "2026_11_17_0027_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas severas",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS SEVERAS CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
-   "desde": "2026-11-17T00:27:00-03:00",
-   "hasta": "2026-11-17T02:27:00-03:00",
-   "descripcion": "TORMENTAS SEVERAS CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
-   "instruccion": "Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Evitá circular por calles inundadas o afectadas. Retirá o asegurá objetos que puedan ser arrastrados por el viento. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, ",
-   "zona": "LA RIOJA: CHAMICAL - GRAL A.  V.  PENALOZA - GRAL BELGRANO - GRAL JUAN F.  QUIROGA - INDEPENDENCIA. SAN JUAN: VALLE FERTIL. CORDOBA: CRUZ DEL EJE - MINAS - POCHO.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_17_0027_cap_es.xml",
-   "desde_local": "17/11 00:27",
-   "hasta_local": "17/11 02:27",
-   "localidades": 21,
-   "poligonos": [
-    [
-     [
-      -67.85,
-      -30.2
-     ],
-     [
-      -67.59,
-      -30.73
-     ],
-     [
-      -65.49,
-      -30.77
-     ],
-     [
-      -64.94,
-      -31.36
-     ],
-     [
-      -64.72,
-      -30.75
-     ],
-     [
-      -65.58,
-      -30.2
-     ],
-     [
-      -67.85,
-      -30.2
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_17_0050_cap_es",
    "tipo": "aviso a corto plazo",
@@ -21392,85 +21344,6 @@
   }
  ],
  "localidades": {
-  "Villa de Soto": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "San Carlos Minas": [
-   "2026_11_17_0027_cap_es",
-   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
-   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
-   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
-   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
-  ],
-  "Cruz de Caña": [
-   "2026_11_17_0027_cap_es",
-   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
-   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
-   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
-   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
-  ],
-  "Cruz del Eje": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Bañado de Soto": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Serrezuela": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Santa Ana": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "La Higuera": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Agua de Crespin": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Paraje Puesto del Gallo": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Tres Árboles": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Rumi Huasi": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Piedras Amontonadas": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Paraje Palo Parado": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Sauce de los Quevedos": [
-   "2026_11_17_0027_cap_es",
-   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
-   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
-   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
-   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
-  ],
-  "San Geronimo": [
-   "2026_11_17_0027_cap_es",
-   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
-   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
-   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
-   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
-  ],
-  "Iglesia Vieja": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "El Brete": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Las Playas": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Media Naranja": [
-   "2026_11_17_0027_cap_es"
-  ],
-  "Tuclame": [
-   "2026_11_17_0027_cap_es"
-  ],
   "Cordoba": [
    "2026_11_17_0050_cap_es",
    "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_2",
@@ -22138,7 +22011,19 @@
    "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_7",
    "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_7"
   ],
+  "San Carlos Minas": [
+   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
+   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
+   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
+   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
+  ],
   "Salsacate": [
+   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
+   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
+   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
+   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
+  ],
+  "Cruz de Caña": [
    "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
    "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
    "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
@@ -22264,6 +22149,12 @@
    "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
    "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
   ],
+  "Sauce de los Quevedos": [
+   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
+   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
+   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
+   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
+  ],
   "La Argentina": [
    "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
    "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
@@ -22289,6 +22180,12 @@
    "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
   ],
   "Guasapampa": [
+   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
+   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
+   "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
+   "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_84"
+  ],
+  "San Geronimo": [
    "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_6",
    "CAP_20261117012253_Tormenta_Llanura_alertas_alertas_6",
    "CAP_20261117012253_Tormenta_Patagonia_alertas_alertas_84",
