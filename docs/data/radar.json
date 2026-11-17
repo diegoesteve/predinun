@@ -1,73 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 02:15",
+ "consultado": "2026-11-17 02:30",
  "radar": "RMA1",
- "observacion": "2026-11-17 02:01",
+ "observacion": "2026-11-17 02:19",
  "nucleos": [
   {
-   "lat": -29.8696,
-   "lon": -65.2785,
-   "dbz": 51,
+   "lat": -29.8604,
+   "lon": -65.0741,
+   "dbz": 54,
    "max_dbz": 59,
-   "tope_km": 14.1
+   "tope_km": 13.5
   },
   {
-   "lat": -30.372,
-   "lon": -64.9342,
-   "dbz": 49,
-   "max_dbz": 52,
+   "lat": -29.9794,
+   "lon": -64.8374,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.2534,
+   "lon": -64.7729,
+   "dbz": 51,
+   "max_dbz": 56,
    "tope_km": 9.4
   },
   {
-   "lat": -30.2808,
-   "lon": -65.1494,
+   "lat": -30.1074,
+   "lon": -64.4824,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 6.4
+  },
+  {
+   "lat": -30.299,
+   "lon": -64.5685,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -30.1622,
+   "lon": -64.7191,
    "dbz": 49,
-   "max_dbz": 49,
+   "max_dbz": 54,
    "tope_km": 8.2
   },
   {
-   "lat": -30.3082,
-   "lon": -65.0633,
+   "lat": -29.952,
+   "lon": -64.9665,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.6
+   "max_dbz": 52,
+   "tope_km": 12.9
   },
   {
-   "lat": -30.3993,
-   "lon": -64.5254,
+   "lat": -30.1804,
+   "lon": -64.321,
    "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -30.2443,
-   "lon": -64.5039,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.1348,
-   "lon": -64.5577,
-   "dbz": 47,
    "max_dbz": 49,
    "tope_km": 7.6
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Quilino": {
-   "km": 3.3,
-   "max_dbz": 48,
-   "tope_km": 9.4,
-   "nivel": "intensa"
-  },
-  "Jaime Peter": {
-   "km": 2.3,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  }
- },
- "minutos": 15
+ "localidades": {},
+ "minutos": 11
 }
