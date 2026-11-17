@@ -1,150 +1,127 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 23:45",
+ "consultado": "2026-11-17 00:00",
  "radar": "RMA1",
- "observacion": "2026-11-16 23:35",
+ "observacion": "2026-11-16 23:44",
  "nucleos": [
   {
-   "lat": -30.2352,
-   "lon": -64.7513,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": null
+   "lat": -30.1348,
+   "lon": -64.7298,
+   "dbz": 50,
+   "max_dbz": 60,
+   "tope_km": 17.0
   },
   {
-   "lat": -30.8355,
-   "lon": -63.8369,
+   "lat": -30.4357,
+   "lon": -64.4501,
    "dbz": 50,
    "max_dbz": 56,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -30.0343,
-   "lon": -65.1924,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 12.9
+   "tope_km": 15.2
   },
   {
    "lat": -30.1531,
-   "lon": -65.0311,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -30.2352,
-   "lon": -65.1602,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 14.1
+   "lon": -64.9988,
+   "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 15.2
   },
   {
    "lat": -30.7811,
-   "lon": -64.2027,
+   "lon": -64.1812,
    "dbz": 49,
    "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.654,
+   "lon": -64.3318,
+   "dbz": 49,
+   "max_dbz": 56,
    "tope_km": 11.7
   },
   {
-   "lat": -30.7085,
-   "lon": -64.4501,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -30.9442,
-   "lon": -63.8799,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -30.554,
-   "lon": -64.5362,
-   "dbz": 49,
-   "max_dbz": 53,
+   "lat": -30.0891,
+   "lon": -64.9557,
+   "dbz": 48,
+   "max_dbz": 49,
    "tope_km": 14.1
   },
   {
-   "lat": -30.1348,
-   "lon": -65.1279,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.0166,
-   "lon": -63.7831,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.8083,
-   "lon": -64.3856,
+   "lat": -30.8264,
+   "lon": -63.8046,
    "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 9.4
+   "max_dbz": 51,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.7357,
+   "lon": -64.0951,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.9261,
+   "lon": -64.0413,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 11.1
   },
   {
    "lat": -30.9985,
-   "lon": -64.0951,
-   "dbz": 48,
-   "max_dbz": 51,
+   "lon": -63.8799,
+   "dbz": 47,
+   "max_dbz": 49,
    "tope_km": 11.1
   },
   {
-   "lat": -30.3537,
-   "lon": -65.1709,
-   "dbz": 48,
-   "max_dbz": 49,
+   "lat": -30.4357,
+   "lon": -64.6222,
+   "dbz": 47,
+   "max_dbz": 47,
    "tope_km": 13.5
   },
   {
-   "lat": -30.9623,
-   "lon": -63.9768,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.2626,
-   "lon": -65.0741,
+   "lat": -30.5085,
+   "lon": -64.5147,
    "dbz": 47,
    "max_dbz": 48,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.217,
+   "lon": -65.0418,
+   "dbz": 46,
+   "max_dbz": 46,
    "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Jesús María": {
-   "km": 2.2,
-   "max_dbz": 51,
+  "Villa del Totoral": {
+   "km": 4.2,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
+  "Villa Albertina": {
+   "km": 4.2,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "San Pedro de Toyos": {
+   "km": 2.1,
+   "max_dbz": 56,
+   "tope_km": 15.2,
+   "nivel": "muy intensa"
+  },
+  "Sinsacate": {
+   "km": 4.8,
+   "max_dbz": 47,
    "tope_km": 11.1,
-   "nivel": "intensa"
-  },
-  "Colonia Caroya": {
-   "km": 1.5,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "nivel": "intensa"
-  },
-  "Paraje San Pellegrino": {
-   "km": 8.9,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "cuenca_de": "Río Pinto",
-   "nivel": "intensa"
-  },
-  "Copacabana": {
-   "km": 9.4,
-   "max_dbz": 54,
-   "tope_km": 12.9,
-   "cuenca_de": "Rio Copacabana",
    "nivel": "intensa"
   }
  },
- "minutos": 10
+ "minutos": 16
 }
