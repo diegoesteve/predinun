@@ -1,162 +1,110 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 22:15",
+ "consultado": "2026-11-16 22:31",
  "radar": "RMA1",
- "observacion": "2026-11-16 22:05",
+ "observacion": "2026-11-16 22:14",
  "nucleos": [
   {
-   "lat": -30.772,
-   "lon": -65.3861,
-   "dbz": 53,
-   "max_dbz": 62,
-   "tope_km": 15.2
-  },
-  {
-   "lat": -31.3509,
-   "lon": -64.0736,
-   "dbz": 53,
-   "max_dbz": 63,
+   "lat": -31.3599,
+   "lon": -64.0198,
+   "dbz": 51,
+   "max_dbz": 61,
    "tope_km": 9.4
   },
   {
-   "lat": -31.4771,
-   "lon": -63.8907,
+   "lat": -31.396,
+   "lon": -64.1704,
    "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 8.2
-  },
-  {
-   "lat": -31.4681,
-   "lon": -64.321,
-   "dbz": 50,
-   "max_dbz": 59,
+   "max_dbz": 60,
    "tope_km": null
   },
   {
-   "lat": -31.1884,
-   "lon": -64.8589,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.657,
-   "lon": -63.9983,
-   "dbz": 50,
-   "max_dbz": 58,
+   "lat": -31.5311,
+   "lon": -63.8154,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 10.0
   },
   {
-   "lat": -31.4681,
-   "lon": -64.1381,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.7558,
-   "lon": -63.8799,
-   "dbz": 50,
+   "lat": -30.7175,
+   "lon": -65.3538,
+   "dbz": 49,
    "max_dbz": 54,
-   "tope_km": 9.4
+   "tope_km": 14.7
   },
   {
-   "lat": -31.089,
-   "lon": -64.9773,
+   "lat": -31.2697,
+   "lon": -64.5147,
    "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.7175,
-   "lon": -65.5905,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -31.3329,
-   "lon": -64.6222,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.3329,
-   "lon": -64.5362,
-   "dbz": 47,
-   "max_dbz": 49,
    "tope_km": 11.7
   },
   {
-   "lat": -31.2426,
-   "lon": -64.8159,
+   "lat": -31.1071,
+   "lon": -64.8267,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -31.1975,
+   "lon": -64.7191,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -31.666,
+   "lon": -63.9122,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.2787,
+   "lon": -64.6545,
    "dbz": 47,
-   "max_dbz": 59,
-   "tope_km": 12.3
+   "max_dbz": 49,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {
   "Cosquin": {
    "nucleos": 2,
-   "max_dbz": 51
+   "max_dbz": 53
   },
   "Capital": {
    "nucleos": 1,
-   "max_dbz": 57
+   "max_dbz": 60
   }
  },
  "localidades": {
-  "Tanti": {
-   "km": 4.9,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+  "Cordoba": {
+   "km": 1.6,
+   "max_dbz": 60,
+   "tope_km": null,
+   "nivel": "muy intensa"
   },
-  "Cruz de Caña": {
-   "km": 3.8,
-   "max_dbz": 53,
-   "tope_km": 10.6,
+  "Santa María de Punilla": {
+   "km": 18.9,
+   "max_dbz": 49,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Cosquín",
    "nivel": "intensa"
   },
   "Malvinas Argentinas": {
-   "km": 3.6,
-   "max_dbz": 63,
+   "km": 3.7,
+   "max_dbz": 61,
    "tope_km": 9.4,
    "nivel": "muy intensa"
   },
-  "La Higuera": {
-   "km": 14.2,
+  "San Roque": {
+   "km": 8.7,
    "max_dbz": 53,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Los Quirquinchos",
-   "nivel": "intensa"
-  },
-  "Characato": {
-   "km": 12.6,
-   "max_dbz": 59,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Ávalos",
-   "nivel": "muy intensa"
-  },
-  "La Perla": {
-   "km": 2.0,
-   "max_dbz": 59,
-   "tope_km": null,
-   "nivel": "muy intensa"
-  },
-  "Malagueño": {
-   "km": 3.8,
-   "max_dbz": 59,
-   "tope_km": null,
-   "nivel": "muy intensa"
-  },
-  "Villa Santa Cruz del Lago": {
-   "km": 4.1,
-   "max_dbz": 49,
    "tope_km": 11.7,
+   "cuenca_de": "Lago San Roque",
    "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
