@@ -1,60 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 00:30",
+ "consultado": "2026-11-17 00:45",
  "radar": "RMA1",
- "observacion": "2026-11-17 00:12",
+ "observacion": "2026-11-17 00:30",
  "nucleos": [
   {
-   "lat": -30.0434,
-   "lon": -64.4501,
+   "lat": -29.9062,
+   "lon": -64.2887,
    "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 15.8
+   "max_dbz": 59,
+   "tope_km": 17.0
   },
   {
-   "lat": -30.6085,
-   "lon": -63.9337,
+   "lat": -29.8146,
+   "lon": -64.6007,
    "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -29.9886,
-   "lon": -64.8912,
-   "dbz": 48,
-   "max_dbz": 55,
-   "tope_km": 15.2
-  },
-  {
-   "lat": -29.9154,
-   "lon": -64.9988,
-   "dbz": 48,
-   "max_dbz": 52,
+   "max_dbz": 50,
    "tope_km": 12.9
-  },
-  {
-   "lat": -30.4812,
-   "lon": -63.9875,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 11.7
   }
  ],
  "cuencas": {},
- "localidades": {
-  "San José de las Salinas": {
-   "km": 16.7,
-   "max_dbz": 57,
-   "tope_km": 15.8,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Isla de San Antonio": {
-   "km": 3.6,
-   "max_dbz": 57,
-   "tope_km": 15.8,
-   "nivel": "muy intensa"
-  }
- },
- "minutos": 19
+ "localidades": {},
+ "minutos": 16
 }
