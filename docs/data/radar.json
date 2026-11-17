@@ -1,41 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 08:15",
+ "consultado": "2026-11-17 08:30",
  "radar": "RMA17",
- "observacion": "2026-11-17 07:50",
+ "observacion": "2026-11-17 08:15",
  "nucleos": [
   {
-   "lat": -32.1375,
-   "lon": -64.9897,
-   "dbz": 52,
-   "max_dbz": 64,
-   "tope_km": 8.2
+   "lat": -31.9367,
+   "lon": -64.9787,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 8.8
   },
   {
-   "lat": -32.6557,
-   "lon": -64.9237,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 5.9,
-   "descartado": "tope bajo (5.9 km)"
+   "lat": -32.3106,
+   "lon": -64.9347,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 6.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Travesía": {
-   "km": 5.5,
-   "max_dbz": 64,
-   "tope_km": 8.2,
-   "cuenca_de": "Arroyo de la Cal",
+  "Villa Dolores": {
+   "km": 15.7,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "cuenca_de": "Canal De Riego",
    "nivel": "muy intensa"
   },
-  "Los Romeros": {
-   "km": 21.8,
-   "max_dbz": 64,
-   "tope_km": 8.2,
-   "cuenca_de": "sin nombre",
+  "Las Tapias": {
+   "km": 11.2,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "muy intensa"
+  },
+  "Las Chacras Norte": {
+   "km": 5.6,
+   "max_dbz": 58,
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo Los Hornillos",
+   "nivel": "muy intensa"
+  },
+  "Los Hornillos": {
+   "km": 3.8,
+   "max_dbz": 58,
+   "tope_km": 8.8,
    "nivel": "muy intensa"
   }
  },
- "minutos": 25
+ "minutos": 15
 }
