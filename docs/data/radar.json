@@ -1,101 +1,195 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 22:45",
+ "consultado": "2026-11-16 23:01",
  "radar": "RMA1",
- "observacion": "2026-11-16 22:32",
+ "observacion": "2026-11-16 22:41",
  "nucleos": [
   {
-   "lat": -31.2517,
-   "lon": -64.0198,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 10.6
+   "lat": -31.2336,
+   "lon": -64.0843,
+   "dbz": 51,
+   "max_dbz": 61,
+   "tope_km": 11.1
   },
   {
-   "lat": -31.0076,
-   "lon": -64.633,
-   "dbz": 50,
+   "lat": -30.917,
+   "lon": -64.7406,
+   "dbz": 51,
    "max_dbz": 55,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -30.6085,
+   "lon": -65.1817,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -30.9261,
+   "lon": -64.5469,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.8808,
+   "lon": -64.6545,
+   "dbz": 50,
+   "max_dbz": 54,
    "tope_km": 12.3
   },
   {
-   "lat": -31.3148,
-   "lon": -64.2134,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 8.2
+   "lat": -31.2246,
+   "lon": -64.2457,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 11.1
   },
   {
-   "lat": -30.7085,
-   "lon": -65.2677,
-   "dbz": 48,
+   "lat": -31.2426,
+   "lon": -64.3318,
+   "dbz": 49,
    "max_dbz": 52,
-   "tope_km": 14.1
+   "tope_km": 10.6
   },
   {
-   "lat": -31.3779,
-   "lon": -63.8799,
+   "lat": -31.0619,
+   "lon": -64.4178,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.0
+   "max_dbz": 55,
+   "tope_km": 11.1
   },
   {
    "lat": -31.3058,
-   "lon": -64.3641,
+   "lon": -63.8799,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 9.4
+   "max_dbz": 48,
+   "tope_km": 10.6
   },
   {
-   "lat": -31.0438,
-   "lon": -64.7298,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -31.3599,
+   "lon": -63.8369,
+   "dbz": 48,
+   "max_dbz": 53,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.2517,
+   "lon": -63.9445,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -30.9623,
+   "lon": -65.1279,
+   "dbz": 48,
+   "max_dbz": 51,
    "tope_km": 12.9
+  },
+  {
+   "lat": -31.0347,
+   "lon": -64.6115,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.0981,
+   "lon": -64.633,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.7901,
+   "lon": -65.1602,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 12.3
   }
  ],
- "cuencas": {},
- "localidades": {
-  "Cordoba": {
-   "km": 5.4,
-   "max_dbz": 48,
-   "tope_km": 8.2,
-   "cuenca_de": "Canal",
-   "nivel": "intensa"
-  },
-  "La Calera": {
-   "km": 3.4,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo La Cascada",
-   "nivel": "intensa"
-  },
-  "Serrezuela": {
-   "km": 9.1,
-   "max_dbz": 52,
-   "tope_km": 14.1,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "El Gateado": {
-   "km": 10.6,
-   "max_dbz": 48,
-   "tope_km": 8.2,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Iglesia Vieja": {
-   "km": 2.3,
-   "max_dbz": 52,
-   "tope_km": 14.1,
-   "nivel": "intensa"
-  },
-  "Parque Norte": {
-   "km": 3.9,
-   "max_dbz": 48,
-   "tope_km": 8.2,
-   "nivel": "intensa"
+ "cuencas": {
+  "SierrasChicas": {
+   "nucleos": 1,
+   "max_dbz": 52
   }
  },
- "minutos": 14
+ "localidades": {
+  "Villa Allende": {
+   "km": 4.6,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Chico",
+   "nivel": "intensa"
+  },
+  "Unquillo": {
+   "km": 1.5,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Mendiolaza": {
+   "km": 4.4,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "San Marcos Sierras": {
+   "km": 18.2,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "cuenca_de": "Rio San Marcos Sierra",
+   "nivel": "muy intensa"
+  },
+  "Villa Cerro Azul": {
+   "km": 8.5,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Vicente",
+   "nivel": "muy intensa"
+  },
+  "Capilla del Monte": {
+   "km": 6.6,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Dolores",
+   "nivel": "muy intensa"
+  },
+  "Los Molles": {
+   "km": 17.8,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Río San Cristóbal",
+   "nivel": "muy intensa"
+  },
+  "Colonia Caroya": {
+   "km": 29.9,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Carnero",
+   "nivel": "muy intensa"
+  },
+  "San Esteban": {
+   "km": 1.3,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "El Gateado": {
+   "km": 16.6,
+   "max_dbz": 57,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Los Cocos": {
+   "km": 4.1,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 20
 }
