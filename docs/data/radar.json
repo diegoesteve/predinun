@@ -1,173 +1,182 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 21:15",
+ "consultado": "2026-11-16 21:30",
  "radar": "RMA1",
- "observacion": "2026-11-16 21:01",
+ "observacion": "2026-11-16 21:19",
  "nucleos": [
   {
-   "lat": -31.1884,
-   "lon": -65.5367,
+   "lat": -31.666,
+   "lon": -64.3318,
+   "dbz": 53,
+   "max_dbz": 59,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.3058,
+   "lon": -65.343,
    "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 10.6
+   "max_dbz": 59,
+   "tope_km": 14.1
   },
   {
-   "lat": -30.6176,
-   "lon": -63.7186,
+   "lat": -31.45,
+   "lon": -64.9557,
    "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 11.1
+   "max_dbz": 62,
+   "tope_km": 13.5
   },
   {
-   "lat": -31.2787,
-   "lon": -65.4614,
+   "lat": -31.2065,
+   "lon": -65.343,
    "dbz": 51,
-   "max_dbz": 56,
+   "max_dbz": 54,
    "tope_km": 10.0
   },
   {
-   "lat": -31.432,
-   "lon": -65.1709,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -31.5041,
-   "lon": -65.4291,
+   "lat": -31.2607,
+   "lon": -65.4183,
    "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 10.0
+   "max_dbz": 57,
+   "tope_km": 12.3
   },
   {
-   "lat": -30.6812,
-   "lon": -63.7724,
+   "lat": -31.9083,
+   "lon": -64.7298,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.8994,
-   "lon": -65.0095,
-   "dbz": 49,
-   "max_dbz": 52,
+   "max_dbz": 53,
    "tope_km": 9.4
   },
   {
-   "lat": -31.9979,
-   "lon": -64.9235,
+   "lat": -31.8456,
+   "lon": -64.7944,
    "dbz": 49,
    "max_dbz": 54,
-   "tope_km": 7.6
+   "tope_km": 10.0
   },
   {
-   "lat": -31.657,
-   "lon": -65.3538,
-   "dbz": 48,
-   "max_dbz": 51,
+   "lat": -31.387,
+   "lon": -64.9235,
+   "dbz": 49,
+   "max_dbz": 55,
    "tope_km": 11.7
   },
   {
-   "lat": -30.2899,
-   "lon": -64.321,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -31.3329,
+   "lon": -65.2462,
+   "dbz": 48,
+   "max_dbz": 54,
    "tope_km": 10.6
+  },
+  {
+   "lat": -31.5581,
+   "lon": -65.2893,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.5581,
+   "lon": -65.1064,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
   "San Carlos Minas": {
-   "km": 27.1,
-   "max_dbz": 57,
-   "tope_km": 9.4,
+   "km": 32.2,
+   "max_dbz": 62,
+   "tope_km": 13.5,
    "cuenca_de": "Jaime",
    "nivel": "muy intensa"
   },
   "Salsacate": {
-   "km": 14.2,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Salsacate",
+   "km": 19.1,
+   "max_dbz": 62,
+   "tope_km": 13.5,
+   "cuenca_de": "Rio Salsacate",
    "nivel": "muy intensa"
   },
-  "Villa Dolores": {
-   "km": 12.6,
-   "max_dbz": 52,
+  "Los Reartes": {
+   "km": 12.0,
+   "max_dbz": 53,
    "tope_km": 9.4,
-   "cuenca_de": "Arroyo De Las Tapias",
+   "cuenca_de": "Río del Medio",
    "nivel": "intensa"
   },
-  "El Corcovado el Torreon": {
-   "km": 42.7,
+  "Potrero de Garay": {
+   "km": 21.2,
    "max_dbz": 54,
-   "tope_km": 7.6,
-   "cuenca_de": "Rio Santa Rosa",
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Pedro",
    "nivel": "intensa"
   },
-  "Villa Quilino": {
-   "km": 15.7,
-   "max_dbz": 47,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Las Chacras",
-   "nivel": "intensa"
-  },
-  "Santa Mónica": {
-   "km": 29.0,
-   "max_dbz": 54,
-   "tope_km": 7.6,
-   "cuenca_de": "Río Santa Rosa",
-   "nivel": "intensa"
-  },
-  "Las Chacras Norte": {
-   "km": 4.7,
-   "max_dbz": 52,
+  "Villa Berna": {
+   "km": 0.7,
+   "max_dbz": 53,
    "tope_km": 9.4,
    "nivel": "intensa"
   },
-  "El Corcovado": {
-   "km": 41.7,
-   "max_dbz": 54,
-   "tope_km": 7.6,
-   "cuenca_de": "Rio Santa Rosa",
+  "La Cumbrecita": {
+   "km": 4.2,
+   "max_dbz": 53,
+   "tope_km": 9.4,
    "nivel": "intensa"
   },
-  "La Cortadera": {
-   "km": 2.6,
-   "max_dbz": 51,
+  "Taninga": {
+   "km": 16.2,
+   "max_dbz": 62,
+   "tope_km": 13.5,
+   "cuenca_de": "Río Jaime",
+   "nivel": "muy intensa"
+  },
+  "Chancaní": {
+   "km": 22.8,
+   "max_dbz": 50,
+   "tope_km": 12.3,
+   "cuenca_de": "Río del Norte (Chancani)",
+   "nivel": "intensa"
+  },
+  "Los Talares": {
+   "km": 11.6,
+   "max_dbz": 62,
+   "tope_km": 13.5,
+   "cuenca_de": "Río Jaime",
+   "nivel": "muy intensa"
+  },
+  "La Argentina": {
+   "km": 4.6,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
+  "La Boca del Río": {
+   "km": 36.0,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "intensa"
+  },
+  "Villa la Merced": {
+   "km": 27.7,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "intensa"
+  },
+  "San Geronimo": {
+   "km": 4.6,
+   "max_dbz": 55,
    "tope_km": 11.7,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
-  "Las Oscuras": {
-   "km": 2.8,
-   "max_dbz": 51,
+  "Alto Grande": {
+   "km": 4.9,
+   "max_dbz": 48,
    "tope_km": 11.7,
-   "nivel": "intensa"
-  },
-  "Los Hornillos": {
-   "km": 2.2,
-   "max_dbz": 52,
-   "tope_km": 9.4,
-   "nivel": "intensa"
-  },
-  "Dos Arroyos": {
-   "km": 3.1,
-   "max_dbz": 52,
-   "tope_km": 9.4,
-   "nivel": "intensa"
-  },
-  "El Pantanillo": {
-   "km": 3.2,
-   "max_dbz": 52,
-   "tope_km": 9.4,
-   "nivel": "intensa"
-  },
-  "Quebrada de los Pozos": {
-   "km": 3.2,
-   "max_dbz": 52,
-   "tope_km": 9.4,
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
