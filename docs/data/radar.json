@@ -1,127 +1,162 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-16 22:00",
+ "consultado": "2026-11-16 22:15",
  "radar": "RMA1",
- "observacion": "2026-11-16 21:46",
+ "observacion": "2026-11-16 22:05",
  "nucleos": [
   {
-   "lat": -30.7992,
-   "lon": -65.5259,
-   "dbz": 54,
-   "max_dbz": 61,
+   "lat": -30.772,
+   "lon": -65.3861,
+   "dbz": 53,
+   "max_dbz": 62,
    "tope_km": 15.2
   },
   {
-   "lat": -31.648,
-   "lon": -64.2242,
-   "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 11.1
+   "lat": -31.3509,
+   "lon": -64.0736,
+   "dbz": 53,
+   "max_dbz": 63,
+   "tope_km": 9.4
   },
   {
-   "lat": -31.2878,
-   "lon": -64.9127,
-   "dbz": 51,
-   "max_dbz": 61,
+   "lat": -31.4771,
+   "lon": -63.8907,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.4681,
+   "lon": -64.321,
+   "dbz": 50,
+   "max_dbz": 59,
+   "tope_km": null
+  },
+  {
+   "lat": -31.1884,
+   "lon": -64.8589,
+   "dbz": 50,
+   "max_dbz": 59,
    "tope_km": 14.7
   },
   {
-   "lat": -31.621,
-   "lon": -64.6868,
+   "lat": -31.657,
+   "lon": -63.9983,
+   "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.4681,
+   "lon": -64.1381,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.7558,
+   "lon": -63.8799,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.089,
+   "lon": -64.9773,
    "dbz": 49,
-   "max_dbz": 49,
+   "max_dbz": 53,
    "tope_km": 10.6
   },
   {
-   "lat": -31.2336,
-   "lon": -65.1709,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 12.3
+   "lat": -30.7175,
+   "lon": -65.5905,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 13.5
   },
   {
-   "lat": -31.8097,
-   "lon": -64.4394,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.0
+   "lat": -31.3329,
+   "lon": -64.6222,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.3329,
+   "lon": -64.5362,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.2426,
+   "lon": -64.8159,
+   "dbz": 47,
+   "max_dbz": 59,
+   "tope_km": 12.3
   }
  ],
- "cuencas": {},
- "localidades": {
-  "San Carlos Minas": {
-   "km": 21.2,
-   "max_dbz": 61,
-   "tope_km": 14.7,
-   "cuenca_de": "Noguinet",
-   "nivel": "muy intensa"
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 2,
+   "max_dbz": 51
   },
-  "Anisacate": {
-   "km": 27.8,
-   "max_dbz": 49,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "La Serranita": {
-   "km": 24.9,
-   "max_dbz": 49,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "Villa San Isidro": {
-   "km": 5.6,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo Carada del Tala",
-   "nivel": "intensa"
-  },
-  "La Paisanita": {
-   "km": 22.3,
-   "max_dbz": 49,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "Sauce de los Quevedos": {
-   "km": 11.0,
-   "max_dbz": 61,
-   "tope_km": 14.7,
-   "cuenca_de": "Arroyo Sauce de los Quevedos",
-   "nivel": "muy intensa"
-  },
-  "Jose de la Quintana": {
-   "km": 1.7,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "La Boca del Río": {
-   "km": 3.4,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Piedras Anchas": {
-   "km": 4.0,
-   "max_dbz": 54,
-   "tope_km": 12.3,
-   "cuenca_de": "Arroyo Piedras Anchas",
-   "nivel": "intensa"
-  },
-  "Talaini": {
-   "km": 2.0,
-   "max_dbz": 54,
-   "tope_km": 12.3,
-   "nivel": "intensa"
-  },
-  "Rafael Garcia": {
-   "km": 3.4,
-   "max_dbz": 61,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
+  "Capital": {
+   "nucleos": 1,
+   "max_dbz": 57
   }
  },
- "minutos": 14
+ "localidades": {
+  "Tanti": {
+   "km": 4.9,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Cruz de Caña": {
+   "km": 3.8,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Malvinas Argentinas": {
+   "km": 3.6,
+   "max_dbz": 63,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  },
+  "La Higuera": {
+   "km": 14.2,
+   "max_dbz": 53,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Los Quirquinchos",
+   "nivel": "intensa"
+  },
+  "Characato": {
+   "km": 12.6,
+   "max_dbz": 59,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Ávalos",
+   "nivel": "muy intensa"
+  },
+  "La Perla": {
+   "km": 2.0,
+   "max_dbz": 59,
+   "tope_km": null,
+   "nivel": "muy intensa"
+  },
+  "Malagueño": {
+   "km": 3.8,
+   "max_dbz": 59,
+   "tope_km": null,
+   "nivel": "muy intensa"
+  },
+  "Villa Santa Cruz del Lago": {
+   "km": 4.1,
+   "max_dbz": 49,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 11
 }
