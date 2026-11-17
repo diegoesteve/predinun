@@ -1,60 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 01:30",
+ "consultado": "2026-11-17 01:45",
  "radar": "RMA1",
- "observacion": "2026-11-17 01:15",
+ "observacion": "2026-11-17 01:33",
  "nucleos": [
   {
    "lat": -30.4266,
-   "lon": -65.1709,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -29.8788,
-   "lon": -64.945,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -29.9703,
-   "lon": -64.7621,
+   "lon": -65.0311,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.7
+   "max_dbz": 53,
+   "tope_km": 9.4
   },
   {
-   "lat": -30.5994,
-   "lon": -64.3748,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.0
+   "lat": -30.4448,
+   "lon": -64.6438,
+   "dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada de Rio Pinto": {
-   "km": 17.7,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Ischilín": {
-   "km": 2.2,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo San Miguel",
-   "nivel": "intensa"
-  },
-  "Ischilín Viejo": {
-   "km": 3.1,
-   "max_dbz": 48,
-   "tope_km": 10.0,
+  "San Antonio": {
+   "km": 3.7,
+   "max_dbz": 53,
+   "tope_km": 9.4,
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
