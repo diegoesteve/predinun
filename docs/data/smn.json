@@ -1,7 +1,51 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-18 04:15",
+ "consultado": "2026-11-18 04:30",
  "alertas": [
+  {
+   "id": "2026_11_18_0720_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-18T07:20:00-03:00",
+   "hasta": "2026-11-18T08:20:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CHACO: SAN FERNANDO. SANTA FE: GRAL OBLIGADO. CORRIENTES: BELLA VISTA - CONCEPCION - EMPEDRADO - MBURUCUYA - SALADAS - SAN LUIS DEL PALMAR - SAN ROQUE.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_18_0720_cap_es.xml",
+   "desde_local": "18/11 07:20",
+   "hasta_local": "18/11 08:20",
+   "localidades": 3,
+   "poligonos": [
+    [
+     [
+      -59.38,
+      -27.9
+     ],
+     [
+      -59.38,
+      -28.32
+     ],
+     [
+      -58.31,
+      -28.44
+     ],
+     [
+      -58.06,
+      -27.94
+     ],
+     [
+      -58.44,
+      -27.74
+     ],
+     [
+      -59.38,
+      -27.9
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261117144925_Tormenta_Patagonia_alertas_alertas_22",
    "tipo": "alerta",
@@ -8332,6 +8376,7 @@
    "CAP_20261117144922_Tormenta_Llanura_alertas_alertas_19"
   ],
   "El Rabón": [
+   "2026_11_18_0720_cap_es",
    "CAP_20261117144925_Tormenta_Patagonia_alertas_alertas_19",
    "CAP_20261117144922_Tormenta_Llanura_alertas_alertas_19"
   ],
@@ -8340,6 +8385,7 @@
    "CAP_20261117144922_Tormenta_Llanura_alertas_alertas_19"
   ],
   "Florencia": [
+   "2026_11_18_0720_cap_es",
    "CAP_20261117144925_Tormenta_Patagonia_alertas_alertas_19",
    "CAP_20261117144922_Tormenta_Llanura_alertas_alertas_19"
   ],
@@ -8388,6 +8434,7 @@
    "CAP_20261117144922_Tormenta_Llanura_alertas_alertas_19"
   ],
   "Las Toscas": [
+   "2026_11_18_0720_cap_es",
    "CAP_20261117144925_Tormenta_Patagonia_alertas_alertas_19",
    "CAP_20261117144922_Tormenta_Llanura_alertas_alertas_19"
   ],

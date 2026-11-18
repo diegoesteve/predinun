@@ -1,10 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 04:15",
+ "consultado": "2026-11-18 04:30",
  "radar": "RMA1",
- "observacion": "2026-11-18 03:58",
- "nucleos": [],
+ "observacion": "2026-11-18 04:16",
+ "nucleos": [
+  {
+   "lat": -33.0131,
+   "lon": -65.0311,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -33.2077,
+   "lon": -64.8912,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.657,
+   "lon": -64.9773,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.9954,
+   "lon": -65.569,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 10.6
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "localidades": {
+  "Villa Dolores": {
+   "km": 33.4,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "intensa"
+  },
+  "San Lorenzo": {
+   "km": 2.5,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Toro Muerto",
+   "nivel": "intensa"
+  },
+  "Tilisarao": {
+   "km": 36.1,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Mina Clavero": {
+   "km": 9.8,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "cuenca_de": "Panaholma",
+   "nivel": "intensa"
+  },
+  "El Tala": {
+   "km": 14.6,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Villa Benegas": {
+   "km": 2.7,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 14
 }
