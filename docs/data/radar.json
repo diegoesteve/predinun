@@ -1,81 +1,82 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 00:15",
+ "consultado": "2026-11-18 00:30",
  "radar": "RMA1",
- "observacion": "2026-11-18 00:01",
+ "observacion": "2026-11-18 00:20",
  "nucleos": [
   {
-   "lat": -33.2519,
-   "lon": -64.7298,
-   "dbz": 53,
-   "max_dbz": 60,
+   "lat": -33.2342,
+   "lon": -64.5147,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.7826,
+   "lon": -65.2677,
+   "dbz": 50,
+   "max_dbz": 52,
    "tope_km": 12.3
   },
   {
-   "lat": -32.507,
-   "lon": -64.7406,
+   "lat": -32.409,
+   "lon": -65.5905,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.1
+   "max_dbz": 52,
+   "tope_km": 12.3
   },
   {
-   "lat": -33.1282,
-   "lon": -64.1381,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 8.8
+   "lat": -32.4,
+   "lon": -65.3861,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 13.5
   },
   {
-   "lat": -32.4624,
-   "lon": -64.8804,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 11.1
+   "lat": -32.596,
+   "lon": -64.7621,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.7471,
+   "lon": -64.1489,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Cruz": {
-   "km": 29.8,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "cuenca_de": "Río de la Cruz",
+  "Alpa Corral": {
+   "km": 9.3,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Barrancas",
+   "nivel": "muy intensa"
+  },
+  "Tilisarao": {
+   "km": 2.8,
+   "max_dbz": 52,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Rio de los Sauces": {
-   "km": 14.0,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "intensa"
+  "Paso del Río Seco": {
+   "km": 31.1,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de las Barrancas",
+   "nivel": "muy intensa"
   },
-  "Cañada del Sauce": {
-   "km": 24.2,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Paso Cabral": {
-   "km": 24.8,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "intensa"
-  },
-  "Villa la Rivera": {
-   "km": 39.0,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Pueblo Escondido": {
-   "km": 4.3,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "nivel": "intensa"
+  "Santa Rita": {
+   "km": 42.9,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
