@@ -1,38 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 23:15",
+ "consultado": "2026-11-17 23:30",
  "radar": "RMA1",
- "observacion": "2026-11-17 22:58",
+ "observacion": "2026-11-17 23:16",
  "nucleos": [
   {
-   "lat": -32.4268,
-   "lon": -65.0203,
-   "dbz": 52,
-   "max_dbz": 62,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -33.3313,
-   "lon": -64.6868,
+   "lat": -33.3048,
+   "lon": -64.5039,
    "dbz": 50,
    "max_dbz": 56,
-   "tope_km": 12.3
+   "tope_km": 17.0
+  },
+  {
+   "lat": -33.3225,
+   "lon": -65.1924,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.3198,
+   "lon": -65.0848,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -32.3733,
+   "lon": -64.8051,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.3644,
+   "lon": -65.3323,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.5337,
+   "lon": -64.7729,
+   "dbz": 47,
+   "max_dbz": 51,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Carpintería": {
-   "km": 3.0,
-   "max_dbz": 62,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
+  "La Cruz": {
+   "km": 34.0,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
   },
-  "Los Molles": {
-   "km": 2.0,
-   "max_dbz": 62,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
+  "Rio de los Sauces": {
+   "km": 16.7,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "intensa"
+  },
+  "Paso Cabral": {
+   "km": 28.8,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
