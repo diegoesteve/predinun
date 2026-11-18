@@ -1,17 +1,17 @@
 {
- "generado": "2026-11-18 03:00",
+ "generado": "2026-11-18 04:00",
  "horas": 48,
- "smap_atraso_dias": 2.3,
+ "smap_atraso_dias": 2.4,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
    "nombre": "Sierras Chicas",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 0.9,
+     "max_3h_mm": 1.0,
      "umbral_mm": 9.9,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-20 02:00"
+     "cuando": "2026-11-20 04:00"
     },
     "ICON": {
      "max_3h_mm": 1.9,
@@ -37,11 +37,25 @@
     "smap_m3m3": 0.119,
     "smap_percentil": 68,
     "smap_fecha": "2026-11-15 22:30 UTC",
+    "estimado_hoy_m3m3": 0.115,
+    "estimado_hoy_percentil": 59,
     "percentil": 68,
     "es_estimado": false,
     "estado": "normal"
    },
-   "secado": null
+   "secado": {
+    "dias_atras": 10,
+    "dias_adelante": 7,
+    "et0_ult_mm": 56.0,
+    "et0_ult_normal_mm": 53.5,
+    "et0_ult_pct": 105,
+    "radiacion_ult_pct": 109,
+    "nubosidad_ult_media": 34,
+    "nubosidad_ult_normal": 39,
+    "dias_nublados_ult": 2,
+    "et0_prox_mm": 29.8,
+    "et0_prox_pct": 77
+   }
   },
   {
    "cuenca": "Cosquin",
@@ -114,10 +128,10 @@
      "cuando": "2026-11-19 17:00"
     },
     "ECMWF": {
-     "max_3h_mm": 4.8,
+     "max_3h_mm": 5.0,
      "umbral_mm": 8.8,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-20 03:00"
+     "cuando": "2026-11-20 04:00"
     }
    },
    "ensambles": {
@@ -168,14 +182,13 @@
      "cuando": "2026-11-19 15:00"
     },
     "ECMWF": {
-     "max_3h_mm": 1.6,
+     "max_3h_mm": 4.7,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-19 14:00"
+     "cuando": "2026-11-20 04:00"
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.0,
     "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
@@ -227,24 +240,24 @@
      0.0,
      0.0,
      0.0,
-     0.01,
      0.0,
      0.0,
      0.0,
      0.0,
-     0.01,
-     0.01
+     0.0,
+     0.02,
+     0.02
     ],
     "mm": [
-     2.6,
-     1.7,
-     3.9,
+     2.7,
+     1.0,
      2.5,
-     2.1,
+     1.0,
+     2.2,
      0.9,
-     4.1,
-     0.2,
-     0.2,
+     6.4,
+     0.1,
+     0.0,
      0.0
     ]
    },
@@ -256,7 +269,7 @@
      0.0,
      0.0,
      0.01,
-     0.01,
+     0.0,
      0.0,
      0.0,
      0.0,
@@ -266,11 +279,11 @@
     "mm": [
      3.3,
      1.8,
-     4.2,
+     3.9,
      2.8,
-     2.0,
-     1.4,
-     4.5,
+     2.1,
+     1.7,
+     5.9,
      0.4,
      0.2,
      0.1
@@ -284,21 +297,21 @@
      0.01,
      0.03,
      0.01,
-     0.02,
      0.01,
-     0.02,
+     0.01,
+     0.03,
      0.0,
      0.01,
      0.01
     ],
     "mm": [
-     5.0,
-     4.5,
-     5.9,
-     3.7,
+     4.9,
+     4.4,
+     5.5,
+     3.9,
+     2.6,
      2.3,
-     1.9,
-     6.2,
+     7.5,
      0.5,
      0.3,
      0.3
@@ -311,24 +324,24 @@
      0.0,
      0.0,
      0.0,
-     0.01,
-     0.01,
-     0.0,
-     0.0,
-     0.0,
      0.02,
-     0.01
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
     ],
     "mm": [
-     1.8,
-     1.8,
-     3.3,
-     3.3,
-     1.0,
-     0.8,
-     3.5,
-     0.1,
+     2.1,
+     2.6,
+     3.7,
+     5.5,
+     2.2,
+     1.4,
+     2.3,
      0.2,
+     0.3,
      0.0
     ]
    }
