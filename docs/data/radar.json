@@ -1,52 +1,72 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 14:30",
+ "consultado": "2026-11-18 14:45",
  "radar": "RMA1",
- "observacion": "2026-11-18 14:08",
+ "observacion": "2026-11-18 14:26",
  "nucleos": [
   {
-   "lat": -31.5041,
-   "lon": -64.7298,
+   "lat": -31.5221,
+   "lon": -64.6115,
    "dbz": 50,
    "max_dbz": 57,
-   "tope_km": 10.6
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.4681,
+   "lon": -64.7191,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.4591,
+   "lon": -64.6007,
+   "dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 1,
+   "nucleos": 3,
    "max_dbz": 57
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 24.7,
+   "km": 16.9,
    "max_dbz": 57,
-   "tope_km": 10.6,
+   "tope_km": 11.7,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "Cuesta Blanca": {
-   "km": 13.7,
+   "km": 4.7,
    "max_dbz": 57,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio San Antonio",
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo Las Tomitas",
    "nivel": "muy intensa"
   },
   "Mayu Sumaj": {
-   "km": 17.9,
+   "km": 9.1,
    "max_dbz": 57,
-   "tope_km": 10.6,
+   "tope_km": 11.7,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "Tala Huasi": {
-   "km": 15.5,
+   "km": 6.6,
    "max_dbz": 57,
-   "tope_km": 10.6,
+   "tope_km": 11.7,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
+  },
+  "Villa Rio Icho Cruz": {
+   "km": 4.1,
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "nivel": "intensa"
   }
  },
- "minutos": 22
+ "minutos": 19
 }
