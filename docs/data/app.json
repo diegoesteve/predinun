@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18 00:30",
+ "generado": "2026-11-18 00:45",
  "hoy": "2026-11-18",
  "manana": "2026-11-19",
  "dia_manana": "jueves",
@@ -644,10 +644,9 @@
    "rio": "Río Barrancas",
    "expo": "expuesta",
    "hoy": {
-    "nivel": 3,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río Barrancas. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
-    "tambien": "Alerta amarilla del SMN"
+    "nivel": 1,
+    "titulo": "Alerta amarilla del SMN",
+    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    },
    "man": {
     "nivel": 0,
@@ -946,7 +945,8 @@
    "hoy": {
     "nivel": 2,
     "titulo": "Aviso naranja del SMN",
-    "texto": "Tormentas severas, hasta las 04:04 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "texto": "Tormentas severas, hasta las 04:04 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Tormenta fuerte sobre el río, ahora"
    },
    "man": {
     "nivel": 0,
@@ -2422,9 +2422,9 @@
    "rio": "Río de las Barrancas",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río de las Barrancas. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
@@ -3991,9 +3991,9 @@
    "rio": "Río Cuarto (Chocancharava)",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río Cuarto (Chocancharava). El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
