@@ -1,47 +1,109 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 04:45",
+ "consultado": "2026-11-18 05:00",
  "radar": "RMA1",
- "observacion": "2026-11-18 04:34",
+ "observacion": "2026-11-18 04:43",
  "nucleos": [
   {
-   "lat": -33.0839,
-   "lon": -64.8589,
+   "lat": -31.6031,
+   "lon": -64.9773,
+   "dbz": 50,
+   "max_dbz": 52,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -33.137,
+   "lon": -64.5362,
    "dbz": 49,
    "max_dbz": 52,
    "tope_km": 11.1
   },
   {
-   "lat": -32.9334,
-   "lon": -65.3108,
+   "lat": -31.8187,
+   "lon": -64.6653,
    "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.9511,
+   "lon": -65.2355,
+   "dbz": 48,
    "max_dbz": 52,
    "tope_km": 11.7
   },
   {
-   "lat": -31.8366,
-   "lon": -64.1919,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 8.2
+   "lat": -32.7737,
+   "lon": -65.4937,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Villa Dolores": {
+   "km": 38.8,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "intensa"
+  },
+  "Potrero de Garay": {
+   "km": 8.9,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Pedro",
+   "nivel": "intensa"
+  },
+  "San Lorenzo": {
+   "km": 8.3,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Panaholma",
+   "nivel": "intensa"
+  },
   "Tilisarao": {
-   "km": 20.0,
+   "km": 21.8,
    "max_dbz": 52,
    "tope_km": 11.7,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Santa Catalina": {
-   "km": 41.6,
+  "Panaholma": {
+   "km": 7.2,
    "max_dbz": 52,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Santa Catalina",
+   "tope_km": 9.4,
+   "cuenca_de": "Río Panaholma",
+   "nivel": "intensa"
+  },
+  "Mina Clavero": {
+   "km": 15.4,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "cuenca_de": "Panaholma",
+   "nivel": "intensa"
+  },
+  "Villa Benegas": {
+   "km": 4.2,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
+  "La Boca del Río": {
+   "km": 24.0,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "intensa"
+  },
+  "Villa la Merced": {
+   "km": 15.3,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
