@@ -1,122 +1,117 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 05:45",
+ "consultado": "2026-11-18 06:00",
  "radar": "RMA1",
- "observacion": "2026-11-18 05:29",
+ "observacion": "2026-11-18 05:47",
  "nucleos": [
   {
-   "lat": -32.3733,
-   "lon": -64.902,
+   "lat": -32.159,
+   "lon": -64.9127,
    "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.3911,
-   "lon": -65.2893,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.0785,
-   "lon": -64.6545,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 15.8
-  },
-  {
-   "lat": -32.5248,
-   "lon": -65.3861,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.7109,
-   "lon": -64.4071,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.3198,
-   "lon": -65.0956,
-   "dbz": 48,
-   "max_dbz": 50,
+   "max_dbz": 54,
    "tope_km": 9.4
   },
   {
-   "lat": -31.5581,
-   "lon": -64.6868,
-   "dbz": 48,
-   "max_dbz": 54,
-   "tope_km": 10.0
+   "lat": -32.2305,
+   "lon": -64.8374,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 9.4
   },
   {
-   "lat": -32.3911,
-   "lon": -65.3968,
-   "dbz": 47,
-   "max_dbz": 48,
+   "lat": -32.4713,
+   "lon": -65.1386,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.5248,
+   "lon": -64.6868,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 11.1
+  },
+  {
+   "lat": -32.5515,
+   "lon": -64.59,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.8814,
+   "lon": -64.676,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.756,
+   "lon": -64.5362,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.3019,
+   "lon": -65.0741,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Anisacate": {
-   "km": 31.2,
+  "La Cruz": {
+   "km": 27.3,
    "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Anizacate",
+   "tope_km": 11.1,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "intensa"
   },
-  "El Corcovado el Torreon": {
-   "km": 16.1,
-   "max_dbz": 52,
-   "tope_km": 15.8,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "intensa"
-  },
-  "Villa los Aromos": {
-   "km": 4.7,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Santa Mónica": {
-   "km": 4.8,
-   "max_dbz": 52,
-   "tope_km": 15.8,
-   "cuenca_de": "Arroyo del Potrerillo",
-   "nivel": "intensa"
-  },
-  "La Serranita": {
-   "km": 29.0,
+  "Rio de los Sauces": {
+   "km": 8.7,
    "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Anizacate",
+   "tope_km": 11.1,
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "intensa"
   },
-  "El Corcovado": {
-   "km": 14.9,
-   "max_dbz": 52,
-   "tope_km": 15.8,
-   "cuenca_de": "Rio Santa Rosa",
+  "Los Reartes": {
+   "km": 6.7,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "cuenca_de": "Río del Medio",
    "nivel": "intensa"
   },
-  "La Paisanita": {
-   "km": 26.5,
+  "Paso Cabral": {
+   "km": 21.4,
    "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Anizacate",
+   "tope_km": 11.1,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "intensa"
   },
-  "Costa Azul": {
-   "km": 2.2,
-   "max_dbz": 51,
-   "tope_km": 10.0,
+  "El Durazno": {
+   "km": 12.2,
+   "max_dbz": 54,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo Sombra de Toro",
+   "nivel": "intensa"
+  },
+  "La Boca del Río": {
+   "km": 25.1,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "intensa"
+  },
+  "Villa la Merced": {
+   "km": 17.9,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 13
 }
