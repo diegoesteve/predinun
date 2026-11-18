@@ -1,19 +1,39 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 11:45",
+ "consultado": "2026-11-18 12:00",
  "radar": "RMA1",
- "observacion": "2026-11-18 11:33",
+ "observacion": "2026-11-18 11:42",
  "nucleos": [
   {
-   "lat": -32.1322,
-   "lon": -63.7293,
+   "lat": -32.4357,
+   "lon": -64.902,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 5.9,
-   "descartado": "tope bajo (5.9 km)"
+   "max_dbz": 49,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 12
+ "localidades": {
+  "Cañada del Sauce": {
+   "km": 25.1,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Villa la Rivera": {
+   "km": 39.3,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Pueblo Escondido": {
+   "km": 2.9,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 18
 }
