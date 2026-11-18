@@ -1,45 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 21:49",
+ "consultado": "2026-11-17 22:00",
  "radar": "RMA1",
- "observacion": "2026-11-17 21:31",
+ "observacion": "2026-11-17 21:49",
  "nucleos": [
   {
-   "lat": -32.2841,
-   "lon": -65.1386,
+   "lat": -32.3555,
+   "lon": -64.9342,
    "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 12.9
+   "max_dbz": 56,
+   "tope_km": 10.6
   },
   {
-   "lat": -32.0158,
-   "lon": -65.0633,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 11.1
+   "lat": -32.0427,
+   "lon": -64.9127,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Javier Y Yacanto": {
-   "km": 3.7,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "nivel": "intensa"
+  "El Corcovado el Torreon": {
+   "km": 39.9,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "muy intensa"
   },
-  "Pueblito": {
-   "km": 3.4,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "nivel": "intensa"
+  "Santa Mónica": {
+   "km": 27.5,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Santa Rosa",
+   "nivel": "muy intensa"
   },
-  "Los Cajones": {
-   "km": 29.7,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+  "El Corcovado": {
+   "km": 39.3,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "muy intensa"
+  },
+  "Santa Rosa del Conlara": {
+   "km": 22.4,
+   "max_dbz": 56,
+   "tope_km": 10.6,
    "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 11
 }
