@@ -1,77 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 15:30",
+ "consultado": "2026-11-18 15:45",
  "radar": "RMA1",
- "observacion": "2026-11-18 15:12",
+ "observacion": "2026-11-18 15:30",
  "nucleos": [
   {
-   "lat": -31.5131,
-   "lon": -64.633,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.2878,
-   "lon": -64.676,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 7.0
+   "lat": -31.4951,
+   "lon": -64.5469,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {
-  "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 50
-  },
   "SanAntonio_CPaz": {
    "nucleos": 1,
-   "max_dbz": 54
+   "max_dbz": 56
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 17.6,
-   "max_dbz": 54,
-   "tope_km": 8.8,
+   "km": 10.9,
+   "max_dbz": 56,
+   "tope_km": 9.4,
    "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Cuesta Blanca": {
-   "km": 5.7,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+   "km": 4.2,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
   },
-  "Santa María de Punilla": {
-   "km": 21.0,
-   "max_dbz": 50,
-   "tope_km": 7.0,
-   "cuenca_de": "Río Cosquín",
-   "nivel": "intensa"
+  "San Antonio de Arredondo": {
+   "km": 3.4,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
   },
   "Mayu Sumaj": {
-   "km": 9.9,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+   "km": 2.9,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
   },
   "Tala Huasi": {
-   "km": 7.3,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
+   "km": 2.9,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
   },
-  "San Roque": {
-   "km": 20.8,
-   "max_dbz": 50,
-   "tope_km": 7.0,
-   "cuenca_de": "Lago San Roque",
-   "nivel": "intensa"
+  "Las Jarillas": {
+   "km": 4.3,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  },
+  "Villa Rio Icho Cruz": {
+   "km": 2.4,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 15
 }
