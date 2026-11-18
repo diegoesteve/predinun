@@ -1,106 +1,52 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 14:00",
+ "consultado": "2026-11-18 14:15",
  "radar": "RMA1",
- "observacion": "2026-11-18 13:41",
+ "observacion": "2026-11-18 13:59",
  "nucleos": [
   {
-   "lat": -31.5131,
-   "lon": -64.7298,
+   "lat": -31.4951,
+   "lon": -64.8159,
    "dbz": 51,
-   "max_dbz": 58,
+   "max_dbz": 60,
    "tope_km": 11.1
-  },
-  {
-   "lat": -31.4771,
-   "lon": -64.902,
-   "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.4861,
-   "lon": -64.5254,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.7
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 2,
-   "max_dbz": 58
+   "nucleos": 1,
+   "max_dbz": 60
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 25.2,
-   "max_dbz": 58,
+   "km": 32.0,
+   "max_dbz": 60,
    "tope_km": 11.1,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "Cuesta Blanca": {
-   "km": 13.9,
-   "max_dbz": 58,
+   "km": 21.6,
+   "max_dbz": 60,
    "tope_km": 11.1,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
-  "San Carlos Minas": {
-   "km": 37.4,
-   "max_dbz": 58,
-   "tope_km": 11.7,
-   "cuenca_de": "Jaime",
-   "nivel": "muy intensa"
-  },
-  "Salsacate": {
-   "km": 24.7,
-   "max_dbz": 58,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio Salsacate",
-   "nivel": "muy intensa"
-  },
-  "San Antonio de Arredondo": {
-   "km": 2.0,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "nivel": "intensa"
-  },
   "Mayu Sumaj": {
-   "km": 18.2,
-   "max_dbz": 58,
+   "km": 25.7,
+   "max_dbz": 60,
    "tope_km": 11.1,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "Tala Huasi": {
-   "km": 15.7,
-   "max_dbz": 58,
+   "km": 23.4,
+   "max_dbz": 60,
    "tope_km": 11.1,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
-  },
-  "Taninga": {
-   "km": 22.0,
-   "max_dbz": 58,
-   "tope_km": 11.7,
-   "cuenca_de": "Río Jaime",
-   "nivel": "muy intensa"
-  },
-  "Los Talares": {
-   "km": 17.5,
-   "max_dbz": 58,
-   "tope_km": 11.7,
-   "cuenca_de": "Río Jaime",
-   "nivel": "muy intensa"
-  },
-  "Villa Rio Icho Cruz": {
-   "km": 3.9,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "nivel": "intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
