@@ -1,46 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 01:00",
+ "consultado": "2026-11-18 01:15",
  "radar": "RMA1",
- "observacion": "2026-11-18 00:47",
+ "observacion": "2026-11-18 00:56",
  "nucleos": [
   {
-   "lat": -32.4535,
-   "lon": -65.1171,
-   "dbz": 52,
-   "max_dbz": 62,
-   "tope_km": 15.2
+   "lat": -32.4981,
+   "lon": -65.0526,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 12.3
   },
   {
-   "lat": -32.9334,
-   "lon": -64.9988,
+   "lat": -32.9777,
+   "lon": -64.8051,
    "dbz": 49,
-   "max_dbz": 53,
+   "max_dbz": 52,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.9866,
+   "lon": -64.9235,
+   "dbz": 48,
+   "max_dbz": 51,
    "tope_km": 10.6
   },
   {
-   "lat": -32.4357,
-   "lon": -65.3753,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.8092,
-   "lon": -64.321,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.6
+   "lat": -32.8625,
+   "lon": -64.1704,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa del Carmen": {
-   "km": 3.8,
-   "max_dbz": 53,
+  "Santa Catalina": {
+   "km": 42.3,
+   "max_dbz": 52,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "intensa"
+  },
+  "Santa Rita": {
+   "km": 39.1,
+   "max_dbz": 51,
    "tope_km": 10.6,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 19
 }
