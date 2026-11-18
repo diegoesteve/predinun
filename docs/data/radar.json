@@ -1,87 +1,107 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 13:30",
+ "consultado": "2026-11-18 13:45",
  "radar": "RMA1",
- "observacion": "2026-11-18 13:14",
+ "observacion": "2026-11-18 13:32",
  "nucleos": [
   {
-   "lat": -31.4771,
-   "lon": -64.9235,
+   "lat": -31.4861,
+   "lon": -64.6007,
    "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 13.5
+   "max_dbz": 57,
+   "tope_km": 10.6
   },
   {
-   "lat": -31.441,
-   "lon": -64.7513,
-   "dbz": 50,
-   "max_dbz": 56,
+   "lat": -31.4681,
+   "lon": -64.8697,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.5041,
+   "lon": -64.7944,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.4771,
+   "lon": -64.9557,
+   "dbz": 49,
+   "max_dbz": 51,
    "tope_km": 11.1
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 56
+   "nucleos": 2,
+   "max_dbz": 57
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 24.6,
-   "max_dbz": 56,
-   "tope_km": 11.1,
+   "km": 13.3,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "Cuesta Blanca": {
-   "km": 16.0,
-   "max_dbz": 56,
-   "tope_km": 11.1,
+   "km": 1.4,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "San Carlos Minas": {
-   "km": 36.3,
-   "max_dbz": 55,
-   "tope_km": 13.5,
+   "km": 38.3,
+   "max_dbz": 52,
+   "tope_km": 11.1,
    "cuenca_de": "Jaime",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Salsacate": {
-   "km": 23.3,
-   "max_dbz": 55,
-   "tope_km": 13.5,
+   "km": 26.3,
+   "max_dbz": 52,
+   "tope_km": 11.1,
    "cuenca_de": "Rio Salsacate",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Mayu Sumaj": {
-   "km": 19.4,
-   "max_dbz": 56,
-   "tope_km": 11.1,
+   "km": 5.7,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "Tala Huasi": {
-   "km": 17.6,
-   "max_dbz": 56,
-   "tope_km": 11.1,
+   "km": 3.1,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "Taninga": {
-   "km": 20.5,
-   "max_dbz": 55,
-   "tope_km": 13.5,
+   "km": 23.8,
+   "max_dbz": 52,
+   "tope_km": 11.1,
    "cuenca_de": "Río Jaime",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Los Talares": {
-   "km": 15.9,
-   "max_dbz": 55,
-   "tope_km": 13.5,
+   "km": 19.5,
+   "max_dbz": 52,
+   "tope_km": 11.1,
    "cuenca_de": "Río Jaime",
+   "nivel": "intensa"
+  },
+  "Villa Rio Icho Cruz": {
+   "km": 3.3,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
