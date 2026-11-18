@@ -1,123 +1,161 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 05:21",
+ "consultado": "2026-11-18 05:30",
  "radar": "RMA1",
- "observacion": "2026-11-18 05:01",
+ "observacion": "2026-11-18 05:20",
  "nucleos": [
   {
-   "lat": -31.8814,
-   "lon": -64.7944,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 11.1
+   "lat": -32.5159,
+   "lon": -65.4183,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.7
   },
   {
-   "lat": -32.9068,
-   "lon": -65.0095,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.5248,
-   "lon": -65.5797,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.8635,
-   "lon": -64.633,
+   "lat": -31.684,
+   "lon": -64.5039,
    "dbz": 49,
    "max_dbz": 52,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.9532,
+   "lon": -64.59,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 10.6
   },
   {
-   "lat": -32.756,
-   "lon": -65.2893,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 12.3
+   "lat": -32.2751,
+   "lon": -65.1924,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 10.6
   },
   {
-   "lat": -31.621,
-   "lon": -64.7513,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 8.8
+   "lat": -32.5515,
+   "lon": -64.8912,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.6138,
+   "lon": -64.902,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Reartes": {
-   "km": 17.9,
+  "Santa Rosa de Calamuchita": {
+   "km": 10.2,
    "max_dbz": 54,
-   "tope_km": 11.1,
-   "cuenca_de": "Río del Medio",
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo El Sauce",
    "nivel": "intensa"
   },
-  "Tilisarao": {
-   "km": 0.6,
-   "max_dbz": 52,
-   "tope_km": 12.3,
+  "Villa General Belgrano": {
+   "km": 4.6,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Los Reartes": {
+   "km": 4.6,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Alpa Corral": {
+   "km": 17.3,
+   "max_dbz": 48,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio Barrancas",
    "nivel": "intensa"
   },
   "Anisacate": {
-   "km": 33.4,
-   "max_dbz": 47,
+   "km": 9.1,
+   "max_dbz": 52,
    "tope_km": 8.8,
    "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "Villa Berna": {
-   "km": 6.7,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "cuenca_de": "Río del Medio",
+  "Cañada del Sauce": {
+   "km": 30.4,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
-  "La Cumbrecita": {
-   "km": 2.4,
+  "El Corcovado el Torreon": {
+   "km": 23.9,
    "max_dbz": 54,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio Del Medio",
+   "tope_km": 10.6,
+   "cuenca_de": "Rio Santa Rosa",
    "nivel": "intensa"
   },
   "La Serranita": {
-   "km": 30.4,
-   "max_dbz": 47,
+   "km": 6.8,
+   "max_dbz": 52,
    "tope_km": 8.8,
    "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "Villa la Rivera": {
+   "km": 45.8,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Paso del Río Seco": {
+   "km": 39.1,
+   "max_dbz": 48,
+   "tope_km": 10.6,
+   "cuenca_de": "Río de las Barrancas",
+   "nivel": "intensa"
+  },
+  "El Corcovado": {
+   "km": 21.2,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "intensa"
+  },
+  "Pozo del Tala": {
+   "km": 4.7,
+   "max_dbz": 52,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  },
+  "Capilla Vieja": {
+   "km": 3.2,
+   "max_dbz": 54,
+   "tope_km": 10.6,
    "nivel": "intensa"
   },
   "La Paisanita": {
-   "km": 27.7,
-   "max_dbz": 47,
+   "km": 4.6,
+   "max_dbz": 52,
    "tope_km": 8.8,
-   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "La Boca del Río": {
-   "km": 36.2,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
-  },
-  "Villa la Merced": {
-   "km": 28.5,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
-  },
-  "Villa del Carmen": {
-   "km": 0.9,
-   "max_dbz": 55,
+  "Santa Rita": {
+   "km": 49.8,
+   "max_dbz": 48,
    "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "intensa"
+  },
+  "Unión de los Rios": {
+   "km": 14.2,
+   "max_dbz": 48,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo El Talita",
+   "nivel": "intensa"
   }
  },
- "minutos": 20
+ "minutos": 11
 }
