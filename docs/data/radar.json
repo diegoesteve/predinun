@@ -1,72 +1,69 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 14:45",
+ "consultado": "2026-11-18 15:00",
  "radar": "RMA1",
- "observacion": "2026-11-18 14:26",
+ "observacion": "2026-11-18 14:45",
  "nucleos": [
   {
-   "lat": -31.5221,
-   "lon": -64.6115,
+   "lat": -31.4591,
+   "lon": -64.5685,
    "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.4681,
-   "lon": -64.7191,
-   "dbz": 49,
-   "max_dbz": 56,
+   "max_dbz": 55,
    "tope_km": 9.4
   },
   {
-   "lat": -31.4591,
-   "lon": -64.6007,
-   "dbz": 47,
-   "max_dbz": 50,
-   "tope_km": 11.7
+   "lat": -31.5221,
+   "lon": -64.7083,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {
   "SanAntonio_CPaz": {
-   "nucleos": 3,
-   "max_dbz": 57
+   "nucleos": 2,
+   "max_dbz": 55
   }
  },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 16.9,
-   "max_dbz": 57,
-   "tope_km": 11.7,
+   "km": 9.0,
+   "max_dbz": 55,
+   "tope_km": 9.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "Cuesta Blanca": {
-   "km": 4.7,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo Las Tomitas",
+   "km": 2.1,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  },
+  "San Antonio de Arredondo": {
+   "km": 3.9,
+   "max_dbz": 55,
+   "tope_km": 9.4,
    "nivel": "muy intensa"
   },
   "Mayu Sumaj": {
-   "km": 9.1,
-   "max_dbz": 57,
-   "tope_km": 11.7,
+   "km": 2.0,
+   "max_dbz": 55,
+   "tope_km": 9.4,
    "cuenca_de": "Rio San Antonio",
    "nivel": "muy intensa"
   },
   "Tala Huasi": {
-   "km": 6.6,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
+   "km": 1.7,
+   "max_dbz": 55,
+   "tope_km": 9.4,
    "nivel": "muy intensa"
   },
   "Villa Rio Icho Cruz": {
-   "km": 4.1,
-   "max_dbz": 50,
-   "tope_km": 11.7,
-   "nivel": "intensa"
+   "km": 2.5,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
