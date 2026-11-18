@@ -1,61 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 01:30",
+ "consultado": "2026-11-18 01:45",
  "radar": "RMA1",
- "observacion": "2026-11-18 01:14",
+ "observacion": "2026-11-18 01:32",
  "nucleos": [
   {
-   "lat": -32.4981,
-   "lon": -64.8482,
-   "dbz": 49,
-   "max_dbz": 52,
+   "lat": -33.2166,
+   "lon": -64.4609,
+   "dbz": 50,
+   "max_dbz": 54,
    "tope_km": 11.7
-  },
-  {
-   "lat": -33.1635,
-   "lon": -64.6115,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -32.7293,
-   "lon": -64.945,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.5782,
-   "lon": -64.8912,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada del Sauce": {
-   "km": 23.5,
-   "max_dbz": 52,
+  "Santa Catalina": {
+   "km": 2.9,
+   "max_dbz": 54,
    "tope_km": 11.7,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Villa la Rivera": {
-   "km": 38.8,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Santa Rita": {
-   "km": 45.6,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
