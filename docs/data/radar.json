@@ -1,25 +1,45 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 21:31",
+ "consultado": "2026-11-17 21:45",
  "radar": "RMA1",
- "observacion": "2026-11-17 21:13",
+ "observacion": "2026-11-17 21:31",
  "nucleos": [
   {
    "lat": -32.2841,
-   "lon": -64.9235,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 10.0
+   "lon": -65.1386,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 12.9
   },
   {
-   "lat": -32.2483,
-   "lon": -64.8159,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -32.0158,
+   "lon": -65.0633,
+   "dbz": 50,
+   "max_dbz": 54,
    "tope_km": 11.1
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 17
+ "localidades": {
+  "San Javier Y Yacanto": {
+   "km": 3.7,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  },
+  "Pueblito": {
+   "km": 3.4,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  },
+  "Los Cajones": {
+   "km": 29.7,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 14
 }
