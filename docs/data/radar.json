@@ -1,54 +1,39 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 22:30",
+ "consultado": "2026-11-17 22:45",
  "radar": "RMA1",
- "observacion": "2026-11-17 22:16",
+ "observacion": "2026-11-17 22:34",
  "nucleos": [
   {
-   "lat": -33.349,
-   "lon": -65.1064,
-   "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.3287,
-   "lon": -64.59,
+   "lat": -33.3137,
+   "lon": -64.9235,
    "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.1947,
-   "lon": -64.9665,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 11.1
+   "max_dbz": 52,
+   "tope_km": 10.6
   },
   {
    "lat": -32.3911,
-   "lon": -65.4506,
+   "lon": -65.2139,
+   "dbz": 49,
+   "max_dbz": 50,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -33.3578,
+   "lon": -64.988,
    "dbz": 47,
    "max_dbz": 49,
    "tope_km": 11.1
+  },
+  {
+   "lat": -33.3666,
+   "lon": -64.8482,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Villa la Rivera": {
-   "km": 8.1,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "muy intensa"
-  },
-  "Luyaba": {
-   "km": 8.3,
-   "max_dbz": 48,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Corralito",
-   "nivel": "intensa"
-  }
- },
- "minutos": 14
+ "localidades": {},
+ "minutos": 11
 }
