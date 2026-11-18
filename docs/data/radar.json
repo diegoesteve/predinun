@@ -1,9 +1,87 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-18 13:15",
- "radar": null,
- "observacion": null,
- "nucleos": [],
- "cuencas": {},
- "localidades": {}
+ "consultado": "2026-11-18 13:30",
+ "radar": "RMA1",
+ "observacion": "2026-11-18 13:14",
+ "nucleos": [
+  {
+   "lat": -31.4771,
+   "lon": -64.9235,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -31.441,
+   "lon": -64.7513,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 11.1
+  }
+ ],
+ "cuencas": {
+  "SanAntonio_CPaz": {
+   "nucleos": 1,
+   "max_dbz": 56
+  }
+ },
+ "localidades": {
+  "Villa Carlos Paz": {
+   "km": 24.6,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 16.0,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "San Carlos Minas": {
+   "km": 36.3,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "cuenca_de": "Jaime",
+   "nivel": "muy intensa"
+  },
+  "Salsacate": {
+   "km": 23.3,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "cuenca_de": "Rio Salsacate",
+   "nivel": "muy intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 19.4,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Tala Huasi": {
+   "km": 17.6,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Taninga": {
+   "km": 20.5,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "cuenca_de": "Río Jaime",
+   "nivel": "muy intensa"
+  },
+  "Los Talares": {
+   "km": 15.9,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "cuenca_de": "Río Jaime",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 17
 }
