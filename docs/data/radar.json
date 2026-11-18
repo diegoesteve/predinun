@@ -1,54 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 22:00",
+ "consultado": "2026-11-17 22:15",
  "radar": "RMA1",
- "observacion": "2026-11-17 21:49",
+ "observacion": "2026-11-17 21:58",
  "nucleos": [
   {
-   "lat": -32.3555,
-   "lon": -64.9342,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.0427,
-   "lon": -64.9127,
-   "dbz": 49,
-   "max_dbz": 56,
+   "lat": -32.4,
+   "lon": -64.8267,
+   "dbz": 51,
+   "max_dbz": 58,
    "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "El Corcovado el Torreon": {
-   "km": 39.9,
-   "max_dbz": 56,
+  "Cañada del Sauce": {
+   "km": 17.3,
+   "max_dbz": 58,
    "tope_km": 10.0,
-   "cuenca_de": "Rio Santa Rosa",
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
-  "Santa Mónica": {
-   "km": 27.5,
-   "max_dbz": 56,
+  "Villa la Rivera": {
+   "km": 31.2,
+   "max_dbz": 58,
    "tope_km": 10.0,
-   "cuenca_de": "Río Santa Rosa",
-   "nivel": "muy intensa"
-  },
-  "El Corcovado": {
-   "km": 39.3,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "muy intensa"
-  },
-  "Santa Rosa del Conlara": {
-   "km": 22.4,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
