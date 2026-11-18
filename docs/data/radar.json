@@ -1,75 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-17 23:30",
+ "consultado": "2026-11-17 23:45",
  "radar": "RMA1",
- "observacion": "2026-11-17 23:16",
+ "observacion": "2026-11-17 23:34",
  "nucleos": [
   {
-   "lat": -33.3048,
-   "lon": -64.5039,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 17.0
+   "lat": -32.3911,
+   "lon": -65.1709,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 12.3
   },
   {
    "lat": -33.3225,
-   "lon": -65.1924,
-   "dbz": 50,
+   "lon": -64.9988,
+   "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 11.1
+   "tope_km": 12.9
   },
   {
-   "lat": -32.3198,
-   "lon": -65.0848,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -32.3733,
-   "lon": -64.8051,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.3644,
-   "lon": -65.3323,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.5337,
-   "lon": -64.7729,
-   "dbz": 47,
+   "lat": -33.3048,
+   "lon": -64.2995,
+   "dbz": 49,
    "max_dbz": 51,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.4535,
+   "lon": -64.8159,
+   "dbz": 48,
+   "max_dbz": 53,
    "tope_km": 11.1
+  },
+  {
+   "lat": -32.4268,
+   "lon": -64.6545,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "La Cruz": {
-   "km": 34.0,
-   "max_dbz": 51,
-   "tope_km": 11.1,
+   "km": 18.1,
+   "max_dbz": 52,
+   "tope_km": 10.6,
    "cuenca_de": "Río de la Cruz",
    "nivel": "intensa"
   },
-  "Rio de los Sauces": {
-   "km": 16.7,
-   "max_dbz": 51,
+  "Cañada del Sauce": {
+   "km": 18.3,
+   "max_dbz": 53,
    "tope_km": 11.1,
-   "cuenca_de": "Rio De Los Sauces",
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
   "Paso Cabral": {
-   "km": 28.8,
-   "max_dbz": 51,
-   "tope_km": 11.1,
+   "km": 14.5,
+   "max_dbz": 52,
+   "tope_km": 10.6,
    "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
+  },
+  "Villa la Rivera": {
+   "km": 33.4,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
