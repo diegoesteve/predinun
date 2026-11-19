@@ -1,89 +1,88 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 20:30",
+ "consultado": "2026-11-19 20:45",
  "radar": "RMA1",
- "observacion": "2026-11-19 20:16",
+ "observacion": "2026-11-19 20:35",
  "nucleos": [
   {
-   "lat": -32.2573,
-   "lon": -64.8159,
-   "dbz": 52,
-   "max_dbz": 54,
-   "tope_km": 7.6
-  },
-  {
-   "lat": -32.1679,
-   "lon": -64.0521,
+   "lat": -32.0874,
+   "lon": -64.278,
    "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.7471,
-   "lon": -65.3646,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.0338,
-   "lon": -63.8261,
-   "dbz": 50,
    "max_dbz": 59,
-   "tope_km": 10.0
+   "tope_km": 14.1
   },
   {
-   "lat": -32.3555,
-   "lon": -64.0628,
-   "dbz": 50,
-   "max_dbz": 56,
+   "lat": -32.0517,
+   "lon": -63.7939,
+   "dbz": 51,
+   "max_dbz": 61,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.9442,
+   "lon": -64.009,
+   "dbz": 51,
+   "max_dbz": 59,
    "tope_km": 14.7
   },
   {
-   "lat": -32.1232,
-   "lon": -64.1489,
+   "lat": -32.3287,
+   "lon": -64.2887,
    "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 17.0
+   "max_dbz": 52,
+   "tope_km": 12.3
   },
   {
-   "lat": -32.3465,
-   "lon": -64.4824,
+   "lat": -32.3198,
+   "lon": -63.7616,
    "dbz": 49,
-   "max_dbz": 54,
+   "max_dbz": 52,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.1322,
+   "lon": -63.9552,
+   "dbz": 48,
+   "max_dbz": 53,
    "tope_km": 8.8
   },
   {
-   "lat": -32.1501,
-   "lon": -63.8907,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.1053,
-   "lon": -63.7078,
+   "lat": -32.7471,
+   "lon": -65.2032,
    "dbz": 48,
    "max_dbz": 50,
-   "tope_km": 8.2
+   "tope_km": 11.7
   },
   {
-   "lat": -32.4981,
-   "lon": -64.1274,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 17.0
+   "lat": -32.1411,
+   "lon": -64.0305,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Cruz": {
-   "km": 0.4,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "cuenca_de": "Río de la Cruz",
+  "Almafuerte": {
+   "km": 14.3,
+   "max_dbz": 52,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Concarán": {
+   "km": 24.9,
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Los Condores": {
+   "km": 1.1,
+   "max_dbz": 52,
+   "tope_km": 12.3,
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
