@@ -1,87 +1,74 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 17:01",
+ "consultado": "2026-11-19 17:15",
  "radar": "RMA1",
- "observacion": "2026-11-19 16:46",
+ "observacion": "2026-11-19 17:04",
  "nucleos": [
   {
-   "lat": -32.8004,
-   "lon": -64.2027,
+   "lat": -32.7648,
+   "lon": -64.0628,
    "dbz": 55,
    "max_dbz": 63,
-   "tope_km": 13.5
+   "tope_km": 14.1
   },
   {
-   "lat": -32.3822,
-   "lon": -63.7831,
-   "dbz": 54,
-   "max_dbz": 63,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.8891,
-   "lon": -64.8589,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.4802,
-   "lon": -63.8369,
+   "lat": -32.7116,
+   "lon": -64.4716,
    "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.7382,
-   "lon": -64.5792,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.8891,
-   "lon": -64.5469,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.7648,
-   "lon": -64.4824,
-   "dbz": 48,
-   "max_dbz": 50,
+   "max_dbz": 53,
    "tope_km": 10.0
   },
   {
+   "lat": -32.7737,
+   "lon": -64.3318,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.7027,
+   "lon": -64.5792,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 7.6
+  },
+  {
    "lat": -32.8447,
-   "lon": -64.3963,
+   "lon": -64.1381,
    "dbz": 48,
    "max_dbz": 49,
-   "tope_km": 8.8
+   "tope_km": 14.1
+  },
+  {
+   "lat": -32.8891,
+   "lon": -64.7729,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -33.0839,
+   "lon": -65.4721,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa el Chacay": {
-   "km": 1.0,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
-  },
   "Santa Rita": {
-   "km": 32.5,
-   "max_dbz": 55,
+   "km": 24.5,
+   "max_dbz": 50,
    "tope_km": 9.4,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
-  "Coronel Baigorria": {
-   "km": 4.3,
-   "max_dbz": 49,
-   "tope_km": 8.8,
+  "Alcira Gigena": {
+   "km": 1.1,
+   "max_dbz": 52,
+   "tope_km": 10.6,
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
