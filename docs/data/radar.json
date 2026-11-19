@@ -1,67 +1,87 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 16:45",
+ "consultado": "2026-11-19 17:01",
  "radar": "RMA1",
- "observacion": "2026-11-19 16:28",
+ "observacion": "2026-11-19 16:46",
  "nucleos": [
   {
-   "lat": -32.3822,
-   "lon": -63.923,
+   "lat": -32.8004,
+   "lon": -64.2027,
    "dbz": 55,
-   "max_dbz": 62,
-   "tope_km": 14.1
+   "max_dbz": 63,
+   "tope_km": 13.5
   },
   {
-   "lat": -32.8359,
-   "lon": -64.321,
-   "dbz": 53,
+   "lat": -32.3822,
+   "lon": -63.7831,
+   "dbz": 54,
    "max_dbz": 63,
    "tope_km": 17.0
   },
   {
-   "lat": -33.0485,
-   "lon": -64.5039,
+   "lat": -32.8891,
+   "lon": -64.8589,
    "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 15.8
+   "max_dbz": 55,
+   "tope_km": 9.4
   },
   {
-   "lat": -32.9245,
-   "lon": -64.59,
-   "dbz": 50,
+   "lat": -32.4802,
+   "lon": -63.8369,
+   "dbz": 49,
    "max_dbz": 54,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.7382,
+   "lon": -64.5792,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.8891,
+   "lon": -64.5469,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -32.7648,
+   "lon": -64.4824,
+   "dbz": 48,
+   "max_dbz": 50,
    "tope_km": 10.0
   },
   {
-   "lat": -32.3198,
-   "lon": -63.923,
-   "dbz": 49,
+   "lat": -32.8447,
+   "lon": -64.3963,
+   "dbz": 48,
    "max_dbz": 49,
    "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Catalina": {
-   "km": 17.4,
-   "max_dbz": 53,
-   "tope_km": 15.8,
-   "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "intensa"
+  "Villa el Chacay": {
+   "km": 1.0,
+   "max_dbz": 55,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
   },
   "Santa Rita": {
-   "km": 7.2,
-   "max_dbz": 54,
-   "tope_km": 10.0,
+   "km": 32.5,
+   "max_dbz": 55,
+   "tope_km": 9.4,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Coronel Baigorria": {
-   "km": 3.1,
-   "max_dbz": 63,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
+   "km": 4.3,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
