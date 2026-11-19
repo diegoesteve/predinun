@@ -1,75 +1,134 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 19:30",
+ "consultado": "2026-11-19 19:45",
  "radar": "RMA1",
- "observacion": "2026-11-19 19:13",
+ "observacion": "2026-11-19 19:31",
  "nucleos": [
   {
-   "lat": -32.5515,
-   "lon": -64.7836,
-   "dbz": 52,
-   "max_dbz": 63,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.6849,
-   "lon": -64.4394,
+   "lat": -32.507,
+   "lon": -64.5577,
    "dbz": 51,
-   "max_dbz": 61,
+   "max_dbz": 58,
    "tope_km": 17.0
   },
   {
-   "lat": -32.4268,
-   "lon": -64.235,
+   "lat": -32.4357,
+   "lon": -64.1166,
+   "dbz": 51,
+   "max_dbz": 55,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.159,
+   "lon": -64.1489,
    "dbz": 50,
    "max_dbz": 55,
    "tope_km": 10.0
   },
   {
-   "lat": -32.7293,
-   "lon": -65.4399,
+   "lat": -32.6582,
+   "lon": -64.2887,
    "dbz": 50,
-   "max_dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.4357,
+   "lon": -64.8374,
+   "dbz": 50,
+   "max_dbz": 58,
    "tope_km": 10.6
   },
   {
-   "lat": -32.2126,
-   "lon": -64.0198,
+   "lat": -32.2751,
+   "lon": -63.8907,
    "dbz": 49,
-   "max_dbz": 52,
+   "max_dbz": 53,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -32.2394,
+   "lon": -64.1274,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 7.6
   },
   {
-   "lat": -32.7382,
-   "lon": -64.6115,
+   "lat": -32.4713,
+   "lon": -64.945,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.2037,
+   "lon": -63.7186,
    "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 12.9
+   "max_dbz": 50,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
   "La Cruz": {
-   "km": 36.0,
-   "max_dbz": 63,
-   "tope_km": 11.1,
+   "km": 19.0,
+   "max_dbz": 58,
+   "tope_km": 17.0,
    "cuenca_de": "Río de la Cruz",
    "nivel": "muy intensa"
   },
   "Rio de los Sauces": {
-   "km": 17.7,
-   "max_dbz": 63,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio De Los Sauces",
+   "km": 3.6,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Rio Tercero": {
+   "km": 2.6,
+   "max_dbz": 55,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
+  },
+  "Los Molles": {
+   "km": 3.6,
+   "max_dbz": 54,
+   "tope_km": 8.8,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Cortaderas": {
+   "km": 4.8,
+   "max_dbz": 54,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 19.3,
+   "max_dbz": 58,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
   "Paso Cabral": {
-   "km": 30.7,
-   "max_dbz": 63,
-   "tope_km": 11.1,
+   "km": 11.7,
+   "max_dbz": 58,
+   "tope_km": 17.0,
    "cuenca_de": "Río de la Cruz",
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 34.0,
+   "max_dbz": 58,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Pueblo Escondido": {
+   "km": 3.6,
+   "max_dbz": 58,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
