@@ -1,18 +1,39 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 13:30",
+ "consultado": "2026-11-19 13:45",
  "radar": "RMA1",
- "observacion": "2026-11-19 13:18",
+ "observacion": "2026-11-19 13:36",
  "nucleos": [
   {
-   "lat": -32.6493,
-   "lon": -64.1489,
-   "dbz": 49,
-   "max_dbz": 57,
+   "lat": -32.6582,
+   "lon": -63.9983,
+   "dbz": 51,
+   "max_dbz": 56,
    "tope_km": 9.4
+  },
+  {
+   "lat": -32.6049,
+   "lon": -64.0521,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -33.349,
+   "lon": -65.257,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 12
+ "localidades": {
+  "Las Peñas Sud": {
+   "km": 4.5,
+   "max_dbz": 57,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 9
 }
