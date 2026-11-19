@@ -1,88 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 15:15",
+ "consultado": "2026-11-19 15:30",
  "radar": "RMA1",
- "observacion": "2026-11-19 15:07",
+ "observacion": "2026-11-19 15:16",
  "nucleos": [
   {
-   "lat": -32.3108,
-   "lon": -64.5792,
-   "dbz": 53,
-   "max_dbz": 67,
+   "lat": -32.3198,
+   "lon": -64.4716,
+   "dbz": 54,
+   "max_dbz": 65,
    "tope_km": 17.0
   },
   {
-   "lat": -33.19,
-   "lon": -65.0848,
-   "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 12.3
+   "lat": -33.137,
+   "lon": -65.0526,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 11.7
   },
   {
-   "lat": -32.9157,
-   "lon": -64.5685,
-   "dbz": 51,
-   "max_dbz": 56,
+   "lat": -32.159,
+   "lon": -64.6545,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 9.4
   },
   {
-   "lat": -33.1458,
-   "lon": -65.2677,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 10.0
+   "lat": -33.3842,
+   "lon": -64.4394,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 10.6
   },
   {
-   "lat": -33.3225,
-   "lon": -64.5685,
+   "lat": -32.9334,
+   "lon": -64.4716,
    "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 12.3
+   "tope_km": 17.0
   },
   {
-   "lat": -33.4636,
-   "lon": -64.5362,
+   "lat": -32.9068,
+   "lon": -64.6115,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -33.1016,
-   "lon": -65.0311,
-   "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 11.1
+   "tope_km": 16.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa la Rivera": {
-   "km": 6.1,
-   "max_dbz": 67,
+  "La Cruz": {
+   "km": 1.4,
+   "max_dbz": 65,
    "tope_km": 17.0,
-   "cuenca_de": "Rio Quillinzo",
+   "cuenca_de": "Rio La Cruz",
    "nivel": "muy intensa"
   },
-  "Santa Rita": {
-   "km": 5.2,
-   "max_dbz": 56,
+  "Amboy": {
+   "km": 7.3,
+   "max_dbz": 53,
    "tope_km": 9.4,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
-  },
-  "Achiras": {
-   "km": 7.4,
-   "max_dbz": 51,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo",
+   "cuenca_de": "Arroyo Amboy",
    "nivel": "intensa"
   },
-  "Las Vertientes": {
-   "km": 4.4,
+  "Villa Amancay": {
+   "km": 9.2,
    "max_dbz": 53,
-   "tope_km": 12.3,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo Amboy",
+   "nivel": "intensa"
+  },
+  "Santa Rita": {
+   "km": 4.2,
+   "max_dbz": 53,
+   "tope_km": 17.0,
    "nivel": "intensa"
   }
  },
- "minutos": 8
+ "minutos": 15
 }
