@@ -1,81 +1,80 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 15:30",
+ "consultado": "2026-11-19 15:46",
  "radar": "RMA1",
- "observacion": "2026-11-19 15:16",
+ "observacion": "2026-11-19 15:34",
  "nucleos": [
   {
-   "lat": -32.3198,
-   "lon": -64.4716,
+   "lat": -32.3376,
+   "lon": -64.3425,
    "dbz": 54,
-   "max_dbz": 65,
+   "max_dbz": 67,
    "tope_km": 17.0
   },
   {
-   "lat": -33.137,
-   "lon": -65.0526,
-   "dbz": 52,
-   "max_dbz": 61,
+   "lat": -32.2126,
+   "lon": -64.5039,
+   "dbz": 51,
+   "max_dbz": 59,
    "tope_km": 11.7
   },
   {
-   "lat": -32.159,
-   "lon": -64.6545,
+   "lat": -33.1193,
+   "lon": -64.8697,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.8713,
+   "lon": -64.633,
    "dbz": 49,
-   "max_dbz": 53,
+   "max_dbz": 52,
    "tope_km": 9.4
   },
   {
-   "lat": -33.3842,
-   "lon": -64.4394,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.9334,
-   "lon": -64.4716,
-   "dbz": 49,
+   "lat": -33.0043,
+   "lon": -64.7729,
+   "dbz": 48,
    "max_dbz": 53,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.9068,
-   "lon": -64.6115,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 16.4
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Cruz": {
-   "km": 1.4,
-   "max_dbz": 65,
+  "Almafuerte": {
+   "km": 17.1,
+   "max_dbz": 67,
    "tope_km": 17.0,
-   "cuenca_de": "Rio La Cruz",
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Amboy": {
-   "km": 7.3,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Amboy",
-   "nivel": "intensa"
+  "Villa Quillinzo": {
+   "km": 3.2,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
   },
-  "Villa Amancay": {
-   "km": 9.2,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Amboy",
-   "nivel": "intensa"
+  "Santa Catalina": {
+   "km": 41.7,
+   "max_dbz": 56,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "muy intensa"
   },
   "Santa Rita": {
-   "km": 4.2,
-   "max_dbz": 53,
-   "tope_km": 17.0,
+   "km": 12.4,
+   "max_dbz": 52,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
+  },
+  "Villa Rumipal": {
+   "km": 4.3,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 13
 }
