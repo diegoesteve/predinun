@@ -1,67 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 16:15",
+ "consultado": "2026-11-19 16:30",
  "radar": "RMA1",
- "observacion": "2026-11-19 16:01",
+ "observacion": "2026-11-19 16:19",
  "nucleos": [
   {
-   "lat": -32.2662,
-   "lon": -64.2887,
+   "lat": -32.8359,
+   "lon": -64.4501,
    "dbz": 54,
-   "max_dbz": 61,
-   "tope_km": 7.6
+   "max_dbz": 67,
+   "tope_km": 13.5
   },
   {
-   "lat": -32.3733,
-   "lon": -64.1166,
-   "dbz": 53,
-   "max_dbz": 64,
-   "tope_km": 15.2
+   "lat": -32.3911,
+   "lon": -63.9875,
+   "dbz": 54,
+   "max_dbz": 67,
+   "tope_km": 17.0
   },
   {
-   "lat": -33.0839,
-   "lon": -64.7083,
+   "lat": -33.0397,
+   "lon": -64.5362,
    "dbz": 52,
-   "max_dbz": 56,
-   "tope_km": 11.1
+   "max_dbz": 59,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.9423,
-   "lon": -64.3641,
-   "dbz": 50,
+   "lat": -32.9245,
+   "lon": -64.7083,
+   "dbz": 51,
+   "max_dbz": 61,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -32.2841,
+   "lon": -63.9875,
+   "dbz": 49,
    "max_dbz": 55,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.9777,
+   "lon": -64.2672,
+   "dbz": 48,
+   "max_dbz": 51,
    "tope_km": 10.0
   },
   {
-   "lat": -33.0131,
-   "lon": -64.7836,
-   "dbz": 50,
-   "max_dbz": 58,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.8359,
-   "lon": -64.5147,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 10.6
+   "lat": -32.7826,
+   "lon": -64.5792,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Santa Catalina": {
-   "km": 38.4,
-   "max_dbz": 58,
-   "tope_km": 10.6,
+   "km": 19.7,
+   "max_dbz": 59,
+   "tope_km": 17.0,
    "cuenca_de": "Arroyo Santa Catalina",
    "nivel": "muy intensa"
   },
   "Paso del Río Seco": {
-   "km": 4.8,
-   "max_dbz": 49,
-   "tope_km": 10.6,
+   "km": 4.3,
+   "max_dbz": 47,
+   "tope_km": 17.0,
    "nivel": "intensa"
+  },
+  "Santa Rita": {
+   "km": 18.3,
+   "max_dbz": 61,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
