@@ -1,100 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 16:00",
+ "consultado": "2026-11-19 16:15",
  "radar": "RMA1",
- "observacion": "2026-11-19 15:43",
+ "observacion": "2026-11-19 16:01",
  "nucleos": [
   {
-   "lat": -32.3465,
-   "lon": -64.2565,
+   "lat": -32.2662,
+   "lon": -64.2887,
    "dbz": 54,
-   "max_dbz": 66,
-   "tope_km": 17.0
+   "max_dbz": 61,
+   "tope_km": 7.6
   },
   {
-   "lat": -33.0751,
-   "lon": -64.8912,
+   "lat": -32.3733,
+   "lon": -64.1166,
+   "dbz": 53,
+   "max_dbz": 64,
+   "tope_km": 15.2
+  },
+  {
+   "lat": -33.0839,
+   "lon": -64.7083,
    "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 14.1
+   "max_dbz": 56,
+   "tope_km": 11.1
   },
   {
-   "lat": -32.2305,
-   "lon": -64.4824,
+   "lat": -32.9423,
+   "lon": -64.3641,
    "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 7.6
+   "max_dbz": 55,
+   "tope_km": 10.0
   },
   {
-   "lat": -32.3911,
-   "lon": -64.5685,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 7.6
-  },
-  {
-   "lat": -33.022,
-   "lon": -64.6868,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -33.0131,
+   "lon": -64.7836,
+   "dbz": 50,
+   "max_dbz": 58,
    "tope_km": 10.6
   },
   {
-   "lat": -32.7737,
-   "lon": -64.6438,
-   "dbz": 47,
+   "lat": -32.8359,
+   "lon": -64.5147,
+   "dbz": 48,
    "max_dbz": 49,
-   "tope_km": 8.2
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Quillinzo": {
-   "km": 3.1,
-   "max_dbz": 54,
-   "tope_km": 7.6,
-   "nivel": "intensa"
-  },
   "Santa Catalina": {
-   "km": 44.8,
-   "max_dbz": 60,
-   "tope_km": 14.1,
+   "km": 38.4,
+   "max_dbz": 58,
+   "tope_km": 10.6,
    "cuenca_de": "Arroyo Santa Catalina",
    "nivel": "muy intensa"
   },
-  "Villa la Rivera": {
-   "km": 13.2,
-   "max_dbz": 52,
-   "tope_km": 7.6,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
   "Paso del Río Seco": {
-   "km": 9.1,
+   "km": 4.8,
    "max_dbz": 49,
-   "tope_km": 8.2,
-   "cuenca_de": "Río de las Barrancas",
+   "tope_km": 10.6,
    "nivel": "intensa"
-  },
-  "Santa Rita": {
-   "km": 20.3,
-   "max_dbz": 49,
-   "tope_km": 8.2,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "intensa"
-  },
-  "Las Caleras": {
-   "km": 4.5,
-   "max_dbz": 52,
-   "tope_km": 7.6,
-   "nivel": "intensa"
-  },
-  "Los Condores": {
-   "km": 3.6,
-   "max_dbz": 66,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
