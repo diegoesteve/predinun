@@ -1,47 +1,88 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 15:00",
+ "consultado": "2026-11-19 15:15",
  "radar": "RMA1",
- "observacion": "2026-11-19 14:40",
+ "observacion": "2026-11-19 15:07",
  "nucleos": [
   {
-   "lat": -33.1635,
-   "lon": -65.2355,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 12.9
+   "lat": -32.3108,
+   "lon": -64.5792,
+   "dbz": 53,
+   "max_dbz": 67,
+   "tope_km": 17.0
   },
   {
-   "lat": -33.3578,
-   "lon": -64.8051,
+   "lat": -33.19,
+   "lon": -65.0848,
    "dbz": 51,
    "max_dbz": 58,
-   "tope_km": 10.6
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.9157,
+   "lon": -64.5685,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -33.1458,
+   "lon": -65.2677,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -33.3225,
+   "lon": -64.5685,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 12.3
   },
   {
    "lat": -33.4636,
-   "lon": -64.7621,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 11.1
+   "lon": -64.5362,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 13.5
   },
   {
-   "lat": -33.0662,
-   "lon": -64.7513,
+   "lat": -33.1016,
+   "lon": -65.0311,
    "dbz": 48,
-   "max_dbz": 49,
+   "max_dbz": 51,
    "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Catalina": {
-   "km": 33.0,
-   "max_dbz": 49,
+  "Villa la Rivera": {
+   "km": 6.1,
+   "max_dbz": 67,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Santa Rita": {
+   "km": 5.2,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
+  },
+  "Achiras": {
+   "km": 7.4,
+   "max_dbz": 51,
    "tope_km": 11.1,
-   "cuenca_de": "Arroyo Santa Catalina",
+   "cuenca_de": "Arroyo",
+   "nivel": "intensa"
+  },
+  "Las Vertientes": {
+   "km": 4.4,
+   "max_dbz": 53,
+   "tope_km": 12.3,
    "nivel": "intensa"
   }
  },
- "minutos": 21
+ "minutos": 8
 }
