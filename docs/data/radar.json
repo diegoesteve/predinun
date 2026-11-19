@@ -1,54 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 17:30",
+ "consultado": "2026-11-19 17:45",
  "radar": "RMA1",
- "observacion": "2026-11-19 17:13",
+ "observacion": "2026-11-19 17:31",
  "nucleos": [
   {
-   "lat": -32.7116,
-   "lon": -64.009,
-   "dbz": 53,
+   "lat": -32.6938,
+   "lon": -63.8154,
+   "dbz": 52,
    "max_dbz": 63,
-   "tope_km": 17.0
+   "tope_km": 12.3
   },
   {
-   "lat": -32.8802,
-   "lon": -64.7298,
+   "lat": -33.0397,
+   "lon": -65.4614,
+   "dbz": 52,
+   "max_dbz": 57,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -33.1282,
+   "lon": -65.3108,
    "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 9.4
+   "max_dbz": 55,
+   "tope_km": 12.9
   },
   {
-   "lat": -32.7471,
-   "lon": -64.2565,
-   "dbz": 49,
+   "lat": -32.9068,
+   "lon": -64.6222,
+   "dbz": 50,
    "max_dbz": 55,
    "tope_km": 10.0
   },
   {
-   "lat": -32.7027,
-   "lon": -64.3856,
-   "dbz": 49,
+   "lat": -32.6849,
+   "lon": -64.2242,
+   "dbz": 50,
    "max_dbz": 54,
-   "tope_km": 10.0
+   "tope_km": 11.1
   },
   {
-   "lat": -32.7293,
-   "lon": -64.5254,
+   "lat": -32.7382,
+   "lon": -64.1489,
    "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -33.0839,
+   "lon": -65.1602,
+   "dbz": 47,
    "max_dbz": 48,
-   "tope_km": 7.6
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Tilisarao": {
+   "km": 41.5,
+   "max_dbz": 55,
+   "tope_km": 12.9,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
   "Santa Rita": {
-   "km": 20.7,
-   "max_dbz": 54,
-   "tope_km": 9.4,
+   "km": 10.3,
+   "max_dbz": 55,
+   "tope_km": 10.0,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
