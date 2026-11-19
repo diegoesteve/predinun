@@ -1,18 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 12:15",
+ "consultado": "2026-11-19 12:30",
  "radar": "RMA1",
- "observacion": "2026-11-19 11:48",
+ "observacion": "2026-11-19 12:15",
  "nucleos": [
   {
-   "lat": -32.7471,
-   "lon": -64.4071,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -32.4713,
+   "lon": -64.7406,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -32.4981,
+   "lon": -64.6115,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 10.6
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 28
+ "localidades": {
+  "La Cruz": {
+   "km": 27.6,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "muy intensa"
+  },
+  "Rio de los Sauces": {
+   "km": 15.4,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "muy intensa"
+  },
+  "Paso Cabral": {
+   "km": 23.4,
+   "max_dbz": 56,
+   "tope_km": 8.2,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 15
 }
