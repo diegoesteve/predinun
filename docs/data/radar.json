@@ -1,26 +1,39 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 11:30",
+ "consultado": "2026-11-19 11:45",
  "radar": "RMA1",
- "observacion": "2026-11-19 11:20",
+ "observacion": "2026-11-19 11:30",
  "nucleos": [
   {
-   "lat": -32.827,
-   "lon": -64.7298,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 11.1
+   "lat": -32.8713,
+   "lon": -64.633,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -32.8092,
+   "lon": -64.5469,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Paso del Río Seco": {
+   "km": 1.8,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  },
   "Santa Rita": {
-   "km": 22.7,
-   "max_dbz": 55,
-   "tope_km": 11.1,
+   "km": 12.4,
+   "max_dbz": 53,
+   "tope_km": 9.4,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 10
+ "minutos": 16
 }
