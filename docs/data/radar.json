@@ -1,89 +1,106 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 20:00",
+ "consultado": "2026-11-19 20:15",
  "radar": "RMA1",
- "observacion": "2026-11-19 19:40",
+ "observacion": "2026-11-19 19:58",
  "nucleos": [
   {
-   "lat": -32.409,
-   "lon": -64.7729,
+   "lat": -32.3911,
+   "lon": -64.2565,
    "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 10.0
+   "max_dbz": 63,
+   "tope_km": 14.7
   },
   {
-   "lat": -32.3108,
-   "lon": -63.7939,
+   "lat": -32.7116,
+   "lon": -65.5582,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.1501,
+   "lon": -63.8261,
    "dbz": 50,
    "max_dbz": 50,
-   "tope_km": 11.1
+   "tope_km": 7.0
   },
   {
-   "lat": -32.5337,
-   "lon": -64.4286,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.2751,
-   "lon": -64.0951,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 15.2
-  },
-  {
-   "lat": -32.676,
-   "lon": -64.2027,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -32.5693,
-   "lon": -64.321,
+   "lat": -32.0964,
+   "lon": -64.009,
    "dbz": 49,
    "max_dbz": 52,
    "tope_km": 12.9
   },
   {
-   "lat": -32.4179,
-   "lon": -64.676,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 15.2
+   "lat": -32.3465,
+   "lon": -64.8051,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 7.6
   },
   {
-   "lat": -32.4179,
-   "lon": -63.8477,
+   "lat": -32.3822,
+   "lon": -64.633,
    "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 10.0
+   "max_dbz": 50,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.4268,
+   "lon": -64.5254,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -32.596,
+   "lon": -64.1059,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
+  "La Cruz": {
+   "km": 9.6,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
+  },
   "Cañada del Sauce": {
-   "km": 12.6,
-   "max_dbz": 59,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "muy intensa"
+   "km": 1.4,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  },
+  "Paso Cabral": {
+   "km": 2.7,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
   },
   "Villa la Rivera": {
-   "km": 27.3,
-   "max_dbz": 59,
-   "tope_km": 10.0,
+   "km": 15.2,
+   "max_dbz": 50,
+   "tope_km": 8.8,
    "cuenca_de": "Rio Quillinzo",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
+  },
+  "Las Caleras": {
+   "km": 4.1,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
   },
   "Las Peñas Sud": {
-   "km": 23.7,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "cuenca_de": "sin nombre",
+   "km": 4.8,
+   "max_dbz": 48,
+   "tope_km": 11.1,
    "nivel": "intensa"
   }
  },
- "minutos": 20
+ "minutos": 17
 }
