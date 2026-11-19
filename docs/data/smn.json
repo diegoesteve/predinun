@@ -1,7 +1,59 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-19 18:30",
+ "consultado": "2026-11-19 18:45",
  "alertas": [
+  {
+   "id": "2026_11_19_2127_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-19T21:27:00-03:00",
+   "hasta": "2026-11-19T23:27:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "CORDOBA: GRAL SAN MARTIN - JUAREZ CELMAN - RIO CUARTO - TERCERO ARRIBA - UNION. SAN LUIS: CHACABUCO.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_19_2127_cap_es.xml",
+   "desde_local": "19/11 21:27",
+   "hasta_local": "19/11 23:27",
+   "localidades": 8,
+   "poligonos": [
+    [
+     [
+      -65.04,
+      -32.74
+     ],
+     [
+      -64.57,
+      -32.68
+     ],
+     [
+      -63.35,
+      -32.07
+     ],
+     [
+      -62.78,
+      -32.38
+     ],
+     [
+      -63.2,
+      -32.85
+     ],
+     [
+      -64.2,
+      -33.07
+     ],
+     [
+      -65.0,
+      -33.07
+     ],
+     [
+      -65.04,
+      -32.74
+     ]
+    ]
+   ]
+  },
   {
    "id": "2026_11_19_2033_cap_es",
    "tipo": "aviso a corto plazo",
@@ -9753,6 +9805,7 @@
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_31"
   ],
   "Villa el Chacay": [
+   "2026_11_19_2127_cap_es",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_31",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_36",
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_36",
@@ -10250,6 +10303,7 @@
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_34"
   ],
   "Villa del Carmen": [
+   "2026_11_19_2127_cap_es",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_39",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_34",
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_39",
@@ -10268,6 +10322,7 @@
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_33"
   ],
   "Paso del Río Seco": [
+   "2026_11_19_2127_cap_es",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_37",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_33",
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_37",
@@ -10280,6 +10335,7 @@
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_33"
   ],
   "Santa Rita": [
+   "2026_11_19_2127_cap_es",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_37",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_33",
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_37",
@@ -10292,6 +10348,7 @@
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_33"
   ],
   "Alcira Gigena": [
+   "2026_11_19_2127_cap_es",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_37",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_33",
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_37",
@@ -10304,12 +10361,14 @@
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_33"
   ],
   "Chucul": [
+   "2026_11_19_2127_cap_es",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_37",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_33",
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_37",
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_33"
   ],
   "Coronel Baigorria": [
+   "2026_11_19_2127_cap_es",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_37",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_33",
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_37",
@@ -10334,6 +10393,7 @@
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_33"
   ],
   "Las Peñas Sud": [
+   "2026_11_19_2127_cap_es",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_37",
    "CAP_20261119181303_Tormenta_Patagonia_alertas_alertas_33",
    "CAP_20261119181302_Tormenta_Llanura_alertas_alertas_37",

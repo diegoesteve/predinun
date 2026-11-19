@@ -1,116 +1,95 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 18:30",
+ "consultado": "2026-11-19 18:45",
  "radar": "RMA1",
- "observacion": "2026-11-19 18:10",
+ "observacion": "2026-11-19 18:28",
  "nucleos": [
   {
    "lat": -32.8891,
-   "lon": -64.6868,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lon": -64.5792,
+   "dbz": 52,
+   "max_dbz": 56,
    "tope_km": 11.7
   },
   {
-   "lat": -32.5515,
-   "lon": -63.8907,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.827,
-   "lon": -64.7836,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.9688,
-   "lon": -64.3641,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.8713,
-   "lon": -64.9988,
+   "lat": -32.7471,
+   "lon": -64.0305,
    "dbz": 49,
    "max_dbz": 52,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.7027,
-   "lon": -64.1489,
-   "dbz": 49,
-   "max_dbz": 50,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -33.0574,
-   "lon": -64.988,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.8713,
-   "lon": -65.2032,
-   "dbz": 48,
-   "max_dbz": 50,
    "tope_km": 10.6
   },
   {
-   "lat": -33.1193,
-   "lon": -64.9557,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 11.1
+   "lat": -32.4446,
+   "lon": -63.7078,
+   "dbz": 49,
+   "max_dbz": 57,
+   "tope_km": 12.9
   },
   {
-   "lat": -32.8536,
-   "lon": -65.3,
+   "lat": -32.8625,
+   "lon": -64.7083,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.8092,
+   "lon": -65.1494,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.4624,
+   "lon": -63.9122,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.9068,
+   "lon": -65.0526,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.9068,
+   "lon": -64.2995,
    "dbz": 48,
    "max_dbz": 49,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.6493,
-   "lon": -63.8907,
-   "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 10.0
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 14.1,
-   "max_dbz": 50,
+   "km": 26.2,
+   "max_dbz": 51,
    "tope_km": 10.6,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "La Carolina el Potosí": {
-   "km": 28.4,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Arroyo 630",
+  "El Tala": {
+   "km": 10.4,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
   "Santa Rita": {
-   "km": 16.6,
-   "max_dbz": 55,
+   "km": 7.1,
+   "max_dbz": 56,
    "tope_km": 11.7,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
   },
   "Villa del Carmen": {
-   "km": 3.9,
-   "max_dbz": 52,
-   "tope_km": 12.9,
+   "km": 3.3,
+   "max_dbz": 51,
+   "tope_km": 10.6,
    "nivel": "intensa"
   }
  },
- "minutos": 20
+ "minutos": 17
 }
