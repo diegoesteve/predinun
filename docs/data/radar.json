@@ -1,46 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 08:15",
+ "consultado": "2026-11-19 08:31",
  "radar": "RMA1",
- "observacion": "2026-11-19 08:00",
+ "observacion": "2026-11-19 08:18",
  "nucleos": [
   {
-   "lat": -32.7915,
-   "lon": -65.5044,
-   "dbz": 52,
-   "max_dbz": 58,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -32.4802,
-   "lon": -65.0848,
-   "dbz": 49,
-   "max_dbz": 49,
+   "lat": -32.7471,
+   "lon": -65.2355,
+   "dbz": 51,
+   "max_dbz": 51,
    "tope_km": 9.4
   },
   {
-   "lat": -32.409,
-   "lon": -65.0418,
+   "lat": -32.4357,
+   "lon": -64.8912,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.8713,
+   "lon": -65.3538,
    "dbz": 48,
-   "max_dbz": 51,
+   "max_dbz": 50,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.4981,
+   "lon": -64.9342,
+   "dbz": 47,
+   "max_dbz": 49,
    "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Carpintería": {
-   "km": 1.0,
+  "Tilisarao": {
+   "km": 4.6,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
+  "Cortaderas": {
+   "km": 5.4,
+   "max_dbz": 49,
+   "tope_km": 9.4,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 24.1,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 38.4,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Concarán": {
+   "km": 24.8,
    "max_dbz": 51,
    "tope_km": 9.4,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Los Molles": {
-   "km": 4.7,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "nivel": "intensa"
+  "Pueblo Escondido": {
+   "km": 2.1,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo del Medio",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
