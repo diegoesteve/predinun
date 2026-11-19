@@ -1,47 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 19:15",
+ "consultado": "2026-11-19 19:30",
  "radar": "RMA1",
- "observacion": "2026-11-19 19:04",
+ "observacion": "2026-11-19 19:13",
  "nucleos": [
   {
-   "lat": -32.8092,
-   "lon": -64.3748,
+   "lat": -32.5515,
+   "lon": -64.7836,
    "dbz": 52,
-   "max_dbz": 58,
-   "tope_km": 12.9
+   "max_dbz": 63,
+   "tope_km": 11.1
   },
   {
-   "lat": -32.6138,
-   "lon": -64.8051,
-   "dbz": 52,
-   "max_dbz": 62,
-   "tope_km": 11.7
+   "lat": -32.6849,
+   "lon": -64.4394,
+   "dbz": 51,
+   "max_dbz": 61,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.4268,
+   "lon": -64.235,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.7293,
+   "lon": -65.4399,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.2126,
+   "lon": -64.0198,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 7.6
+  },
+  {
+   "lat": -32.7382,
+   "lon": -64.6115,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alpa Corral": {
-   "km": 9.6,
-   "max_dbz": 62,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio Barrancas",
+  "La Cruz": {
+   "km": 36.0,
+   "max_dbz": 63,
+   "tope_km": 11.1,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "muy intensa"
   },
-  "Paso del Río Seco": {
-   "km": 32.2,
-   "max_dbz": 62,
-   "tope_km": 11.7,
-   "cuenca_de": "Río de las Barrancas",
+  "Rio de los Sauces": {
+   "km": 17.7,
+   "max_dbz": 63,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
-  "Santa Rita": {
-   "km": 43.6,
-   "max_dbz": 62,
-   "tope_km": 11.7,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
+  "Paso Cabral": {
+   "km": 30.7,
+   "max_dbz": 63,
+   "tope_km": 11.1,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
