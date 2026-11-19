@@ -1,80 +1,100 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 15:46",
+ "consultado": "2026-11-19 16:00",
  "radar": "RMA1",
- "observacion": "2026-11-19 15:34",
+ "observacion": "2026-11-19 15:43",
  "nucleos": [
   {
-   "lat": -32.3376,
-   "lon": -64.3425,
+   "lat": -32.3465,
+   "lon": -64.2565,
    "dbz": 54,
-   "max_dbz": 67,
+   "max_dbz": 66,
    "tope_km": 17.0
   },
   {
-   "lat": -32.2126,
-   "lon": -64.5039,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 11.7
+   "lat": -33.0751,
+   "lon": -64.8912,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 14.1
   },
   {
-   "lat": -33.1193,
-   "lon": -64.8697,
+   "lat": -32.2305,
+   "lon": -64.4824,
    "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 11.1
+   "max_dbz": 54,
+   "tope_km": 7.6
   },
   {
-   "lat": -32.8713,
-   "lon": -64.633,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -33.0043,
-   "lon": -64.7729,
+   "lat": -32.3911,
+   "lon": -64.5685,
    "dbz": 48,
-   "max_dbz": 53,
+   "max_dbz": 52,
+   "tope_km": 7.6
+  },
+  {
+   "lat": -33.022,
+   "lon": -64.6868,
+   "dbz": 47,
+   "max_dbz": 47,
    "tope_km": 10.6
+  },
+  {
+   "lat": -32.7737,
+   "lon": -64.6438,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Almafuerte": {
-   "km": 17.1,
-   "max_dbz": 67,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
   "Villa Quillinzo": {
-   "km": 3.2,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
+   "km": 3.1,
+   "max_dbz": 54,
+   "tope_km": 7.6,
+   "nivel": "intensa"
   },
   "Santa Catalina": {
-   "km": 41.7,
-   "max_dbz": 56,
-   "tope_km": 11.1,
+   "km": 44.8,
+   "max_dbz": 60,
+   "tope_km": 14.1,
    "cuenca_de": "Arroyo Santa Catalina",
    "nivel": "muy intensa"
   },
-  "Santa Rita": {
-   "km": 12.4,
+  "Villa la Rivera": {
+   "km": 13.2,
    "max_dbz": 52,
-   "tope_km": 9.4,
+   "tope_km": 7.6,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Paso del Río Seco": {
+   "km": 9.1,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "cuenca_de": "Río de las Barrancas",
+   "nivel": "intensa"
+  },
+  "Santa Rita": {
+   "km": 20.3,
+   "max_dbz": 49,
+   "tope_km": 8.2,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
   },
-  "Villa Rumipal": {
-   "km": 4.3,
-   "max_dbz": 59,
-   "tope_km": 11.7,
+  "Las Caleras": {
+   "km": 4.5,
+   "max_dbz": 52,
+   "tope_km": 7.6,
+   "nivel": "intensa"
+  },
+  "Los Condores": {
+   "km": 3.6,
+   "max_dbz": 66,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 17
 }
