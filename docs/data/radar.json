@@ -1,54 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 09:00",
+ "consultado": "2026-11-19 09:15",
  "radar": "RMA1",
- "observacion": "2026-11-19 08:46",
+ "observacion": "2026-11-19 09:04",
  "nucleos": [
   {
-   "lat": -32.4802,
-   "lon": -64.5792,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.0
+   "lat": -32.7915,
+   "lon": -64.7083,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 8.8
   },
   {
-   "lat": -33.19,
+   "lat": -33.1282,
    "lon": -65.5582,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 11.7
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 11.1
   },
   {
-   "lat": -32.756,
-   "lon": -64.8804,
+   "lat": -32.5515,
+   "lon": -64.5147,
    "dbz": 48,
-   "max_dbz": 48,
+   "max_dbz": 52,
    "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Cruz": {
-   "km": 17.2,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "intensa"
-  },
-  "Paso Cabral": {
-   "km": 10.5,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "intensa"
-  },
   "Santa Rita": {
-   "km": 38.9,
-   "max_dbz": 48,
+   "km": 23.2,
+   "max_dbz": 51,
    "tope_km": 8.8,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
