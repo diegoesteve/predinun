@@ -1,18 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 08:00",
+ "consultado": "2026-11-19 08:15",
  "radar": "RMA1",
- "observacion": "2026-11-19 07:42",
+ "observacion": "2026-11-19 08:00",
  "nucleos": [
   {
-   "lat": -32.6404,
-   "lon": -65.0633,
+   "lat": -32.7915,
+   "lon": -65.5044,
+   "dbz": 52,
+   "max_dbz": 58,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.4802,
+   "lon": -65.0848,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -32.409,
+   "lon": -65.0418,
    "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 8.8
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "localidades": {
+  "Carpintería": {
+   "km": 1.0,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Los Molles": {
+   "km": 4.7,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 15
 }
