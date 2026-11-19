@@ -1,33 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 09:45",
+ "consultado": "2026-11-19 10:00",
  "radar": "RMA1",
- "observacion": "2026-11-19 09:32",
+ "observacion": "2026-11-19 09:50",
  "nucleos": [
   {
-   "lat": -33.0751,
-   "lon": -65.1924,
+   "lat": -32.9777,
+   "lon": -65.1279,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 9.4
+   "max_dbz": 54,
+   "tope_km": 11.1
   },
   {
-   "lat": -33.0308,
-   "lon": -65.343,
-   "dbz": 48,
-   "max_dbz": 51,
+   "lat": -32.7027,
+   "lon": -65.5044,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.9866,
+   "lon": -65.3,
+   "dbz": 47,
+   "max_dbz": 50,
    "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 36.1,
-   "max_dbz": 53,
-   "tope_km": 9.4,
+   "km": 27.8,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "El Tala": {
+   "km": 5.3,
+   "max_dbz": 54,
+   "tope_km": 11.1,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
