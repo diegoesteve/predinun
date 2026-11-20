@@ -1,47 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 06:30",
- "radar": "RMA17",
- "observacion": "2026-11-20 06:19",
+ "consultado": "2026-11-20 06:45",
+ "radar": "RMA1",
+ "observacion": "2026-11-20 06:36",
  "nucleos": [
   {
-   "lat": -32.4197,
-   "lon": -64.8028,
-   "dbz": 47,
-   "max_dbz": 48,
+   "lat": -32.0696,
+   "lon": -64.9665,
+   "dbz": 51,
+   "max_dbz": 56,
    "tope_km": 10.0
   },
   {
-   "lat": -32.2104,
-   "lon": -64.9677,
-   "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 15.2
+   "lat": -32.1232,
+   "lon": -64.8159,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 7.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada del Sauce": {
-   "km": 15.6,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio Quillinzo",
+  "El Durazno": {
+   "km": 4.6,
+   "max_dbz": 50,
+   "tope_km": 7.6,
    "nivel": "intensa"
   },
-  "Villa la Rivera": {
-   "km": 30.3,
-   "max_dbz": 48,
+  "Los Romeros": {
+   "km": 25.1,
+   "max_dbz": 56,
    "tope_km": 10.0,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
   },
-  "Loma Bola": {
-   "km": 5.7,
-   "max_dbz": 48,
-   "tope_km": 15.2,
-   "cuenca_de": "Arroyo El Arenal",
-   "nivel": "intensa"
+  "La Poblacion": {
+   "km": 3.1,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Cruz Del Quebracho",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 9
 }
