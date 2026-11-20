@@ -1,32 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 00:21",
+ "consultado": "2026-11-20 00:30",
  "radar": "RMA1",
- "observacion": "2026-11-20 00:04",
+ "observacion": "2026-11-20 00:13",
  "nucleos": [
   {
-   "lat": -32.4713,
-   "lon": -65.1171,
-   "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 12.9
+   "lat": -32.3822,
+   "lon": -65.0418,
+   "dbz": 53,
+   "max_dbz": 64,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.6493,
-   "lon": -64.6115,
+   "lat": -32.6138,
+   "lon": -64.5792,
    "dbz": 51,
    "max_dbz": 61,
    "tope_km": 11.7
   },
   {
-   "lat": -32.8447,
-   "lon": -64.1704,
-   "dbz": 49,
+   "lat": -32.7116,
+   "lon": -64.4071,
+   "dbz": 50,
    "max_dbz": 53,
-   "tope_km": 13.5
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.5604,
+   "lon": -65.0741,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.8359,
+   "lon": -64.1381,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.7737,
+   "lon": -64.4931,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 17
+ "localidades": {
+  "Carpintería": {
+   "km": 4.2,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Santa Rosa del Conlara": {
+   "km": 13.2,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 18
 }
