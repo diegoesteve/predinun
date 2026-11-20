@@ -1,53 +1,79 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 02:00",
+ "consultado": "2026-11-20 02:15",
  "radar": "RMA1",
- "observacion": "2026-11-20 01:44",
+ "observacion": "2026-11-20 02:02",
  "nucleos": [
   {
-   "lat": -32.0248,
-   "lon": -63.8477,
-   "dbz": 51,
-   "max_dbz": 63,
-   "tope_km": 13.5
+   "lat": -32.3465,
+   "lon": -65.0095,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 10.6
   },
   {
-   "lat": -31.9173,
-   "lon": -63.9983,
-   "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 10.0
+   "lat": -32.1501,
+   "lon": -63.7616,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.4268,
-   "lon": -65.1494,
-   "dbz": 49,
-   "max_dbz": 53,
+   "lat": -32.5782,
+   "lon": -64.8697,
+   "dbz": 48,
+   "max_dbz": 50,
    "tope_km": 9.4
   },
   {
-   "lat": -32.1053,
-   "lon": -63.9768,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.1679,
-   "lon": -63.9875,
+   "lat": -32.0517,
+   "lon": -63.7401,
    "dbz": 48,
    "max_dbz": 48,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.5337,
-   "lon": -65.0741,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.0
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 16
+ "localidades": {
+  "Cañada del Sauce": {
+   "km": 31.0,
+   "max_dbz": 50,
+   "tope_km": 9.4,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Villa de Merlo": {
+   "km": 2.1,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  },
+  "La Ramada": {
+   "km": 3.7,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 46.4,
+   "max_dbz": 50,
+   "tope_km": 9.4,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Cerro de Oro": {
+   "km": 2.4,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  },
+  "Santa Rosa del Conlara": {
+   "km": 15.2,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 13
 }
