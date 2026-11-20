@@ -1,59 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 23:45",
+ "consultado": "2026-11-20 00:00",
  "radar": "RMA1",
- "observacion": "2026-11-19 23:36",
+ "observacion": "2026-11-19 23:45",
  "nucleos": [
   {
-   "lat": -32.7204,
-   "lon": -64.8051,
-   "dbz": 52,
-   "max_dbz": 62,
+   "lat": -32.7116,
+   "lon": -64.7406,
+   "dbz": 51,
+   "max_dbz": 60,
    "tope_km": 12.9
   },
   {
-   "lat": -32.6138,
-   "lon": -65.4506,
+   "lat": -32.5515,
+   "lon": -65.3108,
    "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 12.3
+   "max_dbz": 59,
+   "tope_km": 14.1
   },
   {
-   "lat": -32.756,
-   "lon": -64.3425,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 12.9
+   "lat": -32.7648,
+   "lon": -64.2672,
+   "dbz": 47,
+   "max_dbz": 51,
+   "tope_km": 10.6
   },
   {
-   "lat": -32.8181,
-   "lon": -64.5792,
-   "dbz": 48,
+   "lat": -32.8359,
+   "lon": -64.5147,
+   "dbz": 47,
    "max_dbz": 49,
    "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Alpa Corral": {
+   "km": 3.6,
+   "max_dbz": 60,
+   "tope_km": 12.9,
+   "nivel": "muy intensa"
+  },
   "Paso del Río Seco": {
-   "km": 1.6,
+   "km": 4.8,
    "max_dbz": 49,
    "tope_km": 11.1,
    "nivel": "intensa"
   },
   "Santa Rita": {
-   "km": 35.2,
-   "max_dbz": 62,
+   "km": 31.4,
+   "max_dbz": 60,
    "tope_km": 12.9,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
-  },
-  "Alcira Gigena": {
-   "km": 1.2,
-   "max_dbz": 49,
-   "tope_km": 12.9,
-   "nivel": "intensa"
   }
  },
- "minutos": 9
+ "minutos": 15
 }
