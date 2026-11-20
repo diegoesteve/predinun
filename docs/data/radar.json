@@ -1,39 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 22:45",
+ "consultado": "2026-11-19 23:00",
  "radar": "RMA1",
- "observacion": "2026-11-19 22:24",
+ "observacion": "2026-11-19 22:42",
  "nucleos": [
   {
-   "lat": -33.0485,
-   "lon": -65.1279,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 11.7
+   "lat": -33.0308,
+   "lon": -64.9557,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 14.1
   },
   {
-   "lat": -32.9157,
-   "lon": -65.4399,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 9.4
+   "lat": -33.0131,
+   "lon": -65.2677,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -32.9954,
+   "lon": -65.3538,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 23.3,
-   "max_dbz": 47,
-   "tope_km": 9.4,
+   "km": 27.7,
+   "max_dbz": 52,
+   "tope_km": 11.7,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Naschel": {
-   "km": 4.7,
-   "max_dbz": 47,
-   "tope_km": 9.4,
-   "nivel": "intensa"
+  "Santa Rita": {
+   "km": 43.2,
+   "max_dbz": 56,
+   "tope_km": 14.1,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 22
+ "minutos": 18
 }
