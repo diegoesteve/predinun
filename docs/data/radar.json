@@ -1,103 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 08:15",
+ "consultado": "2026-11-20 08:30",
  "radar": "RMA1",
- "observacion": "2026-11-20 07:58",
+ "observacion": "2026-11-20 08:16",
  "nucleos": [
   {
-   "lat": -31.7738,
-   "lon": -64.6868,
+   "lat": -31.657,
+   "lon": -64.7406,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 7.0
-  },
-  {
-   "lat": -31.7109,
-   "lon": -64.8482,
-   "dbz": 48,
    "max_dbz": 53,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.666,
-   "lon": -64.902,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.6
+   "tope_km": 7.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Dolores": {
-   "km": 36.4,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "intensa"
-  },
-  "Potrero de Garay": {
-   "km": 13.7,
-   "max_dbz": 52,
-   "tope_km": 7.0,
-   "cuenca_de": "Rio San Pedro",
-   "nivel": "intensa"
-  },
   "Anisacate": {
-   "km": 40.8,
+   "km": 31.4,
    "max_dbz": 53,
-   "tope_km": 10.0,
+   "tope_km": 7.6,
    "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "Mina Clavero": {
-   "km": 8.3,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "cuenca_de": "Mina Clavero",
    "nivel": "intensa"
   },
   "La Serranita": {
-   "km": 37.0,
+   "km": 28.0,
    "max_dbz": 53,
-   "tope_km": 10.0,
+   "tope_km": 7.6,
    "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "Paso de la Pampa": {
-   "km": 9.8,
-   "max_dbz": 52,
-   "tope_km": 7.0,
-   "cuenca_de": "Río San Pedro",
    "nivel": "intensa"
   },
   "La Paisanita": {
-   "km": 34.5,
+   "km": 25.4,
    "max_dbz": 53,
-   "tope_km": 10.0,
+   "tope_km": 7.6,
    "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "La Boca del Río": {
-   "km": 27.0,
-   "max_dbz": 52,
-   "tope_km": 7.0,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
-  },
-  "Villa la Merced": {
-   "km": 17.9,
-   "max_dbz": 52,
-   "tope_km": 7.0,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
-  },
-  "Villa Ciudad de America": {
-   "km": 14.5,
-   "max_dbz": 52,
-   "tope_km": 7.0,
-   "cuenca_de": "Embalse Los Molinos",
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
