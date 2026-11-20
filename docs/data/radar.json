@@ -1,46 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 01:30",
+ "consultado": "2026-11-20 01:45",
  "radar": "RMA1",
- "observacion": "2026-11-20 01:17",
+ "observacion": "2026-11-20 01:35",
  "nucleos": [
   {
-   "lat": -32.1322,
-   "lon": -64.278,
+   "lat": -32.0517,
+   "lon": -63.9983,
    "dbz": 53,
-   "max_dbz": 65,
-   "tope_km": 14.7
+   "max_dbz": 66,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.5426,
-   "lon": -63.8584,
+   "lat": -31.9442,
+   "lon": -64.009,
    "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 11.1
+   "max_dbz": 55,
+   "tope_km": 13.5
   },
   {
-   "lat": -32.5515,
-   "lon": -63.9552,
+   "lat": -32.4535,
+   "lon": -65.2462,
    "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 10.6
+   "max_dbz": 54,
+   "tope_km": 8.2
   },
   {
-   "lat": -32.507,
-   "lon": -64.0628,
-   "dbz": 47,
-   "max_dbz": 50,
-   "tope_km": 10.6
+   "lat": -32.2483,
+   "lon": -64.1919,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 9.4
   },
   {
-   "lat": -32.7293,
-   "lon": -65.343,
+   "lat": -32.5693,
+   "lon": -65.2139,
    "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 10.0
+   "max_dbz": 48,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 14
+ "localidades": {
+  "Concarán": {
+   "km": 5.3,
+   "max_dbz": 48,
+   "tope_km": 8.8,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 10
 }
