@@ -1,40 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-19 23:30",
+ "consultado": "2026-11-19 23:45",
  "radar": "RMA1",
- "observacion": "2026-11-19 23:18",
+ "observacion": "2026-11-19 23:36",
  "nucleos": [
   {
-   "lat": -32.8625,
-   "lon": -64.6007,
+   "lat": -32.7204,
+   "lon": -64.8051,
    "dbz": 52,
-   "max_dbz": 58,
-   "tope_km": 11.7
+   "max_dbz": 62,
+   "tope_km": 12.9
   },
   {
-   "lat": -32.8092,
-   "lon": -64.8267,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.8092,
-   "lon": -65.0203,
-   "dbz": 48,
-   "max_dbz": 50,
+   "lat": -32.6138,
+   "lon": -65.4506,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 12.3
+  },
+  {
+   "lat": -32.756,
+   "lon": -64.3425,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.8181,
+   "lon": -64.5792,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Paso del Río Seco": {
+   "km": 1.6,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  },
   "Santa Rita": {
-   "km": 10.4,
-   "max_dbz": 58,
-   "tope_km": 11.7,
+   "km": 35.2,
+   "max_dbz": 62,
+   "tope_km": 12.9,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
+  },
+  "Alcira Gigena": {
+   "km": 1.2,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 9
 }
