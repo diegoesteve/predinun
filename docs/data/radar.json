@@ -1,96 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 05:15",
+ "consultado": "2026-11-20 05:31",
  "radar": "RMA17",
- "observacion": "2026-11-20 04:58",
+ "observacion": "2026-11-20 05:06",
  "nucleos": [
   {
    "lat": -32.6376,
-   "lon": -64.9018,
+   "lon": -64.8908,
+   "dbz": 54,
+   "max_dbz": 54,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -32.2104,
+   "lon": -64.9567,
    "dbz": 50,
    "max_dbz": 58,
    "tope_km": 17.0
   },
   {
-   "lat": -32.0097,
-   "lon": -64.9347,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -32.4924,
-   "lon": -64.8688,
-   "dbz": 49,
-   "max_dbz": 53,
+   "lat": -32.2833,
+   "lon": -64.9567,
+   "dbz": 48,
+   "max_dbz": 49,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Alpa Corral": {
-   "km": 16.4,
-   "max_dbz": 58,
-   "tope_km": 17.0,
+   "km": 15.4,
+   "max_dbz": 54,
+   "tope_km": 16.4,
    "cuenca_de": "Rio Barrancas",
-   "nivel": "muy intensa"
-  },
-  "Cañada del Sauce": {
-   "km": 24.8,
-   "max_dbz": 53,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
-  "El Corcovado el Torreon": {
-   "km": 43.1,
-   "max_dbz": 56,
-   "tope_km": 13.5,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "muy intensa"
-  },
-  "Santa Mónica": {
-   "km": 29.8,
-   "max_dbz": 56,
-   "tope_km": 13.5,
-   "cuenca_de": "Río Santa Rosa",
-   "nivel": "muy intensa"
-  },
-  "Villa la Rivera": {
-   "km": 40.0,
-   "max_dbz": 53,
+  "La Ramada": {
+   "km": 6.2,
+   "max_dbz": 49,
    "tope_km": 17.0,
-   "cuenca_de": "Rio Quillinzo",
+   "cuenca_de": "Arroyo Piedras Blancas",
    "nivel": "intensa"
   },
   "Paso del Río Seco": {
-   "km": 37.6,
-   "max_dbz": 58,
-   "tope_km": 17.0,
+   "km": 36.8,
+   "max_dbz": 54,
+   "tope_km": 16.4,
    "cuenca_de": "Río de las Barrancas",
-   "nivel": "muy intensa"
-  },
-  "El Corcovado": {
-   "km": 42.3,
-   "max_dbz": 56,
-   "tope_km": 13.5,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Santa Rita": {
-   "km": 48.0,
-   "max_dbz": 58,
-   "tope_km": 17.0,
+   "km": 47.2,
+   "max_dbz": 54,
+   "tope_km": 16.4,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Unión de los Rios": {
-   "km": 13.3,
-   "max_dbz": 58,
-   "tope_km": 17.0,
+   "km": 12.3,
+   "max_dbz": 54,
+   "tope_km": 16.4,
    "cuenca_de": "Arroyo El Talita",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 25
 }
