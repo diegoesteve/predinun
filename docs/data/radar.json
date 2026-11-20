@@ -1,40 +1,48 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 07:45",
+ "consultado": "2026-11-20 08:00",
  "radar": "RMA1",
- "observacion": "2026-11-20 07:31",
+ "observacion": "2026-11-20 07:49",
  "nucleos": [
   {
-   "lat": -31.7738,
-   "lon": -64.8589,
+   "lat": -31.7558,
+   "lon": -64.7944,
    "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 13.5
+   "max_dbz": 53,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.8635,
+   "lon": -64.633,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 5.9,
+   "descartado": "tope bajo (5.9 km)"
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Dolores": {
-   "km": 31.3,
-   "max_dbz": 54,
-   "tope_km": 13.5,
-   "cuenca_de": "Arroyo De Las Tapias",
+  "Potrero de Garay": {
+   "km": 22.5,
+   "max_dbz": 53,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio San Pedro",
    "nivel": "intensa"
   },
-  "Nono": {
-   "km": 12.0,
-   "max_dbz": 54,
-   "tope_km": 13.5,
-   "cuenca_de": "Río Chico de Nono",
+  "La Boca del Río": {
+   "km": 37.3,
+   "max_dbz": 53,
+   "tope_km": 17.0,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   },
-  "Las Calles": {
-   "km": 9.7,
-   "max_dbz": 54,
-   "tope_km": 13.5,
-   "cuenca_de": "Río Chico de Nono",
+  "Villa la Merced": {
+   "km": 28.3,
+   "max_dbz": 53,
+   "tope_km": 17.0,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 11
 }
