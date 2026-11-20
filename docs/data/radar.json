@@ -1,25 +1,31 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 19:00",
+ "consultado": "2026-11-20 19:15",
  "radar": "RMA1",
- "observacion": "2026-11-20 18:41",
+ "observacion": "2026-11-20 18:59",
  "nucleos": [
   {
-   "lat": -32.2841,
-   "lon": -64.6222,
-   "dbz": 49,
-   "max_dbz": 51,
+   "lat": -32.2573,
+   "lon": -64.5469,
+   "dbz": 52,
+   "max_dbz": 57,
    "tope_km": 6.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa San Antonio": {
-   "km": 3.0,
-   "max_dbz": 51,
+  "Villa Quillinzo": {
+   "km": 3.7,
+   "max_dbz": 57,
    "tope_km": 6.4,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 2.6,
+   "max_dbz": 57,
+   "tope_km": 6.4,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 16
 }
