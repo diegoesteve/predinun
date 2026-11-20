@@ -1,68 +1,71 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 01:00",
+ "consultado": "2026-11-20 01:15",
  "radar": "RMA1",
- "observacion": "2026-11-20 00:49",
+ "observacion": "2026-11-20 00:58",
  "nucleos": [
   {
-   "lat": -32.1858,
-   "lon": -64.6438,
-   "dbz": 53,
-   "max_dbz": 64,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -32.3108,
-   "lon": -64.9342,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.6
+   "lat": -32.1769,
+   "lon": -64.5254,
+   "dbz": 54,
+   "max_dbz": 68,
+   "tope_km": 17.0
   },
   {
    "lat": -32.6316,
-   "lon": -64.0736,
-   "dbz": 48,
-   "max_dbz": 50,
+   "lon": -64.0198,
+   "dbz": 49,
+   "max_dbz": 52,
    "tope_km": 11.7
   },
   {
-   "lat": -32.4981,
-   "lon": -64.3963,
+   "lat": -32.5515,
+   "lon": -64.1704,
    "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.5426,
-   "lon": -64.4609,
-   "dbz": 48,
-   "max_dbz": 48,
+   "max_dbz": 52,
    "tope_km": 11.1
   },
   {
-   "lat": -32.6049,
-   "lon": -64.2027,
+   "lat": -32.6671,
+   "lon": -63.9122,
    "dbz": 48,
    "max_dbz": 51,
    "tope_km": 11.7
+  },
+  {
+   "lat": -32.4892,
+   "lon": -64.3318,
+   "dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Amboy": {
-   "km": 6.3,
-   "max_dbz": 64,
-   "tope_km": 14.7,
-   "cuenca_de": "Arroyo Amboy",
+   "km": 4.6,
+   "max_dbz": 68,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "El Corcovado el Torreon": {
+   "km": 4.0,
+   "max_dbz": 68,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   },
   "Villa Amancay": {
-   "km": 7.7,
-   "max_dbz": 64,
-   "tope_km": 14.7,
-   "cuenca_de": "Arroyo Amboy",
+   "km": 3.9,
+   "max_dbz": 68,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Villa Rumipal": {
+   "km": 4.2,
+   "max_dbz": 68,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
