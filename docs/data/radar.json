@@ -1,10 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 03:30",
+ "consultado": "2026-11-20 03:45",
  "radar": "RMA1",
- "observacion": "2026-11-20 03:15",
- "nucleos": [],
+ "observacion": "2026-11-20 03:24",
+ "nucleos": [
+  {
+   "lat": -32.1679,
+   "lon": -64.1489,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 6.4
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 15
+ "localidades": {
+  "Rio Tercero": {
+   "km": 2.4,
+   "max_dbz": 50,
+   "tope_km": 6.4,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 21
 }
