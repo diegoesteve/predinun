@@ -1,10 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 06:15",
- "radar": "RMA16",
- "observacion": "2026-11-20 06:01",
- "nucleos": [],
+ "consultado": "2026-11-20 06:30",
+ "radar": "RMA17",
+ "observacion": "2026-11-20 06:19",
+ "nucleos": [
+  {
+   "lat": -32.4197,
+   "lon": -64.8028,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.2104,
+   "lon": -64.9677,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 15.2
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 14
+ "localidades": {
+  "Cañada del Sauce": {
+   "km": 15.6,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Villa la Rivera": {
+   "km": 30.3,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Loma Bola": {
+   "km": 5.7,
+   "max_dbz": 48,
+   "tope_km": 15.2,
+   "cuenca_de": "Arroyo El Arenal",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 11
 }

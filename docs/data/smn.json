@@ -1,7 +1,51 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-20 06:15",
+ "consultado": "2026-11-20 06:30",
  "alertas": [
+  {
+   "id": "2026_11_20_0926_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-20T09:26:00-03:00",
+   "hasta": "2026-11-20T10:26:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrastrados por el viento. Cerrá y alejate de puertas y ventanas. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "SANTA FE: GARAY - SAN JAVIER. CORRIENTES: ESQUINA. ENTRE RIOS: FEDERAL - LA PAZ - S.  J.  DE FELICIANO.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_20_0926_cap_es.xml",
+   "desde_local": "20/11 09:26",
+   "hasta_local": "20/11 10:26",
+   "localidades": 4,
+   "poligonos": [
+    [
+     [
+      -60.17,
+      -30.48
+     ],
+     [
+      -60.21,
+      -31.12
+     ],
+     [
+      -59.67,
+      -31.13
+     ],
+     [
+      -58.59,
+      -31.05
+     ],
+     [
+      -58.6,
+      -30.29
+     ],
+     [
+      -60.17,
+      -30.48
+     ]
+    ]
+   ]
+  },
   {
    "id": "2026_11_20_0846_cap_es",
    "tipo": "aviso a corto plazo",
@@ -6587,6 +6631,7 @@
    "CAP_20261120084303_Tormenta_Llanura_alertas_alertas_25"
   ],
   "San Javier": [
+   "2026_11_20_0926_cap_es",
    "CAP_20261120084303_Tormenta_Patagonia_alertas_alertas_25",
    "CAP_20261120084303_Tormenta_Llanura_alertas_alertas_25"
   ],
@@ -6651,6 +6696,7 @@
    "CAP_20261120084303_Tormenta_Llanura_alertas_alertas_26"
   ],
   "Colonia Mascías": [
+   "2026_11_20_0926_cap_es",
    "CAP_20261120084303_Tormenta_Patagonia_alertas_alertas_26",
    "CAP_20261120084303_Tormenta_Llanura_alertas_alertas_26"
   ],
@@ -6683,6 +6729,7 @@
    "CAP_20261120084303_Tormenta_Llanura_alertas_alertas_26"
   ],
   "Helvecia": [
+   "2026_11_20_0926_cap_es",
    "CAP_20261120084303_Tormenta_Patagonia_alertas_alertas_26",
    "CAP_20261120084303_Tormenta_Llanura_alertas_alertas_26"
   ],
@@ -6731,6 +6778,7 @@
    "CAP_20261120084303_Tormenta_Llanura_alertas_alertas_26"
   ],
   "Saladero Mariano Cabal": [
+   "2026_11_20_0926_cap_es",
    "CAP_20261120084303_Tormenta_Patagonia_alertas_alertas_26",
    "CAP_20261120084303_Tormenta_Llanura_alertas_alertas_26"
   ],
