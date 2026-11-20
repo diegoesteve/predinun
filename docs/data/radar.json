@@ -1,65 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-20 00:15",
+ "consultado": "2026-11-20 00:21",
  "radar": "RMA1",
- "observacion": "2026-11-19 23:55",
+ "observacion": "2026-11-20 00:04",
  "nucleos": [
   {
-   "lat": -32.6671,
-   "lon": -64.676,
+   "lat": -32.4713,
+   "lon": -65.1171,
    "dbz": 52,
-   "max_dbz": 63,
-   "tope_km": 12.3
+   "max_dbz": 59,
+   "tope_km": 12.9
   },
   {
-   "lat": -32.5337,
-   "lon": -65.2247,
+   "lat": -32.6493,
+   "lon": -64.6115,
    "dbz": 51,
-   "max_dbz": 58,
+   "max_dbz": 61,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.8447,
+   "lon": -64.1704,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 13.5
-  },
-  {
-   "lat": -32.7737,
-   "lon": -65.3108,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.8359,
-   "lon": -64.4716,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.8092,
-   "lon": -64.235,
-   "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 11.1
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Alpa Corral": {
-   "km": 4.7,
-   "max_dbz": 63,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
-  },
-  "Tilisarao": {
-   "km": 3.4,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "Concarán": {
-   "km": 1.4,
-   "max_dbz": 58,
-   "tope_km": 13.5,
-   "nivel": "muy intensa"
-  }
- },
- "minutos": 21
+ "localidades": {},
+ "minutos": 17
 }
