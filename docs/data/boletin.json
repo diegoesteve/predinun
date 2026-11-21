@@ -1,12 +1,24 @@
 {
- "generado": "2026-11-21 04:00",
+ "generado": "2026-11-21 09:00",
  "horas": 48,
- "smap_atraso_dias": 3.4,
+ "smap_atraso_dias": 3.6,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
    "nombre": "Sierras Chicas",
    "modelos": {
+    "GFS": {
+     "max_3h_mm": 3.0,
+     "umbral_mm": 9.9,
+     "fuente_umbral": "24 h antes",
+     "cuando": "2026-11-21 11:00"
+    },
+    "ICON": {
+     "max_3h_mm": 5.5,
+     "umbral_mm": 14.0,
+     "fuente_umbral": "24 h antes",
+     "cuando": "2026-11-21 10:00"
+    },
     "ECMWF": {
      "max_3h_mm": 9.2,
      "umbral_mm": 12.3,
@@ -15,22 +27,23 @@
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.04,
+    "ECMWF ENS": 0.08,
     "GFS ENS": 0.0,
     "ICON EPS": 0.12
    },
-   "nivel": "verde",
+   "nivel": "amarillo",
    "nivel_por_lluvia": "verde",
    "suelo": {
     "smap_m3m3": 0.12,
     "smap_percentil": 71,
     "smap_fecha": "2026-11-17 22:30 UTC",
-    "estimado_hoy_m3m3": 0.116,
-    "estimado_hoy_percentil": 63,
-    "percentil": 63,
+    "estimado_hoy_m3m3": 0.133,
+    "estimado_hoy_percentil": 89,
+    "percentil": 89,
     "es_estimado": true,
-    "estado": "normal"
+    "estado": "saturado"
    },
+   "agravado_por_suelo": true,
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
@@ -50,16 +63,16 @@
    "nombre": "Cosquín",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 1.7,
+     "max_3h_mm": 2.6,
      "umbral_mm": 13.0,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-21 14:00"
+     "cuando": "2026-11-21 11:00"
     },
     "ICON": {
-     "max_3h_mm": 5.5,
+     "max_3h_mm": 4.5,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-21 10:00"
+     "cuando": "2026-11-22 03:00"
     },
     "ECMWF": {
      "max_3h_mm": 10.3,
@@ -69,7 +82,7 @@
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.08,
+    "ECMWF ENS": 0.22,
     "GFS ENS": 0.0,
     "ICON EPS": 0.2
    },
@@ -79,9 +92,9 @@
     "smap_m3m3": 0.128,
     "smap_percentil": 78,
     "smap_fecha": "2026-11-17 22:30 UTC",
-    "estimado_hoy_m3m3": 0.139,
-    "estimado_hoy_percentil": 88,
-    "percentil": 88,
+    "estimado_hoy_m3m3": 0.155,
+    "estimado_hoy_percentil": 100,
+    "percentil": 100,
     "es_estimado": true,
     "estado": "saturado"
    },
@@ -105,13 +118,13 @@
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 1.8,
+     "max_3h_mm": 3.3,
      "umbral_mm": 10.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-21 14:00"
+     "cuando": "2026-11-22 14:00"
     },
     "ICON": {
-     "max_3h_mm": 6.6,
+     "max_3h_mm": 6.1,
      "umbral_mm": 9.7,
      "fuente_umbral": "24 h antes",
      "cuando": "2026-11-21 10:00"
@@ -124,23 +137,22 @@
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.39,
+    "ECMWF ENS": 0.69,
     "GFS ENS": 0.0,
-    "ICON EPS": 0.55
+    "ICON EPS": 0.53
    },
    "nivel": "naranja",
-   "nivel_por_lluvia": "amarillo",
+   "nivel_por_lluvia": "naranja",
    "suelo": {
     "smap_m3m3": 0.149,
     "smap_percentil": 74,
     "smap_fecha": "2026-11-17 22:30 UTC",
-    "estimado_hoy_m3m3": 0.182,
-    "estimado_hoy_percentil": 99,
-    "percentil": 99,
+    "estimado_hoy_m3m3": 0.194,
+    "estimado_hoy_percentil": 100,
+    "percentil": 100,
     "es_estimado": true,
     "estado": "saturado"
    },
-   "agravado_por_suelo": true,
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
@@ -160,16 +172,16 @@
    "nombre": "Capital (experimental)",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 1.4,
+     "max_3h_mm": 2.8,
      "umbral_mm": 7.7,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-22 15:00"
+     "cuando": "2026-11-23 07:00"
     },
     "ICON": {
-     "max_3h_mm": 6.3,
+     "max_3h_mm": 5.6,
      "umbral_mm": 11.4,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-21 11:00"
+     "cuando": "2026-11-22 05:00"
     },
     "ECMWF": {
      "max_3h_mm": 6.7,
@@ -188,9 +200,9 @@
     "smap_m3m3": 0.174,
     "smap_percentil": 72,
     "smap_fecha": "2026-11-17 22:30 UTC",
-    "estimado_hoy_m3m3": 0.192,
-    "estimado_hoy_percentil": 92,
-    "percentil": 92,
+    "estimado_hoy_m3m3": 0.204,
+    "estimado_hoy_percentil": 98,
+    "percentil": 98,
     "es_estimado": true,
     "estado": "saturado"
    },
@@ -226,85 +238,85 @@
   "cuencas": {
    "SierrasChicas": {
     "nombre": "Sierras Chicas",
-    "suelo_saturado": false,
+    "suelo_saturado": true,
     "prob": [
-     0.0,
-     0.06,
-     0.03,
-     0.06,
+     0.24,
+     0.27,
+     0.14,
+     0.3,
      0.02,
      0.0,
      0.0,
      0.0,
-     0.0,
-     0.02
+     0.05,
+     0.16
     ],
     "mm": [
-     8.0,
-     5.4,
-     7.2,
-     9.9,
-     0.0,
+     9.5,
+     5.5,
+     7.1,
+     9.7,
+     0.1,
      0.4,
      0.0,
      0.0,
-     0.0,
-     1.4
+     0.6,
+     2.6
     ]
    },
    "Cosquin": {
     "nombre": "Cosquín",
     "suelo_saturado": true,
     "prob": [
-     0.37,
+     0.4,
+     0.31,
+     0.31,
      0.24,
-     0.32,
-     0.29,
-     0.05,
+     0.03,
+     0.0,
      0.01,
      0.0,
-     0.0,
      0.03,
-     0.08
+     0.14
     ],
     "mm": [
-     11.4,
-     6.3,
+     14.6,
+     7.5,
      10.2,
-     10.0,
-     0.3,
-     0.6,
+     9.4,
+     0.5,
+     0.5,
      0.1,
      0.0,
-     0.0,
-     2.4
+     0.4,
+     2.2
     ]
    },
    "SanAntonio_CPaz": {
     "nombre": "San Antonio / Carlos Paz",
     "suelo_saturado": true,
     "prob": [
-     0.59,
+     0.67,
      0.36,
-     0.43,
-     0.37,
+     0.48,
+     0.36,
      0.08,
-     0.04,
-     0.0,
+     0.01,
+     0.01,
      0.0,
      0.03,
-     0.15
+     0.14
     ],
     "mm": [
-     13.5,
-     7.6,
-     13.2,
-     10.5,
-     1.0,
-     0.7,
-     0.3,
-     0.0,
-     0.2,
+     18.2,
+     7.7,
+     13.3,
+     9.9,
+     1.5,
+     0.5,
+     0.4,
+     0.1,
+     1.2,
      3.8
     ]
    },
@@ -312,28 +324,28 @@
     "nombre": "Capital (experimental)",
     "suelo_saturado": true,
     "prob": [
-     0.45,
-     0.28,
-     0.35,
-     0.16,
-     0.0,
+     0.46,
+     0.07,
+     0.37,
+     0.31,
      0.01,
      0.0,
      0.0,
-     0.01,
-     0.04
+     0.0,
+     0.05,
+     0.26
     ],
     "mm": [
-     12.9,
-     5.4,
-     11.8,
-     5.3,
+     15.0,
+     3.4,
+     13.5,
+     7.1,
+     0.1,
+     0.2,
+     0.0,
      0.0,
      0.3,
-     0.0,
-     0.0,
-     0.0,
-     1.6
+     2.4
     ]
    }
   }
