@@ -1,46 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 08:45",
+ "consultado": "2026-11-21 09:00",
  "radar": "RMA1",
- "observacion": "2026-11-21 08:22",
+ "observacion": "2026-11-21 08:49",
  "nucleos": [
   {
-   "lat": -32.3108,
-   "lon": -64.2887,
-   "dbz": 49,
+   "lat": -32.3644,
+   "lon": -63.8907,
+   "dbz": 50,
    "max_dbz": 55,
-   "tope_km": 12.3
+   "tope_km": 9.4
   },
   {
-   "lat": -32.596,
-   "lon": -65.2032,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 9.4
+   "lat": -32.2573,
+   "lon": -65.5152,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.507,
+   "lon": -64.9342,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.9711,
+   "lon": -63.7078,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.98,
+   "lon": -64.2565,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Almafuerte": {
-   "km": 12.3,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Concarán": {
-   "km": 8.5,
-   "max_dbz": 52,
-   "tope_km": 9.4,
-   "cuenca_de": "sin nombre",
+  "Villa Elena": {
+   "km": 4.9,
+   "max_dbz": 54,
+   "tope_km": 10.0,
    "nivel": "intensa"
-  },
-  "Los Condores": {
-   "km": 1.4,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
   }
  },
- "minutos": 24
+ "minutos": 11
 }
