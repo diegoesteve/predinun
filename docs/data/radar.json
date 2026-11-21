@@ -1,55 +1,66 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 13:30",
+ "consultado": "2026-11-21 13:41",
  "radar": "RMA1",
- "observacion": "2026-11-21 13:13",
+ "observacion": "2026-11-21 13:22",
  "nucleos": [
   {
-   "lat": -31.8097,
-   "lon": -64.633,
+   "lat": -31.5401,
+   "lon": -64.235,
    "dbz": 49,
    "max_dbz": 54,
-   "tope_km": 9.4
+   "tope_km": 6.4
   },
   {
-   "lat": -31.5131,
-   "lon": -64.3425,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 5.9,
-   "descartado": "tope bajo (5.9 km)"
-  },
-  {
-   "lat": -31.5581,
-   "lon": -64.2027,
-   "dbz": 48,
+   "lat": -31.8187,
+   "lon": -64.4609,
+   "dbz": 49,
    "max_dbz": 54,
-   "tope_km": 7.0
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.8366,
+   "lon": -64.5685,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
   "Potrero de Garay": {
-   "km": 6.2,
-   "max_dbz": 54,
-   "tope_km": 9.4,
+   "km": 1.1,
+   "max_dbz": 49,
+   "tope_km": 8.8,
    "cuenca_de": "Rio San Pedro",
    "nivel": "intensa"
   },
-  "La Boca del Río": {
-   "km": 21.1,
+  "Villa San Isidro": {
+   "km": 7.5,
    "max_dbz": 54,
-   "tope_km": 9.4,
-   "cuenca_de": "Río de los Molinos",
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Carada del Tala",
+   "nivel": "intensa"
+  },
+  "Jose de la Quintana": {
+   "km": 3.5,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Jose De La Quintana",
+   "nivel": "intensa"
+  },
+  "La Boca del Río": {
+   "km": 3.4,
+   "max_dbz": 54,
+   "tope_km": 10.0,
    "nivel": "intensa"
   },
   "Villa la Merced": {
-   "km": 12.2,
+   "km": 4.1,
    "max_dbz": 54,
-   "tope_km": 9.4,
-   "cuenca_de": "Río de los Molinos",
+   "tope_km": 10.0,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 19
 }
