@@ -1,162 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 07:45",
+ "consultado": "2026-11-21 08:00",
  "radar": "RMA1",
- "observacion": "2026-11-21 07:24",
+ "observacion": "2026-11-21 07:45",
  "nucleos": [
   {
-   "lat": -31.9352,
-   "lon": -64.7836,
-   "dbz": 52,
-   "max_dbz": 52,
-   "tope_km": 7.6
-  },
-  {
-   "lat": -31.8635,
-   "lon": -64.4931,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 7.6
-  },
-  {
-   "lat": -32.409,
-   "lon": -64.8804,
+   "lat": -31.8276,
+   "lon": -64.7406,
    "dbz": 50,
    "max_dbz": 57,
-   "tope_km": 8.8
+   "tope_km": 6.4
   },
   {
-   "lat": -32.293,
-   "lon": -65.0418,
+   "lat": -31.9352,
+   "lon": -64.4394,
    "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 8.2
-  },
-  {
-   "lat": -32.2483,
-   "lon": -64.9773,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 8.2
-  },
-  {
-   "lat": -32.2483,
-   "lon": -64.8589,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -32.5426,
-   "lon": -64.4824,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 8.2
-  },
-  {
-   "lat": -31.7558,
-   "lon": -64.9342,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 8.8
+   "max_dbz": 53,
+   "tope_km": 7.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Reartes": {
-   "km": 19.5,
-   "max_dbz": 52,
-   "tope_km": 7.6,
-   "cuenca_de": "Rio De Los Reartes",
-   "nivel": "intensa"
-  },
-  "Villa Dolores": {
-   "km": 26.9,
-   "max_dbz": 50,
-   "tope_km": 8.8,
-   "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "intensa"
-  },
-  "La Paz": {
-   "km": 6.9,
-   "max_dbz": 54,
-   "tope_km": 8.2,
-   "cuenca_de": "Arroyo Las Higueras",
-   "nivel": "intensa"
-  },
-  "Cañada del Sauce": {
-   "km": 22.4,
+  "Potrero de Garay": {
+   "km": 16.0,
    "max_dbz": 57,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio Quillinzo",
+   "tope_km": 6.4,
+   "cuenca_de": "Rio San Pedro",
    "nivel": "muy intensa"
   },
-  "Nono": {
-   "km": 6.2,
-   "max_dbz": 50,
-   "tope_km": 8.8,
-   "cuenca_de": "Arroyo de los Sanjuaninos",
-   "nivel": "intensa"
-  },
-  "La Ramada": {
-   "km": 3.6,
-   "max_dbz": 51,
-   "tope_km": 8.2,
-   "nivel": "intensa"
-  },
-  "La Cumbrecita": {
-   "km": 4.2,
-   "max_dbz": 52,
+  "Los Molinos": {
+   "km": 9.6,
+   "max_dbz": 53,
    "tope_km": 7.6,
-   "nivel": "intensa"
-  },
-  "Villa la Rivera": {
-   "km": 36.2,
-   "max_dbz": 57,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "muy intensa"
-  },
-  "Intiyaco": {
-   "km": 6.7,
-   "max_dbz": 52,
-   "tope_km": 7.6,
-   "cuenca_de": "Río de los Reartes",
-   "nivel": "intensa"
-  },
-  "Capilla Vieja": {
-   "km": 17.0,
-   "max_dbz": 52,
-   "tope_km": 7.6,
-   "cuenca_de": "Rio De Los Reartes",
+   "cuenca_de": "Rio Los Molinos",
    "nivel": "intensa"
   },
   "La Boca del Río": {
-   "km": 7.8,
-   "max_dbz": 54,
-   "tope_km": 7.6,
+   "km": 31.0,
+   "max_dbz": 57,
+   "tope_km": 6.4,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 29.6,
-   "max_dbz": 52,
-   "tope_km": 7.6,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
-  },
-  "Paraje las Chacras": {
-   "km": 4.6,
-   "max_dbz": 54,
-   "tope_km": 8.2,
-   "nivel": "intensa"
-  },
-  "Pueblo Escondido": {
-   "km": 1.8,
+   "km": 22.4,
    "max_dbz": 57,
-   "tope_km": 8.8,
+   "tope_km": 6.4,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   }
  },
- "minutos": 21
+ "minutos": 15
 }
