@@ -1,66 +1,64 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 13:41",
+ "consultado": "2026-11-21 13:45",
  "radar": "RMA1",
- "observacion": "2026-11-21 13:22",
+ "observacion": "2026-11-21 13:31",
  "nucleos": [
   {
-   "lat": -31.5401,
-   "lon": -64.235,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 6.4
+   "lat": -31.5131,
+   "lon": -64.3748,
+   "dbz": 51,
+   "max_dbz": 53,
+   "tope_km": 8.2
   },
   {
-   "lat": -31.8187,
-   "lon": -64.4609,
+   "lat": -31.7558,
+   "lon": -64.3533,
    "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 10.0
+   "max_dbz": 52,
+   "tope_km": 9.4
   },
   {
-   "lat": -31.8366,
-   "lon": -64.5685,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 8.8
+   "lat": -31.8456,
+   "lon": -64.3641,
+   "dbz": 49,
+   "max_dbz": 59,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Potrero de Garay": {
-   "km": 1.1,
-   "max_dbz": 49,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio San Pedro",
+  "Cordoba": {
+   "km": 10.9,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "cuenca_de": "Arroyo La Cañada",
+   "nivel": "intensa"
+  },
+  "Los Molinos": {
+   "km": 1.7,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  },
+  "Dique Chico": {
+   "km": 3.1,
+   "max_dbz": 52,
+   "tope_km": 9.4,
    "nivel": "intensa"
   },
   "Villa San Isidro": {
-   "km": 7.5,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo Carada del Tala",
-   "nivel": "intensa"
+   "km": 3.1,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
   },
-  "Jose de la Quintana": {
-   "km": 3.5,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo Jose De La Quintana",
-   "nivel": "intensa"
-  },
-  "La Boca del Río": {
-   "km": 3.4,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Villa la Merced": {
-   "km": 4.1,
-   "max_dbz": 54,
-   "tope_km": 10.0,
+  "Costa Azul": {
+   "km": 5.0,
+   "max_dbz": 52,
+   "tope_km": 9.4,
    "nivel": "intensa"
   }
  },
- "minutos": 19
+ "minutos": 14
 }
