@@ -1,32 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 10:15",
+ "consultado": "2026-11-21 10:30",
  "radar": "RMA1",
- "observacion": "2026-11-21 10:02",
+ "observacion": "2026-11-21 10:11",
  "nucleos": [
   {
-   "lat": -32.2037,
-   "lon": -64.6438,
-   "dbz": 53,
-   "max_dbz": 62,
-   "tope_km": 12.3
+   "lat": -32.2483,
+   "lon": -64.5039,
+   "dbz": 51,
+   "max_dbz": 60,
+   "tope_km": 11.7
   },
   {
-   "lat": -32.4892,
-   "lon": -64.2457,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 16.4
+   "lat": -32.2751,
+   "lon": -65.1386,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 9.4
   },
   {
-   "lat": -32.4,
-   "lon": -63.966,
-   "dbz": 48,
-   "max_dbz": 48,
+   "lat": -32.3911,
+   "lon": -63.8692,
+   "dbz": 49,
+   "max_dbz": 52,
    "tope_km": 10.0
+  },
+  {
+   "lat": -32.3287,
+   "lon": -64.009,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.3555,
+   "lon": -64.0951,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 13
+ "localidades": {
+  "Villa Quillinzo": {
+   "km": 1.3,
+   "max_dbz": 60,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 2.7,
+   "max_dbz": 60,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 19
 }
