@@ -1,33 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 05:50",
- "radar": "RMA17",
- "observacion": "2026-11-21 05:38",
+ "consultado": "2026-11-21 06:00",
+ "radar": "RMA1",
+ "observacion": "2026-11-21 05:44",
  "nucleos": [
   {
-   "lat": -32.1739,
-   "lon": -65.0007,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 15.8
+   "lat": -32.1232,
+   "lon": -64.9557,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.2126,
+   "lon": -64.9557,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Luyaba": {
-   "km": 5.7,
-   "max_dbz": 52,
-   "tope_km": 15.8,
-   "cuenca_de": "Acc Privado",
+  "La Travesía": {
+   "km": 8.1,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo de la Cal",
    "nivel": "intensa"
   },
   "Los Romeros": {
-   "km": 21.2,
-   "max_dbz": 52,
-   "tope_km": 15.8,
+   "km": 25.1,
+   "max_dbz": 51,
+   "tope_km": 8.8,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 17
 }
