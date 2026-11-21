@@ -1,40 +1,61 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 19:15",
+ "consultado": "2026-11-21 19:30",
  "radar": "RMA1",
- "observacion": "2026-11-21 19:00",
+ "observacion": "2026-11-21 19:18",
  "nucleos": [
   {
-   "lat": -33.0485,
-   "lon": -64.9773,
-   "dbz": 52,
-   "max_dbz": 64,
-   "tope_km": 15.2
+   "lat": -33.0928,
+   "lon": -64.633,
+   "dbz": 54,
+   "max_dbz": 65,
+   "tope_km": 13.5
   },
   {
-   "lat": -33.137,
+   "lat": -32.9334,
    "lon": -64.8267,
    "dbz": 52,
-   "max_dbz": 58,
-   "tope_km": 14.1
+   "max_dbz": 60,
+   "tope_km": 12.9
   },
   {
-   "lat": -33.0485,
-   "lon": -65.5582,
-   "dbz": 50,
-   "max_dbz": 54,
+   "lat": -33.1724,
+   "lon": -65.3,
+   "dbz": 51,
+   "max_dbz": 55,
    "tope_km": 12.9
+  },
+  {
+   "lat": -33.0751,
+   "lon": -65.0095,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Santa Catalina": {
+   "km": 21.8,
+   "max_dbz": 65,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "muy intensa"
+  },
   "La Carolina el Potosí": {
-   "km": 28.1,
-   "max_dbz": 64,
-   "tope_km": 15.2,
+   "km": 29.0,
+   "max_dbz": 50,
+   "tope_km": 11.1,
    "cuenca_de": "Arroyo Arroyo 630",
+   "nivel": "intensa"
+  },
+  "Santa Rita": {
+   "km": 29.4,
+   "max_dbz": 60,
+   "tope_km": 12.9,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
