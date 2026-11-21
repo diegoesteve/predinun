@@ -1,59 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 10:30",
+ "consultado": "2026-11-21 10:45",
  "radar": "RMA1",
- "observacion": "2026-11-21 10:11",
+ "observacion": "2026-11-21 10:29",
  "nucleos": [
   {
-   "lat": -32.2483,
-   "lon": -64.5039,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.2751,
-   "lon": -65.1386,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.3911,
-   "lon": -63.8692,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.0
+   "lat": -32.1679,
+   "lon": -64.3748,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 15.8
   },
   {
    "lat": -32.3287,
-   "lon": -64.009,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 17.0
+   "lon": -64.9342,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 10.6
   },
   {
-   "lat": -32.3555,
-   "lon": -64.0951,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 17.0
+   "lat": -32.3376,
+   "lon": -63.8369,
+   "dbz": 48,
+   "max_dbz": 53,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.1232,
+   "lon": -64.0736,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 14.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Quillinzo": {
-   "km": 1.3,
-   "max_dbz": 60,
-   "tope_km": 11.7,
+  "Cerro de Oro": {
+   "km": 6.7,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Villa la Rivera": {
-   "km": 2.7,
-   "max_dbz": 60,
-   "tope_km": 11.7,
+  "Santa Rosa del Conlara": {
+   "km": 22.3,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
