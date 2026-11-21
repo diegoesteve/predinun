@@ -1,74 +1,80 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 20:00",
+ "consultado": "2026-11-21 20:15",
  "radar": "RMA1",
- "observacion": "2026-11-21 19:45",
+ "observacion": "2026-11-21 19:54",
  "nucleos": [
   {
-   "lat": -32.8181,
-   "lon": -65.3968,
+   "lat": -32.7826,
+   "lon": -65.3538,
    "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 13.5
+   "max_dbz": 59,
+   "tope_km": 12.9
   },
   {
-   "lat": -32.8359,
-   "lon": -64.6545,
+   "lat": -32.8004,
+   "lon": -64.5792,
    "dbz": 51,
    "max_dbz": 57,
-   "tope_km": 11.7
+   "tope_km": 12.9
   },
   {
-   "lat": -33.022,
-   "lon": -64.235,
-   "dbz": 50,
-   "max_dbz": 51,
+   "lat": -32.9866,
+   "lon": -64.2027,
+   "dbz": 51,
+   "max_dbz": 55,
    "tope_km": 10.0
   },
   {
-   "lat": -33.0131,
+   "lat": -32.9068,
    "lon": -65.1602,
    "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 11.1
+   "max_dbz": 55,
+   "tope_km": 10.6
   },
   {
-   "lat": -32.9334,
-   "lon": -64.7944,
-   "dbz": 50,
-   "max_dbz": 52,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -33.022,
-   "lon": -64.3318,
-   "dbz": 49,
-   "max_dbz": 53,
+   "lat": -32.7648,
+   "lon": -65.4937,
+   "dbz": 48,
+   "max_dbz": 48,
    "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 30.2,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+   "km": 12.1,
+   "max_dbz": 59,
+   "tope_km": 12.9,
    "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "Paso del Río Seco": {
+   "km": 2.6,
+   "max_dbz": 57,
+   "tope_km": 12.9,
+   "cuenca_de": "Río de las Barrancas",
+   "nivel": "muy intensa"
+  },
+  "El Tala": {
+   "km": 3.4,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
   },
   "Santa Rita": {
-   "km": 16.2,
+   "km": 14.6,
    "max_dbz": 57,
-   "tope_km": 11.7,
+   "tope_km": 12.9,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "muy intensa"
   },
   "Chucul": {
-   "km": 4.9,
-   "max_dbz": 51,
+   "km": 2.9,
+   "max_dbz": 55,
    "tope_km": 10.0,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 21
 }
