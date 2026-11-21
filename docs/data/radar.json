@@ -1,25 +1,79 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 07:15",
+ "consultado": "2026-11-21 07:30",
  "radar": "RMA1",
- "observacion": "2026-11-21 07:01",
+ "observacion": "2026-11-21 07:10",
  "nucleos": [
   {
-   "lat": -32.3733,
-   "lon": -65.1494,
-   "dbz": 49,
-   "max_dbz": 54,
+   "lat": -32.3911,
+   "lon": -65.0095,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.8814,
+   "lon": -64.8482,
+   "dbz": 50,
+   "max_dbz": 53,
    "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Rosa del Conlara": {
-   "km": 4.5,
-   "max_dbz": 54,
+  "Los Reartes": {
+   "km": 22.9,
+   "max_dbz": 53,
    "tope_km": 9.4,
+   "cuenca_de": "Río del Medio",
+   "nivel": "intensa"
+  },
+  "Carpintería": {
+   "km": 1.5,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "Los Molles": {
+   "km": 4.6,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "Villa Berna": {
+   "km": 11.8,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "cuenca_de": "Río del Medio",
+   "nivel": "intensa"
+  },
+  "La Cumbrecita": {
+   "km": 6.6,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "cuenca_de": "Rio Del Medio",
+   "nivel": "intensa"
+  },
+  "Cerro de Oro": {
+   "km": 3.5,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "La Boca del Río": {
+   "km": 41.3,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "intensa"
+  },
+  "Villa la Merced": {
+   "km": 33.4,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 20
 }
