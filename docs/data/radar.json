@@ -1,79 +1,162 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 07:30",
+ "consultado": "2026-11-21 07:45",
  "radar": "RMA1",
- "observacion": "2026-11-21 07:10",
+ "observacion": "2026-11-21 07:24",
  "nucleos": [
   {
-   "lat": -32.3911,
-   "lon": -65.0095,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 11.1
+   "lat": -31.9352,
+   "lon": -64.7836,
+   "dbz": 52,
+   "max_dbz": 52,
+   "tope_km": 7.6
   },
   {
-   "lat": -31.8814,
-   "lon": -64.8482,
+   "lat": -31.8635,
+   "lon": -64.4931,
    "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 9.4
+   "max_dbz": 54,
+   "tope_km": 7.6
+  },
+  {
+   "lat": -32.409,
+   "lon": -64.8804,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.293,
+   "lon": -65.0418,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -32.2483,
+   "lon": -64.9773,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -32.2483,
+   "lon": -64.8589,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.5426,
+   "lon": -64.4824,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.7558,
+   "lon": -64.9342,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
   "Los Reartes": {
-   "km": 22.9,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "cuenca_de": "Río del Medio",
+   "km": 19.5,
+   "max_dbz": 52,
+   "tope_km": 7.6,
+   "cuenca_de": "Rio De Los Reartes",
    "nivel": "intensa"
   },
-  "Carpintería": {
-   "km": 1.5,
-   "max_dbz": 55,
-   "tope_km": 11.1,
+  "Villa Dolores": {
+   "km": 26.9,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "intensa"
+  },
+  "La Paz": {
+   "km": 6.9,
+   "max_dbz": 54,
+   "tope_km": 8.2,
+   "cuenca_de": "Arroyo Las Higueras",
+   "nivel": "intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 22.4,
+   "max_dbz": 57,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
-  "Los Molles": {
-   "km": 4.6,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
+  "Nono": {
+   "km": 6.2,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo de los Sanjuaninos",
+   "nivel": "intensa"
   },
-  "Villa Berna": {
-   "km": 11.8,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "cuenca_de": "Río del Medio",
+  "La Ramada": {
+   "km": 3.6,
+   "max_dbz": 51,
+   "tope_km": 8.2,
    "nivel": "intensa"
   },
   "La Cumbrecita": {
-   "km": 6.6,
-   "max_dbz": 53,
-   "tope_km": 9.4,
-   "cuenca_de": "Rio Del Medio",
+   "km": 4.2,
+   "max_dbz": 52,
+   "tope_km": 7.6,
    "nivel": "intensa"
   },
-  "Cerro de Oro": {
-   "km": 3.5,
-   "max_dbz": 55,
-   "tope_km": 11.1,
+  "Villa la Rivera": {
+   "km": 36.2,
+   "max_dbz": 57,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
+  "Intiyaco": {
+   "km": 6.7,
+   "max_dbz": 52,
+   "tope_km": 7.6,
+   "cuenca_de": "Río de los Reartes",
+   "nivel": "intensa"
+  },
+  "Capilla Vieja": {
+   "km": 17.0,
+   "max_dbz": 52,
+   "tope_km": 7.6,
+   "cuenca_de": "Rio De Los Reartes",
+   "nivel": "intensa"
+  },
   "La Boca del Río": {
-   "km": 41.3,
-   "max_dbz": 53,
-   "tope_km": 9.4,
+   "km": 7.8,
+   "max_dbz": 54,
+   "tope_km": 7.6,
    "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   },
   "Villa la Merced": {
-   "km": 33.4,
-   "max_dbz": 53,
-   "tope_km": 9.4,
+   "km": 29.6,
+   "max_dbz": 52,
+   "tope_km": 7.6,
    "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
+  },
+  "Paraje las Chacras": {
+   "km": 4.6,
+   "max_dbz": 54,
+   "tope_km": 8.2,
+   "nivel": "intensa"
+  },
+  "Pueblo Escondido": {
+   "km": 1.8,
+   "max_dbz": 57,
+   "tope_km": 8.8,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 21
 }
