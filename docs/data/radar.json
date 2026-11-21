@@ -1,68 +1,61 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 11:30",
+ "consultado": "2026-11-21 11:46",
  "radar": "RMA1",
- "observacion": "2026-11-21 11:15",
+ "observacion": "2026-11-21 11:33",
  "nucleos": [
   {
-   "lat": -32.3733,
-   "lon": -64.6653,
-   "dbz": 49,
+   "lat": -32.3644,
+   "lon": -64.4716,
+   "dbz": 50,
    "max_dbz": 53,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.8814,
+   "lon": -64.4931,
+   "dbz": 49,
+   "max_dbz": 55,
    "tope_km": 10.0
   },
   {
-   "lat": -31.7917,
-   "lon": -64.7836,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -32.0606,
-   "lon": -63.8799,
-   "dbz": 48,
+   "lat": -31.8097,
+   "lon": -64.6007,
+   "dbz": 49,
    "max_dbz": 54,
-   "tope_km": 7.6
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
+  "La Cruz": {
+   "km": 6.3,
+   "max_dbz": 53,
+   "tope_km": 9.4,
+   "cuenca_de": "Rio La Cruz",
+   "nivel": "intensa"
+  },
   "Potrero de Garay": {
-   "km": 20.5,
-   "max_dbz": 52,
+   "km": 3.4,
+   "max_dbz": 54,
    "tope_km": 8.8,
    "cuenca_de": "Rio San Pedro",
    "nivel": "intensa"
   },
-  "Cañada del Sauce": {
-   "km": 1.9,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Villa la Rivera": {
-   "km": 16.7,
-   "max_dbz": 53,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
   "La Boca del Río": {
-   "km": 35.5,
-   "max_dbz": 52,
-   "tope_km": 8.8,
+   "km": 8.5,
+   "max_dbz": 55,
+   "tope_km": 10.0,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 26.6,
-   "max_dbz": 52,
+   "km": 9.2,
+   "max_dbz": 54,
    "tope_km": 8.8,
    "cuenca_de": "Río de los Molinos",
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 14
 }
