@@ -1,80 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 14:00",
+ "consultado": "2026-11-21 14:15",
  "radar": "RMA1",
- "observacion": "2026-11-21 13:40",
+ "observacion": "2026-11-21 13:59",
  "nucleos": [
   {
-   "lat": -31.4861,
-   "lon": -64.4716,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 6.4
+   "lat": -31.7289,
+   "lon": -64.009,
+   "dbz": 49,
+   "max_dbz": 50,
+   "tope_km": 15.2
   },
   {
-   "lat": -31.5761,
-   "lon": -64.1919,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 7.0
+   "lat": -31.5041,
+   "lon": -64.2672,
+   "dbz": 48,
+   "max_dbz": 53,
+   "tope_km": 5.3,
+   "descartado": "tope bajo (5.3 km)"
+  },
+  {
+   "lat": -31.5491,
+   "lon": -63.9983,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 8.8
   },
   {
    "lat": -31.5221,
-   "lon": -64.3318,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 7.6
-  },
-  {
-   "lat": -31.8276,
-   "lon": -64.2134,
+   "lon": -64.0951,
    "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 11.1
+   "max_dbz": 51,
+   "tope_km": 8.8
   },
   {
-   "lat": -31.5401,
-   "lon": -64.2565,
+   "lat": -31.9173,
+   "lon": -64.0198,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 7.0
-  },
-  {
-   "lat": -31.8814,
-   "lon": -64.278,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.7289,
-   "lon": -64.278,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 7.0
+   "max_dbz": 48,
+   "tope_km": 16.4
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Cordoba": {
-   "km": 8.1,
-   "max_dbz": 53,
-   "tope_km": 7.6,
-   "cuenca_de": "Arroyo La Cañada",
-   "nivel": "intensa"
-  },
-  "Barrio Sierras de Oro": {
-   "km": 4.2,
-   "max_dbz": 51,
-   "tope_km": 6.4,
-   "nivel": "intensa"
-  },
-  "Dique Chico": {
-   "km": 4.8,
-   "max_dbz": 47,
-   "tope_km": 7.0,
-   "nivel": "intensa"
-  }
- },
- "minutos": 20
+ "localidades": {},
+ "minutos": 17
 }
