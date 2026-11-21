@@ -1,7 +1,7 @@
 {
- "generado": "2026-11-21 15:00",
+ "generado": "2026-11-21 16:00",
  "horas": 48,
- "smap_atraso_dias": 3.8,
+ "smap_atraso_dias": 3.9,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
@@ -20,10 +20,10 @@
      "cuando": "2026-11-22 05:00"
     },
     "ECMWF": {
-     "max_3h_mm": 3.1,
+     "max_3h_mm": 7.8,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-21 15:00"
+     "cuando": "2026-11-23 09:00"
     }
    },
    "ensambles": {
@@ -37,9 +37,9 @@
     "smap_m3m3": 0.12,
     "smap_percentil": 71,
     "smap_fecha": "2026-11-17 22:30 UTC",
-    "estimado_hoy_m3m3": 0.122,
-    "estimado_hoy_percentil": 75,
-    "percentil": 75,
+    "estimado_hoy_m3m3": 0.114,
+    "estimado_hoy_percentil": 59,
+    "percentil": 59,
     "es_estimado": true,
     "estado": "normal"
    },
@@ -53,8 +53,8 @@
     "nubosidad_ult_media": 55,
     "nubosidad_ult_normal": 39,
     "dias_nublados_ult": 4,
-    "et0_prox_mm": 35.0,
-    "et0_prox_pct": 92
+    "et0_prox_mm": 35.9,
+    "et0_prox_pct": 95
    }
   },
   {
@@ -74,10 +74,10 @@
      "cuando": "2026-11-22 04:00"
     },
     "ECMWF": {
-     "max_3h_mm": 4.4,
+     "max_3h_mm": 6.4,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-22 02:00"
+     "cuando": "2026-11-23 13:00"
     }
    },
    "ensambles": {
@@ -85,7 +85,7 @@
     "GFS ENS": 0.0,
     "ICON EPS": 0.2
    },
-   "nivel": "verde",
+   "nivel": "amarillo",
    "nivel_por_lluvia": "verde",
    "suelo": {
     "smap_m3m3": 0.128,
@@ -97,6 +97,7 @@
     "es_estimado": true,
     "estado": "saturado"
    },
+   "agravado_por_suelo": true,
    "secado": {
     "dias_atras": 10,
     "dias_adelante": 7,
@@ -107,8 +108,8 @@
     "nubosidad_ult_media": 57,
     "nubosidad_ult_normal": 40,
     "dias_nublados_ult": 4,
-    "et0_prox_mm": 32.1,
-    "et0_prox_pct": 90
+    "et0_prox_mm": 34.2,
+    "et0_prox_pct": 95
    }
   },
   {
@@ -128,14 +129,14 @@
      "cuando": "2026-11-22 04:00"
     },
     "ECMWF": {
-     "max_3h_mm": 5.6,
+     "max_3h_mm": 9.7,
      "umbral_mm": 8.8,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-21 15:00"
+     "cuando": "2026-11-23 13:00"
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.22,
+    "ECMWF ENS": 0.18,
     "GFS ENS": 0.0,
     "ICON EPS": 0.38
    },
@@ -145,7 +146,7 @@
     "smap_m3m3": 0.149,
     "smap_percentil": 74,
     "smap_fecha": "2026-11-17 22:30 UTC",
-    "estimado_hoy_m3m3": 0.198,
+    "estimado_hoy_m3m3": 0.2,
     "estimado_hoy_percentil": 100,
     "percentil": 100,
     "es_estimado": true,
@@ -162,8 +163,8 @@
     "nubosidad_ult_media": 56,
     "nubosidad_ult_normal": 41,
     "dias_nublados_ult": 4,
-    "et0_prox_mm": 31.2,
-    "et0_prox_pct": 87
+    "et0_prox_mm": 33.1,
+    "et0_prox_pct": 93
    }
   },
   {
@@ -183,10 +184,10 @@
      "cuando": "2026-11-22 04:00"
     },
     "ECMWF": {
-     "max_3h_mm": 3.2,
+     "max_3h_mm": 2.9,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-23 15:00"
+     "cuando": "2026-11-23 13:00"
     }
    },
    "ensambles": {
@@ -199,9 +200,9 @@
     "smap_m3m3": 0.174,
     "smap_percentil": 72,
     "smap_fecha": "2026-11-17 22:30 UTC",
-    "estimado_hoy_m3m3": 0.199,
-    "estimado_hoy_percentil": 97,
-    "percentil": 97,
+    "estimado_hoy_m3m3": 0.204,
+    "estimado_hoy_percentil": 98,
+    "percentil": 98,
     "es_estimado": true,
     "estado": "saturado"
    },
@@ -216,8 +217,8 @@
     "nubosidad_ult_media": 53,
     "nubosidad_ult_normal": 39,
     "dias_nublados_ult": 3,
-    "et0_prox_mm": 35.5,
-    "et0_prox_pct": 92
+    "et0_prox_mm": 36.6,
+    "et0_prox_pct": 95
    }
   }
  ],
