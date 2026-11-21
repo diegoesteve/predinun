@@ -1,18 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 02:03",
+ "consultado": "2026-11-21 02:15",
  "radar": "RMA16",
- "observacion": "2026-11-21 01:23",
+ "observacion": "2026-11-21 02:04",
  "nucleos": [
   {
-   "lat": -33.2129,
-   "lon": -65.0994,
-   "dbz": 54,
-   "max_dbz": 62,
+   "lat": -32.6228,
+   "lon": -64.9559,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -33.1948,
+   "lon": -65.1215,
+   "dbz": 48,
+   "max_dbz": 48,
    "tope_km": 12.3
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 39
+ "localidades": {
+  "Villa Larca": {
+   "km": 2.7,
+   "max_dbz": 49,
+   "tope_km": 13.5,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 11
 }
