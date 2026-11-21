@@ -1,54 +1,71 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 10:45",
+ "consultado": "2026-11-21 11:01",
  "radar": "RMA1",
- "observacion": "2026-11-21 10:29",
+ "observacion": "2026-11-21 10:48",
  "nucleos": [
   {
-   "lat": -32.1679,
-   "lon": -64.3748,
-   "dbz": 52,
+   "lat": -32.1411,
+   "lon": -64.1489,
+   "dbz": 51,
    "max_dbz": 59,
-   "tope_km": 15.8
-  },
-  {
-   "lat": -32.3287,
-   "lon": -64.9342,
-   "dbz": 49,
-   "max_dbz": 55,
    "tope_km": 10.6
   },
   {
-   "lat": -32.3376,
-   "lon": -63.8369,
+   "lat": -32.0248,
+   "lon": -64.2565,
    "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 11.7
+   "max_dbz": 51,
+   "tope_km": 8.8
   },
   {
-   "lat": -32.1232,
-   "lon": -64.0736,
+   "lat": -32.3644,
+   "lon": -64.988,
    "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 14.1
+   "max_dbz": 51,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.2305,
+   "lon": -63.8477,
+   "dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cerro de Oro": {
-   "km": 6.7,
-   "max_dbz": 55,
+  "Rio Tercero": {
+   "km": 3.9,
+   "max_dbz": 59,
    "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
+  "Carpintería": {
+   "km": 4.6,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  },
+  "Villa de Merlo": {
+   "km": 3.0,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  },
+  "Cerro de Oro": {
+   "km": 0.5,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  },
   "Santa Rosa del Conlara": {
-   "km": 22.3,
-   "max_dbz": 55,
-   "tope_km": 10.6,
+   "km": 17.5,
+   "max_dbz": 51,
+   "tope_km": 8.8,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
