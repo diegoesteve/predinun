@@ -1,54 +1,53 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 08:00",
+ "consultado": "2026-11-21 08:15",
  "radar": "RMA1",
- "observacion": "2026-11-21 07:45",
+ "observacion": "2026-11-21 08:03",
  "nucleos": [
   {
-   "lat": -31.8276,
-   "lon": -64.7406,
+   "lat": -31.9442,
+   "lon": -64.3318,
    "dbz": 50,
    "max_dbz": 57,
-   "tope_km": 6.4
+   "tope_km": 15.2
   },
   {
-   "lat": -31.9352,
-   "lon": -64.4394,
+   "lat": -31.8994,
+   "lon": -64.4286,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -32.3198,
+   "lon": -64.5147,
    "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 7.6
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Potrero de Garay": {
-   "km": 16.0,
-   "max_dbz": 57,
-   "tope_km": 6.4,
-   "cuenca_de": "Rio San Pedro",
-   "nivel": "muy intensa"
+  "La Cruz": {
+   "km": 3.6,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "nivel": "intensa"
   },
   "Los Molinos": {
    "km": 9.6,
-   "max_dbz": 53,
-   "tope_km": 7.6,
-   "cuenca_de": "Rio Los Molinos",
-   "nivel": "intensa"
-  },
-  "La Boca del Río": {
-   "km": 31.0,
    "max_dbz": 57,
-   "tope_km": 6.4,
-   "cuenca_de": "Río de los Molinos",
+   "tope_km": 15.2,
+   "cuenca_de": "Rio Los Molinos",
    "nivel": "muy intensa"
   },
-  "Villa la Merced": {
-   "km": 22.4,
-   "max_dbz": 57,
-   "tope_km": 6.4,
+  "La Boca del Río": {
+   "km": 6.3,
+   "max_dbz": 55,
+   "tope_km": 8.2,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
