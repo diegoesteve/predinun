@@ -1,18 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 19:00",
+ "consultado": "2026-11-21 19:15",
  "radar": "RMA1",
- "observacion": "2026-11-21 18:32",
+ "observacion": "2026-11-21 19:00",
  "nucleos": [
   {
+   "lat": -33.0485,
+   "lon": -64.9773,
+   "dbz": 52,
+   "max_dbz": 64,
+   "tope_km": 15.2
+  },
+  {
    "lat": -33.137,
-   "lon": -65.1494,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 12.3
+   "lon": -64.8267,
+   "dbz": 52,
+   "max_dbz": 58,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -33.0485,
+   "lon": -65.5582,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 28
+ "localidades": {
+  "La Carolina el Potosí": {
+   "km": 28.1,
+   "max_dbz": 64,
+   "tope_km": 15.2,
+   "cuenca_de": "Arroyo Arroyo 630",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 16
 }
