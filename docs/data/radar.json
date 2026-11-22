@@ -1,169 +1,192 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 03:30",
+ "consultado": "2026-11-22 03:45",
  "radar": "RMA1",
- "observacion": "2026-11-22 03:14",
+ "observacion": "2026-11-22 03:33",
  "nucleos": [
   {
-   "lat": -31.3689,
-   "lon": -65.1817,
+   "lat": -31.1704,
+   "lon": -64.2672,
    "dbz": 52,
-   "max_dbz": 62,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.2787,
-   "lon": -64.4178,
-   "dbz": 51,
-   "max_dbz": 61,
+   "max_dbz": 60,
    "tope_km": 11.1
   },
   {
-   "lat": -31.7558,
-   "lon": -64.676,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.9352,
-   "lon": -64.5685,
+   "lat": -31.2968,
+   "lon": -64.945,
    "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 11.7
+   "max_dbz": 62,
+   "tope_km": 14.1
   },
   {
-   "lat": -31.8725,
+   "lat": -31.8276,
+   "lon": -64.3641,
+   "dbz": 50,
+   "max_dbz": 59,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.1884,
    "lon": -64.6007,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.6121,
+   "lon": -64.5685,
    "dbz": 49,
-   "max_dbz": 56,
+   "max_dbz": 55,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.4981,
+   "lon": -64.0628,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 11.7
   },
   {
-   "lat": -32.4892,
-   "lon": -64.321,
+   "lat": -31.5131,
+   "lon": -64.6545,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -31.648,
+   "lon": -64.5039,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -32.7293,
+   "lon": -64.009,
    "dbz": 48,
    "max_dbz": 50,
    "tope_km": 10.0
-  },
-  {
-   "lat": -32.7204,
-   "lon": -64.2565,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.0
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 54
+  },
+  "SanAntonio_CPaz": {
+   "nucleos": 1,
+   "max_dbz": 53
+  }
+ },
  "localidades": {
-  "La Calera": {
-   "km": 8.7,
-   "max_dbz": 61,
+  "Villa Carlos Paz": {
+   "km": 19.2,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 7.3,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Salsipuedes": {
+   "km": 5.0,
+   "max_dbz": 60,
    "tope_km": 11.1,
-   "cuenca_de": "Arroyo La Cascada",
    "nivel": "muy intensa"
   },
   "San Carlos Minas": {
-   "km": 20.6,
+   "km": 19.3,
    "max_dbz": 62,
-   "tope_km": 17.0,
-   "cuenca_de": "Jaime",
+   "tope_km": 14.1,
+   "cuenca_de": "Noguinet",
    "nivel": "muy intensa"
   },
-  "Salsacate": {
-   "km": 10.1,
-   "max_dbz": 62,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo Salsacate",
-   "nivel": "muy intensa"
-  },
-  "Santa Rosa de Calamuchita": {
-   "km": 11.8,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo El Sauce",
-   "nivel": "muy intensa"
-  },
-  "Villa General Belgrano": {
-   "km": 7.6,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo Los Molles",
-   "nivel": "muy intensa"
-  },
-  "Los Reartes": {
-   "km": 2.3,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
+  "Alta Gracia": {
+   "km": 9.6,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "cuenca_de": "Arroyo Alta Gracia (Chicamtoltina)",
+   "nivel": "intensa"
   },
   "Santa María de Punilla": {
-   "km": 4.2,
-   "max_dbz": 61,
+   "km": 15.9,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "intensa"
+  },
+  "Anisacate": {
+   "km": 18.7,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 11.6,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Estación Juárez Celman": {
+   "km": 12.7,
+   "max_dbz": 60,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Salsipuedes",
+   "nivel": "muy intensa"
+  },
+  "Tala Huasi": {
+   "km": 9.1,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "La Serranita": {
+   "km": 16.9,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
+  },
+  "Los Molinos": {
+   "km": 3.5,
+   "max_dbz": 59,
    "tope_km": 11.1,
    "nivel": "muy intensa"
   },
-  "Potrero de Garay": {
-   "km": 12.6,
+  "San Roque": {
+   "km": 20.9,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Lago San Roque",
+   "nivel": "intensa"
+  },
+  "Pozo del Tala": {
+   "km": 1.9,
+   "max_dbz": 54,
+   "tope_km": 12.3,
+   "nivel": "intensa"
+  },
+  "Villa San Isidro": {
+   "km": 1.8,
    "max_dbz": 59,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Pedro",
+   "tope_km": 11.1,
    "nivel": "muy intensa"
   },
-  "El Corcovado el Torreon": {
-   "km": 25.4,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "muy intensa"
-  },
-  "El Corcovado": {
-   "km": 22.5,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "muy intensa"
-  },
-  "Paso de la Pampa": {
-   "km": 8.3,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "cuenca_de": "Río San Pedro",
-   "nivel": "muy intensa"
-  },
-  "Capilla Vieja": {
-   "km": 3.5,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
-  },
-  "La Boca del Río": {
-   "km": 26.7,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Villa la Merced": {
-   "km": 17.6,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Villa Ciudad de America": {
-   "km": 13.9,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "cuenca_de": "Embalse Los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Villa Ciudad Parque los Reartes": {
-   "km": 3.6,
-   "max_dbz": 56,
-   "tope_km": 11.7,
+  "La Paisanita": {
+   "km": 14.6,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
