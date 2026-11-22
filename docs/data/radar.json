@@ -1,25 +1,39 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 01:15",
+ "consultado": "2026-11-22 01:30",
  "radar": "RMA1",
- "observacion": "2026-11-22 00:58",
+ "observacion": "2026-11-22 01:16",
  "nucleos": [
   {
-   "lat": -32.2841,
-   "lon": -65.3646,
+   "lat": -32.2394,
+   "lon": -65.257,
    "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 12.9
+   "max_dbz": 56,
+   "tope_km": 11.7
   },
   {
-   "lat": -32.2751,
-   "lon": -65.1279,
+   "lat": -32.2305,
+   "lon": -64.9773,
    "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 11.1
+   "max_dbz": 59,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "localidades": {
+  "Paraje las Chacras": {
+   "km": 4.7,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Loma Bola": {
+   "km": 5.1,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo El Arenal",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 15
 }
