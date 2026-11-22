@@ -1,85 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 07:30",
+ "consultado": "2026-11-22 07:45",
  "radar": "RMA1",
- "observacion": "2026-11-22 07:20",
+ "observacion": "2026-11-22 07:30",
  "nucleos": [
   {
-   "lat": -31.3148,
-   "lon": -64.7083,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 10.0
+   "lat": -30.9804,
+   "lon": -65.1817,
+   "dbz": 52,
+   "max_dbz": 57,
+   "tope_km": 9.4
   },
   {
-   "lat": -31.1342,
-   "lon": -64.5254,
+   "lat": -31.2787,
+   "lon": -64.6115,
    "dbz": 50,
-   "max_dbz": 52,
-   "tope_km": 7.0
-  },
-  {
-   "lat": -31.387,
-   "lon": -64.6438,
-   "dbz": 49,
-   "max_dbz": 49,
+   "max_dbz": 56,
    "tope_km": 10.0
   }
  ],
  "cuencas": {
   "Cosquin": {
-   "nucleos": 2,
-   "max_dbz": 59
+   "nucleos": 1,
+   "max_dbz": 56
   }
  },
  "localidades": {
-  "Cabalango": {
-   "km": 7.1,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Los Chorrillos",
-   "nivel": "intensa"
-  },
   "Santa María de Punilla": {
-   "km": 24.6,
-   "max_dbz": 59,
+   "km": 14.8,
+   "max_dbz": 56,
    "tope_km": 10.0,
    "cuenca_de": "Río Cosquín",
    "nivel": "muy intensa"
   },
-  "Valle Hermoso": {
-   "km": 4.1,
-   "max_dbz": 52,
-   "tope_km": 7.0,
-   "nivel": "intensa"
-  },
-  "Casa Grande": {
-   "km": 5.5,
-   "max_dbz": 52,
-   "tope_km": 7.0,
-   "cuenca_de": "Rio Grande De Punilla",
-   "nivel": "intensa"
+  "Santa Ana": {
+   "km": 16.5,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo Agua Blanca",
+   "nivel": "muy intensa"
   },
   "San Roque": {
-   "km": 23.3,
-   "max_dbz": 59,
+   "km": 15.3,
+   "max_dbz": 56,
    "tope_km": 10.0,
    "cuenca_de": "Lago San Roque",
    "nivel": "muy intensa"
   },
-  "Estancia Vieja": {
-   "km": 10.4,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio Los Chorrillos",
-   "nivel": "intensa"
-  },
-  "Villa Flor Serrana": {
-   "km": 4.2,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "nivel": "intensa"
+  "Piedras Amontonadas": {
+   "km": 11.2,
+   "max_dbz": 57,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Seco",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 10
+ "minutos": 16
 }
