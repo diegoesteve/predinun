@@ -1,89 +1,169 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 03:15",
+ "consultado": "2026-11-22 03:30",
  "radar": "RMA1",
- "observacion": "2026-11-22 02:56",
+ "observacion": "2026-11-22 03:14",
  "nucleos": [
   {
-   "lat": -31.441,
-   "lon": -65.3538,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.7917,
-   "lon": -64.8051,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -32.7382,
-   "lon": -64.4931,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lat": -31.3689,
+   "lon": -65.1817,
+   "dbz": 52,
+   "max_dbz": 62,
    "tope_km": 17.0
   },
   {
-   "lat": -31.63,
-   "lon": -64.9235,
+   "lat": -31.2787,
+   "lon": -64.4178,
+   "dbz": 51,
+   "max_dbz": 61,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.7558,
+   "lon": -64.676,
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.9352,
+   "lon": -64.5685,
    "dbz": 50,
    "max_dbz": 56,
-   "tope_km": 12.9
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.8725,
+   "lon": -64.6007,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.4892,
+   "lon": -64.321,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.7204,
+   "lon": -64.2565,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Dolores": {
-   "km": 38.5,
+  "La Calera": {
+   "km": 8.7,
+   "max_dbz": 61,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo La Cascada",
+   "nivel": "muy intensa"
+  },
+  "San Carlos Minas": {
+   "km": 20.6,
+   "max_dbz": 62,
+   "tope_km": 17.0,
+   "cuenca_de": "Jaime",
+   "nivel": "muy intensa"
+  },
+  "Salsacate": {
+   "km": 10.1,
+   "max_dbz": 62,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo Salsacate",
+   "nivel": "muy intensa"
+  },
+  "Santa Rosa de Calamuchita": {
+   "km": 11.8,
    "max_dbz": 56,
-   "tope_km": 12.9,
-   "cuenca_de": "Arroyo De Las Tapias",
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo El Sauce",
+   "nivel": "muy intensa"
+  },
+  "Villa General Belgrano": {
+   "km": 7.6,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo Los Molles",
+   "nivel": "muy intensa"
+  },
+  "Los Reartes": {
+   "km": 2.3,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Santa María de Punilla": {
+   "km": 4.2,
+   "max_dbz": 61,
+   "tope_km": 11.1,
    "nivel": "muy intensa"
   },
   "Potrero de Garay": {
-   "km": 22.5,
+   "km": 12.6,
    "max_dbz": 59,
-   "tope_km": 13.5,
+   "tope_km": 11.7,
    "cuenca_de": "Rio San Pedro",
    "nivel": "muy intensa"
   },
-  "Mina Clavero": {
-   "km": 10.3,
+  "El Corcovado el Torreon": {
+   "km": 25.4,
    "max_dbz": 56,
-   "tope_km": 12.9,
-   "cuenca_de": "Mina Clavero",
+   "tope_km": 11.7,
+   "cuenca_de": "Rio Santa Rosa",
    "nivel": "muy intensa"
   },
-  "Chancaní": {
-   "km": 9.6,
-   "max_dbz": 60,
-   "tope_km": 14.1,
-   "cuenca_de": "Río del Norte (Chancani)",
+  "El Corcovado": {
+   "km": 22.5,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "cuenca_de": "Rio Santa Rosa",
    "nivel": "muy intensa"
   },
-  "Villa Benegas": {
-   "km": 4.0,
+  "Paso de la Pampa": {
+   "km": 8.3,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "cuenca_de": "Río San Pedro",
+   "nivel": "muy intensa"
+  },
+  "Capilla Vieja": {
+   "km": 3.5,
    "max_dbz": 56,
-   "tope_km": 12.9,
-   "cuenca_de": "Mina Clavero",
+   "tope_km": 11.7,
    "nivel": "muy intensa"
   },
   "La Boca del Río": {
-   "km": 37.5,
+   "km": 26.7,
    "max_dbz": 59,
-   "tope_km": 13.5,
+   "tope_km": 11.7,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 28.6,
+   "km": 17.6,
    "max_dbz": 59,
-   "tope_km": 13.5,
+   "tope_km": 11.7,
    "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa Ciudad de America": {
+   "km": 13.9,
+   "max_dbz": 59,
+   "tope_km": 11.7,
+   "cuenca_de": "Embalse Los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa Ciudad Parque los Reartes": {
+   "km": 3.6,
+   "max_dbz": 56,
+   "tope_km": 11.7,
    "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
