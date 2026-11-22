@@ -1,9 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 14:31",
- "radar": null,
- "observacion": null,
- "nucleos": [],
+ "consultado": "2026-11-22 14:45",
+ "radar": "RMA16",
+ "observacion": "2026-11-22 14:30",
+ "nucleos": [
+  {
+   "lat": -31.6707,
+   "lon": -65.1326,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 13.5
+  }
+ ],
  "cuencas": {},
- "localidades": {}
+ "localidades": {
+  "Villa Dolores": {
+   "km": 28.2,
+   "max_dbz": 48,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "intensa"
+  },
+  "San Lorenzo": {
+   "km": 9.5,
+   "max_dbz": 48,
+   "tope_km": 13.5,
+   "cuenca_de": "Río Panaholma",
+   "nivel": "intensa"
+  },
+  "Mina Clavero": {
+   "km": 12.4,
+   "max_dbz": 48,
+   "tope_km": 13.5,
+   "cuenca_de": "Panaholma",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 15
 }
