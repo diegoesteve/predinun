@@ -1,227 +1,279 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 04:00",
+ "consultado": "2026-11-22 04:15",
  "radar": "RMA1",
- "observacion": "2026-11-22 03:42",
+ "observacion": "2026-11-22 04:00",
  "nucleos": [
   {
-   "lat": -31.648,
-   "lon": -64.4609,
+   "lat": -31.1794,
+   "lon": -64.7513,
    "dbz": 51,
+   "max_dbz": 60,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.1884,
+   "lon": -64.5147,
+   "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.2155,
+   "lon": -64.3856,
+   "dbz": 50,
    "max_dbz": 59,
    "tope_km": 11.7
   },
   {
-   "lat": -31.8187,
-   "lon": -64.3103,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.2968,
-   "lon": -64.8804,
+   "lat": -31.5491,
+   "lon": -64.5147,
    "dbz": 50,
-   "max_dbz": 61,
-   "tope_km": 12.9
+   "max_dbz": 54,
+   "tope_km": 10.6
   },
   {
-   "lat": -31.1704,
-   "lon": -64.2887,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.6121,
-   "lon": -64.5469,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.5041,
-   "lon": -64.6222,
+   "lat": -31.2246,
+   "lon": -64.945,
    "dbz": 49,
-   "max_dbz": 56,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.4771,
+   "lon": -64.5147,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.639,
+   "lon": -64.3318,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.0528,
+   "lon": -64.2887,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 11.7
+  },
+  {
+   "lat": -31.7379,
+   "lon": -64.1059,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.7468,
+   "lon": -64.2672,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.7917,
+   "lon": -64.1704,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.405,
+   "lon": -64.6115,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.7019,
+   "lon": -64.009,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 11.1
   },
   {
    "lat": -32.4535,
-   "lon": -64.0198,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.8097,
-   "lon": -64.4824,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.9711,
-   "lon": -65.5474,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.8007,
-   "lon": -64.2134,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.5671,
-   "lon": -64.6868,
+   "lon": -63.7939,
    "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 12.3
+   "max_dbz": 48,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {
+  "SierrasChicas": {
+   "nucleos": 1,
+   "max_dbz": 59
+  },
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 58
+  },
   "SanAntonio_CPaz": {
    "nucleos": 1,
-   "max_dbz": 56
+   "max_dbz": 53
   }
  },
  "localidades": {
-  "Rio Ceballos": {
-   "km": 4.0,
-   "max_dbz": 59,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
   "Villa Carlos Paz": {
-   "km": 16.2,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 4.2,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Salsipuedes": {
-   "km": 4.1,
-   "max_dbz": 59,
+   "km": 8.0,
+   "max_dbz": 53,
    "tope_km": 11.1,
-   "nivel": "muy intensa"
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
   },
-  "Villa de Soto": {
-   "km": 50.1,
-   "max_dbz": 61,
-   "tope_km": 12.9,
-   "cuenca_de": "Río Soto",
-   "nivel": "muy intensa"
-  },
-  "Alta Gracia": {
-   "km": 2.4,
+  "Villa Allende": {
+   "km": 9.9,
    "max_dbz": 59,
    "tope_km": 11.7,
+   "cuenca_de": "Arroyo Chico",
    "nivel": "muy intensa"
   },
-  "Cruz de Caña": {
-   "km": 24.5,
-   "max_dbz": 61,
-   "tope_km": 12.9,
-   "cuenca_de": "Río San Guillermo",
-   "nivel": "muy intensa"
-  },
-  "Anisacate": {
-   "km": 17.2,
-   "max_dbz": 57,
+  "Mendiolaza": {
+   "km": 7.1,
+   "max_dbz": 59,
    "tope_km": 11.7,
-   "cuenca_de": "Río Anizacate",
+   "cuenca_de": "Arroyo Santa Lucía",
    "nivel": "muy intensa"
   },
-  "Bañado de Soto": {
-   "km": 55.1,
-   "max_dbz": 61,
-   "tope_km": 12.9,
-   "cuenca_de": "San Guillermo De Soto",
+  "La Granja": {
+   "km": 0.2,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo El Algodonal",
+   "nivel": "intensa"
+  },
+  "San Carlos Minas": {
+   "km": 14.6,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Los Barreales",
+   "nivel": "intensa"
+  },
+  "Cabalango": {
+   "km": 4.1,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "San Antonio de Arredondo": {
+   "km": 1.6,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  },
+  "Santa María de Punilla": {
+   "km": 9.9,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "muy intensa"
+  },
+  "Villa Cerro Azul": {
+   "km": 4.1,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  },
+  "Agua de Oro": {
+   "km": 0.8,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  },
+  "Los Molles": {
+   "km": 5.4,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "cuenca_de": "Río San Cristóbal",
+   "nivel": "intensa"
+  },
+  "Colonia Caroya": {
+   "km": 17.6,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Carnero",
+   "nivel": "intensa"
+  },
+  "Casa Grande": {
+   "km": 4.9,
+   "max_dbz": 58,
+   "tope_km": 11.7,
    "nivel": "muy intensa"
   },
   "Mayu Sumaj": {
-   "km": 8.5,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "Estación Juárez Celman": {
-   "km": 14.3,
-   "max_dbz": 59,
+   "km": 2.8,
+   "max_dbz": 53,
    "tope_km": 11.1,
-   "cuenca_de": "Río Salsipuedes",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 5.9,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "muy intensa"
-  },
-  "La Serranita": {
-   "km": 15.7,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "Pozo del Tala": {
-   "km": 2.2,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
-  },
-  "Villa San Isidro": {
-   "km": 9.6,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo Carada del Tala",
-   "nivel": "intensa"
-  },
-  "La Paisanita": {
-   "km": 13.6,
-   "max_dbz": 57,
-   "tope_km": 11.7,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "Jose de la Quintana": {
    "km": 4.7,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo Jose De La Quintana",
-   "nivel": "intensa"
-  },
-  "Villa la Merced": {
-   "km": 2.1,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "nivel": "intensa"
-  },
-  "Villa Ciudad de America": {
-   "km": 4.8,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "nivel": "intensa"
-  },
-  "Despeñaderos": {
-   "km": 2.2,
-   "max_dbz": 59,
+   "max_dbz": 53,
    "tope_km": 11.1,
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 17.0,
+   "max_dbz": 58,
+   "tope_km": 11.7,
+   "cuenca_de": "Lago San Roque",
    "nivel": "muy intensa"
+  },
+  "Dique Chico": {
+   "km": 11.2,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Estancia Vieja": {
+   "km": 7.5,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio Los Chorrillos",
+   "nivel": "intensa"
+  },
+  "Falda del Carmen": {
+   "km": 5.0,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Villa Flor Serrana": {
+   "km": 2.2,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Villa Parque Santa Ana": {
+   "km": 15.2,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Las Jarillas": {
+   "km": 3.9,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "El Manzano": {
+   "km": 3.5,
+   "max_dbz": 53,
+   "tope_km": 11.7,
+   "nivel": "intensa"
+  },
+  "Villa Rio Icho Cruz": {
+   "km": 4.9,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
