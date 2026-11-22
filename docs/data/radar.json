@@ -1,108 +1,85 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 07:15",
+ "consultado": "2026-11-22 07:30",
  "radar": "RMA1",
- "observacion": "2026-11-22 07:02",
+ "observacion": "2026-11-22 07:20",
  "nucleos": [
   {
-   "lat": -30.9442,
-   "lon": -65.4183,
-   "dbz": 53,
+   "lat": -31.3148,
+   "lon": -64.7083,
+   "dbz": 50,
    "max_dbz": 59,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.3329,
-   "lon": -64.8267,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.1704,
-   "lon": -64.676,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.8355,
-   "lon": -64.3963,
-   "dbz": 50,
-   "max_dbz": 57,
    "tope_km": 10.0
   },
   {
-   "lat": -30.7629,
-   "lon": -63.8261,
+   "lat": -31.1342,
+   "lon": -64.5254,
    "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 10.6
+   "max_dbz": 52,
+   "tope_km": 7.0
   },
   {
-   "lat": -31.396,
-   "lon": -64.8051,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 16.4
+   "lat": -31.387,
+   "lon": -64.6438,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {
   "Cosquin": {
-   "nucleos": 1,
-   "max_dbz": 56
+   "nucleos": 2,
+   "max_dbz": 59
   }
  },
  "localidades": {
-  "Villa de Soto": {
-   "km": 55.1,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Soto",
-   "nivel": "muy intensa"
+  "Cabalango": {
+   "km": 7.1,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Los Chorrillos",
+   "nivel": "intensa"
   },
   "Santa María de Punilla": {
-   "km": 36.3,
-   "max_dbz": 56,
-   "tope_km": 16.4,
+   "km": 24.6,
+   "max_dbz": 59,
+   "tope_km": 10.0,
    "cuenca_de": "Río Cosquín",
    "nivel": "muy intensa"
   },
-  "Cruz de Caña": {
-   "km": 29.5,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "cuenca_de": "Río San Guillermo",
-   "nivel": "muy intensa"
+  "Valle Hermoso": {
+   "km": 4.1,
+   "max_dbz": 52,
+   "tope_km": 7.0,
+   "nivel": "intensa"
   },
-  "Jesús María": {
-   "km": 29.2,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "cuenca_de": "Jesus Maria",
-   "nivel": "muy intensa"
-  },
-  "Bañado de Soto": {
-   "km": 60.4,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "cuenca_de": "San Guillermo De Soto",
-   "nivel": "muy intensa"
-  },
-  "Colonia Hogar": {
-   "km": 11.6,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo del Pozo",
-   "nivel": "muy intensa"
+  "Casa Grande": {
+   "km": 5.5,
+   "max_dbz": 52,
+   "tope_km": 7.0,
+   "cuenca_de": "Rio Grande De Punilla",
+   "nivel": "intensa"
   },
   "San Roque": {
-   "km": 33.1,
-   "max_dbz": 56,
-   "tope_km": 16.4,
+   "km": 23.3,
+   "max_dbz": 59,
+   "tope_km": 10.0,
    "cuenca_de": "Lago San Roque",
    "nivel": "muy intensa"
+  },
+  "Estancia Vieja": {
+   "km": 10.4,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Los Chorrillos",
+   "nivel": "intensa"
+  },
+  "Villa Flor Serrana": {
+   "km": 4.2,
+   "max_dbz": 49,
+   "tope_km": 10.0,
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 10
 }
