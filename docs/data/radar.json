@@ -1,86 +1,109 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 02:45",
+ "consultado": "2026-11-22 03:01",
  "radar": "RMA1",
- "observacion": "2026-11-22 02:29",
+ "observacion": "2026-11-22 02:47",
  "nucleos": [
   {
-   "lat": -31.8366,
-   "lon": -65.1171,
+   "lat": -31.9083,
+   "lon": -64.8482,
    "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 16.4
+   "max_dbz": 60,
+   "tope_km": 13.5
   },
   {
-   "lat": -31.7558,
-   "lon": -65.2355,
-   "dbz": 51,
-   "max_dbz": 59,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.1679,
-   "lon": -65.0526,
-   "dbz": 49,
-   "max_dbz": 52,
+   "lat": -31.4861,
+   "lon": -65.4291,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 11.7
   },
   {
-   "lat": -32.6938,
-   "lon": -64.7729,
-   "dbz": 48,
-   "max_dbz": 51,
+   "lat": -31.5851,
+   "lon": -65.3538,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -32.7293,
+   "lon": -64.5469,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 10.6
+  },
+  {
+   "lat": -31.675,
+   "lon": -64.8912,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -31.684,
+   "lon": -65.1279,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alpa Corral": {
-   "km": 4.9,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+  "Los Reartes": {
+   "km": 25.6,
+   "max_dbz": 60,
+   "tope_km": 13.5,
+   "cuenca_de": "Rio De Los Reartes",
+   "nivel": "muy intensa"
   },
   "Villa Dolores": {
-   "km": 14.2,
-   "max_dbz": 61,
-   "tope_km": 16.4,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "muy intensa"
-  },
-  "Sauce Arriba": {
-   "km": 9.5,
-   "max_dbz": 61,
-   "tope_km": 16.4,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Luyaba": {
-   "km": 2.0,
-   "max_dbz": 52,
-   "tope_km": 11.7,
-   "nivel": "intensa"
-  },
-  "La Cortadera": {
-   "km": 13.9,
-   "max_dbz": 59,
-   "tope_km": 11.1,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Santa Rita": {
-   "km": 34.9,
+   "km": 36.3,
    "max_dbz": 51,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "tope_km": 16.4,
+   "cuenca_de": "Arroyo De Las Tapias",
    "nivel": "intensa"
   },
-  "Unión de los Rios": {
-   "km": 3.5,
+  "Mina Clavero": {
+   "km": 8.6,
    "max_dbz": 51,
-   "tope_km": 10.6,
+   "tope_km": 16.4,
+   "cuenca_de": "Mina Clavero",
    "nivel": "intensa"
+  },
+  "Intiyaco": {
+   "km": 13.5,
+   "max_dbz": 60,
+   "tope_km": 13.5,
+   "cuenca_de": "Río de los Reartes",
+   "nivel": "muy intensa"
+  },
+  "Capilla Vieja": {
+   "km": 23.2,
+   "max_dbz": 60,
+   "tope_km": 13.5,
+   "cuenca_de": "Rio De Los Reartes",
+   "nivel": "muy intensa"
+  },
+  "El Medanito": {
+   "km": 1.9,
+   "max_dbz": 57,
+   "tope_km": 14.1,
+   "nivel": "muy intensa"
+  },
+  "La Boca del Río": {
+   "km": 41.7,
+   "max_dbz": 60,
+   "tope_km": 13.5,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa la Merced": {
+   "km": 34.2,
+   "max_dbz": 60,
+   "tope_km": 13.5,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
