@@ -1,39 +1,38 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 14:45",
- "radar": "RMA16",
- "observacion": "2026-11-22 14:30",
+ "consultado": "2026-11-22 15:00",
+ "radar": "RMA1",
+ "observacion": "2026-11-22 14:45",
  "nucleos": [
   {
-   "lat": -31.6707,
-   "lon": -65.1326,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 13.5
+   "lat": -31.675,
+   "lon": -64.9773,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 28.2,
-   "max_dbz": 48,
-   "tope_km": 13.5,
+   "km": 31.6,
+   "max_dbz": 57,
+   "tope_km": 10.0,
    "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "intensa"
-  },
-  "San Lorenzo": {
-   "km": 9.5,
-   "max_dbz": 48,
-   "tope_km": 13.5,
-   "cuenca_de": "Río Panaholma",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Mina Clavero": {
-   "km": 12.4,
-   "max_dbz": 48,
-   "tope_km": 13.5,
+   "km": 8.1,
+   "max_dbz": 57,
+   "tope_km": 10.0,
    "cuenca_de": "Panaholma",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "Villa Benegas": {
+   "km": 4.5,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
   }
  },
  "minutos": 15
