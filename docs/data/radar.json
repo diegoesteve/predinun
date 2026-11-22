@@ -1,60 +1,81 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 06:00",
+ "consultado": "2026-11-22 06:15",
  "radar": "RMA1",
- "observacion": "2026-11-22 05:49",
+ "observacion": "2026-11-22 05:58",
  "nucleos": [
   {
-   "lat": -30.8717,
-   "lon": -64.0951,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lat": -30.908,
+   "lon": -64.4286,
+   "dbz": 51,
+   "max_dbz": 58,
    "tope_km": 10.0
   },
   {
-   "lat": -30.917,
-   "lon": -64.5039,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 10.0
+   "lat": -30.8627,
+   "lon": -64.6115,
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 9.4
   },
   {
-   "lat": -31.5671,
-   "lon": -64.2242,
-   "dbz": 50,
+   "lat": -30.8536,
+   "lon": -64.0521,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.4681,
+   "lon": -64.4824,
+   "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 8.8
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Marcos Sierras": {
-   "km": 19.6,
-   "max_dbz": 55,
+  "Cordoba": {
+   "km": 20.1,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "cuenca_de": "Arroyo La Cañada",
+   "nivel": "intensa"
+  },
+  "Ascochinga": {
+   "km": 14.8,
+   "max_dbz": 58,
    "tope_km": 10.0,
-   "cuenca_de": "Rio San Marcos Sierra",
+   "cuenca_de": "Río de San Miguel",
    "nivel": "muy intensa"
   },
-  "Capilla del Monte": {
-   "km": 6.8,
-   "max_dbz": 55,
+  "San Antonio de Arredondo": {
+   "km": 4.4,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "nivel": "intensa"
+  },
+  "Jesús María": {
+   "km": 28.8,
+   "max_dbz": 58,
    "tope_km": 10.0,
-   "cuenca_de": "Río Dolores",
+   "cuenca_de": "Jesus Maria",
    "nivel": "muy intensa"
   },
-  "San Esteban": {
-   "km": 2.5,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo La Pampilla",
-   "nivel": "muy intensa"
+  "Barrio Sierras de Oro": {
+   "km": 5.0,
+   "max_dbz": 53,
+   "tope_km": 8.2,
+   "cuenca_de": "Arroyo Seco",
+   "nivel": "intensa"
   },
-  "Los Cocos": {
-   "km": 1.6,
-   "max_dbz": 55,
+  "La Paz": {
+   "km": 20.9,
+   "max_dbz": 58,
    "tope_km": 10.0,
+   "cuenca_de": "Río Ascochinga",
    "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
