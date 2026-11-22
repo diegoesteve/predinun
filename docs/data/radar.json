@@ -1,109 +1,89 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 03:01",
+ "consultado": "2026-11-22 03:15",
  "radar": "RMA1",
- "observacion": "2026-11-22 02:47",
+ "observacion": "2026-11-22 02:56",
  "nucleos": [
   {
-   "lat": -31.9083,
-   "lon": -64.8482,
-   "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -31.4861,
-   "lon": -65.4291,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.5851,
+   "lat": -31.441,
    "lon": -65.3538,
-   "dbz": 50,
-   "max_dbz": 57,
+   "dbz": 51,
+   "max_dbz": 60,
    "tope_km": 14.1
   },
   {
-   "lat": -32.7293,
-   "lon": -64.5469,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 10.6
+   "lat": -31.7917,
+   "lon": -64.8051,
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 13.5
   },
   {
-   "lat": -31.675,
-   "lon": -64.8912,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 16.4
+   "lat": -32.7382,
+   "lon": -64.4931,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 17.0
   },
   {
-   "lat": -31.684,
-   "lon": -65.1279,
-   "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 14.7
+   "lat": -31.63,
+   "lon": -64.9235,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Reartes": {
-   "km": 25.6,
-   "max_dbz": 60,
-   "tope_km": 13.5,
-   "cuenca_de": "Rio De Los Reartes",
+  "Villa Dolores": {
+   "km": 38.5,
+   "max_dbz": 56,
+   "tope_km": 12.9,
+   "cuenca_de": "Arroyo De Las Tapias",
    "nivel": "muy intensa"
   },
-  "Villa Dolores": {
-   "km": 36.3,
-   "max_dbz": 51,
-   "tope_km": 16.4,
-   "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "intensa"
+  "Potrero de Garay": {
+   "km": 22.5,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "cuenca_de": "Rio San Pedro",
+   "nivel": "muy intensa"
   },
   "Mina Clavero": {
-   "km": 8.6,
-   "max_dbz": 51,
-   "tope_km": 16.4,
+   "km": 10.3,
+   "max_dbz": 56,
+   "tope_km": 12.9,
    "cuenca_de": "Mina Clavero",
-   "nivel": "intensa"
-  },
-  "Intiyaco": {
-   "km": 13.5,
-   "max_dbz": 60,
-   "tope_km": 13.5,
-   "cuenca_de": "Río de los Reartes",
    "nivel": "muy intensa"
   },
-  "Capilla Vieja": {
-   "km": 23.2,
+  "Chancaní": {
+   "km": 9.6,
    "max_dbz": 60,
-   "tope_km": 13.5,
-   "cuenca_de": "Rio De Los Reartes",
-   "nivel": "muy intensa"
-  },
-  "El Medanito": {
-   "km": 1.9,
-   "max_dbz": 57,
    "tope_km": 14.1,
+   "cuenca_de": "Río del Norte (Chancani)",
+   "nivel": "muy intensa"
+  },
+  "Villa Benegas": {
+   "km": 4.0,
+   "max_dbz": 56,
+   "tope_km": 12.9,
+   "cuenca_de": "Mina Clavero",
    "nivel": "muy intensa"
   },
   "La Boca del Río": {
-   "km": 41.7,
-   "max_dbz": 60,
+   "km": 37.5,
+   "max_dbz": 59,
    "tope_km": 13.5,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 34.2,
-   "max_dbz": 60,
+   "km": 28.6,
+   "max_dbz": 59,
    "tope_km": 13.5,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 19
 }
