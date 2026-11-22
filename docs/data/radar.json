@@ -1,61 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 22:15",
+ "consultado": "2026-11-21 22:30",
  "radar": "RMA1",
- "observacion": "2026-11-21 22:02",
+ "observacion": "2026-11-21 22:11",
  "nucleos": [
   {
-   "lat": -32.4357,
-   "lon": -64.9342,
-   "dbz": 51,
+   "lat": -32.4268,
+   "lon": -64.9557,
+   "dbz": 50,
    "max_dbz": 59,
    "tope_km": 11.1
   },
   {
    "lat": -32.4179,
-   "lon": -63.8369,
-   "dbz": 50,
-   "max_dbz": 54,
+   "lon": -64.7836,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 12.3
   },
   {
-   "lat": -32.4268,
-   "lon": -64.7298,
+   "lat": -32.4357,
+   "lon": -63.9015,
    "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 12.9
+   "max_dbz": 50,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.4268,
+   "lon": -64.0305,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Carpintería": {
-   "km": 11.5,
+   "km": 9.3,
    "max_dbz": 59,
    "tope_km": 11.1,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
   "Los Molles": {
-   "km": 6.2,
+   "km": 4.2,
    "max_dbz": 59,
    "tope_km": 11.1,
-   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
   "Cañada del Sauce": {
-   "km": 9.8,
-   "max_dbz": 54,
-   "tope_km": 12.9,
+   "km": 13.9,
+   "max_dbz": 53,
+   "tope_km": 12.3,
    "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
   "Villa la Rivera": {
-   "km": 25.2,
-   "max_dbz": 54,
-   "tope_km": 12.9,
+   "km": 28.7,
+   "max_dbz": 53,
+   "tope_km": 12.3,
    "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 19
 }
