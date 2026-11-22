@@ -1,32 +1,80 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 21:45",
+ "consultado": "2026-11-21 22:00",
  "radar": "RMA1",
- "observacion": "2026-11-21 21:35",
+ "observacion": "2026-11-21 21:44",
  "nucleos": [
   {
-   "lat": -32.2662,
-   "lon": -64.7944,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 10.6
+   "lat": -32.4713,
+   "lon": -65.1064,
+   "dbz": 52,
+   "max_dbz": 56,
+   "tope_km": 9.4
   },
   {
    "lat": -32.4981,
-   "lon": -64.0198,
-   "dbz": 49,
+   "lon": -65.0095,
+   "dbz": 51,
    "max_dbz": 55,
-   "tope_km": 15.2
+   "tope_km": 11.7
   },
   {
-   "lat": -32.3019,
-   "lon": -64.8804,
+   "lat": -32.2305,
+   "lon": -64.7191,
+   "dbz": 50,
+   "max_dbz": 58,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.4179,
+   "lon": -64.8051,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.4357,
+   "lon": -63.8907,
    "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 10.0
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.2573,
+   "lon": -64.8051,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 11
+ "localidades": {
+  "Cortaderas": {
+   "km": 2.1,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 15.8,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Villa la Rivera": {
+   "km": 30.4,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Villa Elena": {
+   "km": 3.3,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 17
 }
