@@ -1,81 +1,71 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 09:30",
+ "consultado": "2026-11-22 09:45",
  "radar": "RMA1",
- "observacion": "2026-11-22 09:19",
+ "observacion": "2026-11-22 09:28",
  "nucleos": [
   {
-   "lat": -31.2517,
-   "lon": -64.3533,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -31.2697,
-   "lon": -64.4824,
+   "lat": -31.2607,
+   "lon": -64.3963,
    "dbz": 51,
    "max_dbz": 51,
    "tope_km": 9.4
   },
   {
-   "lat": -31.2155,
-   "lon": -64.0628,
+   "lat": -31.2426,
+   "lon": -64.2672,
    "dbz": 50,
    "max_dbz": 50,
    "tope_km": 9.4
+  },
+  {
+   "lat": -31.2968,
+   "lon": -64.0843,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {
   "SierrasChicas": {
    "nucleos": 1,
-   "max_dbz": 60
-  },
-  "Cosquin": {
-   "nucleos": 1,
    "max_dbz": 51
   }
  },
  "localidades": {
-  "Cosquin": {
-   "km": 4.8,
-   "max_dbz": 51,
+  "Cordoba": {
+   "km": 14.2,
+   "max_dbz": 50,
    "tope_km": 9.4,
+   "cuenca_de": "Canal",
    "nivel": "intensa"
   },
   "Villa Allende": {
-   "km": 4.9,
-   "max_dbz": 60,
+   "km": 8.0,
+   "max_dbz": 51,
    "tope_km": 9.4,
    "cuenca_de": "Arroyo Chico",
-   "nivel": "muy intensa"
-  },
-  "Unquillo": {
-   "km": 3.4,
-   "max_dbz": 60,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Mendiolaza": {
-   "km": 2.0,
-   "max_dbz": 60,
+   "km": 5.8,
+   "max_dbz": 51,
    "tope_km": 9.4,
-   "cuenca_de": "Arroyo Santa Lucía",
+   "cuenca_de": "Arroyo San Fernando",
+   "nivel": "intensa"
+  },
+  "Estación Juárez Celman": {
+   "km": 4.5,
+   "max_dbz": 56,
+   "tope_km": 10.0,
    "nivel": "muy intensa"
   },
-  "Santa María de Punilla": {
-   "km": 2.6,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "nivel": "intensa"
-  },
-  "San Roque": {
-   "km": 7.5,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "cuenca_de": "Lago San Roque",
-   "nivel": "intensa"
+  "El Gateado": {
+   "km": 2.2,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 12
+ "minutos": 18
 }
