@@ -37,25 +37,11 @@
     "smap_m3m3": 0.12,
     "smap_percentil": 70,
     "smap_fecha": "2026-11-19 22:30 UTC",
-    "estimado_hoy_m3m3": 0.134,
-    "estimado_hoy_percentil": 89,
     "percentil": 70,
     "es_estimado": false,
     "estado": "normal"
    },
-   "secado": {
-    "dias_atras": 10,
-    "dias_adelante": 7,
-    "et0_ult_mm": 46.6,
-    "et0_ult_normal_mm": 54.7,
-    "et0_ult_pct": 85,
-    "radiacion_ult_pct": 91,
-    "nubosidad_ult_media": 64,
-    "nubosidad_ult_normal": 39,
-    "dias_nublados_ult": 5,
-    "et0_prox_mm": 39.1,
-    "et0_prox_pct": 104
-   }
+   "secado": null
   },
   {
    "cuenca": "Cosquin",
@@ -91,6 +77,8 @@
     "smap_m3m3": 0.128,
     "smap_percentil": 77,
     "smap_fecha": "2026-11-19 22:30 UTC",
+    "estimado_hoy_m3m3": 0.153,
+    "estimado_hoy_percentil": 100,
     "percentil": 77,
     "es_estimado": false,
     "estado": "normal"
@@ -167,6 +155,12 @@
    "cuenca": "Capital",
    "nombre": "Capital (experimental)",
    "modelos": {
+    "GFS": {
+     "max_3h_mm": 8.2,
+     "umbral_mm": 7.7,
+     "fuente_umbral": "24 h antes",
+     "cuando": "2026-11-24 02:00"
+    },
     "ICON": {
      "max_3h_mm": 5.2,
      "umbral_mm": 11.4,
@@ -314,28 +308,28 @@
     "nombre": "Capital (experimental)",
     "suelo_saturado": false,
     "prob": [
-     0.03,
-     0.03,
-     0.1,
+     0.13,
+     0.02,
+     0.11,
      0.0,
      0.0,
      0.0,
      0.0,
      0.0,
-     0.07,
-     0.12
+     0.05,
+     0.08
     ],
     "mm": [
-     4.8,
-     8.3,
-     8.0,
+     5.7,
+     8.7,
+     8.7,
      0.0,
-     0.5,
+     0.3,
      0.0,
      0.0,
      0.0,
-     2.5,
-     9.9
+     1.7,
+     6.6
     ]
    }
   }
