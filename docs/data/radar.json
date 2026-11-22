@@ -1,44 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 23:30",
+ "consultado": "2026-11-21 23:45",
  "radar": "RMA1",
- "observacion": "2026-11-21 23:15",
+ "observacion": "2026-11-21 23:24",
  "nucleos": [
   {
-   "lat": -32.3644,
-   "lon": -64.9127,
-   "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 10.0
+   "lat": -32.1769,
+   "lon": -64.3748,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 8.8
   },
   {
-   "lat": -32.2037,
-   "lon": -64.4394,
-   "dbz": 50,
+   "lat": -32.507,
+   "lon": -64.8912,
+   "dbz": 48,
    "max_dbz": 52,
-   "tope_km": 7.0
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Embalse": {
-   "km": 2.0,
+  "Cañada del Sauce": {
+   "km": 27.4,
    "max_dbz": 52,
-   "tope_km": 7.0,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
-  "Villa del Dique": {
-   "km": 1.2,
+  "Villa la Rivera": {
+   "km": 42.6,
    "max_dbz": 52,
-   "tope_km": 7.0,
-   "nivel": "intensa"
-  },
-  "Villa Rumipal": {
-   "km": 4.8,
-   "max_dbz": 52,
-   "tope_km": 7.0,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 21
 }
