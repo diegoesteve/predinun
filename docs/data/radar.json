@@ -1,59 +1,57 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 07:45",
+ "consultado": "2026-11-22 08:00",
  "radar": "RMA1",
- "observacion": "2026-11-22 07:30",
+ "observacion": "2026-11-22 07:48",
  "nucleos": [
   {
-   "lat": -30.9804,
-   "lon": -65.1817,
-   "dbz": 52,
-   "max_dbz": 57,
-   "tope_km": 9.4
+   "lat": -31.0257,
+   "lon": -64.9988,
+   "dbz": 55,
+   "max_dbz": 67,
+   "tope_km": 13.5
   },
   {
-   "lat": -31.2787,
-   "lon": -64.6115,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 10.0
+   "lat": -31.2517,
+   "lon": -64.4501,
+   "dbz": 53,
+   "max_dbz": 59,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {
   "Cosquin": {
    "nucleos": 1,
-   "max_dbz": 56
+   "max_dbz": 59
   }
  },
  "localidades": {
-  "Santa María de Punilla": {
-   "km": 14.8,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Cosquín",
+  "Cosquin": {
+   "km": 2.4,
+   "max_dbz": 59,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   },
-  "Santa Ana": {
-   "km": 16.5,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Agua Blanca",
+  "Santa María de Punilla": {
+   "km": 1.3,
+   "max_dbz": 59,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   },
   "San Roque": {
-   "km": 15.3,
-   "max_dbz": 56,
-   "tope_km": 10.0,
+   "km": 9.4,
+   "max_dbz": 59,
+   "tope_km": 10.6,
    "cuenca_de": "Lago San Roque",
    "nivel": "muy intensa"
   },
-  "Piedras Amontonadas": {
-   "km": 11.2,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "cuenca_de": "Río Seco",
+  "Tres Árboles": {
+   "km": 14.4,
+   "max_dbz": 67,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo Orcoyana",
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
