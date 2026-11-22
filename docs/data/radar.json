@@ -1,166 +1,104 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 04:30",
+ "consultado": "2026-11-22 04:45",
  "radar": "RMA1",
- "observacion": "2026-11-22 04:18",
+ "observacion": "2026-11-22 04:36",
  "nucleos": [
   {
-   "lat": -31.2787,
-   "lon": -64.0521,
-   "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.621,
-   "lon": -63.7508,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.089,
-   "lon": -64.1596,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.08,
+   "lat": -30.7811,
    "lon": -64.235,
    "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.1342,
-   "lon": -64.4931,
-   "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.2878,
-   "lon": -64.2134,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.1975,
-   "lon": -64.0843,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.3058,
-   "lon": -64.3856,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.2065,
-   "lon": -64.7621,
-   "dbz": 48,
-   "max_dbz": 53,
+   "max_dbz": 50,
    "tope_km": 9.4
   },
   {
-   "lat": -31.7109,
-   "lon": -63.8907,
+   "lat": -31.1704,
+   "lon": -64.0198,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -30.9714,
+   "lon": -64.5469,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.3058,
+   "lon": -63.9875,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.1433,
+   "lon": -64.321,
    "dbz": 48,
    "max_dbz": 48,
    "tope_km": 10.0
-  },
-  {
-   "lat": -31.2155,
-   "lon": -64.5039,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
   }
  ],
  "cuencas": {
-  "Cosquin": {
-   "nucleos": 2,
-   "max_dbz": 56
+  "SierrasChicas": {
+   "nucleos": 1,
+   "max_dbz": 48
   }
  },
  "localidades": {
-  "Cordoba": {
-   "km": 7.0,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "Canal",
-   "nivel": "muy intensa"
+  "Rio Ceballos": {
+   "km": 2.7,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "nivel": "intensa"
   },
-  "Cosquin": {
-   "km": 4.6,
+  "Unquillo": {
+   "km": 8.2,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Ceballos",
+   "nivel": "intensa"
+  },
+  "Salsipuedes": {
+   "km": 2.5,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
+  "San Marcos Sierras": {
+   "km": 22.8,
    "max_dbz": 51,
-   "tope_km": 10.6,
+   "tope_km": 8.2,
+   "cuenca_de": "Rio San Marcos Sierra",
    "nivel": "intensa"
   },
-  "La Calera": {
-   "km": 4.4,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo La Cascada",
+  "Capilla del Monte": {
+   "km": 11.6,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "cuenca_de": "Río Dolores",
    "nivel": "intensa"
   },
-  "La Falda": {
-   "km": 4.5,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
-  "Santa María de Punilla": {
-   "km": 14.6,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Cosquín",
-   "nivel": "muy intensa"
-  },
-  "Valle Hermoso": {
-   "km": 1.7,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
-  "Casa Grande": {
-   "km": 3.2,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
-  "San Roque": {
-   "km": 22.6,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "cuenca_de": "Lago San Roque",
-   "nivel": "muy intensa"
-  },
-  "Characato": {
-   "km": 8.6,
-   "max_dbz": 53,
+  "Villa del Totoral": {
+   "km": 15.8,
+   "max_dbz": 50,
    "tope_km": 9.4,
-   "cuenca_de": "Río Ávalos",
+   "cuenca_de": "Rio Totoral",
    "nivel": "intensa"
   },
-  "El Gateado": {
-   "km": 10.8,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+  "San Esteban": {
+   "km": 4.9,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "nivel": "intensa"
   },
-  "Parque Norte": {
-   "km": 3.7,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
+  "El Sauce": {
+   "km": 2.8,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 9
 }
