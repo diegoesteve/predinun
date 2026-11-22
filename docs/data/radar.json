@@ -1,70 +1,83 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 02:15",
+ "consultado": "2026-11-22 02:30",
  "radar": "RMA1",
- "observacion": "2026-11-22 02:01",
+ "observacion": "2026-11-22 02:11",
  "nucleos": [
   {
-   "lat": -31.98,
-   "lon": -65.3323,
-   "dbz": 53,
-   "max_dbz": 63,
+   "lat": -31.9621,
+   "lon": -65.2139,
+   "dbz": 55,
+   "max_dbz": 66,
    "tope_km": 17.0
   },
   {
-   "lat": -32.2126,
-   "lon": -65.0203,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -32.6938,
-   "lon": -65.0526,
-   "dbz": 49,
+   "lat": -32.7027,
+   "lon": -64.9557,
+   "dbz": 50,
    "max_dbz": 53,
    "tope_km": 11.1
   },
   {
-   "lat": -32.1411,
-   "lon": -64.7836,
+   "lat": -32.1858,
+   "lon": -65.2785,
    "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 12.3
+   "max_dbz": 53,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.2037,
+   "lon": -65.0741,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Paz": {
-   "km": 2.5,
-   "max_dbz": 57,
-   "tope_km": 12.3,
+  "Villa Dolores": {
+   "km": 3.9,
+   "max_dbz": 66,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   },
-  "El Durazno": {
-   "km": 1.5,
-   "max_dbz": 54,
-   "tope_km": 12.3,
+  "La Paz": {
+   "km": 3.0,
+   "max_dbz": 49,
+   "tope_km": 12.9,
    "nivel": "intensa"
   },
-  "Paraje las Chacras": {
-   "km": 3.4,
-   "max_dbz": 57,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
+  "Papagayos": {
+   "km": 3.5,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "nivel": "intensa"
   },
   "Loma Bola": {
-   "km": 0.7,
-   "max_dbz": 57,
-   "tope_km": 12.3,
+   "km": 4.5,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "nivel": "intensa"
+  },
+  "Los Cajones": {
+   "km": 17.7,
+   "max_dbz": 66,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "San Jose": {
-   "km": 2.8,
-   "max_dbz": 63,
+  "Los Callejones": {
+   "km": 3.6,
+   "max_dbz": 66,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Villa Sarmiento": {
+   "km": 3.9,
+   "max_dbz": 66,
    "tope_km": 17.0,
    "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 20
 }
