@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22 04:15",
+ "actualizado": "2026-11-22 04:30",
  "boletin_generado": "2026-11-22 03:00",
  "zonas": [
   {
@@ -8,11 +8,11 @@
   },
   {
    "zona": "Punilla norte",
-   "estado": "normal"
+   "estado": "amarillo"
   },
   {
    "zona": "Punilla sur / San Antonio",
-   "estado": "amarillo"
+   "estado": "normal"
   },
   {
    "zona": "Sierras Chicas",
@@ -35,9 +35,9 @@
    "nombre": "Cosquín",
    "zona_estaciones": "Punilla norte",
    "nivel": "amarillo",
-   "estaciones": "verde",
+   "estaciones": "amarillo",
    "pronostico": "amarillo",
-   "motivo": "pronóstico 48 h: amarillo",
+   "motivo": "estaciones: amarillo; pronóstico 48 h: amarillo",
    "suelo": "normal"
   },
   {
@@ -45,9 +45,9 @@
    "nombre": "San Antonio / Carlos Paz",
    "zona_estaciones": "Punilla sur / San Antonio",
    "nivel": "amarillo",
-   "estaciones": "amarillo",
+   "estaciones": "verde",
    "pronostico": "amarillo",
-   "motivo": "estaciones: amarillo; pronóstico 48 h: amarillo",
+   "motivo": "pronóstico 48 h: amarillo",
    "suelo": "normal"
   },
   {
