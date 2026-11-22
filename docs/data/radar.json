@@ -1,54 +1,70 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 02:00",
+ "consultado": "2026-11-22 02:15",
  "radar": "RMA1",
- "observacion": "2026-11-22 01:43",
+ "observacion": "2026-11-22 02:01",
  "nucleos": [
   {
-   "lat": -32.1232,
-   "lon": -65.5474,
-   "dbz": 52,
-   "max_dbz": 61,
+   "lat": -31.98,
+   "lon": -65.3323,
+   "dbz": 53,
+   "max_dbz": 63,
    "tope_km": 17.0
   },
   {
-   "lat": -32.6938,
-   "lon": -65.257,
+   "lat": -32.2126,
+   "lon": -65.0203,
    "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 9.4
+   "max_dbz": 57,
+   "tope_km": 12.3
   },
   {
-   "lat": -32.1501,
-   "lon": -64.8804,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.2215,
-   "lon": -65.1602,
+   "lat": -32.6938,
+   "lon": -65.0526,
    "dbz": 49,
    "max_dbz": 53,
    "tope_km": 11.1
   },
   {
-   "lat": -32.2573,
-   "lon": -65.3861,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 12.9
+   "lat": -32.1411,
+   "lon": -64.7836,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
+  "La Paz": {
+   "km": 2.5,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "nivel": "muy intensa"
+  },
   "El Durazno": {
-   "km": 9.1,
-   "max_dbz": 50,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Sombra de Toro",
+   "km": 1.5,
+   "max_dbz": 54,
+   "tope_km": 12.3,
    "nivel": "intensa"
+  },
+  "Paraje las Chacras": {
+   "km": 3.4,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "nivel": "muy intensa"
+  },
+  "Loma Bola": {
+   "km": 0.7,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "nivel": "muy intensa"
+  },
+  "San Jose": {
+   "km": 2.8,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
