@@ -1,150 +1,109 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 05:00",
+ "consultado": "2026-11-22 05:15",
  "radar": "RMA1",
- "observacion": "2026-11-22 04:46",
+ "observacion": "2026-11-22 05:04",
  "nucleos": [
   {
-   "lat": -31.657,
-   "lon": -64.8697,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.1071,
-   "lon": -64.0521,
-   "dbz": 49,
+   "lat": -31.63,
+   "lon": -64.6653,
+   "dbz": 52,
    "max_dbz": 52,
-   "tope_km": 10.6
+   "tope_km": 11.1
   },
   {
-   "lat": -31.1794,
-   "lon": -63.9552,
-   "dbz": 49,
-   "max_dbz": 53,
+   "lat": -31.6121,
+   "lon": -64.7621,
+   "dbz": 51,
+   "max_dbz": 62,
    "tope_km": 10.6
   },
   {
    "lat": -30.9261,
-   "lon": -64.3963,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.0
+   "lon": -64.4394,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 9.4
   },
   {
-   "lat": -30.8989,
-   "lon": -64.5362,
-   "dbz": 48,
-   "max_dbz": 48,
+   "lat": -30.9895,
+   "lon": -64.1274,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 8.8
   },
   {
-   "lat": -31.1071,
-   "lon": -64.235,
+   "lat": -31.0438,
+   "lon": -64.0413,
    "dbz": 48,
    "max_dbz": 51,
    "tope_km": 10.0
   },
   {
-   "lat": -31.0347,
-   "lon": -63.8584,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.405,
-   "lon": -63.8584,
+   "lat": -31.1252,
+   "lon": -64.0413,
    "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 10.6
+   "max_dbz": 49,
+   "tope_km": 10.0
   },
   {
-   "lat": -30.7629,
-   "lon": -64.1059,
+   "lat": -30.772,
+   "lon": -63.9445,
    "dbz": 47,
    "max_dbz": 48,
-   "tope_km": 9.4
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Ascochinga": {
-   "km": 11.3,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "cuenca_de": "Río de San Miguel",
-   "nivel": "intensa"
-  },
-  "San Marcos Sierras": {
-   "km": 16.1,
-   "max_dbz": 48,
-   "tope_km": 8.8,
-   "cuenca_de": "Rio San Marcos Sierra",
-   "nivel": "intensa"
+  "La Granja": {
+   "km": 17.4,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "cuenca_de": "Río La Granja",
+   "nivel": "muy intensa"
   },
   "Jesús María": {
-   "km": 25.4,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "cuenca_de": "Jesus Maria",
-   "nivel": "intensa"
-  },
-  "Capilla del Monte": {
-   "km": 3.6,
-   "max_dbz": 48,
+   "km": 3.2,
+   "max_dbz": 53,
    "tope_km": 8.8,
-   "cuenca_de": "Río Dolores",
    "nivel": "intensa"
   },
   "Anisacate": {
-   "km": 43.4,
-   "max_dbz": 55,
-   "tope_km": 12.3,
+   "km": 34.7,
+   "max_dbz": 62,
+   "tope_km": 10.6,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
-  "La Paz": {
-   "km": 17.4,
-   "max_dbz": 52,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Ascochinga",
-   "nivel": "intensa"
+  "Los Molles": {
+   "km": 23.7,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "cuenca_de": "Río La Granja",
+   "nivel": "muy intensa"
+  },
+  "Colonia Caroya": {
+   "km": 34.6,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Carnero",
+   "nivel": "muy intensa"
   },
   "La Serranita": {
-   "km": 39.8,
-   "max_dbz": 55,
-   "tope_km": 12.3,
+   "km": 31.7,
+   "max_dbz": 62,
+   "tope_km": 10.6,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
-  },
-  "San Esteban": {
-   "km": 3.3,
-   "max_dbz": 48,
-   "tope_km": 8.8,
-   "nivel": "intensa"
-  },
-  "General Paz": {
-   "km": 9.3,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
   },
   "La Paisanita": {
-   "km": 37.2,
-   "max_dbz": 55,
-   "tope_km": 12.3,
+   "km": 29.1,
+   "max_dbz": 62,
+   "tope_km": 10.6,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
-  },
-  "Los Cocos": {
-   "km": 4.7,
-   "max_dbz": 48,
-   "tope_km": 8.8,
-   "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
