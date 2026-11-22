@@ -1,73 +1,78 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 08:15",
+ "consultado": "2026-11-22 08:30",
  "radar": "RMA1",
- "observacion": "2026-11-22 07:57",
+ "observacion": "2026-11-22 08:15",
  "nucleos": [
   {
-   "lat": -31.0347,
-   "lon": -64.902,
-   "dbz": 55,
-   "max_dbz": 66,
-   "tope_km": 12.3
+   "lat": -31.0981,
+   "lon": -64.6653,
+   "dbz": 54,
+   "max_dbz": 64,
+   "tope_km": 13.5
   },
   {
-   "lat": -31.2336,
-   "lon": -64.3856,
-   "dbz": 53,
-   "max_dbz": 58,
+   "lat": -31.1884,
+   "lon": -64.2027,
+   "dbz": 50,
+   "max_dbz": 57,
    "tope_km": 9.4
   },
   {
    "lat": -31.3419,
-   "lon": -64.8804,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 16.4
+   "lon": -64.7621,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.3329,
+   "lon": -64.9557,
+   "dbz": 49,
+   "max_dbz": 50,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {
-  "SierrasChicas": {
+  "Cosquin": {
    "nucleos": 1,
-   "max_dbz": 58
+   "max_dbz": 52
   }
  },
  "localidades": {
-  "Villa Allende": {
-   "km": 8.5,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Chico",
-   "nivel": "muy intensa"
+  "San Carlos Minas": {
+   "km": 21.4,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "cuenca_de": "Noguinet",
+   "nivel": "intensa"
   },
-  "Mendiolaza": {
-   "km": 5.7,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Santa Lucía",
-   "nivel": "muy intensa"
+  "Santa María de Punilla": {
+   "km": 30.3,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "intensa"
   },
-  "Villa de Soto": {
-   "km": 21.3,
-   "max_dbz": 66,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Soto",
-   "nivel": "muy intensa"
+  "Tala Cañada": {
+   "km": 3.9,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   },
-  "Cruz de Caña": {
-   "km": 29.5,
-   "max_dbz": 56,
-   "tope_km": 16.4,
-   "cuenca_de": "Río San Guillermo",
-   "nivel": "muy intensa"
+  "San Roque": {
+   "km": 28.3,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "cuenca_de": "Lago San Roque",
+   "nivel": "intensa"
   },
-  "Bañado de Soto": {
-   "km": 26.9,
-   "max_dbz": 66,
-   "tope_km": 12.3,
-   "cuenca_de": "San Guillermo De Soto",
-   "nivel": "muy intensa"
+  "San Geronimo": {
+   "km": 2.3,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   }
  },
- "minutos": 19
+ "minutos": 15
 }
