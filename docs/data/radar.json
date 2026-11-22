@@ -1,46 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 01:45",
+ "consultado": "2026-11-22 02:00",
  "radar": "RMA1",
- "observacion": "2026-11-22 01:25",
+ "observacion": "2026-11-22 01:43",
  "nucleos": [
   {
-   "lat": -32.2126,
-   "lon": -64.988,
-   "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.2305,
-   "lon": -65.2247,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 11.7
+   "lat": -32.1232,
+   "lon": -65.5474,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 17.0
   },
   {
    "lat": -32.6938,
-   "lon": -65.4506,
-   "dbz": 48,
+   "lon": -65.257,
+   "dbz": 51,
+   "max_dbz": 55,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -32.1501,
+   "lon": -64.8804,
+   "dbz": 50,
    "max_dbz": 50,
-   "tope_km": 10.0
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.2215,
+   "lon": -65.1602,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.2573,
+   "lon": -65.3861,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Paraje las Chacras": {
-   "km": 4.9,
-   "max_dbz": 58,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
-  },
-  "Loma Bola": {
-   "km": 3.8,
-   "max_dbz": 58,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo El Arenal",
-   "nivel": "muy intensa"
+  "El Durazno": {
+   "km": 9.1,
+   "max_dbz": 50,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Sombra de Toro",
+   "nivel": "intensa"
   }
  },
- "minutos": 20
+ "minutos": 17
 }
