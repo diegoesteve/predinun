@@ -1,71 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 09:45",
+ "consultado": "2026-11-22 10:00",
  "radar": "RMA1",
- "observacion": "2026-11-22 09:28",
+ "observacion": "2026-11-22 09:46",
  "nucleos": [
   {
-   "lat": -31.2607,
-   "lon": -64.3963,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 9.4
-  },
-  {
    "lat": -31.2426,
-   "lon": -64.2672,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -31.2968,
-   "lon": -64.0843,
+   "lon": -64.235,
    "dbz": 50,
    "max_dbz": 56,
-   "tope_km": 10.0
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.3148,
+   "lon": -63.7616,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 9.4
   }
  ],
- "cuencas": {
-  "SierrasChicas": {
-   "nucleos": 1,
-   "max_dbz": 51
-  }
- },
+ "cuencas": {},
  "localidades": {
   "Cordoba": {
-   "km": 14.2,
-   "max_dbz": 50,
-   "tope_km": 9.4,
-   "cuenca_de": "Canal",
-   "nivel": "intensa"
-  },
-  "Villa Allende": {
-   "km": 8.0,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Chico",
-   "nivel": "intensa"
-  },
-  "Mendiolaza": {
-   "km": 5.8,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo San Fernando",
-   "nivel": "intensa"
-  },
-  "Estación Juárez Celman": {
-   "km": 4.5,
+   "km": 12.2,
    "max_dbz": 56,
-   "tope_km": 10.0,
+   "tope_km": 8.2,
+   "cuenca_de": "Canal",
    "nivel": "muy intensa"
   },
   "El Gateado": {
-   "km": 2.2,
+   "km": 14.6,
    "max_dbz": 56,
-   "tope_km": 10.0,
+   "tope_km": 8.2,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 14
 }
