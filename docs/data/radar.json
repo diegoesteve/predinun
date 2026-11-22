@@ -1,10 +1,44 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-21 23:15",
+ "consultado": "2026-11-21 23:30",
  "radar": "RMA1",
- "observacion": "2026-11-21 23:06",
- "nucleos": [],
+ "observacion": "2026-11-21 23:15",
+ "nucleos": [
+  {
+   "lat": -32.3644,
+   "lon": -64.9127,
+   "dbz": 51,
+   "max_dbz": 54,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.2037,
+   "lon": -64.4394,
+   "dbz": 50,
+   "max_dbz": 52,
+   "tope_km": 7.0
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 10
+ "localidades": {
+  "Embalse": {
+   "km": 2.0,
+   "max_dbz": 52,
+   "tope_km": 7.0,
+   "nivel": "intensa"
+  },
+  "Villa del Dique": {
+   "km": 1.2,
+   "max_dbz": 52,
+   "tope_km": 7.0,
+   "nivel": "intensa"
+  },
+  "Villa Rumipal": {
+   "km": 4.8,
+   "max_dbz": 52,
+   "tope_km": 7.0,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 15
 }
