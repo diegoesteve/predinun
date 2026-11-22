@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22 03:45",
+ "actualizado": "2026-11-22 04:00",
  "boletin_generado": "2026-11-22 03:00",
  "zonas": [
   {
@@ -12,11 +12,11 @@
   },
   {
    "zona": "Punilla sur / San Antonio",
-   "estado": "normal"
+   "estado": "amarillo"
   },
   {
    "zona": "Sierras Chicas",
-   "estado": "normal"
+   "estado": "amarillo"
   }
  ],
  "cuencas": [
@@ -24,10 +24,10 @@
    "cuenca": "SierrasChicas",
    "nombre": "Sierras Chicas",
    "zona_estaciones": "Sierras Chicas",
-   "nivel": "verde",
-   "estaciones": "verde",
+   "nivel": "amarillo",
+   "estaciones": "amarillo",
    "pronostico": "verde",
-   "motivo": "sin lluvias fuertes ni crecidas",
+   "motivo": "estaciones: amarillo",
    "suelo": "normal"
   },
   {
@@ -45,9 +45,9 @@
    "nombre": "San Antonio / Carlos Paz",
    "zona_estaciones": "Punilla sur / San Antonio",
    "nivel": "amarillo",
-   "estaciones": "verde",
+   "estaciones": "amarillo",
    "pronostico": "amarillo",
-   "motivo": "pronóstico 48 h: amarillo",
+   "motivo": "estaciones: amarillo; pronóstico 48 h: amarillo",
    "suelo": "normal"
   },
   {
