@@ -1,157 +1,133 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 05:30",
+ "consultado": "2026-11-22 05:45",
  "radar": "RMA1",
- "observacion": "2026-11-22 05:13",
+ "observacion": "2026-11-22 05:31",
  "nucleos": [
   {
-   "lat": -31.63,
-   "lon": -64.5577,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -30.908,
-   "lon": -64.4501,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.917,
-   "lon": -64.3425,
-   "dbz": 49,
+   "lat": -31.6031,
+   "lon": -64.3963,
+   "dbz": 50,
    "max_dbz": 54,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.621,
-   "lon": -64.6545,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.5131,
-   "lon": -64.8482,
-   "dbz": 48,
-   "max_dbz": 48,
    "tope_km": 9.4
   },
   {
-   "lat": -30.9895,
-   "lon": -64.0413,
-   "dbz": 48,
+   "lat": -30.8808,
+   "lon": -64.2457,
+   "dbz": 49,
    "max_dbz": 53,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.7811,
+   "lon": -63.7508,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -30.9623,
+   "lon": -63.8154,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 8.8
   },
   {
-   "lat": -30.772,
-   "lon": -63.8584,
+   "lat": -31.4771,
+   "lon": -64.7298,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.5311,
+   "lon": -64.5577,
    "dbz": 48,
-   "max_dbz": 52,
+   "max_dbz": 48,
    "tope_km": 10.0
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "SanAntonio_CPaz": {
+   "nucleos": 2,
+   "max_dbz": 49
+  }
+ },
  "localidades": {
   "Villa Carlos Paz": {
-   "km": 35.5,
-   "max_dbz": 48,
-   "tope_km": 9.4,
+   "km": 23.6,
+   "max_dbz": 49,
+   "tope_km": 12.3,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Cuesta Blanca": {
-   "km": 24.9,
-   "max_dbz": 48,
-   "tope_km": 9.4,
+   "km": 13.4,
+   "max_dbz": 49,
+   "tope_km": 12.3,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "Ascochinga": {
-   "km": 7.1,
-   "max_dbz": 54,
+  "San Antonio de Arredondo": {
+   "km": 4.9,
+   "max_dbz": 48,
    "tope_km": 10.0,
-   "cuenca_de": "Río de San Miguel",
+   "cuenca_de": "Arroyo San Antonio",
    "nivel": "intensa"
   },
-  "San Marcos Sierras": {
-   "km": 22.5,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio San Marcos Sierra",
-   "nivel": "muy intensa"
-  },
   "Jesús María": {
-   "km": 20.6,
-   "max_dbz": 54,
+   "km": 14.6,
+   "max_dbz": 53,
    "tope_km": 10.0,
    "cuenca_de": "Jesus Maria",
    "nivel": "intensa"
   },
-  "Capilla del Monte": {
-   "km": 7.1,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Calabalumba",
-   "nivel": "muy intensa"
-  },
-  "Anisacate": {
-   "km": 16.6,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "Colonia Caroya": {
-   "km": 4.4,
-   "max_dbz": 53,
-   "tope_km": 8.8,
-   "nivel": "intensa"
-  },
-  "La Paz": {
-   "km": 12.8,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Ascochinga",
-   "nivel": "intensa"
-  },
   "Mayu Sumaj": {
-   "km": 29.1,
-   "max_dbz": 48,
-   "tope_km": 9.4,
+   "km": 17.4,
+   "max_dbz": 49,
+   "tope_km": 12.3,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
   "Tala Huasi": {
-   "km": 26.7,
-   "max_dbz": 48,
-   "tope_km": 9.4,
+   "km": 15.1,
+   "max_dbz": 49,
+   "tope_km": 12.3,
    "cuenca_de": "Rio San Antonio",
    "nivel": "intensa"
   },
-  "La Serranita": {
-   "km": 14.7,
-   "max_dbz": 57,
+  "Colonia Hogar": {
+   "km": 4.6,
+   "max_dbz": 53,
    "tope_km": 10.0,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
-  "La Paisanita": {
-   "km": 12.4,
-   "max_dbz": 57,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "Cañada Martel": {
-   "km": 3.0,
+  "Dique Chico": {
+   "km": 16.5,
    "max_dbz": 54,
+   "tope_km": 9.4,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Villa Parque Santa Ana": {
+   "km": 4.7,
+   "max_dbz": 54,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
+  "Las Jarillas": {
+   "km": 0.7,
+   "max_dbz": 48,
    "tope_km": 10.0,
+   "cuenca_de": "Arroyo San Antonio",
+   "nivel": "intensa"
+  },
+  "Villa del Prado": {
+   "km": 1.4,
+   "max_dbz": 54,
+   "tope_km": 9.4,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
