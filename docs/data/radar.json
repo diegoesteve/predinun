@@ -1,109 +1,157 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 05:15",
+ "consultado": "2026-11-22 05:30",
  "radar": "RMA1",
- "observacion": "2026-11-22 05:04",
+ "observacion": "2026-11-22 05:13",
  "nucleos": [
   {
    "lat": -31.63,
-   "lon": -64.6653,
-   "dbz": 52,
-   "max_dbz": 52,
-   "tope_km": 11.1
+   "lon": -64.5577,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 10.0
   },
   {
-   "lat": -31.6121,
-   "lon": -64.7621,
+   "lat": -30.908,
+   "lon": -64.4501,
    "dbz": 51,
-   "max_dbz": 62,
+   "max_dbz": 56,
    "tope_km": 10.6
   },
   {
-   "lat": -30.9261,
-   "lon": -64.4394,
-   "dbz": 50,
-   "max_dbz": 56,
+   "lat": -30.917,
+   "lon": -64.3425,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.621,
+   "lon": -64.6545,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.5131,
+   "lon": -64.8482,
+   "dbz": 48,
+   "max_dbz": 48,
    "tope_km": 9.4
   },
   {
    "lat": -30.9895,
-   "lon": -64.1274,
-   "dbz": 49,
+   "lon": -64.0413,
+   "dbz": 48,
    "max_dbz": 53,
    "tope_km": 8.8
   },
   {
-   "lat": -31.0438,
-   "lon": -64.0413,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.1252,
-   "lon": -64.0413,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 10.0
-  },
-  {
    "lat": -30.772,
-   "lon": -63.9445,
-   "dbz": 47,
-   "max_dbz": 48,
+   "lon": -63.8584,
+   "dbz": 48,
+   "max_dbz": 52,
    "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Granja": {
-   "km": 17.4,
-   "max_dbz": 56,
+  "Villa Carlos Paz": {
+   "km": 35.5,
+   "max_dbz": 48,
    "tope_km": 9.4,
-   "cuenca_de": "Río La Granja",
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 24.9,
+   "max_dbz": 48,
+   "tope_km": 9.4,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
+  },
+  "Ascochinga": {
+   "km": 7.1,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de San Miguel",
+   "nivel": "intensa"
+  },
+  "San Marcos Sierras": {
+   "km": 22.5,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio San Marcos Sierra",
    "nivel": "muy intensa"
   },
   "Jesús María": {
-   "km": 3.2,
+   "km": 20.6,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Jesus Maria",
+   "nivel": "intensa"
+  },
+  "Capilla del Monte": {
+   "km": 7.1,
+   "max_dbz": 56,
+   "tope_km": 10.6,
+   "cuenca_de": "Río Calabalumba",
+   "nivel": "muy intensa"
+  },
+  "Anisacate": {
+   "km": 16.6,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
+  },
+  "Colonia Caroya": {
+   "km": 4.4,
    "max_dbz": 53,
    "tope_km": 8.8,
    "nivel": "intensa"
   },
-  "Anisacate": {
-   "km": 34.7,
-   "max_dbz": 62,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+  "La Paz": {
+   "km": 12.8,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Ascochinga",
+   "nivel": "intensa"
   },
-  "Los Molles": {
-   "km": 23.7,
-   "max_dbz": 56,
+  "Mayu Sumaj": {
+   "km": 29.1,
+   "max_dbz": 48,
    "tope_km": 9.4,
-   "cuenca_de": "Río La Granja",
-   "nivel": "muy intensa"
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
   },
-  "Colonia Caroya": {
-   "km": 34.6,
-   "max_dbz": 56,
+  "Tala Huasi": {
+   "km": 26.7,
+   "max_dbz": 48,
    "tope_km": 9.4,
-   "cuenca_de": "Río Carnero",
-   "nivel": "muy intensa"
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "intensa"
   },
   "La Serranita": {
-   "km": 31.7,
-   "max_dbz": 62,
-   "tope_km": 10.6,
+   "km": 14.7,
+   "max_dbz": 57,
+   "tope_km": 10.0,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
   "La Paisanita": {
-   "km": 29.1,
-   "max_dbz": 62,
-   "tope_km": 10.6,
+   "km": 12.4,
+   "max_dbz": 57,
+   "tope_km": 10.0,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
+  },
+  "Cañada Martel": {
+   "km": 3.0,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 17
 }
