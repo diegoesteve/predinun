@@ -1,131 +1,108 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 07:02",
+ "consultado": "2026-11-22 07:15",
  "radar": "RMA1",
- "observacion": "2026-11-22 06:44",
+ "observacion": "2026-11-22 07:02",
  "nucleos": [
   {
-   "lat": -31.1433,
-   "lon": -64.7944,
-   "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 9.4
+   "lat": -30.9442,
+   "lon": -65.4183,
+   "dbz": 53,
+   "max_dbz": 59,
+   "tope_km": 10.6
   },
   {
-   "lat": -31.5491,
-   "lon": -64.7191,
+   "lat": -31.3329,
+   "lon": -64.8267,
    "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 11.7
+   "max_dbz": 57,
+   "tope_km": 10.6
   },
   {
-   "lat": -31.3509,
-   "lon": -64.9665,
-   "dbz": 51,
+   "lat": -31.1704,
+   "lon": -64.676,
+   "dbz": 50,
    "max_dbz": 57,
    "tope_km": 9.4
   },
   {
-   "lat": -31.2246,
-   "lon": -64.6438,
+   "lat": -30.8355,
+   "lon": -64.3963,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.7629,
+   "lon": -63.8261,
    "dbz": 50,
    "max_dbz": 55,
-   "tope_km": 8.2
+   "tope_km": 10.6
   },
   {
-   "lat": -30.8989,
-   "lon": -65.569,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -30.8083,
-   "lon": -63.9768,
-   "dbz": 48,
-   "max_dbz": 53,
-   "tope_km": 10.0
+   "lat": -31.396,
+   "lon": -64.8051,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 16.4
   }
  ],
  "cuencas": {
   "Cosquin": {
    "nucleos": 1,
-   "max_dbz": 55
-  },
-  "SanAntonio_CPaz": {
-   "nucleos": 1,
-   "max_dbz": 51
+   "max_dbz": 56
   }
  },
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 26.5,
-   "max_dbz": 51,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 14.6,
-   "max_dbz": 51,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "San Carlos Minas": {
-   "km": 22.4,
+  "Villa de Soto": {
+   "km": 55.1,
    "max_dbz": 57,
-   "tope_km": 9.4,
-   "cuenca_de": "Noguinet",
+   "tope_km": 10.6,
+   "cuenca_de": "Río Soto",
    "nivel": "muy intensa"
   },
   "Santa María de Punilla": {
-   "km": 18.2,
-   "max_dbz": 55,
-   "tope_km": 8.2,
+   "km": 36.3,
+   "max_dbz": 56,
+   "tope_km": 16.4,
    "cuenca_de": "Río Cosquín",
    "nivel": "muy intensa"
   },
-  "Mayu Sumaj": {
-   "km": 19.0,
-   "max_dbz": 51,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Tala Huasi": {
-   "km": 16.4,
-   "max_dbz": 51,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Tala Cañada": {
-   "km": 1.7,
+  "Cruz de Caña": {
+   "km": 29.5,
    "max_dbz": 57,
-   "tope_km": 9.4,
+   "tope_km": 10.6,
+   "cuenca_de": "Río San Guillermo",
+   "nivel": "muy intensa"
+  },
+  "Jesús María": {
+   "km": 29.2,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "cuenca_de": "Jesus Maria",
+   "nivel": "muy intensa"
+  },
+  "Bañado de Soto": {
+   "km": 60.4,
+   "max_dbz": 57,
+   "tope_km": 10.6,
+   "cuenca_de": "San Guillermo De Soto",
+   "nivel": "muy intensa"
+  },
+  "Colonia Hogar": {
+   "km": 11.6,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo del Pozo",
    "nivel": "muy intensa"
   },
   "San Roque": {
-   "km": 21.0,
-   "max_dbz": 55,
-   "tope_km": 8.2,
+   "km": 33.1,
+   "max_dbz": 56,
+   "tope_km": 16.4,
    "cuenca_de": "Lago San Roque",
-   "nivel": "muy intensa"
-  },
-  "Characato": {
-   "km": 1.5,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "cuenca_de": "Río Ávalos",
-   "nivel": "muy intensa"
-  },
-  "San Geronimo": {
-   "km": 2.5,
-   "max_dbz": 57,
-   "tope_km": 9.4,
    "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 13
 }
