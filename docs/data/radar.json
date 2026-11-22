@@ -1,41 +1,94 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 06:30",
+ "consultado": "2026-11-22 06:40",
  "radar": "RMA1",
- "observacion": "2026-11-22 06:17",
+ "observacion": "2026-11-22 06:26",
  "nucleos": [
   {
-   "lat": -31.441,
-   "lon": -64.321,
+   "lat": -31.2336,
+   "lon": -64.7513,
+   "dbz": 53,
+   "max_dbz": 60,
+   "tope_km": 15.8
+  },
+  {
+   "lat": -31.1433,
+   "lon": -64.5469,
    "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 5.9,
-   "descartado": "tope bajo (5.9 km)"
+   "max_dbz": 54,
+   "tope_km": 8.2
   },
   {
-   "lat": -30.8264,
+   "lat": -30.8173,
    "lon": -63.8692,
-   "dbz": 50,
+   "dbz": 49,
    "max_dbz": 57,
-   "tope_km": 10.0
+   "tope_km": 9.4
   },
   {
-   "lat": -30.8717,
-   "lon": -64.2134,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 10.0
+   "lat": -30.8536,
+   "lon": -64.1489,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.5671,
+   "lon": -64.8589,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 12.9
   }
  ],
- "cuencas": {},
- "localidades": {
-  "Jesús María": {
-   "km": 13.5,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "cuenca_de": "Jesus Maria",
-   "nivel": "muy intensa"
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 54
   }
  },
- "minutos": 14
+ "localidades": {
+  "Santa María de Punilla": {
+   "km": 15.7,
+   "max_dbz": 54,
+   "tope_km": 8.2,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "intensa"
+  },
+  "Villa Dolores": {
+   "km": 47.7,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "intensa"
+  },
+  "San Lorenzo": {
+   "km": 19.5,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "cuenca_de": "Río Panaholma",
+   "nivel": "intensa"
+  },
+  "Panaholma": {
+   "km": 19.0,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "cuenca_de": "Río Panaholma",
+   "nivel": "intensa"
+  },
+  "Mina Clavero": {
+   "km": 24.5,
+   "max_dbz": 49,
+   "tope_km": 12.9,
+   "cuenca_de": "Panaholma",
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 22.8,
+   "max_dbz": 54,
+   "tope_km": 8.2,
+   "cuenca_de": "Lago San Roque",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 15
 }
