@@ -1,133 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 05:45",
+ "consultado": "2026-11-22 06:00",
  "radar": "RMA1",
- "observacion": "2026-11-22 05:31",
+ "observacion": "2026-11-22 05:49",
  "nucleos": [
   {
-   "lat": -31.6031,
-   "lon": -64.3963,
+   "lat": -30.8717,
+   "lon": -64.0951,
    "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 9.4
+   "max_dbz": 55,
+   "tope_km": 10.0
   },
   {
-   "lat": -30.8808,
-   "lon": -64.2457,
-   "dbz": 49,
+   "lat": -30.917,
+   "lon": -64.5039,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.5671,
+   "lon": -64.2242,
+   "dbz": 50,
    "max_dbz": 53,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -30.7811,
-   "lon": -63.7508,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.9623,
-   "lon": -63.8154,
-   "dbz": 49,
-   "max_dbz": 54,
    "tope_km": 8.8
-  },
-  {
-   "lat": -31.4771,
-   "lon": -64.7298,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.5311,
-   "lon": -64.5577,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.0
   }
  ],
- "cuencas": {
-  "SanAntonio_CPaz": {
-   "nucleos": 2,
-   "max_dbz": 49
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "Villa Carlos Paz": {
-   "km": 23.6,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Cuesta Blanca": {
-   "km": 13.4,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "San Antonio de Arredondo": {
-   "km": 4.9,
-   "max_dbz": 48,
+  "San Marcos Sierras": {
+   "km": 19.6,
+   "max_dbz": 55,
    "tope_km": 10.0,
-   "cuenca_de": "Arroyo San Antonio",
-   "nivel": "intensa"
+   "cuenca_de": "Rio San Marcos Sierra",
+   "nivel": "muy intensa"
   },
-  "Jesús María": {
-   "km": 14.6,
-   "max_dbz": 53,
+  "Capilla del Monte": {
+   "km": 6.8,
+   "max_dbz": 55,
    "tope_km": 10.0,
-   "cuenca_de": "Jesus Maria",
-   "nivel": "intensa"
+   "cuenca_de": "Río Dolores",
+   "nivel": "muy intensa"
   },
-  "Mayu Sumaj": {
-   "km": 17.4,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Tala Huasi": {
-   "km": 15.1,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "cuenca_de": "Rio San Antonio",
-   "nivel": "intensa"
-  },
-  "Colonia Hogar": {
-   "km": 4.6,
-   "max_dbz": 53,
+  "San Esteban": {
+   "km": 2.5,
+   "max_dbz": 55,
    "tope_km": 10.0,
-   "nivel": "intensa"
+   "cuenca_de": "Arroyo La Pampilla",
+   "nivel": "muy intensa"
   },
-  "Dique Chico": {
-   "km": 16.5,
-   "max_dbz": 54,
-   "tope_km": 9.4,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Villa Parque Santa Ana": {
-   "km": 4.7,
-   "max_dbz": 54,
-   "tope_km": 9.4,
-   "nivel": "intensa"
-  },
-  "Las Jarillas": {
-   "km": 0.7,
-   "max_dbz": 48,
+  "Los Cocos": {
+   "km": 1.6,
+   "max_dbz": 55,
    "tope_km": 10.0,
-   "cuenca_de": "Arroyo San Antonio",
-   "nivel": "intensa"
-  },
-  "Villa del Prado": {
-   "km": 1.4,
-   "max_dbz": 54,
-   "tope_km": 9.4,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
