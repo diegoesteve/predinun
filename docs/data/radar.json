@@ -1,100 +1,93 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 16:46",
+ "consultado": "2026-11-23 17:00",
  "radar": "RMA1",
- "observacion": "2026-11-23 16:26",
+ "observacion": "2026-11-23 16:44",
  "nucleos": [
   {
-   "lat": -31.8904,
-   "lon": -65.1709,
+   "lat": -31.8097,
+   "lon": -64.9988,
    "dbz": 54,
-   "max_dbz": 62,
+   "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -31.9083,
-   "lon": -64.2027,
-   "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 11.1
+   "lat": -31.7379,
+   "lon": -64.5577,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 10.6
   },
   {
    "lat": -31.9263,
-   "lon": -63.9768,
-   "dbz": 51,
+   "lon": -63.9552,
+   "dbz": 50,
    "max_dbz": 58,
-   "tope_km": 17.0
+   "tope_km": 11.7
   },
   {
-   "lat": -31.8725,
-   "lon": -64.5039,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -32.0964,
-   "lon": -63.7078,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.7289,
-   "lon": -64.6115,
+   "lat": -31.9532,
+   "lon": -63.7939,
    "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 8.2
+   "max_dbz": 53,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Potrero de Garay": {
-   "km": 7.4,
-   "max_dbz": 49,
-   "tope_km": 8.2,
-   "cuenca_de": "Rio San Pedro",
-   "nivel": "intensa"
+  "Villa Dolores": {
+   "km": 18.4,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "muy intensa"
   },
-  "Sauce Arriba": {
-   "km": 2.3,
-   "max_dbz": 62,
+  "Potrero de Garay": {
+   "km": 2.9,
+   "max_dbz": 57,
+   "tope_km": 10.6,
+   "cuenca_de": "Rio San Pedro",
+   "nivel": "muy intensa"
+  },
+  "Nono": {
+   "km": 1.9,
+   "max_dbz": 64,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Las Calles": {
+   "km": 3.2,
+   "max_dbz": 64,
    "tope_km": 17.0,
    "nivel": "muy intensa"
   },
   "Paso de la Pampa": {
-   "km": 2.7,
-   "max_dbz": 49,
-   "tope_km": 8.2,
-   "nivel": "intensa"
-  },
-  "San Clemente": {
-   "km": 2.3,
-   "max_dbz": 49,
-   "tope_km": 8.2,
-   "nivel": "intensa"
+   "km": 3.1,
+   "max_dbz": 57,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
   },
   "La Boca del Río": {
-   "km": 9.1,
-   "max_dbz": 56,
-   "tope_km": 12.3,
+   "km": 18.1,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 6.4,
-   "max_dbz": 56,
-   "tope_km": 12.3,
+   "km": 10.0,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa Ciudad de America": {
-   "km": 10.1,
-   "max_dbz": 49,
-   "tope_km": 8.2,
+   "km": 6.3,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "cuenca_de": "Embalse Los Molinos",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 17
 }
