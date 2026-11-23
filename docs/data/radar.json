@@ -1,9 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 22:15",
- "radar": null,
- "observacion": null,
- "nucleos": [],
+ "consultado": "2026-11-22 22:30",
+ "radar": "RMA1",
+ "observacion": "2026-11-22 22:17",
+ "nucleos": [
+  {
+   "lat": -31.9173,
+   "lon": -64.9235,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 10.0
+  }
+ ],
  "cuencas": {},
- "localidades": {}
+ "localidades": {
+  "Potrero de Garay": {
+   "km": 34.8,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Pedro",
+   "nivel": "muy intensa"
+  },
+  "La Boca del Río": {
+   "km": 48.9,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa la Merced": {
+   "km": 41.3,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 13
 }
