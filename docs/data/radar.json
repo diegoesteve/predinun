@@ -1,216 +1,254 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 06:45",
+ "consultado": "2026-11-23 07:00",
  "radar": "RMA1",
- "observacion": "2026-11-23 06:27",
+ "observacion": "2026-11-23 06:45",
  "nucleos": [
   {
-   "lat": -32.5782,
-   "lon": -65.0848,
+   "lat": -30.9714,
+   "lon": -64.3533,
+   "dbz": 53,
+   "max_dbz": 59,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.9711,
+   "lon": -64.59,
    "dbz": 52,
    "max_dbz": 61,
-   "tope_km": 12.9
+   "tope_km": 13.5
   },
   {
-   "lat": -31.9979,
-   "lon": -64.7191,
+   "lat": -30.8083,
+   "lon": -64.4394,
    "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 10.0
+   "max_dbz": 56,
+   "tope_km": 9.4
   },
   {
-   "lat": -32.0606,
-   "lon": -64.3533,
+   "lat": -31.2517,
+   "lon": -64.4716,
    "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 16.4
+   "max_dbz": 59,
+   "tope_km": 9.4
   },
   {
-   "lat": -33.4636,
-   "lon": -64.8159,
+   "lat": -30.908,
+   "lon": -64.3856,
+   "dbz": 51,
+   "max_dbz": 54,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -31.3689,
+   "lon": -64.1381,
    "dbz": 50,
-   "max_dbz": 57,
+   "max_dbz": 55,
+   "tope_km": 7.6
+  },
+  {
+   "lat": -32.0338,
+   "lon": -64.4609,
+   "dbz": 50,
+   "max_dbz": 58,
    "tope_km": 11.1
   },
   {
-   "lat": -31.9352,
-   "lon": -64.7836,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -31.2426,
-   "lon": -64.1381,
+   "lat": -31.2968,
+   "lon": -63.9875,
    "dbz": 50,
    "max_dbz": 57,
-   "tope_km": 9.4
+   "tope_km": 7.6
   },
   {
-   "lat": -33.2254,
-   "lon": -64.321,
+   "lat": -32.5426,
+   "lon": -64.8589,
    "dbz": 50,
    "max_dbz": 55,
-   "tope_km": 14.1
+   "tope_km": 12.3
   },
   {
-   "lat": -31.396,
-   "lon": -63.8477,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 10.0
+   "lat": -31.9083,
+   "lon": -64.6976,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 13.5
   },
   {
-   "lat": -32.0785,
-   "lon": -64.4394,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 11.7
+   "lat": -31.675,
+   "lon": -63.9983,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 7.0
   },
   {
-   "lat": -31.8725,
-   "lon": -64.8159,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 9.4
+   "lat": -31.45,
+   "lon": -63.7186,
+   "dbz": 49,
+   "max_dbz": 57,
+   "tope_km": 8.2
   },
   {
    "lat": -32.0158,
-   "lon": -64.7944,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.0248,
-   "lon": -64.6222,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.63,
-   "lon": -64.1381,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -32.0696,
-   "lon": -64.5577,
+   "lon": -63.9768,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -32.756,
-   "lon": -65.1064,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 9.4
+   "max_dbz": 48,
+   "tope_km": 11.7
   }
  ],
- "cuencas": {},
- "localidades": {
-  "Santa Rosa de Calamuchita": {
-   "km": 1.2,
-   "max_dbz": 51,
-   "tope_km": 10.0,
-   "nivel": "intensa"
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 59
   },
-  "Los Reartes": {
-   "km": 19.9,
+  "Capital": {
+   "nucleos": 1,
+   "max_dbz": 55
+  }
+ },
+ "localidades": {
+  "Cosquin": {
+   "km": 2.5,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  },
+  "Ascochinga": {
+   "km": 6.8,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "cuenca_de": "Río de San Miguel",
+   "nivel": "muy intensa"
+  },
+  "San Marcos Sierras": {
+   "km": 18.6,
    "max_dbz": 56,
    "tope_km": 9.4,
+   "cuenca_de": "Rio San Marcos Sierra",
+   "nivel": "muy intensa"
+  },
+  "Santa Rosa de Calamuchita": {
+   "km": 8.3,
+   "max_dbz": 61,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo El Sauce",
+   "nivel": "muy intensa"
+  },
+  "Villa General Belgrano": {
+   "km": 3.6,
+   "max_dbz": 61,
+   "tope_km": 13.5,
+   "nivel": "muy intensa"
+  },
+  "Los Reartes": {
+   "km": 9.1,
+   "max_dbz": 55,
+   "tope_km": 13.5,
    "cuenca_de": "Río del Medio",
    "nivel": "muy intensa"
   },
-  "El Corcovado el Torreon": {
-   "km": 26.4,
+  "Santa María de Punilla": {
+   "km": 1.8,
+   "max_dbz": 59,
+   "tope_km": 9.4,
+   "nivel": "muy intensa"
+  },
+  "Jesús María": {
+   "km": 20.7,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "cuenca_de": "Jesus Maria",
+   "nivel": "muy intensa"
+  },
+  "La Paz": {
+   "km": 12.9,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "cuenca_de": "Río Ascochinga",
+   "nivel": "muy intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 27.4,
    "max_dbz": 55,
-   "tope_km": 10.0,
+   "tope_km": 12.3,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "El Corcovado el Torreon": {
+   "km": 22.1,
+   "max_dbz": 61,
+   "tope_km": 13.5,
    "cuenca_de": "Rio Santa Rosa",
    "nivel": "muy intensa"
   },
   "Villa Berna": {
-   "km": 8.8,
+   "km": 2.8,
+   "max_dbz": 55,
+   "tope_km": 13.5,
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 42.9,
+   "max_dbz": 55,
+   "tope_km": 12.3,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Santa Isabel": {
+   "km": 9.1,
    "max_dbz": 56,
    "tope_km": 9.4,
-   "cuenca_de": "Río del Medio",
+   "cuenca_de": "Río Seco (Quebrada de Luna)",
    "nivel": "muy intensa"
   },
-  "Santa Mónica": {
-   "km": 10.5,
-   "max_dbz": 55,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Santa Rosa",
-   "nivel": "muy intensa"
-  },
-  "La Cumbrecita": {
-   "km": 4.6,
-   "max_dbz": 56,
+  "San Roque": {
+   "km": 9.3,
+   "max_dbz": 59,
    "tope_km": 9.4,
-   "cuenca_de": "Rio Del Medio",
-   "nivel": "muy intensa"
-  },
-  "Estación Juárez Celman": {
-   "km": 4.0,
-   "max_dbz": 57,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
-  },
-  "Intiyaco": {
-   "km": 4.0,
-   "max_dbz": 55,
-   "tope_km": 10.0,
+   "cuenca_de": "Lago San Roque",
    "nivel": "muy intensa"
   },
   "El Corcovado": {
-   "km": 24.7,
-   "max_dbz": 55,
-   "tope_km": 10.0,
+   "km": 19.4,
+   "max_dbz": 61,
+   "tope_km": 13.5,
    "cuenca_de": "Rio Santa Rosa",
    "nivel": "muy intensa"
   },
-  "Capilla Vieja": {
-   "km": 17.0,
-   "max_dbz": 54,
+  "Quebrada de Luna": {
+   "km": 6.3,
+   "max_dbz": 56,
    "tope_km": 9.4,
-   "cuenca_de": "Rio De Los Reartes",
-   "nivel": "intensa"
-  },
-  "Las Bajadas": {
-   "km": 4.7,
-   "max_dbz": 57,
-   "tope_km": 16.4,
+   "cuenca_de": "Río Seco (Quebrada de Luna)",
    "nivel": "muy intensa"
   },
-  "San Miguel de los Ríos": {
-   "km": 2.4,
-   "max_dbz": 55,
-   "tope_km": 10.0,
+  "Parque Calmayo": {
+   "km": 1.0,
+   "max_dbz": 58,
+   "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "Las Bajadas": {
+   "km": 11.7,
+   "max_dbz": 58,
+   "tope_km": 11.1,
+   "cuenca_de": "Arroyo Soconcho",
    "nivel": "muy intensa"
   },
   "La Boca del Río": {
-   "km": 38.1,
-   "max_dbz": 56,
-   "tope_km": 9.4,
+   "km": 27.8,
+   "max_dbz": 55,
+   "tope_km": 13.5,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 30.2,
-   "max_dbz": 56,
-   "tope_km": 9.4,
+   "km": 21.0,
+   "max_dbz": 55,
+   "tope_km": 13.5,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Villa los Llanos Juarez Celman": {
-   "km": 3.7,
-   "max_dbz": 57,
-   "tope_km": 9.4,
    "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
