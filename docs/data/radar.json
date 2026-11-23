@@ -1,113 +1,82 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 07:30",
+ "consultado": "2026-11-23 07:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 07:22",
+ "observacion": "2026-11-23 07:31",
  "nucleos": [
   {
-   "lat": -31.9979,
-   "lon": -64.3425,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.432,
-   "lon": -64.1059,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 9.4
-  },
-  {
    "lat": -32.507,
-   "lon": -64.5577,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -33.1105,
-   "lon": -65.1602,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.0606,
-   "lon": -64.0521,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -33.1193,
-   "lon": -65.4614,
-   "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -33.1724,
-   "lon": -65.2893,
-   "dbz": 49,
-   "max_dbz": 51,
+   "lon": -64.4716,
+   "dbz": 52,
+   "max_dbz": 62,
    "tope_km": 12.9
   },
   {
-   "lat": -33.0574,
-   "lon": -64.7513,
-   "dbz": 47,
-   "max_dbz": 48,
+   "lat": -33.1458,
+   "lon": -65.4076,
+   "dbz": 51,
+   "max_dbz": 58,
    "tope_km": 10.6
   },
   {
-   "lat": -31.9352,
+   "lat": -31.4681,
    "lon": -63.9983,
-   "dbz": 47,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.989,
+   "lon": -64.2457,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -32.0785,
+   "lon": -64.2242,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -33.0839,
+   "lon": -64.7191,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.1342,
+   "lon": -63.9445,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 7.0
+  },
+  {
+   "lat": -31.98,
+   "lon": -63.923,
+   "dbz": 48,
    "max_dbz": 50,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -33.1547,
+   "lon": -65.1064,
+   "dbz": 47,
+   "max_dbz": 49,
    "tope_km": 10.0
   }
  ],
- "cuencas": {
-  "Capital": {
-   "nucleos": 1,
-   "max_dbz": 54
-  }
- },
+ "cuencas": {},
  "localidades": {
-  "La Cruz": {
-   "km": 19.0,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "muy intensa"
-  },
-  "Rio de los Sauces": {
-   "km": 3.6,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  },
-  "San Agustin": {
-   "km": 3.8,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
   "Santa Catalina": {
-   "km": 33.4,
+   "km": 29.4,
    "max_dbz": 48,
-   "tope_km": 10.6,
+   "tope_km": 8.8,
    "cuenca_de": "Arroyo Santa Catalina",
    "nivel": "intensa"
-  },
-  "Paso Cabral": {
-   "km": 11.7,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "muy intensa"
   }
  },
- "minutos": 9
+ "minutos": 15
 }
