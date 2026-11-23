@@ -1,47 +1,120 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 15:45",
+ "consultado": "2026-11-23 16:00",
  "radar": "RMA1",
- "observacion": "2026-11-23 15:31",
+ "observacion": "2026-11-23 15:50",
  "nucleos": [
   {
-   "lat": -31.8635,
-   "lon": -64.59,
-   "dbz": 53,
-   "max_dbz": 63,
-   "tope_km": 14.7
+   "lat": -32.0696,
+   "lon": -65.5905,
+   "dbz": 54,
+   "max_dbz": 65,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.3911,
-   "lon": -64.1596,
-   "dbz": 48,
-   "max_dbz": 48,
+   "lat": -31.8904,
+   "lon": -64.4394,
+   "dbz": 52,
+   "max_dbz": 60,
    "tope_km": 9.4
   },
   {
-   "lat": -32.3733,
-   "lon": -64.2995,
-   "dbz": 48,
-   "max_dbz": 50,
+   "lat": -31.9442,
+   "lon": -64.6868,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.3198,
+   "lon": -64.0413,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 17.0
+  },
+  {
+   "lat": -31.9352,
+   "lon": -64.3641,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -32.4179,
+   "lon": -64.5254,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
+  "La Cruz": {
+   "km": 8.7,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
+  },
+  "Los Reartes": {
+   "km": 10.5,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio De Los Reartes",
+   "nivel": "intensa"
+  },
+  "San Agustin": {
+   "km": 4.8,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
+  "Paso Cabral": {
+   "km": 2.3,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  },
+  "Los Molinos": {
+   "km": 7.7,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "cuenca_de": "Rio Los Molinos",
+   "nivel": "intensa"
+  },
+  "Intiyaco": {
+   "km": 3.7,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  },
+  "Capilla Vieja": {
+   "km": 8.1,
+   "max_dbz": 51,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio De Los Reartes",
+   "nivel": "intensa"
+  },
   "La Boca del Río": {
-   "km": 16.8,
-   "max_dbz": 63,
-   "tope_km": 14.7,
+   "km": 5.6,
+   "max_dbz": 60,
+   "tope_km": 9.4,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 9.8,
-   "max_dbz": 63,
-   "tope_km": 14.7,
+   "km": 22.5,
+   "max_dbz": 51,
+   "tope_km": 11.1,
    "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
+  },
+  "Las Caleras": {
+   "km": 3.1,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
