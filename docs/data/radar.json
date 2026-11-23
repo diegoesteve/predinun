@@ -1,74 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 12:30",
+ "consultado": "2026-11-23 12:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 12:12",
+ "observacion": "2026-11-23 12:31",
  "nucleos": [
   {
-   "lat": -33.0839,
-   "lon": -65.2139,
-   "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 12.3
+   "lat": -32.9511,
+   "lon": -64.6222,
+   "dbz": 50,
+   "max_dbz": 52,
+   "tope_km": 10.0
   },
   {
-   "lat": -32.9334,
-   "lon": -64.3318,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -33.1635,
-   "lon": -64.6868,
+   "lat": -33.0308,
+   "lon": -65.1171,
    "dbz": 49,
-   "max_dbz": 53,
+   "max_dbz": 54,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.8891,
+   "lon": -64.2027,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -33.19,
+   "lon": -64.5469,
+   "dbz": 49,
+   "max_dbz": 52,
    "tope_km": 11.7
   },
   {
-   "lat": -32.8359,
-   "lon": -64.5147,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -33.2254,
-   "lon": -64.6653,
+   "lat": -32.6849,
+   "lon": -63.966,
    "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 13.5
+   "tope_km": 10.0
   },
   {
-   "lat": -32.6582,
-   "lon": -64.2242,
+   "lat": -32.9068,
+   "lon": -64.3533,
    "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.8536,
-   "lon": -64.4394,
-   "dbz": 47,
    "max_dbz": 48,
-   "tope_km": 12.3
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 36.7,
-   "max_dbz": 59,
-   "tope_km": 12.3,
+   "km": 33.6,
+   "max_dbz": 54,
+   "tope_km": 11.1,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
-  "Paso del Río Seco": {
-   "km": 4.8,
-   "max_dbz": 49,
-   "tope_km": 12.3,
+  "Santa Catalina": {
+   "km": 32.3,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "intensa"
+  },
+  "El Tala": {
+   "km": 11.1,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
