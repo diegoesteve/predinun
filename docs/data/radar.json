@@ -1,98 +1,100 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 16:30",
+ "consultado": "2026-11-23 16:46",
  "radar": "RMA1",
- "observacion": "2026-11-23 16:17",
+ "observacion": "2026-11-23 16:26",
  "nucleos": [
   {
-   "lat": -31.9532,
-   "lon": -65.3,
+   "lat": -31.8904,
+   "lon": -65.1709,
    "dbz": 54,
-   "max_dbz": 65,
+   "max_dbz": 62,
    "tope_km": 17.0
   },
   {
-   "lat": -32.0696,
-   "lon": -63.7939,
-   "dbz": 51,
-   "max_dbz": 61,
-   "tope_km": 12.9
+   "lat": -31.9083,
+   "lon": -64.2027,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 11.1
   },
   {
-   "lat": -31.8814,
-   "lon": -64.5685,
+   "lat": -31.9263,
+   "lon": -63.9768,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.8725,
+   "lon": -64.5039,
    "dbz": 50,
    "max_dbz": 56,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.9083,
-   "lon": -64.2457,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.8545,
-   "lon": -64.3533,
-   "dbz": 50,
-   "max_dbz": 54,
    "tope_km": 12.3
   },
   {
-   "lat": -32.0338,
-   "lon": -64.278,
+   "lat": -32.0964,
+   "lon": -63.7078,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.7289,
+   "lon": -64.6115,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.7
+   "max_dbz": 49,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Reartes": {
-   "km": 3.7,
-   "max_dbz": 56,
-   "tope_km": 8.8,
-   "nivel": "muy intensa"
-  },
-  "Los Molinos": {
-   "km": 2.2,
-   "max_dbz": 54,
-   "tope_km": 12.3,
+  "Potrero de Garay": {
+   "km": 7.4,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "cuenca_de": "Rio San Pedro",
    "nivel": "intensa"
   },
-  "Villa San Isidro": {
-   "km": 4.5,
-   "max_dbz": 54,
-   "tope_km": 12.3,
+  "Sauce Arriba": {
+   "km": 2.3,
+   "max_dbz": 62,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Paso de la Pampa": {
+   "km": 2.7,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "nivel": "intensa"
+  },
+  "San Clemente": {
+   "km": 2.3,
+   "max_dbz": 49,
+   "tope_km": 8.2,
    "nivel": "intensa"
   },
   "La Boca del Río": {
-   "km": 15.2,
+   "km": 9.1,
    "max_dbz": 56,
-   "tope_km": 8.8,
+   "tope_km": 12.3,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 9.6,
+   "km": 6.4,
    "max_dbz": 56,
-   "tope_km": 8.8,
+   "tope_km": 12.3,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
-  "San Jose": {
-   "km": 1.8,
-   "max_dbz": 65,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Villa Ciudad Parque los Reartes": {
-   "km": 3.4,
-   "max_dbz": 56,
-   "tope_km": 8.8,
-   "nivel": "muy intensa"
+  "Villa Ciudad de America": {
+   "km": 10.1,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "cuenca_de": "Embalse Los Molinos",
+   "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 20
 }
