@@ -1,7 +1,63 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-23 19:30",
+ "consultado": "2026-11-23 19:45",
  "alertas": [
+  {
+   "id": "2026_11_23_2232_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-23T22:32:00-03:00",
+   "hasta": "2026-11-24T00:32:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS, RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Retirá o asegurá objetos que puedan ser arrojados por el viento. Cerrá y alejate de puertas y ventanas. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el rie",
+   "zona": "LA RIOJA: GRAL BELGRANO - GRAL OCAMPO. CORDOBA: CRUZ DEL EJE - MINAS - POCHO.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_23_2232_cap_es.xml",
+   "desde_local": "23/11 22:32",
+   "hasta_local": "24/11 00:32",
+   "localidades": 31,
+   "poligonos": [
+    [
+     [
+      -66.24,
+      -31.07
+     ],
+     [
+      -65.56,
+      -31.43
+     ],
+     [
+      -64.96,
+      -31.4
+     ],
+     [
+      -64.71,
+      -30.68
+     ],
+     [
+      -64.94,
+      -30.67
+     ],
+     [
+      -65.2,
+      -30.37
+     ],
+     [
+      -65.95,
+      -30.44
+     ],
+     [
+      -66.29,
+      -30.59
+     ],
+     [
+      -66.24,
+      -31.07
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_20",
    "tipo": "alerta",
@@ -9297,14 +9353,17 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_22"
   ],
   "San Carlos Minas": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Salsacate": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Cruz de Caña": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9349,6 +9408,7 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Tala Cañada": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9361,6 +9421,7 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Taninga": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9373,6 +9434,7 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "La Playa": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9385,6 +9447,7 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Los Talares": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9397,10 +9460,12 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Sauce de los Quevedos": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "La Argentina": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9413,10 +9478,12 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Piedras Anchas": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Guasapampa": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9437,6 +9504,7 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Talaini": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9449,10 +9517,12 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Cañada de Salas": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Cienaga del Coro": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9465,6 +9535,7 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Estancia de Guadalupe": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9473,6 +9544,7 @@
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
   "Tosno": [
+   "2026_11_23_2232_cap_es",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_23"
   ],
@@ -9779,6 +9851,51 @@
   "Villa Yacanto": [
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_18",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_18"
+  ],
+  "Villa de Soto": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Cruz del Eje": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Bañado de Soto": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Serrezuela": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Santa Ana": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "La Higuera": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Agua de Crespin": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Chancaní": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Tres Árboles": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Rumi Huasi": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Piedras Amontonadas": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Iglesia Vieja": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "El Brete": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Las Playas": [
+   "2026_11_23_2232_cap_es"
+  ],
+  "Tuclame": [
+   "2026_11_23_2232_cap_es"
   ]
  },
  "localidades_santafe": {

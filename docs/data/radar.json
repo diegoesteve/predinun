@@ -1,25 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 19:30",
+ "consultado": "2026-11-23 19:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 19:18",
+ "observacion": "2026-11-23 19:27",
  "nucleos": [
   {
-   "lat": -32.4713,
-   "lon": -65.2677,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.6
+   "lat": -30.8083,
+   "lon": -64.321,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 8.8
   },
   {
-   "lat": -32.4179,
+   "lat": -32.507,
    "lon": -65.1386,
-   "dbz": 48,
-   "max_dbz": 50,
+   "dbz": 49,
+   "max_dbz": 56,
    "tope_km": 10.0
+  },
+  {
+   "lat": -32.5159,
+   "lon": -65.2139,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 12
+ "localidades": {
+  "Paraje San Pellegrino": {
+   "km": 2.8,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "cuenca_de": "Río Pinto",
+   "nivel": "muy intensa"
+  },
+  "Concarán": {
+   "km": 2.2,
+   "max_dbz": 49,
+   "tope_km": 8.2,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 18
 }
