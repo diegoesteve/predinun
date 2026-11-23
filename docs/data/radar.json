@@ -1,75 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 08:15",
+ "consultado": "2026-11-23 08:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 07:58",
+ "observacion": "2026-11-23 08:16",
  "nucleos": [
   {
-   "lat": -30.9714,
-   "lon": -63.7831,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 7.0
-  },
-  {
-   "lat": -30.8899,
-   "lon": -64.3641,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 7.6
-  },
-  {
-   "lat": -33.1724,
-   "lon": -65.2032,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -33.1547,
-   "lon": -64.8697,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.0338,
-   "lon": -63.923,
-   "dbz": 48,
+   "lat": -32.1322,
+   "lon": -64.2134,
+   "dbz": 51,
    "max_dbz": 54,
    "tope_km": 9.4
   },
   {
-   "lat": -32.5248,
-   "lon": -64.1489,
-   "dbz": 48,
+   "lat": -32.5693,
+   "lon": -64.4178,
+   "dbz": 51,
    "max_dbz": 51,
-   "tope_km": 10.6
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.7648,
+   "lon": -63.9983,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -33.1635,
+   "lon": -64.8804,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.5515,
+   "lon": -63.8907,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Jesús María": {
-   "km": 23.6,
-   "max_dbz": 50,
-   "tope_km": 7.6,
-   "cuenca_de": "Jesus Maria",
-   "nivel": "intensa"
-  },
-  "Colonia Hogar": {
-   "km": 9.6,
-   "max_dbz": 50,
-   "tope_km": 7.6,
-   "cuenca_de": "Arroyo del Pozo",
-   "nivel": "intensa"
-  },
   "La Carolina el Potosí": {
-   "km": 13.4,
-   "max_dbz": 51,
+   "km": 14.0,
+   "max_dbz": 54,
    "tope_km": 11.7,
    "cuenca_de": "Arroyo Arroyo 630",
    "nivel": "intensa"
+  },
+  "Elena": {
+   "km": 2.4,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 14
 }
