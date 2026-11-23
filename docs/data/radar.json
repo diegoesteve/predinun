@@ -1,46 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 19:45",
+ "consultado": "2026-11-23 20:00",
  "radar": "RMA1",
- "observacion": "2026-11-23 19:27",
+ "observacion": "2026-11-23 19:46",
  "nucleos": [
   {
-   "lat": -30.8083,
-   "lon": -64.321,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -32.507,
-   "lon": -65.1386,
+   "lat": -32.5782,
+   "lon": -64.8804,
    "dbz": 49,
-   "max_dbz": 56,
+   "max_dbz": 54,
    "tope_km": 10.0
-  },
-  {
-   "lat": -32.5159,
-   "lon": -65.2139,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Paraje San Pellegrino": {
-   "km": 2.8,
-   "max_dbz": 55,
-   "tope_km": 8.8,
-   "cuenca_de": "Río Pinto",
-   "nivel": "muy intensa"
+  "Cañada del Sauce": {
+   "km": 31.6,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
   },
-  "Concarán": {
-   "km": 2.2,
-   "max_dbz": 49,
-   "tope_km": 8.2,
+  "Villa la Rivera": {
+   "km": 47.1,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
