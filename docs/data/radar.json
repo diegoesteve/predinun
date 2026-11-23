@@ -1,161 +1,226 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 03:30",
+ "consultado": "2026-11-23 03:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 03:17",
+ "observacion": "2026-11-23 03:26",
  "nucleos": [
   {
-   "lat": -31.8545,
-   "lon": -65.2247,
+   "lat": -31.7289,
+   "lon": -64.7406,
+   "dbz": 52,
+   "max_dbz": 58,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.8007,
+   "lon": -64.9127,
    "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 10.6
+   "max_dbz": 61,
+   "tope_km": 11.7
   },
   {
-   "lat": -31.5401,
-   "lon": -64.0736,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.3599,
-   "lon": -64.8697,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.621,
-   "lon": -64.4609,
+   "lat": -31.8635,
+   "lon": -65.1171,
    "dbz": 50,
    "max_dbz": 54,
-   "tope_km": 10.6
+   "tope_km": 15.8
   },
   {
-   "lat": -31.7917,
-   "lon": -65.0095,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 11.7
+   "lat": -31.387,
+   "lon": -64.7944,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 13.5
   },
   {
-   "lat": -31.7468,
-   "lon": -64.5039,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.7199,
-   "lon": -64.6868,
-   "dbz": 49,
+   "lat": -31.7379,
+   "lon": -64.6115,
+   "dbz": 50,
    "max_dbz": 55,
    "tope_km": 11.1
   },
   {
-   "lat": -31.63,
-   "lon": -64.2565,
-   "dbz": 48,
-   "max_dbz": 53,
+   "lat": -31.5581,
+   "lon": -63.9552,
+   "dbz": 49,
+   "max_dbz": 49,
    "tope_km": 10.6
+  },
+  {
+   "lat": -31.63,
+   "lon": -64.4394,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.8814,
+   "lon": -65.343,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.8456,
+   "lon": -65.4076,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.8814,
+   "lon": -64.9665,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 12.3
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 56
+  }
+ },
  "localidades": {
-  "Villa de Soto": {
-   "km": 57.2,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "cuenca_de": "Río Soto",
+  "Alta Gracia": {
+   "km": 2.8,
+   "max_dbz": 55,
+   "tope_km": 11.7,
    "nivel": "muy intensa"
   },
-  "Alta Gracia": {
-   "km": 1.8,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "cuenca_de": "Chicamtoltina",
-   "nivel": "intensa"
-  },
-  "Cruz de Caña": {
-   "km": 31.6,
+  "Santa María de Punilla": {
+   "km": 35.0,
    "max_dbz": 56,
-   "tope_km": 14.7,
-   "cuenca_de": "Río San Guillermo",
+   "tope_km": 13.5,
+   "cuenca_de": "Río Cosquín",
    "nivel": "muy intensa"
   },
   "Villa Dolores": {
-   "km": 19.2,
-   "max_dbz": 55,
+   "km": 25.4,
+   "max_dbz": 61,
    "tope_km": 11.7,
    "cuenca_de": "Arroyo De Las Tapias",
    "nivel": "muy intensa"
   },
+  "Potrero de Garay": {
+   "km": 7.0,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio San Pedro",
+   "nivel": "muy intensa"
+  },
   "Anisacate": {
-   "km": 25.5,
-   "max_dbz": 55,
-   "tope_km": 11.1,
+   "km": 30.6,
+   "max_dbz": 58,
+   "tope_km": 10.0,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
-  "Bañado de Soto": {
-   "km": 62.1,
-   "max_dbz": 56,
-   "tope_km": 14.7,
-   "cuenca_de": "San Guillermo De Soto",
-   "nivel": "muy intensa"
-  },
-  "Nono": {
-   "km": 2.7,
-   "max_dbz": 55,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
-  },
-  "La Serranita": {
-   "km": 21.7,
-   "max_dbz": 55,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
-  },
-  "Falda del Carmen": {
-   "km": 4.5,
+  "Sauce Arriba": {
+   "km": 7.0,
    "max_dbz": 54,
-   "tope_km": 10.6,
+   "tope_km": 15.8,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "La Cortadera": {
-   "km": 22.2,
-   "max_dbz": 57,
-   "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
+  "Nono": {
+   "km": 6.6,
+   "max_dbz": 61,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Chico de Nono",
+   "nivel": "muy intensa"
+  },
+  "Las Rabonas": {
+   "km": 2.9,
+   "max_dbz": 47,
+   "tope_km": 12.3,
+   "nivel": "intensa"
+  },
+  "La Serranita": {
+   "km": 26.8,
+   "max_dbz": 58,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
+  },
+  "Las Calles": {
+   "km": 3.8,
+   "max_dbz": 61,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Chico de Nono",
+   "nivel": "muy intensa"
+  },
+  "San Roque": {
+   "km": 31.9,
+   "max_dbz": 56,
+   "tope_km": 13.5,
+   "cuenca_de": "Lago San Roque",
+   "nivel": "muy intensa"
+  },
+  "Paso de la Pampa": {
+   "km": 2.2,
+   "max_dbz": 55,
+   "tope_km": 11.1,
    "nivel": "muy intensa"
   },
   "Pozo del Tala": {
-   "km": 3.5,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+   "km": 4.5,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
   },
-  "La Paisanita": {
-   "km": 19.2,
+  "San Clemente": {
+   "km": 2.9,
    "max_dbz": 55,
    "tope_km": 11.1,
+   "nivel": "muy intensa"
+  },
+  "La Paisanita": {
+   "km": 24.3,
+   "max_dbz": 58,
+   "tope_km": 10.0,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
-  "Villa la Rancherita": {
-   "km": 4.3,
-   "max_dbz": 52,
-   "tope_km": 11.7,
+  "La Boca del Río": {
+   "km": 22.1,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa la Merced": {
+   "km": 13.4,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Villa Ciudad de America": {
+   "km": 9.4,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Embalse Los Molinos",
+   "nivel": "muy intensa"
+  },
+  "Los Hornillos": {
+   "km": 3.1,
+   "max_dbz": 47,
+   "tope_km": 12.3,
    "nivel": "intensa"
   },
-  "Rafael Garcia": {
-   "km": 1.6,
-   "max_dbz": 53,
-   "tope_km": 10.6,
+  "Dos Arroyos": {
+   "km": 1.4,
+   "max_dbz": 47,
+   "tope_km": 12.3,
+   "nivel": "intensa"
+  },
+  "El Pantanillo": {
+   "km": 2.1,
+   "max_dbz": 47,
+   "tope_km": 12.3,
    "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 20
 }
