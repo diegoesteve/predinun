@@ -1,61 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 08:00",
+ "consultado": "2026-11-23 08:15",
  "radar": "RMA1",
- "observacion": "2026-11-23 07:49",
+ "observacion": "2026-11-23 07:58",
  "nucleos": [
   {
-   "lat": -33.1635,
-   "lon": -65.3753,
+   "lat": -30.9714,
+   "lon": -63.7831,
    "dbz": 50,
-   "max_dbz": 54,
+   "max_dbz": 53,
+   "tope_km": 7.0
+  },
+  {
+   "lat": -30.8899,
+   "lon": -64.3641,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 7.6
+  },
+  {
+   "lat": -33.1724,
+   "lon": -65.2032,
+   "dbz": 49,
+   "max_dbz": 52,
    "tope_km": 12.9
   },
   {
-   "lat": -31.5671,
-   "lon": -63.7616,
+   "lat": -33.1547,
+   "lon": -64.8697,
    "dbz": 49,
-   "max_dbz": 58,
+   "max_dbz": 51,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.0338,
+   "lon": -63.923,
+   "dbz": 48,
+   "max_dbz": 54,
    "tope_km": 9.4
   },
   {
-   "lat": -32.0069,
-   "lon": -64.0521,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -32.5337,
-   "lon": -64.2672,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.9711,
-   "lon": -63.966,
+   "lat": -32.5248,
+   "lon": -64.1489,
    "dbz": 48,
    "max_dbz": 51,
    "tope_km": 10.6
-  },
-  {
-   "lat": -33.1105,
-   "lon": -64.9342,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Catalina": {
-   "km": 47.7,
-   "max_dbz": 48,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo Santa Catalina",
+  "Jesús María": {
+   "km": 23.6,
+   "max_dbz": 50,
+   "tope_km": 7.6,
+   "cuenca_de": "Jesus Maria",
+   "nivel": "intensa"
+  },
+  "Colonia Hogar": {
+   "km": 9.6,
+   "max_dbz": 50,
+   "tope_km": 7.6,
+   "cuenca_de": "Arroyo del Pozo",
+   "nivel": "intensa"
+  },
+  "La Carolina el Potosí": {
+   "km": 13.4,
+   "max_dbz": 51,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo Arroyo 630",
    "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 18
 }
