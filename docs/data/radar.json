@@ -1,54 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 13:15",
+ "consultado": "2026-11-23 13:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 12:58",
+ "observacion": "2026-11-23 13:16",
  "nucleos": [
   {
-   "lat": -32.8891,
-   "lon": -64.4178,
+   "lat": -32.8802,
+   "lon": -64.5685,
+   "dbz": 52,
+   "max_dbz": 62,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.756,
+   "lon": -64.1704,
    "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 14.7
+   "max_dbz": 56,
+   "tope_km": 8.8
   },
   {
-   "lat": -32.96,
-   "lon": -64.6545,
-   "dbz": 49,
-   "max_dbz": 57,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -32.9334,
-   "lon": -65.0956,
-   "dbz": 49,
-   "max_dbz": 52,
+   "lat": -32.9245,
+   "lon": -64.9235,
+   "dbz": 50,
+   "max_dbz": 53,
    "tope_km": 10.6
+  },
+  {
+   "lat": -32.8891,
+   "lon": -65.2355,
+   "dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -33.022,
+   "lon": -64.4716,
+   "dbz": 47,
+   "max_dbz": 48,
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 25.4,
-   "max_dbz": 52,
-   "tope_km": 10.6,
+   "km": 15.0,
+   "max_dbz": 50,
+   "tope_km": 8.8,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
   "Santa Catalina": {
-   "km": 33.2,
-   "max_dbz": 57,
-   "tope_km": 12.3,
+   "km": 19.4,
+   "max_dbz": 48,
+   "tope_km": 13.5,
    "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "muy intensa"
-  },
-  "El Tala": {
-   "km": 5.8,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
    "nivel": "intensa"
+  },
+  "Santa Rita": {
+   "km": 6.8,
+   "max_dbz": 62,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
