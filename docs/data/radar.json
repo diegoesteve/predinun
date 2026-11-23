@@ -1,129 +1,100 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 05:00",
+ "consultado": "2026-11-23 05:15",
  "radar": "RMA1",
- "observacion": "2026-11-23 04:47",
+ "observacion": "2026-11-23 05:05",
  "nucleos": [
   {
-   "lat": -31.5311,
-   "lon": -64.1919,
-   "dbz": 54,
-   "max_dbz": 64,
+   "lat": -31.5401,
+   "lon": -64.0413,
+   "dbz": 52,
+   "max_dbz": 63,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.8635,
+   "lon": -64.5577,
+   "dbz": 51,
+   "max_dbz": 61,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.8187,
+   "lon": -64.7191,
+   "dbz": 50,
+   "max_dbz": 50,
    "tope_km": 10.0
   },
   {
-   "lat": -30.9714,
-   "lon": -64.8804,
-   "dbz": 51,
-   "max_dbz": 54,
+   "lat": -31.432,
+   "lon": -63.8799,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.0166,
+   "lon": -64.7513,
+   "dbz": 49,
+   "max_dbz": 55,
    "tope_km": 8.8
   },
   {
-   "lat": -31.3238,
-   "lon": -64.2027,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 8.8
+   "lat": -31.3779,
+   "lon": -64.0951,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 8.2
   },
   {
-   "lat": -31.9173,
-   "lon": -64.6976,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -31.4951,
-   "lon": -63.7401,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.9083,
-   "lon": -64.4286,
-   "dbz": 48,
-   "max_dbz": 52,
+   "lat": -31.8994,
+   "lon": -64.2887,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cordoba": {
-   "km": 4.2,
-   "max_dbz": 51,
-   "tope_km": 8.8,
-   "cuenca_de": "Canal",
-   "nivel": "intensa"
-  },
-  "Villa de Soto": {
-   "km": 15.9,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "cuenca_de": "Río Soto",
-   "nivel": "intensa"
-  },
-  "Los Reartes": {
-   "km": 11.3,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio De Los Reartes",
+  "Malvinas Argentinas": {
+   "km": 4.1,
+   "max_dbz": 55,
+   "tope_km": 8.2,
    "nivel": "muy intensa"
   },
-  "Bañado de Soto": {
-   "km": 22.1,
-   "max_dbz": 54,
-   "tope_km": 8.8,
-   "cuenca_de": "San Guillermo De Soto",
+  "Potrero de Garay": {
+   "km": 14.0,
+   "max_dbz": 50,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Pedro",
    "nivel": "intensa"
   },
-  "Villa Berna": {
+  "Las Cañadas": {
    "km": 2.8,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "nivel": "muy intensa"
-  },
-  "Los Molinos": {
-   "km": 6.7,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio Los Molinos",
-   "nivel": "intensa"
-  },
-  "Capilla Vieja": {
-   "km": 8.9,
-   "max_dbz": 59,
-   "tope_km": 11.7,
-   "cuenca_de": "Rio De Los Reartes",
+   "max_dbz": 55,
+   "tope_km": 8.8,
    "nivel": "muy intensa"
   },
   "La Boca del Río": {
-   "km": 28.0,
-   "max_dbz": 59,
-   "tope_km": 11.7,
+   "km": 13.8,
+   "max_dbz": 61,
+   "tope_km": 17.0,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
   "Villa la Merced": {
-   "km": 21.6,
-   "max_dbz": 59,
-   "tope_km": 11.7,
+   "km": 7.4,
+   "max_dbz": 61,
+   "tope_km": 17.0,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
-  "El Gateado": {
-   "km": 9.7,
-   "max_dbz": 51,
-   "tope_km": 8.8,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Parque Norte": {
-   "km": 3.7,
-   "max_dbz": 51,
-   "tope_km": 8.8,
-   "nivel": "intensa"
+  "Villa Ciudad Parque los Reartes": {
+   "km": 5.0,
+   "max_dbz": 61,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 10
 }
