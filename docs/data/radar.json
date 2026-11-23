@@ -1,112 +1,161 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 03:15",
+ "consultado": "2026-11-23 03:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 02:59",
+ "observacion": "2026-11-23 03:17",
  "nucleos": [
   {
-   "lat": -31.7738,
-   "lon": -65.0956,
+   "lat": -31.8545,
+   "lon": -65.2247,
    "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.5401,
+   "lon": -64.0736,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.3599,
+   "lon": -64.8697,
+   "dbz": 50,
    "max_dbz": 56,
    "tope_km": 14.7
   },
   {
-   "lat": -31.7109,
-   "lon": -64.7083,
+   "lat": -31.621,
+   "lon": -64.4609,
    "dbz": 50,
    "max_dbz": 54,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.5941,
-   "lon": -64.4501,
-   "dbz": 49,
-   "max_dbz": 52,
    "tope_km": 10.6
   },
   {
-   "lat": -31.7828,
-   "lon": -65.1709,
+   "lat": -31.7917,
+   "lon": -65.0095,
    "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 10.0
+   "max_dbz": 55,
+   "tope_km": 11.7
   },
   {
-   "lat": -31.7289,
-   "lon": -64.4286,
+   "lat": -31.7468,
+   "lon": -64.5039,
    "dbz": 49,
-   "max_dbz": 54,
+   "max_dbz": 52,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.7199,
+   "lon": -64.6868,
+   "dbz": 49,
+   "max_dbz": 55,
    "tope_km": 11.1
+  },
+  {
+   "lat": -31.63,
+   "lon": -64.2565,
+   "dbz": 48,
+   "max_dbz": 53,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alta Gracia": {
-   "km": 7.1,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Falda del Carmen",
-   "nivel": "intensa"
-  },
-  "Anisacate": {
-   "km": 1.4,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "Villa los Aromos": {
-   "km": 1.9,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "nivel": "intensa"
-  },
-  "La Serranita": {
-   "km": 2.8,
-   "max_dbz": 54,
-   "tope_km": 11.1,
-   "nivel": "intensa"
-  },
-  "Altautina": {
-   "km": 6.8,
+  "Villa de Soto": {
+   "km": 57.2,
    "max_dbz": 56,
    "tope_km": 14.7,
-   "cuenca_de": "Arroyo de Altautina",
+   "cuenca_de": "Río Soto",
+   "nivel": "muy intensa"
+  },
+  "Alta Gracia": {
+   "km": 1.8,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "cuenca_de": "Chicamtoltina",
+   "nivel": "intensa"
+  },
+  "Cruz de Caña": {
+   "km": 31.6,
+   "max_dbz": 56,
+   "tope_km": 14.7,
+   "cuenca_de": "Río San Guillermo",
+   "nivel": "muy intensa"
+  },
+  "Villa Dolores": {
+   "km": 19.2,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "muy intensa"
+  },
+  "Anisacate": {
+   "km": 25.5,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
+  },
+  "Bañado de Soto": {
+   "km": 62.1,
+   "max_dbz": 56,
+   "tope_km": 14.7,
+   "cuenca_de": "San Guillermo De Soto",
+   "nivel": "muy intensa"
+  },
+  "Nono": {
+   "km": 2.7,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
+  },
+  "La Serranita": {
+   "km": 21.7,
+   "max_dbz": 55,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
   "Falda del Carmen": {
-   "km": 3.3,
-   "max_dbz": 52,
+   "km": 4.5,
+   "max_dbz": 54,
    "tope_km": 10.6,
    "nivel": "intensa"
   },
   "La Cortadera": {
-   "km": 26.9,
-   "max_dbz": 56,
-   "tope_km": 14.7,
+   "km": 22.2,
+   "max_dbz": 57,
+   "tope_km": 10.6,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "La Paisanita": {
-   "km": 21.3,
+  "Pozo del Tala": {
+   "km": 3.5,
    "max_dbz": 54,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "La Paisanita": {
+   "km": 19.2,
+   "max_dbz": 55,
    "tope_km": 11.1,
    "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Villa la Rancherita": {
-   "km": 4.2,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+   "km": 4.3,
+   "max_dbz": 52,
+   "tope_km": 11.7,
    "nivel": "intensa"
   },
-  "Costa Azul": {
-   "km": 3.4,
-   "max_dbz": 54,
-   "tope_km": 11.1,
+  "Rafael Garcia": {
+   "km": 1.6,
+   "max_dbz": 53,
+   "tope_km": 10.6,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
