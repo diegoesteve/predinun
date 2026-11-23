@@ -1,40 +1,44 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-22 22:30",
+ "consultado": "2026-11-22 22:45",
  "radar": "RMA1",
- "observacion": "2026-11-22 22:17",
+ "observacion": "2026-11-22 22:26",
  "nucleos": [
   {
-   "lat": -31.9173,
-   "lon": -64.9235,
-   "dbz": 49,
+   "lat": -31.8994,
+   "lon": -64.9557,
+   "dbz": 50,
    "max_dbz": 56,
-   "tope_km": 10.0
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Potrero de Garay": {
-   "km": 34.8,
+  "Villa Dolores": {
+   "km": 17.6,
    "max_dbz": 56,
-   "tope_km": 10.0,
-   "cuenca_de": "Rio San Pedro",
+   "tope_km": 8.8,
+   "cuenca_de": "Arroyo De Las Tapias",
    "nivel": "muy intensa"
   },
-  "La Boca del Río": {
-   "km": 48.9,
+  "Los Hornillos": {
+   "km": 3.0,
    "max_dbz": 56,
-   "tope_km": 10.0,
-   "cuenca_de": "Río de los Molinos",
+   "tope_km": 8.8,
    "nivel": "muy intensa"
   },
-  "Villa la Merced": {
-   "km": 41.3,
+  "Dos Arroyos": {
+   "km": 2.8,
    "max_dbz": 56,
-   "tope_km": 10.0,
-   "cuenca_de": "Río de los Molinos",
+   "tope_km": 8.8,
+   "nivel": "muy intensa"
+  },
+  "El Pantanillo": {
+   "km": 3.9,
+   "max_dbz": 56,
+   "tope_km": 8.8,
    "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 19
 }
