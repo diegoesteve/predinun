@@ -1,74 +1,74 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 12:15",
+ "consultado": "2026-11-23 12:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 12:03",
+ "observacion": "2026-11-23 12:12",
  "nucleos": [
   {
-   "lat": -32.8891,
-   "lon": -64.4178,
+   "lat": -33.0839,
+   "lon": -65.2139,
    "dbz": 52,
    "max_dbz": 59,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -33.0839,
-   "lon": -65.2893,
-   "dbz": 51,
-   "max_dbz": 58,
    "tope_km": 12.3
   },
   {
-   "lat": -33.137,
-   "lon": -64.7621,
+   "lat": -32.9334,
+   "lon": -64.3318,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -33.1635,
+   "lon": -64.6868,
    "dbz": 49,
    "max_dbz": 53,
    "tope_km": 11.7
   },
   {
-   "lat": -33.2077,
-   "lon": -64.7083,
+   "lat": -32.8359,
+   "lon": -64.5147,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.7
+   "max_dbz": 49,
+   "tope_km": 12.3
   },
   {
-   "lat": -33.0043,
-   "lon": -64.2672,
+   "lat": -33.2254,
+   "lon": -64.6653,
    "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 12.9
+   "max_dbz": 51,
+   "tope_km": 13.5
   },
   {
-   "lat": -33.0485,
-   "lon": -64.3748,
+   "lat": -32.6582,
+   "lon": -64.2242,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.8536,
+   "lon": -64.4394,
    "dbz": 47,
    "max_dbz": 48,
-   "tope_km": 12.9
+   "tope_km": 12.3
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 36.4,
-   "max_dbz": 58,
+   "km": 36.7,
+   "max_dbz": 59,
    "tope_km": 12.3,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Santa Catalina": {
-   "km": 31.4,
-   "max_dbz": 53,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo Santa Catalina",
-   "nivel": "intensa"
-  },
-  "La Carolina el Potosí": {
-   "km": 2.8,
-   "max_dbz": 50,
-   "tope_km": 11.7,
+  "Paso del Río Seco": {
+   "km": 4.8,
+   "max_dbz": 49,
+   "tope_km": 12.3,
    "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 18
 }
