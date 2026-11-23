@@ -1,32 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 15:15",
+ "consultado": "2026-11-23 15:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 14:55",
+ "observacion": "2026-11-23 15:13",
  "nucleos": [
   {
-   "lat": -32.1947,
-   "lon": -64.8697,
+   "lat": -32.4357,
+   "lon": -64.321,
    "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -32.4981,
-   "lon": -64.2242,
-   "dbz": 49,
-   "max_dbz": 53,
+   "max_dbz": 55,
    "tope_km": 17.0
   },
   {
-   "lat": -32.6493,
-   "lon": -63.8584,
+   "lat": -32.4,
+   "lon": -64.8267,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.0
+   "max_dbz": 53,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.4802,
+   "lon": -64.1059,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 20
+ "localidades": {
+  "Almafuerte": {
+   "km": 26.5,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 17.3,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Villa la Rivera": {
+   "km": 31.2,
+   "max_dbz": 53,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 17
 }
