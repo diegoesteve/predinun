@@ -1,60 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 13:00",
+ "consultado": "2026-11-23 13:15",
  "radar": "RMA1",
- "observacion": "2026-11-23 12:49",
+ "observacion": "2026-11-23 12:58",
  "nucleos": [
   {
-   "lat": -32.8536,
-   "lon": -64.4824,
-   "dbz": 55,
-   "max_dbz": 61,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.9423,
-   "lon": -65.1602,
+   "lat": -32.8891,
+   "lon": -64.4178,
    "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 10.6
+   "max_dbz": 54,
+   "tope_km": 14.7
   },
   {
-   "lat": -32.9777,
-   "lon": -64.7513,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 10.6
+   "lat": -32.96,
+   "lon": -64.6545,
+   "dbz": 49,
+   "max_dbz": 57,
+   "tope_km": 12.3
   },
   {
-   "lat": -32.9423,
-   "lon": -64.1704,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 9.4
+   "lat": -32.9334,
+   "lon": -65.0956,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Tilisarao": {
-   "km": 22.9,
-   "max_dbz": 58,
+   "km": 25.4,
+   "max_dbz": 52,
    "tope_km": 10.6,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Santa Catalina": {
-   "km": 38.2,
-   "max_dbz": 53,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Santa Catalina",
    "nivel": "intensa"
   },
-  "El Tala": {
-   "km": 0.6,
-   "max_dbz": 58,
-   "tope_km": 10.6,
+  "Santa Catalina": {
+   "km": 33.2,
+   "max_dbz": 57,
+   "tope_km": 12.3,
+   "cuenca_de": "Arroyo Santa Catalina",
    "nivel": "muy intensa"
+  },
+  "El Tala": {
+   "km": 5.8,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 18
 }
