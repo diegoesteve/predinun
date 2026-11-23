@@ -1,73 +1,87 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 14:30",
+ "consultado": "2026-11-23 14:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 14:19",
+ "observacion": "2026-11-23 14:28",
  "nucleos": [
   {
-   "lat": -32.676,
-   "lon": -64.8697,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.6582,
-   "lon": -64.9988,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.6582,
-   "lon": -64.2887,
+   "lat": -32.6138,
+   "lon": -64.278,
    "dbz": 50,
    "max_dbz": 58,
-   "tope_km": 9.4
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.6493,
+   "lon": -64.8267,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.5515,
+   "lon": -64.4071,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -32.6582,
+   "lon": -64.9342,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.6493,
+   "lon": -64.6545,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Alpa Corral": {
-   "km": 12.8,
-   "max_dbz": 56,
+   "km": 9.3,
+   "max_dbz": 53,
    "tope_km": 10.6,
    "cuenca_de": "Rio Barrancas",
-   "nivel": "muy intensa"
-  },
-  "Villa Larca": {
-   "km": 4.1,
-   "max_dbz": 56,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Papagayos": {
-   "km": 2.9,
-   "max_dbz": 56,
+   "km": 4.6,
+   "max_dbz": 49,
    "tope_km": 10.6,
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Paso del Río Seco": {
-   "km": 32.9,
-   "max_dbz": 56,
+   "km": 31.1,
+   "max_dbz": 53,
    "tope_km": 10.6,
    "cuenca_de": "Río de las Barrancas",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Santa Rita": {
-   "km": 43.0,
-   "max_dbz": 56,
+   "km": 42.0,
+   "max_dbz": 53,
    "tope_km": 10.6,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Unión de los Rios": {
-   "km": 10.1,
-   "max_dbz": 56,
+   "km": 6.2,
+   "max_dbz": 53,
    "tope_km": 10.6,
    "cuenca_de": "Arroyo El Talita",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
+  },
+  "Elena": {
+   "km": 2.7,
+   "max_dbz": 50,
+   "tope_km": 11.1,
+   "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
