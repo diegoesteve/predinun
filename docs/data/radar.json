@@ -1,10 +1,120 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 20:30",
+ "consultado": "2026-11-23 20:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 20:13",
- "nucleos": [],
+ "observacion": "2026-11-23 20:31",
+ "nucleos": [
+  {
+   "lat": -31.4681,
+   "lon": -65.5905,
+   "dbz": 51,
+   "max_dbz": 55,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.0347,
+   "lon": -65.5259,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -30.9352,
+   "lon": -65.4721,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.6176,
+   "lon": -64.8051,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.5813,
+   "lon": -64.3748,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -31.8007,
+   "lon": -64.988,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.1252,
+   "lon": -65.5474,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.7738,
+   "lon": -65.1279,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 9.4
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "localidades": {
+  "Cañada de Rio Pinto": {
+   "km": 15.7,
+   "max_dbz": 52,
+   "tope_km": 12.3,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Villa Dolores": {
+   "km": 19.8,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "intensa"
+  },
+  "Nono": {
+   "km": 0.6,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Las Calles": {
+   "km": 3.2,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "nivel": "intensa"
+  },
+  "Altautina": {
+   "km": 3.9,
+   "max_dbz": 48,
+   "tope_km": 9.4,
+   "cuenca_de": "Arroyo de Altautina",
+   "nivel": "intensa"
+  },
+  "La Cortadera": {
+   "km": 24.0,
+   "max_dbz": 48,
+   "tope_km": 9.4,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Ischilín": {
+   "km": 1.0,
+   "max_dbz": 52,
+   "tope_km": 12.3,
+   "nivel": "intensa"
+  },
+  "Ischilín Viejo": {
+   "km": 5.0,
+   "max_dbz": 52,
+   "tope_km": 12.3,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 15
 }
