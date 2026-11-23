@@ -1,60 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 08:30",
+ "consultado": "2026-11-23 08:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 08:16",
+ "observacion": "2026-11-23 08:34",
  "nucleos": [
   {
-   "lat": -32.1322,
-   "lon": -64.2134,
+   "lat": -32.9777,
+   "lon": -64.7083,
    "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 9.4
+   "max_dbz": 57,
+   "tope_km": 10.0
   },
   {
-   "lat": -32.5693,
-   "lon": -64.4178,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -31.7648,
-   "lon": -63.9983,
-   "dbz": 50,
+   "lat": -31.5941,
+   "lon": -63.7401,
+   "dbz": 49,
    "max_dbz": 54,
    "tope_km": 8.2
   },
   {
-   "lat": -33.1635,
-   "lon": -64.8804,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 11.7
+   "lat": -32.1947,
+   "lon": -64.0198,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 9.4
   },
   {
-   "lat": -32.5515,
-   "lon": -63.8907,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 8.8
+   "lat": -32.2305,
+   "lon": -63.8799,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.63,
+   "lon": -63.8369,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 7.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Carolina el Potosí": {
-   "km": 14.0,
-   "max_dbz": 54,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo Arroyo 630",
-   "nivel": "intensa"
-  },
-  "Elena": {
-   "km": 2.4,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "nivel": "intensa"
+  "Santa Catalina": {
+   "km": 35.2,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 11
 }
