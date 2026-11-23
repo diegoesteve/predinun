@@ -1,18 +1,38 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 02:01",
+ "consultado": "2026-11-23 02:15",
  "radar": "RMA1",
- "observacion": "2026-11-23 01:37",
+ "observacion": "2026-11-23 01:55",
  "nucleos": [
   {
-   "lat": -31.666,
-   "lon": -65.5259,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 14.1
+   "lat": -31.7468,
+   "lon": -65.0311,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 24
+ "localidades": {
+  "Villa Dolores": {
+   "km": 22.2,
+   "max_dbz": 54,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo De Las Tapias",
+   "nivel": "intensa"
+  },
+  "Mina Clavero": {
+   "km": 3.1,
+   "max_dbz": 54,
+   "tope_km": 13.5,
+   "nivel": "intensa"
+  },
+  "Villa Cura Brochero": {
+   "km": 4.1,
+   "max_dbz": 54,
+   "tope_km": 13.5,
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 20
 }
