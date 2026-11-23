@@ -1,113 +1,102 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 17:15",
+ "consultado": "2026-11-23 17:32",
  "radar": "RMA1",
- "observacion": "2026-11-23 17:02",
+ "observacion": "2026-11-23 17:11",
  "nucleos": [
   {
-   "lat": -31.7109,
-   "lon": -65.0203,
+   "lat": -31.8007,
+   "lon": -64.278,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.684,
+   "lon": -64.9342,
    "dbz": 50,
    "max_dbz": 55,
-   "tope_km": 10.0
+   "tope_km": 11.1
   },
   {
-   "lat": -31.8814,
-   "lon": -64.2242,
+   "lat": -31.693,
+   "lon": -64.7298,
    "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 16.4
-  },
-  {
-   "lat": -31.7289,
-   "lon": -64.6868,
-   "dbz": 50,
-   "max_dbz": 54,
+   "max_dbz": 60,
    "tope_km": 12.3
   },
   {
-   "lat": -31.7199,
-   "lon": -64.8267,
-   "dbz": 50,
-   "max_dbz": 58,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -31.8187,
-   "lon": -64.4501,
-   "dbz": 48,
-   "max_dbz": 55,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -31.8994,
-   "lon": -64.0628,
+   "lat": -31.8276,
+   "lon": -64.6653,
    "dbz": 48,
    "max_dbz": 48,
-   "tope_km": 16.4
-  },
-  {
-   "lat": -31.9442,
-   "lon": -63.7939,
-   "dbz": 48,
-   "max_dbz": 50,
    "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 26.2,
+   "km": 33.0,
    "max_dbz": 55,
-   "tope_km": 10.0,
+   "tope_km": 11.1,
    "cuenca_de": "Arroyo De Las Tapias",
    "nivel": "muy intensa"
   },
+  "Potrero de Garay": {
+   "km": 8.9,
+   "max_dbz": 48,
+   "tope_km": 11.7,
+   "cuenca_de": "Rio San Pedro",
+   "nivel": "intensa"
+  },
   "Anisacate": {
-   "km": 38.7,
-   "max_dbz": 58,
-   "tope_km": 14.1,
+   "km": 29.7,
+   "max_dbz": 60,
+   "tope_km": 12.3,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
   "Mina Clavero": {
-   "km": 2.5,
+   "km": 4.7,
    "max_dbz": 55,
-   "tope_km": 10.0,
+   "tope_km": 11.1,
+   "cuenca_de": "Mina Clavero",
    "nivel": "muy intensa"
   },
   "La Serranita": {
-   "km": 34.9,
-   "max_dbz": 58,
-   "tope_km": 14.1,
+   "km": 26.1,
+   "max_dbz": 60,
+   "tope_km": 12.3,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
   "La Paisanita": {
-   "km": 32.5,
-   "max_dbz": 58,
-   "tope_km": 14.1,
+   "km": 23.5,
+   "max_dbz": 60,
+   "tope_km": 12.3,
    "cuenca_de": "Río Anizacate",
    "nivel": "muy intensa"
   },
-  "Jose de la Quintana": {
-   "km": 3.0,
-   "max_dbz": 55,
-   "tope_km": 12.9,
-   "nivel": "muy intensa"
-  },
   "La Boca del Río": {
-   "km": 2.8,
-   "max_dbz": 55,
-   "tope_km": 12.9,
-   "nivel": "muy intensa"
+   "km": 23.9,
+   "max_dbz": 48,
+   "tope_km": 11.7,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "intensa"
   },
-  "Villa Cura Brochero": {
-   "km": 0.1,
-   "max_dbz": 55,
-   "tope_km": 10.0,
+  "Villa la Merced": {
+   "km": 15.3,
+   "max_dbz": 48,
+   "tope_km": 11.7,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "intensa"
+  },
+  "Despeñaderos": {
+   "km": 1.5,
+   "max_dbz": 56,
+   "tope_km": 11.7,
    "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 21
 }
