@@ -1,46 +1,54 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 18:45",
+ "consultado": "2026-11-23 19:00",
  "radar": "RMA1",
- "observacion": "2026-11-23 18:24",
+ "observacion": "2026-11-23 18:42",
  "nucleos": [
   {
-   "lat": -31.4861,
-   "lon": -63.9337,
-   "dbz": 50,
-   "max_dbz": 59,
+   "lat": -31.441,
+   "lon": -63.8692,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 8.8
   },
   {
-   "lat": -32.4981,
-   "lon": -64.9557,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lat": -31.7648,
+   "lon": -63.7724,
+   "dbz": 48,
+   "max_dbz": 52,
    "tope_km": 9.4
   },
   {
-   "lat": -31.7738,
-   "lon": -63.9445,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 9.4
+   "lat": -32.5426,
+   "lon": -64.7406,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cortaderas": {
-   "km": 3.5,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+  "La Cruz": {
+   "km": 32.3,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
   },
-  "Villa Elena": {
-   "km": 3.6,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
+  "Rio de los Sauces": {
+   "km": 13.6,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "intensa"
+  },
+  "Paso Cabral": {
+   "km": 26.7,
+   "max_dbz": 50,
+   "tope_km": 8.8,
+   "cuenca_de": "Río de la Cruz",
+   "nivel": "intensa"
   }
  },
- "minutos": 22
+ "minutos": 18
 }
