@@ -1,39 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 18:15",
+ "consultado": "2026-11-23 18:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 17:56",
+ "observacion": "2026-11-23 18:14",
  "nucleos": [
   {
-   "lat": -31.6121,
-   "lon": -64.235,
+   "lat": -31.5311,
+   "lon": -64.0198,
+   "dbz": 51,
+   "max_dbz": 60,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.4535,
+   "lon": -65.0848,
    "dbz": 50,
-   "max_dbz": 63,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.8276,
-   "lon": -64.1489,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.3911,
-   "lon": -65.2785,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 10.0
+   "max_dbz": 54,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Rafael Garcia": {
-   "km": 4.2,
-   "max_dbz": 63,
-   "tope_km": 11.1,
-   "nivel": "muy intensa"
-  }
- },
- "minutos": 19
+ "localidades": {},
+ "minutos": 16
 }
