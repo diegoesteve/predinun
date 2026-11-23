@@ -1,99 +1,112 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 03:00",
+ "consultado": "2026-11-23 03:15",
  "radar": "RMA1",
- "observacion": "2026-11-23 02:49",
+ "observacion": "2026-11-23 02:59",
  "nucleos": [
   {
-   "lat": -31.7289,
-   "lon": -64.5254,
-   "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 11.1
+   "lat": -31.7738,
+   "lon": -65.0956,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 14.7
   },
   {
    "lat": -31.7109,
-   "lon": -64.6438,
+   "lon": -64.7083,
    "dbz": 50,
-   "max_dbz": 55,
+   "max_dbz": 54,
    "tope_km": 11.1
   },
   {
-   "lat": -31.675,
-   "lon": -64.8482,
+   "lat": -31.5941,
+   "lon": -64.4501,
    "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 11.1
+   "max_dbz": 52,
+   "tope_km": 10.6
   },
   {
-   "lat": -31.7738,
-   "lon": -65.2677,
-   "dbz": 48,
+   "lat": -31.7828,
+   "lon": -65.1709,
+   "dbz": 49,
    "max_dbz": 53,
-   "tope_km": 17.0
+   "tope_km": 10.0
   },
   {
-   "lat": -31.3148,
-   "lon": -65.0741,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.0
+   "lat": -31.7289,
+   "lon": -64.4286,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Carlos Minas": {
-   "km": 14.0,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "cuenca_de": "Jaime",
-   "nivel": "intensa"
-  },
-  "Salsacate": {
-   "km": 1.3,
-   "max_dbz": 48,
-   "tope_km": 10.0,
+  "Alta Gracia": {
+   "km": 7.1,
+   "max_dbz": 52,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Falda del Carmen",
    "nivel": "intensa"
   },
   "Anisacate": {
-   "km": 10.2,
-   "max_dbz": 59,
+   "km": 1.4,
+   "max_dbz": 54,
    "tope_km": 11.1,
    "cuenca_de": "Río Anizacate",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
+  },
+  "Villa los Aromos": {
+   "km": 1.9,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "nivel": "intensa"
   },
   "La Serranita": {
-   "km": 6.4,
-   "max_dbz": 59,
+   "km": 2.8,
+   "max_dbz": 54,
    "tope_km": 11.1,
-   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "Altautina": {
+   "km": 6.8,
+   "max_dbz": 56,
+   "tope_km": 14.7,
+   "cuenca_de": "Arroyo de Altautina",
    "nivel": "muy intensa"
   },
-  "Taninga": {
-   "km": 3.5,
-   "max_dbz": 48,
-   "tope_km": 10.0,
+  "Falda del Carmen": {
+   "km": 3.3,
+   "max_dbz": 52,
+   "tope_km": 10.6,
    "nivel": "intensa"
   },
   "La Cortadera": {
-   "km": 12.7,
-   "max_dbz": 53,
-   "tope_km": 17.0,
+   "km": 26.9,
+   "max_dbz": 56,
+   "tope_km": 14.7,
    "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "San Clemente": {
-   "km": 1.4,
-   "max_dbz": 55,
-   "tope_km": 11.1,
    "nivel": "muy intensa"
   },
   "La Paisanita": {
-   "km": 4.0,
-   "max_dbz": 59,
+   "km": 21.3,
+   "max_dbz": 54,
    "tope_km": 11.1,
-   "nivel": "muy intensa"
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "Villa la Rancherita": {
+   "km": 4.2,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  },
+  "Costa Azul": {
+   "km": 3.4,
+   "max_dbz": 54,
+   "tope_km": 11.1,
+   "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
