@@ -1,7 +1,47 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-23 07:45",
+ "consultado": "2026-11-23 08:00",
  "alertas": [
+  {
+   "id": "2026_11_23_1044_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas fuertes",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-23T10:44:00-03:00",
+   "hasta": "2026-11-23T12:44:00-03:00",
+   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
+   "zona": "CORDOBA: RIO CUARTO. SAN LUIS: GRAL PEDERNERA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_23_1044_cap_es.xml",
+   "desde_local": "23/11 10:44",
+   "hasta_local": "23/11 12:44",
+   "localidades": 7,
+   "poligonos": [
+    [
+     [
+      -64.07,
+      -33.04
+     ],
+     [
+      -64.12,
+      -33.8
+     ],
+     [
+      -65.55,
+      -33.55
+     ],
+     [
+      -65.54,
+      -33.04
+     ],
+     [
+      -64.07,
+      -33.04
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_15",
    "tipo": "alerta",
@@ -6581,10 +6621,12 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_21"
   ],
   "Rio Cuarto": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Santa Catalina": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -6593,6 +6635,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "La Carolina el Potosí": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -6601,6 +6644,7 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Achiras": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -6625,10 +6669,12 @@
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Las Higueras": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
   "Las Vertientes": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_20",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_20"
   ],
@@ -7069,6 +7115,7 @@
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_13"
   ],
   "San José del Morro": [
+   "2026_11_23_1044_cap_es",
    "CAP_20261123092730_Tormenta_Llanura_alertas_alertas_13",
    "CAP_20261123092730_Tormenta_Patagonia_alertas_alertas_13"
   ],
