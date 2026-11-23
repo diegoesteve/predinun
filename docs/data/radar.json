@@ -1,54 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 08:45",
+ "consultado": "2026-11-23 09:00",
  "radar": "RMA1",
- "observacion": "2026-11-23 08:34",
+ "observacion": "2026-11-23 08:43",
  "nucleos": [
   {
-   "lat": -32.9777,
-   "lon": -64.7083,
-   "dbz": 51,
-   "max_dbz": 57,
+   "lat": -30.8173,
+   "lon": -64.4716,
+   "dbz": 52,
+   "max_dbz": 56,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -32.1769,
+   "lon": -64.0843,
+   "dbz": 48,
+   "max_dbz": 48,
    "tope_km": 10.0
   },
   {
-   "lat": -31.5941,
-   "lon": -63.7401,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 8.2
-  },
-  {
-   "lat": -32.1947,
-   "lon": -64.0198,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -32.2305,
-   "lon": -63.8799,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -31.63,
-   "lon": -63.8369,
+   "lat": -32.2215,
+   "lon": -63.9445,
    "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 7.0
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Santa Catalina": {
-   "km": 35.2,
-   "max_dbz": 57,
+  "San Marcos Sierras": {
+   "km": 15.8,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "cuenca_de": "Rio San Marcos Sierra",
+   "nivel": "muy intensa"
+  },
+  "Rio Tercero": {
+   "km": 3.8,
+   "max_dbz": 48,
    "tope_km": 10.0,
-   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "intensa"
+  },
+  "Santa Isabel": {
+   "km": 6.2,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Seco (Quebrada de Luna)",
+   "nivel": "muy intensa"
+  },
+  "Quebrada de Luna": {
+   "km": 2.5,
+   "max_dbz": 56,
+   "tope_km": 9.4,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
