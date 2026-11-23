@@ -1,47 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-23 17:30",
+ "consultado": "2026-11-23 17:45",
  "alertas": [
-  {
-   "id": "2026_11_23_1827_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON RAFAGAS Y CAIDA DE GRANIZO",
-   "desde": "2026-11-23T18:27:00-03:00",
-   "hasta": "2026-11-23T20:27:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON RAFAGAS Y CAIDA DE GRANIZO",
-   "instruccion": "Retirá o asegurá objetos que puedan ser arrastrados por el viento. Cerrá y alejate de puertas y ventanas. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
-   "zona": "CORDOBA: SAN ALBERTO - SAN JAVIER. SAN LUIS: AYACUCHO - JUNIN - LDOR GRAL SAN MARTIN.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_23_1827_cap_es.xml",
-   "desde_local": "23/11 18:27",
-   "hasta_local": "23/11 20:27",
-   "localidades": 12,
-   "poligonos": [
-    [
-     [
-      -65.89,
-      -32.09
-     ],
-     [
-      -65.34,
-      -31.69
-     ],
-     [
-      -64.99,
-      -32.1
-     ],
-     [
-      -65.69,
-      -32.41
-     ],
-     [
-      -65.89,
-      -32.09
-     ]
-    ]
-   ]
-  },
   {
    "id": "2026_11_23_1917_cap_es",
    "tipo": "aviso a corto plazo",
@@ -6574,7 +6534,6 @@
   ],
   "La Poblacion": [
    "2026_11_23_1917_cap_es",
-   "2026_11_23_1827_cap_es",
    "CAP_20261123115710_Tormenta_Llanura_alertas_alertas_10",
    "CAP_20261123115710_Tormenta_Patagonia_alertas_alertas_10"
   ],
@@ -6657,51 +6616,6 @@
    "2026_11_23_1917_cap_es",
    "CAP_20261123115710_Tormenta_Llanura_alertas_alertas_9",
    "CAP_20261123115710_Tormenta_Patagonia_alertas_alertas_9"
-  ],
-  "Villa Dolores": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
-  ],
-  "Sauce Arriba": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
-  ],
-  "Chuchiras": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
-  ],
-  "La Travesía": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Llanura_alertas_alertas_10",
-   "CAP_20261123115710_Tormenta_Patagonia_alertas_alertas_10"
-  ],
-  "Los Romeros": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
-  ],
-  "Conlara": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
-  ],
-  "Los Cajones": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_5"
-  ],
-  "Los Callejones": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
-  ],
-  "Los Cerrillos": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
-  ],
-  "San Jose": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
-  ],
-  "Villa Sarmiento": [
-   "2026_11_23_1827_cap_es",
-   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
   ],
   "Cañada de Rio Pinto": [
    "CAP_20261123115710_Tormenta_Patagonia_alertas_alertas_20",
@@ -7115,6 +7029,10 @@
    "CAP_20261123115710_Tormenta_Llanura_alertas_alertas_10",
    "CAP_20261123115710_Tormenta_Patagonia_alertas_alertas_10"
   ],
+  "La Travesía": [
+   "CAP_20261123115710_Tormenta_Llanura_alertas_alertas_10",
+   "CAP_20261123115710_Tormenta_Patagonia_alertas_alertas_10"
+  ],
   "Tala Cañada": [
    "CAP_20261123115710_Tormenta_Llanura_alertas_alertas_10",
    "CAP_20261123115710_Tormenta_Patagonia_alertas_alertas_10"
@@ -7391,7 +7309,19 @@
    "CAP_20261123115710_Tormenta_Llanura_alertas_alertas_13",
    "CAP_20261123115710_Tormenta_Patagonia_alertas_alertas_13"
   ],
+  "Villa Dolores": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Sauce Arriba": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Chuchiras": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
+  ],
   "Chancaní": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Los Romeros": [
    "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
   ],
   "La Cortadera": [
@@ -7400,7 +7330,22 @@
   "Las Oscuras": [
    "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
   ],
+  "Conlara": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
+  ],
   "El Medanito": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Los Callejones": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Los Cerrillos": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "San Jose": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
+  ],
+  "Villa Sarmiento": [
    "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_6"
   ],
   "Tilisarao": [
@@ -7416,6 +7361,9 @@
    "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_5"
   ],
   "Concarán": [
+   "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_5"
+  ],
+  "Los Cajones": [
    "CAP_20261123115710_Tormenta_Cordillera_alertas_alertas_5"
   ],
   "Villa de Soto": [
