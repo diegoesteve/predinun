@@ -1,81 +1,245 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 05:45",
+ "consultado": "2026-11-23 06:00",
  "radar": "RMA1",
- "observacion": "2026-11-23 05:23",
+ "observacion": "2026-11-23 05:42",
  "nucleos": [
   {
-   "lat": -31.8456,
-   "lon": -64.5685,
+   "lat": -32.0338,
+   "lon": -64.8267,
    "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 10.6
+   "max_dbz": 59,
+   "tope_km": 14.7
   },
   {
-   "lat": -31.3779,
-   "lon": -63.8692,
-   "dbz": 51,
+   "lat": -31.8814,
+   "lon": -64.4286,
+   "dbz": 52,
    "max_dbz": 59,
    "tope_km": 10.0
   },
   {
-   "lat": -31.8814,
-   "lon": -64.4071,
-   "dbz": 50,
+   "lat": -31.9263,
+   "lon": -65.0203,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -31.1975,
+   "lon": -64.3533,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.9866,
+   "lon": -64.6653,
+   "dbz": 51,
    "max_dbz": 57,
    "tope_km": 10.6
   },
   {
-   "lat": -31.5491,
-   "lon": -63.8907,
+   "lat": -31.5221,
+   "lon": -64.7083,
    "dbz": 50,
-   "max_dbz": 59,
-   "tope_km": 9.4
+   "max_dbz": 55,
+   "tope_km": 8.8
   },
   {
-   "lat": -32.7826,
-   "lon": -64.4824,
+   "lat": -31.45,
+   "lon": -63.7293,
    "dbz": 49,
    "max_dbz": 52,
    "tope_km": 8.8
   },
   {
-   "lat": -31.4591,
-   "lon": -63.7616,
+   "lat": -31.8814,
+   "lon": -64.2565,
    "dbz": 49,
-   "max_dbz": 54,
+   "max_dbz": 52,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.8814,
+   "lon": -64.0843,
+   "dbz": 48,
+   "max_dbz": 53,
    "tope_km": 11.1
+  },
+  {
+   "lat": -32.1769,
+   "lon": -64.4609,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -32.5426,
+   "lon": -65.5044,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.9442,
+   "lon": -64.3103,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.7828,
+   "lon": -64.0843,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 10.0
   }
  ],
- "cuencas": {},
+ "cuencas": {
+  "SierrasChicas": {
+   "nucleos": 1,
+   "max_dbz": 56
+  },
+  "SanAntonio_CPaz": {
+   "nucleos": 1,
+   "max_dbz": 55
+  }
+ },
  "localidades": {
-  "Potrero de Garay": {
-   "km": 2.1,
-   "max_dbz": 61,
-   "tope_km": 10.6,
-   "cuenca_de": "Rio San Pedro",
+  "Rio Ceballos": {
+   "km": 4.2,
+   "max_dbz": 56,
+   "tope_km": 8.8,
    "nivel": "muy intensa"
   },
-  "Los Molinos": {
-   "km": 4.0,
+  "Villa Carlos Paz": {
+   "km": 23.9,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Unquillo": {
+   "km": 4.2,
+   "max_dbz": 56,
+   "tope_km": 8.8,
+   "nivel": "muy intensa"
+  },
+  "Cuesta Blanca": {
+   "km": 12.3,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Villa del Dique": {
+   "km": 2.4,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  },
+  "Villa Dolores": {
+   "km": 11.7,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "cuenca_de": "Canal De Riego",
+   "nivel": "muy intensa"
+  },
+  "El Corcovado el Torreon": {
+   "km": 32.7,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "muy intensa"
+  },
+  "Mayu Sumaj": {
+   "km": 16.7,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Santa Mónica": {
+   "km": 19.4,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "cuenca_de": "Río Santa Rosa",
+   "nivel": "muy intensa"
+  },
+  "Santa Catalina": {
+   "km": 31.7,
    "max_dbz": 57,
    "tope_km": 10.6,
+   "cuenca_de": "Arroyo Santa Catalina",
+   "nivel": "muy intensa"
+  },
+  "Tala Huasi": {
+   "km": 14.1,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "cuenca_de": "Rio San Antonio",
+   "nivel": "muy intensa"
+  },
+  "Las Tapias": {
+   "km": 7.7,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "cuenca_de": "Rio De Los Sauces",
+   "nivel": "muy intensa"
+  },
+  "Las Chacras Norte": {
+   "km": 1.9,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo Los Hornillos",
+   "nivel": "muy intensa"
+  },
+  "El Corcovado": {
+   "km": 31.8,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "muy intensa"
+  },
+  "Villa de las Rosas": {
+   "km": 2.8,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "nivel": "muy intensa"
+  },
+  "San Miguel de los Ríos": {
+   "km": 5.5,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "cuenca_de": "Arroyo Las Socabonas (Las Mesillas)",
    "nivel": "muy intensa"
   },
   "La Boca del Río": {
-   "km": 14.6,
-   "max_dbz": 61,
-   "tope_km": 10.6,
+   "km": 4.3,
+   "max_dbz": 59,
+   "tope_km": 10.0,
    "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
-  "Villa la Merced": {
-   "km": 7.0,
-   "max_dbz": 61,
-   "tope_km": 10.6,
-   "cuenca_de": "Río de los Molinos",
+  "Los Hornillos": {
+   "km": 4.1,
+   "max_dbz": 59,
+   "tope_km": 13.5,
    "nivel": "muy intensa"
+  },
+  "Quebrada de los Pozos": {
+   "km": 2.0,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "nivel": "muy intensa"
+  },
+  "Villa Rumipal": {
+   "km": 1.9,
+   "max_dbz": 51,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   }
  },
- "minutos": 22
+ "minutos": 19
 }
