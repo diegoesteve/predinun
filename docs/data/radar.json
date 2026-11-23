@@ -1,54 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 15:30",
+ "consultado": "2026-11-23 15:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 15:13",
+ "observacion": "2026-11-23 15:31",
  "nucleos": [
   {
-   "lat": -32.4357,
-   "lon": -64.321,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 17.0
+   "lat": -31.8635,
+   "lon": -64.59,
+   "dbz": 53,
+   "max_dbz": 63,
+   "tope_km": 14.7
   },
   {
-   "lat": -32.4,
-   "lon": -64.8267,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 11.1
+   "lat": -32.3911,
+   "lon": -64.1596,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 9.4
   },
   {
-   "lat": -32.4802,
-   "lon": -64.1059,
-   "dbz": 47,
-   "max_dbz": 49,
+   "lat": -32.3733,
+   "lon": -64.2995,
+   "dbz": 48,
+   "max_dbz": 50,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Almafuerte": {
-   "km": 26.5,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
+  "La Boca del Río": {
+   "km": 16.8,
+   "max_dbz": 63,
+   "tope_km": 14.7,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
-  "Cañada del Sauce": {
-   "km": 17.3,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Villa la Rivera": {
-   "km": 31.2,
-   "max_dbz": 53,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
+  "Villa la Merced": {
+   "km": 9.8,
+   "max_dbz": 63,
+   "tope_km": 14.7,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
