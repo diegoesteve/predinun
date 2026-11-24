@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23 21:06",
+ "generado": "2026-11-23 21:15",
  "hoy": "2026-11-23",
  "manana": "2026-11-24",
  "dia_manana": "martes",
@@ -443,9 +443,9 @@
    "rio": "sin nombre",
    "expo": "muy expuesta",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 3,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del sin nombre. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
    },
    "man": {
     "nivel": 2,
@@ -1050,9 +1050,9 @@
    "rio": "Río De Los Sauces",
    "expo": "expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Arroyo De Las Tapias. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
@@ -2555,9 +2555,9 @@
    "rio": "Arroyo de Altautina",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Arroyo de Altautina. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
@@ -4185,9 +4185,10 @@
    "rio": "Río Grande",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 1,
-    "titulo": "Puede llover fuerte",
-    "texto": "Se espera mucha lluvia en poco tiempo hoy. Con tormenta, el arroyo puede crecer en pocos minutos, aunque acá no llueva."
+    "nivel": 2,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del arroyo. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
+    "tambien": "Puede llover fuerte"
    },
    "man": {
     "nivel": 1,
