@@ -1,120 +1,88 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 20:45",
+ "consultado": "2026-11-23 21:00",
  "radar": "RMA1",
- "observacion": "2026-11-23 20:31",
+ "observacion": "2026-11-23 20:49",
  "nucleos": [
   {
-   "lat": -31.4681,
+   "lat": -30.5631,
    "lon": -65.5905,
-   "dbz": 51,
-   "max_dbz": 55,
+   "dbz": 54,
+   "max_dbz": 65,
    "tope_km": 17.0
   },
   {
-   "lat": -31.0347,
-   "lon": -65.5259,
-   "dbz": 51,
-   "max_dbz": 56,
-   "tope_km": 13.5
+   "lat": -31.8097,
+   "lon": -64.7406,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 10.0
   },
   {
-   "lat": -30.9352,
-   "lon": -65.4721,
-   "dbz": 49,
-   "max_dbz": 49,
+   "lat": -30.6358,
+   "lon": -64.2565,
+   "dbz": 50,
+   "max_dbz": 55,
    "tope_km": 11.7
   },
   {
-   "lat": -30.6176,
-   "lon": -64.8051,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 12.9
+   "lat": -31.639,
+   "lon": -65.3108,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 13.5
   },
   {
-   "lat": -30.5813,
-   "lon": -64.3748,
+   "lat": -31.1071,
+   "lon": -65.4399,
    "dbz": 49,
    "max_dbz": 52,
    "tope_km": 12.3
-  },
-  {
-   "lat": -31.8007,
-   "lon": -64.988,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.1252,
-   "lon": -65.5474,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -31.7738,
-   "lon": -65.1279,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada de Rio Pinto": {
-   "km": 15.7,
-   "max_dbz": 52,
-   "tope_km": 12.3,
+  "Potrero de Garay": {
+   "km": 16.1,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio San Pedro",
+   "nivel": "muy intensa"
+  },
+  "Las Oscuras": {
+   "km": 3.5,
+   "max_dbz": 54,
+   "tope_km": 13.5,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Villa Dolores": {
-   "km": 19.8,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo De Las Tapias",
+  "El Medanito": {
+   "km": 6.8,
+   "max_dbz": 54,
+   "tope_km": 13.5,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Nono": {
-   "km": 0.6,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+  "La Boca del Río": {
+   "km": 31.1,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
   },
-  "Las Calles": {
-   "km": 3.2,
-   "max_dbz": 52,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+  "Villa la Merced": {
+   "km": 22.4,
+   "max_dbz": 57,
+   "tope_km": 10.0,
+   "cuenca_de": "Río de los Molinos",
+   "nivel": "muy intensa"
   },
-  "Altautina": {
+  "Villa Albertina": {
    "km": 3.9,
-   "max_dbz": 48,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo de Altautina",
-   "nivel": "intensa"
-  },
-  "La Cortadera": {
-   "km": 24.0,
-   "max_dbz": 48,
-   "tope_km": 9.4,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Ischilín": {
-   "km": 1.0,
-   "max_dbz": 52,
-   "tope_km": 12.3,
-   "nivel": "intensa"
-  },
-  "Ischilín Viejo": {
-   "km": 5.0,
-   "max_dbz": 52,
-   "tope_km": 12.3,
-   "nivel": "intensa"
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 11
 }
