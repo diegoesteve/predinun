@@ -1,96 +1,66 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 23:30",
+ "consultado": "2026-11-23 23:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 23:14",
+ "observacion": "2026-11-23 23:31",
  "nucleos": [
   {
-   "lat": -31.5761,
-   "lon": -64.6438,
-   "dbz": 52,
-   "max_dbz": 63,
-   "tope_km": 12.3
-  },
-  {
    "lat": -29.8604,
-   "lon": -64.1059,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.0
+   "lon": -63.7831,
+   "dbz": 54,
+   "max_dbz": 65,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.3287,
-   "lon": -64.7621,
+   "lat": -31.5851,
+   "lon": -64.4178,
+   "dbz": 53,
+   "max_dbz": 63,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.621,
+   "lon": -65.4076,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -30.5267,
+   "lon": -65.3215,
+   "dbz": 51,
+   "max_dbz": 54,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.5813,
+   "lon": -65.5582,
    "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.4812,
-   "lon": -63.7186,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -30.3355,
-   "lon": -63.9015,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -30.4721,
-   "lon": -63.8477,
-   "dbz": 48,
    "max_dbz": 51,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -30.3173,
-   "lon": -64.0736,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -30.4448,
-   "lon": -64.009,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -30.3628,
-   "lon": -64.0198,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 12.9
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Anisacate": {
-   "km": 26.7,
+  "Dique Chico": {
+   "km": 19.2,
    "max_dbz": 63,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Anizacate",
+   "tope_km": 8.8,
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "La Serranita": {
-   "km": 24.7,
-   "max_dbz": 63,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Anizacate",
+  "El Medanito": {
+   "km": 4.7,
+   "max_dbz": 58,
+   "tope_km": 17.0,
    "nivel": "muy intensa"
   },
-  "La Paisanita": {
-   "km": 22.2,
+  "Villa del Prado": {
+   "km": 4.3,
    "max_dbz": 63,
-   "tope_km": 12.3,
-   "cuenca_de": "Río Anizacate",
+   "tope_km": 8.8,
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 15
 }
