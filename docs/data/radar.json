@@ -1,181 +1,135 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 23:01",
+ "consultado": "2026-11-23 23:16",
  "radar": "RMA1",
- "observacion": "2026-11-23 22:47",
+ "observacion": "2026-11-23 22:56",
  "nucleos": [
   {
-   "lat": -29.9794,
-   "lon": -64.2672,
+   "lat": -30.0251,
+   "lon": -64.1704,
    "dbz": 51,
-   "max_dbz": 58,
+   "max_dbz": 55,
    "tope_km": 13.5
   },
   {
-   "lat": -32.3108,
-   "lon": -65.0526,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.9532,
-   "lon": -65.2247,
+   "lat": -30.1987,
+   "lon": -63.8584,
    "dbz": 50,
    "max_dbz": 55,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.4903,
-   "lon": -63.7939,
-   "dbz": 50,
-   "max_dbz": 59,
    "tope_km": 12.3
   },
   {
-   "lat": -31.6121,
-   "lon": -65.0203,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 12.3
+   "lat": -31.5851,
+   "lon": -64.8804,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 10.6
   },
   {
-   "lat": -32.1322,
-   "lon": -65.0526,
+   "lat": -32.3108,
+   "lon": -64.9773,
    "dbz": 49,
    "max_dbz": 54,
    "tope_km": 10.0
   },
   {
-   "lat": -30.4357,
+   "lat": -30.4539,
    "lon": -64.278,
    "dbz": 49,
-   "max_dbz": 58,
+   "max_dbz": 55,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -30.5085,
+   "lon": -63.7293,
+   "dbz": 49,
+   "max_dbz": 56,
    "tope_km": 12.3
   },
   {
-   "lat": -30.3628,
-   "lon": -64.2027,
+   "lat": -32.1232,
+   "lon": -64.9235,
    "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -30.5722,
-   "lon": -64.2995,
-   "dbz": 48,
-   "max_dbz": 52,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.2394,
-   "lon": -64.8804,
-   "dbz": 48,
-   "max_dbz": 51,
+   "max_dbz": 50,
    "tope_km": 10.6
   },
   {
-   "lat": -30.4448,
-   "lon": -64.1812,
+   "lat": -30.4812,
+   "lon": -64.3533,
    "dbz": 48,
    "max_dbz": 50,
-   "tope_km": 12.9
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.3446,
+   "lon": -64.2887,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada de Rio Pinto": {
-   "km": 6.1,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
   "Villa Dolores": {
-   "km": 36.5,
-   "max_dbz": 57,
-   "tope_km": 12.3,
+   "km": 44.9,
+   "max_dbz": 54,
+   "tope_km": 10.6,
    "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "San Lorenzo": {
-   "km": 5.6,
-   "max_dbz": 57,
-   "tope_km": 12.3,
+   "km": 16.8,
+   "max_dbz": 54,
+   "tope_km": 10.6,
    "cuenca_de": "Río Panaholma",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "Panaholma": {
+   "km": 16.6,
+   "max_dbz": 54,
+   "tope_km": 10.6,
+   "cuenca_de": "Río Panaholma",
+   "nivel": "intensa"
+  },
+  "Quilino": {
+   "km": 22.7,
+   "max_dbz": 48,
+   "tope_km": 10.6,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Villa de Merlo": {
    "km": 3.1,
-   "max_dbz": 57,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "nivel": "intensa"
   },
   "La Ramada": {
-   "km": 3.8,
+   "km": 3.3,
    "max_dbz": 54,
-   "tope_km": 17.0,
+   "tope_km": 10.0,
    "nivel": "intensa"
   },
   "Mina Clavero": {
-   "km": 13.7,
-   "max_dbz": 57,
-   "tope_km": 12.3,
+   "km": 21.6,
+   "max_dbz": 54,
+   "tope_km": 10.6,
    "cuenca_de": "Panaholma",
-   "nivel": "muy intensa"
-  },
-  "La Travesía": {
-   "km": 2.4,
-   "max_dbz": 54,
-   "tope_km": 10.0,
    "nivel": "intensa"
   },
-  "Luyaba": {
-   "km": 1.1,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
+  "El Durazno": {
+   "km": 13.6,
+   "max_dbz": 50,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Sombra de Toro",
    "nivel": "intensa"
   },
-  "Los Romeros": {
-   "km": 15.9,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Villa Tulumba": {
-   "km": 7.5,
+  "La Isabela": {
+   "km": 1.8,
    "max_dbz": 48,
-   "tope_km": 12.9,
-   "cuenca_de": "Arroyo Tulumba",
+   "tope_km": 10.6,
    "nivel": "intensa"
-  },
-  "San Vicente": {
-   "km": 1.1,
-   "max_dbz": 58,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Villa Benegas": {
-   "km": 3.7,
-   "max_dbz": 57,
-   "tope_km": 12.3,
-   "nivel": "muy intensa"
-  },
-  "Los Callejones": {
-   "km": 2.4,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
-  },
-  "Villa Sarmiento": {
-   "km": 3.9,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
   }
  },
- "minutos": 13
+ "minutos": 20
 }
