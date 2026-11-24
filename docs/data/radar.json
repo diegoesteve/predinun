@@ -1,79 +1,101 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 03:30",
+ "consultado": "2026-11-24 03:45",
  "radar": "RMA1",
- "observacion": "2026-11-24 03:18",
+ "observacion": "2026-11-24 03:27",
  "nucleos": [
   {
-   "lat": -30.0343,
-   "lon": -64.5254,
+   "lat": -30.2626,
+   "lon": -64.4931,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -30.0617,
+   "lon": -64.4286,
    "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 8.2
-  },
-  {
-   "lat": -30.2261,
-   "lon": -64.5792,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -31.0528,
-   "lon": -65.1171,
-   "dbz": 49,
    "max_dbz": 56,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.1161,
-   "lon": -64.988,
-   "dbz": 49,
-   "max_dbz": 53,
    "tope_km": 10.6
   },
   {
-   "lat": -31.1523,
-   "lon": -65.0848,
+   "lat": -31.1161,
+   "lon": -64.8804,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.0619,
+   "lon": -64.9665,
    "dbz": 48,
    "max_dbz": 50,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.0166,
+   "lon": -64.8804,
+   "dbz": 48,
+   "max_dbz": 48,
    "tope_km": 10.0
   },
   {
-   "lat": -30.0434,
-   "lon": -65.4829,
+   "lat": -31.1613,
+   "lon": -64.988,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -30.1987,
+   "lon": -65.4399,
    "dbz": 47,
-   "max_dbz": 48,
-   "tope_km": 11.1
+   "max_dbz": 47,
+   "tope_km": 10.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Carlos Minas": {
-   "km": 3.1,
-   "max_dbz": 50,
+  "Villa de Soto": {
+   "km": 20.2,
+   "max_dbz": 48,
    "tope_km": 10.0,
+   "cuenca_de": "Río Soto",
+   "nivel": "intensa"
+  },
+  "Cruz de Caña": {
+   "km": 1.7,
+   "max_dbz": 50,
+   "tope_km": 10.6,
    "nivel": "intensa"
   },
   "San José de las Salinas": {
-   "km": 9.4,
-   "max_dbz": 51,
-   "tope_km": 8.2,
+   "km": 19.2,
+   "max_dbz": 56,
+   "tope_km": 10.6,
    "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Bañado de Soto": {
+   "km": 26.2,
+   "max_dbz": 48,
+   "tope_km": 10.0,
+   "cuenca_de": "San Guillermo De Soto",
    "nivel": "intensa"
   },
-  "La Higuera": {
-   "km": 4.5,
+  "Isla de San Antonio": {
+   "km": 3.8,
    "max_dbz": 56,
-   "tope_km": 10.0,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   },
-  "Agua de Crespin": {
-   "km": 2.9,
-   "max_dbz": 56,
-   "tope_km": 10.0,
-   "nivel": "muy intensa"
+  "Tres Árboles": {
+   "km": 18.0,
+   "max_dbz": 50,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Orcoyana",
+   "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 18
 }
