@@ -1,18 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 09:00",
+ "consultado": "2026-11-24 09:15",
  "radar": "RMA16",
- "observacion": "2026-11-24 08:32",
+ "observacion": "2026-11-24 08:56",
  "nucleos": [
   {
-   "lat": -33.2129,
-   "lon": -65.0994,
-   "dbz": 53,
-   "max_dbz": 56,
+   "lat": -33.1857,
+   "lon": -65.4417,
+   "dbz": 49,
+   "max_dbz": 53,
    "tope_km": 7.6
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 29
+ "localidades": {
+  "San José del Morro": {
+   "km": 5.0,
+   "max_dbz": 53,
+   "tope_km": 7.6,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 19
 }
