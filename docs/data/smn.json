@@ -1,7 +1,63 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-24 00:30",
+ "consultado": "2026-11-24 00:45",
  "alertas": [
+  {
+   "id": "2026_11_24_0332_cap_es",
+   "tipo": "aviso a corto plazo",
+   "evento": "Tormentas severas",
+   "nivel": "naranja",
+   "titulo": "AVISO NARANJA POR TORMENTAS SEVERAS CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "desde": "2026-11-24T03:32:00-03:00",
+   "hasta": "2026-11-24T04:32:00-03:00",
+   "descripcion": "TORMENTAS SEVERAS CON RAFAGAS Y OCASIONAL CAIDA DE GRANIZO",
+   "instruccion": "Seguí las instrucciones de las autoridades locales. La calma es fundamental en estas situaciones. Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Evitá circular por calles inundadas o afectadas. Retirá o asegurá objetos que puedan ser arrastrados por el viento. No te refugies debajo de marquesinas, carteles publicitarios, árboles o postes. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, ",
+   "zona": "CORDOBA: CRUZ DEL EJE - ISCHILIN - TULUMBA.",
+   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_24_0332_cap_es.xml",
+   "desde_local": "24/11 03:32",
+   "hasta_local": "24/11 04:32",
+   "localidades": 19,
+   "poligonos": [
+    [
+     [
+      -65.47,
+      -30.6
+     ],
+     [
+      -64.71,
+      -30.81
+     ],
+     [
+      -64.3,
+      -30.4
+     ],
+     [
+      -64.45,
+      -30.39
+     ],
+     [
+      -64.54,
+      -29.55
+     ],
+     [
+      -64.87,
+      -29.61
+     ],
+     [
+      -64.84,
+      -29.94
+     ],
+     [
+      -65.38,
+      -30.16
+     ],
+     [
+      -65.47,
+      -30.6
+     ]
+    ]
+   ]
+  },
   {
    "id": "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_20",
    "tipo": "alerta",
@@ -8981,14 +9037,17 @@
  ],
  "localidades": {
   "Cañada de Rio Pinto": [
+   "2026_11_24_0332_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "San José de las Salinas": [
+   "2026_11_24_0332_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Quilino": [
+   "2026_11_24_0332_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
@@ -9001,6 +9060,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Las Palmas": [
+   "2026_11_24_0332_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
@@ -9009,6 +9069,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Olivares de San Nicolás": [
+   "2026_11_24_0332_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
@@ -9021,6 +9082,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Jaime Peter": [
+   "2026_11_24_0332_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
@@ -9029,6 +9091,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "Huascha": [
+   "2026_11_24_0332_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
@@ -9049,6 +9112,7 @@
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
   "San Pedro de Toyos": [
+   "2026_11_24_0332_cap_es",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_30",
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_30"
   ],
@@ -9779,6 +9843,39 @@
   "Villa Yacanto": [
    "CAP_20261123204436_Tormenta_Llanura_alertas_alertas_18",
    "CAP_20261123204436_Tormenta_Patagonia_alertas_alertas_18"
+  ],
+  "Cruz del Eje": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "Los Sauces": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "Paraje Puesto del Gallo": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "El Carrizal": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "Paraje Palo Parado": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "San Antonio": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "Alto de los Quebrachos": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "El Brete": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "Las Playas": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "Los Chañaritos": [
+   "2026_11_24_0332_cap_es"
+  ],
+  "Media Naranja": [
+   "2026_11_24_0332_cap_es"
   ]
  },
  "localidades_santafe": {
