@@ -1,67 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 00:00",
+ "consultado": "2026-11-24 00:15",
  "radar": "RMA1",
- "observacion": "2026-11-23 23:49",
+ "observacion": "2026-11-23 23:58",
  "nucleos": [
   {
-   "lat": -31.648,
-   "lon": -65.1064,
+   "lat": -31.6121,
+   "lon": -65.2677,
+   "dbz": 50,
+   "max_dbz": 50,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -30.0251,
+   "lon": -65.4937,
    "dbz": 50,
    "max_dbz": 56,
-   "tope_km": 11.7
+   "tope_km": 14.1
   },
   {
-   "lat": -30.5449,
+   "lat": -30.5722,
+   "lon": -65.0418,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -30.5358,
    "lon": -65.1602,
    "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 11.7
+   "max_dbz": 55,
+   "tope_km": 14.7
   },
   {
-   "lat": -31.63,
-   "lon": -65.3323,
-   "dbz": 48,
+   "lat": -30.5176,
+   "lon": -65.3,
+   "dbz": 47,
    "max_dbz": 50,
-   "tope_km": 11.7
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Dolores": {
-   "km": 30.9,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "muy intensa"
-  },
-  "San Lorenzo": {
-   "km": 7.1,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Río Panaholma",
-   "nivel": "muy intensa"
-  },
-  "Mina Clavero": {
-   "km": 12.4,
-   "max_dbz": 56,
-   "tope_km": 11.7,
-   "cuenca_de": "Panaholma",
-   "nivel": "muy intensa"
-  },
-  "Las Oscuras": {
-   "km": 1.4,
+  "San Carlos Minas": {
+   "km": 48.8,
    "max_dbz": 50,
-   "tope_km": 11.7,
+   "tope_km": 17.0,
+   "cuenca_de": "Jaime",
    "nivel": "intensa"
   },
-  "El Medanito": {
-   "km": 4.7,
+  "Salsacate": {
+   "km": 36.2,
    "max_dbz": 50,
-   "tope_km": 11.7,
-   "cuenca_de": "sin nombre",
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo Salsacate",
+   "nivel": "intensa"
+  },
+  "Alto de los Quebrachos": {
+   "km": 4.9,
+   "max_dbz": 52,
+   "tope_km": 17.0,
    "nivel": "intensa"
   }
  },
- "minutos": 12
+ "minutos": 17
 }
