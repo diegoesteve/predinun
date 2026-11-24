@@ -1,32 +1,46 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 05:00",
+ "consultado": "2026-11-24 05:15",
  "radar": "RMA1",
- "observacion": "2026-11-24 04:49",
+ "observacion": "2026-11-24 04:58",
  "nucleos": [
   {
-   "lat": -30.0343,
-   "lon": -64.4071,
+   "lat": -30.1896,
+   "lon": -64.1489,
    "dbz": 50,
-   "max_dbz": 55,
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.0891,
+   "lon": -64.2242,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.0251,
+   "lon": -64.2887,
+   "dbz": 49,
+   "max_dbz": 52,
    "tope_km": 10.6
   },
   {
-   "lat": -30.1439,
-   "lon": -64.3318,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 12.3
+   "lat": -30.8355,
+   "lon": -64.7513,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Isla de San Antonio": {
-   "km": 1.0,
-   "max_dbz": 55,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
+  "Canteras Quilpo": {
+   "km": 4.0,
+   "max_dbz": 53,
+   "tope_km": 8.8,
+   "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
