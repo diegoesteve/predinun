@@ -1,53 +1,60 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 22:00",
+ "consultado": "2026-11-23 22:15",
  "radar": "RMA1",
- "observacion": "2026-11-23 21:44",
+ "observacion": "2026-11-23 21:53",
  "nucleos": [
   {
-   "lat": -30.3082,
-   "lon": -65.0311,
+   "lat": -30.2443,
+   "lon": -64.9127,
    "dbz": 54,
    "max_dbz": 63,
    "tope_km": 17.0
   },
   {
-   "lat": -31.9532,
-   "lon": -65.5797,
-   "dbz": 49,
-   "max_dbz": 51,
+   "lat": -30.3628,
+   "lon": -64.9665,
+   "dbz": 50,
+   "max_dbz": 53,
    "tope_km": 12.3
   },
   {
-   "lat": -31.9979,
-   "lon": -65.2032,
+   "lat": -30.554,
+   "lon": -64.9342,
    "dbz": 49,
-   "max_dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -31.9711,
+   "lon": -65.5152,
+   "dbz": 49,
+   "max_dbz": 52,
    "tope_km": 10.0
   },
   {
-   "lat": -30.9352,
-   "lon": -65.1279,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.5813,
-   "lon": -65.0633,
+   "lat": -30.3082,
+   "lon": -64.7298,
    "dbz": 48,
-   "max_dbz": 52,
+   "max_dbz": 48,
    "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Tres Árboles": {
-   "km": 5.0,
-   "max_dbz": 52,
-   "tope_km": 9.4,
+  "San Antonio": {
+   "km": 20.1,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "Los Chañaritos": {
+   "km": 4.4,
+   "max_dbz": 53,
+   "tope_km": 12.9,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 23
 }
