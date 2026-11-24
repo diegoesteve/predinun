@@ -1,59 +1,142 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 21:30",
+ "consultado": "2026-11-23 21:45",
  "radar": "RMA1",
- "observacion": "2026-11-23 21:16",
+ "observacion": "2026-11-23 21:25",
  "nucleos": [
   {
-   "lat": -30.4357,
-   "lon": -65.3,
-   "dbz": 55,
-   "max_dbz": 64,
+   "lat": -30.3902,
+   "lon": -65.1817,
+   "dbz": 56,
+   "max_dbz": 66,
    "tope_km": 17.0
   },
   {
-   "lat": -31.7379,
-   "lon": -64.9773,
+   "lat": -30.6449,
+   "lon": -64.0951,
    "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -30.6358,
-   "lon": -64.1596,
-   "dbz": 48,
-   "max_dbz": 52,
+   "max_dbz": 56,
    "tope_km": 12.3
   },
   {
-   "lat": -31.9263,
-   "lon": -65.4829,
-   "dbz": 48,
+   "lat": -31.9621,
+   "lon": -65.3968,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -31.7738,
+   "lon": -64.8589,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -31.9532,
+   "lon": -64.5469,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.675,
+   "lon": -64.8482,
+   "dbz": 49,
    "max_dbz": 52,
    "tope_km": 11.1
+  },
+  {
+   "lat": -31.9352,
+   "lon": -64.3318,
+   "dbz": 47,
+   "max_dbz": 50,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Santa Rosa de Calamuchita": {
+   "km": 9.9,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "cuenca_de": "Arroyo El Sauce",
+   "nivel": "intensa"
+  },
+  "Villa General Belgrano": {
+   "km": 2.9,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
+  "Los Reartes": {
+   "km": 5.0,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "nivel": "intensa"
+  },
   "Villa Dolores": {
-   "km": 25.7,
-   "max_dbz": 60,
-   "tope_km": 13.5,
+   "km": 31.3,
+   "max_dbz": 57,
+   "tope_km": 11.1,
    "cuenca_de": "Arroyo De Las Tapias",
    "nivel": "muy intensa"
   },
-  "Mina Clavero": {
-   "km": 2.8,
-   "max_dbz": 60,
-   "tope_km": 13.5,
+  "Anisacate": {
+   "km": 41.0,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "El Corcovado el Torreon": {
+   "km": 23.0,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "intensa"
+  },
+  "Nono": {
+   "km": 12.0,
+   "max_dbz": 57,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Chico de Nono",
    "nivel": "muy intensa"
   },
-  "Villa Gutierrez": {
-   "km": 4.7,
+  "La Serranita": {
+   "km": 37.5,
    "max_dbz": 52,
-   "tope_km": 12.3,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
+  },
+  "Las Calles": {
+   "km": 9.7,
+   "max_dbz": 57,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Chico de Nono",
+   "nivel": "muy intensa"
+  },
+  "El Corcovado": {
+   "km": 20.1,
+   "max_dbz": 53,
+   "tope_km": 10.0,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "intensa"
+  },
+  "La Paisanita": {
+   "km": 34.9,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "Los Cerrillos": {
+   "km": 4.5,
+   "max_dbz": 55,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 20
 }
