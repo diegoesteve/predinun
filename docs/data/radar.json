@@ -1,114 +1,59 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 21:15",
+ "consultado": "2026-11-23 21:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 20:58",
+ "observacion": "2026-11-23 21:16",
  "nucleos": [
   {
-   "lat": -30.5267,
-   "lon": -65.4937,
-   "dbz": 53,
-   "max_dbz": 63,
-   "tope_km": 14.1
+   "lat": -30.4357,
+   "lon": -65.3,
+   "dbz": 55,
+   "max_dbz": 64,
+   "tope_km": 17.0
   },
   {
-   "lat": -31.657,
-   "lon": -65.2462,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lat": -31.7379,
+   "lon": -64.9773,
+   "dbz": 51,
+   "max_dbz": 60,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -30.6358,
+   "lon": -64.1596,
+   "dbz": 48,
+   "max_dbz": 52,
    "tope_km": 12.3
   },
   {
-   "lat": -30.6176,
-   "lon": -64.2672,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -31.8187,
-   "lon": -64.6545,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -30.0891,
-   "lon": -63.8799,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.6176,
-   "lon": -64.3533,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 12.3
+   "lat": -31.9263,
+   "lon": -65.4829,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada de Rio Pinto": {
-   "km": 19.8,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Potrero de Garay": {
-   "km": 7.9,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "cuenca_de": "Rio San Pedro",
+  "Villa Dolores": {
+   "km": 25.7,
+   "max_dbz": 60,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo De Las Tapias",
    "nivel": "muy intensa"
   },
-  "Las Oscuras": {
-   "km": 10.0,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
+  "Mina Clavero": {
+   "km": 2.8,
+   "max_dbz": 60,
+   "tope_km": 13.5,
    "nivel": "muy intensa"
   },
-  "El Medanito": {
-   "km": 13.0,
-   "max_dbz": 55,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "La Boca del Río": {
-   "km": 22.9,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Villa la Merced": {
-   "km": 14.3,
-   "max_dbz": 55,
-   "tope_km": 9.4,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Villa Albertina": {
-   "km": 5.0,
-   "max_dbz": 53,
-   "tope_km": 12.3,
-   "nivel": "intensa"
-  },
-  "Ischilín": {
-   "km": 4.1,
-   "max_dbz": 49,
-   "tope_km": 12.3,
-   "nivel": "intensa"
-  },
-  "Ischilín Viejo": {
-   "km": 3.6,
-   "max_dbz": 49,
+  "Villa Gutierrez": {
+   "km": 4.7,
+   "max_dbz": 52,
    "tope_km": 12.3,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23 21:25",
+ "generado": "2026-11-23 21:30",
  "hoy": "2026-11-23",
  "manana": "2026-11-24",
  "dia_manana": "martes",
@@ -401,9 +401,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -443,15 +443,15 @@
    "rio": "sin nombre",
    "expo": "muy expuesta",
    "hoy": {
-    "nivel": 3,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del sin nombre. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 2,
     "titulo": "Tormentas fuertes",
     "texto": "Se espera mucha lluvia en poco tiempo mañana. Con tormenta, el arroyo puede crecer en pocos minutos, aunque acá no llueva.",
-    "tambien": "Alerta amarilla del SMN"
+    "tambien": "Aviso naranja del SMN"
    },
    "nom": "Cañada de Río Pinto"
   },
@@ -1050,9 +1050,9 @@
    "rio": "Río De Los Sauces",
    "expo": "expuesta",
    "hoy": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 3,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Arroyo De Las Tapias. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
    },
    "man": {
     "nivel": 0,
@@ -1166,10 +1166,9 @@
    "rio": "Río San Pedro",
    "expo": "expuesta",
    "hoy": {
-    "nivel": 3,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río San Pedro. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
-    "tambien": "Alerta amarilla del SMN"
+    "nivel": 1,
+    "titulo": "Alerta amarilla del SMN",
+    "texto": "Tormentas, hasta las 02:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    },
    "man": {
     "nivel": 1,
@@ -1928,9 +1927,10 @@
    "rio": "Panaholma",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del arroyo. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
+    "tambien": "Alerta amarilla del SMN"
    },
    "man": {
     "nivel": 1,
@@ -2351,9 +2351,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -2468,9 +2468,10 @@
     "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -3144,9 +3145,10 @@
     "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -3190,9 +3192,10 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -3300,9 +3303,9 @@
    "rio": "sin nombre",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del sin nombre. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
@@ -3328,9 +3331,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -3397,9 +3400,10 @@
     "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -3420,9 +3424,10 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -3653,9 +3658,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -3815,9 +3820,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -3861,9 +3866,10 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -3975,9 +3981,9 @@
    "rio": "sin nombre",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del sin nombre. El agua puede bajar en minutos: alejate de la orilla y no cruces vados."
+    "nivel": 0,
+    "titulo": "Tranquilo",
+    "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
     "nivel": 0,
@@ -4114,10 +4120,9 @@
    "rio": "Río de los Molinos",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río de los Molinos. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
-    "tambien": "Alerta amarilla del SMN"
+    "nivel": 1,
+    "titulo": "Alerta amarilla del SMN",
+    "texto": "Tormentas, hasta las 02:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    },
    "man": {
     "nivel": 1,
@@ -4138,10 +4143,9 @@
    "rio": "Río de los Molinos",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del Río de los Molinos. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
-    "tambien": "Alerta amarilla del SMN"
+    "nivel": 1,
+    "titulo": "Alerta amarilla del SMN",
+    "texto": "Tormentas, hasta las 02:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    },
    "man": {
     "nivel": 1,
@@ -4185,15 +4189,15 @@
    "rio": "Río Grande",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del arroyo. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
-    "tambien": "Puede llover fuerte"
+    "nivel": 1,
+    "titulo": "Puede llover fuerte",
+    "texto": "Se espera mucha lluvia en poco tiempo hoy. Con tormenta, el arroyo puede crecer en pocos minutos, aunque acá no llueva."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -4283,9 +4287,10 @@
     "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -4520,9 +4525,10 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -4637,9 +4643,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -4655,15 +4661,15 @@
    "rio": "Arroyo San Miguel",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del arroyo. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
-    "tambien": "Puede llover fuerte"
+    "nivel": 1,
+    "titulo": "Puede llover fuerte",
+    "texto": "Se espera mucha lluvia en poco tiempo hoy. Con tormenta, el arroyo puede crecer en pocos minutos, aunque acá no llueva."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -4749,15 +4755,16 @@
    "rio": "Arroyo Ojo de Agua",
    "expo": "poco expuesta",
    "hoy": {
-    "nivel": 2,
-    "titulo": "Tormenta fuerte sobre el río, ahora",
-    "texto": "El radar ve una tormenta fuerte sobre la cuenca del arroyo. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
-    "tambien": "Puede llover fuerte"
+    "nivel": 1,
+    "titulo": "Puede llover fuerte",
+    "texto": "Se espera mucha lluvia en poco tiempo hoy. Con tormenta, el arroyo puede crecer en pocos minutos, aunque acá no llueva.",
+    "tambien": "Alerta amarilla del SMN"
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Alerta amarilla del SMN",
-    "texto": "Tormentas, hasta las 08:59 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Alerta amarilla del SMN"
    }
   },
   {
@@ -4919,9 +4926,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -4989,9 +4996,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -5456,9 +5463,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -5573,9 +5580,9 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 0,
-    "titulo": "Tranquilo",
-    "texto": "No se esperan lluvias fuertes ni tormentas."
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil."
    }
   },
   {
@@ -5691,10 +5698,10 @@
     "texto": "No se esperan lluvias fuertes ni tormentas."
    },
    "man": {
-    "nivel": 1,
-    "titulo": "Puede llover fuerte",
-    "texto": "Se espera mucha lluvia en poco tiempo mañana. Con tormenta, el arroyo puede crecer en pocos minutos, aunque acá no llueva.",
-    "tambien": "Alerta amarilla del SMN"
+    "nivel": 2,
+    "titulo": "Aviso naranja del SMN",
+    "texto": "Tormentas fuertes, hasta las 02:20 h. Es un aviso oficial: seguí las indicaciones de Defensa Civil.",
+    "tambien": "Puede llover fuerte"
    }
   },
   {
@@ -5874,10 +5881,10 @@
    "rio": null,
    "expo": null,
    "hoy": {
-    "nivel": 1,
-    "titulo": "Puede llover fuerte",
-    "texto": "Se espera mucha lluvia en poco tiempo hoy. Con tormenta, el arroyo puede crecer en pocos minutos, aunque acá no llueva.",
-    "tambien": "Alerta amarilla del SMN"
+    "nivel": 2,
+    "titulo": "Tormenta fuerte sobre el río, ahora",
+    "texto": "El radar ve una tormenta fuerte sobre la cuenca del arroyo. El agua puede bajar en minutos: alejate de la orilla y no cruces vados.",
+    "tambien": "Puede llover fuerte"
    },
    "man": {
     "nivel": 1,
