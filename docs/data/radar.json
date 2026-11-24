@@ -1,101 +1,74 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 03:45",
+ "consultado": "2026-11-24 04:00",
  "radar": "RMA1",
- "observacion": "2026-11-24 03:27",
+ "observacion": "2026-11-24 03:46",
  "nucleos": [
   {
-   "lat": -30.2626,
-   "lon": -64.4931,
+   "lat": -30.3446,
+   "lon": -64.2887,
    "dbz": 52,
-   "max_dbz": 61,
+   "max_dbz": 58,
    "tope_km": 8.8
   },
   {
-   "lat": -30.0617,
-   "lon": -64.4286,
-   "dbz": 51,
+   "lat": -30.2899,
+   "lon": -65.2893,
+   "dbz": 50,
    "max_dbz": 56,
-   "tope_km": 10.6
+   "tope_km": 14.7
   },
   {
-   "lat": -31.1161,
-   "lon": -64.8804,
+   "lat": -30.0343,
+   "lon": -64.1166,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.6
+   "max_dbz": 50,
+   "tope_km": 8.2
   },
   {
    "lat": -31.0619,
-   "lon": -64.9665,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.0166,
-   "lon": -64.8804,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 10.0
-  },
-  {
-   "lat": -31.1613,
-   "lon": -64.988,
+   "lon": -64.6545,
    "dbz": 48,
    "max_dbz": 51,
    "tope_km": 10.6
   },
   {
-   "lat": -30.1987,
-   "lon": -65.4399,
-   "dbz": 47,
-   "max_dbz": 47,
+   "lat": -31.0438,
+   "lon": -64.8051,
+   "dbz": 48,
+   "max_dbz": 49,
    "tope_km": 10.0
+  },
+  {
+   "lat": -30.1074,
+   "lon": -65.0311,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa de Soto": {
-   "km": 20.2,
-   "max_dbz": 48,
-   "tope_km": 10.0,
-   "cuenca_de": "Río Soto",
-   "nivel": "intensa"
-  },
-  "Cruz de Caña": {
-   "km": 1.7,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "nivel": "intensa"
-  },
-  "San José de las Salinas": {
-   "km": 19.2,
-   "max_dbz": 56,
-   "tope_km": 10.6,
+  "Quilino": {
+   "km": 22.7,
+   "max_dbz": 58,
+   "tope_km": 8.8,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Bañado de Soto": {
-   "km": 26.2,
-   "max_dbz": 48,
+  "Las Cañadas": {
+   "km": 7.2,
+   "max_dbz": 49,
    "tope_km": 10.0,
-   "cuenca_de": "San Guillermo De Soto",
+   "cuenca_de": "Arroyo Cañada Honda",
    "nivel": "intensa"
   },
-  "Isla de San Antonio": {
-   "km": 3.8,
-   "max_dbz": 56,
-   "tope_km": 10.6,
+  "La Isabela": {
+   "km": 1.8,
+   "max_dbz": 58,
+   "tope_km": 8.8,
    "nivel": "muy intensa"
-  },
-  "Tres Árboles": {
-   "km": 18.0,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Orcoyana",
-   "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 15
 }
