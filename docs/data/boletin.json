@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23 20:00",
+ "generado": "2026-11-23 21:00",
  "horas": 48,
  "smap_atraso_dias": 2.1,
  "cuencas": [
@@ -20,10 +20,10 @@
      "cuando": "2026-11-24 02:00"
     },
     "ECMWF": {
-     "max_3h_mm": 11.2,
+     "max_3h_mm": 9.3,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-23 20:00"
+     "cuando": "2026-11-23 21:00"
     }
    },
    "ensambles": {
@@ -74,10 +74,10 @@
      "cuando": "2026-11-24 02:00"
     },
     "ECMWF": {
-     "max_3h_mm": 12.9,
+     "max_3h_mm": 8.8,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-23 20:00"
+     "cuando": "2026-11-23 21:00"
     }
    },
    "ensambles": {
@@ -85,8 +85,8 @@
     "GFS ENS": 0.0,
     "ICON EPS": 0.2
    },
-   "nivel": "naranja",
-   "nivel_por_lluvia": "amarillo",
+   "nivel": "amarillo",
+   "nivel_por_lluvia": "verde",
    "suelo": {
     "smap_m3m3": 0.13,
     "smap_percentil": 81,
@@ -129,10 +129,10 @@
      "cuando": "2026-11-25 16:00"
     },
     "ECMWF": {
-     "max_3h_mm": 7.5,
+     "max_3h_mm": 4.9,
      "umbral_mm": 8.8,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-23 20:00"
+     "cuando": "2026-11-24 15:00"
     }
    },
    "ensambles": {
@@ -183,18 +183,19 @@
      "cuando": "2026-11-24 02:00"
     },
     "ECMWF": {
-     "max_3h_mm": 12.6,
+     "max_3h_mm": 8.5,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-23 20:00"
+     "cuando": "2026-11-23 21:00"
     }
    },
    "ensambles": {
     "ECMWF ENS": 0.02,
+    "GFS ENS": 0.03,
     "ICON EPS": 0.2
    },
-   "nivel": "amarillo",
-   "nivel_por_lluvia": "amarillo",
+   "nivel": "verde",
+   "nivel_por_lluvia": "verde",
    "suelo": {
     "smap_m3m3": 0.175,
     "smap_percentil": 75,
@@ -322,28 +323,28 @@
     "nombre": "Capital (experimental)",
     "suelo_saturado": false,
     "prob": [
-     0.11,
-     0.1,
-     0.0,
-     0.0,
-     0.0,
+     0.07,
+     0.08,
      0.0,
      0.0,
      0.01,
+     0.0,
+     0.01,
      0.02,
-     0.01
+     0.02,
+     0.02
     ],
     "mm": [
-     23.0,
-     4.0,
+     17.2,
+     4.4,
      0.0,
-     0.1,
      0.2,
+     0.4,
      0.0,
      0.0,
-     2.4,
-     4.0,
-     3.2
+     2.0,
+     3.7,
+     2.7
     ]
    }
   }
