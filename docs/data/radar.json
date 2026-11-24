@@ -1,135 +1,96 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 23:16",
+ "consultado": "2026-11-23 23:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 22:56",
+ "observacion": "2026-11-23 23:14",
  "nucleos": [
   {
-   "lat": -30.0251,
-   "lon": -64.1704,
-   "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -30.1987,
-   "lon": -63.8584,
-   "dbz": 50,
-   "max_dbz": 55,
+   "lat": -31.5761,
+   "lon": -64.6438,
+   "dbz": 52,
+   "max_dbz": 63,
    "tope_km": 12.3
   },
   {
-   "lat": -31.5851,
-   "lon": -64.8804,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.3108,
-   "lon": -64.9773,
-   "dbz": 49,
+   "lat": -29.8604,
+   "lon": -64.1059,
+   "dbz": 50,
    "max_dbz": 54,
    "tope_km": 10.0
   },
   {
-   "lat": -30.4539,
-   "lon": -64.278,
+   "lat": -32.3287,
+   "lon": -64.7621,
    "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -30.5085,
-   "lon": -63.7293,
-   "dbz": 49,
-   "max_dbz": 56,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -32.1232,
-   "lon": -64.9235,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 10.6
+   "max_dbz": 54,
+   "tope_km": 9.4
   },
   {
    "lat": -30.4812,
-   "lon": -64.3533,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -30.3446,
-   "lon": -64.2887,
+   "lon": -63.7186,
    "dbz": 48,
    "max_dbz": 48,
-   "tope_km": 10.6
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.3355,
+   "lon": -63.9015,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.4721,
+   "lon": -63.8477,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.3173,
+   "lon": -64.0736,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.4448,
+   "lon": -64.009,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.3628,
+   "lon": -64.0198,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Dolores": {
-   "km": 44.9,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "intensa"
+  "Anisacate": {
+   "km": 26.7,
+   "max_dbz": 63,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
   },
-  "San Lorenzo": {
-   "km": 16.8,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Panaholma",
-   "nivel": "intensa"
+  "La Serranita": {
+   "km": 24.7,
+   "max_dbz": 63,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
   },
-  "Panaholma": {
-   "km": 16.6,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Panaholma",
-   "nivel": "intensa"
-  },
-  "Quilino": {
-   "km": 22.7,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Villa de Merlo": {
-   "km": 3.1,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "La Ramada": {
-   "km": 3.3,
-   "max_dbz": 54,
-   "tope_km": 10.0,
-   "nivel": "intensa"
-  },
-  "Mina Clavero": {
-   "km": 21.6,
-   "max_dbz": 54,
-   "tope_km": 10.6,
-   "cuenca_de": "Panaholma",
-   "nivel": "intensa"
-  },
-  "El Durazno": {
-   "km": 13.6,
-   "max_dbz": 50,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Sombra de Toro",
-   "nivel": "intensa"
-  },
-  "La Isabela": {
-   "km": 1.8,
-   "max_dbz": 48,
-   "tope_km": 10.6,
-   "nivel": "intensa"
+  "La Paisanita": {
+   "km": 22.2,
+   "max_dbz": 63,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 16
 }
