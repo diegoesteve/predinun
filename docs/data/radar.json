@@ -1,60 +1,143 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 22:15",
+ "consultado": "2026-11-23 22:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 21:53",
+ "observacion": "2026-11-23 22:11",
  "nucleos": [
   {
-   "lat": -30.2443,
-   "lon": -64.9127,
-   "dbz": 54,
-   "max_dbz": 63,
+   "lat": -30.4994,
+   "lon": -64.5792,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -32.0338,
+   "lon": -65.4937,
+   "dbz": 52,
+   "max_dbz": 57,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.1804,
+   "lon": -64.6976,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 15.8
+  },
+  {
+   "lat": -31.657,
+   "lon": -65.5474,
+   "dbz": 51,
+   "max_dbz": 57,
    "tope_km": 17.0
   },
   {
-   "lat": -30.3628,
-   "lon": -64.9665,
+   "lat": -30.554,
+   "lon": -64.5362,
    "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 12.3
+   "max_dbz": 55,
+   "tope_km": 14.1
   },
   {
-   "lat": -30.554,
-   "lon": -64.9342,
+   "lat": -30.6085,
+   "lon": -64.7944,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 15.8
+  },
+  {
+   "lat": -31.8007,
+   "lon": -65.0848,
    "dbz": 49,
-   "max_dbz": 53,
+   "max_dbz": 55,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.6085,
+   "lon": -64.278,
+   "dbz": 49,
+   "max_dbz": 51,
    "tope_km": 12.9
   },
   {
-   "lat": -31.9711,
-   "lon": -65.5152,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.0
+   "lat": -31.9979,
+   "lon": -64.902,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 12.3
   },
   {
-   "lat": -30.3082,
-   "lon": -64.7298,
+   "lat": -30.6994,
+   "lon": -64.8374,
    "dbz": 48,
-   "max_dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.1257,
+   "lon": -64.4501,
+   "dbz": 47,
+   "max_dbz": 50,
    "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Antonio": {
-   "km": 20.1,
-   "max_dbz": 53,
-   "tope_km": 12.9,
+  "El Corcovado el Torreon": {
+   "km": 40.8,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "intensa"
+  },
+  "Santa Mónica": {
+   "km": 27.0,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "cuenca_de": "Río Santa Rosa",
+   "nivel": "intensa"
+  },
+  "Altautina": {
+   "km": 7.6,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo de Altautina",
+   "nivel": "muy intensa"
+  },
+  "El Corcovado": {
+   "km": 39.9,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "intensa"
+  },
+  "La Cortadera": {
+   "km": 28.9,
+   "max_dbz": 55,
+   "tope_km": 11.7,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Olivares de San Nicolás": {
+   "km": 5.5,
+   "max_dbz": 54,
+   "tope_km": 15.8,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Los Chañaritos": {
-   "km": 4.4,
-   "max_dbz": 53,
+  "El Brete": {
+   "km": 4.6,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "nivel": "intensa"
+  },
+  "Las Playas": {
+   "km": 0.6,
+   "max_dbz": 51,
    "tope_km": 12.9,
    "nivel": "intensa"
   }
  },
- "minutos": 23
+ "minutos": 19
 }
