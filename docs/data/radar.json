@@ -1,42 +1,84 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 00:15",
+ "consultado": "2026-11-24 00:30",
  "radar": "RMA1",
- "observacion": "2026-11-23 23:58",
+ "observacion": "2026-11-24 00:16",
  "nucleos": [
+  {
+   "lat": -29.9977,
+   "lon": -65.2462,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -30.4994,
+   "lon": -64.2565,
+   "dbz": 50,
+   "max_dbz": 51,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -30.554,
+   "lon": -64.8589,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -30.372,
+   "lon": -64.7729,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 11.7
+  },
   {
    "lat": -31.6121,
    "lon": -65.2677,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -30.0251,
-   "lon": -65.4937,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 14.1
-  },
-  {
-   "lat": -30.5722,
-   "lon": -65.0418,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 17.0
+   "max_dbz": 51,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.3902,
+   "lon": -65.1709,
+   "dbz": 49,
+   "max_dbz": 50,
+   "tope_km": 13.5
   },
   {
    "lat": -30.5358,
-   "lon": -65.1602,
+   "lon": -65.0095,
    "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 14.7
+   "max_dbz": 52,
+   "tope_km": 12.9
   },
   {
-   "lat": -30.5176,
-   "lon": -65.3,
-   "dbz": 47,
+   "lat": -30.463,
+   "lon": -65.1494,
+   "dbz": 48,
+   "max_dbz": 48,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.554,
+   "lon": -64.4931,
+   "dbz": 48,
    "max_dbz": 50,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.4721,
+   "lon": -65.0633,
+   "dbz": 48,
+   "max_dbz": 50,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -31.675,
+   "lon": -64.8589,
+   "dbz": 48,
+   "max_dbz": 51,
    "tope_km": 12.9
   }
  ],
@@ -44,24 +86,70 @@
  "localidades": {
   "San Carlos Minas": {
    "km": 48.8,
-   "max_dbz": 50,
-   "tope_km": 17.0,
+   "max_dbz": 51,
+   "tope_km": 11.1,
    "cuenca_de": "Jaime",
    "nivel": "intensa"
   },
   "Salsacate": {
    "km": 36.2,
-   "max_dbz": 50,
-   "tope_km": 17.0,
+   "max_dbz": 51,
+   "tope_km": 11.1,
    "cuenca_de": "Arroyo Salsacate",
    "nivel": "intensa"
   },
+  "Anisacate": {
+   "km": 42.1,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "La Serranita": {
+   "km": 38.5,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "Olivares de San Nicolás": {
+   "km": 3.6,
+   "max_dbz": 55,
+   "tope_km": 12.9,
+   "nivel": "muy intensa"
+  },
+  "La Paisanita": {
+   "km": 35.9,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "Jaime Peter": {
+   "km": 13.8,
+   "max_dbz": 50,
+   "tope_km": 11.1,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
   "Alto de los Quebrachos": {
-   "km": 4.9,
+   "km": 2.0,
    "max_dbz": 52,
-   "tope_km": 17.0,
+   "tope_km": 12.9,
+   "nivel": "intensa"
+  },
+  "Los Chañaritos": {
+   "km": 4.8,
+   "max_dbz": 52,
+   "tope_km": 12.9,
+   "nivel": "intensa"
+  },
+  "Los Pozos": {
+   "km": 2.4,
+   "max_dbz": 51,
+   "tope_km": 11.7,
    "nivel": "intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
