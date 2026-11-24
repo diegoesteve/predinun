@@ -1,66 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-23 23:45",
+ "consultado": "2026-11-24 00:00",
  "radar": "RMA1",
- "observacion": "2026-11-23 23:31",
+ "observacion": "2026-11-23 23:49",
  "nucleos": [
   {
-   "lat": -29.8604,
-   "lon": -63.7831,
-   "dbz": 54,
-   "max_dbz": 65,
-   "tope_km": 17.0
+   "lat": -31.648,
+   "lon": -65.1064,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 11.7
   },
   {
-   "lat": -31.5851,
-   "lon": -64.4178,
-   "dbz": 53,
-   "max_dbz": 63,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.621,
-   "lon": -65.4076,
-   "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -30.5267,
-   "lon": -65.3215,
-   "dbz": 51,
-   "max_dbz": 54,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -30.5813,
-   "lon": -65.5582,
+   "lat": -30.5449,
+   "lon": -65.1602,
    "dbz": 49,
-   "max_dbz": 51,
+   "max_dbz": 54,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -31.63,
+   "lon": -65.3323,
+   "dbz": 48,
+   "max_dbz": 50,
    "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Dique Chico": {
-   "km": 19.2,
-   "max_dbz": 63,
-   "tope_km": 8.8,
-   "cuenca_de": "sin nombre",
+  "Villa Dolores": {
+   "km": 30.9,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "cuenca_de": "Arroyo De Las Tapias",
    "nivel": "muy intensa"
+  },
+  "San Lorenzo": {
+   "km": 7.1,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "cuenca_de": "Río Panaholma",
+   "nivel": "muy intensa"
+  },
+  "Mina Clavero": {
+   "km": 12.4,
+   "max_dbz": 56,
+   "tope_km": 11.7,
+   "cuenca_de": "Panaholma",
+   "nivel": "muy intensa"
+  },
+  "Las Oscuras": {
+   "km": 1.4,
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "nivel": "intensa"
   },
   "El Medanito": {
    "km": 4.7,
-   "max_dbz": 58,
-   "tope_km": 17.0,
-   "nivel": "muy intensa"
-  },
-  "Villa del Prado": {
-   "km": 4.3,
-   "max_dbz": 63,
-   "tope_km": 8.8,
-   "nivel": "muy intensa"
+   "max_dbz": 50,
+   "tope_km": 11.7,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
