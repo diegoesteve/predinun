@@ -1,32 +1,67 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 03:00",
+ "consultado": "2026-11-24 03:15",
  "radar": "RMA1",
- "observacion": "2026-11-24 02:51",
+ "observacion": "2026-11-24 03:00",
  "nucleos": [
   {
-   "lat": -30.1165,
-   "lon": -64.8267,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 10.6
+   "lat": -31.1252,
+   "lon": -65.343,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 11.1
   },
   {
-   "lat": -31.1613,
-   "lon": -65.3646,
+   "lat": -30.0983,
+   "lon": -64.8159,
    "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.0
+   "max_dbz": 54,
+   "tope_km": 10.6
   },
   {
    "lat": -31.1794,
-   "lon": -65.4829,
+   "lon": -65.2785,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 11.1
+  },
+  {
+   "lat": -30.7992,
+   "lon": -65.5582,
    "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
+   "max_dbz": 53,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.1523,
+   "lon": -65.0848,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 11.1
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 9
+ "localidades": {
+  "San Carlos Minas": {
+   "km": 3.1,
+   "max_dbz": 49,
+   "tope_km": 11.1,
+   "nivel": "intensa"
+  },
+  "La Playa": {
+   "km": 20.9,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "cuenca_de": "Rio Guasapampa",
+   "nivel": "intensa"
+  },
+  "Guasapampa": {
+   "km": 10.6,
+   "max_dbz": 52,
+   "tope_km": 11.1,
+   "cuenca_de": "Río Guasapampa",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 15
 }
