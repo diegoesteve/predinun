@@ -1,168 +1,169 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 00:45",
+ "consultado": "2026-11-24 01:00",
  "radar": "RMA1",
- "observacion": "2026-11-24 00:34",
+ "observacion": "2026-11-24 00:44",
  "nucleos": [
   {
-   "lat": -29.9245,
-   "lon": -65.0418,
-   "dbz": 52,
-   "max_dbz": 62,
-   "tope_km": 13.5
+   "lat": -29.9154,
+   "lon": -64.9773,
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 12.9
   },
   {
-   "lat": -30.772,
-   "lon": -64.3103,
+   "lat": -31.657,
+   "lon": -64.4501,
    "dbz": 51,
-   "max_dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -30.3355,
+   "lon": -64.2027,
+   "dbz": 50,
+   "max_dbz": 52,
    "tope_km": 12.3
   },
   {
-   "lat": -30.5904,
-   "lon": -64.7191,
+   "lat": -30.6176,
+   "lon": -64.0305,
    "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -31.693,
-   "lon": -64.3963,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -30.5722,
-   "lon": -64.1274,
-   "dbz": 50,
-   "max_dbz": 53,
+   "max_dbz": 50,
    "tope_km": 11.7
   },
   {
-   "lat": -30.5813,
-   "lon": -64.5792,
+   "lat": -30.6085,
+   "lon": -64.5685,
    "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -30.7629,
+   "lon": -63.8799,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 12.3
+  },
+  {
+   "lat": -30.2899,
+   "lon": -64.8267,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -30.3902,
+   "lon": -64.4178,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -31.7109,
+   "lon": -64.3103,
+   "dbz": 49,
+   "max_dbz": 54,
+   "tope_km": 8.2
+  },
+  {
+   "lat": -30.4357,
+   "lon": -64.7621,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -30.4721,
+   "lon": -64.3963,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -31.63,
+   "lon": -64.7513,
+   "dbz": 48,
+   "max_dbz": 52,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.3902,
+   "lon": -64.3103,
+   "dbz": 48,
    "max_dbz": 51,
    "tope_km": 12.3
   },
   {
-   "lat": -30.4721,
-   "lon": -64.5039,
-   "dbz": 49,
-   "max_dbz": 54,
+   "lat": -30.5085,
+   "lon": -64.6545,
+   "dbz": 47,
+   "max_dbz": 47,
    "tope_km": 12.3
   },
   {
-   "lat": -31.5671,
-   "lon": -65.1494,
-   "dbz": 48,
-   "max_dbz": 54,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -30.3993,
-   "lon": -64.945,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -31.6121,
-   "lon": -64.9557,
+   "lat": -31.657,
+   "lon": -64.5685,
    "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 15.2
+   "max_dbz": 49,
+   "tope_km": 7.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Carlos Minas": {
-   "km": 41.7,
-   "max_dbz": 54,
-   "tope_km": 17.0,
-   "cuenca_de": "Jaime",
+  "Cañada de Rio Pinto": {
+   "km": 4.3,
+   "max_dbz": 53,
+   "tope_km": 12.9,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Salsacate": {
-   "km": 27.5,
-   "max_dbz": 54,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo Salsacate",
-   "nivel": "intensa"
-  },
-  "Villa Dolores": {
-   "km": 38.8,
-   "max_dbz": 47,
-   "tope_km": 15.2,
-   "cuenca_de": "Arroyo De Las Tapias",
-   "nivel": "intensa"
-  },
-  "San Lorenzo": {
-   "km": 9.1,
-   "max_dbz": 47,
-   "tope_km": 15.2,
-   "cuenca_de": "Río Panaholma",
-   "nivel": "intensa"
+  "Alta Gracia": {
+   "km": 1.3,
+   "max_dbz": 59,
+   "tope_km": 8.2,
+   "nivel": "muy intensa"
   },
   "Anisacate": {
-   "km": 3.7,
-   "max_dbz": 56,
-   "tope_km": 8.8,
-   "nivel": "muy intensa"
-  },
-  "Panaholma": {
-   "km": 9.2,
-   "max_dbz": 47,
-   "tope_km": 15.2,
-   "cuenca_de": "Río Panaholma",
+   "km": 33.1,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "Villa del Totoral": {
-   "km": 20.1,
-   "max_dbz": 51,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
+  "La Serranita": {
+   "km": 30.0,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Anizacate",
    "nivel": "intensa"
   },
-  "Mina Clavero": {
-   "km": 15.2,
-   "max_dbz": 47,
-   "tope_km": 15.2,
-   "cuenca_de": "Panaholma",
-   "nivel": "intensa"
-  },
-  "Paraje San Pellegrino": {
-   "km": 4.2,
-   "max_dbz": 51,
-   "tope_km": 12.3,
-   "nivel": "intensa"
-  },
-  "Villa Benegas": {
-   "km": 4.7,
-   "max_dbz": 47,
-   "tope_km": 15.2,
-   "nivel": "intensa"
-  },
-  "Jaime Peter": {
-   "km": 4.7,
+  "Dique Chico": {
+   "km": 3.6,
    "max_dbz": 54,
-   "tope_km": 12.3,
-   "cuenca_de": "sin nombre",
+   "tope_km": 8.2,
    "nivel": "intensa"
   },
-  "Huascha": {
-   "km": 2.4,
-   "max_dbz": 57,
-   "tope_km": 13.5,
+  "Pozo del Tala": {
+   "km": 3.4,
+   "max_dbz": 59,
+   "tope_km": 8.2,
    "nivel": "muy intensa"
   },
-  "Costa Azul": {
-   "km": 3.8,
-   "max_dbz": 56,
-   "tope_km": 8.8,
-   "nivel": "muy intensa"
+  "La Paisanita": {
+   "km": 27.3,
+   "max_dbz": 52,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "Deán Funes": {
+   "km": 2.3,
+   "max_dbz": 51,
+   "tope_km": 12.3,
+   "nivel": "intensa"
   }
  },
- "minutos": 11
+ "minutos": 17
 }
