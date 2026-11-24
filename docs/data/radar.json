@@ -1,74 +1,86 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 04:00",
+ "consultado": "2026-11-24 04:15",
  "radar": "RMA1",
- "observacion": "2026-11-24 03:46",
+ "observacion": "2026-11-24 04:04",
  "nucleos": [
   {
-   "lat": -30.3446,
-   "lon": -64.2887,
+   "lat": -30.9533,
+   "lon": -64.6007,
    "dbz": 52,
-   "max_dbz": 58,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -30.2899,
-   "lon": -65.2893,
-   "dbz": 50,
-   "max_dbz": 56,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -30.0343,
-   "lon": -64.1166,
-   "dbz": 49,
-   "max_dbz": 50,
+   "max_dbz": 59,
    "tope_km": 8.2
   },
   {
-   "lat": -31.0619,
-   "lon": -64.6545,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.0438,
-   "lon": -64.8051,
-   "dbz": 48,
-   "max_dbz": 49,
+   "lat": -31.0981,
+   "lon": -64.4178,
+   "dbz": 50,
+   "max_dbz": 54,
    "tope_km": 10.0
   },
   {
-   "lat": -30.1074,
-   "lon": -65.0311,
+   "lat": -31.0166,
+   "lon": -64.4931,
    "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 11.7
+   "max_dbz": 51,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -30.4357,
+   "lon": -64.0521,
+   "dbz": 48,
+   "max_dbz": 49,
+   "tope_km": 8.8
   }
  ],
- "cuencas": {},
- "localidades": {
-  "Quilino": {
-   "km": 22.7,
-   "max_dbz": 58,
-   "tope_km": 8.8,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Las Cañadas": {
-   "km": 7.2,
-   "max_dbz": 49,
-   "tope_km": 10.0,
-   "cuenca_de": "Arroyo Cañada Honda",
-   "nivel": "intensa"
-  },
-  "La Isabela": {
-   "km": 1.8,
-   "max_dbz": 58,
-   "tope_km": 8.8,
-   "nivel": "muy intensa"
+ "cuencas": {
+  "Cosquin": {
+   "nucleos": 1,
+   "max_dbz": 51
   }
  },
- "minutos": 15
+ "localidades": {
+  "Villa Giardino": {
+   "km": 3.7,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "nivel": "intensa"
+  },
+  "Santa María de Punilla": {
+   "km": 27.5,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "cuenca_de": "Río Cosquín",
+   "nivel": "intensa"
+  },
+  "Casa Grande": {
+   "km": 17.0,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "cuenca_de": "Rio Grande De Punilla",
+   "nivel": "intensa"
+  },
+  "Estación Juárez Celman": {
+   "km": 29.0,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Salsipuedes",
+   "nivel": "intensa"
+  },
+  "El Sauce": {
+   "km": 8.9,
+   "max_dbz": 54,
+   "tope_km": 10.0,
+   "cuenca_de": "Río Salsipuedes",
+   "nivel": "intensa"
+  },
+  "San Roque": {
+   "km": 35.6,
+   "max_dbz": 51,
+   "tope_km": 9.4,
+   "cuenca_de": "Lago San Roque",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 12
 }
