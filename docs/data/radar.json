@@ -1,42 +1,49 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 03:15",
+ "consultado": "2026-11-24 03:30",
  "radar": "RMA1",
- "observacion": "2026-11-24 03:00",
+ "observacion": "2026-11-24 03:18",
  "nucleos": [
   {
-   "lat": -31.1252,
-   "lon": -65.343,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 11.1
+   "lat": -30.0343,
+   "lon": -64.5254,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 8.2
   },
   {
-   "lat": -30.0983,
-   "lon": -64.8159,
-   "dbz": 49,
-   "max_dbz": 54,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -31.1794,
-   "lon": -65.2785,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 11.1
-  },
-  {
-   "lat": -30.7992,
-   "lon": -65.5582,
-   "dbz": 48,
-   "max_dbz": 53,
+   "lat": -30.2261,
+   "lon": -64.5792,
+   "dbz": 50,
+   "max_dbz": 57,
    "tope_km": 9.4
+  },
+  {
+   "lat": -31.0528,
+   "lon": -65.1171,
+   "dbz": 49,
+   "max_dbz": 56,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -31.1161,
+   "lon": -64.988,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 10.6
   },
   {
    "lat": -31.1523,
    "lon": -65.0848,
    "dbz": 48,
-   "max_dbz": 49,
+   "max_dbz": 50,
+   "tope_km": 10.0
+  },
+  {
+   "lat": -30.0434,
+   "lon": -65.4829,
+   "dbz": 47,
+   "max_dbz": 48,
    "tope_km": 11.1
   }
  ],
@@ -44,24 +51,29 @@
  "localidades": {
   "San Carlos Minas": {
    "km": 3.1,
-   "max_dbz": 49,
-   "tope_km": 11.1,
+   "max_dbz": 50,
+   "tope_km": 10.0,
    "nivel": "intensa"
   },
-  "La Playa": {
-   "km": 20.9,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio Guasapampa",
+  "San José de las Salinas": {
+   "km": 9.4,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Guasapampa": {
-   "km": 10.6,
-   "max_dbz": 52,
-   "tope_km": 11.1,
-   "cuenca_de": "Río Guasapampa",
-   "nivel": "intensa"
+  "La Higuera": {
+   "km": 4.5,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
+  },
+  "Agua de Crespin": {
+   "km": 2.9,
+   "max_dbz": 56,
+   "tope_km": 10.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 15
+ "minutos": 12
 }
