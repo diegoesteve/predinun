@@ -1,47 +1,7 @@
 {
  "fuente": "Servicio Meteorológico Nacional, ssl.smn.gob.ar/CAP",
- "consultado": "2026-11-24 09:30",
+ "consultado": "2026-11-24 09:45",
  "alertas": [
-  {
-   "id": "2026_11_24_1040_cap_es",
-   "tipo": "aviso a corto plazo",
-   "evento": "Tormentas fuertes",
-   "nivel": "naranja",
-   "titulo": "AVISO NARANJA POR TORMENTAS FUERTES CON LLUVIAS INTENSAS",
-   "desde": "2026-11-24T10:40:00-03:00",
-   "hasta": "2026-11-24T12:40:00-03:00",
-   "descripcion": "TORMENTAS FUERTES CON LLUVIAS INTENSAS",
-   "instruccion": "Permanecé en construcciones cerradas como casas, escuelas o edificios públicos. Desconectá los electrodomésticos y cortá el suministro eléctrico si ingresa agua. Alejate de zonas inundables y no ingreses en calles anegadas. Mantenete alejado de artefactos eléctricos y evitá el uso de teléfonos con cable. Si estás al aire libre, buscá refugio inmediato en un edificio, casa o vehículo cerrado. Para minimizar el riesgo de ser alcanzado por un rayo, no permanezcas en playas, ríos, lagunas o piletas.",
-   "zona": "CHACO: SAN FERNANDO - TAPENAGA. SANTA FE: GRAL OBLIGADO. CORRIENTES: CORRIENTES - EMPEDRADO - SALADAS - SAN LUIS DEL PALMAR.",
-   "url": "https://ssl.smn.gob.ar/feeds/CAP/avisocortoplazo/2026_11_24_1040_cap_es.xml",
-   "desde_local": "24/11 10:40",
-   "hasta_local": "24/11 12:40",
-   "localidades": 1,
-   "poligonos": [
-    [
-     [
-      -60.21,
-      -27.97
-     ],
-     [
-      -60.18,
-      -27.63
-     ],
-     [
-      -58.58,
-      -27.63
-     ],
-     [
-      -58.6,
-      -28.13
-     ],
-     [
-      -60.21,
-      -27.97
-     ]
-    ]
-   ]
-  },
   {
    "id": "CAP_20261124091336_Tormenta_Llanura_alertas_alertas_23",
    "tipo": "alerta",
@@ -1861,11 +1821,6 @@
  ],
  "localidades": {},
  "localidades_santafe": {
-  "Florencia": [
-   "2026_11_24_1040_cap_es",
-   "CAP_20261124091336_Tormenta_Llanura_alertas_alertas_24",
-   "CAP_20261124091336_Tormenta_Patagonia_alertas_alertas_24"
-  ],
   "Aguará Grande": [
    "CAP_20261124091336_Tormenta_Llanura_alertas_alertas_23",
    "CAP_20261124091336_Tormenta_Patagonia_alertas_alertas_23"
@@ -2149,6 +2104,10 @@
    "CAP_20261124091336_Tormenta_Patagonia_alertas_alertas_24"
   ],
   "El Sombrerito": [
+   "CAP_20261124091336_Tormenta_Llanura_alertas_alertas_24",
+   "CAP_20261124091336_Tormenta_Patagonia_alertas_alertas_24"
+  ],
+  "Florencia": [
    "CAP_20261124091336_Tormenta_Llanura_alertas_alertas_24",
    "CAP_20261124091336_Tormenta_Patagonia_alertas_alertas_24"
   ],
