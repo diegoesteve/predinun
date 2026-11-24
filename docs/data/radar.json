@@ -1,46 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-24 05:15",
+ "consultado": "2026-11-24 05:30",
  "radar": "RMA1",
- "observacion": "2026-11-24 04:58",
+ "observacion": "2026-11-24 05:08",
  "nucleos": [
   {
+   "lat": -30.0434,
+   "lon": -64.0951,
+   "dbz": 52,
+   "max_dbz": 60,
+   "tope_km": 12.9
+  },
+  {
    "lat": -30.1896,
-   "lon": -64.1489,
-   "dbz": 50,
-   "max_dbz": 54,
+   "lon": -64.0951,
+   "dbz": 48,
+   "max_dbz": 51,
    "tope_km": 12.3
-  },
-  {
-   "lat": -30.0891,
-   "lon": -64.2242,
-   "dbz": 50,
-   "max_dbz": 54,
-   "tope_km": 12.3
-  },
-  {
-   "lat": -30.0251,
-   "lon": -64.2887,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -30.8355,
-   "lon": -64.7513,
-   "dbz": 49,
-   "max_dbz": 53,
-   "tope_km": 8.8
   }
  ],
  "cuencas": {},
- "localidades": {
-  "Canteras Quilpo": {
-   "km": 4.0,
-   "max_dbz": 53,
-   "tope_km": 8.8,
-   "nivel": "intensa"
-  }
- },
- "minutos": 17
+ "localidades": {},
+ "minutos": 23
 }
