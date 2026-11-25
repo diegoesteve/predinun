@@ -1,33 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 12:30",
+ "consultado": "2026-11-25 13:30",
  "radar": "RMA1",
- "observacion": "2026-11-25 12:11",
+ "observacion": "2026-11-25 13:14",
  "nucleos": [
   {
-   "lat": -32.5337,
-   "lon": -64.9557,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 9.4
+   "lat": -32.2126,
+   "lon": -64.9342,
+   "dbz": 53,
+   "max_dbz": 57,
+   "tope_km": 8.8
   },
   {
-   "lat": -32.6671,
-   "lon": -65.0848,
+   "lat": -32.293,
+   "lon": -64.902,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 7.6
+  },
+  {
+   "lat": -32.1053,
+   "lon": -64.902,
    "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 8.8
+   "max_dbz": 58,
+   "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Elena": {
-   "km": 1.6,
-   "max_dbz": 55,
+  "El Durazno": {
+   "km": 12.4,
+   "max_dbz": 58,
    "tope_km": 9.4,
-   "cuenca_de": "sin nombre",
+   "cuenca_de": "Arroyo Sombra de Toro",
    "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
