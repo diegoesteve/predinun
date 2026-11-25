@@ -1,26 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 12:15",
+ "consultado": "2026-11-25 12:30",
  "radar": "RMA1",
- "observacion": "2026-11-25 11:53",
+ "observacion": "2026-11-25 12:11",
  "nucleos": [
   {
    "lat": -32.5337,
-   "lon": -64.945,
-   "dbz": 53,
-   "max_dbz": 57,
+   "lon": -64.9557,
+   "dbz": 50,
+   "max_dbz": 55,
    "tope_km": 9.4
+  },
+  {
+   "lat": -32.6671,
+   "lon": -65.0848,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Elena": {
-   "km": 2.3,
-   "max_dbz": 57,
+   "km": 1.6,
+   "max_dbz": 55,
    "tope_km": 9.4,
    "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   }
  },
- "minutos": 22
+ "minutos": 19
 }
