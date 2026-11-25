@@ -1,40 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 13:30",
+ "consultado": "2026-11-25 13:45",
  "radar": "RMA1",
- "observacion": "2026-11-25 13:14",
+ "observacion": "2026-11-25 13:32",
  "nucleos": [
   {
-   "lat": -32.2126,
-   "lon": -64.9342,
-   "dbz": 53,
-   "max_dbz": 57,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -32.293,
-   "lon": -64.902,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 7.6
-  },
-  {
    "lat": -32.1053,
-   "lon": -64.902,
-   "dbz": 50,
-   "max_dbz": 58,
-   "tope_km": 9.4
+   "lon": -65.0633,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "El Durazno": {
-   "km": 12.4,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "cuenca_de": "Arroyo Sombra de Toro",
-   "nivel": "muy intensa"
+  "La Travesía": {
+   "km": 2.4,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "nivel": "intensa"
+  },
+  "Los Romeros": {
+   "km": 15.3,
+   "max_dbz": 49,
+   "tope_km": 8.8,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
   }
  },
- "minutos": 16
+ "minutos": 13
 }
