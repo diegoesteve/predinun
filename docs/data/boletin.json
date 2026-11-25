@@ -1,29 +1,29 @@
 {
- "generado": "2026-11-25 09:00",
+ "generado": "2026-11-25 15:00",
  "horas": 48,
- "smap_atraso_dias": 2.6,
+ "smap_atraso_dias": 2.8,
  "cuencas": [
   {
    "cuenca": "SierrasChicas",
    "nombre": "Sierras Chicas",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 1.7,
+     "max_3h_mm": 0.9,
      "umbral_mm": 9.9,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-27 00:00"
+     "cuando": "2026-11-27 01:00"
     },
     "ICON": {
-     "max_3h_mm": 0.8,
+     "max_3h_mm": 0.3,
      "umbral_mm": 14.0,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-25 10:00"
+     "cuando": "2026-11-26 13:00"
     },
     "ECMWF": {
-     "max_3h_mm": 0.1,
+     "max_3h_mm": 0.8,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-25 09:00"
+     "cuando": "2026-11-27 15:00"
     }
    },
    "ensambles": {
@@ -37,8 +37,8 @@
     "smap_m3m3": 0.124,
     "smap_percentil": 78,
     "smap_fecha": "2026-11-22 22:30 UTC",
-    "estimado_hoy_m3m3": 0.15,
-    "estimado_hoy_percentil": 100,
+    "estimado_hoy_m3m3": 0.146,
+    "estimado_hoy_percentil": 99,
     "percentil": 78,
     "es_estimado": false,
     "estado": "normal"
@@ -53,8 +53,8 @@
     "nubosidad_ult_media": 72,
     "nubosidad_ult_normal": 40,
     "dias_nublados_ult": 6,
-    "et0_prox_mm": 39.5,
-    "et0_prox_pct": 106
+    "et0_prox_mm": 38.7,
+    "et0_prox_pct": 104
    }
   },
   {
@@ -62,22 +62,22 @@
    "nombre": "Cosquín",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 0.7,
+     "max_3h_mm": 0.4,
      "umbral_mm": 13.0,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-25 13:00"
+     "cuando": "2026-11-26 15:00"
     },
     "ICON": {
-     "max_3h_mm": 3.0,
+     "max_3h_mm": 0.4,
      "umbral_mm": 12.3,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-25 10:00"
+     "cuando": "2026-11-26 13:00"
     },
     "ECMWF": {
-     "max_3h_mm": 2.6,
+     "max_3h_mm": 4.1,
      "umbral_mm": 10.6,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-25 14:00"
+     "cuando": "2026-11-25 15:00"
     }
    },
    "ensambles": {
@@ -107,8 +107,8 @@
     "nubosidad_ult_media": 75,
     "nubosidad_ult_normal": 41,
     "dias_nublados_ult": 6,
-    "et0_prox_mm": 36.5,
-    "et0_prox_pct": 104
+    "et0_prox_mm": 35.7,
+    "et0_prox_pct": 102
    }
   },
   {
@@ -116,37 +116,37 @@
    "nombre": "San Antonio / Carlos Paz",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 2.5,
+     "max_3h_mm": 1.4,
      "umbral_mm": 10.1,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-25 13:00"
+     "cuando": "2026-11-25 15:00"
     },
     "ICON": {
-     "max_3h_mm": 7.5,
+     "max_3h_mm": 1.0,
      "umbral_mm": 9.7,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-25 11:00"
+     "cuando": "2026-11-26 15:00"
     },
     "ECMWF": {
-     "max_3h_mm": 5.2,
+     "max_3h_mm": 9.0,
      "umbral_mm": 8.8,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-25 14:00"
+     "cuando": "2026-11-25 16:00"
     }
    },
    "ensambles": {
-    "ECMWF ENS": 0.08,
+    "ECMWF ENS": 0.02,
     "GFS ENS": 0.0,
     "ICON EPS": 0.0
    },
-   "nivel": "verde",
-   "nivel_por_lluvia": "verde",
+   "nivel": "amarillo",
+   "nivel_por_lluvia": "amarillo",
    "suelo": {
     "smap_m3m3": 0.149,
     "smap_percentil": 75,
     "smap_fecha": "2026-11-22 22:30 UTC",
-    "estimado_hoy_m3m3": 0.153,
-    "estimado_hoy_percentil": 78,
+    "estimado_hoy_m3m3": 0.157,
+    "estimado_hoy_percentil": 82,
     "percentil": 75,
     "es_estimado": false,
     "estado": "normal"
@@ -170,22 +170,22 @@
    "nombre": "Capital (experimental)",
    "modelos": {
     "GFS": {
-     "max_3h_mm": 0.0,
+     "max_3h_mm": 0.2,
      "umbral_mm": 7.7,
      "fuente_umbral": "24 h antes",
-     "cuando": null
+     "cuando": "2026-11-27 01:00"
     },
     "ICON": {
-     "max_3h_mm": 0.5,
+     "max_3h_mm": 0.1,
      "umbral_mm": 11.4,
      "fuente_umbral": "24 h antes",
-     "cuando": "2026-11-25 12:00"
+     "cuando": "2026-11-26 13:00"
     },
     "ECMWF": {
-     "max_3h_mm": 0.0,
+     "max_3h_mm": 0.1,
      "umbral_mm": 12.1,
      "fuente_umbral": "24 h antes",
-     "cuando": null
+     "cuando": "2026-11-27 14:00"
     }
    },
    "ensambles": {
@@ -199,8 +199,8 @@
     "smap_m3m3": 0.177,
     "smap_percentil": 77,
     "smap_fecha": "2026-11-22 22:30 UTC",
-    "estimado_hoy_m3m3": 0.201,
-    "estimado_hoy_percentil": 97,
+    "estimado_hoy_m3m3": 0.197,
+    "estimado_hoy_percentil": 96,
     "percentil": 77,
     "es_estimado": false,
     "estado": "normal"
@@ -215,8 +215,8 @@
     "nubosidad_ult_media": 68,
     "nubosidad_ult_normal": 40,
     "dias_nublados_ult": 5,
-    "et0_prox_mm": 40.0,
-    "et0_prox_pct": 106
+    "et0_prox_mm": 39.3,
+    "et0_prox_pct": 104
    }
   }
  ],
@@ -244,78 +244,78 @@
      0.0,
      0.0,
      0.0,
+     0.01,
+     0.0,
      0.03,
-     0.06,
-     0.05,
-     0.1
+     0.0
     ],
     "mm": [
-     0.0,
-     0.3,
+     0.2,
      0.5,
+     0.3,
      0.0,
      0.0,
      0.0,
-     4.0,
-     4.3,
-     3.7,
-     3.8
+     6.1,
+     4.5,
+     2.6,
+     2.5
     ]
    },
    "Cosquin": {
     "nombre": "Cosquín",
     "suelo_saturado": true,
     "prob": [
-     0.01,
+     0.02,
      0.0,
-     0.01,
+     0.02,
      0.0,
      0.0,
-     0.1,
-     0.23,
-     0.14,
-     0.18,
-     0.11
+     0.08,
+     0.24,
+     0.15,
+     0.17,
+     0.08
     ],
     "mm": [
-     0.9,
+     1.1,
+     0.4,
+     0.7,
      0.2,
-     0.8,
-     0.2,
-     0.1,
-     0.8,
-     6.7,
-     5.4,
-     8.2,
-     4.5
+     0.0,
+     0.4,
+     8.0,
+     6.0,
+     7.5,
+     3.3
     ]
    },
    "SanAntonio_CPaz": {
     "nombre": "San Antonio / Carlos Paz",
     "suelo_saturado": false,
     "prob": [
+     0.01,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
      0.03,
-     0.0,
-     0.0,
-     0.0,
-     0.0,
-     0.06,
-     0.08,
-     0.08,
+     0.1,
+     0.05,
      0.09,
      0.06
     ],
     "mm": [
-     2.4,
-     0.3,
-     1.4,
+     3.9,
+     0.6,
+     1.1,
      0.5,
-     0.3,
-     0.9,
-     6.9,
-     6.7,
-     9.4,
-     5.1
+     0.2,
+     0.7,
+     9.6,
+     8.0,
+     8.1,
+     4.1
     ]
    },
    "Capital": {
@@ -324,26 +324,26 @@
     "prob": [
      0.0,
      0.0,
+     0.0,
+     0.0,
+     0.0,
      0.01,
-     0.0,
-     0.0,
      0.04,
-     0.08,
-     0.05,
-     0.04,
-     0.1
+     0.03,
+     0.06,
+     0.05
     ],
     "mm": [
-     0.0,
      0.1,
-     0.4,
      0.1,
-     0.0,
      0.3,
-     6.2,
-     3.9,
-     6.4,
-     2.1
+     0.0,
+     0.0,
+     0.1,
+     6.9,
+     4.7,
+     6.0,
+     1.4
     ]
    }
   }
