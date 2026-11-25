@@ -1,26 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 14:45",
+ "consultado": "2026-11-25 15:00",
  "radar": "RMA1",
- "observacion": "2026-11-25 14:26",
+ "observacion": "2026-11-25 14:44",
  "nucleos": [
   {
-   "lat": -32.1322,
-   "lon": -64.8267,
+   "lat": -31.63,
+   "lon": -64.7836,
    "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 7.6
+   "max_dbz": 54,
+   "tope_km": 8.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "El Durazno": {
-   "km": 4.8,
-   "max_dbz": 57,
-   "tope_km": 7.6,
-   "cuenca_de": "Arroyo Sombra de Toro",
-   "nivel": "muy intensa"
+  "Anisacate": {
+   "km": 36.1,
+   "max_dbz": 54,
+   "tope_km": 8.8,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "La Serranita": {
+   "km": 32.8,
+   "max_dbz": 54,
+   "tope_km": 8.8,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "La Paisanita": {
+   "km": 30.2,
+   "max_dbz": 54,
+   "tope_km": 8.8,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
   }
  },
- "minutos": 19
+ "minutos": 16
 }
