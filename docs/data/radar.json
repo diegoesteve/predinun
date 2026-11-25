@@ -1,10 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-25 10:45",
- "radar": "RMA17",
- "observacion": "2026-11-25 10:14",
- "nucleos": [],
+ "consultado": "2026-11-25 11:00",
+ "radar": "RMA1",
+ "observacion": "2026-11-25 10:50",
+ "nucleos": [
+  {
+   "lat": -33.022,
+   "lon": -64.9557,
+   "dbz": 49,
+   "max_dbz": 53,
+   "tope_km": 8.8
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 31
+ "localidades": {
+  "Santa Rita": {
+   "km": 42.9,
+   "max_dbz": 53,
+   "tope_km": 8.8,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 11
 }
