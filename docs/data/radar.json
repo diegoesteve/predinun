@@ -1,9 +1,26 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 02:30",
- "radar": null,
- "observacion": null,
- "nucleos": [],
+ "consultado": "2026-11-26 02:45",
+ "radar": "RMA17",
+ "observacion": "2026-11-26 02:26",
+ "nucleos": [
+  {
+   "lat": -32.0736,
+   "lon": -64.9677,
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 17.0
+  }
+ ],
  "cuencas": {},
- "localidades": {}
+ "localidades": {
+  "Los Romeros": {
+   "km": 24.9,
+   "max_dbz": 53,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 19
 }
