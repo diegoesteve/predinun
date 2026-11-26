@@ -1,33 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-26 03:00",
+ "consultado": "2026-11-26 03:15",
  "radar": "RMA17",
- "observacion": "2026-11-26 02:43",
+ "observacion": "2026-11-26 02:51",
  "nucleos": [
   {
-   "lat": -32.4924,
-   "lon": -64.8798,
+   "lat": -32.6648,
+   "lon": -64.9457,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.1922,
+   "lon": -64.9347,
    "dbz": 49,
-   "max_dbz": 53,
+   "max_dbz": 49,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada del Sauce": {
-   "km": 25.6,
-   "max_dbz": 53,
+  "Papagayos": {
+   "km": 3.4,
+   "max_dbz": 55,
    "tope_km": 17.0,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Villa la Rivera": {
-   "km": 40.8,
-   "max_dbz": 53,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 24
 }
