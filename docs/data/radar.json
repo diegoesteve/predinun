@@ -1,72 +1,38 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 06:30",
+ "consultado": "2026-11-27 06:45",
  "radar": "RMA1",
- "observacion": "2026-11-27 06:01",
+ "observacion": "2026-11-27 06:28",
  "nucleos": [
   {
-   "lat": -31.2968,
-   "lon": -63.7831,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 9.4
-  },
-  {
-   "lat": -31.2517,
-   "lon": -64.1812,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.3238,
-   "lon": -64.2565,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 8.8
-  },
-  {
-   "lat": -31.693,
-   "lon": -64.3641,
-   "dbz": 49,
-   "max_dbz": 58,
-   "tope_km": 9.4
+   "lat": -31.1704,
+   "lon": -64.2887,
+   "dbz": 52,
+   "max_dbz": 59,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Saldan": {
-   "km": 4.5,
-   "max_dbz": 55,
-   "tope_km": 8.8,
+  "Rio Ceballos": {
+   "km": 4.0,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  },
+  "Salsipuedes": {
+   "km": 4.1,
+   "max_dbz": 59,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   },
   "Estación Juárez Celman": {
-   "km": 6.0,
-   "max_dbz": 57,
-   "tope_km": 8.8,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Dique Chico": {
-   "km": 6.3,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "Costa Azul": {
-   "km": 4.7,
-   "max_dbz": 58,
-   "tope_km": 9.4,
-   "nivel": "muy intensa"
-  },
-  "Villa los Llanos Juarez Celman": {
-   "km": 2.2,
-   "max_dbz": 57,
-   "tope_km": 8.8,
+   "km": 14.3,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "cuenca_de": "Río Salsipuedes",
    "nivel": "muy intensa"
   }
  },
- "minutos": 29
+ "minutos": 17
 }
