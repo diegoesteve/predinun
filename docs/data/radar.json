@@ -1,39 +1,72 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 06:00",
+ "consultado": "2026-11-27 06:15",
  "radar": "RMA1",
- "observacion": "2026-11-27 05:43",
+ "observacion": "2026-11-27 06:01",
  "nucleos": [
   {
-   "lat": -31.2878,
-   "lon": -64.2134,
-   "dbz": 51,
-   "max_dbz": 51,
+   "lat": -31.2968,
+   "lon": -63.7831,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 9.4
+  },
+  {
+   "lat": -31.2517,
+   "lon": -64.1812,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.3238,
+   "lon": -64.2565,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 8.8
+  },
+  {
+   "lat": -31.693,
+   "lon": -64.3641,
+   "dbz": 49,
+   "max_dbz": 58,
    "tope_km": 9.4
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cordoba": {
-   "km": 7.0,
-   "max_dbz": 51,
-   "tope_km": 9.4,
-   "cuenca_de": "Canal",
-   "nivel": "intensa"
+  "Saldan": {
+   "km": 4.5,
+   "max_dbz": 55,
+   "tope_km": 8.8,
+   "nivel": "muy intensa"
   },
-  "El Gateado": {
-   "km": 10.8,
-   "max_dbz": 51,
+  "Estación Juárez Celman": {
+   "km": 6.0,
+   "max_dbz": 57,
+   "tope_km": 8.8,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "Dique Chico": {
+   "km": 6.3,
+   "max_dbz": 58,
    "tope_km": 9.4,
    "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
-  "Parque Norte": {
-   "km": 3.7,
-   "max_dbz": 51,
+  "Costa Azul": {
+   "km": 4.7,
+   "max_dbz": 58,
    "tope_km": 9.4,
-   "nivel": "intensa"
+   "nivel": "muy intensa"
+  },
+  "Villa los Llanos Juarez Celman": {
+   "km": 2.2,
+   "max_dbz": 57,
+   "tope_km": 8.8,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 14
 }
