@@ -1,75 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 08:45",
+ "consultado": "2026-11-27 09:00",
  "radar": "RMA17",
- "observacion": "2026-11-27 08:27",
+ "observacion": "2026-11-27 08:35",
  "nucleos": [
   {
-   "lat": -32.0736,
-   "lon": -64.9677,
-   "dbz": 52,
-   "max_dbz": 52,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.1375,
-   "lon": -64.9897,
-   "dbz": 51,
-   "max_dbz": 64,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.556,
-   "lon": -64.9127,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 15.8
-  },
-  {
-   "lat": -32.3106,
-   "lon": -64.9457,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 14.7
+   "lat": -32.0554,
+   "lon": -64.9787,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Cañada del Sauce": {
-   "km": 32.2,
-   "max_dbz": 53,
-   "tope_km": 15.8,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
-  "Villa de Merlo": {
-   "km": 3.5,
-   "max_dbz": 49,
-   "tope_km": 14.7,
-   "cuenca_de": "Arroyo Piedras Blancas",
-   "nivel": "intensa"
-  },
-  "La Travesía": {
-   "km": 5.5,
-   "max_dbz": 64,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo de la Cal",
-   "nivel": "muy intensa"
-  },
-  "Villa la Rivera": {
-   "km": 47.6,
-   "max_dbz": 53,
-   "tope_km": 15.8,
-   "cuenca_de": "Rio Quillinzo",
-   "nivel": "intensa"
-  },
   "Los Romeros": {
-   "km": 21.8,
-   "max_dbz": 64,
-   "tope_km": 17.0,
+   "km": 24.6,
+   "max_dbz": 51,
+   "tope_km": 12.9,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
+  },
+  "La Poblacion": {
+   "km": 1.8,
+   "max_dbz": 51,
+   "tope_km": 12.9,
+   "cuenca_de": "Arroyo Cruz Del Quebracho",
+   "nivel": "intensa"
   }
  },
- "minutos": 18
+ "minutos": 25
 }
