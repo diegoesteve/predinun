@@ -1,25 +1,33 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 07:15",
- "radar": "RMA1",
- "observacion": "2026-11-27 06:47",
+ "consultado": "2026-11-27 07:30",
+ "radar": "RMA17",
+ "observacion": "2026-11-27 07:13",
  "nucleos": [
   {
-   "lat": -31.621,
-   "lon": -64.2995,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 8.2
+   "lat": -32.0828,
+   "lon": -64.9677,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.2104,
+   "lon": -64.9567,
+   "dbz": 47,
+   "max_dbz": 47,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Rafael Garcia": {
-   "km": 4.5,
-   "max_dbz": 51,
-   "tope_km": 8.2,
+  "Los Romeros": {
+   "km": 24.6,
+   "max_dbz": 52,
+   "tope_km": 12.9,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   }
  },
- "minutos": 29
+ "minutos": 17
 }
