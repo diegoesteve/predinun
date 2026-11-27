@@ -1,33 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 07:30",
+ "consultado": "2026-11-27 07:45",
  "radar": "RMA17",
- "observacion": "2026-11-27 07:13",
+ "observacion": "2026-11-27 07:30",
  "nucleos": [
   {
-   "lat": -32.0828,
-   "lon": -64.9677,
-   "dbz": 49,
-   "max_dbz": 52,
-   "tope_km": 12.9
+   "lat": -32.0371,
+   "lon": -64.9127,
+   "dbz": 52,
+   "max_dbz": 56,
+   "tope_km": 17.0
   },
   {
-   "lat": -32.2104,
-   "lon": -64.9567,
-   "dbz": 47,
-   "max_dbz": 47,
-   "tope_km": 17.0
+   "lat": -32.6648,
+   "lon": -64.9018,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Romeros": {
-   "km": 24.6,
-   "max_dbz": 52,
-   "tope_km": 12.9,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+  "Alpa Corral": {
+   "km": 15.9,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "cuenca_de": "Rio Barrancas",
+   "nivel": "muy intensa"
+  },
+  "El Corcovado el Torreon": {
+   "km": 40.1,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "muy intensa"
+  },
+  "Santa Mónica": {
+   "km": 27.5,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "cuenca_de": "Río Santa Rosa",
+   "nivel": "muy intensa"
+  },
+  "Paso del Río Seco": {
+   "km": 36.1,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "cuenca_de": "Río de las Barrancas",
+   "nivel": "muy intensa"
+  },
+  "El Corcovado": {
+   "km": 39.4,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Santa Rosa",
+   "nivel": "muy intensa"
+  },
+  "Santa Rita": {
+   "km": 46.1,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
+  },
+  "Unión de los Rios": {
+   "km": 13.0,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "cuenca_de": "Arroyo El Talita",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 16
 }
