@@ -1,10 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 05:15",
+ "consultado": "2026-11-27 05:30",
  "radar": "RMA1",
- "observacion": "2026-11-27 04:57",
- "nucleos": [],
+ "observacion": "2026-11-27 05:15",
+ "nucleos": [
+  {
+   "lat": -31.3148,
+   "lon": -64.3533,
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 10.6
+  }
+ ],
  "cuencas": {},
- "localidades": {},
- "minutos": 18
+ "localidades": {
+  "Saldan": {
+   "km": 4.8,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "nivel": "muy intensa"
+  },
+  "La Calera": {
+   "km": 0.8,
+   "max_dbz": 59,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Mal Paso",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 15
 }
