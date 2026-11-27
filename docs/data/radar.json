@@ -1,38 +1,25 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 07:00",
+ "consultado": "2026-11-27 07:15",
  "radar": "RMA1",
- "observacion": "2026-11-27 06:28",
+ "observacion": "2026-11-27 06:47",
  "nucleos": [
   {
-   "lat": -31.1704,
-   "lon": -64.2887,
-   "dbz": 52,
-   "max_dbz": 59,
-   "tope_km": 10.6
+   "lat": -31.621,
+   "lon": -64.2995,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 8.2
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Rio Ceballos": {
-   "km": 4.0,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
-  "Salsipuedes": {
-   "km": 4.1,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "nivel": "muy intensa"
-  },
-  "Estación Juárez Celman": {
-   "km": 14.3,
-   "max_dbz": 59,
-   "tope_km": 10.6,
-   "cuenca_de": "Río Salsipuedes",
-   "nivel": "muy intensa"
+  "Rafael Garcia": {
+   "km": 4.5,
+   "max_dbz": 51,
+   "tope_km": 8.2,
+   "nivel": "intensa"
   }
  },
- "minutos": 32
+ "minutos": 29
 }
