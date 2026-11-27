@@ -1,96 +1,82 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 03:30",
+ "consultado": "2026-11-27 03:45",
  "radar": "RMA17",
- "observacion": "2026-11-27 03:16",
+ "observacion": "2026-11-27 03:33",
  "nucleos": [
   {
-   "lat": -31.7629,
-   "lon": -64.7808,
+   "lat": -32.8007,
+   "lon": -63.8575,
    "dbz": 54,
-   "max_dbz": 58,
+   "max_dbz": 54,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.5106,
+   "lon": -64.8578,
+   "dbz": 50,
+   "max_dbz": 56,
    "tope_km": 17.0
   },
   {
    "lat": -32.1922,
-   "lon": -64.9347,
-   "dbz": 52,
-   "max_dbz": 60,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.9823,
-   "lon": -64.9237,
-   "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.0554,
    "lon": -64.9457,
-   "dbz": 51,
-   "max_dbz": 61,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.7554,
+   "lon": -64.8798,
+   "dbz": 49,
+   "max_dbz": 51,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.6195,
+   "lon": -64.8138,
+   "dbz": 49,
+   "max_dbz": 51,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Potrero de Garay": {
-   "km": 21.1,
-   "max_dbz": 58,
+  "Alpa Corral": {
+   "km": 9.8,
+   "max_dbz": 51,
    "tope_km": 17.0,
-   "cuenca_de": "Rio San Pedro",
+   "cuenca_de": "Rio Barrancas",
+   "nivel": "intensa"
+  },
+  "Cañada del Sauce": {
+   "km": 25.1,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
-  "El Corcovado el Torreon": {
-   "km": 43.4,
-   "max_dbz": 61,
+  "Villa la Rivera": {
+   "km": 40.4,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "cuenca_de": "Rio Santa Rosa",
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
-  "Santa Mónica": {
-   "km": 29.3,
-   "max_dbz": 61,
+  "Paso del Río Seco": {
+   "km": 32.3,
+   "max_dbz": 51,
    "tope_km": 17.0,
-   "cuenca_de": "Río Santa Rosa",
-   "nivel": "muy intensa"
+   "cuenca_de": "Río de las Barrancas",
+   "nivel": "intensa"
   },
-  "El Corcovado": {
-   "km": 42.4,
-   "max_dbz": 61,
+  "Santa Rita": {
+   "km": 38.8,
+   "max_dbz": 51,
    "tope_km": 17.0,
-   "cuenca_de": "Rio Santa Rosa",
-   "nivel": "muy intensa"
-  },
-  "Los Romeros": {
-   "km": 27.5,
-   "max_dbz": 61,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "La Poblacion": {
-   "km": 4.9,
-   "max_dbz": 61,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo Cruz Del Quebracho",
-   "nivel": "muy intensa"
-  },
-  "La Boca del Río": {
-   "km": 35.9,
-   "max_dbz": 58,
-   "tope_km": 17.0,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
-  },
-  "Villa la Merced": {
-   "km": 26.8,
-   "max_dbz": 58,
-   "tope_km": 17.0,
-   "cuenca_de": "Río de los Molinos",
-   "nivel": "muy intensa"
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "intensa"
   }
  },
- "minutos": 14
+ "minutos": 13
 }
