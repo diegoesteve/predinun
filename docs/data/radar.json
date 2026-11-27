@@ -1,116 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 08:30",
+ "consultado": "2026-11-27 08:45",
  "radar": "RMA17",
- "observacion": "2026-11-27 08:11",
+ "observacion": "2026-11-27 08:27",
  "nucleos": [
   {
+   "lat": -32.0736,
+   "lon": -64.9677,
+   "dbz": 52,
+   "max_dbz": 52,
+   "tope_km": 17.0
+  },
+  {
    "lat": -32.1375,
-   "lon": -64.9567,
-   "dbz": 53,
-   "max_dbz": 53,
+   "lon": -64.9897,
+   "dbz": 51,
+   "max_dbz": 64,
    "tope_km": 17.0
   },
   {
-   "lat": -32.7735,
-   "lon": -64.9018,
-   "dbz": 51,
-   "max_dbz": 53,
-   "tope_km": 15.2
-  },
-  {
-   "lat": -32.2104,
-   "lon": -64.9347,
-   "dbz": 51,
-   "max_dbz": 60,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.6557,
+   "lat": -32.556,
    "lon": -64.9127,
-   "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 15.2
+   "dbz": 50,
+   "max_dbz": 53,
+   "tope_km": 15.8
   },
   {
-   "lat": -31.9367,
-   "lon": -64.9567,
-   "dbz": 49,
-   "max_dbz": 55,
-   "tope_km": 16.4
+   "lat": -32.3106,
+   "lon": -64.9457,
+   "dbz": 47,
+   "max_dbz": 49,
+   "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alpa Corral": {
-   "km": 17.0,
-   "max_dbz": 58,
-   "tope_km": 15.2,
-   "cuenca_de": "Rio Barrancas",
-   "nivel": "muy intensa"
-  },
-  "Villa Dolores": {
-   "km": 17.8,
-   "max_dbz": 55,
-   "tope_km": 16.4,
-   "cuenca_de": "Canal De Riego",
-   "nivel": "muy intensa"
-  },
-  "Las Tapias": {
-   "km": 13.3,
-   "max_dbz": 55,
-   "tope_km": 16.4,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "muy intensa"
-  },
-  "Las Chacras Norte": {
-   "km": 7.7,
-   "max_dbz": 55,
-   "tope_km": 16.4,
-   "cuenca_de": "Arroyo Los Hornillos",
-   "nivel": "muy intensa"
-  },
-  "Paso del Río Seco": {
-   "km": 37.5,
-   "max_dbz": 58,
-   "tope_km": 15.2,
-   "cuenca_de": "Río de las Barrancas",
-   "nivel": "muy intensa"
-  },
-  "Luyaba": {
-   "km": 9.4,
+  "Cañada del Sauce": {
+   "km": 32.2,
    "max_dbz": 53,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "intensa"
+  },
+  "Villa de Merlo": {
+   "km": 3.5,
+   "max_dbz": 49,
+   "tope_km": 14.7,
+   "cuenca_de": "Arroyo Piedras Blancas",
+   "nivel": "intensa"
+  },
+  "La Travesía": {
+   "km": 5.5,
+   "max_dbz": 64,
    "tope_km": 17.0,
-   "cuenca_de": "Acc Privado",
+   "cuenca_de": "Arroyo de la Cal",
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 47.6,
+   "max_dbz": 53,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Quillinzo",
    "nivel": "intensa"
   },
   "Los Romeros": {
-   "km": 24.9,
-   "max_dbz": 53,
+   "km": 21.8,
+   "max_dbz": 64,
    "tope_km": 17.0,
    "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "Santa Rita": {
-   "km": 47.5,
-   "max_dbz": 58,
-   "tope_km": 15.2,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "muy intensa"
-  },
-  "Unión de los Rios": {
-   "km": 14.1,
-   "max_dbz": 58,
-   "tope_km": 15.2,
-   "cuenca_de": "Arroyo El Talita",
-   "nivel": "muy intensa"
-  },
-  "Los Hornillos": {
-   "km": 4.7,
-   "max_dbz": 55,
-   "tope_km": 16.4,
    "nivel": "muy intensa"
   }
  },
- "minutos": 20
+ "minutos": 18
 }
