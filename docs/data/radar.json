@@ -1,18 +1,75 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 03:00",
+ "consultado": "2026-11-27 03:15",
  "radar": "RMA17",
- "observacion": "2026-11-27 02:44",
+ "observacion": "2026-11-27 03:00",
  "nucleos": [
   {
-   "lat": -32.3379,
-   "lon": -64.9127,
+   "lat": -32.556,
+   "lon": -64.9018,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 15.8
+  },
+  {
+   "lat": -32.8007,
+   "lon": -63.8685,
+   "dbz": 51,
+   "max_dbz": 62,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -32.1922,
+   "lon": -64.9347,
    "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 14.1
+   "max_dbz": 57,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -32.0371,
+   "lon": -64.9677,
+   "dbz": 50,
+   "max_dbz": 56,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.6285,
+   "lon": -64.2972,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
- "localidades": {},
- "minutos": 17
+ "localidades": {
+  "Cañada del Sauce": {
+   "km": 31.4,
+   "max_dbz": 56,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 46.9,
+   "max_dbz": 56,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "San Javier Y Yacanto": {
+   "km": 4.6,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo El Molle",
+   "nivel": "muy intensa"
+  },
+  "Conlara": {
+   "km": 26.1,
+   "max_dbz": 56,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  }
+ },
+ "minutos": 15
 }
