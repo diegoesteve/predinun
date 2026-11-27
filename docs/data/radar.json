@@ -1,96 +1,103 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 08:00",
+ "consultado": "2026-11-27 08:15",
  "radar": "RMA17",
- "observacion": "2026-11-27 07:46",
+ "observacion": "2026-11-27 08:02",
  "nucleos": [
   {
-   "lat": -32.0371,
-   "lon": -64.9127,
-   "dbz": 51,
-   "max_dbz": 57,
+   "lat": -32.0828,
+   "lon": -64.9677,
+   "dbz": 53,
+   "max_dbz": 62,
    "tope_km": 17.0
   },
   {
-   "lat": -31.9092,
-   "lon": -64.8688,
+   "lat": -32.1922,
+   "lon": -64.9457,
    "dbz": 51,
-   "max_dbz": 51,
+   "max_dbz": 58,
    "tope_km": 17.0
   },
   {
-   "lat": -31.7629,
-   "lon": -64.7918,
+   "lat": -32.6467,
+   "lon": -64.9018,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.0006,
+   "lon": -64.9457,
    "dbz": 50,
-   "max_dbz": 55,
+   "max_dbz": 56,
    "tope_km": 17.0
+  },
+  {
+   "lat": -32.3379,
+   "lon": -64.9127,
+   "dbz": 49,
+   "max_dbz": 49,
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Los Reartes": {
-   "km": 27.5,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio De Los Reartes",
-   "nivel": "intensa"
-  },
-  "Potrero de Garay": {
-   "km": 22.0,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio San Pedro",
+  "Alpa Corral": {
+   "km": 16.1,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "cuenca_de": "Rio Barrancas",
    "nivel": "muy intensa"
   },
-  "El Corcovado el Torreon": {
-   "km": 40.1,
-   "max_dbz": 57,
+  "Villa Dolores": {
+   "km": 26.1,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "cuenca_de": "Rio Santa Rosa",
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
-  "Santa Mónica": {
-   "km": 27.5,
-   "max_dbz": 57,
+  "Chuchiras": {
+   "km": 13.0,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "cuenca_de": "Río Santa Rosa",
+   "cuenca_de": "Arroyo Chuchiras",
    "nivel": "muy intensa"
   },
-  "Intiyaco": {
-   "km": 15.2,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "cuenca_de": "Río de los Reartes",
-   "nivel": "intensa"
-  },
-  "El Corcovado": {
-   "km": 39.4,
-   "max_dbz": 57,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Santa Rosa",
+  "Paso del Río Seco": {
+   "km": 37.1,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "cuenca_de": "Río de las Barrancas",
    "nivel": "muy intensa"
   },
-  "Capilla Vieja": {
-   "km": 25.1,
-   "max_dbz": 51,
+  "Los Romeros": {
+   "km": 24.6,
+   "max_dbz": 62,
    "tope_km": 17.0,
-   "cuenca_de": "Rio De Los Reartes",
-   "nivel": "intensa"
-  },
-  "La Boca del Río": {
-   "km": 36.9,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "cuenca_de": "Río de los Molinos",
+   "cuenca_de": "sin nombre",
    "nivel": "muy intensa"
   },
-  "Villa la Merced": {
-   "km": 27.9,
-   "max_dbz": 55,
+  "Santa Rita": {
+   "km": 47.4,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
+  },
+  "Unión de los Rios": {
+   "km": 13.2,
+   "max_dbz": 58,
+   "tope_km": 14.7,
+   "cuenca_de": "Arroyo El Talita",
+   "nivel": "muy intensa"
+  },
+  "Pueblito": {
+   "km": 10.3,
+   "max_dbz": 56,
    "tope_km": 17.0,
-   "cuenca_de": "Río de los Molinos",
+   "cuenca_de": "Arroyo Hondo",
    "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 13
 }
