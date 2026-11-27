@@ -1,82 +1,68 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 03:45",
+ "consultado": "2026-11-27 04:00",
  "radar": "RMA17",
- "observacion": "2026-11-27 03:33",
+ "observacion": "2026-11-27 03:49",
  "nucleos": [
   {
-   "lat": -32.8007,
-   "lon": -63.8575,
-   "dbz": 54,
-   "max_dbz": 54,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -32.5106,
-   "lon": -64.8578,
-   "dbz": 50,
-   "max_dbz": 56,
+   "lat": -32.5741,
+   "lon": -64.8468,
+   "dbz": 53,
+   "max_dbz": 58,
    "tope_km": 17.0
   },
   {
-   "lat": -32.1922,
-   "lon": -64.9457,
-   "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.7554,
+   "lat": -32.6557,
    "lon": -64.8798,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.6195,
-   "lon": -64.8138,
-   "dbz": 49,
-   "max_dbz": 51,
+   "dbz": 50,
+   "max_dbz": 52,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Alpa Corral": {
-   "km": 9.8,
-   "max_dbz": 51,
+   "km": 13.9,
+   "max_dbz": 52,
    "tope_km": 17.0,
    "cuenca_de": "Rio Barrancas",
    "nivel": "intensa"
   },
   "Cañada del Sauce": {
-   "km": 25.1,
-   "max_dbz": 56,
+   "km": 29.2,
+   "max_dbz": 58,
    "tope_km": 17.0,
    "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
   "Villa la Rivera": {
-   "km": 40.4,
-   "max_dbz": 56,
+   "km": 44.6,
+   "max_dbz": 58,
    "tope_km": 17.0,
    "cuenca_de": "Rio Quillinzo",
    "nivel": "muy intensa"
   },
   "Paso del Río Seco": {
-   "km": 32.3,
-   "max_dbz": 51,
+   "km": 34.8,
+   "max_dbz": 52,
    "tope_km": 17.0,
    "cuenca_de": "Río de las Barrancas",
    "nivel": "intensa"
   },
   "Santa Rita": {
-   "km": 38.8,
-   "max_dbz": 51,
+   "km": 45.1,
+   "max_dbz": 52,
    "tope_km": 17.0,
    "cuenca_de": "Río Cuarto (Chocancharava)",
    "nivel": "intensa"
+  },
+  "Unión de los Rios": {
+   "km": 11.0,
+   "max_dbz": 52,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo El Talita",
+   "nivel": "intensa"
   }
  },
- "minutos": 13
+ "minutos": 11
 }
