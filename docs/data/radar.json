@@ -1,75 +1,47 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 00:30",
+ "consultado": "2026-11-27 00:45",
  "radar": "RMA17",
- "observacion": "2026-11-27 00:14",
+ "observacion": "2026-11-27 00:30",
  "nucleos": [
   {
-   "lat": -32.6376,
-   "lon": -64.9018,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.2104,
-   "lon": -64.9457,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.101,
-   "lon": -64.9457,
-   "dbz": 48,
-   "max_dbz": 49,
-   "tope_km": 17.0
+   "lat": -32.6557,
+   "lon": -64.9237,
+   "dbz": 51,
+   "max_dbz": 55,
+   "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
   "Alpa Corral": {
-   "km": 16.4,
-   "max_dbz": 53,
-   "tope_km": 17.0,
+   "km": 18.0,
+   "max_dbz": 55,
+   "tope_km": 14.7,
    "cuenca_de": "Rio Barrancas",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Paso del Río Seco": {
-   "km": 37.6,
-   "max_dbz": 53,
-   "tope_km": 17.0,
+   "km": 38.4,
+   "max_dbz": 55,
+   "tope_km": 14.7,
    "cuenca_de": "Río de las Barrancas",
-   "nivel": "intensa"
-  },
-  "Los Romeros": {
-   "km": 26.3,
-   "max_dbz": 49,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "La Poblacion": {
-   "km": 7.2,
-   "max_dbz": 49,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Santa Rita": {
-   "km": 48.0,
-   "max_dbz": 53,
-   "tope_km": 17.0,
+   "km": 48.3,
+   "max_dbz": 55,
+   "tope_km": 14.7,
    "cuenca_de": "Río Cuarto (Chocancharava)",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   },
   "Unión de los Rios": {
-   "km": 13.3,
-   "max_dbz": 53,
-   "tope_km": 17.0,
+   "km": 15.1,
+   "max_dbz": 55,
+   "tope_km": 14.7,
    "cuenca_de": "Arroyo El Talita",
-   "nivel": "intensa"
+   "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 15
 }
