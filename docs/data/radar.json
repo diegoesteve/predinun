@@ -1,75 +1,96 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 07:45",
+ "consultado": "2026-11-27 08:00",
  "radar": "RMA17",
- "observacion": "2026-11-27 07:30",
+ "observacion": "2026-11-27 07:46",
  "nucleos": [
   {
    "lat": -32.0371,
    "lon": -64.9127,
-   "dbz": 52,
-   "max_dbz": 56,
+   "dbz": 51,
+   "max_dbz": 57,
    "tope_km": 17.0
   },
   {
-   "lat": -32.6648,
-   "lon": -64.9018,
+   "lat": -31.9092,
+   "lon": -64.8688,
    "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 14.7
+   "max_dbz": 51,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.7629,
+   "lon": -64.7918,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Alpa Corral": {
-   "km": 15.9,
-   "max_dbz": 58,
-   "tope_km": 14.7,
-   "cuenca_de": "Rio Barrancas",
+  "Los Reartes": {
+   "km": 27.5,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio De Los Reartes",
+   "nivel": "intensa"
+  },
+  "Potrero de Garay": {
+   "km": 22.0,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio San Pedro",
    "nivel": "muy intensa"
   },
   "El Corcovado el Torreon": {
    "km": 40.1,
-   "max_dbz": 56,
+   "max_dbz": 57,
    "tope_km": 17.0,
    "cuenca_de": "Rio Santa Rosa",
    "nivel": "muy intensa"
   },
   "Santa Mónica": {
    "km": 27.5,
-   "max_dbz": 56,
+   "max_dbz": 57,
    "tope_km": 17.0,
    "cuenca_de": "Río Santa Rosa",
    "nivel": "muy intensa"
   },
-  "Paso del Río Seco": {
-   "km": 36.1,
-   "max_dbz": 58,
-   "tope_km": 14.7,
-   "cuenca_de": "Río de las Barrancas",
-   "nivel": "muy intensa"
+  "Intiyaco": {
+   "km": 15.2,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "cuenca_de": "Río de los Reartes",
+   "nivel": "intensa"
   },
   "El Corcovado": {
    "km": 39.4,
-   "max_dbz": 56,
+   "max_dbz": 57,
    "tope_km": 17.0,
    "cuenca_de": "Rio Santa Rosa",
    "nivel": "muy intensa"
   },
-  "Santa Rita": {
-   "km": 46.1,
-   "max_dbz": 58,
-   "tope_km": 14.7,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
+  "Capilla Vieja": {
+   "km": 25.1,
+   "max_dbz": 51,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio De Los Reartes",
+   "nivel": "intensa"
+  },
+  "La Boca del Río": {
+   "km": 36.9,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   },
-  "Unión de los Rios": {
-   "km": 13.0,
-   "max_dbz": 58,
-   "tope_km": 14.7,
-   "cuenca_de": "Arroyo El Talita",
+  "Villa la Merced": {
+   "km": 27.9,
+   "max_dbz": 55,
+   "tope_km": 17.0,
+   "cuenca_de": "Río de los Molinos",
    "nivel": "muy intensa"
   }
  },
- "minutos": 16
+ "minutos": 14
 }
