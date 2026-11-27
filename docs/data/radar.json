@@ -1,9 +1,40 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 02:30",
- "radar": null,
- "observacion": null,
- "nucleos": [],
+ "consultado": "2026-11-27 02:45",
+ "radar": "RMA17",
+ "observacion": "2026-11-27 02:27",
+ "nucleos": [
+  {
+   "lat": -32.0463,
+   "lon": -64.9457,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.2013,
+   "lon": -64.9347,
+   "dbz": 49,
+   "max_dbz": 55,
+   "tope_km": 15.2
+  }
+ ],
  "cuencas": {},
- "localidades": {}
+ "localidades": {
+  "San Javier Y Yacanto": {
+   "km": 6.7,
+   "max_dbz": 54,
+   "tope_km": 12.9,
+   "cuenca_de": "Arroyo El Molle",
+   "nivel": "intensa"
+  },
+  "Conlara": {
+   "km": 27.8,
+   "max_dbz": 54,
+   "tope_km": 12.9,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  }
+ },
+ "minutos": 18
 }
