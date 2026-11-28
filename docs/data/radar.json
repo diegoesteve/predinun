@@ -1,103 +1,102 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 03:15",
+ "consultado": "2026-11-28 03:30",
  "radar": "RMA17",
- "observacion": "2026-11-28 02:59",
+ "observacion": "2026-11-28 03:15",
  "nucleos": [
   {
-   "lat": -32.3197,
-   "lon": -64.8908,
-   "dbz": 55,
-   "max_dbz": 60,
-   "tope_km": 13.5
+   "lat": -32.692,
+   "lon": -64.2312,
+   "dbz": 54,
+   "max_dbz": 68,
+   "tope_km": 16.4
   },
   {
-   "lat": -32.7826,
-   "lon": -63.8355,
-   "dbz": 55,
-   "max_dbz": 72,
-   "tope_km": 15.8
+   "lat": -32.7735,
+   "lon": -63.8245,
+   "dbz": 54,
+   "max_dbz": 67,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -32.6013,
+   "lon": -64.0554,
+   "dbz": 52,
+   "max_dbz": 61,
+   "tope_km": 14.7
   },
   {
    "lat": -32.8007,
-   "lon": -63.9454,
+   "lon": -64.0663,
    "dbz": 51,
    "max_dbz": 59,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -32.1557,
+   "lon": -64.8908,
+   "dbz": 51,
+   "max_dbz": 56,
    "tope_km": 15.2
   },
   {
-   "lat": -32.6104,
-   "lon": -64.2862,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.5469,
-   "lon": -63.9344,
-   "dbz": 51,
-   "max_dbz": 57,
-   "tope_km": 11.7
-  },
-  {
-   "lat": -32.855,
-   "lon": -63.7696,
-   "dbz": 51,
-   "max_dbz": 58,
-   "tope_km": 10.6
-  },
-  {
-   "lat": -32.1648,
-   "lon": -64.9018,
+   "lat": -32.6829,
+   "lon": -64.3302,
    "dbz": 50,
-   "max_dbz": 55,
+   "max_dbz": 62,
    "tope_km": 17.0
   },
   {
-   "lat": -32.0371,
-   "lon": -64.8908,
-   "dbz": 50,
-   "max_dbz": 50,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.7373,
-   "lon": -63.8905,
+   "lat": -32.5015,
+   "lon": -64.7479,
    "dbz": 49,
    "max_dbz": 52,
-   "tope_km": 15.8
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.5832,
+   "lon": -63.9125,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 11.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "El Corcovado el Torreon": {
-   "km": 38.1,
-   "max_dbz": 50,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Santa Rosa",
+  "La Cruz": {
+   "km": 30.0,
+   "max_dbz": 52,
+   "tope_km": 12.9,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "intensa"
   },
-  "Santa Mónica": {
-   "km": 25.4,
-   "max_dbz": 50,
-   "tope_km": 17.0,
-   "cuenca_de": "Río Santa Rosa",
+  "Rio de los Sauces": {
+   "km": 14.8,
+   "max_dbz": 52,
+   "tope_km": 12.9,
+   "cuenca_de": "Rio De Los Sauces",
    "nivel": "intensa"
   },
-  "El Corcovado": {
-   "km": 37.4,
-   "max_dbz": 50,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Santa Rosa",
+  "Paso Cabral": {
+   "km": 25.2,
+   "max_dbz": 52,
+   "tope_km": 12.9,
+   "cuenca_de": "Río de la Cruz",
    "nivel": "intensa"
   },
   "El Durazno": {
-   "km": 11.2,
-   "max_dbz": 55,
-   "tope_km": 17.0,
+   "km": 10.1,
+   "max_dbz": 56,
+   "tope_km": 15.2,
    "cuenca_de": "Arroyo Sombra de Toro",
+   "nivel": "muy intensa"
+  },
+  "Las Peñas Sud": {
+   "km": 4.0,
+   "max_dbz": 61,
+   "tope_km": 14.7,
    "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 15
 }
