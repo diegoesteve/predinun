@@ -1,40 +1,58 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 02:15",
+ "consultado": "2026-11-28 02:30",
  "radar": "RMA17",
- "observacion": "2026-11-28 01:53",
+ "observacion": "2026-11-28 02:18",
  "nucleos": [
   {
-   "lat": -32.0006,
-   "lon": -64.9457,
-   "dbz": 49,
+   "lat": -32.2286,
+   "lon": -64.9787,
+   "dbz": 54,
+   "max_dbz": 58,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.0828,
+   "lon": -64.9677,
+   "dbz": 50,
+   "max_dbz": 54,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -31.3959,
+   "lon": -64.4401,
+   "dbz": 48,
    "max_dbz": 49,
-   "tope_km": 11.1
+   "tope_km": 12.9
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Villa Dolores": {
-   "km": 26.1,
+  "San Roque": {
+   "km": 4.0,
    "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Rio De Los Sauces",
+   "tope_km": 12.9,
    "nivel": "intensa"
   },
-  "Chuchiras": {
-   "km": 13.0,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Chuchiras",
+  "Los Romeros": {
+   "km": 24.6,
+   "max_dbz": 54,
+   "tope_km": 12.9,
+   "cuenca_de": "sin nombre",
    "nivel": "intensa"
   },
-  "Pueblito": {
-   "km": 10.3,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo Hondo",
-   "nivel": "intensa"
+  "Paraje las Chacras": {
+   "km": 4.7,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Loma Bola": {
+   "km": 4.9,
+   "max_dbz": 58,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 22
+ "minutos": 13
 }
