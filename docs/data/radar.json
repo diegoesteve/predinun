@@ -1,26 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 01:30",
+ "consultado": "2026-11-28 01:45",
  "radar": "RMA17",
- "observacion": "2026-11-28 01:12",
+ "observacion": "2026-11-28 01:21",
  "nucleos": [
   {
-   "lat": -32.028,
-   "lon": -64.9567,
-   "dbz": 47,
-   "max_dbz": 49,
-   "tope_km": 11.1
+   "lat": -32.2195,
+   "lon": -64.9897,
+   "dbz": 53,
+   "max_dbz": 63,
+   "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
-  "San Javier Y Yacanto": {
-   "km": 4.9,
-   "max_dbz": 49,
-   "tope_km": 11.1,
-   "cuenca_de": "Arroyo San Javier",
-   "nivel": "intensa"
+  "Paraje las Chacras": {
+   "km": 4.3,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "nivel": "muy intensa"
+  },
+  "Loma Bola": {
+   "km": 3.7,
+   "max_dbz": 63,
+   "tope_km": 17.0,
+   "cuenca_de": "Arroyo El Arenal",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 25
 }
