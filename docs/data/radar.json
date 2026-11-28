@@ -1,28 +1,21 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 07:45",
+ "consultado": "2026-11-28 08:00",
  "radar": "RMA17",
- "observacion": "2026-11-28 07:28",
+ "observacion": "2026-11-28 07:45",
  "nucleos": [
-  {
-   "lat": -32.4379,
-   "lon": -63.7036,
-   "dbz": 52,
-   "max_dbz": 67,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.0645,
-   "lon": -64.9457,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 10.6
-  },
   {
    "lat": -32.0006,
    "lon": -65.0007,
    "dbz": 51,
    "max_dbz": 59,
+   "tope_km": 12.9
+  },
+  {
+   "lat": -32.0554,
+   "lon": -64.9347,
+   "dbz": 49,
+   "max_dbz": 54,
    "tope_km": 10.6
   }
  ],
@@ -31,43 +24,36 @@
   "Villa Dolores": {
    "km": 21.1,
    "max_dbz": 59,
-   "tope_km": 10.6,
+   "tope_km": 12.9,
    "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
   "Chuchiras": {
    "km": 8.0,
    "max_dbz": 59,
-   "tope_km": 10.6,
+   "tope_km": 12.9,
    "cuenca_de": "Arroyo Chuchiras",
    "nivel": "muy intensa"
   },
   "San Javier Y Yacanto": {
    "km": 4.1,
    "max_dbz": 59,
-   "tope_km": 10.6,
+   "tope_km": 12.9,
    "nivel": "muy intensa"
   },
-  "Los Romeros": {
-   "km": 27.2,
-   "max_dbz": 51,
+  "El Durazno": {
+   "km": 18.0,
+   "max_dbz": 54,
    "tope_km": 10.6,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
-  "La Poblacion": {
-   "km": 4.9,
-   "max_dbz": 51,
-   "tope_km": 10.6,
-   "cuenca_de": "Arroyo Cruz Del Quebracho",
+   "cuenca_de": "Arroyo Sombra de Toro",
    "nivel": "intensa"
   },
   "San Javier": {
    "km": 1.1,
    "max_dbz": 59,
-   "tope_km": 10.6,
+   "tope_km": 12.9,
    "nivel": "muy intensa"
   }
  },
- "minutos": 17
+ "minutos": 16
 }
