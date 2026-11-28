@@ -1,46 +1,32 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 08:45",
+ "consultado": "2026-11-28 09:00",
  "radar": "RMA17",
- "observacion": "2026-11-28 08:26",
+ "observacion": "2026-11-28 08:42",
  "nucleos": [
   {
    "lat": -32.0736,
    "lon": -64.9787,
-   "dbz": 51,
-   "max_dbz": 55,
-   "tope_km": 13.5
-  },
-  {
-   "lat": -32.1466,
-   "lon": -64.9897,
    "dbz": 50,
-   "max_dbz": 55,
-   "tope_km": 17.0
+   "max_dbz": 53,
+   "tope_km": 13.5
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Luyaba": {
-   "km": 6.2,
-   "max_dbz": 55,
-   "tope_km": 17.0,
-   "cuenca_de": "Acc Privado",
-   "nivel": "muy intensa"
-  },
   "Los Romeros": {
-   "km": 21.9,
-   "max_dbz": 55,
-   "tope_km": 17.0,
+   "km": 23.9,
+   "max_dbz": 53,
+   "tope_km": 13.5,
    "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   },
   "La Poblacion": {
    "km": 4.4,
-   "max_dbz": 55,
+   "max_dbz": 53,
    "tope_km": 13.5,
-   "nivel": "muy intensa"
+   "nivel": "intensa"
   }
  },
- "minutos": 20
+ "minutos": 18
 }
