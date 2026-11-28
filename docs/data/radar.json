@@ -1,151 +1,130 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 03:45",
+ "consultado": "2026-11-28 04:00",
  "radar": "RMA17",
- "observacion": "2026-11-28 03:31",
+ "observacion": "2026-11-28 03:48",
  "nucleos": [
   {
-   "lat": -32.7735,
-   "lon": -63.8245,
-   "dbz": 58,
-   "max_dbz": 73,
-   "tope_km": 15.2
-  },
-  {
-   "lat": -32.1375,
-   "lon": -64.8798,
-   "dbz": 55,
-   "max_dbz": 55,
-   "tope_km": 15.8
-  },
-  {
-   "lat": -31.3591,
-   "lon": -64.0224,
-   "dbz": 54,
-   "max_dbz": 54,
-   "tope_km": 12.9
-  },
-  {
-   "lat": -32.5015,
-   "lon": -64.7369,
-   "dbz": 51,
-   "max_dbz": 51,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -32.0554,
-   "lon": -64.9347,
-   "dbz": 50,
-   "max_dbz": 54,
+   "lat": -31.3683,
+   "lon": -64.0993,
+   "dbz": 61,
+   "max_dbz": 84,
    "tope_km": 17.0
   },
   {
    "lat": -32.7826,
-   "lon": -64.1433,
-   "dbz": 50,
-   "max_dbz": 57,
-   "tope_km": 14.7
+   "lon": -64.1103,
+   "dbz": 56,
+   "max_dbz": 56,
+   "tope_km": 14.1
   },
   {
-   "lat": -32.6285,
-   "lon": -64.2972,
-   "dbz": 50,
-   "max_dbz": 50,
+   "lat": -32.7101,
+   "lon": -64.8248,
+   "dbz": 54,
+   "max_dbz": 61,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.7554,
+   "lon": -63.8025,
+   "dbz": 54,
+   "max_dbz": 70,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -32.7826,
+   "lon": -64.0334,
+   "dbz": 53,
+   "max_dbz": 64,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -31.5887,
+   "lon": -64.0004,
+   "dbz": 52,
+   "max_dbz": 63,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.8007,
+   "lon": -63.8575,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 16.4
+  },
+  {
+   "lat": -31.4327,
+   "lon": -64.0444,
+   "dbz": 51,
+   "max_dbz": 56,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.7645,
+   "lon": -64.1873,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 14.1
+  },
+  {
+   "lat": -32.7101,
+   "lon": -64.2752,
+   "dbz": 51,
+   "max_dbz": 51,
    "tope_km": 12.3
   },
   {
-   "lat": -32.7916,
-   "lon": -64.0114,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 17.0
+   "lat": -32.4924,
+   "lon": -64.7918,
+   "dbz": 50,
+   "max_dbz": 57,
+   "tope_km": 15.8
   },
   {
-   "lat": -32.6557,
-   "lon": -64.8688,
+   "lat": -32.1101,
+   "lon": -64.8908,
    "dbz": 49,
-   "max_dbz": 54,
+   "max_dbz": 52,
    "tope_km": 17.0
-  },
-  {
-   "lat": -32.7192,
-   "lon": -64.8468,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.5337,
-   "lon": -64.0663,
-   "dbz": 48,
-   "max_dbz": 48,
-   "tope_km": 14.7
   }
  ],
  "cuencas": {},
  "localidades": {
-  "La Cruz": {
-   "km": 29.2,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "intensa"
-  },
-  "Rio de los Sauces": {
-   "km": 13.8,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "cuenca_de": "Rio De Los Sauces",
-   "nivel": "intensa"
-  },
-  "Alpa Corral": {
-   "km": 12.9,
-   "max_dbz": 54,
-   "tope_km": 17.0,
-   "cuenca_de": "Rio Barrancas",
-   "nivel": "intensa"
-  },
   "Malvinas Argentinas": {
-   "km": 3.6,
-   "max_dbz": 54,
-   "tope_km": 12.9,
-   "nivel": "intensa"
-  },
-  "Paso Cabral": {
-   "km": 24.2,
-   "max_dbz": 51,
-   "tope_km": 14.7,
-   "cuenca_de": "Río de la Cruz",
-   "nivel": "intensa"
-  },
-  "Paso del Río Seco": {
-   "km": 33.9,
-   "max_dbz": 54,
+   "km": 4.6,
+   "max_dbz": 84,
    "tope_km": 17.0,
-   "cuenca_de": "Río de las Barrancas",
-   "nivel": "intensa"
-  },
-  "El Durazno": {
-   "km": 9.2,
-   "max_dbz": 55,
-   "tope_km": 15.8,
-   "cuenca_de": "Arroyo Sombra de Toro",
    "nivel": "muy intensa"
   },
-  "Santa Rita": {
-   "km": 44.4,
-   "max_dbz": 54,
+  "Cañada del Sauce": {
+   "km": 19.0,
+   "max_dbz": 57,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "Villa la Rivera": {
+   "km": 34.4,
+   "max_dbz": 57,
+   "tope_km": 15.8,
+   "cuenca_de": "Rio Quillinzo",
+   "nivel": "muy intensa"
+  },
+  "El Durazno": {
+   "km": 11.2,
+   "max_dbz": 52,
    "tope_km": 17.0,
-   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "cuenca_de": "Arroyo Sombra de Toro",
    "nivel": "intensa"
   },
-  "Unión de los Rios": {
-   "km": 10.0,
-   "max_dbz": 54,
+  "Santa Rita": {
+   "km": 37.3,
+   "max_dbz": 61,
    "tope_km": 17.0,
-   "cuenca_de": "Arroyo El Talita",
-   "nivel": "intensa"
+   "cuenca_de": "Río Cuarto (Chocancharava)",
+   "nivel": "muy intensa"
   }
  },
- "minutos": 14
+ "minutos": 13
 }
