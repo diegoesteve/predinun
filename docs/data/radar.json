@@ -1,61 +1,72 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-27 23:45",
+ "consultado": "2026-11-28 00:00",
  "radar": "RMA17",
- "observacion": "2026-11-27 23:34",
+ "observacion": "2026-11-27 23:43",
  "nucleos": [
   {
-   "lat": -31.9641,
-   "lon": -64.9897,
-   "dbz": 52,
-   "max_dbz": 61,
-   "tope_km": 14.1
+   "lat": -32.0006,
+   "lon": -65.0007,
+   "dbz": 53,
+   "max_dbz": 59,
+   "tope_km": 13.5
   },
   {
    "lat": -32.1375,
-   "lon": -64.9897,
-   "dbz": 51,
-   "max_dbz": 51,
+   "lon": -65.0007,
+   "dbz": 50,
+   "max_dbz": 53,
    "tope_km": 17.0
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
-   "km": 15.1,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "cuenca_de": "Canal De Riego",
-   "nivel": "muy intensa"
-  },
-  "La Travesía": {
-   "km": 5.5,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "cuenca_de": "Arroyo de la Cal",
-   "nivel": "intensa"
-  },
-  "Las Tapias": {
-   "km": 10.2,
-   "max_dbz": 61,
-   "tope_km": 14.1,
+   "km": 21.1,
+   "max_dbz": 59,
+   "tope_km": 13.5,
    "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
-  "Villa de las Rosas": {
-   "km": 5.9,
-   "max_dbz": 61,
-   "tope_km": 14.1,
-   "cuenca_de": "Arroyo Los Molles",
+  "Chuchiras": {
+   "km": 8.0,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "cuenca_de": "Arroyo Chuchiras",
    "nivel": "muy intensa"
   },
-  "Los Romeros": {
-   "km": 21.8,
-   "max_dbz": 51,
+  "La Travesía": {
+   "km": 4.6,
+   "max_dbz": 53,
+   "tope_km": 17.0,
+   "nivel": "intensa"
+  },
+  "Luyaba": {
+   "km": 6.0,
+   "max_dbz": 53,
    "tope_km": 17.0,
    "cuenca_de": "sin nombre",
    "nivel": "intensa"
+  },
+  "San Javier Y Yacanto": {
+   "km": 4.1,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "nivel": "muy intensa"
+  },
+  "Los Romeros": {
+   "km": 20.8,
+   "max_dbz": 53,
+   "tope_km": 17.0,
+   "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "San Javier": {
+   "km": 1.1,
+   "max_dbz": 59,
+   "tope_km": 13.5,
+   "nivel": "muy intensa"
   }
  },
- "minutos": 11
+ "minutos": 18
 }
