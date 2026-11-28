@@ -1,100 +1,73 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 07:30",
+ "consultado": "2026-11-28 07:45",
  "radar": "RMA17",
- "observacion": "2026-11-28 07:12",
+ "observacion": "2026-11-28 07:28",
  "nucleos": [
   {
-   "lat": -32.0554,
-   "lon": -64.9567,
-   "dbz": 54,
-   "max_dbz": 54,
+   "lat": -32.4379,
+   "lon": -63.7036,
+   "dbz": 52,
+   "max_dbz": 67,
    "tope_km": 17.0
+  },
+  {
+   "lat": -32.0645,
+   "lon": -64.9457,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 10.6
   },
   {
    "lat": -32.0006,
    "lon": -65.0007,
-   "dbz": 54,
-   "max_dbz": 62,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -31.6896,
-   "lon": -63.8905,
-   "dbz": 50,
-   "max_dbz": 53,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.2013,
-   "lon": -64.9347,
-   "dbz": 49,
-   "max_dbz": 49,
-   "tope_km": 14.7
-  },
-  {
-   "lat": -32.5378,
-   "lon": -64.9018,
-   "dbz": 49,
-   "max_dbz": 51,
-   "tope_km": 17.0
-  },
-  {
-   "lat": -32.6285,
-   "lon": -64.9347,
-   "dbz": 48,
-   "max_dbz": 50,
-   "tope_km": 15.2
+   "dbz": 51,
+   "max_dbz": 59,
+   "tope_km": 10.6
   }
  ],
  "cuencas": {},
  "localidades": {
   "Villa Dolores": {
    "km": 21.1,
-   "max_dbz": 62,
-   "tope_km": 17.0,
+   "max_dbz": 59,
+   "tope_km": 10.6,
    "cuenca_de": "Rio De Los Sauces",
    "nivel": "muy intensa"
   },
   "Chuchiras": {
    "km": 8.0,
-   "max_dbz": 62,
-   "tope_km": 17.0,
+   "max_dbz": 59,
+   "tope_km": 10.6,
    "cuenca_de": "Arroyo Chuchiras",
    "nivel": "muy intensa"
   },
-  "Villa Larca": {
-   "km": 4.7,
-   "max_dbz": 50,
-   "tope_km": 15.2,
-   "nivel": "intensa"
-  },
-  "Villa Elena": {
-   "km": 6.0,
-   "max_dbz": 51,
-   "tope_km": 17.0,
-   "cuenca_de": "sin nombre",
-   "nivel": "intensa"
-  },
   "San Javier Y Yacanto": {
    "km": 4.1,
-   "max_dbz": 62,
-   "tope_km": 17.0,
+   "max_dbz": 59,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   },
-  "Conlara": {
-   "km": 26.6,
-   "max_dbz": 54,
-   "tope_km": 17.0,
+  "Los Romeros": {
+   "km": 27.2,
+   "max_dbz": 51,
+   "tope_km": 10.6,
    "cuenca_de": "sin nombre",
+   "nivel": "intensa"
+  },
+  "La Poblacion": {
+   "km": 4.9,
+   "max_dbz": 51,
+   "tope_km": 10.6,
+   "cuenca_de": "Arroyo Cruz Del Quebracho",
    "nivel": "intensa"
   },
   "San Javier": {
    "km": 1.1,
-   "max_dbz": 62,
-   "tope_km": 17.0,
+   "max_dbz": 59,
+   "tope_km": 10.6,
    "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 17
 }
