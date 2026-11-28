@@ -1,33 +1,89 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 02:45",
+ "consultado": "2026-11-28 03:00",
  "radar": "RMA17",
- "observacion": "2026-11-28 02:26",
+ "observacion": "2026-11-28 02:42",
  "nucleos": [
   {
    "lat": -32.7554,
    "lon": -63.7915,
    "dbz": 57,
-   "max_dbz": 57,
-   "tope_km": 9.4
+   "max_dbz": 72,
+   "tope_km": 12.9
   },
   {
-   "lat": -32.0736,
-   "lon": -64.9347,
-   "dbz": 52,
-   "max_dbz": 56,
+   "lat": -32.0554,
+   "lon": -64.9457,
+   "dbz": 54,
+   "max_dbz": 59,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.5378,
+   "lon": -63.9564,
+   "dbz": 53,
+   "max_dbz": 61,
+   "tope_km": 14.7
+  },
+  {
+   "lat": -32.1557,
+   "lon": -64.9127,
+   "dbz": 50,
+   "max_dbz": 50,
    "tope_km": 17.0
+  },
+  {
+   "lat": -31.6804,
+   "lon": -64.572,
+   "dbz": 48,
+   "max_dbz": 51,
+   "tope_km": 14.1
   }
  ],
  "cuencas": {},
  "localidades": {
+  "Anisacate": {
+   "km": 15.3,
+   "max_dbz": 51,
+   "tope_km": 14.1,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "La Serranita": {
+   "km": 12.2,
+   "max_dbz": 51,
+   "tope_km": 14.1,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
   "El Durazno": {
-   "km": 16.8,
-   "max_dbz": 56,
+   "km": 12.2,
+   "max_dbz": 50,
    "tope_km": 17.0,
    "cuenca_de": "Arroyo Sombra de Toro",
+   "nivel": "intensa"
+  },
+  "Los Romeros": {
+   "km": 27.5,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "cuenca_de": "sin nombre",
+   "nivel": "muy intensa"
+  },
+  "La Paisanita": {
+   "km": 9.6,
+   "max_dbz": 51,
+   "tope_km": 14.1,
+   "cuenca_de": "Río Anizacate",
+   "nivel": "intensa"
+  },
+  "La Poblacion": {
+   "km": 4.9,
+   "max_dbz": 59,
+   "tope_km": 14.7,
+   "cuenca_de": "Arroyo Cruz Del Quebracho",
    "nivel": "muy intensa"
   }
  },
- "minutos": 19
+ "minutos": 18
 }
