@@ -1,89 +1,103 @@
 {
  "fuente": "Observatorio Hidro-Meteorológico de Córdoba (OHMC), webmet.ohmc.ar",
- "consultado": "2026-11-28 03:00",
+ "consultado": "2026-11-28 03:15",
  "radar": "RMA17",
- "observacion": "2026-11-28 02:42",
+ "observacion": "2026-11-28 02:59",
  "nucleos": [
   {
-   "lat": -32.7554,
-   "lon": -63.7915,
-   "dbz": 57,
+   "lat": -32.3197,
+   "lon": -64.8908,
+   "dbz": 55,
+   "max_dbz": 60,
+   "tope_km": 13.5
+  },
+  {
+   "lat": -32.7826,
+   "lon": -63.8355,
+   "dbz": 55,
    "max_dbz": 72,
-   "tope_km": 12.9
+   "tope_km": 15.8
   },
   {
-   "lat": -32.0554,
-   "lon": -64.9457,
-   "dbz": 54,
+   "lat": -32.8007,
+   "lon": -63.9454,
+   "dbz": 51,
    "max_dbz": 59,
-   "tope_km": 14.7
+   "tope_km": 15.2
   },
   {
-   "lat": -32.5378,
-   "lon": -63.9564,
-   "dbz": 53,
-   "max_dbz": 61,
-   "tope_km": 14.7
+   "lat": -32.6104,
+   "lon": -64.2862,
+   "dbz": 51,
+   "max_dbz": 51,
+   "tope_km": 11.7
   },
   {
-   "lat": -32.1557,
-   "lon": -64.9127,
+   "lat": -32.5469,
+   "lon": -63.9344,
+   "dbz": 51,
+   "max_dbz": 57,
+   "tope_km": 11.7
+  },
+  {
+   "lat": -32.855,
+   "lon": -63.7696,
+   "dbz": 51,
+   "max_dbz": 58,
+   "tope_km": 10.6
+  },
+  {
+   "lat": -32.1648,
+   "lon": -64.9018,
+   "dbz": 50,
+   "max_dbz": 55,
+   "tope_km": 17.0
+  },
+  {
+   "lat": -32.0371,
+   "lon": -64.8908,
    "dbz": 50,
    "max_dbz": 50,
    "tope_km": 17.0
   },
   {
-   "lat": -31.6804,
-   "lon": -64.572,
-   "dbz": 48,
-   "max_dbz": 51,
-   "tope_km": 14.1
+   "lat": -32.7373,
+   "lon": -63.8905,
+   "dbz": 49,
+   "max_dbz": 52,
+   "tope_km": 15.8
   }
  ],
  "cuencas": {},
  "localidades": {
-  "Anisacate": {
-   "km": 15.3,
-   "max_dbz": 51,
-   "tope_km": 14.1,
-   "cuenca_de": "Río Anizacate",
+  "El Corcovado el Torreon": {
+   "km": 38.1,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Santa Rosa",
    "nivel": "intensa"
   },
-  "La Serranita": {
-   "km": 12.2,
-   "max_dbz": 51,
-   "tope_km": 14.1,
-   "cuenca_de": "Río Anizacate",
+  "Santa Mónica": {
+   "km": 25.4,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "cuenca_de": "Río Santa Rosa",
+   "nivel": "intensa"
+  },
+  "El Corcovado": {
+   "km": 37.4,
+   "max_dbz": 50,
+   "tope_km": 17.0,
+   "cuenca_de": "Rio Santa Rosa",
    "nivel": "intensa"
   },
   "El Durazno": {
-   "km": 12.2,
-   "max_dbz": 50,
+   "km": 11.2,
+   "max_dbz": 55,
    "tope_km": 17.0,
    "cuenca_de": "Arroyo Sombra de Toro",
-   "nivel": "intensa"
-  },
-  "Los Romeros": {
-   "km": 27.5,
-   "max_dbz": 59,
-   "tope_km": 14.7,
-   "cuenca_de": "sin nombre",
-   "nivel": "muy intensa"
-  },
-  "La Paisanita": {
-   "km": 9.6,
-   "max_dbz": 51,
-   "tope_km": 14.1,
-   "cuenca_de": "Río Anizacate",
-   "nivel": "intensa"
-  },
-  "La Poblacion": {
-   "km": 4.9,
-   "max_dbz": 59,
-   "tope_km": 14.7,
-   "cuenca_de": "Arroyo Cruz Del Quebracho",
    "nivel": "muy intensa"
   }
  },
- "minutos": 18
+ "minutos": 17
 }
